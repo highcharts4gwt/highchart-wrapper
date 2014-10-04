@@ -97,3 +97,11 @@ Add the sources to the gwt compilation
 
       </plugin>
 
+
+What is still missing (not exhaustive list)
+=====================================
+
+* Improve Series API (only as array of number right now).
+* Some field type (CSSObject, Colors)
+* Exclusion of certain fields for certain options
+* No dynamic behavior (callbacks etc.)
