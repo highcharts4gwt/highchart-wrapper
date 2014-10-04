@@ -60,9 +60,9 @@ How to use it
 * Download the sources
 * Install it in your mvn repository
 
-	mvn clean install 
+		mvn clean install 
 
-* Edit your app.gwt.xl
+* Edit your app.gwt.xml
 
 	<inherits name='com.usesoft.highcharts4gwt.highcharts'/>
 
