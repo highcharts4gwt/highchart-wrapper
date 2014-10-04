@@ -64,7 +64,7 @@ How to use it
 
 * Edit your app.gwt.xml
 
-	<inherits name='com.usesoft.highcharts4gwt.highcharts'/>
+		<inherits name='com.usesoft.highcharts4gwt.highcharts'/>
 
 * Edit your pom.xml 
 
