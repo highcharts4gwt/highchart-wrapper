@@ -37,6 +37,10 @@ public interface ButtonOptions {
 
     ButtonOptions text(String text);
 
+    String theme();
+
+    ButtonOptions theme(String theme);
+
     String verticalAlign();
 
     ButtonOptions verticalAlign(String verticalAlign);

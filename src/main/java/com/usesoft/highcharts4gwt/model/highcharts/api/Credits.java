@@ -13,6 +13,10 @@ public interface Credits {
 
     Credits href(String href);
 
+    String position();
+
+    Credits position(String position);
+
     String text();
 
     Credits text(String text);

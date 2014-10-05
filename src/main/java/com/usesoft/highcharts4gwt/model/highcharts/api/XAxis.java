@@ -25,6 +25,10 @@ public interface XAxis {
 
     XAxis ceiling(Number ceiling);
 
+    String dateTimeLabelFormats();
+
+    XAxis dateTimeLabelFormats(String dateTimeLabelFormats);
+
     boolean endOnTick();
 
     XAxis endOnTick(boolean endOnTick);

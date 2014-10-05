@@ -1,6 +1,7 @@
 
 package com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.states;
 
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.states.hover.Halo;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.states.hover.Marker;
 
 public interface Hover {
@@ -9,6 +10,10 @@ public interface Hover {
     boolean enabled();
 
     Hover enabled(boolean enabled);
+
+    Halo halo();
+
+    Hover halo(Halo halo);
 
     Number lineWidth();
 

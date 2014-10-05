@@ -9,8 +9,10 @@ public class MockExporting
 {
 
     private Buttons buttons;
+    private String chartOptions;
     private boolean enabled;
     private String filename;
+    private String formAttributes;
     private Number scale;
     private Number sourceHeight;
     private Number sourceWidth;
@@ -24,6 +26,15 @@ public class MockExporting
 
     public MockExporting buttons(Buttons buttons) {
         this.buttons = buttons;
+        return this;
+    }
+
+    public String chartOptions() {
+        return chartOptions;
+    }
+
+    public MockExporting chartOptions(String chartOptions) {
+        this.chartOptions = chartOptions;
         return this;
     }
 
@@ -42,6 +53,15 @@ public class MockExporting
 
     public MockExporting filename(String filename) {
         this.filename = filename;
+        return this;
+    }
+
+    public String formAttributes() {
+        return formAttributes;
+    }
+
+    public MockExporting formAttributes(String formAttributes) {
+        this.formAttributes = formAttributes;
         return this;
     }
 

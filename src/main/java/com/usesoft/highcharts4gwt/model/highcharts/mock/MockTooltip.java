@@ -10,6 +10,7 @@ public class MockTooltip
     private boolean animation;
     private Number borderRadius;
     private Number borderWidth;
+    private String dateTimeLabelFormats;
     private boolean enabled;
     private boolean followPointer;
     private boolean followTouchMove;
@@ -51,6 +52,15 @@ public class MockTooltip
 
     public MockTooltip borderWidth(Number borderWidth) {
         this.borderWidth = borderWidth;
+        return this;
+    }
+
+    public String dateTimeLabelFormats() {
+        return dateTimeLabelFormats;
+    }
+
+    public MockTooltip dateTimeLabelFormats(String dateTimeLabelFormats) {
+        this.dateTimeLabelFormats = dateTimeLabelFormats;
         return this;
     }
 

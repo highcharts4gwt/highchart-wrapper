@@ -39,6 +39,19 @@ public class JsoCredits
     }-*/
     ;
 
+    public final native String position()
+        throws RuntimeException /*-{
+        return this["position"] = (this["position"] || "null");
+    }-*/
+    ;
+
+    public final native JsoCredits position(String position)
+        throws RuntimeException /*-{
+        this["position"] = position;
+        return this;
+    }-*/
+    ;
+
     public final native String text()
         throws RuntimeException /*-{
         return this["text"] = (this["text"] || "Highcharts.com");

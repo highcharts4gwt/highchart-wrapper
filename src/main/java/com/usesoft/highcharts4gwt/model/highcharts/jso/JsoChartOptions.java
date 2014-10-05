@@ -15,6 +15,7 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.Legend;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Loading;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Navigation;
 import com.usesoft.highcharts4gwt.model.highcharts.api.NoData;
+import com.usesoft.highcharts4gwt.model.highcharts.api.Pane;
 import com.usesoft.highcharts4gwt.model.highcharts.api.PlotOptions;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Series;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Subtitle;
@@ -123,6 +124,19 @@ public class JsoChartOptions
     }-*/
     ;
 
+    public final native Subtitle subtitle()
+        throws RuntimeException /*-{
+        return this["subtitle"] = (this["subtitle"] || {});
+    }-*/
+    ;
+
+    public final native JsoChartOptions subtitle(Subtitle subtitle)
+        throws RuntimeException /*-{
+        this["subtitle"] = subtitle;
+        return this;
+    }-*/
+    ;
+
     public final native Title title()
         throws RuntimeException /*-{
         return this["title"] = (this["title"] || {});
@@ -162,19 +176,6 @@ public class JsoChartOptions
     }-*/
     ;
 
-    public final native Subtitle subtitle()
-        throws RuntimeException /*-{
-        return this["subtitle"] = (this["subtitle"] || {});
-    }-*/
-    ;
-
-    public final native JsoChartOptions subtitle(Subtitle subtitle)
-        throws RuntimeException /*-{
-        this["subtitle"] = subtitle;
-        return this;
-    }-*/
-    ;
-
     public final native Tooltip tooltip()
         throws RuntimeException /*-{
         return this["tooltip"] = (this["tooltip"] || {});
@@ -197,6 +198,19 @@ public class JsoChartOptions
     public final native JsoChartOptions noData(NoData noData)
         throws RuntimeException /*-{
         this["noData"] = noData;
+        return this;
+    }-*/
+    ;
+
+    public final native Pane pane()
+        throws RuntimeException /*-{
+        return this["pane"] = (this["pane"] || {});
+    }-*/
+    ;
+
+    public final native JsoChartOptions pane(Pane pane)
+        throws RuntimeException /*-{
+        this["pane"] = pane;
         return this;
     }-*/
     ;

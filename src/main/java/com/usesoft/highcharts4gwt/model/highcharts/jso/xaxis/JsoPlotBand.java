@@ -27,6 +27,19 @@ public class JsoPlotBand
     }-*/
     ;
 
+    public final native String events()
+        throws RuntimeException /*-{
+        return this["events"] = (this["events"] || "null");
+    }-*/
+    ;
+
+    public final native JsoPlotBand events(String events)
+        throws RuntimeException /*-{
+        this["events"] = events;
+        return this;
+    }-*/
+    ;
+
     public final native Number from()
         throws RuntimeException /*-{
         return this["from"] = (this["from"] || null);

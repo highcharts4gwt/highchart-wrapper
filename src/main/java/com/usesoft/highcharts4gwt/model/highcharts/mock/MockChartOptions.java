@@ -14,6 +14,7 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.Legend;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Loading;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Navigation;
 import com.usesoft.highcharts4gwt.model.highcharts.api.NoData;
+import com.usesoft.highcharts4gwt.model.highcharts.api.Pane;
 import com.usesoft.highcharts4gwt.model.highcharts.api.PlotOptions;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Series;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Subtitle;
@@ -33,12 +34,13 @@ public class MockChartOptions
     private PlotOptions plotOptions;
     private XAxis xAxis;
     private YAxis yAxis;
+    private Subtitle subtitle;
     private Title title;
     private Navigation navigation;
     private Exporting exporting;
-    private Subtitle subtitle;
     private Tooltip tooltip;
     private NoData noData;
+    private Pane pane;
     private Array<Series> series;
     private Lang lang;
     private Credits credits;
@@ -108,6 +110,15 @@ public class MockChartOptions
         return this;
     }
 
+    public Subtitle subtitle() {
+        return subtitle;
+    }
+
+    public MockChartOptions subtitle(Subtitle subtitle) {
+        this.subtitle = subtitle;
+        return this;
+    }
+
     public Title title() {
         return title;
     }
@@ -135,15 +146,6 @@ public class MockChartOptions
         return this;
     }
 
-    public Subtitle subtitle() {
-        return subtitle;
-    }
-
-    public MockChartOptions subtitle(Subtitle subtitle) {
-        this.subtitle = subtitle;
-        return this;
-    }
-
     public Tooltip tooltip() {
         return tooltip;
     }
@@ -159,6 +161,15 @@ public class MockChartOptions
 
     public MockChartOptions noData(NoData noData) {
         this.noData = noData;
+        return this;
+    }
+
+    public Pane pane() {
+        return pane;
+    }
+
+    public MockChartOptions pane(Pane pane) {
+        this.pane = pane;
         return this;
     }
 

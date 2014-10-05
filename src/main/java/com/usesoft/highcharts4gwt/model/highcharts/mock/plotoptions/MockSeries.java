@@ -6,6 +6,7 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.DataLa
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Events;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Marker;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Point;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Tooltip;
 
 public class MockSeries
     implements Series
@@ -34,6 +35,7 @@ public class MockSeries
     private String stacking;
     private boolean stickyTracking;
     private Number threshold;
+    private Tooltip tooltip;
     private Number turboThreshold;
     private boolean visible;
 
@@ -241,6 +243,15 @@ public class MockSeries
 
     public MockSeries threshold(Number threshold) {
         this.threshold = threshold;
+        return this;
+    }
+
+    public Tooltip tooltip() {
+        return tooltip;
+    }
+
+    public MockSeries tooltip(Tooltip tooltip) {
+        this.tooltip = tooltip;
         return this;
     }
 

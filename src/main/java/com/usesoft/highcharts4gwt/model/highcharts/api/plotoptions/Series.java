@@ -5,6 +5,7 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.DataLa
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Events;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Marker;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Point;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Tooltip;
 
 public interface Series {
 
@@ -100,6 +101,10 @@ public interface Series {
     Number threshold();
 
     Series threshold(Number threshold);
+
+    Tooltip tooltip();
+
+    Series tooltip(Tooltip tooltip);
 
     Number turboThreshold();
 

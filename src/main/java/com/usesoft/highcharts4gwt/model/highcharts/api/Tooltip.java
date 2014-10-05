@@ -17,6 +17,10 @@ public interface Tooltip {
 
     Tooltip borderWidth(Number borderWidth);
 
+    String dateTimeLabelFormats();
+
+    Tooltip dateTimeLabelFormats(String dateTimeLabelFormats);
+
     boolean enabled();
 
     Tooltip enabled(boolean enabled);

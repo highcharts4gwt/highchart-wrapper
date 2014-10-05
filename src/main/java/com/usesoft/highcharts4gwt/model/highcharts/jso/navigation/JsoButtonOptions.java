@@ -117,6 +117,19 @@ public class JsoButtonOptions
     }-*/
     ;
 
+    public final native String theme()
+        throws RuntimeException /*-{
+        return this["theme"] = (this["theme"] || "");
+    }-*/
+    ;
+
+    public final native JsoButtonOptions theme(String theme)
+        throws RuntimeException /*-{
+        this["theme"] = theme;
+        return this;
+    }-*/
+    ;
+
     public final native String verticalAlign()
         throws RuntimeException /*-{
         return this["verticalAlign"] = (this["verticalAlign"] || "top");

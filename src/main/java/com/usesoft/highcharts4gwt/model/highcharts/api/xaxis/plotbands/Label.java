@@ -13,6 +13,10 @@ public interface Label {
 
     Label rotation(Number rotation);
 
+    String style();
+
+    Label style(String style);
+
     String text();
 
     Label text(String text);

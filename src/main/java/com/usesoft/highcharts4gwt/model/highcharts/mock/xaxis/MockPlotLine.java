@@ -9,6 +9,7 @@ public class MockPlotLine
 {
 
     private String dashStyle;
+    private String events;
     private String id;
     private Label label;
     private Number value;
@@ -21,6 +22,15 @@ public class MockPlotLine
 
     public MockPlotLine dashStyle(String dashStyle) {
         this.dashStyle = dashStyle;
+        return this;
+    }
+
+    public String events() {
+        return events;
+    }
+
+    public MockPlotLine events(String events) {
+        this.events = events;
         return this;
     }
 

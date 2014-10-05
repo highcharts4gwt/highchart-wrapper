@@ -9,6 +9,7 @@ public class MockCredits
 
     private boolean enabled;
     private String href;
+    private String position;
     private String text;
 
     public boolean enabled() {
@@ -26,6 +27,15 @@ public class MockCredits
 
     public MockCredits href(String href) {
         this.href = href;
+        return this;
+    }
+
+    public String position() {
+        return position;
+    }
+
+    public MockCredits position(String position) {
+        this.position = position;
         return this;
     }
 

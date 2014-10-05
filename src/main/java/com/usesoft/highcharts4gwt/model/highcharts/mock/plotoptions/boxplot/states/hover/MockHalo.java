@@ -7,8 +7,18 @@ public class MockHalo
     implements Halo
 {
 
+    private String attributes;
     private Number opacity;
     private Number size;
+
+    public String attributes() {
+        return attributes;
+    }
+
+    public MockHalo attributes(String attributes) {
+        this.attributes = attributes;
+        return this;
+    }
 
     public Number opacity() {
         return opacity;

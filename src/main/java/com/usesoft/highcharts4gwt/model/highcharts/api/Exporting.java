@@ -10,6 +10,10 @@ public interface Exporting {
 
     Exporting buttons(Buttons buttons);
 
+    String chartOptions();
+
+    Exporting chartOptions(String chartOptions);
+
     boolean enabled();
 
     Exporting enabled(boolean enabled);
@@ -17,6 +21,10 @@ public interface Exporting {
     String filename();
 
     Exporting filename(String filename);
+
+    String formAttributes();
+
+    Exporting formAttributes(String formAttributes);
 
     Number scale();
 

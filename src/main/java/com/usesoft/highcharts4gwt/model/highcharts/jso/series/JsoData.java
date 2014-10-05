@@ -14,6 +14,19 @@ public class JsoData
     protected JsoData() {
     }
 
+    public final native String dataLabels()
+        throws RuntimeException /*-{
+        return this["dataLabels"] = (this["dataLabels"] || "null");
+    }-*/
+    ;
+
+    public final native JsoData dataLabels(String dataLabels)
+        throws RuntimeException /*-{
+        this["dataLabels"] = dataLabels;
+        return this;
+    }-*/
+    ;
+
     public final native String drilldown()
         throws RuntimeException /*-{
         return this["drilldown"] = (this["drilldown"] || "");

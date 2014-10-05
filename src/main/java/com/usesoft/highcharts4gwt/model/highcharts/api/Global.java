@@ -5,6 +5,10 @@ package com.usesoft.highcharts4gwt.model.highcharts.api;
 public interface Global {
 
 
+    String Date();
+
+    Global Date(String Date);
+
     String VMLRadialGradientURL();
 
     Global VMLRadialGradientURL(String VMLRadialGradientURL);

@@ -52,6 +52,19 @@ public class JsoTooltip
     }-*/
     ;
 
+    public final native String dateTimeLabelFormats()
+        throws RuntimeException /*-{
+        return this["dateTimeLabelFormats"] = (this["dateTimeLabelFormats"] || "");
+    }-*/
+    ;
+
+    public final native JsoTooltip dateTimeLabelFormats(String dateTimeLabelFormats)
+        throws RuntimeException /*-{
+        this["dateTimeLabelFormats"] = dateTimeLabelFormats;
+        return this;
+    }-*/
+    ;
+
     public final native boolean enabled()
         throws RuntimeException /*-{
         return this["enabled"] = (this["enabled"] || true);

@@ -60,6 +60,19 @@ public class JsoXAxis
     }-*/
     ;
 
+    public final native String dateTimeLabelFormats()
+        throws RuntimeException /*-{
+        return this["dateTimeLabelFormats"] = (this["dateTimeLabelFormats"] || "null");
+    }-*/
+    ;
+
+    public final native JsoXAxis dateTimeLabelFormats(String dateTimeLabelFormats)
+        throws RuntimeException /*-{
+        this["dateTimeLabelFormats"] = dateTimeLabelFormats;
+        return this;
+    }-*/
+    ;
+
     public final native boolean endOnTick()
         throws RuntimeException /*-{
         return this["endOnTick"] = (this["endOnTick"] || false);

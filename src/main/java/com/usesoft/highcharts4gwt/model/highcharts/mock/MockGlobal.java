@@ -7,10 +7,20 @@ public class MockGlobal
     implements Global
 {
 
+    private String Date;
     private String VMLRadialGradientURL;
     private String canvasToolsURL;
     private Number timezoneOffset;
     private boolean useUTC;
+
+    public String Date() {
+        return Date;
+    }
+
+    public MockGlobal Date(String Date) {
+        this.Date = Date;
+        return this;
+    }
 
     public String VMLRadialGradientURL() {
         return VMLRadialGradientURL;

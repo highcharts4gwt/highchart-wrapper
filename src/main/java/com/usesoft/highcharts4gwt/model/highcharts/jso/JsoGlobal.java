@@ -13,6 +13,19 @@ public class JsoGlobal
     protected JsoGlobal() {
     }
 
+    public final native String Date()
+        throws RuntimeException /*-{
+        return this["Date"] = (this["Date"] || "null");
+    }-*/
+    ;
+
+    public final native JsoGlobal Date(String Date)
+        throws RuntimeException /*-{
+        this["Date"] = Date;
+        return this;
+    }-*/
+    ;
+
     public final native String VMLRadialGradientURL()
         throws RuntimeException /*-{
         return this["VMLRadialGradientURL"] = (this["VMLRadialGradientURL"] || "http://code.highcharts.com/{version}/gfx/vml-radial-gradient.png");

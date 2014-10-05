@@ -15,6 +15,7 @@ public class MockButtonOptions
     private Number symbolX;
     private Number symbolY;
     private String text;
+    private String theme;
     private String verticalAlign;
     private Number width;
     private Number y;
@@ -88,6 +89,15 @@ public class MockButtonOptions
 
     public MockButtonOptions text(String text) {
         this.text = text;
+        return this;
+    }
+
+    public String theme() {
+        return theme;
+    }
+
+    public MockButtonOptions theme(String theme) {
+        this.theme = theme;
         return this;
     }
 

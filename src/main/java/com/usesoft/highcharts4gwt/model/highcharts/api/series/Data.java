@@ -6,6 +6,10 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.Marker;
 public interface Data {
 
 
+    String dataLabels();
+
+    Data dataLabels(String dataLabels);
+
     String drilldown();
 
     Data drilldown(String drilldown);

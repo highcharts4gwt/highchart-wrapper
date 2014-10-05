@@ -3,6 +3,7 @@ package com.usesoft.highcharts4gwt.model.highcharts.jso.plotoptions.pyramid.stat
 
 import com.google.gwt.core.client.JavaScriptObject;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.states.Hover;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.states.hover.Halo;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.states.hover.Marker;
 
 public class JsoHover
@@ -23,6 +24,19 @@ public class JsoHover
     public final native JsoHover enabled(boolean enabled)
         throws RuntimeException /*-{
         this["enabled"] = enabled;
+        return this;
+    }-*/
+    ;
+
+    public final native Halo halo()
+        throws RuntimeException /*-{
+        return this["halo"] = (this["halo"] || {});
+    }-*/
+    ;
+
+    public final native JsoHover halo(Halo halo)
+        throws RuntimeException /*-{
+        this["halo"] = halo;
         return this;
     }-*/
     ;

@@ -27,6 +27,19 @@ public class JsoExporting
     }-*/
     ;
 
+    public final native String chartOptions()
+        throws RuntimeException /*-{
+        return this["chartOptions"] = (this["chartOptions"] || "null");
+    }-*/
+    ;
+
+    public final native JsoExporting chartOptions(String chartOptions)
+        throws RuntimeException /*-{
+        this["chartOptions"] = chartOptions;
+        return this;
+    }-*/
+    ;
+
     public final native boolean enabled()
         throws RuntimeException /*-{
         return this["enabled"] = (this["enabled"] || true);
@@ -49,6 +62,19 @@ public class JsoExporting
     public final native JsoExporting filename(String filename)
         throws RuntimeException /*-{
         this["filename"] = filename;
+        return this;
+    }-*/
+    ;
+
+    public final native String formAttributes()
+        throws RuntimeException /*-{
+        return this["formAttributes"] = (this["formAttributes"] || "");
+    }-*/
+    ;
+
+    public final native JsoExporting formAttributes(String formAttributes)
+        throws RuntimeException /*-{
+        this["formAttributes"] = formAttributes;
         return this;
     }-*/
     ;

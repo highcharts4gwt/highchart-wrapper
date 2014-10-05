@@ -2,6 +2,7 @@
 package com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions.series.states;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.states.Hover;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.states.hover.Halo;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.states.hover.Marker;
 
 public class MockHover
@@ -9,6 +10,7 @@ public class MockHover
 {
 
     private boolean enabled;
+    private Halo halo;
     private Number lineWidth;
     private Number lineWidthPlus;
     private Marker marker;
@@ -19,6 +21,15 @@ public class MockHover
 
     public MockHover enabled(boolean enabled) {
         this.enabled = enabled;
+        return this;
+    }
+
+    public Halo halo() {
+        return halo;
+    }
+
+    public MockHover halo(Halo halo) {
+        this.halo = halo;
         return this;
     }
 

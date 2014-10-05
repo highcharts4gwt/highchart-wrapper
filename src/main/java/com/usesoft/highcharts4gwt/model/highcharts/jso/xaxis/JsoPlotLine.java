@@ -27,6 +27,19 @@ public class JsoPlotLine
     }-*/
     ;
 
+    public final native String events()
+        throws RuntimeException /*-{
+        return this["events"] = (this["events"] || "null");
+    }-*/
+    ;
+
+    public final native JsoPlotLine events(String events)
+        throws RuntimeException /*-{
+        this["events"] = events;
+        return this;
+    }-*/
+    ;
+
     public final native String id()
         throws RuntimeException /*-{
         return this["id"] = (this["id"] || "null");

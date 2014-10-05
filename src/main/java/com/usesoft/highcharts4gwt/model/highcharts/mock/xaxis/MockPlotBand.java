@@ -9,6 +9,7 @@ public class MockPlotBand
 {
 
     private Number borderWidth;
+    private String events;
     private Number from;
     private String id;
     private Label label;
@@ -21,6 +22,15 @@ public class MockPlotBand
 
     public MockPlotBand borderWidth(Number borderWidth) {
         this.borderWidth = borderWidth;
+        return this;
+    }
+
+    public String events() {
+        return events;
+    }
+
+    public MockPlotBand events(String events) {
+        this.events = events;
         return this;
     }
 

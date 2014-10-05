@@ -9,6 +9,7 @@ public class MockLabel
 
     private String align;
     private Number rotation;
+    private String style;
     private String text;
     private String textAlign;
     private boolean useHTML;
@@ -31,6 +32,15 @@ public class MockLabel
 
     public MockLabel rotation(Number rotation) {
         this.rotation = rotation;
+        return this;
+    }
+
+    public String style() {
+        return style;
+    }
+
+    public MockLabel style(String style) {
+        this.style = style;
         return this;
     }
 

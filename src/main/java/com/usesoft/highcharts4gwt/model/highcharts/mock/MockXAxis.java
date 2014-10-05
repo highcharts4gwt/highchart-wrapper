@@ -18,6 +18,7 @@ public class MockXAxis
     private boolean allowDecimals;
     private ArrayString categories;
     private Number ceiling;
+    private String dateTimeLabelFormats;
     private boolean endOnTick;
     private Events events;
     private Number floor;
@@ -85,6 +86,15 @@ public class MockXAxis
 
     public MockXAxis ceiling(Number ceiling) {
         this.ceiling = ceiling;
+        return this;
+    }
+
+    public String dateTimeLabelFormats() {
+        return dateTimeLabelFormats;
+    }
+
+    public MockXAxis dateTimeLabelFormats(String dateTimeLabelFormats) {
+        this.dateTimeLabelFormats = dateTimeLabelFormats;
         return this;
     }
 

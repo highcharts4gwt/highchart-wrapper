@@ -5,6 +5,10 @@ package com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.errorbar.sta
 public interface Halo {
 
 
+    String attributes();
+
+    Halo attributes(String attributes);
+
     Number opacity();
 
     Halo opacity(Number opacity);

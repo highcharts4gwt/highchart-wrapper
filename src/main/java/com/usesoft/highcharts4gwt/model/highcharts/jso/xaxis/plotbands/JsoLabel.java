@@ -39,6 +39,19 @@ public class JsoLabel
     }-*/
     ;
 
+    public final native String style()
+        throws RuntimeException /*-{
+        return this["style"] = (this["style"] || "null");
+    }-*/
+    ;
+
+    public final native JsoLabel style(String style)
+        throws RuntimeException /*-{
+        this["style"] = style;
+        return this;
+    }-*/
+    ;
+
     public final native String text()
         throws RuntimeException /*-{
         return this["text"] = (this["text"] || "null");

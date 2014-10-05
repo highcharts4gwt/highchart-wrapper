@@ -10,6 +10,10 @@ public interface PlotLine {
 
     PlotLine dashStyle(String dashStyle);
 
+    String events();
+
+    PlotLine events(String events);
+
     String id();
 
     PlotLine id(String id);

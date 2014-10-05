@@ -13,6 +13,19 @@ public class JsoHalo
     protected JsoHalo() {
     }
 
+    public final native String attributes()
+        throws RuntimeException /*-{
+        return this["attributes"] = (this["attributes"] || "");
+    }-*/
+    ;
+
+    public final native JsoHalo attributes(String attributes)
+        throws RuntimeException /*-{
+        this["attributes"] = attributes;
+        return this;
+    }-*/
+    ;
+
     public final native Number opacity()
         throws RuntimeException /*-{
         return this["opacity"] = (this["opacity"] || 0.25);

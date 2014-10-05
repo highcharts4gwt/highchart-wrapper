@@ -10,6 +10,10 @@ public interface PlotBand {
 
     PlotBand borderWidth(Number borderWidth);
 
+    String events();
+
+    PlotBand events(String events);
+
     Number from();
 
     PlotBand from(Number from);

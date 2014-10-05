@@ -13,6 +13,7 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.Legend;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Loading;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Navigation;
 import com.usesoft.highcharts4gwt.model.highcharts.api.NoData;
+import com.usesoft.highcharts4gwt.model.highcharts.api.Pane;
 import com.usesoft.highcharts4gwt.model.highcharts.api.PlotOptions;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Series;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Subtitle;
@@ -52,6 +53,10 @@ public interface ChartOptions {
 
     ChartOptions yAxis(YAxis yAxis);
 
+    Subtitle subtitle();
+
+    ChartOptions subtitle(Subtitle subtitle);
+
     Title title();
 
     ChartOptions title(Title title);
@@ -64,10 +69,6 @@ public interface ChartOptions {
 
     ChartOptions exporting(Exporting exporting);
 
-    Subtitle subtitle();
-
-    ChartOptions subtitle(Subtitle subtitle);
-
     Tooltip tooltip();
 
     ChartOptions tooltip(Tooltip tooltip);
@@ -75,6 +76,10 @@ public interface ChartOptions {
     NoData noData();
 
     ChartOptions noData(NoData noData);
+
+    Pane pane();
+
+    ChartOptions pane(Pane pane);
 
     Array<Series> series();
 

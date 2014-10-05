@@ -7,6 +7,7 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.DataLa
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Events;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Marker;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Point;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Tooltip;
 
 public class JsoSeries
     extends JavaScriptObject
@@ -312,6 +313,19 @@ public class JsoSeries
     public final native JsoSeries threshold(Number threshold)
         throws RuntimeException /*-{
         this["threshold"] = threshold;
+        return this;
+    }-*/
+    ;
+
+    public final native Tooltip tooltip()
+        throws RuntimeException /*-{
+        return this["tooltip"] = (this["tooltip"] || );
+    }-*/
+    ;
+
+    public final native JsoSeries tooltip(Tooltip tooltip)
+        throws RuntimeException /*-{
+        this["tooltip"] = tooltip;
         return this;
     }-*/
     ;

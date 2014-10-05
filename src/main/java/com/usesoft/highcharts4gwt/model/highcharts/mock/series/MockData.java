@@ -8,6 +8,7 @@ public class MockData
     implements Data
 {
 
+    private String dataLabels;
     private String drilldown;
     private String id;
     private boolean isIntermediateSum;
@@ -18,6 +19,15 @@ public class MockData
     private boolean sliced;
     private Number x;
     private Number y;
+
+    public String dataLabels() {
+        return dataLabels;
+    }
+
+    public MockData dataLabels(String dataLabels) {
+        this.dataLabels = dataLabels;
+        return this;
+    }
 
     public String drilldown() {
         return drilldown;
