@@ -16,13 +16,14 @@ public class JsoData
 
     public final native String dataLabels()
         throws RuntimeException /*-{
-        return this["dataLabels"] = (this["dataLabels"] || "null");
+        this["dataLabels"] = (this["dataLabels"] || "null");
+        return JSON.stringify(this["dataLabels"]);
     }-*/
     ;
 
     public final native JsoData dataLabels(String dataLabels)
         throws RuntimeException /*-{
-        this["dataLabels"] = dataLabels;
+        this["dataLabels"] = JSON.parse(dataLabels);
         return this;
     }-*/
     ;

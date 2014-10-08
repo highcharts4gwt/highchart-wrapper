@@ -29,13 +29,14 @@ public class JsoPlotBand
 
     public final native String events()
         throws RuntimeException /*-{
-        return this["events"] = (this["events"] || "null");
+        this["events"] = (this["events"] || "null");
+        return JSON.stringify(this["events"]);
     }-*/
     ;
 
     public final native JsoPlotBand events(String events)
         throws RuntimeException /*-{
-        this["events"] = events;
+        this["events"] = JSON.parse(events);
         return this;
     }-*/
     ;

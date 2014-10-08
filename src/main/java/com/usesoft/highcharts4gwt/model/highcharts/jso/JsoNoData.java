@@ -15,26 +15,28 @@ public class JsoNoData
 
     public final native String attr()
         throws RuntimeException /*-{
-        return this["attr"] = (this["attr"] || "null");
+        this["attr"] = (this["attr"] || "null");
+        return JSON.stringify(this["attr"]);
     }-*/
     ;
 
     public final native JsoNoData attr(String attr)
         throws RuntimeException /*-{
-        this["attr"] = attr;
+        this["attr"] = JSON.parse(attr);
         return this;
     }-*/
     ;
 
     public final native String position()
         throws RuntimeException /*-{
-        return this["position"] = (this["position"] || "{ "x": 0, "y": 0, "align": "center", "verticalAlign": "middle" }");
+        this["position"] = (this["position"] || "{ "x": 0, "y": 0, "align": "center", "verticalAlign": "middle" }");
+        return JSON.stringify(this["position"]);
     }-*/
     ;
 
     public final native JsoNoData position(String position)
         throws RuntimeException /*-{
-        this["position"] = position;
+        this["position"] = JSON.parse(position);
         return this;
     }-*/
     ;

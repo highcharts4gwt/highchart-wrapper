@@ -15,13 +15,14 @@ public class JsoGlobal
 
     public final native String Date()
         throws RuntimeException /*-{
-        return this["Date"] = (this["Date"] || "null");
+        this["Date"] = (this["Date"] || "null");
+        return JSON.stringify(this["Date"]);
     }-*/
     ;
 
     public final native JsoGlobal Date(String Date)
         throws RuntimeException /*-{
-        this["Date"] = Date;
+        this["Date"] = JSON.parse(Date);
         return this;
     }-*/
     ;

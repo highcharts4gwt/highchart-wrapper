@@ -41,13 +41,14 @@ public class JsoCredits
 
     public final native String position()
         throws RuntimeException /*-{
-        return this["position"] = (this["position"] || "null");
+        this["position"] = (this["position"] || "null");
+        return JSON.stringify(this["position"]);
     }-*/
     ;
 
     public final native JsoCredits position(String position)
         throws RuntimeException /*-{
-        this["position"] = position;
+        this["position"] = JSON.parse(position);
         return this;
     }-*/
     ;

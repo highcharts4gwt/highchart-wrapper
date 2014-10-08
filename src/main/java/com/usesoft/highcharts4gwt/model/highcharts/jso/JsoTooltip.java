@@ -54,13 +54,14 @@ public class JsoTooltip
 
     public final native String dateTimeLabelFormats()
         throws RuntimeException /*-{
-        return this["dateTimeLabelFormats"] = (this["dateTimeLabelFormats"] || "");
+        this["dateTimeLabelFormats"] = (this["dateTimeLabelFormats"] || "");
+        return JSON.stringify(this["dateTimeLabelFormats"]);
     }-*/
     ;
 
     public final native JsoTooltip dateTimeLabelFormats(String dateTimeLabelFormats)
         throws RuntimeException /*-{
-        this["dateTimeLabelFormats"] = dateTimeLabelFormats;
+        this["dateTimeLabelFormats"] = JSON.parse(dateTimeLabelFormats);
         return this;
     }-*/
     ;

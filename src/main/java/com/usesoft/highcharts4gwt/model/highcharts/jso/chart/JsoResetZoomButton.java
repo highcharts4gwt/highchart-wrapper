@@ -15,13 +15,14 @@ public class JsoResetZoomButton
 
     public final native String position()
         throws RuntimeException /*-{
-        return this["position"] = (this["position"] || "null");
+        this["position"] = (this["position"] || "null");
+        return JSON.stringify(this["position"]);
     }-*/
     ;
 
     public final native JsoResetZoomButton position(String position)
         throws RuntimeException /*-{
-        this["position"] = position;
+        this["position"] = JSON.parse(position);
         return this;
     }-*/
     ;
@@ -41,13 +42,14 @@ public class JsoResetZoomButton
 
     public final native String theme()
         throws RuntimeException /*-{
-        return this["theme"] = (this["theme"] || "null");
+        this["theme"] = (this["theme"] || "null");
+        return JSON.stringify(this["theme"]);
     }-*/
     ;
 
     public final native JsoResetZoomButton theme(String theme)
         throws RuntimeException /*-{
-        this["theme"] = theme;
+        this["theme"] = JSON.parse(theme);
         return this;
     }-*/
     ;

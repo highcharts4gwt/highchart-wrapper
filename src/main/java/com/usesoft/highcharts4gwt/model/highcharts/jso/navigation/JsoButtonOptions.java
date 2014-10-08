@@ -119,13 +119,14 @@ public class JsoButtonOptions
 
     public final native String theme()
         throws RuntimeException /*-{
-        return this["theme"] = (this["theme"] || "");
+        this["theme"] = (this["theme"] || "");
+        return JSON.stringify(this["theme"]);
     }-*/
     ;
 
     public final native JsoButtonOptions theme(String theme)
         throws RuntimeException /*-{
-        this["theme"] = theme;
+        this["theme"] = JSON.parse(theme);
         return this;
     }-*/
     ;

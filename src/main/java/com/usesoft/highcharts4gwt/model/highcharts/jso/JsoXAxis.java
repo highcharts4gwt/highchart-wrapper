@@ -62,13 +62,14 @@ public class JsoXAxis
 
     public final native String dateTimeLabelFormats()
         throws RuntimeException /*-{
-        return this["dateTimeLabelFormats"] = (this["dateTimeLabelFormats"] || "null");
+        this["dateTimeLabelFormats"] = (this["dateTimeLabelFormats"] || "null");
+        return JSON.stringify(this["dateTimeLabelFormats"]);
     }-*/
     ;
 
     public final native JsoXAxis dateTimeLabelFormats(String dateTimeLabelFormats)
         throws RuntimeException /*-{
-        this["dateTimeLabelFormats"] = dateTimeLabelFormats;
+        this["dateTimeLabelFormats"] = JSON.parse(dateTimeLabelFormats);
         return this;
     }-*/
     ;

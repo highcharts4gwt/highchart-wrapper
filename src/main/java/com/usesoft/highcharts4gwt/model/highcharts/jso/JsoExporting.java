@@ -29,13 +29,14 @@ public class JsoExporting
 
     public final native String chartOptions()
         throws RuntimeException /*-{
-        return this["chartOptions"] = (this["chartOptions"] || "null");
+        this["chartOptions"] = (this["chartOptions"] || "null");
+        return JSON.stringify(this["chartOptions"]);
     }-*/
     ;
 
     public final native JsoExporting chartOptions(String chartOptions)
         throws RuntimeException /*-{
-        this["chartOptions"] = chartOptions;
+        this["chartOptions"] = JSON.parse(chartOptions);
         return this;
     }-*/
     ;
@@ -68,13 +69,14 @@ public class JsoExporting
 
     public final native String formAttributes()
         throws RuntimeException /*-{
-        return this["formAttributes"] = (this["formAttributes"] || "");
+        this["formAttributes"] = (this["formAttributes"] || "");
+        return JSON.stringify(this["formAttributes"]);
     }-*/
     ;
 
     public final native JsoExporting formAttributes(String formAttributes)
         throws RuntimeException /*-{
-        this["formAttributes"] = formAttributes;
+        this["formAttributes"] = JSON.parse(formAttributes);
         return this;
     }-*/
     ;

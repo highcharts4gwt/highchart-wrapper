@@ -15,13 +15,14 @@ public class JsoHalo
 
     public final native String attributes()
         throws RuntimeException /*-{
-        return this["attributes"] = (this["attributes"] || "");
+        this["attributes"] = (this["attributes"] || "");
+        return JSON.stringify(this["attributes"]);
     }-*/
     ;
 
     public final native JsoHalo attributes(String attributes)
         throws RuntimeException /*-{
-        this["attributes"] = attributes;
+        this["attributes"] = JSON.parse(attributes);
         return this;
     }-*/
     ;

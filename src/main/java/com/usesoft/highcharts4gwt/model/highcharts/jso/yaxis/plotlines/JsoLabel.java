@@ -41,13 +41,14 @@ public class JsoLabel
 
     public final native String style()
         throws RuntimeException /*-{
-        return this["style"] = (this["style"] || "null");
+        this["style"] = (this["style"] || "null");
+        return JSON.stringify(this["style"]);
     }-*/
     ;
 
     public final native JsoLabel style(String style)
         throws RuntimeException /*-{
-        this["style"] = style;
+        this["style"] = JSON.parse(style);
         return this;
     }-*/
     ;

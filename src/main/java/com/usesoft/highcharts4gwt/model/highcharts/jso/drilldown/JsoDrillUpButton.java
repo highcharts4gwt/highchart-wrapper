@@ -15,13 +15,14 @@ public class JsoDrillUpButton
 
     public final native String position()
         throws RuntimeException /*-{
-        return this["position"] = (this["position"] || "");
+        this["position"] = (this["position"] || "");
+        return JSON.stringify(this["position"]);
     }-*/
     ;
 
     public final native JsoDrillUpButton position(String position)
         throws RuntimeException /*-{
-        this["position"] = position;
+        this["position"] = JSON.parse(position);
         return this;
     }-*/
     ;
@@ -41,13 +42,14 @@ public class JsoDrillUpButton
 
     public final native String theme()
         throws RuntimeException /*-{
-        return this["theme"] = (this["theme"] || "");
+        this["theme"] = (this["theme"] || "");
+        return JSON.stringify(this["theme"]);
     }-*/
     ;
 
     public final native JsoDrillUpButton theme(String theme)
         throws RuntimeException /*-{
-        this["theme"] = theme;
+        this["theme"] = JSON.parse(theme);
         return this;
     }-*/
     ;
