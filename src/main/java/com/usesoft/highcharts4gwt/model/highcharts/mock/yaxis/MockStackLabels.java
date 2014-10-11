@@ -11,6 +11,7 @@ public class MockStackLabels
     private boolean enabled;
     private String format;
     private Number rotation;
+    private String style;
     private String textAlign;
     private boolean useHTML;
     private String verticalAlign;
@@ -50,6 +51,15 @@ public class MockStackLabels
 
     public MockStackLabels rotation(Number rotation) {
         this.rotation = rotation;
+        return this;
+    }
+
+    public String style() {
+        return style;
+    }
+
+    public MockStackLabels style(String style) {
+        this.style = style;
         return this;
     }
 

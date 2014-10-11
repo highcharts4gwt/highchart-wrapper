@@ -16,7 +16,7 @@ public class JsoData
 
     public final native String dataLabels()
         throws RuntimeException /*-{
-        this["dataLabels"] = (this["dataLabels"] || "null");
+        this["dataLabels"] = (this["dataLabels"] || {});
         return JSON.stringify(this["dataLabels"]);
     }-*/
     ;

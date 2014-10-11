@@ -54,7 +54,7 @@ public class JsoTooltip
 
     public final native String dateTimeLabelFormats()
         throws RuntimeException /*-{
-        this["dateTimeLabelFormats"] = (this["dateTimeLabelFormats"] || "");
+        this["dateTimeLabelFormats"] = (this["dateTimeLabelFormats"] || JSON.parse(''));
         return JSON.stringify(this["dateTimeLabelFormats"]);
     }-*/
     ;
@@ -205,6 +205,20 @@ public class JsoTooltip
     public final native JsoTooltip snap(Number snap)
         throws RuntimeException /*-{
         this["snap"] = snap;
+        return this;
+    }-*/
+    ;
+
+    public final native String style()
+        throws RuntimeException /*-{
+        this["style"] = (this["style"] || {});
+        return JSON.stringify(this["style"]);
+    }-*/
+    ;
+
+    public final native JsoTooltip style(String style)
+        throws RuntimeException /*-{
+        this["style"] = JSON.parse(style);
         return this;
     }-*/
     ;

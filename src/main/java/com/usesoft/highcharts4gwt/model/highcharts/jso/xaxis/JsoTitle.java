@@ -78,6 +78,20 @@ public class JsoTitle
     }-*/
     ;
 
+    public final native String style()
+        throws RuntimeException /*-{
+        this["style"] = (this["style"] || JSON.parse('{ "color": "#707070", "fontWeight": "bold" }'));
+        return JSON.stringify(this["style"]);
+    }-*/
+    ;
+
+    public final native JsoTitle style(String style)
+        throws RuntimeException /*-{
+        this["style"] = JSON.parse(style);
+        return this;
+    }-*/
+    ;
+
     public final native String text()
         throws RuntimeException /*-{
         return this["text"] = (this["text"] || "null");

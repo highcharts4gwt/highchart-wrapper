@@ -7,7 +7,17 @@ public class MockTitle
     implements Title
 {
 
+    private String style;
     private String text;
+
+    public String style() {
+        return style;
+    }
+
+    public MockTitle style(String style) {
+        this.style = style;
+        return this;
+    }
 
     public String text() {
         return text;

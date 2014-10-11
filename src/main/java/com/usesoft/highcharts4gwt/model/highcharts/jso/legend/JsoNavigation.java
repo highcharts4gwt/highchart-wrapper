@@ -26,4 +26,18 @@ public class JsoNavigation
     }-*/
     ;
 
+    public final native String style()
+        throws RuntimeException /*-{
+        this["style"] = (this["style"] || {});
+        return JSON.stringify(this["style"]);
+    }-*/
+    ;
+
+    public final native JsoNavigation style(String style)
+        throws RuntimeException /*-{
+        this["style"] = JSON.parse(style);
+        return this;
+    }-*/
+    ;
+
 }

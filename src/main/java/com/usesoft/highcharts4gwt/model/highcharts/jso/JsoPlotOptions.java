@@ -148,7 +148,7 @@ public class JsoPlotOptions
 
     public final native String heatmap()
         throws RuntimeException /*-{
-        this["heatmap"] = (this["heatmap"] || "");
+        this["heatmap"] = (this["heatmap"] || JSON.parse(''));
         return JSON.stringify(this["heatmap"]);
     }-*/
     ;

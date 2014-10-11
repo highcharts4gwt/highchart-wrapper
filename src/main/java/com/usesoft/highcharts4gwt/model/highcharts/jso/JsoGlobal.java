@@ -15,7 +15,7 @@ public class JsoGlobal
 
     public final native String Date()
         throws RuntimeException /*-{
-        this["Date"] = (this["Date"] || "null");
+        this["Date"] = (this["Date"] || {});
         return JSON.stringify(this["Date"]);
     }-*/
     ;

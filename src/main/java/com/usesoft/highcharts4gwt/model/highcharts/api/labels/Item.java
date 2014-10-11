@@ -9,4 +9,8 @@ public interface Item {
 
     Item html(String html);
 
+    String style();
+
+    Item style(String style);
+
 }

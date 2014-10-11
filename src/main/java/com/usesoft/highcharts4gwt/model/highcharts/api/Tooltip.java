@@ -65,6 +65,10 @@ public interface Tooltip {
 
     Tooltip snap(Number snap);
 
+    String style();
+
+    Tooltip style(String style);
+
     boolean useHTML();
 
     Tooltip useHTML(boolean useHTML);

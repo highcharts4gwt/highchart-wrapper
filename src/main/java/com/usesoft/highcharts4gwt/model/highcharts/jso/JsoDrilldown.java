@@ -14,6 +14,34 @@ public class JsoDrilldown
     protected JsoDrilldown() {
     }
 
+    public final native String activeAxisLabelStyle()
+        throws RuntimeException /*-{
+        this["activeAxisLabelStyle"] = (this["activeAxisLabelStyle"] || {});
+        return JSON.stringify(this["activeAxisLabelStyle"]);
+    }-*/
+    ;
+
+    public final native JsoDrilldown activeAxisLabelStyle(String activeAxisLabelStyle)
+        throws RuntimeException /*-{
+        this["activeAxisLabelStyle"] = JSON.parse(activeAxisLabelStyle);
+        return this;
+    }-*/
+    ;
+
+    public final native String activeDataLabelStyle()
+        throws RuntimeException /*-{
+        this["activeDataLabelStyle"] = (this["activeDataLabelStyle"] || {});
+        return JSON.stringify(this["activeDataLabelStyle"]);
+    }-*/
+    ;
+
+    public final native JsoDrilldown activeDataLabelStyle(String activeDataLabelStyle)
+        throws RuntimeException /*-{
+        this["activeDataLabelStyle"] = JSON.parse(activeDataLabelStyle);
+        return this;
+    }-*/
+    ;
+
     public final native DrillUpButton drillUpButton()
         throws RuntimeException /*-{
         return this["drillUpButton"] = (this["drillUpButton"] || {});

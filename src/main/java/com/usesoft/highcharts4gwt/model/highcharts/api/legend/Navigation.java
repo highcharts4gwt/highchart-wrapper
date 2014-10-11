@@ -9,4 +9,8 @@ public interface Navigation {
 
     Navigation arrowSize(Number arrowSize);
 
+    String style();
+
+    Navigation style(String style);
+
 }

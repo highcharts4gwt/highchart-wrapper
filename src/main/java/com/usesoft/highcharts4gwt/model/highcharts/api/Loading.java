@@ -9,8 +9,16 @@ public interface Loading {
 
     Loading hideDuration(Number hideDuration);
 
+    String labelStyle();
+
+    Loading labelStyle(String labelStyle);
+
     Number showDuration();
 
     Loading showDuration(Number showDuration);
+
+    String style();
+
+    Loading style(String style);
 
 }

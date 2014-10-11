@@ -13,6 +13,10 @@ public interface Subtitle {
 
     Subtitle floating(boolean floating);
 
+    String style();
+
+    Subtitle style(String style);
+
     String text();
 
     Subtitle text(String text);

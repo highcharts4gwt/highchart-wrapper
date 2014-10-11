@@ -14,8 +14,11 @@ public class MockLegend
     private boolean enabled;
     private boolean floating;
     private Number itemDistance;
+    private String itemHiddenStyle;
+    private String itemHoverStyle;
     private Number itemMarginBottom;
     private Number itemMarginTop;
+    private String itemStyle;
     private Number itemWidth;
     private String labelFormat;
     private String layout;
@@ -26,6 +29,7 @@ public class MockLegend
     private Number padding;
     private boolean reversed;
     private boolean rtl;
+    private String style;
     private Number symbolHeight;
     private Number symbolPadding;
     private Number symbolRadius;
@@ -90,6 +94,24 @@ public class MockLegend
         return this;
     }
 
+    public String itemHiddenStyle() {
+        return itemHiddenStyle;
+    }
+
+    public MockLegend itemHiddenStyle(String itemHiddenStyle) {
+        this.itemHiddenStyle = itemHiddenStyle;
+        return this;
+    }
+
+    public String itemHoverStyle() {
+        return itemHoverStyle;
+    }
+
+    public MockLegend itemHoverStyle(String itemHoverStyle) {
+        this.itemHoverStyle = itemHoverStyle;
+        return this;
+    }
+
     public Number itemMarginBottom() {
         return itemMarginBottom;
     }
@@ -105,6 +127,15 @@ public class MockLegend
 
     public MockLegend itemMarginTop(Number itemMarginTop) {
         this.itemMarginTop = itemMarginTop;
+        return this;
+    }
+
+    public String itemStyle() {
+        return itemStyle;
+    }
+
+    public MockLegend itemStyle(String itemStyle) {
+        this.itemStyle = itemStyle;
         return this;
     }
 
@@ -195,6 +226,15 @@ public class MockLegend
 
     public MockLegend rtl(boolean rtl) {
         this.rtl = rtl;
+        return this;
+    }
+
+    public String style() {
+        return style;
+    }
+
+    public MockLegend style(String style) {
+        this.style = style;
         return this;
     }
 

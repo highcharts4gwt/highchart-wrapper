@@ -21,6 +21,10 @@ public interface StackLabels {
 
     StackLabels rotation(Number rotation);
 
+    String style();
+
+    StackLabels style(String style);
+
     String textAlign();
 
     StackLabels textAlign(String textAlign);

@@ -9,6 +9,7 @@ public class MockSubtitle
 
     private String align;
     private boolean floating;
+    private String style;
     private String text;
     private boolean useHTML;
     private String verticalAlign;
@@ -30,6 +31,15 @@ public class MockSubtitle
 
     public MockSubtitle floating(boolean floating) {
         this.floating = floating;
+        return this;
+    }
+
+    public String style() {
+        return style;
+    }
+
+    public MockSubtitle style(String style) {
+        this.style = style;
         return this;
     }
 

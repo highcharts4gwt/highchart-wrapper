@@ -29,7 +29,7 @@ public class JsoExporting
 
     public final native String chartOptions()
         throws RuntimeException /*-{
-        this["chartOptions"] = (this["chartOptions"] || "null");
+        this["chartOptions"] = (this["chartOptions"] || {});
         return JSON.stringify(this["chartOptions"]);
     }-*/
     ;
@@ -69,7 +69,7 @@ public class JsoExporting
 
     public final native String formAttributes()
         throws RuntimeException /*-{
-        this["formAttributes"] = (this["formAttributes"] || "");
+        this["formAttributes"] = (this["formAttributes"] || JSON.parse(''));
         return JSON.stringify(this["formAttributes"]);
     }-*/
     ;

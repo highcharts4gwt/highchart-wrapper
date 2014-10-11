@@ -29,7 +29,7 @@ public class JsoPlotBand
 
     public final native String events()
         throws RuntimeException /*-{
-        this["events"] = (this["events"] || "null");
+        this["events"] = (this["events"] || {});
         return JSON.stringify(this["events"]);
     }-*/
     ;

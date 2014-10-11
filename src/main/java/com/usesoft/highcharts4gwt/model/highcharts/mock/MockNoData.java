@@ -9,6 +9,7 @@ public class MockNoData
 
     private String attr;
     private String position;
+    private String style;
 
     public String attr() {
         return attr;
@@ -25,6 +26,15 @@ public class MockNoData
 
     public MockNoData position(String position) {
         this.position = position;
+        return this;
+    }
+
+    public String style() {
+        return style;
+    }
+
+    public MockNoData style(String style) {
+        this.style = style;
         return this;
     }
 

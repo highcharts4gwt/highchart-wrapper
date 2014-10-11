@@ -13,4 +13,8 @@ public interface NoData {
 
     NoData position(String position);
 
+    String style();
+
+    NoData style(String style);
+
 }

@@ -65,6 +65,20 @@ public class JsoStackLabels
     }-*/
     ;
 
+    public final native String style()
+        throws RuntimeException /*-{
+        this["style"] = (this["style"] || {});
+        return JSON.stringify(this["style"]);
+    }-*/
+    ;
+
+    public final native JsoStackLabels style(String style)
+        throws RuntimeException /*-{
+        this["style"] = JSON.parse(style);
+        return this;
+    }-*/
+    ;
+
     public final native String textAlign()
         throws RuntimeException /*-{
         return this["textAlign"] = (this["textAlign"] || "null");

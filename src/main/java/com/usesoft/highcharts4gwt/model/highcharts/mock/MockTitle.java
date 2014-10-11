@@ -10,6 +10,7 @@ public class MockTitle
     private String align;
     private boolean floating;
     private Number margin;
+    private String style;
     private String text;
     private boolean useHTML;
     private String verticalAlign;
@@ -40,6 +41,15 @@ public class MockTitle
 
     public MockTitle margin(Number margin) {
         this.margin = margin;
+        return this;
+    }
+
+    public String style() {
+        return style;
+    }
+
+    public MockTitle style(String style) {
+        this.style = style;
         return this;
     }
 

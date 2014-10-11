@@ -17,6 +17,10 @@ public interface Title {
 
     Title margin(Number margin);
 
+    String style();
+
+    Title style(String style);
+
     String text();
 
     Title text(String text);

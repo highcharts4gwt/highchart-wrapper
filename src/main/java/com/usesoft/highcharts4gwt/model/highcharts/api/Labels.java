@@ -11,4 +11,8 @@ public interface Labels {
 
     Labels items(Array<Item> items);
 
+    String style();
+
+    Labels style(String style);
+
 }

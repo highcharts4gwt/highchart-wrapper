@@ -10,6 +10,7 @@ public class MockCredits
     private boolean enabled;
     private String href;
     private String position;
+    private String style;
     private String text;
 
     public boolean enabled() {
@@ -36,6 +37,15 @@ public class MockCredits
 
     public MockCredits position(String position) {
         this.position = position;
+        return this;
+    }
+
+    public String style() {
+        return style;
+    }
+
+    public MockCredits style(String style) {
+        this.style = style;
         return this;
     }
 

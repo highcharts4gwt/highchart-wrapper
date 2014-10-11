@@ -17,6 +17,10 @@ public interface Credits {
 
     Credits position(String position);
 
+    String style();
+
+    Credits style(String style);
+
     String text();
 
     Credits text(String text);

@@ -15,7 +15,7 @@ public class JsoHalo
 
     public final native String attributes()
         throws RuntimeException /*-{
-        this["attributes"] = (this["attributes"] || "");
+        this["attributes"] = (this["attributes"] || JSON.parse(''));
         return JSON.stringify(this["attributes"]);
     }-*/
     ;

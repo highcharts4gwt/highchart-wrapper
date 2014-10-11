@@ -121,6 +121,10 @@ public interface Chart {
 
     Chart spacingTop(Number spacingTop);
 
+    String style();
+
+    Chart style(String style);
+
     String type();
 
     Chart type(String type);

@@ -16,6 +16,7 @@ public class MockLabels
     private Number rotation;
     private Number staggerLines;
     private Number step;
+    private String style;
     private boolean useHTML;
     private Number x;
     private Number y;
@@ -99,6 +100,15 @@ public class MockLabels
 
     public MockLabels step(Number step) {
         this.step = step;
+        return this;
+    }
+
+    public String style() {
+        return style;
+    }
+
+    public MockLabels style(String style) {
+        this.style = style;
         return this;
     }
 

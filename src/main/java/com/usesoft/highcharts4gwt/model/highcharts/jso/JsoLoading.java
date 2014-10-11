@@ -26,6 +26,20 @@ public class JsoLoading
     }-*/
     ;
 
+    public final native String labelStyle()
+        throws RuntimeException /*-{
+        this["labelStyle"] = (this["labelStyle"] || JSON.parse('{ "fontWeight": "bold", "position": "relative", "top": "45%" }'));
+        return JSON.stringify(this["labelStyle"]);
+    }-*/
+    ;
+
+    public final native JsoLoading labelStyle(String labelStyle)
+        throws RuntimeException /*-{
+        this["labelStyle"] = JSON.parse(labelStyle);
+        return this;
+    }-*/
+    ;
+
     public final native Number showDuration()
         throws RuntimeException /*-{
         return this["showDuration"] = (this["showDuration"] || 100.0);
@@ -35,6 +49,20 @@ public class JsoLoading
     public final native JsoLoading showDuration(Number showDuration)
         throws RuntimeException /*-{
         this["showDuration"] = showDuration;
+        return this;
+    }-*/
+    ;
+
+    public final native String style()
+        throws RuntimeException /*-{
+        this["style"] = (this["style"] || {});
+        return JSON.stringify(this["style"]);
+    }-*/
+    ;
+
+    public final native JsoLoading style(String style)
+        throws RuntimeException /*-{
+        this["style"] = JSON.parse(style);
         return this;
     }-*/
     ;

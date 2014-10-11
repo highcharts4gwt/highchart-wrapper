@@ -28,4 +28,18 @@ public class JsoLabels
     }-*/
     ;
 
+    public final native String style()
+        throws RuntimeException /*-{
+        this["style"] = (this["style"] || {});
+        return JSON.stringify(this["style"]);
+    }-*/
+    ;
+
+    public final native JsoLabels style(String style)
+        throws RuntimeException /*-{
+        this["style"] = JSON.parse(style);
+        return this;
+    }-*/
+    ;
+
 }

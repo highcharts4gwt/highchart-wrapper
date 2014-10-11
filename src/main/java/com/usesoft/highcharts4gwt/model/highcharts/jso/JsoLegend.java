@@ -92,6 +92,34 @@ public class JsoLegend
     }-*/
     ;
 
+    public final native String itemHiddenStyle()
+        throws RuntimeException /*-{
+        this["itemHiddenStyle"] = (this["itemHiddenStyle"] || {});
+        return JSON.stringify(this["itemHiddenStyle"]);
+    }-*/
+    ;
+
+    public final native JsoLegend itemHiddenStyle(String itemHiddenStyle)
+        throws RuntimeException /*-{
+        this["itemHiddenStyle"] = JSON.parse(itemHiddenStyle);
+        return this;
+    }-*/
+    ;
+
+    public final native String itemHoverStyle()
+        throws RuntimeException /*-{
+        this["itemHoverStyle"] = (this["itemHoverStyle"] || {});
+        return JSON.stringify(this["itemHoverStyle"]);
+    }-*/
+    ;
+
+    public final native JsoLegend itemHoverStyle(String itemHoverStyle)
+        throws RuntimeException /*-{
+        this["itemHoverStyle"] = JSON.parse(itemHoverStyle);
+        return this;
+    }-*/
+    ;
+
     public final native Number itemMarginBottom()
         throws RuntimeException /*-{
         return this["itemMarginBottom"] = (this["itemMarginBottom"] || 0.0);
@@ -114,6 +142,20 @@ public class JsoLegend
     public final native JsoLegend itemMarginTop(Number itemMarginTop)
         throws RuntimeException /*-{
         this["itemMarginTop"] = itemMarginTop;
+        return this;
+    }-*/
+    ;
+
+    public final native String itemStyle()
+        throws RuntimeException /*-{
+        this["itemStyle"] = (this["itemStyle"] || JSON.parse('{ "color": "#333333", "cursor": "pointer", "fontSize": "12px", "fontWeight": "bold" }'));
+        return JSON.stringify(this["itemStyle"]);
+    }-*/
+    ;
+
+    public final native JsoLegend itemStyle(String itemStyle)
+        throws RuntimeException /*-{
+        this["itemStyle"] = JSON.parse(itemStyle);
         return this;
     }-*/
     ;
@@ -244,6 +286,20 @@ public class JsoLegend
     public final native JsoLegend rtl(boolean rtl)
         throws RuntimeException /*-{
         this["rtl"] = rtl;
+        return this;
+    }-*/
+    ;
+
+    public final native String style()
+        throws RuntimeException /*-{
+        this["style"] = (this["style"] || {});
+        return JSON.stringify(this["style"]);
+    }-*/
+    ;
+
+    public final native JsoLegend style(String style)
+        throws RuntimeException /*-{
+        this["style"] = JSON.parse(style);
         return this;
     }-*/
     ;

@@ -8,6 +8,7 @@ public class MockItem
 {
 
     private String html;
+    private String style;
 
     public String html() {
         return html;
@@ -15,6 +16,15 @@ public class MockItem
 
     public MockItem html(String html) {
         this.html = html;
+        return this;
+    }
+
+    public String style() {
+        return style;
+    }
+
+    public MockItem style(String style) {
+        this.style = style;
         return this;
     }
 

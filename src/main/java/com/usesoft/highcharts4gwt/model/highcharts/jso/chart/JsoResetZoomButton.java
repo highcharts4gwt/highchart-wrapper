@@ -15,7 +15,7 @@ public class JsoResetZoomButton
 
     public final native String position()
         throws RuntimeException /*-{
-        this["position"] = (this["position"] || "null");
+        this["position"] = (this["position"] || {});
         return JSON.stringify(this["position"]);
     }-*/
     ;
@@ -42,7 +42,7 @@ public class JsoResetZoomButton
 
     public final native String theme()
         throws RuntimeException /*-{
-        this["theme"] = (this["theme"] || "null");
+        this["theme"] = (this["theme"] || {});
         return JSON.stringify(this["theme"]);
     }-*/
     ;

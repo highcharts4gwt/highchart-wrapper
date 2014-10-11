@@ -22,6 +22,7 @@ public class MockTooltip
     private String shape;
     private boolean shared;
     private Number snap;
+    private String style;
     private boolean useHTML;
     private Number valueDecimals;
     private String valuePrefix;
@@ -160,6 +161,15 @@ public class MockTooltip
 
     public MockTooltip snap(Number snap) {
         this.snap = snap;
+        return this;
+    }
+
+    public String style() {
+        return style;
+    }
+
+    public MockTooltip style(String style) {
+        this.style = style;
         return this;
     }
 

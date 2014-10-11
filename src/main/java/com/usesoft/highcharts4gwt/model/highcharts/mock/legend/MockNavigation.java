@@ -8,6 +8,7 @@ public class MockNavigation
 {
 
     private Number arrowSize;
+    private String style;
 
     public Number arrowSize() {
         return arrowSize;
@@ -15,6 +16,15 @@ public class MockNavigation
 
     public MockNavigation arrowSize(Number arrowSize) {
         this.arrowSize = arrowSize;
+        return this;
+    }
+
+    public String style() {
+        return style;
+    }
+
+    public MockNavigation style(String style) {
+        this.style = style;
         return this;
     }
 

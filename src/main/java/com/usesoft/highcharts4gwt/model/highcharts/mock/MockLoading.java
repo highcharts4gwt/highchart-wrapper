@@ -8,7 +8,9 @@ public class MockLoading
 {
 
     private Number hideDuration;
+    private String labelStyle;
     private Number showDuration;
+    private String style;
 
     public Number hideDuration() {
         return hideDuration;
@@ -19,12 +21,30 @@ public class MockLoading
         return this;
     }
 
+    public String labelStyle() {
+        return labelStyle;
+    }
+
+    public MockLoading labelStyle(String labelStyle) {
+        this.labelStyle = labelStyle;
+        return this;
+    }
+
     public Number showDuration() {
         return showDuration;
     }
 
     public MockLoading showDuration(Number showDuration) {
         this.showDuration = showDuration;
+        return this;
+    }
+
+    public String style() {
+        return style;
+    }
+
+    public MockLoading style(String style) {
+        this.style = style;
         return this;
     }
 

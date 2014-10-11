@@ -381,6 +381,20 @@ public class JsoChart
     }-*/
     ;
 
+    public final native String style()
+        throws RuntimeException /*-{
+        this["style"] = (this["style"] || {});
+        return JSON.stringify(this["style"]);
+    }-*/
+    ;
+
+    public final native JsoChart style(String style)
+        throws RuntimeException /*-{
+        this["style"] = JSON.parse(style);
+        return this;
+    }-*/
+    ;
+
     public final native String type()
         throws RuntimeException /*-{
         return this["type"] = (this["type"] || "line");

@@ -41,6 +41,10 @@ public interface Labels {
 
     Labels step(Number step);
 
+    String style();
+
+    Labels style(String style);
+
     boolean useHTML();
 
     Labels useHTML(boolean useHTML);

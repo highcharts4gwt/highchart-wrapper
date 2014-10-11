@@ -12,6 +12,7 @@ public class MockTitle
     private Number margin;
     private Number offset;
     private Number rotation;
+    private String style;
     private String text;
 
     public String align() {
@@ -56,6 +57,15 @@ public class MockTitle
 
     public MockTitle rotation(Number rotation) {
         this.rotation = rotation;
+        return this;
+    }
+
+    public String style() {
+        return style;
+    }
+
+    public MockTitle style(String style) {
+        this.style = style;
         return this;
     }
 

@@ -25,6 +25,10 @@ public interface Title {
 
     Title rotation(Number rotation);
 
+    String style();
+
+    Title style(String style);
+
     String text();
 
     Title text(String text);

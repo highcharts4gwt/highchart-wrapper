@@ -27,4 +27,46 @@ public class JsoNavigation
     }-*/
     ;
 
+    public final native String menuItemHoverStyle()
+        throws RuntimeException /*-{
+        this["menuItemHoverStyle"] = (this["menuItemHoverStyle"] || {});
+        return JSON.stringify(this["menuItemHoverStyle"]);
+    }-*/
+    ;
+
+    public final native JsoNavigation menuItemHoverStyle(String menuItemHoverStyle)
+        throws RuntimeException /*-{
+        this["menuItemHoverStyle"] = JSON.parse(menuItemHoverStyle);
+        return this;
+    }-*/
+    ;
+
+    public final native String menuItemStyle()
+        throws RuntimeException /*-{
+        this["menuItemStyle"] = (this["menuItemStyle"] || {});
+        return JSON.stringify(this["menuItemStyle"]);
+    }-*/
+    ;
+
+    public final native JsoNavigation menuItemStyle(String menuItemStyle)
+        throws RuntimeException /*-{
+        this["menuItemStyle"] = JSON.parse(menuItemStyle);
+        return this;
+    }-*/
+    ;
+
+    public final native String menuStyle()
+        throws RuntimeException /*-{
+        this["menuStyle"] = (this["menuStyle"] || {});
+        return JSON.stringify(this["menuStyle"]);
+    }-*/
+    ;
+
+    public final native JsoNavigation menuStyle(String menuStyle)
+        throws RuntimeException /*-{
+        this["menuStyle"] = JSON.parse(menuStyle);
+        return this;
+    }-*/
+    ;
+
 }

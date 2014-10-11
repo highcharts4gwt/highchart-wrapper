@@ -39,6 +39,7 @@ public class MockChart
     private Number spacingLeft;
     private Number spacingRight;
     private Number spacingTop;
+    private String style;
     private String type;
     private Number width;
     private String zoomType;
@@ -292,6 +293,15 @@ public class MockChart
 
     public MockChart spacingTop(Number spacingTop) {
         this.spacingTop = spacingTop;
+        return this;
+    }
+
+    public String style() {
+        return style;
+    }
+
+    public MockChart style(String style) {
+        this.style = style;
         return this;
     }
 

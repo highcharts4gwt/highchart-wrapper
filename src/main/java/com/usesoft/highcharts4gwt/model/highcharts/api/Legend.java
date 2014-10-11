@@ -30,6 +30,14 @@ public interface Legend {
 
     Legend itemDistance(Number itemDistance);
 
+    String itemHiddenStyle();
+
+    Legend itemHiddenStyle(String itemHiddenStyle);
+
+    String itemHoverStyle();
+
+    Legend itemHoverStyle(String itemHoverStyle);
+
     Number itemMarginBottom();
 
     Legend itemMarginBottom(Number itemMarginBottom);
@@ -37,6 +45,10 @@ public interface Legend {
     Number itemMarginTop();
 
     Legend itemMarginTop(Number itemMarginTop);
+
+    String itemStyle();
+
+    Legend itemStyle(String itemStyle);
 
     Number itemWidth();
 
@@ -77,6 +89,10 @@ public interface Legend {
     boolean rtl();
 
     Legend rtl(boolean rtl);
+
+    String style();
+
+    Legend style(String style);
 
     Number symbolHeight();
 

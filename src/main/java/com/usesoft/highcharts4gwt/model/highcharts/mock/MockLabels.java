@@ -10,6 +10,7 @@ public class MockLabels
 {
 
     private Array<Item> items;
+    private String style;
 
     public Array<Item> items() {
         return items;
@@ -17,6 +18,15 @@ public class MockLabels
 
     public MockLabels items(Array<Item> items) {
         this.items = items;
+        return this;
+    }
+
+    public String style() {
+        return style;
+    }
+
+    public MockLabels style(String style) {
+        this.style = style;
         return this;
     }
 
