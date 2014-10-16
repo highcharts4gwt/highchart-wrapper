@@ -15,8 +15,8 @@ public class MockDrillUpButton
         return position;
     }
 
-    public MockDrillUpButton position(String position) {
-        this.position = position;
+    public MockDrillUpButton position(String positionAsJsonString) {
+        this.position = positionAsJsonString;
         return this;
     }
 
@@ -33,8 +33,8 @@ public class MockDrillUpButton
         return theme;
     }
 
-    public MockDrillUpButton theme(String theme) {
-        this.theme = theme;
+    public MockDrillUpButton theme(String themeAsJsonString) {
+        this.theme = themeAsJsonString;
         return this;
     }
 

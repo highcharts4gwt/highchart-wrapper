@@ -21,9 +21,9 @@ public class JsoDrilldown
     }-*/
     ;
 
-    public final native JsoDrilldown activeAxisLabelStyle(String activeAxisLabelStyle)
+    public final native JsoDrilldown activeAxisLabelStyle(String activeAxisLabelStyleAsJsonString)
         throws RuntimeException /*-{
-        this["activeAxisLabelStyle"] = JSON.parse(activeAxisLabelStyle);
+        this["activeAxisLabelStyle"] = JSON.parse(activeAxisLabelStyleAsJsonString);
         return this;
     }-*/
     ;
@@ -35,9 +35,9 @@ public class JsoDrilldown
     }-*/
     ;
 
-    public final native JsoDrilldown activeDataLabelStyle(String activeDataLabelStyle)
+    public final native JsoDrilldown activeDataLabelStyle(String activeDataLabelStyleAsJsonString)
         throws RuntimeException /*-{
-        this["activeDataLabelStyle"] = JSON.parse(activeDataLabelStyle);
+        this["activeDataLabelStyle"] = JSON.parse(activeDataLabelStyleAsJsonString);
         return this;
     }-*/
     ;

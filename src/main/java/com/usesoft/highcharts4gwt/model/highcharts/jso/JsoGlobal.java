@@ -20,9 +20,9 @@ public class JsoGlobal
     }-*/
     ;
 
-    public final native JsoGlobal Date(String Date)
+    public final native JsoGlobal Date(String DateAsJsonString)
         throws RuntimeException /*-{
-        this["Date"] = JSON.parse(Date);
+        this["Date"] = JSON.parse(DateAsJsonString);
         return this;
     }-*/
     ;

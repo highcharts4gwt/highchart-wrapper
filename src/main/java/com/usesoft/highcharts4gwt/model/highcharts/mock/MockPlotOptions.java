@@ -126,8 +126,8 @@ public class MockPlotOptions
         return heatmap;
     }
 
-    public MockPlotOptions heatmap(String heatmap) {
-        this.heatmap = heatmap;
+    public MockPlotOptions heatmap(String heatmapAsJsonString) {
+        this.heatmap = heatmapAsJsonString;
         return this;
     }
 

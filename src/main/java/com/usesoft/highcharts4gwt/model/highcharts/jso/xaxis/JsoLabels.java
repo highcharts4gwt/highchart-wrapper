@@ -137,9 +137,9 @@ public class JsoLabels
     }-*/
     ;
 
-    public final native JsoLabels style(String style)
+    public final native JsoLabels style(String styleAsJsonString)
         throws RuntimeException /*-{
-        this["style"] = JSON.parse(style);
+        this["style"] = JSON.parse(styleAsJsonString);
         return this;
     }-*/
     ;

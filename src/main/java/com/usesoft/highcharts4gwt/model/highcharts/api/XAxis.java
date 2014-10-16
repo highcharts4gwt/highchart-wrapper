@@ -27,7 +27,7 @@ public interface XAxis {
 
     String dateTimeLabelFormats();
 
-    XAxis dateTimeLabelFormats(String dateTimeLabelFormats);
+    XAxis dateTimeLabelFormats(String dateTimeLabelFormatsAsJsonString);
 
     boolean endOnTick();
 

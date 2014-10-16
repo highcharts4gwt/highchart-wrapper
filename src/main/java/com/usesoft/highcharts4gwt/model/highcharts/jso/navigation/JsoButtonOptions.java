@@ -124,9 +124,9 @@ public class JsoButtonOptions
     }-*/
     ;
 
-    public final native JsoButtonOptions theme(String theme)
+    public final native JsoButtonOptions theme(String themeAsJsonString)
         throws RuntimeException /*-{
-        this["theme"] = JSON.parse(theme);
+        this["theme"] = JSON.parse(themeAsJsonString);
         return this;
     }-*/
     ;

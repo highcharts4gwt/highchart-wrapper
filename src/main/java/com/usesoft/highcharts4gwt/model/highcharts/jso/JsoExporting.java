@@ -34,9 +34,9 @@ public class JsoExporting
     }-*/
     ;
 
-    public final native JsoExporting chartOptions(String chartOptions)
+    public final native JsoExporting chartOptions(String chartOptionsAsJsonString)
         throws RuntimeException /*-{
-        this["chartOptions"] = JSON.parse(chartOptions);
+        this["chartOptions"] = JSON.parse(chartOptionsAsJsonString);
         return this;
     }-*/
     ;
@@ -74,9 +74,9 @@ public class JsoExporting
     }-*/
     ;
 
-    public final native JsoExporting formAttributes(String formAttributes)
+    public final native JsoExporting formAttributes(String formAttributesAsJsonString)
         throws RuntimeException /*-{
-        this["formAttributes"] = JSON.parse(formAttributes);
+        this["formAttributes"] = JSON.parse(formAttributesAsJsonString);
         return this;
     }-*/
     ;

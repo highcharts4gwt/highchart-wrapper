@@ -98,19 +98,6 @@ public class JsoChartOptions
     }-*/
     ;
 
-    public final native XAxis xAxis()
-        throws RuntimeException /*-{
-        return this["xAxis"] = (this["xAxis"] || {});
-    }-*/
-    ;
-
-    public final native JsoChartOptions xAxis(XAxis xAxis)
-        throws RuntimeException /*-{
-        this["xAxis"] = xAxis;
-        return this;
-    }-*/
-    ;
-
     public final native YAxis yAxis()
         throws RuntimeException /*-{
         return this["yAxis"] = (this["yAxis"] || {});
@@ -120,6 +107,19 @@ public class JsoChartOptions
     public final native JsoChartOptions yAxis(YAxis yAxis)
         throws RuntimeException /*-{
         this["yAxis"] = yAxis;
+        return this;
+    }-*/
+    ;
+
+    public final native XAxis xAxis()
+        throws RuntimeException /*-{
+        return this["xAxis"] = (this["xAxis"] || {});
+    }-*/
+    ;
+
+    public final native JsoChartOptions xAxis(XAxis xAxis)
+        throws RuntimeException /*-{
+        this["xAxis"] = xAxis;
         return this;
     }-*/
     ;

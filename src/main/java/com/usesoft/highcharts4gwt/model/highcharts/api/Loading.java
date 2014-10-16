@@ -11,7 +11,7 @@ public interface Loading {
 
     String labelStyle();
 
-    Loading labelStyle(String labelStyle);
+    Loading labelStyle(String labelStyleAsJsonString);
 
     Number showDuration();
 
@@ -19,6 +19,6 @@ public interface Loading {
 
     String style();
 
-    Loading style(String style);
+    Loading style(String styleAsJsonString);
 
 }

@@ -26,8 +26,8 @@ public class MockNavigation
         return menuItemHoverStyle;
     }
 
-    public MockNavigation menuItemHoverStyle(String menuItemHoverStyle) {
-        this.menuItemHoverStyle = menuItemHoverStyle;
+    public MockNavigation menuItemHoverStyle(String menuItemHoverStyleAsJsonString) {
+        this.menuItemHoverStyle = menuItemHoverStyleAsJsonString;
         return this;
     }
 
@@ -35,8 +35,8 @@ public class MockNavigation
         return menuItemStyle;
     }
 
-    public MockNavigation menuItemStyle(String menuItemStyle) {
-        this.menuItemStyle = menuItemStyle;
+    public MockNavigation menuItemStyle(String menuItemStyleAsJsonString) {
+        this.menuItemStyle = menuItemStyleAsJsonString;
         return this;
     }
 
@@ -44,8 +44,8 @@ public class MockNavigation
         return menuStyle;
     }
 
-    public MockNavigation menuStyle(String menuStyle) {
-        this.menuStyle = menuStyle;
+    public MockNavigation menuStyle(String menuStyleAsJsonString) {
+        this.menuStyle = menuStyleAsJsonString;
         return this;
     }
 

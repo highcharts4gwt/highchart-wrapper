@@ -60,8 +60,8 @@ public class MockTooltip
         return dateTimeLabelFormats;
     }
 
-    public MockTooltip dateTimeLabelFormats(String dateTimeLabelFormats) {
-        this.dateTimeLabelFormats = dateTimeLabelFormats;
+    public MockTooltip dateTimeLabelFormats(String dateTimeLabelFormatsAsJsonString) {
+        this.dateTimeLabelFormats = dateTimeLabelFormatsAsJsonString;
         return this;
     }
 
@@ -168,8 +168,8 @@ public class MockTooltip
         return style;
     }
 
-    public MockTooltip style(String style) {
-        this.style = style;
+    public MockTooltip style(String styleAsJsonString) {
+        this.style = styleAsJsonString;
         return this;
     }
 

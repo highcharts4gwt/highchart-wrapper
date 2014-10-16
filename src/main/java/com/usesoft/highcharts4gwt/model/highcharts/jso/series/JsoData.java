@@ -21,9 +21,9 @@ public class JsoData
     }-*/
     ;
 
-    public final native JsoData dataLabels(String dataLabels)
+    public final native JsoData dataLabels(String dataLabelsAsJsonString)
         throws RuntimeException /*-{
-        this["dataLabels"] = JSON.parse(dataLabels);
+        this["dataLabels"] = JSON.parse(dataLabelsAsJsonString);
         return this;
     }-*/
     ;

@@ -32,11 +32,11 @@ public interface Legend {
 
     String itemHiddenStyle();
 
-    Legend itemHiddenStyle(String itemHiddenStyle);
+    Legend itemHiddenStyle(String itemHiddenStyleAsJsonString);
 
     String itemHoverStyle();
 
-    Legend itemHoverStyle(String itemHoverStyle);
+    Legend itemHoverStyle(String itemHoverStyleAsJsonString);
 
     Number itemMarginBottom();
 
@@ -48,7 +48,7 @@ public interface Legend {
 
     String itemStyle();
 
-    Legend itemStyle(String itemStyle);
+    Legend itemStyle(String itemStyleAsJsonString);
 
     Number itemWidth();
 
@@ -92,7 +92,7 @@ public interface Legend {
 
     String style();
 
-    Legend style(String style);
+    Legend style(String styleAsJsonString);
 
     Number symbolHeight();
 

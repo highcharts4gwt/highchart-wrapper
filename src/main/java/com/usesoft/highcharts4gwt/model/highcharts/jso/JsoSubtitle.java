@@ -46,9 +46,9 @@ public class JsoSubtitle
     }-*/
     ;
 
-    public final native JsoSubtitle style(String style)
+    public final native JsoSubtitle style(String styleAsJsonString)
         throws RuntimeException /*-{
-        this["style"] = JSON.parse(style);
+        this["style"] = JSON.parse(styleAsJsonString);
         return this;
     }-*/
     ;

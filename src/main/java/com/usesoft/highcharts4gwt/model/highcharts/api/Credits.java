@@ -15,11 +15,11 @@ public interface Credits {
 
     String position();
 
-    Credits position(String position);
+    Credits position(String positionAsJsonString);
 
     String style();
 
-    Credits style(String style);
+    Credits style(String styleAsJsonString);
 
     String text();
 

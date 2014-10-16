@@ -24,8 +24,8 @@ public class MockData
         return dataLabels;
     }
 
-    public MockData dataLabels(String dataLabels) {
-        this.dataLabels = dataLabels;
+    public MockData dataLabels(String dataLabelsAsJsonString) {
+        this.dataLabels = dataLabelsAsJsonString;
         return this;
     }
 

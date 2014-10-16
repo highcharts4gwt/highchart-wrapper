@@ -29,8 +29,8 @@ public class MockPlotLine
         return events;
     }
 
-    public MockPlotLine events(String events) {
-        this.events = events;
+    public MockPlotLine events(String eventsAsJsonString) {
+        this.events = eventsAsJsonString;
         return this;
     }
 

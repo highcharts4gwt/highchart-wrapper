@@ -7,7 +7,7 @@ public interface DrillUpButton {
 
     String position();
 
-    DrillUpButton position(String position);
+    DrillUpButton position(String positionAsJsonString);
 
     String relativeTo();
 
@@ -15,6 +15,6 @@ public interface DrillUpButton {
 
     String theme();
 
-    DrillUpButton theme(String theme);
+    DrillUpButton theme(String themeAsJsonString);
 
 }

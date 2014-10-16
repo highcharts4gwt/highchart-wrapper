@@ -99,9 +99,9 @@ public class JsoLegend
     }-*/
     ;
 
-    public final native JsoLegend itemHiddenStyle(String itemHiddenStyle)
+    public final native JsoLegend itemHiddenStyle(String itemHiddenStyleAsJsonString)
         throws RuntimeException /*-{
-        this["itemHiddenStyle"] = JSON.parse(itemHiddenStyle);
+        this["itemHiddenStyle"] = JSON.parse(itemHiddenStyleAsJsonString);
         return this;
     }-*/
     ;
@@ -113,9 +113,9 @@ public class JsoLegend
     }-*/
     ;
 
-    public final native JsoLegend itemHoverStyle(String itemHoverStyle)
+    public final native JsoLegend itemHoverStyle(String itemHoverStyleAsJsonString)
         throws RuntimeException /*-{
-        this["itemHoverStyle"] = JSON.parse(itemHoverStyle);
+        this["itemHoverStyle"] = JSON.parse(itemHoverStyleAsJsonString);
         return this;
     }-*/
     ;
@@ -153,9 +153,9 @@ public class JsoLegend
     }-*/
     ;
 
-    public final native JsoLegend itemStyle(String itemStyle)
+    public final native JsoLegend itemStyle(String itemStyleAsJsonString)
         throws RuntimeException /*-{
-        this["itemStyle"] = JSON.parse(itemStyle);
+        this["itemStyle"] = JSON.parse(itemStyleAsJsonString);
         return this;
     }-*/
     ;
@@ -297,9 +297,9 @@ public class JsoLegend
     }-*/
     ;
 
-    public final native JsoLegend style(String style)
+    public final native JsoLegend style(String styleAsJsonString)
         throws RuntimeException /*-{
-        this["style"] = JSON.parse(style);
+        this["style"] = JSON.parse(styleAsJsonString);
         return this;
     }-*/
     ;

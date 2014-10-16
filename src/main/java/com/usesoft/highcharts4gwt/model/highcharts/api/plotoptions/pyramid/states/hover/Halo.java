@@ -7,7 +7,7 @@ public interface Halo {
 
     String attributes();
 
-    Halo attributes(String attributes);
+    Halo attributes(String attributesAsJsonString);
 
     Number opacity();
 

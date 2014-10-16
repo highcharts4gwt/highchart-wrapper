@@ -38,8 +38,8 @@ public class MockSubtitle
         return style;
     }
 
-    public MockSubtitle style(String style) {
-        this.style = style;
+    public MockSubtitle style(String styleAsJsonString) {
+        this.style = styleAsJsonString;
         return this;
     }
 

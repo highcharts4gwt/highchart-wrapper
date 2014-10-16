@@ -15,7 +15,7 @@ public interface Label {
 
     String style();
 
-    Label style(String style);
+    Label style(String styleAsJsonString);
 
     String text();
 

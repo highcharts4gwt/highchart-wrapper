@@ -7,14 +7,14 @@ public interface NoData {
 
     String attr();
 
-    NoData attr(String attr);
+    NoData attr(String attrAsJsonString);
 
     String position();
 
-    NoData position(String position);
+    NoData position(String positionAsJsonString);
 
     String style();
 
-    NoData style(String style);
+    NoData style(String styleAsJsonString);
 
 }

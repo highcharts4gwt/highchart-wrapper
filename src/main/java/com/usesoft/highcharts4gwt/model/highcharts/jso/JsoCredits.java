@@ -46,9 +46,9 @@ public class JsoCredits
     }-*/
     ;
 
-    public final native JsoCredits position(String position)
+    public final native JsoCredits position(String positionAsJsonString)
         throws RuntimeException /*-{
-        this["position"] = JSON.parse(position);
+        this["position"] = JSON.parse(positionAsJsonString);
         return this;
     }-*/
     ;
@@ -60,9 +60,9 @@ public class JsoCredits
     }-*/
     ;
 
-    public final native JsoCredits style(String style)
+    public final native JsoCredits style(String styleAsJsonString)
         throws RuntimeException /*-{
-        this["style"] = JSON.parse(style);
+        this["style"] = JSON.parse(styleAsJsonString);
         return this;
     }-*/
     ;

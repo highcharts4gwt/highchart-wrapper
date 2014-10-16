@@ -11,6 +11,6 @@ public interface Item {
 
     String style();
 
-    Item style(String style);
+    Item style(String styleAsJsonString);
 
 }

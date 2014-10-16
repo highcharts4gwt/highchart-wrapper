@@ -17,8 +17,8 @@ public class MockGlobal
         return Date;
     }
 
-    public MockGlobal Date(String Date) {
-        this.Date = Date;
+    public MockGlobal Date(String DateAsJsonString) {
+        this.Date = DateAsJsonString;
         return this;
     }
 

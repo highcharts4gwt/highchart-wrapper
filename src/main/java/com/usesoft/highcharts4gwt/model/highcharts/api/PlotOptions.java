@@ -59,7 +59,7 @@ public interface PlotOptions {
 
     String heatmap();
 
-    PlotOptions heatmap(String heatmap);
+    PlotOptions heatmap(String heatmapAsJsonString);
 
     Line line();
 

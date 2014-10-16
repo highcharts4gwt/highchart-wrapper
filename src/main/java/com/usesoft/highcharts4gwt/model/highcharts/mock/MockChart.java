@@ -300,8 +300,8 @@ public class MockChart
         return style;
     }
 
-    public MockChart style(String style) {
-        this.style = style;
+    public MockChart style(String styleAsJsonString) {
+        this.style = styleAsJsonString;
         return this;
     }
 

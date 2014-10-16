@@ -12,7 +12,7 @@ public interface PlotBand {
 
     String events();
 
-    PlotBand events(String events);
+    PlotBand events(String eventsAsJsonString);
 
     Number from();
 

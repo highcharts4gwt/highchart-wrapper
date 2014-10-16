@@ -12,7 +12,7 @@ public interface PlotLine {
 
     String events();
 
-    PlotLine events(String events);
+    PlotLine events(String eventsAsJsonString);
 
     String id();
 

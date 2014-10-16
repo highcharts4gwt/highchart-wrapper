@@ -12,7 +12,7 @@ public interface Exporting {
 
     String chartOptions();
 
-    Exporting chartOptions(String chartOptions);
+    Exporting chartOptions(String chartOptionsAsJsonString);
 
     boolean enabled();
 
@@ -24,7 +24,7 @@ public interface Exporting {
 
     String formAttributes();
 
-    Exporting formAttributes(String formAttributes);
+    Exporting formAttributes(String formAttributesAsJsonString);
 
     Number scale();
 

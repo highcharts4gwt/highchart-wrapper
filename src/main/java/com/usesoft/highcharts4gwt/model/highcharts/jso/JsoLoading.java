@@ -33,9 +33,9 @@ public class JsoLoading
     }-*/
     ;
 
-    public final native JsoLoading labelStyle(String labelStyle)
+    public final native JsoLoading labelStyle(String labelStyleAsJsonString)
         throws RuntimeException /*-{
-        this["labelStyle"] = JSON.parse(labelStyle);
+        this["labelStyle"] = JSON.parse(labelStyleAsJsonString);
         return this;
     }-*/
     ;
@@ -60,9 +60,9 @@ public class JsoLoading
     }-*/
     ;
 
-    public final native JsoLoading style(String style)
+    public final native JsoLoading style(String styleAsJsonString)
         throws RuntimeException /*-{
-        this["style"] = JSON.parse(style);
+        this["style"] = JSON.parse(styleAsJsonString);
         return this;
     }-*/
     ;

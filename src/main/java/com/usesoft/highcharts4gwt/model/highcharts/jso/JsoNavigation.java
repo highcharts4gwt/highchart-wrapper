@@ -34,9 +34,9 @@ public class JsoNavigation
     }-*/
     ;
 
-    public final native JsoNavigation menuItemHoverStyle(String menuItemHoverStyle)
+    public final native JsoNavigation menuItemHoverStyle(String menuItemHoverStyleAsJsonString)
         throws RuntimeException /*-{
-        this["menuItemHoverStyle"] = JSON.parse(menuItemHoverStyle);
+        this["menuItemHoverStyle"] = JSON.parse(menuItemHoverStyleAsJsonString);
         return this;
     }-*/
     ;
@@ -48,9 +48,9 @@ public class JsoNavigation
     }-*/
     ;
 
-    public final native JsoNavigation menuItemStyle(String menuItemStyle)
+    public final native JsoNavigation menuItemStyle(String menuItemStyleAsJsonString)
         throws RuntimeException /*-{
-        this["menuItemStyle"] = JSON.parse(menuItemStyle);
+        this["menuItemStyle"] = JSON.parse(menuItemStyleAsJsonString);
         return this;
     }-*/
     ;
@@ -62,9 +62,9 @@ public class JsoNavigation
     }-*/
     ;
 
-    public final native JsoNavigation menuStyle(String menuStyle)
+    public final native JsoNavigation menuStyle(String menuStyleAsJsonString)
         throws RuntimeException /*-{
-        this["menuStyle"] = JSON.parse(menuStyle);
+        this["menuStyle"] = JSON.parse(menuStyleAsJsonString);
         return this;
     }-*/
     ;

@@ -35,8 +35,8 @@ public class MockCredits
         return position;
     }
 
-    public MockCredits position(String position) {
-        this.position = position;
+    public MockCredits position(String positionAsJsonString) {
+        this.position = positionAsJsonString;
         return this;
     }
 
@@ -44,8 +44,8 @@ public class MockCredits
         return style;
     }
 
-    public MockCredits style(String style) {
-        this.style = style;
+    public MockCredits style(String styleAsJsonString) {
+        this.style = styleAsJsonString;
         return this;
     }
 

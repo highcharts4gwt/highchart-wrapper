@@ -13,6 +13,6 @@ public interface Labels {
 
     String style();
 
-    Labels style(String style);
+    Labels style(String styleAsJsonString);
 
 }

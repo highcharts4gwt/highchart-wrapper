@@ -7,7 +7,7 @@ public interface Global {
 
     String Date();
 
-    Global Date(String Date);
+    Global Date(String DateAsJsonString);
 
     String VMLRadialGradientURL();
 

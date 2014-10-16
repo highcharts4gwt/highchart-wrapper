@@ -388,9 +388,9 @@ public class JsoChart
     }-*/
     ;
 
-    public final native JsoChart style(String style)
+    public final native JsoChart style(String styleAsJsonString)
         throws RuntimeException /*-{
-        this["style"] = JSON.parse(style);
+        this["style"] = JSON.parse(styleAsJsonString);
         return this;
     }-*/
     ;

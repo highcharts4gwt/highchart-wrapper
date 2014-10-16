@@ -23,8 +23,8 @@ public class MockNavigation
         return style;
     }
 
-    public MockNavigation style(String style) {
-        this.style = style;
+    public MockNavigation style(String styleAsJsonString) {
+        this.style = styleAsJsonString;
         return this;
     }
 

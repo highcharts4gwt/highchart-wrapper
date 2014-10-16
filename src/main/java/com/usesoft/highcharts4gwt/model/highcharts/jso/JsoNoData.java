@@ -20,9 +20,9 @@ public class JsoNoData
     }-*/
     ;
 
-    public final native JsoNoData attr(String attr)
+    public final native JsoNoData attr(String attrAsJsonString)
         throws RuntimeException /*-{
-        this["attr"] = JSON.parse(attr);
+        this["attr"] = JSON.parse(attrAsJsonString);
         return this;
     }-*/
     ;
@@ -34,9 +34,9 @@ public class JsoNoData
     }-*/
     ;
 
-    public final native JsoNoData position(String position)
+    public final native JsoNoData position(String positionAsJsonString)
         throws RuntimeException /*-{
-        this["position"] = JSON.parse(position);
+        this["position"] = JSON.parse(positionAsJsonString);
         return this;
     }-*/
     ;
@@ -48,9 +48,9 @@ public class JsoNoData
     }-*/
     ;
 
-    public final native JsoNoData style(String style)
+    public final native JsoNoData style(String styleAsJsonString)
         throws RuntimeException /*-{
-        this["style"] = JSON.parse(style);
+        this["style"] = JSON.parse(styleAsJsonString);
         return this;
     }-*/
     ;

@@ -39,8 +39,8 @@ public class MockLabel
         return style;
     }
 
-    public MockLabel style(String style) {
-        this.style = style;
+    public MockLabel style(String styleAsJsonString) {
+        this.style = styleAsJsonString;
         return this;
     }
 

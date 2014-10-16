@@ -96,8 +96,8 @@ public class MockButtonOptions
         return theme;
     }
 
-    public MockButtonOptions theme(String theme) {
-        this.theme = theme;
+    public MockButtonOptions theme(String themeAsJsonString) {
+        this.theme = themeAsJsonString;
         return this;
     }
 

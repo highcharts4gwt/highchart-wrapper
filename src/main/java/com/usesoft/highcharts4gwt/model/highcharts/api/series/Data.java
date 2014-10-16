@@ -8,7 +8,7 @@ public interface Data {
 
     String dataLabels();
 
-    Data dataLabels(String dataLabels);
+    Data dataLabels(String dataLabelsAsJsonString);
 
     String drilldown();
 

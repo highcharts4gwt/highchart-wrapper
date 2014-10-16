@@ -45,13 +45,13 @@ public interface ChartOptions {
 
     ChartOptions plotOptions(PlotOptions plotOptions);
 
-    XAxis xAxis();
-
-    ChartOptions xAxis(XAxis xAxis);
-
     YAxis yAxis();
 
     ChartOptions yAxis(YAxis yAxis);
+
+    XAxis xAxis();
+
+    ChartOptions xAxis(XAxis xAxis);
 
     Navigation navigation();
 

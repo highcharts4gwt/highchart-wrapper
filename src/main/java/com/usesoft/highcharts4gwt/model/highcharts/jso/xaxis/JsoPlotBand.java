@@ -34,9 +34,9 @@ public class JsoPlotBand
     }-*/
     ;
 
-    public final native JsoPlotBand events(String events)
+    public final native JsoPlotBand events(String eventsAsJsonString)
         throws RuntimeException /*-{
-        this["events"] = JSON.parse(events);
+        this["events"] = JSON.parse(eventsAsJsonString);
         return this;
     }-*/
     ;

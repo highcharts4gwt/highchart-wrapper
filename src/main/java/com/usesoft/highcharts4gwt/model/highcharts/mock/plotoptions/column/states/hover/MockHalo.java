@@ -15,8 +15,8 @@ public class MockHalo
         return attributes;
     }
 
-    public MockHalo attributes(String attributes) {
-        this.attributes = attributes;
+    public MockHalo attributes(String attributesAsJsonString) {
+        this.attributes = attributesAsJsonString;
         return this;
     }
 

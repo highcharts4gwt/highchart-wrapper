@@ -153,9 +153,9 @@ public class JsoPlotOptions
     }-*/
     ;
 
-    public final native JsoPlotOptions heatmap(String heatmap)
+    public final native JsoPlotOptions heatmap(String heatmapAsJsonString)
         throws RuntimeException /*-{
-        this["heatmap"] = JSON.parse(heatmap);
+        this["heatmap"] = JSON.parse(heatmapAsJsonString);
         return this;
     }-*/
     ;

@@ -93,8 +93,8 @@ public class MockXAxis
         return dateTimeLabelFormats;
     }
 
-    public MockXAxis dateTimeLabelFormats(String dateTimeLabelFormats) {
-        this.dateTimeLabelFormats = dateTimeLabelFormats;
+    public MockXAxis dateTimeLabelFormats(String dateTimeLabelFormatsAsJsonString) {
+        this.dateTimeLabelFormats = dateTimeLabelFormatsAsJsonString;
         return this;
     }
 

@@ -39,7 +39,7 @@ public interface ButtonOptions {
 
     String theme();
 
-    ButtonOptions theme(String theme);
+    ButtonOptions theme(String themeAsJsonString);
 
     String verticalAlign();
 

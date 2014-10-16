@@ -23,8 +23,8 @@ public class MockItem
         return style;
     }
 
-    public MockItem style(String style) {
-        this.style = style;
+    public MockItem style(String styleAsJsonString) {
+        this.style = styleAsJsonString;
         return this;
     }
 

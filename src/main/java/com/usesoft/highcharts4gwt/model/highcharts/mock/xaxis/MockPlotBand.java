@@ -29,8 +29,8 @@ public class MockPlotBand
         return events;
     }
 
-    public MockPlotBand events(String events) {
-        this.events = events;
+    public MockPlotBand events(String eventsAsJsonString) {
+        this.events = eventsAsJsonString;
         return this;
     }
 

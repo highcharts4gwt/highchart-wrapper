@@ -33,8 +33,8 @@ public class MockExporting
         return chartOptions;
     }
 
-    public MockExporting chartOptions(String chartOptions) {
-        this.chartOptions = chartOptions;
+    public MockExporting chartOptions(String chartOptionsAsJsonString) {
+        this.chartOptions = chartOptionsAsJsonString;
         return this;
     }
 
@@ -60,8 +60,8 @@ public class MockExporting
         return formAttributes;
     }
 
-    public MockExporting formAttributes(String formAttributes) {
-        this.formAttributes = formAttributes;
+    public MockExporting formAttributes(String formAttributesAsJsonString) {
+        this.formAttributes = formAttributesAsJsonString;
         return this;
     }
 

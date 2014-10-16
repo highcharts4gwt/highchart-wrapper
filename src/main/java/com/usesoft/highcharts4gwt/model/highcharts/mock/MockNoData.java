@@ -15,8 +15,8 @@ public class MockNoData
         return attr;
     }
 
-    public MockNoData attr(String attr) {
-        this.attr = attr;
+    public MockNoData attr(String attrAsJsonString) {
+        this.attr = attrAsJsonString;
         return this;
     }
 
@@ -24,8 +24,8 @@ public class MockNoData
         return position;
     }
 
-    public MockNoData position(String position) {
-        this.position = position;
+    public MockNoData position(String positionAsJsonString) {
+        this.position = positionAsJsonString;
         return this;
     }
 
@@ -33,8 +33,8 @@ public class MockNoData
         return style;
     }
 
-    public MockNoData style(String style) {
-        this.style = style;
+    public MockNoData style(String styleAsJsonString) {
+        this.style = styleAsJsonString;
         return this;
     }
 

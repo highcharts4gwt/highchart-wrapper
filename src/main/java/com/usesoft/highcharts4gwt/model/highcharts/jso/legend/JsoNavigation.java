@@ -33,9 +33,9 @@ public class JsoNavigation
     }-*/
     ;
 
-    public final native JsoNavigation style(String style)
+    public final native JsoNavigation style(String styleAsJsonString)
         throws RuntimeException /*-{
-        this["style"] = JSON.parse(style);
+        this["style"] = JSON.parse(styleAsJsonString);
         return this;
     }-*/
     ;

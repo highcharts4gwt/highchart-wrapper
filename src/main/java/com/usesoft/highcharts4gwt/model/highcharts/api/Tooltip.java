@@ -19,7 +19,7 @@ public interface Tooltip {
 
     String dateTimeLabelFormats();
 
-    Tooltip dateTimeLabelFormats(String dateTimeLabelFormats);
+    Tooltip dateTimeLabelFormats(String dateTimeLabelFormatsAsJsonString);
 
     boolean enabled();
 
@@ -67,7 +67,7 @@ public interface Tooltip {
 
     String style();
 
-    Tooltip style(String style);
+    Tooltip style(String styleAsJsonString);
 
     boolean useHTML();
 

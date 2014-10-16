@@ -7,7 +7,7 @@ public interface ResetZoomButton {
 
     String position();
 
-    ResetZoomButton position(String position);
+    ResetZoomButton position(String positionAsJsonString);
 
     String relativeTo();
 
@@ -15,6 +15,6 @@ public interface ResetZoomButton {
 
     String theme();
 
-    ResetZoomButton theme(String theme);
+    ResetZoomButton theme(String themeAsJsonString);
 
 }

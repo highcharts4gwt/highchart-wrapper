@@ -64,8 +64,8 @@ public class MockTitle
         return style;
     }
 
-    public MockTitle style(String style) {
-        this.style = style;
+    public MockTitle style(String styleAsJsonString) {
+        this.style = styleAsJsonString;
         return this;
     }
 

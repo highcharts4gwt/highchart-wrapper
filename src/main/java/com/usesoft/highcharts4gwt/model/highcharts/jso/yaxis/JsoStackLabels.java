@@ -72,9 +72,9 @@ public class JsoStackLabels
     }-*/
     ;
 
-    public final native JsoStackLabels style(String style)
+    public final native JsoStackLabels style(String styleAsJsonString)
         throws RuntimeException /*-{
-        this["style"] = JSON.parse(style);
+        this["style"] = JSON.parse(styleAsJsonString);
         return this;
     }-*/
     ;

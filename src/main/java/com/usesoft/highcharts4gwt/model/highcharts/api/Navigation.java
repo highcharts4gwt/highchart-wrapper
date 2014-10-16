@@ -12,14 +12,14 @@ public interface Navigation {
 
     String menuItemHoverStyle();
 
-    Navigation menuItemHoverStyle(String menuItemHoverStyle);
+    Navigation menuItemHoverStyle(String menuItemHoverStyleAsJsonString);
 
     String menuItemStyle();
 
-    Navigation menuItemStyle(String menuItemStyle);
+    Navigation menuItemStyle(String menuItemStyleAsJsonString);
 
     String menuStyle();
 
-    Navigation menuStyle(String menuStyle);
+    Navigation menuStyle(String menuStyleAsJsonString);
 
 }

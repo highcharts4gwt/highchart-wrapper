@@ -46,9 +46,9 @@ public class JsoLabel
     }-*/
     ;
 
-    public final native JsoLabel style(String style)
+    public final native JsoLabel style(String styleAsJsonString)
         throws RuntimeException /*-{
-        this["style"] = JSON.parse(style);
+        this["style"] = JSON.parse(styleAsJsonString);
         return this;
     }-*/
     ;

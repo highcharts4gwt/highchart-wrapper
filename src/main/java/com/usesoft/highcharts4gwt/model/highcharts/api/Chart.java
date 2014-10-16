@@ -123,7 +123,7 @@ public interface Chart {
 
     String style();
 
-    Chart style(String style);
+    Chart style(String styleAsJsonString);
 
     String type();
 

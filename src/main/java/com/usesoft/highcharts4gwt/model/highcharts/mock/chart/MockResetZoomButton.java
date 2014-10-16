@@ -15,8 +15,8 @@ public class MockResetZoomButton
         return position;
     }
 
-    public MockResetZoomButton position(String position) {
-        this.position = position;
+    public MockResetZoomButton position(String positionAsJsonString) {
+        this.position = positionAsJsonString;
         return this;
     }
 
@@ -33,8 +33,8 @@ public class MockResetZoomButton
         return theme;
     }
 
-    public MockResetZoomButton theme(String theme) {
-        this.theme = theme;
+    public MockResetZoomButton theme(String themeAsJsonString) {
+        this.theme = themeAsJsonString;
         return this;
     }
 

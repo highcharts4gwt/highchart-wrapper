@@ -33,9 +33,9 @@ public class JsoItem
     }-*/
     ;
 
-    public final native JsoItem style(String style)
+    public final native JsoItem style(String styleAsJsonString)
         throws RuntimeException /*-{
-        this["style"] = JSON.parse(style);
+        this["style"] = JSON.parse(styleAsJsonString);
         return this;
     }-*/
     ;

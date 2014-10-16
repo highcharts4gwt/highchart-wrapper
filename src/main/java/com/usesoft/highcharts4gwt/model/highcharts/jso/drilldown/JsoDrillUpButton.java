@@ -20,9 +20,9 @@ public class JsoDrillUpButton
     }-*/
     ;
 
-    public final native JsoDrillUpButton position(String position)
+    public final native JsoDrillUpButton position(String positionAsJsonString)
         throws RuntimeException /*-{
-        this["position"] = JSON.parse(position);
+        this["position"] = JSON.parse(positionAsJsonString);
         return this;
     }-*/
     ;
@@ -47,9 +47,9 @@ public class JsoDrillUpButton
     }-*/
     ;
 
-    public final native JsoDrillUpButton theme(String theme)
+    public final native JsoDrillUpButton theme(String themeAsJsonString)
         throws RuntimeException /*-{
-        this["theme"] = JSON.parse(theme);
+        this["theme"] = JSON.parse(themeAsJsonString);
         return this;
     }-*/
     ;

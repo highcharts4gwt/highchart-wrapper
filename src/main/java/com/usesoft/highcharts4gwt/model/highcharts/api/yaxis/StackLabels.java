@@ -23,7 +23,7 @@ public interface StackLabels {
 
     String style();
 
-    StackLabels style(String style);
+    StackLabels style(String styleAsJsonString);
 
     String textAlign();
 

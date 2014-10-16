@@ -8,11 +8,11 @@ public interface Drilldown {
 
     String activeAxisLabelStyle();
 
-    Drilldown activeAxisLabelStyle(String activeAxisLabelStyle);
+    Drilldown activeAxisLabelStyle(String activeAxisLabelStyleAsJsonString);
 
     String activeDataLabelStyle();
 
-    Drilldown activeDataLabelStyle(String activeDataLabelStyle);
+    Drilldown activeDataLabelStyle(String activeDataLabelStyleAsJsonString);
 
     DrillUpButton drillUpButton();
 

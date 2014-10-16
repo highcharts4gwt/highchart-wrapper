@@ -15,7 +15,7 @@ public interface Subtitle {
 
     String style();
 
-    Subtitle style(String style);
+    Subtitle style(String styleAsJsonString);
 
     String text();
 

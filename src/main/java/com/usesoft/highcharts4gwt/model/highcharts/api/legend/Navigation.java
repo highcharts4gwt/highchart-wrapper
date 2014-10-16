@@ -11,6 +11,6 @@ public interface Navigation {
 
     String style();
 
-    Navigation style(String style);
+    Navigation style(String styleAsJsonString);
 
 }

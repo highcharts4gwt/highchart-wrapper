@@ -59,9 +59,9 @@ public class JsoTitle
     }-*/
     ;
 
-    public final native JsoTitle style(String style)
+    public final native JsoTitle style(String styleAsJsonString)
         throws RuntimeException /*-{
-        this["style"] = JSON.parse(style);
+        this["style"] = JSON.parse(styleAsJsonString);
         return this;
     }-*/
     ;

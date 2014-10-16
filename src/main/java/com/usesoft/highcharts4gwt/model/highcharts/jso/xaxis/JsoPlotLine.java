@@ -34,9 +34,9 @@ public class JsoPlotLine
     }-*/
     ;
 
-    public final native JsoPlotLine events(String events)
+    public final native JsoPlotLine events(String eventsAsJsonString)
         throws RuntimeException /*-{
-        this["events"] = JSON.parse(events);
+        this["events"] = JSON.parse(eventsAsJsonString);
         return this;
     }-*/
     ;

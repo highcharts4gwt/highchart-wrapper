@@ -19,7 +19,7 @@ public interface Title {
 
     String style();
 
-    Title style(String style);
+    Title style(String styleAsJsonString);
 
     String text();
 

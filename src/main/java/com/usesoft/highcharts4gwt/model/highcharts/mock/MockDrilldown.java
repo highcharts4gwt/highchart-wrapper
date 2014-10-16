@@ -16,8 +16,8 @@ public class MockDrilldown
         return activeAxisLabelStyle;
     }
 
-    public MockDrilldown activeAxisLabelStyle(String activeAxisLabelStyle) {
-        this.activeAxisLabelStyle = activeAxisLabelStyle;
+    public MockDrilldown activeAxisLabelStyle(String activeAxisLabelStyleAsJsonString) {
+        this.activeAxisLabelStyle = activeAxisLabelStyleAsJsonString;
         return this;
     }
 
@@ -25,8 +25,8 @@ public class MockDrilldown
         return activeDataLabelStyle;
     }
 
-    public MockDrilldown activeDataLabelStyle(String activeDataLabelStyle) {
-        this.activeDataLabelStyle = activeDataLabelStyle;
+    public MockDrilldown activeDataLabelStyle(String activeDataLabelStyleAsJsonString) {
+        this.activeDataLabelStyle = activeDataLabelStyleAsJsonString;
         return this;
     }
 

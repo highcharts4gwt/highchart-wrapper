@@ -25,8 +25,8 @@ public class MockLoading
         return labelStyle;
     }
 
-    public MockLoading labelStyle(String labelStyle) {
-        this.labelStyle = labelStyle;
+    public MockLoading labelStyle(String labelStyleAsJsonString) {
+        this.labelStyle = labelStyleAsJsonString;
         return this;
     }
 
@@ -43,8 +43,8 @@ public class MockLoading
         return style;
     }
 
-    public MockLoading style(String style) {
-        this.style = style;
+    public MockLoading style(String styleAsJsonString) {
+        this.style = styleAsJsonString;
         return this;
     }
 

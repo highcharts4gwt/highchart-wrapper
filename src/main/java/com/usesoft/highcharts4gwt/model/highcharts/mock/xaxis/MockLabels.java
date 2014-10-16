@@ -107,8 +107,8 @@ public class MockLabels
         return style;
     }
 
-    public MockLabels style(String style) {
-        this.style = style;
+    public MockLabels style(String styleAsJsonString) {
+        this.style = styleAsJsonString;
         return this;
     }
 

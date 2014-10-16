@@ -20,9 +20,9 @@ public class JsoHalo
     }-*/
     ;
 
-    public final native JsoHalo attributes(String attributes)
+    public final native JsoHalo attributes(String attributesAsJsonString)
         throws RuntimeException /*-{
-        this["attributes"] = JSON.parse(attributes);
+        this["attributes"] = JSON.parse(attributesAsJsonString);
         return this;
     }-*/
     ;

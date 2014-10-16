@@ -98,8 +98,8 @@ public class MockLegend
         return itemHiddenStyle;
     }
 
-    public MockLegend itemHiddenStyle(String itemHiddenStyle) {
-        this.itemHiddenStyle = itemHiddenStyle;
+    public MockLegend itemHiddenStyle(String itemHiddenStyleAsJsonString) {
+        this.itemHiddenStyle = itemHiddenStyleAsJsonString;
         return this;
     }
 
@@ -107,8 +107,8 @@ public class MockLegend
         return itemHoverStyle;
     }
 
-    public MockLegend itemHoverStyle(String itemHoverStyle) {
-        this.itemHoverStyle = itemHoverStyle;
+    public MockLegend itemHoverStyle(String itemHoverStyleAsJsonString) {
+        this.itemHoverStyle = itemHoverStyleAsJsonString;
         return this;
     }
 
@@ -134,8 +134,8 @@ public class MockLegend
         return itemStyle;
     }
 
-    public MockLegend itemStyle(String itemStyle) {
-        this.itemStyle = itemStyle;
+    public MockLegend itemStyle(String itemStyleAsJsonString) {
+        this.itemStyle = itemStyleAsJsonString;
         return this;
     }
 
@@ -233,8 +233,8 @@ public class MockLegend
         return style;
     }
 
-    public MockLegend style(String style) {
-        this.style = style;
+    public MockLegend style(String styleAsJsonString) {
+        this.style = styleAsJsonString;
         return this;
     }
 
