@@ -2,6 +2,7 @@
 package com.usesoft.highcharts4gwt.model.highcharts.mock.series;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.series.Data;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.Events;
 import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.Marker;
 
 public class MockData
@@ -10,6 +11,7 @@ public class MockData
 
     private String dataLabels;
     private String drilldown;
+    private Events events;
     private String id;
     private boolean isIntermediateSum;
     private boolean isSum;
@@ -35,6 +37,15 @@ public class MockData
 
     public MockData drilldown(String drilldown) {
         this.drilldown = drilldown;
+        return this;
+    }
+
+    public Events events() {
+        return events;
+    }
+
+    public MockData events(Events events) {
+        this.events = events;
         return this;
     }
 

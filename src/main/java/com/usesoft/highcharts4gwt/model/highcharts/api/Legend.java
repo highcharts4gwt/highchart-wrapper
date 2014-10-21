@@ -2,6 +2,7 @@
 package com.usesoft.highcharts4gwt.model.highcharts.api;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.legend.Navigation;
+import com.usesoft.highcharts4gwt.model.highcharts.api.legend.Title;
 
 public interface Legend {
 
@@ -109,6 +110,10 @@ public interface Legend {
     Number symbolWidth();
 
     Legend symbolWidth(Number symbolWidth);
+
+    Title title();
+
+    Legend title(Title title);
 
     boolean useHTML();
 

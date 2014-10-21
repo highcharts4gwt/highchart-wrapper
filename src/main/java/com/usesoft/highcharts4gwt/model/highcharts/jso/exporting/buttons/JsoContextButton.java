@@ -13,6 +13,20 @@ public class JsoContextButton
     protected JsoContextButton() {
     }
 
+    public final native String menuItems()
+        throws RuntimeException /*-{
+        this["menuItems"] = (this["menuItems"] || []);
+        return JSON.stringify(this["menuItems"]);
+    }-*/
+    ;
+
+    public final native JsoContextButton menuItems(String menuItemsAsJsonStringArray)
+        throws RuntimeException /*-{
+        this["menuItems"] = JSON.parse(menuItemsAsJsonStringArray);
+        return this;
+    }-*/
+    ;
+
     public final native String symbol()
         throws RuntimeException /*-{
         return this["symbol"] = (this["symbol"] || "menu");

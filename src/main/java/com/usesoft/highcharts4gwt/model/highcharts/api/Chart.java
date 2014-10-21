@@ -45,6 +45,10 @@ public interface Chart {
 
     Chart inverted(boolean inverted);
 
+    ArrayNumber margin();
+
+    Chart margin(ArrayNumber margin);
+
     Number marginBottom();
 
     Chart marginBottom(Number marginBottom);

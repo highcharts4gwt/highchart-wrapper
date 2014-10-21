@@ -7,8 +7,18 @@ public class MockPane
     implements Pane
 {
 
+    private String background;
     private Number endAngle;
     private Number startAngle;
+
+    public String background() {
+        return background;
+    }
+
+    public MockPane background(String backgroundAsJsonStringArray) {
+        this.background = backgroundAsJsonStringArray;
+        return this;
+    }
 
     public Number endAngle() {
         return endAngle;

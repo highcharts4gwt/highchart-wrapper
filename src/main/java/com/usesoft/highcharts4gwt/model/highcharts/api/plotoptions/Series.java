@@ -70,10 +70,6 @@ public interface Series {
 
     Series pointInterval(Number pointInterval);
 
-    String pointPlacement();
-
-    Series pointPlacement(String pointPlacement);
-
     Number pointStart();
 
     Series pointStart(Number pointStart);

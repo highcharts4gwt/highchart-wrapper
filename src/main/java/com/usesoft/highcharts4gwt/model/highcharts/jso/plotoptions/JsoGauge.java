@@ -17,7 +17,7 @@ public class JsoGauge
 
     public final native Dial dial()
         throws RuntimeException /*-{
-        return this["dial"] = (this["dial"] || );
+        return this["dial"] = (this["dial"] || {});
     }-*/
     ;
 
@@ -43,7 +43,7 @@ public class JsoGauge
 
     public final native Pivot pivot()
         throws RuntimeException /*-{
-        return this["pivot"] = (this["pivot"] || );
+        return this["pivot"] = (this["pivot"] || {});
     }-*/
     ;
 

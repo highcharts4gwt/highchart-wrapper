@@ -96,7 +96,7 @@ public class JsoExporting
 
     public final native Number sourceHeight()
         throws RuntimeException /*-{
-        return this["sourceHeight"] = (this["sourceHeight"] || null);
+        return this["sourceHeight"] = (this["sourceHeight"] || '');
     }-*/
     ;
 
@@ -109,7 +109,7 @@ public class JsoExporting
 
     public final native Number sourceWidth()
         throws RuntimeException /*-{
-        return this["sourceWidth"] = (this["sourceWidth"] || null);
+        return this["sourceWidth"] = (this["sourceWidth"] || '');
     }-*/
     ;
 
@@ -148,7 +148,7 @@ public class JsoExporting
 
     public final native Number width()
         throws RuntimeException /*-{
-        return this["width"] = (this["width"] || null);
+        return this["width"] = (this["width"] || undefined);
     }-*/
     ;
 

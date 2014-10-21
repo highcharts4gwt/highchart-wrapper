@@ -27,7 +27,6 @@ public class MockSeries
     private Marker marker;
     private Point point;
     private Number pointInterval;
-    private String pointPlacement;
     private Number pointStart;
     private boolean selected;
     private boolean showCheckbox;
@@ -171,15 +170,6 @@ public class MockSeries
 
     public MockSeries pointInterval(Number pointInterval) {
         this.pointInterval = pointInterval;
-        return this;
-    }
-
-    public String pointPlacement() {
-        return pointPlacement;
-    }
-
-    public MockSeries pointPlacement(String pointPlacement) {
-        this.pointPlacement = pointPlacement;
         return this;
     }
 

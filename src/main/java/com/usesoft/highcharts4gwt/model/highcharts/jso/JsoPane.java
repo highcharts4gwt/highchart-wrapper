@@ -13,6 +13,20 @@ public class JsoPane
     protected JsoPane() {
     }
 
+    public final native String background()
+        throws RuntimeException /*-{
+        this["background"] = (this["background"] || []);
+        return JSON.stringify(this["background"]);
+    }-*/
+    ;
+
+    public final native JsoPane background(String backgroundAsJsonStringArray)
+        throws RuntimeException /*-{
+        this["background"] = JSON.parse(backgroundAsJsonStringArray);
+        return this;
+    }-*/
+    ;
+
     public final native Number endAngle()
         throws RuntimeException /*-{
         return this["endAngle"] = (this["endAngle"] || null);

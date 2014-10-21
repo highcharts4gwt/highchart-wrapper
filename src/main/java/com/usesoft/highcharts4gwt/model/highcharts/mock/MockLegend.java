@@ -3,6 +3,7 @@ package com.usesoft.highcharts4gwt.model.highcharts.mock;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.Legend;
 import com.usesoft.highcharts4gwt.model.highcharts.api.legend.Navigation;
+import com.usesoft.highcharts4gwt.model.highcharts.api.legend.Title;
 
 public class MockLegend
     implements Legend
@@ -34,6 +35,7 @@ public class MockLegend
     private Number symbolPadding;
     private Number symbolRadius;
     private Number symbolWidth;
+    private Title title;
     private boolean useHTML;
     private String verticalAlign;
     private Number width;
@@ -271,6 +273,15 @@ public class MockLegend
 
     public MockLegend symbolWidth(Number symbolWidth) {
         this.symbolWidth = symbolWidth;
+        return this;
+    }
+
+    public Title title() {
+        return title;
+    }
+
+    public MockLegend title(Title title) {
+        this.title = title;
         return this;
     }
 

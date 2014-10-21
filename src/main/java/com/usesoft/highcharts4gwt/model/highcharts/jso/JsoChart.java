@@ -134,6 +134,19 @@ public class JsoChart
     }-*/
     ;
 
+    public final native ArrayNumber margin()
+        throws RuntimeException /*-{
+        return this["margin"] = (this["margin"] || []);
+    }-*/
+    ;
+
+    public final native JsoChart margin(ArrayNumber margin)
+        throws RuntimeException /*-{
+        this["margin"] = margin;
+        return this;
+    }-*/
+    ;
+
     public final native Number marginBottom()
         throws RuntimeException /*-{
         return this["marginBottom"] = (this["marginBottom"] || null);

@@ -3,6 +3,7 @@ package com.usesoft.highcharts4gwt.model.highcharts.jso.series;
 
 import com.google.gwt.core.client.JavaScriptObject;
 import com.usesoft.highcharts4gwt.model.highcharts.api.series.Data;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.Events;
 import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.Marker;
 
 public class JsoData
@@ -37,6 +38,19 @@ public class JsoData
     public final native JsoData drilldown(String drilldown)
         throws RuntimeException /*-{
         this["drilldown"] = drilldown;
+        return this;
+    }-*/
+    ;
+
+    public final native Events events()
+        throws RuntimeException /*-{
+        return this["events"] = (this["events"] || {});
+    }-*/
+    ;
+
+    public final native JsoData events(Events events)
+        throws RuntimeException /*-{
+        this["events"] = events;
         return this;
     }-*/
     ;

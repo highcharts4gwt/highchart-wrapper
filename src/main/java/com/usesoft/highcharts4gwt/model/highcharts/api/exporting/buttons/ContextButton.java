@@ -8,6 +8,10 @@ public interface ContextButton
 {
 
 
+    String menuItems();
+
+    ContextButton menuItems(String menuItemsAsJsonStringArray);
+
     String symbol();
 
     ContextButton symbol(String symbol);

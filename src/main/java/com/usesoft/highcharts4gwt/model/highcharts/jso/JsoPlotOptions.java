@@ -4,10 +4,13 @@ package com.usesoft.highcharts4gwt.model.highcharts.jso;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.usesoft.highcharts4gwt.model.highcharts.api.PlotOptions;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Area;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Arearange;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Areaspline;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Areasplinerange;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Bar;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Boxplot;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Bubble;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Column;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Columnrange;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Errorbar;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Funnel;
@@ -15,6 +18,7 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Gauge;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Line;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Pie;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Pyramid;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Scatter;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Series;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Solidgauge;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Spline;
@@ -42,6 +46,19 @@ public class JsoPlotOptions
     }-*/
     ;
 
+    public final native Arearange arearange()
+        throws RuntimeException /*-{
+        return this["arearange"] = (this["arearange"] || {});
+    }-*/
+    ;
+
+    public final native JsoPlotOptions arearange(Arearange arearange)
+        throws RuntimeException /*-{
+        this["arearange"] = arearange;
+        return this;
+    }-*/
+    ;
+
     public final native Areaspline areaspline()
         throws RuntimeException /*-{
         return this["areaspline"] = (this["areaspline"] || {});
@@ -51,6 +68,19 @@ public class JsoPlotOptions
     public final native JsoPlotOptions areaspline(Areaspline areaspline)
         throws RuntimeException /*-{
         this["areaspline"] = areaspline;
+        return this;
+    }-*/
+    ;
+
+    public final native Areasplinerange areasplinerange()
+        throws RuntimeException /*-{
+        return this["areasplinerange"] = (this["areasplinerange"] || {});
+    }-*/
+    ;
+
+    public final native JsoPlotOptions areasplinerange(Areasplinerange areasplinerange)
+        throws RuntimeException /*-{
+        this["areasplinerange"] = areasplinerange;
         return this;
     }-*/
     ;
@@ -70,7 +100,7 @@ public class JsoPlotOptions
 
     public final native Boxplot boxplot()
         throws RuntimeException /*-{
-        return this["boxplot"] = (this["boxplot"] || );
+        return this["boxplot"] = (this["boxplot"] || {});
     }-*/
     ;
 
@@ -83,7 +113,7 @@ public class JsoPlotOptions
 
     public final native Bubble bubble()
         throws RuntimeException /*-{
-        return this["bubble"] = (this["bubble"] || );
+        return this["bubble"] = (this["bubble"] || {});
     }-*/
     ;
 
@@ -94,9 +124,22 @@ public class JsoPlotOptions
     }-*/
     ;
 
+    public final native Column column()
+        throws RuntimeException /*-{
+        return this["column"] = (this["column"] || {});
+    }-*/
+    ;
+
+    public final native JsoPlotOptions column(Column column)
+        throws RuntimeException /*-{
+        this["column"] = column;
+        return this;
+    }-*/
+    ;
+
     public final native Columnrange columnrange()
         throws RuntimeException /*-{
-        return this["columnrange"] = (this["columnrange"] || );
+        return this["columnrange"] = (this["columnrange"] || {});
     }-*/
     ;
 
@@ -109,7 +152,7 @@ public class JsoPlotOptions
 
     public final native Errorbar errorbar()
         throws RuntimeException /*-{
-        return this["errorbar"] = (this["errorbar"] || );
+        return this["errorbar"] = (this["errorbar"] || {});
     }-*/
     ;
 
@@ -135,7 +178,7 @@ public class JsoPlotOptions
 
     public final native Gauge gauge()
         throws RuntimeException /*-{
-        return this["gauge"] = (this["gauge"] || );
+        return this["gauge"] = (this["gauge"] || {});
     }-*/
     ;
 
@@ -199,6 +242,19 @@ public class JsoPlotOptions
     }-*/
     ;
 
+    public final native Scatter scatter()
+        throws RuntimeException /*-{
+        return this["scatter"] = (this["scatter"] || {});
+    }-*/
+    ;
+
+    public final native JsoPlotOptions scatter(Scatter scatter)
+        throws RuntimeException /*-{
+        this["scatter"] = scatter;
+        return this;
+    }-*/
+    ;
+
     public final native Series series()
         throws RuntimeException /*-{
         return this["series"] = (this["series"] || {});
@@ -240,7 +296,7 @@ public class JsoPlotOptions
 
     public final native Waterfall waterfall()
         throws RuntimeException /*-{
-        return this["waterfall"] = (this["waterfall"] || );
+        return this["waterfall"] = (this["waterfall"] || {});
     }-*/
     ;
 

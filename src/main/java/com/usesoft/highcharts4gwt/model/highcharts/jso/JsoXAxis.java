@@ -49,7 +49,7 @@ public class JsoXAxis
 
     public final native Number ceiling()
         throws RuntimeException /*-{
-        return this["ceiling"] = (this["ceiling"] || null);
+        return this["ceiling"] = (this["ceiling"] || '');
     }-*/
     ;
 

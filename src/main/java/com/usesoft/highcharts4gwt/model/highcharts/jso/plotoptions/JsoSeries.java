@@ -213,19 +213,6 @@ public class JsoSeries
     }-*/
     ;
 
-    public final native String pointPlacement()
-        throws RuntimeException /*-{
-        return this["pointPlacement"] = (this["pointPlacement"] || "null");
-    }-*/
-    ;
-
-    public final native JsoSeries pointPlacement(String pointPlacement)
-        throws RuntimeException /*-{
-        this["pointPlacement"] = pointPlacement;
-        return this;
-    }-*/
-    ;
-
     public final native Number pointStart()
         throws RuntimeException /*-{
         return this["pointStart"] = (this["pointStart"] || 0.0);
@@ -319,7 +306,7 @@ public class JsoSeries
 
     public final native Tooltip tooltip()
         throws RuntimeException /*-{
-        return this["tooltip"] = (this["tooltip"] || );
+        return this["tooltip"] = (this["tooltip"] || {});
     }-*/
     ;
 

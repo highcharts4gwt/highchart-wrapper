@@ -3,10 +3,13 @@ package com.usesoft.highcharts4gwt.model.highcharts.mock;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.PlotOptions;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Area;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Arearange;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Areaspline;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Areasplinerange;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Bar;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Boxplot;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Bubble;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Column;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Columnrange;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Errorbar;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Funnel;
@@ -14,6 +17,7 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Gauge;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Line;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Pie;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Pyramid;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Scatter;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Series;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Solidgauge;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Spline;
@@ -24,10 +28,13 @@ public class MockPlotOptions
 {
 
     private Area area;
+    private Arearange arearange;
     private Areaspline areaspline;
+    private Areasplinerange areasplinerange;
     private Bar bar;
     private Boxplot boxplot;
     private Bubble bubble;
+    private Column column;
     private Columnrange columnrange;
     private Errorbar errorbar;
     private Funnel funnel;
@@ -36,6 +43,7 @@ public class MockPlotOptions
     private Line line;
     private Pie pie;
     private Pyramid pyramid;
+    private Scatter scatter;
     private Series series;
     private Solidgauge solidgauge;
     private Spline spline;
@@ -50,12 +58,30 @@ public class MockPlotOptions
         return this;
     }
 
+    public Arearange arearange() {
+        return arearange;
+    }
+
+    public MockPlotOptions arearange(Arearange arearange) {
+        this.arearange = arearange;
+        return this;
+    }
+
     public Areaspline areaspline() {
         return areaspline;
     }
 
     public MockPlotOptions areaspline(Areaspline areaspline) {
         this.areaspline = areaspline;
+        return this;
+    }
+
+    public Areasplinerange areasplinerange() {
+        return areasplinerange;
+    }
+
+    public MockPlotOptions areasplinerange(Areasplinerange areasplinerange) {
+        this.areasplinerange = areasplinerange;
         return this;
     }
 
@@ -83,6 +109,15 @@ public class MockPlotOptions
 
     public MockPlotOptions bubble(Bubble bubble) {
         this.bubble = bubble;
+        return this;
+    }
+
+    public Column column() {
+        return column;
+    }
+
+    public MockPlotOptions column(Column column) {
+        this.column = column;
         return this;
     }
 
@@ -155,6 +190,15 @@ public class MockPlotOptions
 
     public MockPlotOptions pyramid(Pyramid pyramid) {
         this.pyramid = pyramid;
+        return this;
+    }
+
+    public Scatter scatter() {
+        return scatter;
+    }
+
+    public MockPlotOptions scatter(Scatter scatter) {
+        this.scatter = scatter;
         return this;
     }
 

@@ -4,6 +4,7 @@ package com.usesoft.highcharts4gwt.model.highcharts.jso;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Legend;
 import com.usesoft.highcharts4gwt.model.highcharts.api.legend.Navigation;
+import com.usesoft.highcharts4gwt.model.highcharts.api.legend.Title;
 
 public class JsoLegend
     extends JavaScriptObject
@@ -352,6 +353,19 @@ public class JsoLegend
     public final native JsoLegend symbolWidth(Number symbolWidth)
         throws RuntimeException /*-{
         this["symbolWidth"] = symbolWidth;
+        return this;
+    }-*/
+    ;
+
+    public final native Title title()
+        throws RuntimeException /*-{
+        return this["title"] = (this["title"] || {});
+    }-*/
+    ;
+
+    public final native JsoLegend title(Title title)
+        throws RuntimeException /*-{
+        this["title"] = title;
         return this;
     }-*/
     ;

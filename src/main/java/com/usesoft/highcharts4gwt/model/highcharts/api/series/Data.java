@@ -1,6 +1,7 @@
 
 package com.usesoft.highcharts4gwt.model.highcharts.api.series;
 
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.Events;
 import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.Marker;
 
 public interface Data {
@@ -13,6 +14,10 @@ public interface Data {
     String drilldown();
 
     Data drilldown(String drilldown);
+
+    Events events();
+
+    Data events(Events events);
 
     String id();
 

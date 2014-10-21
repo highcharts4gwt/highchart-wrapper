@@ -107,7 +107,7 @@ public class JsoSeries
 
     public final native Number zIndex()
         throws RuntimeException /*-{
-        return this["zIndex"] = (this["zIndex"] || null);
+        return this["zIndex"] = (this["zIndex"] || '');
     }-*/
     ;
 

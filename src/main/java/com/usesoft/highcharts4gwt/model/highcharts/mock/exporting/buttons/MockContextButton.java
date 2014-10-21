@@ -9,8 +9,18 @@ public class MockContextButton
     implements ContextButton
 {
 
+    private String menuItems;
     private String symbol;
     private Number x;
+
+    public String menuItems() {
+        return menuItems;
+    }
+
+    public MockContextButton menuItems(String menuItemsAsJsonStringArray) {
+        this.menuItems = menuItemsAsJsonStringArray;
+        return this;
+    }
 
     public String symbol() {
         return symbol;

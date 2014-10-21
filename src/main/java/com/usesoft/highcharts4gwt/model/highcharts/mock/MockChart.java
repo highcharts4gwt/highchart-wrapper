@@ -20,6 +20,7 @@ public class MockChart
     private Number height;
     private boolean ignoreHiddenSeries;
     private boolean inverted;
+    private ArrayNumber margin;
     private Number marginBottom;
     private Number marginLeft;
     private Number marginRight;
@@ -122,6 +123,15 @@ public class MockChart
 
     public MockChart inverted(boolean inverted) {
         this.inverted = inverted;
+        return this;
+    }
+
+    public ArrayNumber margin() {
+        return margin;
+    }
+
+    public MockChart margin(ArrayNumber margin) {
+        this.margin = margin;
         return this;
     }
 
