@@ -7,7 +7,17 @@ public class MockBack
     implements Back
 {
 
+    private String color;
     private Number size;
+
+    public String color() {
+        return color;
+    }
+
+    public MockBack color(String color) {
+        this.color = color;
+        return this;
+    }
 
     public Number size() {
         return size;

@@ -8,6 +8,8 @@ public class MockSelect
 {
 
     private boolean enabled;
+    private String fillColor;
+    private String lineColor;
     private Number lineWidth;
     private Number radius;
 
@@ -17,6 +19,24 @@ public class MockSelect
 
     public MockSelect enabled(boolean enabled) {
         this.enabled = enabled;
+        return this;
+    }
+
+    public String fillColor() {
+        return fillColor;
+    }
+
+    public MockSelect fillColor(String fillColor) {
+        this.fillColor = fillColor;
+        return this;
+    }
+
+    public String lineColor() {
+        return lineColor;
+    }
+
+    public MockSelect lineColor(String lineColor) {
+        this.lineColor = lineColor;
         return this;
     }
 

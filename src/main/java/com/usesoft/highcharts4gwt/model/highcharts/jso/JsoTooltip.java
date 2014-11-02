@@ -26,6 +26,32 @@ public class JsoTooltip
     }-*/
     ;
 
+    public final native String backgroundColor()
+        throws RuntimeException /*-{
+        return this["backgroundColor"] = (this["backgroundColor"] || "rgba(255, 255, 255, 0.85)");
+    }-*/
+    ;
+
+    public final native JsoTooltip backgroundColor(String backgroundColor)
+        throws RuntimeException /*-{
+        this["backgroundColor"] = backgroundColor;
+        return this;
+    }-*/
+    ;
+
+    public final native String borderColor()
+        throws RuntimeException /*-{
+        return this["borderColor"] = (this["borderColor"] || "null");
+    }-*/
+    ;
+
+    public final native JsoTooltip borderColor(String borderColor)
+        throws RuntimeException /*-{
+        this["borderColor"] = borderColor;
+        return this;
+    }-*/
+    ;
+
     public final native Number borderRadius()
         throws RuntimeException /*-{
         return this["borderRadius"] = (this["borderRadius"] || 3.0);

@@ -9,6 +9,7 @@ public class MockData
     implements Data
 {
 
+    private String color;
     private String dataLabels;
     private String drilldown;
     private Events events;
@@ -21,6 +22,15 @@ public class MockData
     private boolean sliced;
     private Number x;
     private Number y;
+
+    public String color() {
+        return color;
+    }
+
+    public MockData color(String color) {
+        this.color = color;
+        return this;
+    }
 
     public String dataLabels() {
         return dataLabels;

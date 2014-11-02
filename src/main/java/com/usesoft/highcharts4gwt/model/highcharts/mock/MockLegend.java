@@ -10,6 +10,8 @@ public class MockLegend
 {
 
     private String align;
+    private String backgroundColor;
+    private String borderColor;
     private Number borderRadius;
     private Number borderWidth;
     private boolean enabled;
@@ -30,6 +32,8 @@ public class MockLegend
     private Number padding;
     private boolean reversed;
     private boolean rtl;
+    private boolean shadowAsBoolean;
+    private String shadowAsJsonString;
     private String style;
     private Number symbolHeight;
     private Number symbolPadding;
@@ -48,6 +52,24 @@ public class MockLegend
 
     public MockLegend align(String align) {
         this.align = align;
+        return this;
+    }
+
+    public String backgroundColor() {
+        return backgroundColor;
+    }
+
+    public MockLegend backgroundColor(String backgroundColor) {
+        this.backgroundColor = backgroundColor;
+        return this;
+    }
+
+    public String borderColor() {
+        return borderColor;
+    }
+
+    public MockLegend borderColor(String borderColor) {
+        this.borderColor = borderColor;
         return this;
     }
 
@@ -228,6 +250,24 @@ public class MockLegend
 
     public MockLegend rtl(boolean rtl) {
         this.rtl = rtl;
+        return this;
+    }
+
+    public boolean shadowAsBoolean() {
+        return shadowAsBoolean;
+    }
+
+    public MockLegend shadowAsBoolean(boolean shadowAsBoolean) {
+        this.shadowAsBoolean = shadowAsBoolean;
+        return this;
+    }
+
+    public String shadowAsJsonString() {
+        return shadowAsJsonString;
+    }
+
+    public MockLegend shadowAsJsonString(String shadowAsJsonString) {
+        this.shadowAsJsonString = shadowAsJsonString;
         return this;
     }
 

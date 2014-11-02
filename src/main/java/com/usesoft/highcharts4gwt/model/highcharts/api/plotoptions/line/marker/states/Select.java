@@ -9,6 +9,14 @@ public interface Select {
 
     Select enabled(boolean enabled);
 
+    String fillColor();
+
+    Select fillColor(String fillColor);
+
+    String lineColor();
+
+    Select lineColor(String lineColor);
+
     Number lineWidth();
 
     Select lineWidth(Number lineWidth);

@@ -28,6 +28,32 @@ public class JsoLegend
     }-*/
     ;
 
+    public final native String backgroundColor()
+        throws RuntimeException /*-{
+        return this["backgroundColor"] = (this["backgroundColor"] || "null");
+    }-*/
+    ;
+
+    public final native JsoLegend backgroundColor(String backgroundColor)
+        throws RuntimeException /*-{
+        this["backgroundColor"] = backgroundColor;
+        return this;
+    }-*/
+    ;
+
+    public final native String borderColor()
+        throws RuntimeException /*-{
+        return this["borderColor"] = (this["borderColor"] || "#909090");
+    }-*/
+    ;
+
+    public final native JsoLegend borderColor(String borderColor)
+        throws RuntimeException /*-{
+        this["borderColor"] = borderColor;
+        return this;
+    }-*/
+    ;
+
     public final native Number borderRadius()
         throws RuntimeException /*-{
         return this["borderRadius"] = (this["borderRadius"] || 0.0);
@@ -287,6 +313,33 @@ public class JsoLegend
     public final native JsoLegend rtl(boolean rtl)
         throws RuntimeException /*-{
         this["rtl"] = rtl;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean shadowAsBoolean()
+        throws RuntimeException /*-{
+        return this["shadow"] = (this["shadow"] || false);
+    }-*/
+    ;
+
+    public final native JsoLegend shadowAsBoolean(boolean shadowAsBoolean)
+        throws RuntimeException /*-{
+        this["shadow"] = shadowAsBoolean;
+        return this;
+    }-*/
+    ;
+
+    public final native String shadowAsJsonString()
+        throws RuntimeException /*-{
+        this["shadow"] = (this["shadow"] || JSON.parse('false'));
+        return JSON.stringify(this["shadow"]);
+    }-*/
+    ;
+
+    public final native JsoLegend shadowAsJsonString(String shadowAsJsonString)
+        throws RuntimeException /*-{
+        this["shadow"] = JSON.parse(shadowAsJsonString);
         return this;
     }-*/
     ;

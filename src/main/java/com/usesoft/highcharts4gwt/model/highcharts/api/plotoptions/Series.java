@@ -18,6 +18,10 @@ public interface Series {
 
     Series animation(boolean animation);
 
+    String color();
+
+    Series color(String color);
+
     boolean connectEnds();
 
     Series connectEnds(boolean connectEnds);
@@ -62,6 +66,10 @@ public interface Series {
 
     Series marker(Marker marker);
 
+    String negativeColor();
+
+    Series negativeColor(String negativeColor);
+
     Point point();
 
     Series point(Point point);
@@ -70,6 +78,14 @@ public interface Series {
 
     Series pointInterval(Number pointInterval);
 
+    String pointPlacementAsString();
+
+    Series pointPlacementAsString(String pointPlacementAsString);
+
+    Number pointPlacementAsNumber();
+
+    Series pointPlacementAsNumber(Number pointPlacementAsNumber);
+
     Number pointStart();
 
     Series pointStart(Number pointStart);
@@ -77,6 +93,14 @@ public interface Series {
     boolean selected();
 
     Series selected(boolean selected);
+
+    boolean shadowAsBoolean();
+
+    Series shadowAsBoolean(boolean shadowAsBoolean);
+
+    String shadowAsJsonString();
+
+    Series shadowAsJsonString(String shadowAsJsonString);
 
     boolean showCheckbox();
 

@@ -8,6 +8,7 @@ public class MockPlotLine
     implements PlotLine
 {
 
+    private String color;
     private String dashStyle;
     private String events;
     private String id;
@@ -15,6 +16,15 @@ public class MockPlotLine
     private Number value;
     private Number width;
     private Number zIndex;
+
+    public String color() {
+        return color;
+    }
+
+    public MockPlotLine color(String color) {
+        this.color = color;
+        return this;
+    }
 
     public String dashStyle() {
         return dashStyle;

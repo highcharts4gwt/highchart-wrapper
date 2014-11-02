@@ -8,4 +8,12 @@ public interface Waterfall
 {
 
 
+    String lineColor();
+
+    Waterfall lineColor(String lineColor);
+
+    String upColor();
+
+    Waterfall upColor(String upColor);
+
 }

@@ -10,14 +10,28 @@ public class MockPie
     implements Pie
 {
 
+    private String borderColor;
     private Number borderWidth;
     private ArrayString center;
     private Number depth;
     private Number endAngle;
     private boolean ignoreHiddenPoint;
+    private String innerSizeAsString;
+    private Number innerSizeAsNumber;
     private Number minSize;
+    private String sizeAsString;
+    private Number sizeAsNumber;
     private Number slicedOffset;
     private Number startAngle;
+
+    public String borderColor() {
+        return borderColor;
+    }
+
+    public MockPie borderColor(String borderColor) {
+        this.borderColor = borderColor;
+        return this;
+    }
 
     public Number borderWidth() {
         return borderWidth;
@@ -64,12 +78,48 @@ public class MockPie
         return this;
     }
 
+    public String innerSizeAsString() {
+        return innerSizeAsString;
+    }
+
+    public MockPie innerSizeAsString(String innerSizeAsString) {
+        this.innerSizeAsString = innerSizeAsString;
+        return this;
+    }
+
+    public Number innerSizeAsNumber() {
+        return innerSizeAsNumber;
+    }
+
+    public MockPie innerSizeAsNumber(Number innerSizeAsNumber) {
+        this.innerSizeAsNumber = innerSizeAsNumber;
+        return this;
+    }
+
     public Number minSize() {
         return minSize;
     }
 
     public MockPie minSize(Number minSize) {
         this.minSize = minSize;
+        return this;
+    }
+
+    public String sizeAsString() {
+        return sizeAsString;
+    }
+
+    public MockPie sizeAsString(String sizeAsString) {
+        this.sizeAsString = sizeAsString;
+        return this;
+    }
+
+    public Number sizeAsNumber() {
+        return sizeAsNumber;
+    }
+
+    public MockPie sizeAsNumber(Number sizeAsNumber) {
+        this.sizeAsNumber = sizeAsNumber;
         return this;
     }
 

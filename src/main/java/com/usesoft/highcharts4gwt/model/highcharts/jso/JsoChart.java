@@ -30,6 +30,59 @@ public class JsoChart
     }-*/
     ;
 
+    public final native boolean animationAsBoolean()
+        throws RuntimeException /*-{
+        return this["animation"] = (this["animation"] || true);
+    }-*/
+    ;
+
+    public final native JsoChart animationAsBoolean(boolean animationAsBoolean)
+        throws RuntimeException /*-{
+        this["animation"] = animationAsBoolean;
+        return this;
+    }-*/
+    ;
+
+    public final native String animationAsJsonString()
+        throws RuntimeException /*-{
+        this["animation"] = (this["animation"] || JSON.parse('true'));
+        return JSON.stringify(this["animation"]);
+    }-*/
+    ;
+
+    public final native JsoChart animationAsJsonString(String animationAsJsonString)
+        throws RuntimeException /*-{
+        this["animation"] = JSON.parse(animationAsJsonString);
+        return this;
+    }-*/
+    ;
+
+    public final native String backgroundColor()
+        throws RuntimeException /*-{
+        return this["backgroundColor"] = (this["backgroundColor"] || "#FFFFFF");
+    }-*/
+    ;
+
+    public final native JsoChart backgroundColor(String backgroundColor)
+        throws RuntimeException /*-{
+        this["backgroundColor"] = backgroundColor;
+        return this;
+    }-*/
+    ;
+
+    public final native String borderColor()
+        throws RuntimeException /*-{
+        return this["borderColor"] = (this["borderColor"] || "#4572A7");
+    }-*/
+    ;
+
+    public final native JsoChart borderColor(String borderColor)
+        throws RuntimeException /*-{
+        this["borderColor"] = borderColor;
+        return this;
+    }-*/
+    ;
+
     public final native Number borderRadius()
         throws RuntimeException /*-{
         return this["borderRadius"] = (this["borderRadius"] || 0.0);
@@ -251,6 +304,19 @@ public class JsoChart
     }-*/
     ;
 
+    public final native String plotBackgroundColor()
+        throws RuntimeException /*-{
+        return this["plotBackgroundColor"] = (this["plotBackgroundColor"] || "null");
+    }-*/
+    ;
+
+    public final native JsoChart plotBackgroundColor(String plotBackgroundColor)
+        throws RuntimeException /*-{
+        this["plotBackgroundColor"] = plotBackgroundColor;
+        return this;
+    }-*/
+    ;
+
     public final native String plotBackgroundImage()
         throws RuntimeException /*-{
         return this["plotBackgroundImage"] = (this["plotBackgroundImage"] || "null");
@@ -264,6 +330,19 @@ public class JsoChart
     }-*/
     ;
 
+    public final native String plotBorderColor()
+        throws RuntimeException /*-{
+        return this["plotBorderColor"] = (this["plotBorderColor"] || "#C0C0C0");
+    }-*/
+    ;
+
+    public final native JsoChart plotBorderColor(String plotBorderColor)
+        throws RuntimeException /*-{
+        this["plotBorderColor"] = plotBorderColor;
+        return this;
+    }-*/
+    ;
+
     public final native Number plotBorderWidth()
         throws RuntimeException /*-{
         return this["plotBorderWidth"] = (this["plotBorderWidth"] || 0.0);
@@ -273,6 +352,33 @@ public class JsoChart
     public final native JsoChart plotBorderWidth(Number plotBorderWidth)
         throws RuntimeException /*-{
         this["plotBorderWidth"] = plotBorderWidth;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean plotShadowAsBoolean()
+        throws RuntimeException /*-{
+        return this["plotShadow"] = (this["plotShadow"] || false);
+    }-*/
+    ;
+
+    public final native JsoChart plotShadowAsBoolean(boolean plotShadowAsBoolean)
+        throws RuntimeException /*-{
+        this["plotShadow"] = plotShadowAsBoolean;
+        return this;
+    }-*/
+    ;
+
+    public final native String plotShadowAsJsonString()
+        throws RuntimeException /*-{
+        this["plotShadow"] = (this["plotShadow"] || JSON.parse('false'));
+        return JSON.stringify(this["plotShadow"]);
+    }-*/
+    ;
+
+    public final native JsoChart plotShadowAsJsonString(String plotShadowAsJsonString)
+        throws RuntimeException /*-{
+        this["plotShadow"] = JSON.parse(plotShadowAsJsonString);
         return this;
     }-*/
     ;
@@ -303,6 +409,33 @@ public class JsoChart
     }-*/
     ;
 
+    public final native String renderToAsString()
+        throws RuntimeException /*-{
+        return this["renderTo"] = (this["renderTo"] || "null");
+    }-*/
+    ;
+
+    public final native JsoChart renderToAsString(String renderToAsString)
+        throws RuntimeException /*-{
+        this["renderTo"] = renderToAsString;
+        return this;
+    }-*/
+    ;
+
+    public final native String renderToAsJsonString()
+        throws RuntimeException /*-{
+        this["renderTo"] = (this["renderTo"] || {});
+        return JSON.stringify(this["renderTo"]);
+    }-*/
+    ;
+
+    public final native JsoChart renderToAsJsonString(String renderToAsJsonString)
+        throws RuntimeException /*-{
+        this["renderTo"] = JSON.parse(renderToAsJsonString);
+        return this;
+    }-*/
+    ;
+
     public final native ResetZoomButton resetZoomButton()
         throws RuntimeException /*-{
         return this["resetZoomButton"] = (this["resetZoomButton"] || {});
@@ -312,6 +445,46 @@ public class JsoChart
     public final native JsoChart resetZoomButton(ResetZoomButton resetZoomButton)
         throws RuntimeException /*-{
         this["resetZoomButton"] = resetZoomButton;
+        return this;
+    }-*/
+    ;
+
+    public final native String selectionMarkerFill()
+        throws RuntimeException /*-{
+        return this["selectionMarkerFill"] = (this["selectionMarkerFill"] || "rgba(69,114,167,0.25)");
+    }-*/
+    ;
+
+    public final native JsoChart selectionMarkerFill(String selectionMarkerFill)
+        throws RuntimeException /*-{
+        this["selectionMarkerFill"] = selectionMarkerFill;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean shadowAsBoolean()
+        throws RuntimeException /*-{
+        return this["shadow"] = (this["shadow"] || false);
+    }-*/
+    ;
+
+    public final native JsoChart shadowAsBoolean(boolean shadowAsBoolean)
+        throws RuntimeException /*-{
+        this["shadow"] = shadowAsBoolean;
+        return this;
+    }-*/
+    ;
+
+    public final native String shadowAsJsonString()
+        throws RuntimeException /*-{
+        this["shadow"] = (this["shadow"] || JSON.parse('false'));
+        return JSON.stringify(this["shadow"]);
+    }-*/
+    ;
+
+    public final native JsoChart shadowAsJsonString(String shadowAsJsonString)
+        throws RuntimeException /*-{
+        this["shadow"] = JSON.parse(shadowAsJsonString);
         return this;
     }-*/
     ;

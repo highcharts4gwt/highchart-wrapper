@@ -13,6 +13,22 @@ public interface Chart {
 
     Chart alignTicks(boolean alignTicks);
 
+    boolean animationAsBoolean();
+
+    Chart animationAsBoolean(boolean animationAsBoolean);
+
+    String animationAsJsonString();
+
+    Chart animationAsJsonString(String animationAsJsonString);
+
+    String backgroundColor();
+
+    Chart backgroundColor(String backgroundColor);
+
+    String borderColor();
+
+    Chart borderColor(String borderColor);
+
     Number borderRadius();
 
     Chart borderRadius(Number borderRadius);
@@ -81,13 +97,29 @@ public interface Chart {
 
     Chart pinchType(String pinchType);
 
+    String plotBackgroundColor();
+
+    Chart plotBackgroundColor(String plotBackgroundColor);
+
     String plotBackgroundImage();
 
     Chart plotBackgroundImage(String plotBackgroundImage);
 
+    String plotBorderColor();
+
+    Chart plotBorderColor(String plotBorderColor);
+
     Number plotBorderWidth();
 
     Chart plotBorderWidth(Number plotBorderWidth);
+
+    boolean plotShadowAsBoolean();
+
+    Chart plotShadowAsBoolean(boolean plotShadowAsBoolean);
+
+    String plotShadowAsJsonString();
+
+    Chart plotShadowAsJsonString(String plotShadowAsJsonString);
 
     boolean polar();
 
@@ -97,9 +129,29 @@ public interface Chart {
 
     Chart reflow(boolean reflow);
 
+    String renderToAsString();
+
+    Chart renderToAsString(String renderToAsString);
+
+    String renderToAsJsonString();
+
+    Chart renderToAsJsonString(String renderToAsJsonString);
+
     ResetZoomButton resetZoomButton();
 
     Chart resetZoomButton(ResetZoomButton resetZoomButton);
+
+    String selectionMarkerFill();
+
+    Chart selectionMarkerFill(String selectionMarkerFill);
+
+    boolean shadowAsBoolean();
+
+    Chart shadowAsBoolean(boolean shadowAsBoolean);
+
+    String shadowAsJsonString();
+
+    Chart shadowAsJsonString(String shadowAsJsonString);
 
     boolean showAxes();
 

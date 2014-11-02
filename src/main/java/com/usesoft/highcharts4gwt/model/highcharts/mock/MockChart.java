@@ -12,6 +12,10 @@ public class MockChart
 {
 
     private boolean alignTicks;
+    private boolean animationAsBoolean;
+    private String animationAsJsonString;
+    private String backgroundColor;
+    private String borderColor;
     private Number borderRadius;
     private Number borderWidth;
     private String className;
@@ -29,11 +33,20 @@ public class MockChart
     private String panKey;
     private boolean panning;
     private String pinchType;
+    private String plotBackgroundColor;
     private String plotBackgroundImage;
+    private String plotBorderColor;
     private Number plotBorderWidth;
+    private boolean plotShadowAsBoolean;
+    private String plotShadowAsJsonString;
     private boolean polar;
     private boolean reflow;
+    private String renderToAsString;
+    private String renderToAsJsonString;
     private ResetZoomButton resetZoomButton;
+    private String selectionMarkerFill;
+    private boolean shadowAsBoolean;
+    private String shadowAsJsonString;
     private boolean showAxes;
     private ArrayNumber spacing;
     private Number spacingBottom;
@@ -51,6 +64,42 @@ public class MockChart
 
     public MockChart alignTicks(boolean alignTicks) {
         this.alignTicks = alignTicks;
+        return this;
+    }
+
+    public boolean animationAsBoolean() {
+        return animationAsBoolean;
+    }
+
+    public MockChart animationAsBoolean(boolean animationAsBoolean) {
+        this.animationAsBoolean = animationAsBoolean;
+        return this;
+    }
+
+    public String animationAsJsonString() {
+        return animationAsJsonString;
+    }
+
+    public MockChart animationAsJsonString(String animationAsJsonString) {
+        this.animationAsJsonString = animationAsJsonString;
+        return this;
+    }
+
+    public String backgroundColor() {
+        return backgroundColor;
+    }
+
+    public MockChart backgroundColor(String backgroundColor) {
+        this.backgroundColor = backgroundColor;
+        return this;
+    }
+
+    public String borderColor() {
+        return borderColor;
+    }
+
+    public MockChart borderColor(String borderColor) {
+        this.borderColor = borderColor;
         return this;
     }
 
@@ -207,6 +256,15 @@ public class MockChart
         return this;
     }
 
+    public String plotBackgroundColor() {
+        return plotBackgroundColor;
+    }
+
+    public MockChart plotBackgroundColor(String plotBackgroundColor) {
+        this.plotBackgroundColor = plotBackgroundColor;
+        return this;
+    }
+
     public String plotBackgroundImage() {
         return plotBackgroundImage;
     }
@@ -216,12 +274,39 @@ public class MockChart
         return this;
     }
 
+    public String plotBorderColor() {
+        return plotBorderColor;
+    }
+
+    public MockChart plotBorderColor(String plotBorderColor) {
+        this.plotBorderColor = plotBorderColor;
+        return this;
+    }
+
     public Number plotBorderWidth() {
         return plotBorderWidth;
     }
 
     public MockChart plotBorderWidth(Number plotBorderWidth) {
         this.plotBorderWidth = plotBorderWidth;
+        return this;
+    }
+
+    public boolean plotShadowAsBoolean() {
+        return plotShadowAsBoolean;
+    }
+
+    public MockChart plotShadowAsBoolean(boolean plotShadowAsBoolean) {
+        this.plotShadowAsBoolean = plotShadowAsBoolean;
+        return this;
+    }
+
+    public String plotShadowAsJsonString() {
+        return plotShadowAsJsonString;
+    }
+
+    public MockChart plotShadowAsJsonString(String plotShadowAsJsonString) {
+        this.plotShadowAsJsonString = plotShadowAsJsonString;
         return this;
     }
 
@@ -243,12 +328,57 @@ public class MockChart
         return this;
     }
 
+    public String renderToAsString() {
+        return renderToAsString;
+    }
+
+    public MockChart renderToAsString(String renderToAsString) {
+        this.renderToAsString = renderToAsString;
+        return this;
+    }
+
+    public String renderToAsJsonString() {
+        return renderToAsJsonString;
+    }
+
+    public MockChart renderToAsJsonString(String renderToAsJsonString) {
+        this.renderToAsJsonString = renderToAsJsonString;
+        return this;
+    }
+
     public ResetZoomButton resetZoomButton() {
         return resetZoomButton;
     }
 
     public MockChart resetZoomButton(ResetZoomButton resetZoomButton) {
         this.resetZoomButton = resetZoomButton;
+        return this;
+    }
+
+    public String selectionMarkerFill() {
+        return selectionMarkerFill;
+    }
+
+    public MockChart selectionMarkerFill(String selectionMarkerFill) {
+        this.selectionMarkerFill = selectionMarkerFill;
+        return this;
+    }
+
+    public boolean shadowAsBoolean() {
+        return shadowAsBoolean;
+    }
+
+    public MockChart shadowAsBoolean(boolean shadowAsBoolean) {
+        this.shadowAsBoolean = shadowAsBoolean;
+        return this;
+    }
+
+    public String shadowAsJsonString() {
+        return shadowAsJsonString;
+    }
+
+    public MockChart shadowAsJsonString(String shadowAsJsonString) {
+        this.shadowAsJsonString = shadowAsJsonString;
         return this;
     }
 

@@ -10,7 +10,9 @@ public class MockButtonOptions
     private String align;
     private boolean enabled;
     private Number height;
+    private String symbolFill;
     private Number symbolSize;
+    private String symbolStroke;
     private Number symbolStrokeWidth;
     private Number symbolX;
     private Number symbolY;
@@ -47,12 +49,30 @@ public class MockButtonOptions
         return this;
     }
 
+    public String symbolFill() {
+        return symbolFill;
+    }
+
+    public MockButtonOptions symbolFill(String symbolFill) {
+        this.symbolFill = symbolFill;
+        return this;
+    }
+
     public Number symbolSize() {
         return symbolSize;
     }
 
     public MockButtonOptions symbolSize(Number symbolSize) {
         this.symbolSize = symbolSize;
+        return this;
+    }
+
+    public String symbolStroke() {
+        return symbolStroke;
+    }
+
+    public MockButtonOptions symbolStroke(String symbolStroke) {
+        this.symbolStroke = symbolStroke;
         return this;
     }
 

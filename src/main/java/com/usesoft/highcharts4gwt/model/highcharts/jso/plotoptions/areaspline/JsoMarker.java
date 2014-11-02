@@ -27,6 +27,19 @@ public class JsoMarker
     }-*/
     ;
 
+    public final native String fillColor()
+        throws RuntimeException /*-{
+        return this["fillColor"] = (this["fillColor"] || "null");
+    }-*/
+    ;
+
+    public final native JsoMarker fillColor(String fillColor)
+        throws RuntimeException /*-{
+        this["fillColor"] = fillColor;
+        return this;
+    }-*/
+    ;
+
     public final native Number height()
         throws RuntimeException /*-{
         return this["height"] = (this["height"] || null);
@@ -36,6 +49,19 @@ public class JsoMarker
     public final native JsoMarker height(Number height)
         throws RuntimeException /*-{
         this["height"] = height;
+        return this;
+    }-*/
+    ;
+
+    public final native String lineColor()
+        throws RuntimeException /*-{
+        return this["lineColor"] = (this["lineColor"] || "#FFFFFF");
+    }-*/
+    ;
+
+    public final native JsoMarker lineColor(String lineColor)
+        throws RuntimeException /*-{
+        this["lineColor"] = lineColor;
         return this;
     }-*/
     ;

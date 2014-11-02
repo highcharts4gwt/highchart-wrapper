@@ -7,8 +7,39 @@ public class MockNavigation
     implements Navigation
 {
 
+    private String activeColor;
+    private boolean animationAsBoolean;
+    private String animationAsJsonString;
     private Number arrowSize;
+    private String inactiveColor;
     private String style;
+
+    public String activeColor() {
+        return activeColor;
+    }
+
+    public MockNavigation activeColor(String activeColor) {
+        this.activeColor = activeColor;
+        return this;
+    }
+
+    public boolean animationAsBoolean() {
+        return animationAsBoolean;
+    }
+
+    public MockNavigation animationAsBoolean(boolean animationAsBoolean) {
+        this.animationAsBoolean = animationAsBoolean;
+        return this;
+    }
+
+    public String animationAsJsonString() {
+        return animationAsJsonString;
+    }
+
+    public MockNavigation animationAsJsonString(String animationAsJsonString) {
+        this.animationAsJsonString = animationAsJsonString;
+        return this;
+    }
 
     public Number arrowSize() {
         return arrowSize;
@@ -16,6 +47,15 @@ public class MockNavigation
 
     public MockNavigation arrowSize(Number arrowSize) {
         this.arrowSize = arrowSize;
+        return this;
+    }
+
+    public String inactiveColor() {
+        return inactiveColor;
+    }
+
+    public MockNavigation inactiveColor(String inactiveColor) {
+        this.inactiveColor = inactiveColor;
         return this;
     }
 

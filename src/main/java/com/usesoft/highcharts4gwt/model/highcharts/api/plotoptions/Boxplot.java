@@ -8,9 +8,21 @@ public interface Boxplot
 {
 
 
+    String fillColor();
+
+    Boxplot fillColor(String fillColor);
+
+    String medianColor();
+
+    Boxplot medianColor(String medianColor);
+
     Number medianWidth();
 
     Boxplot medianWidth(Number medianWidth);
+
+    String stemColor();
+
+    Boxplot stemColor(String stemColor);
 
     String stemDashStyle();
 
@@ -19,6 +31,18 @@ public interface Boxplot
     Number stemWidth();
 
     Boxplot stemWidth(Number stemWidth);
+
+    String whiskerColor();
+
+    Boxplot whiskerColor(String whiskerColor);
+
+    Number whiskerLengthAsNumber();
+
+    Boxplot whiskerLengthAsNumber(Number whiskerLengthAsNumber);
+
+    String whiskerLengthAsString();
+
+    Boxplot whiskerLengthAsString(String whiskerLengthAsString);
 
     Number whiskerWidth();
 

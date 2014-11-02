@@ -44,6 +44,19 @@ public class JsoSeries
     }-*/
     ;
 
+    public final native String color()
+        throws RuntimeException /*-{
+        return this["color"] = (this["color"] || "null");
+    }-*/
+    ;
+
+    public final native JsoSeries color(String color)
+        throws RuntimeException /*-{
+        this["color"] = color;
+        return this;
+    }-*/
+    ;
+
     public final native boolean connectEnds()
         throws RuntimeException /*-{
         return this["connectEnds"] = (this["connectEnds"] || true);
@@ -187,6 +200,19 @@ public class JsoSeries
     }-*/
     ;
 
+    public final native String negativeColor()
+        throws RuntimeException /*-{
+        return this["negativeColor"] = (this["negativeColor"] || "null");
+    }-*/
+    ;
+
+    public final native JsoSeries negativeColor(String negativeColor)
+        throws RuntimeException /*-{
+        this["negativeColor"] = negativeColor;
+        return this;
+    }-*/
+    ;
+
     public final native Point point()
         throws RuntimeException /*-{
         return this["point"] = (this["point"] || {});
@@ -213,6 +239,32 @@ public class JsoSeries
     }-*/
     ;
 
+    public final native String pointPlacementAsString()
+        throws RuntimeException /*-{
+        return this["pointPlacement"] = (this["pointPlacement"] || "null");
+    }-*/
+    ;
+
+    public final native JsoSeries pointPlacementAsString(String pointPlacementAsString)
+        throws RuntimeException /*-{
+        this["pointPlacement"] = pointPlacementAsString;
+        return this;
+    }-*/
+    ;
+
+    public final native Number pointPlacementAsNumber()
+        throws RuntimeException /*-{
+        return this["pointPlacement"] = (this["pointPlacement"] || null);
+    }-*/
+    ;
+
+    public final native JsoSeries pointPlacementAsNumber(Number pointPlacementAsNumber)
+        throws RuntimeException /*-{
+        this["pointPlacement"] = pointPlacementAsNumber;
+        return this;
+    }-*/
+    ;
+
     public final native Number pointStart()
         throws RuntimeException /*-{
         return this["pointStart"] = (this["pointStart"] || 0.0);
@@ -235,6 +287,33 @@ public class JsoSeries
     public final native JsoSeries selected(boolean selected)
         throws RuntimeException /*-{
         this["selected"] = selected;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean shadowAsBoolean()
+        throws RuntimeException /*-{
+        return this["shadow"] = (this["shadow"] || false);
+    }-*/
+    ;
+
+    public final native JsoSeries shadowAsBoolean(boolean shadowAsBoolean)
+        throws RuntimeException /*-{
+        this["shadow"] = shadowAsBoolean;
+        return this;
+    }-*/
+    ;
+
+    public final native String shadowAsJsonString()
+        throws RuntimeException /*-{
+        this["shadow"] = (this["shadow"] || JSON.parse('false'));
+        return JSON.stringify(this["shadow"]);
+    }-*/
+    ;
+
+    public final native JsoSeries shadowAsJsonString(String shadowAsJsonString)
+        throws RuntimeException /*-{
+        this["shadow"] = JSON.parse(shadowAsJsonString);
         return this;
     }-*/
     ;

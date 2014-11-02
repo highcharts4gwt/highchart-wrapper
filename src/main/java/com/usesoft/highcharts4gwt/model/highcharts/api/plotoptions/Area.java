@@ -8,9 +8,21 @@ public interface Area
 {
 
 
+    String fillColor();
+
+    Area fillColor(String fillColor);
+
     Number fillOpacity();
 
     Area fillOpacity(Number fillOpacity);
+
+    String lineColor();
+
+    Area lineColor(String lineColor);
+
+    String negativeFillColor();
+
+    Area negativeFillColor(String negativeFillColor);
 
     boolean trackByArea();
 

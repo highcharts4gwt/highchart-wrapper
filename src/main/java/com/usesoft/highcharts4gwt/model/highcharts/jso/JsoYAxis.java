@@ -27,6 +27,32 @@ public class JsoYAxis
     }-*/
     ;
 
+    public final native String maxColor()
+        throws RuntimeException /*-{
+        return this["maxColor"] = (this["maxColor"] || "#102D4C");
+    }-*/
+    ;
+
+    public final native JsoYAxis maxColor(String maxColor)
+        throws RuntimeException /*-{
+        this["maxColor"] = maxColor;
+        return this;
+    }-*/
+    ;
+
+    public final native String minColor()
+        throws RuntimeException /*-{
+        return this["minColor"] = (this["minColor"] || "#EFEFFF");
+    }-*/
+    ;
+
+    public final native JsoYAxis minColor(String minColor)
+        throws RuntimeException /*-{
+        this["minColor"] = minColor;
+        return this;
+    }-*/
+    ;
+
     public final native boolean reversedStacks()
         throws RuntimeException /*-{
         return this["reversedStacks"] = (this["reversedStacks"] || true);

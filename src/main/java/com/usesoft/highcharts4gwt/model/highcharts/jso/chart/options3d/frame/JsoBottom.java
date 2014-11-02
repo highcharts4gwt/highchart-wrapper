@@ -13,6 +13,19 @@ public class JsoBottom
     protected JsoBottom() {
     }
 
+    public final native String color()
+        throws RuntimeException /*-{
+        return this["color"] = (this["color"] || "transparent");
+    }-*/
+    ;
+
+    public final native JsoBottom color(String color)
+        throws RuntimeException /*-{
+        this["color"] = color;
+        return this;
+    }-*/
+    ;
+
     public final native Number size()
         throws RuntimeException /*-{
         return this["size"] = (this["size"] || 1.0);

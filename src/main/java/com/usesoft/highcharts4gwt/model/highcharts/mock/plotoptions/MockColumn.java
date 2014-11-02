@@ -9,10 +9,12 @@ public class MockColumn
     implements Column
 {
 
+    private String borderColor;
     private Number borderRadius;
     private Number borderWidth;
     private boolean colorByPoint;
     private Number depth;
+    private String edgeColor;
     private Number edgeWidth;
     private Number groupPadding;
     private Number groupZPadding;
@@ -21,6 +23,15 @@ public class MockColumn
     private Number pointPadding;
     private Number pointRange;
     private Number pointWidth;
+
+    public String borderColor() {
+        return borderColor;
+    }
+
+    public MockColumn borderColor(String borderColor) {
+        this.borderColor = borderColor;
+        return this;
+    }
 
     public Number borderRadius() {
         return borderRadius;
@@ -55,6 +66,15 @@ public class MockColumn
 
     public MockColumn depth(Number depth) {
         this.depth = depth;
+        return this;
+    }
+
+    public String edgeColor() {
+        return edgeColor;
+    }
+
+    public MockColumn edgeColor(String edgeColor) {
+        this.edgeColor = edgeColor;
         return this;
     }
 

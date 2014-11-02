@@ -13,6 +13,19 @@ public class JsoColumn
     protected JsoColumn() {
     }
 
+    public final native String borderColor()
+        throws RuntimeException /*-{
+        return this["borderColor"] = (this["borderColor"] || "#FFFFFF");
+    }-*/
+    ;
+
+    public final native JsoColumn borderColor(String borderColor)
+        throws RuntimeException /*-{
+        this["borderColor"] = borderColor;
+        return this;
+    }-*/
+    ;
+
     public final native Number borderRadius()
         throws RuntimeException /*-{
         return this["borderRadius"] = (this["borderRadius"] || 0.0);
@@ -61,6 +74,19 @@ public class JsoColumn
     public final native JsoColumn depth(Number depth)
         throws RuntimeException /*-{
         this["depth"] = depth;
+        return this;
+    }-*/
+    ;
+
+    public final native String edgeColor()
+        throws RuntimeException /*-{
+        return this["edgeColor"] = (this["edgeColor"] || "");
+    }-*/
+    ;
+
+    public final native JsoColumn edgeColor(String edgeColor)
+        throws RuntimeException /*-{
+        this["edgeColor"] = edgeColor;
         return this;
     }-*/
     ;

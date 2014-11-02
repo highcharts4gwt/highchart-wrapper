@@ -7,6 +7,10 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.Marker;
 public interface Data {
 
 
+    String color();
+
+    Data color(String color);
+
     String dataLabels();
 
     Data dataLabels(String dataLabelsAsJsonString);

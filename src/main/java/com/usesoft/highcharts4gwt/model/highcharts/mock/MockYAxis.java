@@ -11,6 +11,8 @@ public class MockYAxis
 {
 
     private String gridLineInterpolation;
+    private String maxColor;
+    private String minColor;
     private boolean reversedStacks;
     private StackLabels stackLabels;
 
@@ -20,6 +22,24 @@ public class MockYAxis
 
     public MockYAxis gridLineInterpolation(String gridLineInterpolation) {
         this.gridLineInterpolation = gridLineInterpolation;
+        return this;
+    }
+
+    public String maxColor() {
+        return maxColor;
+    }
+
+    public MockYAxis maxColor(String maxColor) {
+        this.maxColor = maxColor;
+        return this;
+    }
+
+    public String minColor() {
+        return minColor;
+    }
+
+    public MockYAxis minColor(String minColor) {
+        this.minColor = minColor;
         return this;
     }
 

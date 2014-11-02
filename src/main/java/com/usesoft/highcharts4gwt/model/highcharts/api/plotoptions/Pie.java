@@ -9,6 +9,10 @@ public interface Pie
 {
 
 
+    String borderColor();
+
+    Pie borderColor(String borderColor);
+
     Number borderWidth();
 
     Pie borderWidth(Number borderWidth);
@@ -29,9 +33,25 @@ public interface Pie
 
     Pie ignoreHiddenPoint(boolean ignoreHiddenPoint);
 
+    String innerSizeAsString();
+
+    Pie innerSizeAsString(String innerSizeAsString);
+
+    Number innerSizeAsNumber();
+
+    Pie innerSizeAsNumber(Number innerSizeAsNumber);
+
     Number minSize();
 
     Pie minSize(Number minSize);
+
+    String sizeAsString();
+
+    Pie sizeAsString(String sizeAsString);
+
+    Number sizeAsNumber();
+
+    Pie sizeAsNumber(Number sizeAsNumber);
 
     Number slicedOffset();
 

@@ -40,6 +40,32 @@ public class JsoPane
     }-*/
     ;
 
+    public final native Number sizeAsNumber()
+        throws RuntimeException /*-{
+        return this["size"] = (this["size"] || null);
+    }-*/
+    ;
+
+    public final native JsoPane sizeAsNumber(Number sizeAsNumber)
+        throws RuntimeException /*-{
+        this["size"] = sizeAsNumber;
+        return this;
+    }-*/
+    ;
+
+    public final native String sizeAsString()
+        throws RuntimeException /*-{
+        return this["size"] = (this["size"] || "85%");
+    }-*/
+    ;
+
+    public final native JsoPane sizeAsString(String sizeAsString)
+        throws RuntimeException /*-{
+        this["size"] = sizeAsString;
+        return this;
+    }-*/
+    ;
+
     public final native Number startAngle()
         throws RuntimeException /*-{
         return this["startAngle"] = (this["startAngle"] || null);

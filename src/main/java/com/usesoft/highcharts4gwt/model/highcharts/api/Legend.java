@@ -11,6 +11,14 @@ public interface Legend {
 
     Legend align(String align);
 
+    String backgroundColor();
+
+    Legend backgroundColor(String backgroundColor);
+
+    String borderColor();
+
+    Legend borderColor(String borderColor);
+
     Number borderRadius();
 
     Legend borderRadius(Number borderRadius);
@@ -90,6 +98,14 @@ public interface Legend {
     boolean rtl();
 
     Legend rtl(boolean rtl);
+
+    boolean shadowAsBoolean();
+
+    Legend shadowAsBoolean(boolean shadowAsBoolean);
+
+    String shadowAsJsonString();
+
+    Legend shadowAsJsonString(String shadowAsJsonString);
 
     String style();
 

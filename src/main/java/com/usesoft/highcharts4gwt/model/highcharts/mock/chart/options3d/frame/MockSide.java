@@ -7,7 +7,17 @@ public class MockSide
     implements Side
 {
 
+    private String color;
     private Number size;
+
+    public String color() {
+        return color;
+    }
+
+    public MockSide color(String color) {
+        this.color = color;
+        return this;
+    }
 
     public Number size() {
         return size;

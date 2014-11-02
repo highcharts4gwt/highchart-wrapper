@@ -17,6 +17,10 @@ public interface XAxis {
 
     XAxis allowDecimals(boolean allowDecimals);
 
+    String alternateGridColor();
+
+    XAxis alternateGridColor(String alternateGridColor);
+
     ArrayString categories();
 
     XAxis categories(ArrayString categories);
@@ -41,6 +45,10 @@ public interface XAxis {
 
     XAxis floor(Number floor);
 
+    String gridLineColor();
+
+    XAxis gridLineColor(String gridLineColor);
+
     String gridLineDashStyle();
 
     XAxis gridLineDashStyle(String gridLineDashStyle);
@@ -60,6 +68,10 @@ public interface XAxis {
     Labels labels();
 
     XAxis labels(Labels labels);
+
+    String lineColor();
+
+    XAxis lineColor(String lineColor);
 
     Number lineWidth();
 
@@ -97,6 +109,10 @@ public interface XAxis {
 
     XAxis minTickInterval(Number minTickInterval);
 
+    String minorGridLineColor();
+
+    XAxis minorGridLineColor(String minorGridLineColor);
+
     String minorGridLineDashStyle();
 
     XAxis minorGridLineDashStyle(String minorGridLineDashStyle);
@@ -104,6 +120,10 @@ public interface XAxis {
     Number minorGridLineWidth();
 
     XAxis minorGridLineWidth(Number minorGridLineWidth);
+
+    String minorTickColor();
+
+    XAxis minorTickColor(String minorTickColor);
 
     Number minorTickInterval();
 
@@ -160,6 +180,10 @@ public interface XAxis {
     boolean startOnTick();
 
     XAxis startOnTick(boolean startOnTick);
+
+    String tickColor();
+
+    XAxis tickColor(String tickColor);
 
     Number tickInterval();
 

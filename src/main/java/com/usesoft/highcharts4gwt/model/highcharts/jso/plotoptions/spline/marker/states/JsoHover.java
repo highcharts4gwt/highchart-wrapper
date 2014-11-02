@@ -26,6 +26,32 @@ public class JsoHover
     }-*/
     ;
 
+    public final native String fillColor()
+        throws RuntimeException /*-{
+        return this["fillColor"] = (this["fillColor"] || "");
+    }-*/
+    ;
+
+    public final native JsoHover fillColor(String fillColor)
+        throws RuntimeException /*-{
+        this["fillColor"] = fillColor;
+        return this;
+    }-*/
+    ;
+
+    public final native String lineColor()
+        throws RuntimeException /*-{
+        return this["lineColor"] = (this["lineColor"] || "#FFFFFF");
+    }-*/
+    ;
+
+    public final native JsoHover lineColor(String lineColor)
+        throws RuntimeException /*-{
+        this["lineColor"] = lineColor;
+        return this;
+    }-*/
+    ;
+
     public final native Number lineWidth()
         throws RuntimeException /*-{
         return this["lineWidth"] = (this["lineWidth"] || 0.0);

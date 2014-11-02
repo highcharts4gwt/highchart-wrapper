@@ -14,6 +14,19 @@ public class JsoPie
     protected JsoPie() {
     }
 
+    public final native String borderColor()
+        throws RuntimeException /*-{
+        return this["borderColor"] = (this["borderColor"] || "#FFFFFF");
+    }-*/
+    ;
+
+    public final native JsoPie borderColor(String borderColor)
+        throws RuntimeException /*-{
+        this["borderColor"] = borderColor;
+        return this;
+    }-*/
+    ;
+
     public final native Number borderWidth()
         throws RuntimeException /*-{
         return this["borderWidth"] = (this["borderWidth"] || 1.0);
@@ -79,6 +92,32 @@ public class JsoPie
     }-*/
     ;
 
+    public final native String innerSizeAsString()
+        throws RuntimeException /*-{
+        return this["innerSize"] = (this["innerSize"] || "0");
+    }-*/
+    ;
+
+    public final native JsoPie innerSizeAsString(String innerSizeAsString)
+        throws RuntimeException /*-{
+        this["innerSize"] = innerSizeAsString;
+        return this;
+    }-*/
+    ;
+
+    public final native Number innerSizeAsNumber()
+        throws RuntimeException /*-{
+        return this["innerSize"] = (this["innerSize"] || 0.0);
+    }-*/
+    ;
+
+    public final native JsoPie innerSizeAsNumber(Number innerSizeAsNumber)
+        throws RuntimeException /*-{
+        this["innerSize"] = innerSizeAsNumber;
+        return this;
+    }-*/
+    ;
+
     public final native Number minSize()
         throws RuntimeException /*-{
         return this["minSize"] = (this["minSize"] || 80.0);
@@ -88,6 +127,32 @@ public class JsoPie
     public final native JsoPie minSize(Number minSize)
         throws RuntimeException /*-{
         this["minSize"] = minSize;
+        return this;
+    }-*/
+    ;
+
+    public final native String sizeAsString()
+        throws RuntimeException /*-{
+        return this["size"] = (this["size"] || "");
+    }-*/
+    ;
+
+    public final native JsoPie sizeAsString(String sizeAsString)
+        throws RuntimeException /*-{
+        this["size"] = sizeAsString;
+        return this;
+    }-*/
+    ;
+
+    public final native Number sizeAsNumber()
+        throws RuntimeException /*-{
+        return this["size"] = (this["size"] || '');
+    }-*/
+    ;
+
+    public final native JsoPie sizeAsNumber(Number sizeAsNumber)
+        throws RuntimeException /*-{
+        this["size"] = sizeAsNumber;
         return this;
     }-*/
     ;

@@ -8,6 +8,10 @@ public interface Column
 {
 
 
+    String borderColor();
+
+    Column borderColor(String borderColor);
+
     Number borderRadius();
 
     Column borderRadius(Number borderRadius);
@@ -23,6 +27,10 @@ public interface Column
     Number depth();
 
     Column depth(Number depth);
+
+    String edgeColor();
+
+    Column edgeColor(String edgeColor);
 
     Number edgeWidth();
 

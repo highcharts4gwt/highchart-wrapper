@@ -9,6 +9,14 @@ public interface Hover {
 
     Hover enabled(boolean enabled);
 
+    String fillColor();
+
+    Hover fillColor(String fillColor);
+
+    String lineColor();
+
+    Hover lineColor(String lineColor);
+
     Number lineWidth();
 
     Hover lineWidth(Number lineWidth);

@@ -14,6 +14,7 @@ public class MockSeries
 
     private boolean allowPointSelect;
     private boolean animation;
+    private String color;
     private boolean connectEnds;
     private boolean connectNulls;
     private Number cropThreshold;
@@ -25,10 +26,15 @@ public class MockSeries
     private Number lineWidth;
     private String linkedTo;
     private Marker marker;
+    private String negativeColor;
     private Point point;
     private Number pointInterval;
+    private String pointPlacementAsString;
+    private Number pointPlacementAsNumber;
     private Number pointStart;
     private boolean selected;
+    private boolean shadowAsBoolean;
+    private String shadowAsJsonString;
     private boolean showCheckbox;
     private boolean showInLegend;
     private String stacking;
@@ -53,6 +59,15 @@ public class MockSeries
 
     public MockSeries animation(boolean animation) {
         this.animation = animation;
+        return this;
+    }
+
+    public String color() {
+        return color;
+    }
+
+    public MockSeries color(String color) {
+        this.color = color;
         return this;
     }
 
@@ -155,6 +170,15 @@ public class MockSeries
         return this;
     }
 
+    public String negativeColor() {
+        return negativeColor;
+    }
+
+    public MockSeries negativeColor(String negativeColor) {
+        this.negativeColor = negativeColor;
+        return this;
+    }
+
     public Point point() {
         return point;
     }
@@ -173,6 +197,24 @@ public class MockSeries
         return this;
     }
 
+    public String pointPlacementAsString() {
+        return pointPlacementAsString;
+    }
+
+    public MockSeries pointPlacementAsString(String pointPlacementAsString) {
+        this.pointPlacementAsString = pointPlacementAsString;
+        return this;
+    }
+
+    public Number pointPlacementAsNumber() {
+        return pointPlacementAsNumber;
+    }
+
+    public MockSeries pointPlacementAsNumber(Number pointPlacementAsNumber) {
+        this.pointPlacementAsNumber = pointPlacementAsNumber;
+        return this;
+    }
+
     public Number pointStart() {
         return pointStart;
     }
@@ -188,6 +230,24 @@ public class MockSeries
 
     public MockSeries selected(boolean selected) {
         this.selected = selected;
+        return this;
+    }
+
+    public boolean shadowAsBoolean() {
+        return shadowAsBoolean;
+    }
+
+    public MockSeries shadowAsBoolean(boolean shadowAsBoolean) {
+        this.shadowAsBoolean = shadowAsBoolean;
+        return this;
+    }
+
+    public String shadowAsJsonString() {
+        return shadowAsJsonString;
+    }
+
+    public MockSeries shadowAsJsonString(String shadowAsJsonString) {
+        this.shadowAsJsonString = shadowAsJsonString;
         return this;
     }
 

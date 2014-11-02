@@ -13,6 +13,32 @@ public class JsoDataLabels
     protected JsoDataLabels() {
     }
 
+    public final native String backgroundColor()
+        throws RuntimeException /*-{
+        return this["backgroundColor"] = (this["backgroundColor"] || "null");
+    }-*/
+    ;
+
+    public final native JsoDataLabels backgroundColor(String backgroundColor)
+        throws RuntimeException /*-{
+        this["backgroundColor"] = backgroundColor;
+        return this;
+    }-*/
+    ;
+
+    public final native String borderColor()
+        throws RuntimeException /*-{
+        return this["borderColor"] = (this["borderColor"] || "null");
+    }-*/
+    ;
+
+    public final native JsoDataLabels borderColor(String borderColor)
+        throws RuntimeException /*-{
+        this["borderColor"] = borderColor;
+        return this;
+    }-*/
+    ;
+
     public final native Number borderRadius()
         throws RuntimeException /*-{
         return this["borderRadius"] = (this["borderRadius"] || 0.0);
@@ -35,6 +61,19 @@ public class JsoDataLabels
     public final native JsoDataLabels borderWidth(Number borderWidth)
         throws RuntimeException /*-{
         this["borderWidth"] = borderWidth;
+        return this;
+    }-*/
+    ;
+
+    public final native String color()
+        throws RuntimeException /*-{
+        return this["color"] = (this["color"] || "null");
+    }-*/
+    ;
+
+    public final native JsoDataLabels color(String color)
+        throws RuntimeException /*-{
+        this["color"] = color;
         return this;
     }-*/
     ;
@@ -87,6 +126,33 @@ public class JsoDataLabels
     public final native JsoDataLabels padding(Number padding)
         throws RuntimeException /*-{
         this["padding"] = padding;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean shadowAsBoolean()
+        throws RuntimeException /*-{
+        return this["shadow"] = (this["shadow"] || false);
+    }-*/
+    ;
+
+    public final native JsoDataLabels shadowAsBoolean(boolean shadowAsBoolean)
+        throws RuntimeException /*-{
+        this["shadow"] = shadowAsBoolean;
+        return this;
+    }-*/
+    ;
+
+    public final native String shadowAsJsonString()
+        throws RuntimeException /*-{
+        this["shadow"] = (this["shadow"] || JSON.parse('false'));
+        return JSON.stringify(this["shadow"]);
+    }-*/
+    ;
+
+    public final native JsoDataLabels shadowAsJsonString(String shadowAsJsonString)
+        throws RuntimeException /*-{
+        this["shadow"] = JSON.parse(shadowAsJsonString);
         return this;
     }-*/
     ;

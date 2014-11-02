@@ -8,6 +8,8 @@ public class MockHover
 {
 
     private boolean enabled;
+    private String fillColor;
+    private String lineColor;
     private Number lineWidth;
     private Number lineWidthPlus;
     private Number radius;
@@ -19,6 +21,24 @@ public class MockHover
 
     public MockHover enabled(boolean enabled) {
         this.enabled = enabled;
+        return this;
+    }
+
+    public String fillColor() {
+        return fillColor;
+    }
+
+    public MockHover fillColor(String fillColor) {
+        this.fillColor = fillColor;
+        return this;
+    }
+
+    public String lineColor() {
+        return lineColor;
+    }
+
+    public MockHover lineColor(String lineColor) {
+        this.lineColor = lineColor;
         return this;
     }
 

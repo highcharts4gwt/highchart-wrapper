@@ -10,6 +10,8 @@ public class MockDrilldown
 
     private String activeAxisLabelStyle;
     private String activeDataLabelStyle;
+    private boolean animationAsBoolean;
+    private String animationAsJsonString;
     private DrillUpButton drillUpButton;
 
     public String activeAxisLabelStyle() {
@@ -27,6 +29,24 @@ public class MockDrilldown
 
     public MockDrilldown activeDataLabelStyle(String activeDataLabelStyleAsJsonString) {
         this.activeDataLabelStyle = activeDataLabelStyleAsJsonString;
+        return this;
+    }
+
+    public boolean animationAsBoolean() {
+        return animationAsBoolean;
+    }
+
+    public MockDrilldown animationAsBoolean(boolean animationAsBoolean) {
+        this.animationAsBoolean = animationAsBoolean;
+        return this;
+    }
+
+    public String animationAsJsonString() {
+        return animationAsJsonString;
+    }
+
+    public MockDrilldown animationAsJsonString(String animationAsJsonString) {
+        this.animationAsJsonString = animationAsJsonString;
         return this;
     }
 

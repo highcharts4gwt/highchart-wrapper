@@ -8,7 +8,9 @@ public class MockPlotBand
     implements PlotBand
 {
 
+    private String borderColor;
     private Number borderWidth;
+    private String color;
     private String events;
     private Number from;
     private String id;
@@ -16,12 +18,30 @@ public class MockPlotBand
     private Number to;
     private Number zIndex;
 
+    public String borderColor() {
+        return borderColor;
+    }
+
+    public MockPlotBand borderColor(String borderColor) {
+        this.borderColor = borderColor;
+        return this;
+    }
+
     public Number borderWidth() {
         return borderWidth;
     }
 
     public MockPlotBand borderWidth(Number borderWidth) {
         this.borderWidth = borderWidth;
+        return this;
+    }
+
+    public String color() {
+        return color;
+    }
+
+    public MockPlotBand color(String color) {
+        this.color = color;
         return this;
     }
 

@@ -15,6 +15,10 @@ public class MockSeries
     private Number legendIndex;
     private String name;
     private String type;
+    private Number xAxisAsNumber;
+    private String xAxisAsString;
+    private Number yAxisAsNumber;
+    private String yAxisAsString;
     private Number zIndex;
 
     public ArrayNumber data() {
@@ -77,6 +81,42 @@ public class MockSeries
 
     public MockSeries type(String type) {
         this.type = type;
+        return this;
+    }
+
+    public Number xAxisAsNumber() {
+        return xAxisAsNumber;
+    }
+
+    public MockSeries xAxisAsNumber(Number xAxisAsNumber) {
+        this.xAxisAsNumber = xAxisAsNumber;
+        return this;
+    }
+
+    public String xAxisAsString() {
+        return xAxisAsString;
+    }
+
+    public MockSeries xAxisAsString(String xAxisAsString) {
+        this.xAxisAsString = xAxisAsString;
+        return this;
+    }
+
+    public Number yAxisAsNumber() {
+        return yAxisAsNumber;
+    }
+
+    public MockSeries yAxisAsNumber(Number yAxisAsNumber) {
+        this.yAxisAsNumber = yAxisAsNumber;
+        return this;
+    }
+
+    public String yAxisAsString() {
+        return yAxisAsString;
+    }
+
+    public MockSeries yAxisAsString(String yAxisAsString) {
+        this.yAxisAsString = yAxisAsString;
         return this;
     }
 

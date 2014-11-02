@@ -13,6 +13,19 @@ public class JsoSide
     protected JsoSide() {
     }
 
+    public final native String color()
+        throws RuntimeException /*-{
+        return this["color"] = (this["color"] || "transparent");
+    }-*/
+    ;
+
+    public final native JsoSide color(String color)
+        throws RuntimeException /*-{
+        this["color"] = color;
+        return this;
+    }-*/
+    ;
+
     public final native Number size()
         throws RuntimeException /*-{
         return this["size"] = (this["size"] || 1.0);

@@ -53,21 +53,21 @@ public interface ChartOptions {
 
     ChartOptions xAxis(XAxis xAxis);
 
-    Exporting exporting();
+    Subtitle subtitle();
 
-    ChartOptions exporting(Exporting exporting);
+    ChartOptions subtitle(Subtitle subtitle);
 
     Navigation navigation();
 
     ChartOptions navigation(Navigation navigation);
 
-    Subtitle subtitle();
-
-    ChartOptions subtitle(Subtitle subtitle);
-
     Title title();
 
     ChartOptions title(Title title);
+
+    Exporting exporting();
+
+    ChartOptions exporting(Exporting exporting);
 
     Tooltip tooltip();
 

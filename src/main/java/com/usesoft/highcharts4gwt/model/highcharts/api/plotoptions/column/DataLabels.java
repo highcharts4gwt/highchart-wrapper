@@ -8,6 +8,14 @@ public interface DataLabels
 {
 
 
+    String backgroundColor();
+
+    DataLabels backgroundColor(String backgroundColor);
+
+    String borderColor();
+
+    DataLabels borderColor(String borderColor);
+
     Number borderRadius();
 
     DataLabels borderRadius(Number borderRadius);
@@ -15,6 +23,10 @@ public interface DataLabels
     Number borderWidth();
 
     DataLabels borderWidth(Number borderWidth);
+
+    String color();
+
+    DataLabels color(String color);
 
     boolean crop();
 
@@ -31,6 +43,14 @@ public interface DataLabels
     Number padding();
 
     DataLabels padding(Number padding);
+
+    boolean shadowAsBoolean();
+
+    DataLabels shadowAsBoolean(boolean shadowAsBoolean);
+
+    String shadowAsJsonString();
+
+    DataLabels shadowAsJsonString(String shadowAsJsonString);
 
     String verticalAlign();
 

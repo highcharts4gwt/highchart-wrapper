@@ -105,6 +105,58 @@ public class JsoSeries
     }-*/
     ;
 
+    public final native Number xAxisAsNumber()
+        throws RuntimeException /*-{
+        return this["xAxis"] = (this["xAxis"] || 0.0);
+    }-*/
+    ;
+
+    public final native JsoSeries xAxisAsNumber(Number xAxisAsNumber)
+        throws RuntimeException /*-{
+        this["xAxis"] = xAxisAsNumber;
+        return this;
+    }-*/
+    ;
+
+    public final native String xAxisAsString()
+        throws RuntimeException /*-{
+        return this["xAxis"] = (this["xAxis"] || "0");
+    }-*/
+    ;
+
+    public final native JsoSeries xAxisAsString(String xAxisAsString)
+        throws RuntimeException /*-{
+        this["xAxis"] = xAxisAsString;
+        return this;
+    }-*/
+    ;
+
+    public final native Number yAxisAsNumber()
+        throws RuntimeException /*-{
+        return this["yAxis"] = (this["yAxis"] || 0.0);
+    }-*/
+    ;
+
+    public final native JsoSeries yAxisAsNumber(Number yAxisAsNumber)
+        throws RuntimeException /*-{
+        this["yAxis"] = yAxisAsNumber;
+        return this;
+    }-*/
+    ;
+
+    public final native String yAxisAsString()
+        throws RuntimeException /*-{
+        return this["yAxis"] = (this["yAxis"] || "0");
+    }-*/
+    ;
+
+    public final native JsoSeries yAxisAsString(String yAxisAsString)
+        throws RuntimeException /*-{
+        this["yAxis"] = yAxisAsString;
+        return this;
+    }-*/
+    ;
+
     public final native Number zIndex()
         throws RuntimeException /*-{
         return this["zIndex"] = (this["zIndex"] || '');

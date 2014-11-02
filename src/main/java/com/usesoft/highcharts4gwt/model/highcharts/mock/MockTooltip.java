@@ -8,6 +8,8 @@ public class MockTooltip
 {
 
     private boolean animation;
+    private String backgroundColor;
+    private String borderColor;
     private Number borderRadius;
     private Number borderWidth;
     private String dateTimeLabelFormats;
@@ -35,6 +37,24 @@ public class MockTooltip
 
     public MockTooltip animation(boolean animation) {
         this.animation = animation;
+        return this;
+    }
+
+    public String backgroundColor() {
+        return backgroundColor;
+    }
+
+    public MockTooltip backgroundColor(String backgroundColor) {
+        this.backgroundColor = backgroundColor;
+        return this;
+    }
+
+    public String borderColor() {
+        return borderColor;
+    }
+
+    public MockTooltip borderColor(String borderColor) {
+        this.borderColor = borderColor;
         return this;
     }
 

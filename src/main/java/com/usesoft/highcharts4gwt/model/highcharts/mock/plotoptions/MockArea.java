@@ -9,8 +9,20 @@ public class MockArea
     implements Area
 {
 
+    private String fillColor;
     private Number fillOpacity;
+    private String lineColor;
+    private String negativeFillColor;
     private boolean trackByArea;
+
+    public String fillColor() {
+        return fillColor;
+    }
+
+    public MockArea fillColor(String fillColor) {
+        this.fillColor = fillColor;
+        return this;
+    }
 
     public Number fillOpacity() {
         return fillOpacity;
@@ -18,6 +30,24 @@ public class MockArea
 
     public MockArea fillOpacity(Number fillOpacity) {
         this.fillOpacity = fillOpacity;
+        return this;
+    }
+
+    public String lineColor() {
+        return lineColor;
+    }
+
+    public MockArea lineColor(String lineColor) {
+        this.lineColor = lineColor;
+        return this;
+    }
+
+    public String negativeFillColor() {
+        return negativeFillColor;
+    }
+
+    public MockArea negativeFillColor(String negativeFillColor) {
+        this.negativeFillColor = negativeFillColor;
         return this;
     }
 

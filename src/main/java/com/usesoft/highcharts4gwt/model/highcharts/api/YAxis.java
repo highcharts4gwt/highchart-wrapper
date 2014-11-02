@@ -13,6 +13,14 @@ public interface YAxis
 
     YAxis gridLineInterpolation(String gridLineInterpolation);
 
+    String maxColor();
+
+    YAxis maxColor(String maxColor);
+
+    String minColor();
+
+    YAxis minColor(String minColor);
+
     boolean reversedStacks();
 
     YAxis reversedStacks(boolean reversedStacks);

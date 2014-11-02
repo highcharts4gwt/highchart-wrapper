@@ -17,9 +17,17 @@ public interface ButtonOptions {
 
     ButtonOptions height(Number height);
 
+    String symbolFill();
+
+    ButtonOptions symbolFill(String symbolFill);
+
     Number symbolSize();
 
     ButtonOptions symbolSize(Number symbolSize);
+
+    String symbolStroke();
+
+    ButtonOptions symbolStroke(String symbolStroke);
 
     Number symbolStrokeWidth();
 

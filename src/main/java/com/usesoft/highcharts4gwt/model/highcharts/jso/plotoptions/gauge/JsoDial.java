@@ -13,6 +13,19 @@ public class JsoDial
     protected JsoDial() {
     }
 
+    public final native String backgroundColor()
+        throws RuntimeException /*-{
+        return this["backgroundColor"] = (this["backgroundColor"] || "black");
+    }-*/
+    ;
+
+    public final native JsoDial backgroundColor(String backgroundColor)
+        throws RuntimeException /*-{
+        this["backgroundColor"] = backgroundColor;
+        return this;
+    }-*/
+    ;
+
     public final native String baseLength()
         throws RuntimeException /*-{
         return this["baseLength"] = (this["baseLength"] || "70%");
@@ -35,6 +48,19 @@ public class JsoDial
     public final native JsoDial baseWidth(Number baseWidth)
         throws RuntimeException /*-{
         this["baseWidth"] = baseWidth;
+        return this;
+    }-*/
+    ;
+
+    public final native String borderColor()
+        throws RuntimeException /*-{
+        return this["borderColor"] = (this["borderColor"] || "silver");
+    }-*/
+    ;
+
+    public final native JsoDial borderColor(String borderColor)
+        throws RuntimeException /*-{
+        this["borderColor"] = borderColor;
         return this;
     }-*/
     ;

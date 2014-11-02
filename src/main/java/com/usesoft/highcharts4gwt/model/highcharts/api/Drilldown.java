@@ -14,6 +14,14 @@ public interface Drilldown {
 
     Drilldown activeDataLabelStyle(String activeDataLabelStyleAsJsonString);
 
+    boolean animationAsBoolean();
+
+    Drilldown animationAsBoolean(boolean animationAsBoolean);
+
+    String animationAsJsonString();
+
+    Drilldown animationAsJsonString(String animationAsJsonString);
+
     DrillUpButton drillUpButton();
 
     Drilldown drillUpButton(DrillUpButton drillUpButton);

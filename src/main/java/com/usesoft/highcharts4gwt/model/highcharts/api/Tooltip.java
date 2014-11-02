@@ -9,6 +9,14 @@ public interface Tooltip {
 
     Tooltip animation(boolean animation);
 
+    String backgroundColor();
+
+    Tooltip backgroundColor(String backgroundColor);
+
+    String borderColor();
+
+    Tooltip borderColor(String borderColor);
+
     Number borderRadius();
 
     Tooltip borderRadius(Number borderRadius);

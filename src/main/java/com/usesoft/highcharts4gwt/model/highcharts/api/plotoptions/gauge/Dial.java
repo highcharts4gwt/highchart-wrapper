@@ -5,6 +5,10 @@ package com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.gauge;
 public interface Dial {
 
 
+    String backgroundColor();
+
+    Dial backgroundColor(String backgroundColor);
+
     String baseLength();
 
     Dial baseLength(String baseLength);
@@ -12,6 +16,10 @@ public interface Dial {
     Number baseWidth();
 
     Dial baseWidth(Number baseWidth);
+
+    String borderColor();
+
+    Dial borderColor(String borderColor);
 
     Number borderWidth();
 

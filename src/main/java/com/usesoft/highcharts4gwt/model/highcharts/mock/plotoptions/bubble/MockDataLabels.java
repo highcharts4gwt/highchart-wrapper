@@ -9,13 +9,36 @@ public class MockDataLabels
     implements DataLabels
 {
 
+    private String backgroundColor;
+    private String borderColor;
     private Number borderRadius;
     private Number borderWidth;
+    private String color;
     private boolean crop;
     private boolean defer;
     private boolean inside;
     private Number padding;
+    private boolean shadowAsBoolean;
+    private String shadowAsJsonString;
     private String verticalAlign;
+
+    public String backgroundColor() {
+        return backgroundColor;
+    }
+
+    public MockDataLabels backgroundColor(String backgroundColor) {
+        this.backgroundColor = backgroundColor;
+        return this;
+    }
+
+    public String borderColor() {
+        return borderColor;
+    }
+
+    public MockDataLabels borderColor(String borderColor) {
+        this.borderColor = borderColor;
+        return this;
+    }
 
     public Number borderRadius() {
         return borderRadius;
@@ -32,6 +55,15 @@ public class MockDataLabels
 
     public MockDataLabels borderWidth(Number borderWidth) {
         this.borderWidth = borderWidth;
+        return this;
+    }
+
+    public String color() {
+        return color;
+    }
+
+    public MockDataLabels color(String color) {
+        this.color = color;
         return this;
     }
 
@@ -68,6 +100,24 @@ public class MockDataLabels
 
     public MockDataLabels padding(Number padding) {
         this.padding = padding;
+        return this;
+    }
+
+    public boolean shadowAsBoolean() {
+        return shadowAsBoolean;
+    }
+
+    public MockDataLabels shadowAsBoolean(boolean shadowAsBoolean) {
+        this.shadowAsBoolean = shadowAsBoolean;
+        return this;
+    }
+
+    public String shadowAsJsonString() {
+        return shadowAsJsonString;
+    }
+
+    public MockDataLabels shadowAsJsonString(String shadowAsJsonString) {
+        this.shadowAsJsonString = shadowAsJsonString;
         return this;
     }
 

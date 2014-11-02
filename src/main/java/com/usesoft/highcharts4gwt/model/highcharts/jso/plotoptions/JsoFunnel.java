@@ -13,6 +13,84 @@ public class JsoFunnel
     protected JsoFunnel() {
     }
 
+    public final native Number heightAsNumber()
+        throws RuntimeException /*-{
+        return this["height"] = (this["height"] || null);
+    }-*/
+    ;
+
+    public final native JsoFunnel heightAsNumber(Number heightAsNumber)
+        throws RuntimeException /*-{
+        this["height"] = heightAsNumber;
+        return this;
+    }-*/
+    ;
+
+    public final native String heightAsString()
+        throws RuntimeException /*-{
+        return this["height"] = (this["height"] || "null");
+    }-*/
+    ;
+
+    public final native JsoFunnel heightAsString(String heightAsString)
+        throws RuntimeException /*-{
+        this["height"] = heightAsString;
+        return this;
+    }-*/
+    ;
+
+    public final native Number neckHeightAsNumber()
+        throws RuntimeException /*-{
+        return this["neckHeight"] = (this["neckHeight"] || null);
+    }-*/
+    ;
+
+    public final native JsoFunnel neckHeightAsNumber(Number neckHeightAsNumber)
+        throws RuntimeException /*-{
+        this["neckHeight"] = neckHeightAsNumber;
+        return this;
+    }-*/
+    ;
+
+    public final native String neckHeightAsString()
+        throws RuntimeException /*-{
+        return this["neckHeight"] = (this["neckHeight"] || "25%");
+    }-*/
+    ;
+
+    public final native JsoFunnel neckHeightAsString(String neckHeightAsString)
+        throws RuntimeException /*-{
+        this["neckHeight"] = neckHeightAsString;
+        return this;
+    }-*/
+    ;
+
+    public final native Number neckWidthAsNumber()
+        throws RuntimeException /*-{
+        return this["neckWidth"] = (this["neckWidth"] || '');
+    }-*/
+    ;
+
+    public final native JsoFunnel neckWidthAsNumber(Number neckWidthAsNumber)
+        throws RuntimeException /*-{
+        this["neckWidth"] = neckWidthAsNumber;
+        return this;
+    }-*/
+    ;
+
+    public final native String neckWidthAsString()
+        throws RuntimeException /*-{
+        return this["neckWidth"] = (this["neckWidth"] || "");
+    }-*/
+    ;
+
+    public final native JsoFunnel neckWidthAsString(String neckWidthAsString)
+        throws RuntimeException /*-{
+        this["neckWidth"] = neckWidthAsString;
+        return this;
+    }-*/
+    ;
+
     public final native boolean reversed()
         throws RuntimeException /*-{
         return this["reversed"] = (this["reversed"] || false);
@@ -22,6 +100,32 @@ public class JsoFunnel
     public final native JsoFunnel reversed(boolean reversed)
         throws RuntimeException /*-{
         this["reversed"] = reversed;
+        return this;
+    }-*/
+    ;
+
+    public final native Number widthAsNumber()
+        throws RuntimeException /*-{
+        return this["width"] = (this["width"] || null);
+    }-*/
+    ;
+
+    public final native JsoFunnel widthAsNumber(Number widthAsNumber)
+        throws RuntimeException /*-{
+        this["width"] = widthAsNumber;
+        return this;
+    }-*/
+    ;
+
+    public final native String widthAsString()
+        throws RuntimeException /*-{
+        return this["width"] = (this["width"] || "90%");
+    }-*/
+    ;
+
+    public final native JsoFunnel widthAsString(String widthAsString)
+        throws RuntimeException /*-{
+        this["width"] = widthAsString;
         return this;
     }-*/
     ;

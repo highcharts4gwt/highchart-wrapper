@@ -6,9 +6,17 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.plotbands.Label;
 public interface PlotBand {
 
 
+    String borderColor();
+
+    PlotBand borderColor(String borderColor);
+
     Number borderWidth();
 
     PlotBand borderWidth(Number borderWidth);
+
+    String color();
+
+    PlotBand color(String color);
 
     String events();
 

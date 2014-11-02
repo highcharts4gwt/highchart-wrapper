@@ -9,7 +9,9 @@ public class MockMarker
 {
 
     private boolean enabled;
+    private String fillColor;
     private Number height;
+    private String lineColor;
     private Number lineWidth;
     private Number radius;
     private States states;
@@ -25,12 +27,30 @@ public class MockMarker
         return this;
     }
 
+    public String fillColor() {
+        return fillColor;
+    }
+
+    public MockMarker fillColor(String fillColor) {
+        this.fillColor = fillColor;
+        return this;
+    }
+
     public Number height() {
         return height;
     }
 
     public MockMarker height(Number height) {
         this.height = height;
+        return this;
+    }
+
+    public String lineColor() {
+        return lineColor;
+    }
+
+    public MockMarker lineColor(String lineColor) {
+        this.lineColor = lineColor;
         return this;
     }
 

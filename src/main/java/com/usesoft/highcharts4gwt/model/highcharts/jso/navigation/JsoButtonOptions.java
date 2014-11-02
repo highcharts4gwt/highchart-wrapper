@@ -52,6 +52,19 @@ public class JsoButtonOptions
     }-*/
     ;
 
+    public final native String symbolFill()
+        throws RuntimeException /*-{
+        return this["symbolFill"] = (this["symbolFill"] || "#E0E0E0");
+    }-*/
+    ;
+
+    public final native JsoButtonOptions symbolFill(String symbolFill)
+        throws RuntimeException /*-{
+        this["symbolFill"] = symbolFill;
+        return this;
+    }-*/
+    ;
+
     public final native Number symbolSize()
         throws RuntimeException /*-{
         return this["symbolSize"] = (this["symbolSize"] || 14.0);
@@ -61,6 +74,19 @@ public class JsoButtonOptions
     public final native JsoButtonOptions symbolSize(Number symbolSize)
         throws RuntimeException /*-{
         this["symbolSize"] = symbolSize;
+        return this;
+    }-*/
+    ;
+
+    public final native String symbolStroke()
+        throws RuntimeException /*-{
+        return this["symbolStroke"] = (this["symbolStroke"] || "#666");
+    }-*/
+    ;
+
+    public final native JsoButtonOptions symbolStroke(String symbolStroke)
+        throws RuntimeException /*-{
+        this["symbolStroke"] = symbolStroke;
         return this;
     }-*/
     ;

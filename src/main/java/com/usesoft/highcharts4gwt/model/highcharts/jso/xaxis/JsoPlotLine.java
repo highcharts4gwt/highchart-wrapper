@@ -14,6 +14,19 @@ public class JsoPlotLine
     protected JsoPlotLine() {
     }
 
+    public final native String color()
+        throws RuntimeException /*-{
+        return this["color"] = (this["color"] || "null");
+    }-*/
+    ;
+
+    public final native JsoPlotLine color(String color)
+        throws RuntimeException /*-{
+        this["color"] = color;
+        return this;
+    }-*/
+    ;
+
     public final native String dashStyle()
         throws RuntimeException /*-{
         return this["dashStyle"] = (this["dashStyle"] || "Solid");

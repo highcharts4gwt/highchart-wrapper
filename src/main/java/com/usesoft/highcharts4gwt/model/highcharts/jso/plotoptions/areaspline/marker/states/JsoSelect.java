@@ -26,6 +26,32 @@ public class JsoSelect
     }-*/
     ;
 
+    public final native String fillColor()
+        throws RuntimeException /*-{
+        return this["fillColor"] = (this["fillColor"] || "null");
+    }-*/
+    ;
+
+    public final native JsoSelect fillColor(String fillColor)
+        throws RuntimeException /*-{
+        this["fillColor"] = fillColor;
+        return this;
+    }-*/
+    ;
+
+    public final native String lineColor()
+        throws RuntimeException /*-{
+        return this["lineColor"] = (this["lineColor"] || "#000000");
+    }-*/
+    ;
+
+    public final native JsoSelect lineColor(String lineColor)
+        throws RuntimeException /*-{
+        this["lineColor"] = lineColor;
+        return this;
+    }-*/
+    ;
+
     public final native Number lineWidth()
         throws RuntimeException /*-{
         return this["lineWidth"] = (this["lineWidth"] || 0.0);

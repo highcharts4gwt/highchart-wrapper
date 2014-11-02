@@ -10,9 +10,17 @@ public interface Marker {
 
     Marker enabled(boolean enabled);
 
+    String fillColor();
+
+    Marker fillColor(String fillColor);
+
     Number height();
 
     Marker height(Number height);
+
+    String lineColor();
+
+    Marker lineColor(String lineColor);
 
     Number lineWidth();
 

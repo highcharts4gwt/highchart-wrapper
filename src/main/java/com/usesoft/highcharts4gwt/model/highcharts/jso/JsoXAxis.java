@@ -34,6 +34,19 @@ public class JsoXAxis
     }-*/
     ;
 
+    public final native String alternateGridColor()
+        throws RuntimeException /*-{
+        return this["alternateGridColor"] = (this["alternateGridColor"] || "null");
+    }-*/
+    ;
+
+    public final native JsoXAxis alternateGridColor(String alternateGridColor)
+        throws RuntimeException /*-{
+        this["alternateGridColor"] = alternateGridColor;
+        return this;
+    }-*/
+    ;
+
     public final native ArrayString categories()
         throws RuntimeException /*-{
         return this["categories"] = (this["categories"] || []);
@@ -113,6 +126,19 @@ public class JsoXAxis
     }-*/
     ;
 
+    public final native String gridLineColor()
+        throws RuntimeException /*-{
+        return this["gridLineColor"] = (this["gridLineColor"] || "#C0C0C0");
+    }-*/
+    ;
+
+    public final native JsoXAxis gridLineColor(String gridLineColor)
+        throws RuntimeException /*-{
+        this["gridLineColor"] = gridLineColor;
+        return this;
+    }-*/
+    ;
+
     public final native String gridLineDashStyle()
         throws RuntimeException /*-{
         return this["gridLineDashStyle"] = (this["gridLineDashStyle"] || "Solid");
@@ -174,6 +200,19 @@ public class JsoXAxis
     public final native JsoXAxis labels(Labels labels)
         throws RuntimeException /*-{
         this["labels"] = labels;
+        return this;
+    }-*/
+    ;
+
+    public final native String lineColor()
+        throws RuntimeException /*-{
+        return this["lineColor"] = (this["lineColor"] || "#C0D0E0");
+    }-*/
+    ;
+
+    public final native JsoXAxis lineColor(String lineColor)
+        throws RuntimeException /*-{
+        this["lineColor"] = lineColor;
         return this;
     }-*/
     ;
@@ -295,6 +334,19 @@ public class JsoXAxis
     }-*/
     ;
 
+    public final native String minorGridLineColor()
+        throws RuntimeException /*-{
+        return this["minorGridLineColor"] = (this["minorGridLineColor"] || "#E0E0E0");
+    }-*/
+    ;
+
+    public final native JsoXAxis minorGridLineColor(String minorGridLineColor)
+        throws RuntimeException /*-{
+        this["minorGridLineColor"] = minorGridLineColor;
+        return this;
+    }-*/
+    ;
+
     public final native String minorGridLineDashStyle()
         throws RuntimeException /*-{
         return this["minorGridLineDashStyle"] = (this["minorGridLineDashStyle"] || "Solid");
@@ -317,6 +369,19 @@ public class JsoXAxis
     public final native JsoXAxis minorGridLineWidth(Number minorGridLineWidth)
         throws RuntimeException /*-{
         this["minorGridLineWidth"] = minorGridLineWidth;
+        return this;
+    }-*/
+    ;
+
+    public final native String minorTickColor()
+        throws RuntimeException /*-{
+        return this["minorTickColor"] = (this["minorTickColor"] || "#A0A0A0");
+    }-*/
+    ;
+
+    public final native JsoXAxis minorTickColor(String minorTickColor)
+        throws RuntimeException /*-{
+        this["minorTickColor"] = minorTickColor;
         return this;
     }-*/
     ;
@@ -499,6 +564,19 @@ public class JsoXAxis
     public final native JsoXAxis startOnTick(boolean startOnTick)
         throws RuntimeException /*-{
         this["startOnTick"] = startOnTick;
+        return this;
+    }-*/
+    ;
+
+    public final native String tickColor()
+        throws RuntimeException /*-{
+        return this["tickColor"] = (this["tickColor"] || "#C0D0E0");
+    }-*/
+    ;
+
+    public final native JsoXAxis tickColor(String tickColor)
+        throws RuntimeException /*-{
+        this["tickColor"] = tickColor;
         return this;
     }-*/
     ;

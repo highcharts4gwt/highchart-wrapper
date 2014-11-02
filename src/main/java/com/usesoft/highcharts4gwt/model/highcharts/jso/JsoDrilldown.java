@@ -42,6 +42,33 @@ public class JsoDrilldown
     }-*/
     ;
 
+    public final native boolean animationAsBoolean()
+        throws RuntimeException /*-{
+        return this["animation"] = (this["animation"] || false);
+    }-*/
+    ;
+
+    public final native JsoDrilldown animationAsBoolean(boolean animationAsBoolean)
+        throws RuntimeException /*-{
+        this["animation"] = animationAsBoolean;
+        return this;
+    }-*/
+    ;
+
+    public final native String animationAsJsonString()
+        throws RuntimeException /*-{
+        this["animation"] = (this["animation"] || JSON.parse(''));
+        return JSON.stringify(this["animation"]);
+    }-*/
+    ;
+
+    public final native JsoDrilldown animationAsJsonString(String animationAsJsonString)
+        throws RuntimeException /*-{
+        this["animation"] = JSON.parse(animationAsJsonString);
+        return this;
+    }-*/
+    ;
+
     public final native DrillUpButton drillUpButton()
         throws RuntimeException /*-{
         return this["drillUpButton"] = (this["drillUpButton"] || {});

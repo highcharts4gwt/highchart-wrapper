@@ -16,17 +16,20 @@ public class MockXAxis
 {
 
     private boolean allowDecimals;
+    private String alternateGridColor;
     private ArrayString categories;
     private Number ceiling;
     private String dateTimeLabelFormats;
     private boolean endOnTick;
     private Events events;
     private Number floor;
+    private String gridLineColor;
     private String gridLineDashStyle;
     private Number gridLineWidth;
     private Number gridZIndex;
     private String id;
     private Labels labels;
+    private String lineColor;
     private Number lineWidth;
     private Number linkedTo;
     private Number max;
@@ -36,8 +39,10 @@ public class MockXAxis
     private Number minPadding;
     private Number minRange;
     private Number minTickInterval;
+    private String minorGridLineColor;
     private String minorGridLineDashStyle;
     private Number minorGridLineWidth;
+    private String minorTickColor;
     private Number minorTickInterval;
     private Number minorTickLength;
     private String minorTickPosition;
@@ -52,6 +57,7 @@ public class MockXAxis
     private boolean showLastLabel;
     private Number startOfWeek;
     private boolean startOnTick;
+    private String tickColor;
     private Number tickInterval;
     private Number tickLength;
     private Number tickPixelInterval;
@@ -68,6 +74,15 @@ public class MockXAxis
 
     public MockXAxis allowDecimals(boolean allowDecimals) {
         this.allowDecimals = allowDecimals;
+        return this;
+    }
+
+    public String alternateGridColor() {
+        return alternateGridColor;
+    }
+
+    public MockXAxis alternateGridColor(String alternateGridColor) {
+        this.alternateGridColor = alternateGridColor;
         return this;
     }
 
@@ -125,6 +140,15 @@ public class MockXAxis
         return this;
     }
 
+    public String gridLineColor() {
+        return gridLineColor;
+    }
+
+    public MockXAxis gridLineColor(String gridLineColor) {
+        this.gridLineColor = gridLineColor;
+        return this;
+    }
+
     public String gridLineDashStyle() {
         return gridLineDashStyle;
     }
@@ -167,6 +191,15 @@ public class MockXAxis
 
     public MockXAxis labels(Labels labels) {
         this.labels = labels;
+        return this;
+    }
+
+    public String lineColor() {
+        return lineColor;
+    }
+
+    public MockXAxis lineColor(String lineColor) {
+        this.lineColor = lineColor;
         return this;
     }
 
@@ -251,6 +284,15 @@ public class MockXAxis
         return this;
     }
 
+    public String minorGridLineColor() {
+        return minorGridLineColor;
+    }
+
+    public MockXAxis minorGridLineColor(String minorGridLineColor) {
+        this.minorGridLineColor = minorGridLineColor;
+        return this;
+    }
+
     public String minorGridLineDashStyle() {
         return minorGridLineDashStyle;
     }
@@ -266,6 +308,15 @@ public class MockXAxis
 
     public MockXAxis minorGridLineWidth(Number minorGridLineWidth) {
         this.minorGridLineWidth = minorGridLineWidth;
+        return this;
+    }
+
+    public String minorTickColor() {
+        return minorTickColor;
+    }
+
+    public MockXAxis minorTickColor(String minorTickColor) {
+        this.minorTickColor = minorTickColor;
         return this;
     }
 
@@ -392,6 +443,15 @@ public class MockXAxis
 
     public MockXAxis startOnTick(boolean startOnTick) {
         this.startOnTick = startOnTick;
+        return this;
+    }
+
+    public String tickColor() {
+        return tickColor;
+    }
+
+    public MockXAxis tickColor(String tickColor) {
+        this.tickColor = tickColor;
         return this;
     }
 

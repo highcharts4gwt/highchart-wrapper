@@ -29,6 +29,7 @@ public class HighchartsLayoutPanel extends SimpleLayoutPanel
 
     private native JavaScriptObject drawChart(String containerId, ChartOptions options)
     /*-{
+        debugger;
         return $wnd.jQuery('#'+containerId).highcharts(options);
     }-*/;
 }

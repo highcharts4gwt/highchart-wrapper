@@ -6,6 +6,10 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.plotlines.Label;
 public interface PlotLine {
 
 
+    String color();
+
+    PlotLine color(String color);
+
     String dashStyle();
 
     PlotLine dashStyle(String dashStyle);

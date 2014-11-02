@@ -7,12 +7,23 @@ public class MockDial
     implements Dial
 {
 
+    private String backgroundColor;
     private String baseLength;
     private Number baseWidth;
+    private String borderColor;
     private Number borderWidth;
     private String radius;
     private String rearLength;
     private Number topWidth;
+
+    public String backgroundColor() {
+        return backgroundColor;
+    }
+
+    public MockDial backgroundColor(String backgroundColor) {
+        this.backgroundColor = backgroundColor;
+        return this;
+    }
 
     public String baseLength() {
         return baseLength;
@@ -29,6 +40,15 @@ public class MockDial
 
     public MockDial baseWidth(Number baseWidth) {
         this.baseWidth = baseWidth;
+        return this;
+    }
+
+    public String borderColor() {
+        return borderColor;
+    }
+
+    public MockDial borderColor(String borderColor) {
+        this.borderColor = borderColor;
         return this;
     }
 

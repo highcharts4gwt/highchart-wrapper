@@ -34,6 +34,22 @@ public interface Series {
 
     Series type(String type);
 
+    Number xAxisAsNumber();
+
+    Series xAxisAsNumber(Number xAxisAsNumber);
+
+    String xAxisAsString();
+
+    Series xAxisAsString(String xAxisAsString);
+
+    Number yAxisAsNumber();
+
+    Series yAxisAsNumber(Number yAxisAsNumber);
+
+    String yAxisAsString();
+
+    Series yAxisAsString(String yAxisAsString);
+
     Number zIndex();
 
     Series zIndex(Number zIndex);

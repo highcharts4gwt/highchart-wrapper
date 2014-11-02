@@ -15,6 +15,19 @@ public class JsoData
     protected JsoData() {
     }
 
+    public final native String color()
+        throws RuntimeException /*-{
+        return this["color"] = (this["color"] || "undefined");
+    }-*/
+    ;
+
+    public final native JsoData color(String color)
+        throws RuntimeException /*-{
+        this["color"] = color;
+        return this;
+    }-*/
+    ;
+
     public final native String dataLabels()
         throws RuntimeException /*-{
         this["dataLabels"] = (this["dataLabels"] || {});
