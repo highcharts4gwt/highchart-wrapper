@@ -29,13 +29,13 @@ public interface Chart {
 
     Chart borderColor(String borderColor);
 
-    Number borderRadius();
+    double borderRadius();
 
-    Chart borderRadius(Number borderRadius);
+    Chart borderRadius(double borderRadius);
 
-    Number borderWidth();
+    double borderWidth();
 
-    Chart borderWidth(Number borderWidth);
+    Chart borderWidth(double borderWidth);
 
     String className();
 
@@ -49,9 +49,9 @@ public interface Chart {
 
     Chart events(Events events);
 
-    Number height();
+    double height();
 
-    Chart height(Number height);
+    Chart height(double height);
 
     boolean ignoreHiddenSeries();
 
@@ -65,21 +65,21 @@ public interface Chart {
 
     Chart margin(ArrayNumber margin);
 
-    Number marginBottom();
+    double marginBottom();
 
-    Chart marginBottom(Number marginBottom);
+    Chart marginBottom(double marginBottom);
 
-    Number marginLeft();
+    double marginLeft();
 
-    Chart marginLeft(Number marginLeft);
+    Chart marginLeft(double marginLeft);
 
-    Number marginRight();
+    double marginRight();
 
-    Chart marginRight(Number marginRight);
+    Chart marginRight(double marginRight);
 
-    Number marginTop();
+    double marginTop();
 
-    Chart marginTop(Number marginTop);
+    Chart marginTop(double marginTop);
 
     Options3d options3d();
 
@@ -109,9 +109,9 @@ public interface Chart {
 
     Chart plotBorderColor(String plotBorderColor);
 
-    Number plotBorderWidth();
+    double plotBorderWidth();
 
-    Chart plotBorderWidth(Number plotBorderWidth);
+    Chart plotBorderWidth(double plotBorderWidth);
 
     boolean plotShadowAsBoolean();
 
@@ -161,21 +161,21 @@ public interface Chart {
 
     Chart spacing(ArrayNumber spacing);
 
-    Number spacingBottom();
+    double spacingBottom();
 
-    Chart spacingBottom(Number spacingBottom);
+    Chart spacingBottom(double spacingBottom);
 
-    Number spacingLeft();
+    double spacingLeft();
 
-    Chart spacingLeft(Number spacingLeft);
+    Chart spacingLeft(double spacingLeft);
 
-    Number spacingRight();
+    double spacingRight();
 
-    Chart spacingRight(Number spacingRight);
+    Chart spacingRight(double spacingRight);
 
-    Number spacingTop();
+    double spacingTop();
 
-    Chart spacingTop(Number spacingTop);
+    Chart spacingTop(double spacingTop);
 
     String style();
 
@@ -185,9 +185,9 @@ public interface Chart {
 
     Chart type(String type);
 
-    Number width();
+    double width();
 
-    Chart width(Number width);
+    Chart width(double width);
 
     String zoomType();
 

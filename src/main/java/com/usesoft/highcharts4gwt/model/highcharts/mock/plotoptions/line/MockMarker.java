@@ -10,13 +10,13 @@ public class MockMarker
 
     private boolean enabled;
     private String fillColor;
-    private Number height;
+    private double height;
     private String lineColor;
-    private Number lineWidth;
-    private Number radius;
+    private double lineWidth;
+    private double radius;
     private States states;
     private String symbol;
-    private Number width;
+    private double width;
 
     public boolean enabled() {
         return enabled;
@@ -36,11 +36,11 @@ public class MockMarker
         return this;
     }
 
-    public Number height() {
+    public double height() {
         return height;
     }
 
-    public MockMarker height(Number height) {
+    public MockMarker height(double height) {
         this.height = height;
         return this;
     }
@@ -54,20 +54,20 @@ public class MockMarker
         return this;
     }
 
-    public Number lineWidth() {
+    public double lineWidth() {
         return lineWidth;
     }
 
-    public MockMarker lineWidth(Number lineWidth) {
+    public MockMarker lineWidth(double lineWidth) {
         this.lineWidth = lineWidth;
         return this;
     }
 
-    public Number radius() {
+    public double radius() {
         return radius;
     }
 
-    public MockMarker radius(Number radius) {
+    public MockMarker radius(double radius) {
         this.radius = radius;
         return this;
     }
@@ -90,11 +90,11 @@ public class MockMarker
         return this;
     }
 
-    public Number width() {
+    public double width() {
         return width;
     }
 
-    public MockMarker width(Number width) {
+    public MockMarker width(double width) {
         this.width = width;
         return this;
     }

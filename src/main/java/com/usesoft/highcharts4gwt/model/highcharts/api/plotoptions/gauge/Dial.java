@@ -13,17 +13,17 @@ public interface Dial {
 
     Dial baseLength(String baseLength);
 
-    Number baseWidth();
+    double baseWidth();
 
-    Dial baseWidth(Number baseWidth);
+    Dial baseWidth(double baseWidth);
 
     String borderColor();
 
     Dial borderColor(String borderColor);
 
-    Number borderWidth();
+    double borderWidth();
 
-    Dial borderWidth(Number borderWidth);
+    Dial borderWidth(double borderWidth);
 
     String radius();
 
@@ -33,8 +33,8 @@ public interface Dial {
 
     Dial rearLength(String rearLength);
 
-    Number topWidth();
+    double topWidth();
 
-    Dial topWidth(Number topWidth);
+    Dial topWidth(double topWidth);
 
 }

@@ -8,18 +8,18 @@ public class MockPlotBand
     implements PlotBand
 {
 
-    private Number innerRadiusAsNumber;
+    private double innerRadiusAsNumber;
     private String innerRadiusAsString;
-    private Number outerRadiusAsNumber;
+    private double outerRadiusAsNumber;
     private String outerRadiusAsString;
-    private Number thicknessAsNumber;
+    private double thicknessAsNumber;
     private String thicknessAsString;
 
-    public Number innerRadiusAsNumber() {
+    public double innerRadiusAsNumber() {
         return innerRadiusAsNumber;
     }
 
-    public MockPlotBand innerRadiusAsNumber(Number innerRadiusAsNumber) {
+    public MockPlotBand innerRadiusAsNumber(double innerRadiusAsNumber) {
         this.innerRadiusAsNumber = innerRadiusAsNumber;
         return this;
     }
@@ -33,11 +33,11 @@ public class MockPlotBand
         return this;
     }
 
-    public Number outerRadiusAsNumber() {
+    public double outerRadiusAsNumber() {
         return outerRadiusAsNumber;
     }
 
-    public MockPlotBand outerRadiusAsNumber(Number outerRadiusAsNumber) {
+    public MockPlotBand outerRadiusAsNumber(double outerRadiusAsNumber) {
         this.outerRadiusAsNumber = outerRadiusAsNumber;
         return this;
     }
@@ -51,11 +51,11 @@ public class MockPlotBand
         return this;
     }
 
-    public Number thicknessAsNumber() {
+    public double thicknessAsNumber() {
         return thicknessAsNumber;
     }
 
-    public MockPlotBand thicknessAsNumber(Number thicknessAsNumber) {
+    public MockPlotBand thicknessAsNumber(double thicknessAsNumber) {
         this.thicknessAsNumber = thicknessAsNumber;
         return this;
     }

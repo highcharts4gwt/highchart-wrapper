@@ -9,12 +9,12 @@ public interface Halo {
 
     Halo attributes(String attributesAsJsonString);
 
-    Number opacity();
+    double opacity();
 
-    Halo opacity(Number opacity);
+    Halo opacity(double opacity);
 
-    Number size();
+    double size();
 
-    Halo size(Number size);
+    Halo size(double size);
 
 }

@@ -16,13 +16,13 @@ public interface DataLabels
 
     DataLabels borderColor(String borderColor);
 
-    Number borderRadius();
+    double borderRadius();
 
-    DataLabels borderRadius(Number borderRadius);
+    DataLabels borderRadius(double borderRadius);
 
-    Number borderWidth();
+    double borderWidth();
 
-    DataLabels borderWidth(Number borderWidth);
+    DataLabels borderWidth(double borderWidth);
 
     String color();
 
@@ -40,9 +40,9 @@ public interface DataLabels
 
     DataLabels inside(boolean inside);
 
-    Number padding();
+    double padding();
 
-    DataLabels padding(Number padding);
+    DataLabels padding(double padding);
 
     boolean shadowAsBoolean();
 

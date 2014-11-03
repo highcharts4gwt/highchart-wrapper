@@ -10,7 +10,7 @@ public class MockGlobal
     private String Date;
     private String VMLRadialGradientURL;
     private String canvasToolsURL;
-    private Number timezoneOffset;
+    private double timezoneOffset;
     private boolean useUTC;
 
     public String Date() {
@@ -40,11 +40,11 @@ public class MockGlobal
         return this;
     }
 
-    public Number timezoneOffset() {
+    public double timezoneOffset() {
         return timezoneOffset;
     }
 
-    public MockGlobal timezoneOffset(Number timezoneOffset) {
+    public MockGlobal timezoneOffset(double timezoneOffset) {
         this.timezoneOffset = timezoneOffset;
         return this;
     }

@@ -11,18 +11,18 @@ public class MockPie
 {
 
     private String borderColor;
-    private Number borderWidth;
+    private double borderWidth;
     private ArrayString center;
-    private Number depth;
-    private Number endAngle;
+    private double depth;
+    private double endAngle;
     private boolean ignoreHiddenPoint;
     private String innerSizeAsString;
-    private Number innerSizeAsNumber;
-    private Number minSize;
+    private double innerSizeAsNumber;
+    private double minSize;
     private String sizeAsString;
-    private Number sizeAsNumber;
-    private Number slicedOffset;
-    private Number startAngle;
+    private double sizeAsNumber;
+    private double slicedOffset;
+    private double startAngle;
 
     public String borderColor() {
         return borderColor;
@@ -33,11 +33,11 @@ public class MockPie
         return this;
     }
 
-    public Number borderWidth() {
+    public double borderWidth() {
         return borderWidth;
     }
 
-    public MockPie borderWidth(Number borderWidth) {
+    public MockPie borderWidth(double borderWidth) {
         this.borderWidth = borderWidth;
         return this;
     }
@@ -51,20 +51,20 @@ public class MockPie
         return this;
     }
 
-    public Number depth() {
+    public double depth() {
         return depth;
     }
 
-    public MockPie depth(Number depth) {
+    public MockPie depth(double depth) {
         this.depth = depth;
         return this;
     }
 
-    public Number endAngle() {
+    public double endAngle() {
         return endAngle;
     }
 
-    public MockPie endAngle(Number endAngle) {
+    public MockPie endAngle(double endAngle) {
         this.endAngle = endAngle;
         return this;
     }
@@ -87,20 +87,20 @@ public class MockPie
         return this;
     }
 
-    public Number innerSizeAsNumber() {
+    public double innerSizeAsNumber() {
         return innerSizeAsNumber;
     }
 
-    public MockPie innerSizeAsNumber(Number innerSizeAsNumber) {
+    public MockPie innerSizeAsNumber(double innerSizeAsNumber) {
         this.innerSizeAsNumber = innerSizeAsNumber;
         return this;
     }
 
-    public Number minSize() {
+    public double minSize() {
         return minSize;
     }
 
-    public MockPie minSize(Number minSize) {
+    public MockPie minSize(double minSize) {
         this.minSize = minSize;
         return this;
     }
@@ -114,29 +114,29 @@ public class MockPie
         return this;
     }
 
-    public Number sizeAsNumber() {
+    public double sizeAsNumber() {
         return sizeAsNumber;
     }
 
-    public MockPie sizeAsNumber(Number sizeAsNumber) {
+    public MockPie sizeAsNumber(double sizeAsNumber) {
         this.sizeAsNumber = sizeAsNumber;
         return this;
     }
 
-    public Number slicedOffset() {
+    public double slicedOffset() {
         return slicedOffset;
     }
 
-    public MockPie slicedOffset(Number slicedOffset) {
+    public MockPie slicedOffset(double slicedOffset) {
         this.slicedOffset = slicedOffset;
         return this;
     }
 
-    public Number startAngle() {
+    public double startAngle() {
         return startAngle;
     }
 
-    public MockPie startAngle(Number startAngle) {
+    public MockPie startAngle(double startAngle) {
         this.startAngle = startAngle;
         return this;
     }

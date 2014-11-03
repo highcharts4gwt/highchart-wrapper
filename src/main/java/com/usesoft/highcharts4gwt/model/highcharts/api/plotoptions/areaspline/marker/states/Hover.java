@@ -17,20 +17,20 @@ public interface Hover {
 
     Hover lineColor(String lineColor);
 
-    Number lineWidth();
+    double lineWidth();
 
-    Hover lineWidth(Number lineWidth);
+    Hover lineWidth(double lineWidth);
 
-    Number lineWidthPlus();
+    double lineWidthPlus();
 
-    Hover lineWidthPlus(Number lineWidthPlus);
+    Hover lineWidthPlus(double lineWidthPlus);
 
-    Number radius();
+    double radius();
 
-    Hover radius(Number radius);
+    Hover radius(double radius);
 
-    Number radiusPlus();
+    double radiusPlus();
 
-    Hover radiusPlus(Number radiusPlus);
+    Hover radiusPlus(double radiusPlus);
 
 }

@@ -25,26 +25,26 @@ public class JsoDataLabels
     }-*/
     ;
 
-    public final native Number connectorPadding()
+    public final native double connectorPadding()
         throws RuntimeException /*-{
         return this["connectorPadding"] = (this["connectorPadding"] || 5.0);
     }-*/
     ;
 
-    public final native JsoDataLabels connectorPadding(Number connectorPadding)
+    public final native JsoDataLabels connectorPadding(double connectorPadding)
         throws RuntimeException /*-{
         this["connectorPadding"] = connectorPadding;
         return this;
     }-*/
     ;
 
-    public final native Number connectorWidth()
+    public final native double connectorWidth()
         throws RuntimeException /*-{
         return this["connectorWidth"] = (this["connectorWidth"] || 1.0);
     }-*/
     ;
 
-    public final native JsoDataLabels connectorWidth(Number connectorWidth)
+    public final native JsoDataLabels connectorWidth(double connectorWidth)
         throws RuntimeException /*-{
         this["connectorWidth"] = connectorWidth;
         return this;

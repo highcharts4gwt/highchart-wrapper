@@ -13,8 +13,8 @@ public class MockSubtitle
     private String text;
     private boolean useHTML;
     private String verticalAlign;
-    private Number x;
-    private Number y;
+    private double x;
+    private double y;
 
     public String align() {
         return align;
@@ -70,20 +70,20 @@ public class MockSubtitle
         return this;
     }
 
-    public Number x() {
+    public double x() {
         return x;
     }
 
-    public MockSubtitle x(Number x) {
+    public MockSubtitle x(double x) {
         this.x = x;
         return this;
     }
 
-    public Number y() {
+    public double y() {
         return y;
     }
 
-    public MockSubtitle y(Number y) {
+    public MockSubtitle y(double y) {
         this.y = y;
         return this;
     }

@@ -13,12 +13,12 @@ public class MockExporting
     private boolean enabled;
     private String filename;
     private String formAttributes;
-    private Number scale;
-    private Number sourceHeight;
-    private Number sourceWidth;
+    private double scale;
+    private double sourceHeight;
+    private double sourceWidth;
     private String type;
     private String url;
-    private Number width;
+    private double width;
 
     public Buttons buttons() {
         return buttons;
@@ -65,29 +65,29 @@ public class MockExporting
         return this;
     }
 
-    public Number scale() {
+    public double scale() {
         return scale;
     }
 
-    public MockExporting scale(Number scale) {
+    public MockExporting scale(double scale) {
         this.scale = scale;
         return this;
     }
 
-    public Number sourceHeight() {
+    public double sourceHeight() {
         return sourceHeight;
     }
 
-    public MockExporting sourceHeight(Number sourceHeight) {
+    public MockExporting sourceHeight(double sourceHeight) {
         this.sourceHeight = sourceHeight;
         return this;
     }
 
-    public Number sourceWidth() {
+    public double sourceWidth() {
         return sourceWidth;
     }
 
-    public MockExporting sourceWidth(Number sourceWidth) {
+    public MockExporting sourceWidth(double sourceWidth) {
         this.sourceWidth = sourceWidth;
         return this;
     }
@@ -110,11 +110,11 @@ public class MockExporting
         return this;
     }
 
-    public Number width() {
+    public double width() {
         return width;
     }
 
-    public MockExporting width(Number width) {
+    public MockExporting width(double width) {
         this.width = width;
         return this;
     }

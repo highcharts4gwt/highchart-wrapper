@@ -9,8 +9,8 @@ public class MockDataLabels
 {
 
     private String connectorColor;
-    private Number connectorPadding;
-    private Number connectorWidth;
+    private double connectorPadding;
+    private double connectorWidth;
     private boolean softConnector;
 
     public String connectorColor() {
@@ -22,20 +22,20 @@ public class MockDataLabels
         return this;
     }
 
-    public Number connectorPadding() {
+    public double connectorPadding() {
         return connectorPadding;
     }
 
-    public MockDataLabels connectorPadding(Number connectorPadding) {
+    public MockDataLabels connectorPadding(double connectorPadding) {
         this.connectorPadding = connectorPadding;
         return this;
     }
 
-    public Number connectorWidth() {
+    public double connectorWidth() {
         return connectorWidth;
     }
 
-    public MockDataLabels connectorWidth(Number connectorWidth) {
+    public MockDataLabels connectorWidth(double connectorWidth) {
         this.connectorWidth = connectorWidth;
         return this;
     }

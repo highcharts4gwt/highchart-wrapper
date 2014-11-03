@@ -11,13 +11,13 @@ public interface DataLabels
 
     DataLabels connectorColor(String connectorColor);
 
-    Number connectorPadding();
+    double connectorPadding();
 
-    DataLabels connectorPadding(Number connectorPadding);
+    DataLabels connectorPadding(double connectorPadding);
 
-    Number connectorWidth();
+    double connectorWidth();
 
-    DataLabels connectorWidth(Number connectorWidth);
+    DataLabels connectorWidth(double connectorWidth);
 
     boolean softConnector();
 

@@ -39,13 +39,13 @@ public class JsoTitle
     }-*/
     ;
 
-    public final native Number margin()
+    public final native double margin()
         throws RuntimeException /*-{
         return this["margin"] = (this["margin"] || 15.0);
     }-*/
     ;
 
-    public final native JsoTitle margin(Number margin)
+    public final native JsoTitle margin(double margin)
         throws RuntimeException /*-{
         this["margin"] = margin;
         return this;
@@ -105,26 +105,26 @@ public class JsoTitle
     }-*/
     ;
 
-    public final native Number x()
+    public final native double x()
         throws RuntimeException /*-{
         return this["x"] = (this["x"] || 0.0);
     }-*/
     ;
 
-    public final native JsoTitle x(Number x)
+    public final native JsoTitle x(double x)
         throws RuntimeException /*-{
         this["x"] = x;
         return this;
     }-*/
     ;
 
-    public final native Number y()
+    public final native double y()
         throws RuntimeException /*-{
         return this["y"] = (this["y"] || null);
     }-*/
     ;
 
-    public final native JsoTitle y(Number y)
+    public final native JsoTitle y(double y)
         throws RuntimeException /*-{
         this["y"] = y;
         return this;

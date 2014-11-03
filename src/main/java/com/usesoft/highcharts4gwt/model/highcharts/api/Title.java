@@ -13,9 +13,9 @@ public interface Title {
 
     Title floating(boolean floating);
 
-    Number margin();
+    double margin();
 
-    Title margin(Number margin);
+    Title margin(double margin);
 
     String style();
 
@@ -33,12 +33,12 @@ public interface Title {
 
     Title verticalAlign(String verticalAlign);
 
-    Number x();
+    double x();
 
-    Title x(Number x);
+    Title x(double x);
 
-    Number y();
+    double y();
 
-    Title y(Number y);
+    Title y(double y);
 
 }

@@ -9,12 +9,12 @@ public class MockDial
 
     private String backgroundColor;
     private String baseLength;
-    private Number baseWidth;
+    private double baseWidth;
     private String borderColor;
-    private Number borderWidth;
+    private double borderWidth;
     private String radius;
     private String rearLength;
-    private Number topWidth;
+    private double topWidth;
 
     public String backgroundColor() {
         return backgroundColor;
@@ -34,11 +34,11 @@ public class MockDial
         return this;
     }
 
-    public Number baseWidth() {
+    public double baseWidth() {
         return baseWidth;
     }
 
-    public MockDial baseWidth(Number baseWidth) {
+    public MockDial baseWidth(double baseWidth) {
         this.baseWidth = baseWidth;
         return this;
     }
@@ -52,11 +52,11 @@ public class MockDial
         return this;
     }
 
-    public Number borderWidth() {
+    public double borderWidth() {
         return borderWidth;
     }
 
-    public MockDial borderWidth(Number borderWidth) {
+    public MockDial borderWidth(double borderWidth) {
         this.borderWidth = borderWidth;
         return this;
     }
@@ -79,11 +79,11 @@ public class MockDial
         return this;
     }
 
-    public Number topWidth() {
+    public double topWidth() {
         return topWidth;
     }
 
-    public MockDial topWidth(Number topWidth) {
+    public MockDial topWidth(double topWidth) {
         this.topWidth = topWidth;
         return this;
     }

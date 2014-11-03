@@ -39,13 +39,13 @@ public class JsoDial
     }-*/
     ;
 
-    public final native Number baseWidth()
+    public final native double baseWidth()
         throws RuntimeException /*-{
         return this["baseWidth"] = (this["baseWidth"] || 3.0);
     }-*/
     ;
 
-    public final native JsoDial baseWidth(Number baseWidth)
+    public final native JsoDial baseWidth(double baseWidth)
         throws RuntimeException /*-{
         this["baseWidth"] = baseWidth;
         return this;
@@ -65,13 +65,13 @@ public class JsoDial
     }-*/
     ;
 
-    public final native Number borderWidth()
+    public final native double borderWidth()
         throws RuntimeException /*-{
         return this["borderWidth"] = (this["borderWidth"] || 0.0);
     }-*/
     ;
 
-    public final native JsoDial borderWidth(Number borderWidth)
+    public final native JsoDial borderWidth(double borderWidth)
         throws RuntimeException /*-{
         this["borderWidth"] = borderWidth;
         return this;
@@ -104,13 +104,13 @@ public class JsoDial
     }-*/
     ;
 
-    public final native Number topWidth()
+    public final native double topWidth()
         throws RuntimeException /*-{
         return this["topWidth"] = (this["topWidth"] || 1.0);
     }-*/
     ;
 
-    public final native JsoDial topWidth(Number topWidth)
+    public final native JsoDial topWidth(double topWidth)
         throws RuntimeException /*-{
         this["topWidth"] = topWidth;
         return this;

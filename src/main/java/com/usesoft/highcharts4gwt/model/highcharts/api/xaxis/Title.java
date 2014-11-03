@@ -13,17 +13,17 @@ public interface Title {
 
     Title enabled(String enabled);
 
-    Number margin();
+    double margin();
 
-    Title margin(Number margin);
+    Title margin(double margin);
 
-    Number offset();
+    double offset();
 
-    Title offset(Number offset);
+    Title offset(double offset);
 
-    Number rotation();
+    double rotation();
 
-    Title rotation(Number rotation);
+    Title rotation(double rotation);
 
     String style();
 

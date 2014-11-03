@@ -26,13 +26,13 @@ public class JsoLabels
     }-*/
     ;
 
-    public final native Number distance()
+    public final native double distance()
         throws RuntimeException /*-{
         return this["distance"] = (this["distance"] || 15.0);
     }-*/
     ;
 
-    public final native JsoLabels distance(Number distance)
+    public final native JsoLabels distance(double distance)
         throws RuntimeException /*-{
         this["distance"] = distance;
         return this;
@@ -65,13 +65,13 @@ public class JsoLabels
     }-*/
     ;
 
-    public final native Number maxStaggerLines()
+    public final native double maxStaggerLines()
         throws RuntimeException /*-{
         return this["maxStaggerLines"] = (this["maxStaggerLines"] || 5.0);
     }-*/
     ;
 
-    public final native JsoLabels maxStaggerLines(Number maxStaggerLines)
+    public final native JsoLabels maxStaggerLines(double maxStaggerLines)
         throws RuntimeException /*-{
         this["maxStaggerLines"] = maxStaggerLines;
         return this;
@@ -91,39 +91,39 @@ public class JsoLabels
     }-*/
     ;
 
-    public final native Number rotation()
+    public final native double rotation()
         throws RuntimeException /*-{
         return this["rotation"] = (this["rotation"] || 0.0);
     }-*/
     ;
 
-    public final native JsoLabels rotation(Number rotation)
+    public final native JsoLabels rotation(double rotation)
         throws RuntimeException /*-{
         this["rotation"] = rotation;
         return this;
     }-*/
     ;
 
-    public final native Number staggerLines()
+    public final native double staggerLines()
         throws RuntimeException /*-{
         return this["staggerLines"] = (this["staggerLines"] || null);
     }-*/
     ;
 
-    public final native JsoLabels staggerLines(Number staggerLines)
+    public final native JsoLabels staggerLines(double staggerLines)
         throws RuntimeException /*-{
         this["staggerLines"] = staggerLines;
         return this;
     }-*/
     ;
 
-    public final native Number step()
+    public final native double step()
         throws RuntimeException /*-{
         return this["step"] = (this["step"] || null);
     }-*/
     ;
 
-    public final native JsoLabels step(Number step)
+    public final native JsoLabels step(double step)
         throws RuntimeException /*-{
         this["step"] = step;
         return this;
@@ -157,39 +157,39 @@ public class JsoLabels
     }-*/
     ;
 
-    public final native Number x()
+    public final native double x()
         throws RuntimeException /*-{
         return this["x"] = (this["x"] || 0.0);
     }-*/
     ;
 
-    public final native JsoLabels x(Number x)
+    public final native JsoLabels x(double x)
         throws RuntimeException /*-{
         this["x"] = x;
         return this;
     }-*/
     ;
 
-    public final native Number y()
+    public final native double y()
         throws RuntimeException /*-{
         return this["y"] = (this["y"] || null);
     }-*/
     ;
 
-    public final native JsoLabels y(Number y)
+    public final native JsoLabels y(double y)
         throws RuntimeException /*-{
         this["y"] = y;
         return this;
     }-*/
     ;
 
-    public final native Number zIndex()
+    public final native double zIndex()
         throws RuntimeException /*-{
         return this["zIndex"] = (this["zIndex"] || 7.0);
     }-*/
     ;
 
-    public final native JsoLabels zIndex(Number zIndex)
+    public final native JsoLabels zIndex(double zIndex)
         throws RuntimeException /*-{
         this["zIndex"] = zIndex;
         return this;

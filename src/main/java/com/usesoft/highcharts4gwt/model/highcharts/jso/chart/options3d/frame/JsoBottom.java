@@ -26,13 +26,13 @@ public class JsoBottom
     }-*/
     ;
 
-    public final native Number size()
+    public final native double size()
         throws RuntimeException /*-{
         return this["size"] = (this["size"] || 1.0);
     }-*/
     ;
 
-    public final native JsoBottom size(Number size)
+    public final native JsoBottom size(double size)
         throws RuntimeException /*-{
         this["size"] = size;
         return this;

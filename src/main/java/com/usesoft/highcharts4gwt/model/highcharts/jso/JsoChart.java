@@ -83,26 +83,26 @@ public class JsoChart
     }-*/
     ;
 
-    public final native Number borderRadius()
+    public final native double borderRadius()
         throws RuntimeException /*-{
         return this["borderRadius"] = (this["borderRadius"] || 0.0);
     }-*/
     ;
 
-    public final native JsoChart borderRadius(Number borderRadius)
+    public final native JsoChart borderRadius(double borderRadius)
         throws RuntimeException /*-{
         this["borderRadius"] = borderRadius;
         return this;
     }-*/
     ;
 
-    public final native Number borderWidth()
+    public final native double borderWidth()
         throws RuntimeException /*-{
         return this["borderWidth"] = (this["borderWidth"] || 0.0);
     }-*/
     ;
 
-    public final native JsoChart borderWidth(Number borderWidth)
+    public final native JsoChart borderWidth(double borderWidth)
         throws RuntimeException /*-{
         this["borderWidth"] = borderWidth;
         return this;
@@ -148,13 +148,13 @@ public class JsoChart
     }-*/
     ;
 
-    public final native Number height()
+    public final native double height()
         throws RuntimeException /*-{
         return this["height"] = (this["height"] || null);
     }-*/
     ;
 
-    public final native JsoChart height(Number height)
+    public final native JsoChart height(double height)
         throws RuntimeException /*-{
         this["height"] = height;
         return this;
@@ -200,52 +200,52 @@ public class JsoChart
     }-*/
     ;
 
-    public final native Number marginBottom()
+    public final native double marginBottom()
         throws RuntimeException /*-{
         return this["marginBottom"] = (this["marginBottom"] || null);
     }-*/
     ;
 
-    public final native JsoChart marginBottom(Number marginBottom)
+    public final native JsoChart marginBottom(double marginBottom)
         throws RuntimeException /*-{
         this["marginBottom"] = marginBottom;
         return this;
     }-*/
     ;
 
-    public final native Number marginLeft()
+    public final native double marginLeft()
         throws RuntimeException /*-{
         return this["marginLeft"] = (this["marginLeft"] || null);
     }-*/
     ;
 
-    public final native JsoChart marginLeft(Number marginLeft)
+    public final native JsoChart marginLeft(double marginLeft)
         throws RuntimeException /*-{
         this["marginLeft"] = marginLeft;
         return this;
     }-*/
     ;
 
-    public final native Number marginRight()
+    public final native double marginRight()
         throws RuntimeException /*-{
         return this["marginRight"] = (this["marginRight"] || null);
     }-*/
     ;
 
-    public final native JsoChart marginRight(Number marginRight)
+    public final native JsoChart marginRight(double marginRight)
         throws RuntimeException /*-{
         this["marginRight"] = marginRight;
         return this;
     }-*/
     ;
 
-    public final native Number marginTop()
+    public final native double marginTop()
         throws RuntimeException /*-{
         return this["marginTop"] = (this["marginTop"] || null);
     }-*/
     ;
 
-    public final native JsoChart marginTop(Number marginTop)
+    public final native JsoChart marginTop(double marginTop)
         throws RuntimeException /*-{
         this["marginTop"] = marginTop;
         return this;
@@ -343,13 +343,13 @@ public class JsoChart
     }-*/
     ;
 
-    public final native Number plotBorderWidth()
+    public final native double plotBorderWidth()
         throws RuntimeException /*-{
         return this["plotBorderWidth"] = (this["plotBorderWidth"] || 0.0);
     }-*/
     ;
 
-    public final native JsoChart plotBorderWidth(Number plotBorderWidth)
+    public final native JsoChart plotBorderWidth(double plotBorderWidth)
         throws RuntimeException /*-{
         this["plotBorderWidth"] = plotBorderWidth;
         return this;
@@ -515,52 +515,52 @@ public class JsoChart
     }-*/
     ;
 
-    public final native Number spacingBottom()
+    public final native double spacingBottom()
         throws RuntimeException /*-{
         return this["spacingBottom"] = (this["spacingBottom"] || 15.0);
     }-*/
     ;
 
-    public final native JsoChart spacingBottom(Number spacingBottom)
+    public final native JsoChart spacingBottom(double spacingBottom)
         throws RuntimeException /*-{
         this["spacingBottom"] = spacingBottom;
         return this;
     }-*/
     ;
 
-    public final native Number spacingLeft()
+    public final native double spacingLeft()
         throws RuntimeException /*-{
         return this["spacingLeft"] = (this["spacingLeft"] || 10.0);
     }-*/
     ;
 
-    public final native JsoChart spacingLeft(Number spacingLeft)
+    public final native JsoChart spacingLeft(double spacingLeft)
         throws RuntimeException /*-{
         this["spacingLeft"] = spacingLeft;
         return this;
     }-*/
     ;
 
-    public final native Number spacingRight()
+    public final native double spacingRight()
         throws RuntimeException /*-{
         return this["spacingRight"] = (this["spacingRight"] || 10.0);
     }-*/
     ;
 
-    public final native JsoChart spacingRight(Number spacingRight)
+    public final native JsoChart spacingRight(double spacingRight)
         throws RuntimeException /*-{
         this["spacingRight"] = spacingRight;
         return this;
     }-*/
     ;
 
-    public final native Number spacingTop()
+    public final native double spacingTop()
         throws RuntimeException /*-{
         return this["spacingTop"] = (this["spacingTop"] || 10.0);
     }-*/
     ;
 
-    public final native JsoChart spacingTop(Number spacingTop)
+    public final native JsoChart spacingTop(double spacingTop)
         throws RuntimeException /*-{
         this["spacingTop"] = spacingTop;
         return this;
@@ -594,13 +594,13 @@ public class JsoChart
     }-*/
     ;
 
-    public final native Number width()
+    public final native double width()
         throws RuntimeException /*-{
         return this["width"] = (this["width"] || null);
     }-*/
     ;
 
-    public final native JsoChart width(Number width)
+    public final native JsoChart width(double width)
         throws RuntimeException /*-{
         this["width"] = width;
         return this;

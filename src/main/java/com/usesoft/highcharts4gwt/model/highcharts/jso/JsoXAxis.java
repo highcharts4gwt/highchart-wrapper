@@ -60,13 +60,13 @@ public class JsoXAxis
     }-*/
     ;
 
-    public final native Number ceiling()
+    public final native double ceiling()
         throws RuntimeException /*-{
         return this["ceiling"] = (this["ceiling"] || '');
     }-*/
     ;
 
-    public final native JsoXAxis ceiling(Number ceiling)
+    public final native JsoXAxis ceiling(double ceiling)
         throws RuntimeException /*-{
         this["ceiling"] = ceiling;
         return this;
@@ -113,13 +113,13 @@ public class JsoXAxis
     }-*/
     ;
 
-    public final native Number floor()
+    public final native double floor()
         throws RuntimeException /*-{
         return this["floor"] = (this["floor"] || null);
     }-*/
     ;
 
-    public final native JsoXAxis floor(Number floor)
+    public final native JsoXAxis floor(double floor)
         throws RuntimeException /*-{
         this["floor"] = floor;
         return this;
@@ -152,26 +152,26 @@ public class JsoXAxis
     }-*/
     ;
 
-    public final native Number gridLineWidth()
+    public final native double gridLineWidth()
         throws RuntimeException /*-{
         return this["gridLineWidth"] = (this["gridLineWidth"] || 0.0);
     }-*/
     ;
 
-    public final native JsoXAxis gridLineWidth(Number gridLineWidth)
+    public final native JsoXAxis gridLineWidth(double gridLineWidth)
         throws RuntimeException /*-{
         this["gridLineWidth"] = gridLineWidth;
         return this;
     }-*/
     ;
 
-    public final native Number gridZIndex()
+    public final native double gridZIndex()
         throws RuntimeException /*-{
         return this["gridZIndex"] = (this["gridZIndex"] || 1.0);
     }-*/
     ;
 
-    public final native JsoXAxis gridZIndex(Number gridZIndex)
+    public final native JsoXAxis gridZIndex(double gridZIndex)
         throws RuntimeException /*-{
         this["gridZIndex"] = gridZIndex;
         return this;
@@ -217,117 +217,117 @@ public class JsoXAxis
     }-*/
     ;
 
-    public final native Number lineWidth()
+    public final native double lineWidth()
         throws RuntimeException /*-{
         return this["lineWidth"] = (this["lineWidth"] || 1.0);
     }-*/
     ;
 
-    public final native JsoXAxis lineWidth(Number lineWidth)
+    public final native JsoXAxis lineWidth(double lineWidth)
         throws RuntimeException /*-{
         this["lineWidth"] = lineWidth;
         return this;
     }-*/
     ;
 
-    public final native Number linkedTo()
+    public final native double linkedTo()
         throws RuntimeException /*-{
         return this["linkedTo"] = (this["linkedTo"] || null);
     }-*/
     ;
 
-    public final native JsoXAxis linkedTo(Number linkedTo)
+    public final native JsoXAxis linkedTo(double linkedTo)
         throws RuntimeException /*-{
         this["linkedTo"] = linkedTo;
         return this;
     }-*/
     ;
 
-    public final native Number max()
+    public final native double max()
         throws RuntimeException /*-{
         return this["max"] = (this["max"] || null);
     }-*/
     ;
 
-    public final native JsoXAxis max(Number max)
+    public final native JsoXAxis max(double max)
         throws RuntimeException /*-{
         this["max"] = max;
         return this;
     }-*/
     ;
 
-    public final native Number maxPadding()
+    public final native double maxPadding()
         throws RuntimeException /*-{
         return this["maxPadding"] = (this["maxPadding"] || 0.01);
     }-*/
     ;
 
-    public final native JsoXAxis maxPadding(Number maxPadding)
+    public final native JsoXAxis maxPadding(double maxPadding)
         throws RuntimeException /*-{
         this["maxPadding"] = maxPadding;
         return this;
     }-*/
     ;
 
-    public final native Number maxZoom()
+    public final native double maxZoom()
         throws RuntimeException /*-{
         return this["maxZoom"] = (this["maxZoom"] || null);
     }-*/
     ;
 
-    public final native JsoXAxis maxZoom(Number maxZoom)
+    public final native JsoXAxis maxZoom(double maxZoom)
         throws RuntimeException /*-{
         this["maxZoom"] = maxZoom;
         return this;
     }-*/
     ;
 
-    public final native Number min()
+    public final native double min()
         throws RuntimeException /*-{
         return this["min"] = (this["min"] || null);
     }-*/
     ;
 
-    public final native JsoXAxis min(Number min)
+    public final native JsoXAxis min(double min)
         throws RuntimeException /*-{
         this["min"] = min;
         return this;
     }-*/
     ;
 
-    public final native Number minPadding()
+    public final native double minPadding()
         throws RuntimeException /*-{
         return this["minPadding"] = (this["minPadding"] || 0.01);
     }-*/
     ;
 
-    public final native JsoXAxis minPadding(Number minPadding)
+    public final native JsoXAxis minPadding(double minPadding)
         throws RuntimeException /*-{
         this["minPadding"] = minPadding;
         return this;
     }-*/
     ;
 
-    public final native Number minRange()
+    public final native double minRange()
         throws RuntimeException /*-{
         return this["minRange"] = (this["minRange"] || null);
     }-*/
     ;
 
-    public final native JsoXAxis minRange(Number minRange)
+    public final native JsoXAxis minRange(double minRange)
         throws RuntimeException /*-{
         this["minRange"] = minRange;
         return this;
     }-*/
     ;
 
-    public final native Number minTickInterval()
+    public final native double minTickInterval()
         throws RuntimeException /*-{
         return this["minTickInterval"] = (this["minTickInterval"] || null);
     }-*/
     ;
 
-    public final native JsoXAxis minTickInterval(Number minTickInterval)
+    public final native JsoXAxis minTickInterval(double minTickInterval)
         throws RuntimeException /*-{
         this["minTickInterval"] = minTickInterval;
         return this;
@@ -360,13 +360,13 @@ public class JsoXAxis
     }-*/
     ;
 
-    public final native Number minorGridLineWidth()
+    public final native double minorGridLineWidth()
         throws RuntimeException /*-{
         return this["minorGridLineWidth"] = (this["minorGridLineWidth"] || 1.0);
     }-*/
     ;
 
-    public final native JsoXAxis minorGridLineWidth(Number minorGridLineWidth)
+    public final native JsoXAxis minorGridLineWidth(double minorGridLineWidth)
         throws RuntimeException /*-{
         this["minorGridLineWidth"] = minorGridLineWidth;
         return this;
@@ -386,26 +386,26 @@ public class JsoXAxis
     }-*/
     ;
 
-    public final native Number minorTickInterval()
+    public final native double minorTickInterval()
         throws RuntimeException /*-{
         return this["minorTickInterval"] = (this["minorTickInterval"] || null);
     }-*/
     ;
 
-    public final native JsoXAxis minorTickInterval(Number minorTickInterval)
+    public final native JsoXAxis minorTickInterval(double minorTickInterval)
         throws RuntimeException /*-{
         this["minorTickInterval"] = minorTickInterval;
         return this;
     }-*/
     ;
 
-    public final native Number minorTickLength()
+    public final native double minorTickLength()
         throws RuntimeException /*-{
         return this["minorTickLength"] = (this["minorTickLength"] || 2.0);
     }-*/
     ;
 
-    public final native JsoXAxis minorTickLength(Number minorTickLength)
+    public final native JsoXAxis minorTickLength(double minorTickLength)
         throws RuntimeException /*-{
         this["minorTickLength"] = minorTickLength;
         return this;
@@ -425,26 +425,26 @@ public class JsoXAxis
     }-*/
     ;
 
-    public final native Number minorTickWidth()
+    public final native double minorTickWidth()
         throws RuntimeException /*-{
         return this["minorTickWidth"] = (this["minorTickWidth"] || 0.0);
     }-*/
     ;
 
-    public final native JsoXAxis minorTickWidth(Number minorTickWidth)
+    public final native JsoXAxis minorTickWidth(double minorTickWidth)
         throws RuntimeException /*-{
         this["minorTickWidth"] = minorTickWidth;
         return this;
     }-*/
     ;
 
-    public final native Number offset()
+    public final native double offset()
         throws RuntimeException /*-{
         return this["offset"] = (this["offset"] || 0.0);
     }-*/
     ;
 
-    public final native JsoXAxis offset(Number offset)
+    public final native JsoXAxis offset(double offset)
         throws RuntimeException /*-{
         this["offset"] = offset;
         return this;
@@ -542,13 +542,13 @@ public class JsoXAxis
     }-*/
     ;
 
-    public final native Number startOfWeek()
+    public final native double startOfWeek()
         throws RuntimeException /*-{
         return this["startOfWeek"] = (this["startOfWeek"] || 1.0);
     }-*/
     ;
 
-    public final native JsoXAxis startOfWeek(Number startOfWeek)
+    public final native JsoXAxis startOfWeek(double startOfWeek)
         throws RuntimeException /*-{
         this["startOfWeek"] = startOfWeek;
         return this;
@@ -581,39 +581,39 @@ public class JsoXAxis
     }-*/
     ;
 
-    public final native Number tickInterval()
+    public final native double tickInterval()
         throws RuntimeException /*-{
         return this["tickInterval"] = (this["tickInterval"] || null);
     }-*/
     ;
 
-    public final native JsoXAxis tickInterval(Number tickInterval)
+    public final native JsoXAxis tickInterval(double tickInterval)
         throws RuntimeException /*-{
         this["tickInterval"] = tickInterval;
         return this;
     }-*/
     ;
 
-    public final native Number tickLength()
+    public final native double tickLength()
         throws RuntimeException /*-{
         return this["tickLength"] = (this["tickLength"] || 10.0);
     }-*/
     ;
 
-    public final native JsoXAxis tickLength(Number tickLength)
+    public final native JsoXAxis tickLength(double tickLength)
         throws RuntimeException /*-{
         this["tickLength"] = tickLength;
         return this;
     }-*/
     ;
 
-    public final native Number tickPixelInterval()
+    public final native double tickPixelInterval()
         throws RuntimeException /*-{
         return this["tickPixelInterval"] = (this["tickPixelInterval"] || null);
     }-*/
     ;
 
-    public final native JsoXAxis tickPixelInterval(Number tickPixelInterval)
+    public final native JsoXAxis tickPixelInterval(double tickPixelInterval)
         throws RuntimeException /*-{
         this["tickPixelInterval"] = tickPixelInterval;
         return this;
@@ -646,13 +646,13 @@ public class JsoXAxis
     }-*/
     ;
 
-    public final native Number tickWidth()
+    public final native double tickWidth()
         throws RuntimeException /*-{
         return this["tickWidth"] = (this["tickWidth"] || 1.0);
     }-*/
     ;
 
-    public final native JsoXAxis tickWidth(Number tickWidth)
+    public final native JsoXAxis tickWidth(double tickWidth)
         throws RuntimeException /*-{
         this["tickWidth"] = tickWidth;
         return this;

@@ -35,9 +35,9 @@ public interface Data {
 
     Data isSum(boolean isSum);
 
-    Number legendIndex();
+    double legendIndex();
 
-    Data legendIndex(Number legendIndex);
+    Data legendIndex(double legendIndex);
 
     Marker marker();
 
@@ -51,12 +51,12 @@ public interface Data {
 
     Data sliced(boolean sliced);
 
-    Number x();
+    double x();
 
-    Data x(Number x);
+    Data x(double x);
 
-    Number y();
+    double y();
 
-    Data y(Number y);
+    Data y(double y);
 
 }

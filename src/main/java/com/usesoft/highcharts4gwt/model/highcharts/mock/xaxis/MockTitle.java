@@ -9,9 +9,9 @@ public class MockTitle
 
     private String align;
     private String enabled;
-    private Number margin;
-    private Number offset;
-    private Number rotation;
+    private double margin;
+    private double offset;
+    private double rotation;
     private String style;
     private String text;
 
@@ -33,29 +33,29 @@ public class MockTitle
         return this;
     }
 
-    public Number margin() {
+    public double margin() {
         return margin;
     }
 
-    public MockTitle margin(Number margin) {
+    public MockTitle margin(double margin) {
         this.margin = margin;
         return this;
     }
 
-    public Number offset() {
+    public double offset() {
         return offset;
     }
 
-    public MockTitle offset(Number offset) {
+    public MockTitle offset(double offset) {
         this.offset = offset;
         return this;
     }
 
-    public Number rotation() {
+    public double rotation() {
         return rotation;
     }
 
-    public MockTitle rotation(Number rotation) {
+    public MockTitle rotation(double rotation) {
         this.rotation = rotation;
         return this;
     }

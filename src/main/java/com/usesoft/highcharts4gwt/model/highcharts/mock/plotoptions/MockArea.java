@@ -10,7 +10,7 @@ public class MockArea
 {
 
     private String fillColor;
-    private Number fillOpacity;
+    private double fillOpacity;
     private String lineColor;
     private String negativeFillColor;
     private boolean trackByArea;
@@ -24,11 +24,11 @@ public class MockArea
         return this;
     }
 
-    public Number fillOpacity() {
+    public double fillOpacity() {
         return fillOpacity;
     }
 
-    public MockArea fillOpacity(Number fillOpacity) {
+    public MockArea fillOpacity(double fillOpacity) {
         this.fillOpacity = fillOpacity;
         return this;
     }

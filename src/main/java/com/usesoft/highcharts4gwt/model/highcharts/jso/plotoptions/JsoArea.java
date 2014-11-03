@@ -26,13 +26,13 @@ public class JsoArea
     }-*/
     ;
 
-    public final native Number fillOpacity()
+    public final native double fillOpacity()
         throws RuntimeException /*-{
         return this["fillOpacity"] = (this["fillOpacity"] || 0.75);
     }-*/
     ;
 
-    public final native JsoArea fillOpacity(Number fillOpacity)
+    public final native JsoArea fillOpacity(double fillOpacity)
         throws RuntimeException /*-{
         this["fillOpacity"] = fillOpacity;
         return this;

@@ -53,13 +53,13 @@ public class JsoGlobal
     }-*/
     ;
 
-    public final native Number timezoneOffset()
+    public final native double timezoneOffset()
         throws RuntimeException /*-{
         return this["timezoneOffset"] = (this["timezoneOffset"] || 0.0);
     }-*/
     ;
 
-    public final native JsoGlobal timezoneOffset(Number timezoneOffset)
+    public final native JsoGlobal timezoneOffset(double timezoneOffset)
         throws RuntimeException /*-{
         this["timezoneOffset"] = timezoneOffset;
         return this;

@@ -10,8 +10,8 @@ public class MockSelect
     private boolean enabled;
     private String fillColor;
     private String lineColor;
-    private Number lineWidth;
-    private Number radius;
+    private double lineWidth;
+    private double radius;
 
     public boolean enabled() {
         return enabled;
@@ -40,20 +40,20 @@ public class MockSelect
         return this;
     }
 
-    public Number lineWidth() {
+    public double lineWidth() {
         return lineWidth;
     }
 
-    public MockSelect lineWidth(Number lineWidth) {
+    public MockSelect lineWidth(double lineWidth) {
         this.lineWidth = lineWidth;
         return this;
     }
 
-    public Number radius() {
+    public double radius() {
         return radius;
     }
 
-    public MockSelect radius(Number radius) {
+    public MockSelect radius(double radius) {
         this.radius = radius;
         return this;
     }

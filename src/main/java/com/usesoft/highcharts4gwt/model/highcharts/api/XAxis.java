@@ -25,9 +25,9 @@ public interface XAxis {
 
     XAxis categories(ArrayString categories);
 
-    Number ceiling();
+    double ceiling();
 
-    XAxis ceiling(Number ceiling);
+    XAxis ceiling(double ceiling);
 
     String dateTimeLabelFormats();
 
@@ -41,9 +41,9 @@ public interface XAxis {
 
     XAxis events(Events events);
 
-    Number floor();
+    double floor();
 
-    XAxis floor(Number floor);
+    XAxis floor(double floor);
 
     String gridLineColor();
 
@@ -53,13 +53,13 @@ public interface XAxis {
 
     XAxis gridLineDashStyle(String gridLineDashStyle);
 
-    Number gridLineWidth();
+    double gridLineWidth();
 
-    XAxis gridLineWidth(Number gridLineWidth);
+    XAxis gridLineWidth(double gridLineWidth);
 
-    Number gridZIndex();
+    double gridZIndex();
 
-    XAxis gridZIndex(Number gridZIndex);
+    XAxis gridZIndex(double gridZIndex);
 
     String id();
 
@@ -73,41 +73,41 @@ public interface XAxis {
 
     XAxis lineColor(String lineColor);
 
-    Number lineWidth();
+    double lineWidth();
 
-    XAxis lineWidth(Number lineWidth);
+    XAxis lineWidth(double lineWidth);
 
-    Number linkedTo();
+    double linkedTo();
 
-    XAxis linkedTo(Number linkedTo);
+    XAxis linkedTo(double linkedTo);
 
-    Number max();
+    double max();
 
-    XAxis max(Number max);
+    XAxis max(double max);
 
-    Number maxPadding();
+    double maxPadding();
 
-    XAxis maxPadding(Number maxPadding);
+    XAxis maxPadding(double maxPadding);
 
-    Number maxZoom();
+    double maxZoom();
 
-    XAxis maxZoom(Number maxZoom);
+    XAxis maxZoom(double maxZoom);
 
-    Number min();
+    double min();
 
-    XAxis min(Number min);
+    XAxis min(double min);
 
-    Number minPadding();
+    double minPadding();
 
-    XAxis minPadding(Number minPadding);
+    XAxis minPadding(double minPadding);
 
-    Number minRange();
+    double minRange();
 
-    XAxis minRange(Number minRange);
+    XAxis minRange(double minRange);
 
-    Number minTickInterval();
+    double minTickInterval();
 
-    XAxis minTickInterval(Number minTickInterval);
+    XAxis minTickInterval(double minTickInterval);
 
     String minorGridLineColor();
 
@@ -117,33 +117,33 @@ public interface XAxis {
 
     XAxis minorGridLineDashStyle(String minorGridLineDashStyle);
 
-    Number minorGridLineWidth();
+    double minorGridLineWidth();
 
-    XAxis minorGridLineWidth(Number minorGridLineWidth);
+    XAxis minorGridLineWidth(double minorGridLineWidth);
 
     String minorTickColor();
 
     XAxis minorTickColor(String minorTickColor);
 
-    Number minorTickInterval();
+    double minorTickInterval();
 
-    XAxis minorTickInterval(Number minorTickInterval);
+    XAxis minorTickInterval(double minorTickInterval);
 
-    Number minorTickLength();
+    double minorTickLength();
 
-    XAxis minorTickLength(Number minorTickLength);
+    XAxis minorTickLength(double minorTickLength);
 
     String minorTickPosition();
 
     XAxis minorTickPosition(String minorTickPosition);
 
-    Number minorTickWidth();
+    double minorTickWidth();
 
-    XAxis minorTickWidth(Number minorTickWidth);
+    XAxis minorTickWidth(double minorTickWidth);
 
-    Number offset();
+    double offset();
 
-    XAxis offset(Number offset);
+    XAxis offset(double offset);
 
     boolean opposite();
 
@@ -173,9 +173,9 @@ public interface XAxis {
 
     XAxis showLastLabel(boolean showLastLabel);
 
-    Number startOfWeek();
+    double startOfWeek();
 
-    XAxis startOfWeek(Number startOfWeek);
+    XAxis startOfWeek(double startOfWeek);
 
     boolean startOnTick();
 
@@ -185,17 +185,17 @@ public interface XAxis {
 
     XAxis tickColor(String tickColor);
 
-    Number tickInterval();
+    double tickInterval();
 
-    XAxis tickInterval(Number tickInterval);
+    XAxis tickInterval(double tickInterval);
 
-    Number tickLength();
+    double tickLength();
 
-    XAxis tickLength(Number tickLength);
+    XAxis tickLength(double tickLength);
 
-    Number tickPixelInterval();
+    double tickPixelInterval();
 
-    XAxis tickPixelInterval(Number tickPixelInterval);
+    XAxis tickPixelInterval(double tickPixelInterval);
 
     String tickPosition();
 
@@ -205,9 +205,9 @@ public interface XAxis {
 
     XAxis tickPositions(ArrayNumber tickPositions);
 
-    Number tickWidth();
+    double tickWidth();
 
-    XAxis tickWidth(Number tickWidth);
+    XAxis tickWidth(double tickWidth);
 
     String tickmarkPlacement();
 

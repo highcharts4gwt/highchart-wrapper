@@ -13,9 +13,9 @@ public class MockPlotLine
     private String events;
     private String id;
     private Label label;
-    private Number value;
-    private Number width;
-    private Number zIndex;
+    private double value;
+    private double width;
+    private double zIndex;
 
     public String color() {
         return color;
@@ -62,29 +62,29 @@ public class MockPlotLine
         return this;
     }
 
-    public Number value() {
+    public double value() {
         return value;
     }
 
-    public MockPlotLine value(Number value) {
+    public MockPlotLine value(double value) {
         this.value = value;
         return this;
     }
 
-    public Number width() {
+    public double width() {
         return width;
     }
 
-    public MockPlotLine width(Number width) {
+    public MockPlotLine width(double width) {
         this.width = width;
         return this;
     }
 
-    public Number zIndex() {
+    public double zIndex() {
         return zIndex;
     }
 
-    public MockPlotLine zIndex(Number zIndex) {
+    public MockPlotLine zIndex(double zIndex) {
         this.zIndex = zIndex;
         return this;
     }

@@ -14,21 +14,21 @@ public interface Marker {
 
     Marker fillColor(String fillColor);
 
-    Number height();
+    double height();
 
-    Marker height(Number height);
+    Marker height(double height);
 
     String lineColor();
 
     Marker lineColor(String lineColor);
 
-    Number lineWidth();
+    double lineWidth();
 
-    Marker lineWidth(Number lineWidth);
+    Marker lineWidth(double lineWidth);
 
-    Number radius();
+    double radius();
 
-    Marker radius(Number radius);
+    Marker radius(double radius);
 
     States states();
 
@@ -38,8 +38,8 @@ public interface Marker {
 
     Marker symbol(String symbol);
 
-    Number width();
+    double width();
 
-    Marker width(Number width);
+    Marker width(double width);
 
 }

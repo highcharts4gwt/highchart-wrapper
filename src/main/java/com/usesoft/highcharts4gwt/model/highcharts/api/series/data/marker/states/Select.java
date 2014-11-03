@@ -17,12 +17,12 @@ public interface Select {
 
     Select lineColor(String lineColor);
 
-    Number lineWidth();
+    double lineWidth();
 
-    Select lineWidth(Number lineWidth);
+    Select lineWidth(double lineWidth);
 
-    Number radius();
+    double radius();
 
-    Select radius(Number radius);
+    Select radius(double radius);
 
 }

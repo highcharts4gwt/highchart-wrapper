@@ -65,39 +65,39 @@ public class JsoBubble
     }-*/
     ;
 
-    public final native Number zMax()
+    public final native double zMax()
         throws RuntimeException /*-{
         return this["zMax"] = (this["zMax"] || null);
     }-*/
     ;
 
-    public final native JsoBubble zMax(Number zMax)
+    public final native JsoBubble zMax(double zMax)
         throws RuntimeException /*-{
         this["zMax"] = zMax;
         return this;
     }-*/
     ;
 
-    public final native Number zMin()
+    public final native double zMin()
         throws RuntimeException /*-{
         return this["zMin"] = (this["zMin"] || null);
     }-*/
     ;
 
-    public final native JsoBubble zMin(Number zMin)
+    public final native JsoBubble zMin(double zMin)
         throws RuntimeException /*-{
         this["zMin"] = zMin;
         return this;
     }-*/
     ;
 
-    public final native Number zThreshold()
+    public final native double zThreshold()
         throws RuntimeException /*-{
         return this["zThreshold"] = (this["zThreshold"] || 0.0);
     }-*/
     ;
 
-    public final native JsoBubble zThreshold(Number zThreshold)
+    public final native JsoBubble zThreshold(double zThreshold)
         throws RuntimeException /*-{
         this["zThreshold"] = zThreshold;
         return this;

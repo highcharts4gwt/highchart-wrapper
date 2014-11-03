@@ -12,13 +12,13 @@ public class JsoPlotBand
     protected JsoPlotBand() {
     }
 
-    public final native Number innerRadiusAsNumber()
+    public final native double innerRadiusAsNumber()
         throws RuntimeException /*-{
         return this["innerRadius"] = (this["innerRadius"] || null);
     }-*/
     ;
 
-    public final native JsoPlotBand innerRadiusAsNumber(Number innerRadiusAsNumber)
+    public final native JsoPlotBand innerRadiusAsNumber(double innerRadiusAsNumber)
         throws RuntimeException /*-{
         this["innerRadius"] = innerRadiusAsNumber;
         return this;
@@ -38,13 +38,13 @@ public class JsoPlotBand
     }-*/
     ;
 
-    public final native Number outerRadiusAsNumber()
+    public final native double outerRadiusAsNumber()
         throws RuntimeException /*-{
         return this["outerRadius"] = (this["outerRadius"] || null);
     }-*/
     ;
 
-    public final native JsoPlotBand outerRadiusAsNumber(Number outerRadiusAsNumber)
+    public final native JsoPlotBand outerRadiusAsNumber(double outerRadiusAsNumber)
         throws RuntimeException /*-{
         this["outerRadius"] = outerRadiusAsNumber;
         return this;
@@ -64,13 +64,13 @@ public class JsoPlotBand
     }-*/
     ;
 
-    public final native Number thicknessAsNumber()
+    public final native double thicknessAsNumber()
         throws RuntimeException /*-{
         return this["thickness"] = (this["thickness"] || 10.0);
     }-*/
     ;
 
-    public final native JsoPlotBand thicknessAsNumber(Number thicknessAsNumber)
+    public final native JsoPlotBand thicknessAsNumber(double thicknessAsNumber)
         throws RuntimeException /*-{
         this["thickness"] = thicknessAsNumber;
         return this;

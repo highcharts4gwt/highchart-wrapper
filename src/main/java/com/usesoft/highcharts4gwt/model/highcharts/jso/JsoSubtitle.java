@@ -92,26 +92,26 @@ public class JsoSubtitle
     }-*/
     ;
 
-    public final native Number x()
+    public final native double x()
         throws RuntimeException /*-{
         return this["x"] = (this["x"] || 0.0);
     }-*/
     ;
 
-    public final native JsoSubtitle x(Number x)
+    public final native JsoSubtitle x(double x)
         throws RuntimeException /*-{
         this["x"] = x;
         return this;
     }-*/
     ;
 
-    public final native Number y()
+    public final native double y()
         throws RuntimeException /*-{
         return this["y"] = (this["y"] || null);
     }-*/
     ;
 
-    public final native JsoSubtitle y(Number y)
+    public final native JsoSubtitle y(double y)
         throws RuntimeException /*-{
         this["y"] = y;
         return this;

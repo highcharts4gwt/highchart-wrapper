@@ -80,39 +80,39 @@ public class JsoPlotLine
     }-*/
     ;
 
-    public final native Number value()
+    public final native double value()
         throws RuntimeException /*-{
         return this["value"] = (this["value"] || null);
     }-*/
     ;
 
-    public final native JsoPlotLine value(Number value)
+    public final native JsoPlotLine value(double value)
         throws RuntimeException /*-{
         this["value"] = value;
         return this;
     }-*/
     ;
 
-    public final native Number width()
+    public final native double width()
         throws RuntimeException /*-{
         return this["width"] = (this["width"] || null);
     }-*/
     ;
 
-    public final native JsoPlotLine width(Number width)
+    public final native JsoPlotLine width(double width)
         throws RuntimeException /*-{
         this["width"] = width;
         return this;
     }-*/
     ;
 
-    public final native Number zIndex()
+    public final native double zIndex()
         throws RuntimeException /*-{
         return this["zIndex"] = (this["zIndex"] || null);
     }-*/
     ;
 
-    public final native JsoPlotLine zIndex(Number zIndex)
+    public final native JsoPlotLine zIndex(double zIndex)
         throws RuntimeException /*-{
         this["zIndex"] = zIndex;
         return this;

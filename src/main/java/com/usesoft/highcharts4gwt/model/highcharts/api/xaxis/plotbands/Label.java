@@ -9,9 +9,9 @@ public interface Label {
 
     Label align(String align);
 
-    Number rotation();
+    double rotation();
 
-    Label rotation(Number rotation);
+    Label rotation(double rotation);
 
     String style();
 
@@ -33,12 +33,12 @@ public interface Label {
 
     Label verticalAlign(String verticalAlign);
 
-    Number x();
+    double x();
 
-    Label x(Number x);
+    Label x(double x);
 
-    Number y();
+    double y();
 
-    Label y(Number y);
+    Label y(double y);
 
 }

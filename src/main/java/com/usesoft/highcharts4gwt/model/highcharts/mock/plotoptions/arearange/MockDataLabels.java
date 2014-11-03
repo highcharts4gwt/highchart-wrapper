@@ -8,43 +8,43 @@ public class MockDataLabels
     implements DataLabels
 {
 
-    private Number xHigh;
-    private Number xLow;
-    private Number yHigh;
-    private Number yLow;
+    private double xHigh;
+    private double xLow;
+    private double yHigh;
+    private double yLow;
 
-    public Number xHigh() {
+    public double xHigh() {
         return xHigh;
     }
 
-    public MockDataLabels xHigh(Number xHigh) {
+    public MockDataLabels xHigh(double xHigh) {
         this.xHigh = xHigh;
         return this;
     }
 
-    public Number xLow() {
+    public double xLow() {
         return xLow;
     }
 
-    public MockDataLabels xLow(Number xLow) {
+    public MockDataLabels xLow(double xLow) {
         this.xLow = xLow;
         return this;
     }
 
-    public Number yHigh() {
+    public double yHigh() {
         return yHigh;
     }
 
-    public MockDataLabels yHigh(Number yHigh) {
+    public MockDataLabels yHigh(double yHigh) {
         this.yHigh = yHigh;
         return this;
     }
 
-    public Number yLow() {
+    public double yLow() {
         return yLow;
     }
 
-    public MockDataLabels yLow(Number yLow) {
+    public MockDataLabels yLow(double yLow) {
         this.yLow = yLow;
         return this;
     }

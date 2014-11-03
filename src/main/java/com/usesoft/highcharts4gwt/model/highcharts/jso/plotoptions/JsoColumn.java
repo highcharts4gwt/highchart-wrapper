@@ -26,26 +26,26 @@ public class JsoColumn
     }-*/
     ;
 
-    public final native Number borderRadius()
+    public final native double borderRadius()
         throws RuntimeException /*-{
         return this["borderRadius"] = (this["borderRadius"] || 0.0);
     }-*/
     ;
 
-    public final native JsoColumn borderRadius(Number borderRadius)
+    public final native JsoColumn borderRadius(double borderRadius)
         throws RuntimeException /*-{
         this["borderRadius"] = borderRadius;
         return this;
     }-*/
     ;
 
-    public final native Number borderWidth()
+    public final native double borderWidth()
         throws RuntimeException /*-{
         return this["borderWidth"] = (this["borderWidth"] || 1.0);
     }-*/
     ;
 
-    public final native JsoColumn borderWidth(Number borderWidth)
+    public final native JsoColumn borderWidth(double borderWidth)
         throws RuntimeException /*-{
         this["borderWidth"] = borderWidth;
         return this;
@@ -65,13 +65,13 @@ public class JsoColumn
     }-*/
     ;
 
-    public final native Number depth()
+    public final native double depth()
         throws RuntimeException /*-{
         return this["depth"] = (this["depth"] || 25.0);
     }-*/
     ;
 
-    public final native JsoColumn depth(Number depth)
+    public final native JsoColumn depth(double depth)
         throws RuntimeException /*-{
         this["depth"] = depth;
         return this;
@@ -91,39 +91,39 @@ public class JsoColumn
     }-*/
     ;
 
-    public final native Number edgeWidth()
+    public final native double edgeWidth()
         throws RuntimeException /*-{
         return this["edgeWidth"] = (this["edgeWidth"] || 1.0);
     }-*/
     ;
 
-    public final native JsoColumn edgeWidth(Number edgeWidth)
+    public final native JsoColumn edgeWidth(double edgeWidth)
         throws RuntimeException /*-{
         this["edgeWidth"] = edgeWidth;
         return this;
     }-*/
     ;
 
-    public final native Number groupPadding()
+    public final native double groupPadding()
         throws RuntimeException /*-{
         return this["groupPadding"] = (this["groupPadding"] || 0.2);
     }-*/
     ;
 
-    public final native JsoColumn groupPadding(Number groupPadding)
+    public final native JsoColumn groupPadding(double groupPadding)
         throws RuntimeException /*-{
         this["groupPadding"] = groupPadding;
         return this;
     }-*/
     ;
 
-    public final native Number groupZPadding()
+    public final native double groupZPadding()
         throws RuntimeException /*-{
         return this["groupZPadding"] = (this["groupZPadding"] || 1.0);
     }-*/
     ;
 
-    public final native JsoColumn groupZPadding(Number groupZPadding)
+    public final native JsoColumn groupZPadding(double groupZPadding)
         throws RuntimeException /*-{
         this["groupZPadding"] = groupZPadding;
         return this;
@@ -143,52 +143,52 @@ public class JsoColumn
     }-*/
     ;
 
-    public final native Number minPointLength()
+    public final native double minPointLength()
         throws RuntimeException /*-{
         return this["minPointLength"] = (this["minPointLength"] || 0.0);
     }-*/
     ;
 
-    public final native JsoColumn minPointLength(Number minPointLength)
+    public final native JsoColumn minPointLength(double minPointLength)
         throws RuntimeException /*-{
         this["minPointLength"] = minPointLength;
         return this;
     }-*/
     ;
 
-    public final native Number pointPadding()
+    public final native double pointPadding()
         throws RuntimeException /*-{
         return this["pointPadding"] = (this["pointPadding"] || 0.1);
     }-*/
     ;
 
-    public final native JsoColumn pointPadding(Number pointPadding)
+    public final native JsoColumn pointPadding(double pointPadding)
         throws RuntimeException /*-{
         this["pointPadding"] = pointPadding;
         return this;
     }-*/
     ;
 
-    public final native Number pointRange()
+    public final native double pointRange()
         throws RuntimeException /*-{
         return this["pointRange"] = (this["pointRange"] || null);
     }-*/
     ;
 
-    public final native JsoColumn pointRange(Number pointRange)
+    public final native JsoColumn pointRange(double pointRange)
         throws RuntimeException /*-{
         this["pointRange"] = pointRange;
         return this;
     }-*/
     ;
 
-    public final native Number pointWidth()
+    public final native double pointWidth()
         throws RuntimeException /*-{
         return this["pointWidth"] = (this["pointWidth"] || null);
     }-*/
     ;
 
-    public final native JsoColumn pointWidth(Number pointWidth)
+    public final native JsoColumn pointWidth(double pointWidth)
         throws RuntimeException /*-{
         this["pointWidth"] = pointWidth;
         return this;

@@ -17,21 +17,21 @@ public class MockSeries
     private String color;
     private boolean connectEnds;
     private boolean connectNulls;
-    private Number cropThreshold;
+    private double cropThreshold;
     private String cursor;
     private String dashStyle;
     private DataLabels dataLabels;
     private boolean enableMouseTracking;
     private Events events;
-    private Number lineWidth;
+    private double lineWidth;
     private String linkedTo;
     private Marker marker;
     private String negativeColor;
     private Point point;
-    private Number pointInterval;
+    private double pointInterval;
     private String pointPlacementAsString;
-    private Number pointPlacementAsNumber;
-    private Number pointStart;
+    private double pointPlacementAsNumber;
+    private double pointStart;
     private boolean selected;
     private boolean shadowAsBoolean;
     private String shadowAsJsonString;
@@ -39,9 +39,9 @@ public class MockSeries
     private boolean showInLegend;
     private String stacking;
     private boolean stickyTracking;
-    private Number threshold;
+    private double threshold;
     private Tooltip tooltip;
-    private Number turboThreshold;
+    private double turboThreshold;
     private boolean visible;
 
     public boolean allowPointSelect() {
@@ -89,11 +89,11 @@ public class MockSeries
         return this;
     }
 
-    public Number cropThreshold() {
+    public double cropThreshold() {
         return cropThreshold;
     }
 
-    public MockSeries cropThreshold(Number cropThreshold) {
+    public MockSeries cropThreshold(double cropThreshold) {
         this.cropThreshold = cropThreshold;
         return this;
     }
@@ -143,11 +143,11 @@ public class MockSeries
         return this;
     }
 
-    public Number lineWidth() {
+    public double lineWidth() {
         return lineWidth;
     }
 
-    public MockSeries lineWidth(Number lineWidth) {
+    public MockSeries lineWidth(double lineWidth) {
         this.lineWidth = lineWidth;
         return this;
     }
@@ -188,11 +188,11 @@ public class MockSeries
         return this;
     }
 
-    public Number pointInterval() {
+    public double pointInterval() {
         return pointInterval;
     }
 
-    public MockSeries pointInterval(Number pointInterval) {
+    public MockSeries pointInterval(double pointInterval) {
         this.pointInterval = pointInterval;
         return this;
     }
@@ -206,20 +206,20 @@ public class MockSeries
         return this;
     }
 
-    public Number pointPlacementAsNumber() {
+    public double pointPlacementAsNumber() {
         return pointPlacementAsNumber;
     }
 
-    public MockSeries pointPlacementAsNumber(Number pointPlacementAsNumber) {
+    public MockSeries pointPlacementAsNumber(double pointPlacementAsNumber) {
         this.pointPlacementAsNumber = pointPlacementAsNumber;
         return this;
     }
 
-    public Number pointStart() {
+    public double pointStart() {
         return pointStart;
     }
 
-    public MockSeries pointStart(Number pointStart) {
+    public MockSeries pointStart(double pointStart) {
         this.pointStart = pointStart;
         return this;
     }
@@ -287,11 +287,11 @@ public class MockSeries
         return this;
     }
 
-    public Number threshold() {
+    public double threshold() {
         return threshold;
     }
 
-    public MockSeries threshold(Number threshold) {
+    public MockSeries threshold(double threshold) {
         this.threshold = threshold;
         return this;
     }
@@ -305,11 +305,11 @@ public class MockSeries
         return this;
     }
 
-    public Number turboThreshold() {
+    public double turboThreshold() {
         return turboThreshold;
     }
 
-    public MockSeries turboThreshold(Number turboThreshold) {
+    public MockSeries turboThreshold(double turboThreshold) {
         this.turboThreshold = turboThreshold;
         return this;
     }

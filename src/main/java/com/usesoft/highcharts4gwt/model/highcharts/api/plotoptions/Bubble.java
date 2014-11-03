@@ -24,16 +24,16 @@ public interface Bubble
 
     Bubble sizeBy(String sizeBy);
 
-    Number zMax();
+    double zMax();
 
-    Bubble zMax(Number zMax);
+    Bubble zMax(double zMax);
 
-    Number zMin();
+    double zMin();
 
-    Bubble zMin(Number zMin);
+    Bubble zMin(double zMin);
 
-    Number zThreshold();
+    double zThreshold();
 
-    Bubble zThreshold(Number zThreshold);
+    Bubble zThreshold(double zThreshold);
 
 }

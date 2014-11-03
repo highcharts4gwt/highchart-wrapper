@@ -9,14 +9,14 @@ public class MockPlotBand
 {
 
     private String borderColor;
-    private Number borderWidth;
+    private double borderWidth;
     private String color;
     private String events;
-    private Number from;
+    private double from;
     private String id;
     private Label label;
-    private Number to;
-    private Number zIndex;
+    private double to;
+    private double zIndex;
 
     public String borderColor() {
         return borderColor;
@@ -27,11 +27,11 @@ public class MockPlotBand
         return this;
     }
 
-    public Number borderWidth() {
+    public double borderWidth() {
         return borderWidth;
     }
 
-    public MockPlotBand borderWidth(Number borderWidth) {
+    public MockPlotBand borderWidth(double borderWidth) {
         this.borderWidth = borderWidth;
         return this;
     }
@@ -54,11 +54,11 @@ public class MockPlotBand
         return this;
     }
 
-    public Number from() {
+    public double from() {
         return from;
     }
 
-    public MockPlotBand from(Number from) {
+    public MockPlotBand from(double from) {
         this.from = from;
         return this;
     }
@@ -81,20 +81,20 @@ public class MockPlotBand
         return this;
     }
 
-    public Number to() {
+    public double to() {
         return to;
     }
 
-    public MockPlotBand to(Number to) {
+    public MockPlotBand to(double to) {
         this.to = to;
         return this;
     }
 
-    public Number zIndex() {
+    public double zIndex() {
         return zIndex;
     }
 
-    public MockPlotBand zIndex(Number zIndex) {
+    public MockPlotBand zIndex(double zIndex) {
         this.zIndex = zIndex;
         return this;
     }

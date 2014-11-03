@@ -26,17 +26,17 @@ public interface Exporting {
 
     Exporting formAttributes(String formAttributesAsJsonString);
 
-    Number scale();
+    double scale();
 
-    Exporting scale(Number scale);
+    Exporting scale(double scale);
 
-    Number sourceHeight();
+    double sourceHeight();
 
-    Exporting sourceHeight(Number sourceHeight);
+    Exporting sourceHeight(double sourceHeight);
 
-    Number sourceWidth();
+    double sourceWidth();
 
-    Exporting sourceWidth(Number sourceWidth);
+    Exporting sourceWidth(double sourceWidth);
 
     String type();
 
@@ -46,8 +46,8 @@ public interface Exporting {
 
     Exporting url(String url);
 
-    Number width();
+    double width();
 
-    Exporting width(Number width);
+    Exporting width(double width);
 
 }

@@ -17,9 +17,9 @@ public interface Global {
 
     Global canvasToolsURL(String canvasToolsURL);
 
-    Number timezoneOffset();
+    double timezoneOffset();
 
-    Global timezoneOffset(Number timezoneOffset);
+    Global timezoneOffset(double timezoneOffset);
 
     boolean useUTC();
 

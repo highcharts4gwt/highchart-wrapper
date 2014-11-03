@@ -8,7 +8,7 @@ public class MockBottom
 {
 
     private String color;
-    private Number size;
+    private double size;
 
     public String color() {
         return color;
@@ -19,11 +19,11 @@ public class MockBottom
         return this;
     }
 
-    public Number size() {
+    public double size() {
         return size;
     }
 
-    public MockBottom size(Number size) {
+    public MockBottom size(double size) {
         this.size = size;
         return this;
     }

@@ -27,13 +27,13 @@ public class JsoPlotBand
     }-*/
     ;
 
-    public final native Number borderWidth()
+    public final native double borderWidth()
         throws RuntimeException /*-{
         return this["borderWidth"] = (this["borderWidth"] || 0.0);
     }-*/
     ;
 
-    public final native JsoPlotBand borderWidth(Number borderWidth)
+    public final native JsoPlotBand borderWidth(double borderWidth)
         throws RuntimeException /*-{
         this["borderWidth"] = borderWidth;
         return this;
@@ -67,13 +67,13 @@ public class JsoPlotBand
     }-*/
     ;
 
-    public final native Number from()
+    public final native double from()
         throws RuntimeException /*-{
         return this["from"] = (this["from"] || null);
     }-*/
     ;
 
-    public final native JsoPlotBand from(Number from)
+    public final native JsoPlotBand from(double from)
         throws RuntimeException /*-{
         this["from"] = from;
         return this;
@@ -106,26 +106,26 @@ public class JsoPlotBand
     }-*/
     ;
 
-    public final native Number to()
+    public final native double to()
         throws RuntimeException /*-{
         return this["to"] = (this["to"] || null);
     }-*/
     ;
 
-    public final native JsoPlotBand to(Number to)
+    public final native JsoPlotBand to(double to)
         throws RuntimeException /*-{
         this["to"] = to;
         return this;
     }-*/
     ;
 
-    public final native Number zIndex()
+    public final native double zIndex()
         throws RuntimeException /*-{
         return this["zIndex"] = (this["zIndex"] || null);
     }-*/
     ;
 
-    public final native JsoPlotBand zIndex(Number zIndex)
+    public final native JsoPlotBand zIndex(double zIndex)
         throws RuntimeException /*-{
         this["zIndex"] = zIndex;
         return this;

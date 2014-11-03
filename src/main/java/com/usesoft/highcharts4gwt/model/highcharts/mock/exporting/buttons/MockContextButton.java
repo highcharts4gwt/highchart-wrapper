@@ -11,7 +11,7 @@ public class MockContextButton
 
     private String menuItems;
     private String symbol;
-    private Number x;
+    private double x;
 
     public String menuItems() {
         return menuItems;
@@ -31,11 +31,11 @@ public class MockContextButton
         return this;
     }
 
-    public Number x() {
+    public double x() {
         return x;
     }
 
-    public MockContextButton x(Number x) {
+    public MockContextButton x(double x) {
         this.x = x;
         return this;
     }

@@ -39,26 +39,26 @@ public class JsoDataLabels
     }-*/
     ;
 
-    public final native Number borderRadius()
+    public final native double borderRadius()
         throws RuntimeException /*-{
         return this["borderRadius"] = (this["borderRadius"] || 0.0);
     }-*/
     ;
 
-    public final native JsoDataLabels borderRadius(Number borderRadius)
+    public final native JsoDataLabels borderRadius(double borderRadius)
         throws RuntimeException /*-{
         this["borderRadius"] = borderRadius;
         return this;
     }-*/
     ;
 
-    public final native Number borderWidth()
+    public final native double borderWidth()
         throws RuntimeException /*-{
         return this["borderWidth"] = (this["borderWidth"] || 0.0);
     }-*/
     ;
 
-    public final native JsoDataLabels borderWidth(Number borderWidth)
+    public final native JsoDataLabels borderWidth(double borderWidth)
         throws RuntimeException /*-{
         this["borderWidth"] = borderWidth;
         return this;
@@ -117,13 +117,13 @@ public class JsoDataLabels
     }-*/
     ;
 
-    public final native Number padding()
+    public final native double padding()
         throws RuntimeException /*-{
         return this["padding"] = (this["padding"] || 2.0);
     }-*/
     ;
 
-    public final native JsoDataLabels padding(Number padding)
+    public final native JsoDataLabels padding(double padding)
         throws RuntimeException /*-{
         this["padding"] = padding;
         return this;

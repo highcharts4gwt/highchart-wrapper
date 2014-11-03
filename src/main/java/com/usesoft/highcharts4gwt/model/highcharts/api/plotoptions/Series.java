@@ -30,9 +30,9 @@ public interface Series {
 
     Series connectNulls(boolean connectNulls);
 
-    Number cropThreshold();
+    double cropThreshold();
 
-    Series cropThreshold(Number cropThreshold);
+    Series cropThreshold(double cropThreshold);
 
     String cursor();
 
@@ -54,9 +54,9 @@ public interface Series {
 
     Series events(Events events);
 
-    Number lineWidth();
+    double lineWidth();
 
-    Series lineWidth(Number lineWidth);
+    Series lineWidth(double lineWidth);
 
     String linkedTo();
 
@@ -74,21 +74,21 @@ public interface Series {
 
     Series point(Point point);
 
-    Number pointInterval();
+    double pointInterval();
 
-    Series pointInterval(Number pointInterval);
+    Series pointInterval(double pointInterval);
 
     String pointPlacementAsString();
 
     Series pointPlacementAsString(String pointPlacementAsString);
 
-    Number pointPlacementAsNumber();
+    double pointPlacementAsNumber();
 
-    Series pointPlacementAsNumber(Number pointPlacementAsNumber);
+    Series pointPlacementAsNumber(double pointPlacementAsNumber);
 
-    Number pointStart();
+    double pointStart();
 
-    Series pointStart(Number pointStart);
+    Series pointStart(double pointStart);
 
     boolean selected();
 
@@ -118,17 +118,17 @@ public interface Series {
 
     Series stickyTracking(boolean stickyTracking);
 
-    Number threshold();
+    double threshold();
 
-    Series threshold(Number threshold);
+    Series threshold(double threshold);
 
     Tooltip tooltip();
 
     Series tooltip(Tooltip tooltip);
 
-    Number turboThreshold();
+    double turboThreshold();
 
-    Series turboThreshold(Number turboThreshold);
+    Series turboThreshold(double turboThreshold);
 
     boolean visible();
 

@@ -10,10 +10,10 @@ public class MockHover
     private boolean enabled;
     private String fillColor;
     private String lineColor;
-    private Number lineWidth;
-    private Number lineWidthPlus;
-    private Number radius;
-    private Number radiusPlus;
+    private double lineWidth;
+    private double lineWidthPlus;
+    private double radius;
+    private double radiusPlus;
 
     public boolean enabled() {
         return enabled;
@@ -42,38 +42,38 @@ public class MockHover
         return this;
     }
 
-    public Number lineWidth() {
+    public double lineWidth() {
         return lineWidth;
     }
 
-    public MockHover lineWidth(Number lineWidth) {
+    public MockHover lineWidth(double lineWidth) {
         this.lineWidth = lineWidth;
         return this;
     }
 
-    public Number lineWidthPlus() {
+    public double lineWidthPlus() {
         return lineWidthPlus;
     }
 
-    public MockHover lineWidthPlus(Number lineWidthPlus) {
+    public MockHover lineWidthPlus(double lineWidthPlus) {
         this.lineWidthPlus = lineWidthPlus;
         return this;
     }
 
-    public Number radius() {
+    public double radius() {
         return radius;
     }
 
-    public MockHover radius(Number radius) {
+    public MockHover radius(double radius) {
         this.radius = radius;
         return this;
     }
 
-    public Number radiusPlus() {
+    public double radiusPlus() {
         return radiusPlus;
     }
 
-    public MockHover radiusPlus(Number radiusPlus) {
+    public MockHover radiusPlus(double radiusPlus) {
         this.radiusPlus = radiusPlus;
         return this;
     }

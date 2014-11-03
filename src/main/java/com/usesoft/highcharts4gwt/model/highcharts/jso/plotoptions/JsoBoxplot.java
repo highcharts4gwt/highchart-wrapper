@@ -39,13 +39,13 @@ public class JsoBoxplot
     }-*/
     ;
 
-    public final native Number medianWidth()
+    public final native double medianWidth()
         throws RuntimeException /*-{
         return this["medianWidth"] = (this["medianWidth"] || 2.0);
     }-*/
     ;
 
-    public final native JsoBoxplot medianWidth(Number medianWidth)
+    public final native JsoBoxplot medianWidth(double medianWidth)
         throws RuntimeException /*-{
         this["medianWidth"] = medianWidth;
         return this;
@@ -78,13 +78,13 @@ public class JsoBoxplot
     }-*/
     ;
 
-    public final native Number stemWidth()
+    public final native double stemWidth()
         throws RuntimeException /*-{
         return this["stemWidth"] = (this["stemWidth"] || null);
     }-*/
     ;
 
-    public final native JsoBoxplot stemWidth(Number stemWidth)
+    public final native JsoBoxplot stemWidth(double stemWidth)
         throws RuntimeException /*-{
         this["stemWidth"] = stemWidth;
         return this;
@@ -104,13 +104,13 @@ public class JsoBoxplot
     }-*/
     ;
 
-    public final native Number whiskerLengthAsNumber()
+    public final native double whiskerLengthAsNumber()
         throws RuntimeException /*-{
         return this["whiskerLength"] = (this["whiskerLength"] || null);
     }-*/
     ;
 
-    public final native JsoBoxplot whiskerLengthAsNumber(Number whiskerLengthAsNumber)
+    public final native JsoBoxplot whiskerLengthAsNumber(double whiskerLengthAsNumber)
         throws RuntimeException /*-{
         this["whiskerLength"] = whiskerLengthAsNumber;
         return this;
@@ -130,13 +130,13 @@ public class JsoBoxplot
     }-*/
     ;
 
-    public final native Number whiskerWidth()
+    public final native double whiskerWidth()
         throws RuntimeException /*-{
         return this["whiskerWidth"] = (this["whiskerWidth"] || 2.0);
     }-*/
     ;
 
-    public final native JsoBoxplot whiskerWidth(Number whiskerWidth)
+    public final native JsoBoxplot whiskerWidth(double whiskerWidth)
         throws RuntimeException /*-{
         this["whiskerWidth"] = whiskerWidth;
         return this;

@@ -53,26 +53,26 @@ public class JsoSeries
     }-*/
     ;
 
-    public final native Number index()
+    public final native double index()
         throws RuntimeException /*-{
         return this["index"] = (this["index"] || null);
     }-*/
     ;
 
-    public final native JsoSeries index(Number index)
+    public final native JsoSeries index(double index)
         throws RuntimeException /*-{
         this["index"] = index;
         return this;
     }-*/
     ;
 
-    public final native Number legendIndex()
+    public final native double legendIndex()
         throws RuntimeException /*-{
         return this["legendIndex"] = (this["legendIndex"] || null);
     }-*/
     ;
 
-    public final native JsoSeries legendIndex(Number legendIndex)
+    public final native JsoSeries legendIndex(double legendIndex)
         throws RuntimeException /*-{
         this["legendIndex"] = legendIndex;
         return this;
@@ -105,13 +105,13 @@ public class JsoSeries
     }-*/
     ;
 
-    public final native Number xAxisAsNumber()
+    public final native double xAxisAsNumber()
         throws RuntimeException /*-{
         return this["xAxis"] = (this["xAxis"] || 0.0);
     }-*/
     ;
 
-    public final native JsoSeries xAxisAsNumber(Number xAxisAsNumber)
+    public final native JsoSeries xAxisAsNumber(double xAxisAsNumber)
         throws RuntimeException /*-{
         this["xAxis"] = xAxisAsNumber;
         return this;
@@ -131,13 +131,13 @@ public class JsoSeries
     }-*/
     ;
 
-    public final native Number yAxisAsNumber()
+    public final native double yAxisAsNumber()
         throws RuntimeException /*-{
         return this["yAxis"] = (this["yAxis"] || 0.0);
     }-*/
     ;
 
-    public final native JsoSeries yAxisAsNumber(Number yAxisAsNumber)
+    public final native JsoSeries yAxisAsNumber(double yAxisAsNumber)
         throws RuntimeException /*-{
         this["yAxis"] = yAxisAsNumber;
         return this;
@@ -157,13 +157,13 @@ public class JsoSeries
     }-*/
     ;
 
-    public final native Number zIndex()
+    public final native double zIndex()
         throws RuntimeException /*-{
         return this["zIndex"] = (this["zIndex"] || '');
     }-*/
     ;
 
-    public final native JsoSeries zIndex(Number zIndex)
+    public final native JsoSeries zIndex(double zIndex)
         throws RuntimeException /*-{
         this["zIndex"] = zIndex;
         return this;

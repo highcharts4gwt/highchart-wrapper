@@ -52,26 +52,26 @@ public class JsoSelect
     }-*/
     ;
 
-    public final native Number lineWidth()
+    public final native double lineWidth()
         throws RuntimeException /*-{
         return this["lineWidth"] = (this["lineWidth"] || 0.0);
     }-*/
     ;
 
-    public final native JsoSelect lineWidth(Number lineWidth)
+    public final native JsoSelect lineWidth(double lineWidth)
         throws RuntimeException /*-{
         this["lineWidth"] = lineWidth;
         return this;
     }-*/
     ;
 
-    public final native Number radius()
+    public final native double radius()
         throws RuntimeException /*-{
         return this["radius"] = (this["radius"] || null);
     }-*/
     ;
 
-    public final native JsoSelect radius(Number radius)
+    public final native JsoSelect radius(double radius)
         throws RuntimeException /*-{
         this["radius"] = radius;
         return this;

@@ -27,26 +27,26 @@ public class JsoHalo
     }-*/
     ;
 
-    public final native Number opacity()
+    public final native double opacity()
         throws RuntimeException /*-{
         return this["opacity"] = (this["opacity"] || 0.25);
     }-*/
     ;
 
-    public final native JsoHalo opacity(Number opacity)
+    public final native JsoHalo opacity(double opacity)
         throws RuntimeException /*-{
         this["opacity"] = opacity;
         return this;
     }-*/
     ;
 
-    public final native Number size()
+    public final native double size()
         throws RuntimeException /*-{
         return this["size"] = (this["size"] || 10.0);
     }-*/
     ;
 
-    public final native JsoHalo size(Number size)
+    public final native JsoHalo size(double size)
         throws RuntimeException /*-{
         this["size"] = size;
         return this;

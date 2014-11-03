@@ -83,13 +83,13 @@ public class JsoSeries
     }-*/
     ;
 
-    public final native Number cropThreshold()
+    public final native double cropThreshold()
         throws RuntimeException /*-{
         return this["cropThreshold"] = (this["cropThreshold"] || 300.0);
     }-*/
     ;
 
-    public final native JsoSeries cropThreshold(Number cropThreshold)
+    public final native JsoSeries cropThreshold(double cropThreshold)
         throws RuntimeException /*-{
         this["cropThreshold"] = cropThreshold;
         return this;
@@ -161,13 +161,13 @@ public class JsoSeries
     }-*/
     ;
 
-    public final native Number lineWidth()
+    public final native double lineWidth()
         throws RuntimeException /*-{
         return this["lineWidth"] = (this["lineWidth"] || 2.0);
     }-*/
     ;
 
-    public final native JsoSeries lineWidth(Number lineWidth)
+    public final native JsoSeries lineWidth(double lineWidth)
         throws RuntimeException /*-{
         this["lineWidth"] = lineWidth;
         return this;
@@ -226,13 +226,13 @@ public class JsoSeries
     }-*/
     ;
 
-    public final native Number pointInterval()
+    public final native double pointInterval()
         throws RuntimeException /*-{
         return this["pointInterval"] = (this["pointInterval"] || 1.0);
     }-*/
     ;
 
-    public final native JsoSeries pointInterval(Number pointInterval)
+    public final native JsoSeries pointInterval(double pointInterval)
         throws RuntimeException /*-{
         this["pointInterval"] = pointInterval;
         return this;
@@ -252,26 +252,26 @@ public class JsoSeries
     }-*/
     ;
 
-    public final native Number pointPlacementAsNumber()
+    public final native double pointPlacementAsNumber()
         throws RuntimeException /*-{
         return this["pointPlacement"] = (this["pointPlacement"] || null);
     }-*/
     ;
 
-    public final native JsoSeries pointPlacementAsNumber(Number pointPlacementAsNumber)
+    public final native JsoSeries pointPlacementAsNumber(double pointPlacementAsNumber)
         throws RuntimeException /*-{
         this["pointPlacement"] = pointPlacementAsNumber;
         return this;
     }-*/
     ;
 
-    public final native Number pointStart()
+    public final native double pointStart()
         throws RuntimeException /*-{
         return this["pointStart"] = (this["pointStart"] || 0.0);
     }-*/
     ;
 
-    public final native JsoSeries pointStart(Number pointStart)
+    public final native JsoSeries pointStart(double pointStart)
         throws RuntimeException /*-{
         this["pointStart"] = pointStart;
         return this;
@@ -370,13 +370,13 @@ public class JsoSeries
     }-*/
     ;
 
-    public final native Number threshold()
+    public final native double threshold()
         throws RuntimeException /*-{
         return this["threshold"] = (this["threshold"] || 0.0);
     }-*/
     ;
 
-    public final native JsoSeries threshold(Number threshold)
+    public final native JsoSeries threshold(double threshold)
         throws RuntimeException /*-{
         this["threshold"] = threshold;
         return this;
@@ -396,13 +396,13 @@ public class JsoSeries
     }-*/
     ;
 
-    public final native Number turboThreshold()
+    public final native double turboThreshold()
         throws RuntimeException /*-{
         return this["turboThreshold"] = (this["turboThreshold"] || 1000.0);
     }-*/
     ;
 
-    public final native JsoSeries turboThreshold(Number turboThreshold)
+    public final native JsoSeries turboThreshold(double turboThreshold)
         throws RuntimeException /*-{
         this["turboThreshold"] = turboThreshold;
         return this;

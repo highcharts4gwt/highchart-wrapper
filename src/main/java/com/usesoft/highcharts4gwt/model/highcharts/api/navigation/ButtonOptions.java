@@ -13,33 +13,33 @@ public interface ButtonOptions {
 
     ButtonOptions enabled(boolean enabled);
 
-    Number height();
+    double height();
 
-    ButtonOptions height(Number height);
+    ButtonOptions height(double height);
 
     String symbolFill();
 
     ButtonOptions symbolFill(String symbolFill);
 
-    Number symbolSize();
+    double symbolSize();
 
-    ButtonOptions symbolSize(Number symbolSize);
+    ButtonOptions symbolSize(double symbolSize);
 
     String symbolStroke();
 
     ButtonOptions symbolStroke(String symbolStroke);
 
-    Number symbolStrokeWidth();
+    double symbolStrokeWidth();
 
-    ButtonOptions symbolStrokeWidth(Number symbolStrokeWidth);
+    ButtonOptions symbolStrokeWidth(double symbolStrokeWidth);
 
-    Number symbolX();
+    double symbolX();
 
-    ButtonOptions symbolX(Number symbolX);
+    ButtonOptions symbolX(double symbolX);
 
-    Number symbolY();
+    double symbolY();
 
-    ButtonOptions symbolY(Number symbolY);
+    ButtonOptions symbolY(double symbolY);
 
     String text();
 
@@ -53,12 +53,12 @@ public interface ButtonOptions {
 
     ButtonOptions verticalAlign(String verticalAlign);
 
-    Number width();
+    double width();
 
-    ButtonOptions width(Number width);
+    ButtonOptions width(double width);
 
-    Number y();
+    double y();
 
-    ButtonOptions y(Number y);
+    ButtonOptions y(double y);
 
 }

@@ -9,20 +9,20 @@ public interface Pane {
 
     Pane background(String backgroundAsJsonStringArray);
 
-    Number endAngle();
+    double endAngle();
 
-    Pane endAngle(Number endAngle);
+    Pane endAngle(double endAngle);
 
-    Number sizeAsNumber();
+    double sizeAsNumber();
 
-    Pane sizeAsNumber(Number sizeAsNumber);
+    Pane sizeAsNumber(double sizeAsNumber);
 
     String sizeAsString();
 
     Pane sizeAsString(String sizeAsString);
 
-    Number startAngle();
+    double startAngle();
 
-    Pane startAngle(Number startAngle);
+    Pane startAngle(double startAngle);
 
 }

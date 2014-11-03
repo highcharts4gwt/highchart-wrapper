@@ -39,26 +39,26 @@ public class JsoPivot
     }-*/
     ;
 
-    public final native Number borderWidth()
+    public final native double borderWidth()
         throws RuntimeException /*-{
         return this["borderWidth"] = (this["borderWidth"] || 0.0);
     }-*/
     ;
 
-    public final native JsoPivot borderWidth(Number borderWidth)
+    public final native JsoPivot borderWidth(double borderWidth)
         throws RuntimeException /*-{
         this["borderWidth"] = borderWidth;
         return this;
     }-*/
     ;
 
-    public final native Number radius()
+    public final native double radius()
         throws RuntimeException /*-{
         return this["radius"] = (this["radius"] || 5.0);
     }-*/
     ;
 
-    public final native JsoPivot radius(Number radius)
+    public final native JsoPivot radius(double radius)
         throws RuntimeException /*-{
         this["radius"] = radius;
         return this;

@@ -54,26 +54,26 @@ public class JsoLegend
     }-*/
     ;
 
-    public final native Number borderRadius()
+    public final native double borderRadius()
         throws RuntimeException /*-{
         return this["borderRadius"] = (this["borderRadius"] || 0.0);
     }-*/
     ;
 
-    public final native JsoLegend borderRadius(Number borderRadius)
+    public final native JsoLegend borderRadius(double borderRadius)
         throws RuntimeException /*-{
         this["borderRadius"] = borderRadius;
         return this;
     }-*/
     ;
 
-    public final native Number borderWidth()
+    public final native double borderWidth()
         throws RuntimeException /*-{
         return this["borderWidth"] = (this["borderWidth"] || 0.0);
     }-*/
     ;
 
-    public final native JsoLegend borderWidth(Number borderWidth)
+    public final native JsoLegend borderWidth(double borderWidth)
         throws RuntimeException /*-{
         this["borderWidth"] = borderWidth;
         return this;
@@ -106,13 +106,13 @@ public class JsoLegend
     }-*/
     ;
 
-    public final native Number itemDistance()
+    public final native double itemDistance()
         throws RuntimeException /*-{
         return this["itemDistance"] = (this["itemDistance"] || 20.0);
     }-*/
     ;
 
-    public final native JsoLegend itemDistance(Number itemDistance)
+    public final native JsoLegend itemDistance(double itemDistance)
         throws RuntimeException /*-{
         this["itemDistance"] = itemDistance;
         return this;
@@ -147,26 +147,26 @@ public class JsoLegend
     }-*/
     ;
 
-    public final native Number itemMarginBottom()
+    public final native double itemMarginBottom()
         throws RuntimeException /*-{
         return this["itemMarginBottom"] = (this["itemMarginBottom"] || 0.0);
     }-*/
     ;
 
-    public final native JsoLegend itemMarginBottom(Number itemMarginBottom)
+    public final native JsoLegend itemMarginBottom(double itemMarginBottom)
         throws RuntimeException /*-{
         this["itemMarginBottom"] = itemMarginBottom;
         return this;
     }-*/
     ;
 
-    public final native Number itemMarginTop()
+    public final native double itemMarginTop()
         throws RuntimeException /*-{
         return this["itemMarginTop"] = (this["itemMarginTop"] || 0.0);
     }-*/
     ;
 
-    public final native JsoLegend itemMarginTop(Number itemMarginTop)
+    public final native JsoLegend itemMarginTop(double itemMarginTop)
         throws RuntimeException /*-{
         this["itemMarginTop"] = itemMarginTop;
         return this;
@@ -187,13 +187,13 @@ public class JsoLegend
     }-*/
     ;
 
-    public final native Number itemWidth()
+    public final native double itemWidth()
         throws RuntimeException /*-{
         return this["itemWidth"] = (this["itemWidth"] || null);
     }-*/
     ;
 
-    public final native JsoLegend itemWidth(Number itemWidth)
+    public final native JsoLegend itemWidth(double itemWidth)
         throws RuntimeException /*-{
         this["itemWidth"] = itemWidth;
         return this;
@@ -226,39 +226,39 @@ public class JsoLegend
     }-*/
     ;
 
-    public final native Number lineHeight()
+    public final native double lineHeight()
         throws RuntimeException /*-{
         return this["lineHeight"] = (this["lineHeight"] || 16.0);
     }-*/
     ;
 
-    public final native JsoLegend lineHeight(Number lineHeight)
+    public final native JsoLegend lineHeight(double lineHeight)
         throws RuntimeException /*-{
         this["lineHeight"] = lineHeight;
         return this;
     }-*/
     ;
 
-    public final native Number margin()
+    public final native double margin()
         throws RuntimeException /*-{
         return this["margin"] = (this["margin"] || 15.0);
     }-*/
     ;
 
-    public final native JsoLegend margin(Number margin)
+    public final native JsoLegend margin(double margin)
         throws RuntimeException /*-{
         this["margin"] = margin;
         return this;
     }-*/
     ;
 
-    public final native Number maxHeight()
+    public final native double maxHeight()
         throws RuntimeException /*-{
         return this["maxHeight"] = (this["maxHeight"] || null);
     }-*/
     ;
 
-    public final native JsoLegend maxHeight(Number maxHeight)
+    public final native JsoLegend maxHeight(double maxHeight)
         throws RuntimeException /*-{
         this["maxHeight"] = maxHeight;
         return this;
@@ -278,13 +278,13 @@ public class JsoLegend
     }-*/
     ;
 
-    public final native Number padding()
+    public final native double padding()
         throws RuntimeException /*-{
         return this["padding"] = (this["padding"] || 8.0);
     }-*/
     ;
 
-    public final native JsoLegend padding(Number padding)
+    public final native JsoLegend padding(double padding)
         throws RuntimeException /*-{
         this["padding"] = padding;
         return this;
@@ -358,52 +358,52 @@ public class JsoLegend
     }-*/
     ;
 
-    public final native Number symbolHeight()
+    public final native double symbolHeight()
         throws RuntimeException /*-{
         return this["symbolHeight"] = (this["symbolHeight"] || 12.0);
     }-*/
     ;
 
-    public final native JsoLegend symbolHeight(Number symbolHeight)
+    public final native JsoLegend symbolHeight(double symbolHeight)
         throws RuntimeException /*-{
         this["symbolHeight"] = symbolHeight;
         return this;
     }-*/
     ;
 
-    public final native Number symbolPadding()
+    public final native double symbolPadding()
         throws RuntimeException /*-{
         return this["symbolPadding"] = (this["symbolPadding"] || 5.0);
     }-*/
     ;
 
-    public final native JsoLegend symbolPadding(Number symbolPadding)
+    public final native JsoLegend symbolPadding(double symbolPadding)
         throws RuntimeException /*-{
         this["symbolPadding"] = symbolPadding;
         return this;
     }-*/
     ;
 
-    public final native Number symbolRadius()
+    public final native double symbolRadius()
         throws RuntimeException /*-{
         return this["symbolRadius"] = (this["symbolRadius"] || 2.0);
     }-*/
     ;
 
-    public final native JsoLegend symbolRadius(Number symbolRadius)
+    public final native JsoLegend symbolRadius(double symbolRadius)
         throws RuntimeException /*-{
         this["symbolRadius"] = symbolRadius;
         return this;
     }-*/
     ;
 
-    public final native Number symbolWidth()
+    public final native double symbolWidth()
         throws RuntimeException /*-{
         return this["symbolWidth"] = (this["symbolWidth"] || 16.0);
     }-*/
     ;
 
-    public final native JsoLegend symbolWidth(Number symbolWidth)
+    public final native JsoLegend symbolWidth(double symbolWidth)
         throws RuntimeException /*-{
         this["symbolWidth"] = symbolWidth;
         return this;
@@ -449,39 +449,39 @@ public class JsoLegend
     }-*/
     ;
 
-    public final native Number width()
+    public final native double width()
         throws RuntimeException /*-{
         return this["width"] = (this["width"] || null);
     }-*/
     ;
 
-    public final native JsoLegend width(Number width)
+    public final native JsoLegend width(double width)
         throws RuntimeException /*-{
         this["width"] = width;
         return this;
     }-*/
     ;
 
-    public final native Number x()
+    public final native double x()
         throws RuntimeException /*-{
         return this["x"] = (this["x"] || 0.0);
     }-*/
     ;
 
-    public final native JsoLegend x(Number x)
+    public final native JsoLegend x(double x)
         throws RuntimeException /*-{
         this["x"] = x;
         return this;
     }-*/
     ;
 
-    public final native Number y()
+    public final native double y()
         throws RuntimeException /*-{
         return this["y"] = (this["y"] || 0.0);
     }-*/
     ;
 
-    public final native JsoLegend y(Number y)
+    public final native JsoLegend y(double y)
         throws RuntimeException /*-{
         this["y"] = y;
         return this;

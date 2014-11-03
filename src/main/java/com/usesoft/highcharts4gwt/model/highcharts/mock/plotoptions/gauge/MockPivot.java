@@ -9,8 +9,8 @@ public class MockPivot
 
     private String backgroundColor;
     private String borderColor;
-    private Number borderWidth;
-    private Number radius;
+    private double borderWidth;
+    private double radius;
 
     public String backgroundColor() {
         return backgroundColor;
@@ -30,20 +30,20 @@ public class MockPivot
         return this;
     }
 
-    public Number borderWidth() {
+    public double borderWidth() {
         return borderWidth;
     }
 
-    public MockPivot borderWidth(Number borderWidth) {
+    public MockPivot borderWidth(double borderWidth) {
         this.borderWidth = borderWidth;
         return this;
     }
 
-    public Number radius() {
+    public double radius() {
         return radius;
     }
 
-    public MockPivot radius(Number radius) {
+    public MockPivot radius(double radius) {
         this.radius = radius;
         return this;
     }

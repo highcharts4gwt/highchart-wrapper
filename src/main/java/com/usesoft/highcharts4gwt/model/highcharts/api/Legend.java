@@ -19,13 +19,13 @@ public interface Legend {
 
     Legend borderColor(String borderColor);
 
-    Number borderRadius();
+    double borderRadius();
 
-    Legend borderRadius(Number borderRadius);
+    Legend borderRadius(double borderRadius);
 
-    Number borderWidth();
+    double borderWidth();
 
-    Legend borderWidth(Number borderWidth);
+    Legend borderWidth(double borderWidth);
 
     boolean enabled();
 
@@ -35,9 +35,9 @@ public interface Legend {
 
     Legend floating(boolean floating);
 
-    Number itemDistance();
+    double itemDistance();
 
-    Legend itemDistance(Number itemDistance);
+    Legend itemDistance(double itemDistance);
 
     String itemHiddenStyle();
 
@@ -47,21 +47,21 @@ public interface Legend {
 
     Legend itemHoverStyle(String itemHoverStyleAsJsonString);
 
-    Number itemMarginBottom();
+    double itemMarginBottom();
 
-    Legend itemMarginBottom(Number itemMarginBottom);
+    Legend itemMarginBottom(double itemMarginBottom);
 
-    Number itemMarginTop();
+    double itemMarginTop();
 
-    Legend itemMarginTop(Number itemMarginTop);
+    Legend itemMarginTop(double itemMarginTop);
 
     String itemStyle();
 
     Legend itemStyle(String itemStyleAsJsonString);
 
-    Number itemWidth();
+    double itemWidth();
 
-    Legend itemWidth(Number itemWidth);
+    Legend itemWidth(double itemWidth);
 
     String labelFormat();
 
@@ -71,25 +71,25 @@ public interface Legend {
 
     Legend layout(String layout);
 
-    Number lineHeight();
+    double lineHeight();
 
-    Legend lineHeight(Number lineHeight);
+    Legend lineHeight(double lineHeight);
 
-    Number margin();
+    double margin();
 
-    Legend margin(Number margin);
+    Legend margin(double margin);
 
-    Number maxHeight();
+    double maxHeight();
 
-    Legend maxHeight(Number maxHeight);
+    Legend maxHeight(double maxHeight);
 
     Navigation navigation();
 
     Legend navigation(Navigation navigation);
 
-    Number padding();
+    double padding();
 
-    Legend padding(Number padding);
+    Legend padding(double padding);
 
     boolean reversed();
 
@@ -111,21 +111,21 @@ public interface Legend {
 
     Legend style(String styleAsJsonString);
 
-    Number symbolHeight();
+    double symbolHeight();
 
-    Legend symbolHeight(Number symbolHeight);
+    Legend symbolHeight(double symbolHeight);
 
-    Number symbolPadding();
+    double symbolPadding();
 
-    Legend symbolPadding(Number symbolPadding);
+    Legend symbolPadding(double symbolPadding);
 
-    Number symbolRadius();
+    double symbolRadius();
 
-    Legend symbolRadius(Number symbolRadius);
+    Legend symbolRadius(double symbolRadius);
 
-    Number symbolWidth();
+    double symbolWidth();
 
-    Legend symbolWidth(Number symbolWidth);
+    Legend symbolWidth(double symbolWidth);
 
     Title title();
 
@@ -139,16 +139,16 @@ public interface Legend {
 
     Legend verticalAlign(String verticalAlign);
 
-    Number width();
+    double width();
 
-    Legend width(Number width);
+    Legend width(double width);
 
-    Number x();
+    double x();
 
-    Legend x(Number x);
+    Legend x(double x);
 
-    Number y();
+    double y();
 
-    Legend y(Number y);
+    Legend y(double y);
 
 }

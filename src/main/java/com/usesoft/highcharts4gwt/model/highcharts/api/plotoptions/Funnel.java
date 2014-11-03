@@ -8,25 +8,25 @@ public interface Funnel
 {
 
 
-    Number heightAsNumber();
+    double heightAsNumber();
 
-    Funnel heightAsNumber(Number heightAsNumber);
+    Funnel heightAsNumber(double heightAsNumber);
 
     String heightAsString();
 
     Funnel heightAsString(String heightAsString);
 
-    Number neckHeightAsNumber();
+    double neckHeightAsNumber();
 
-    Funnel neckHeightAsNumber(Number neckHeightAsNumber);
+    Funnel neckHeightAsNumber(double neckHeightAsNumber);
 
     String neckHeightAsString();
 
     Funnel neckHeightAsString(String neckHeightAsString);
 
-    Number neckWidthAsNumber();
+    double neckWidthAsNumber();
 
-    Funnel neckWidthAsNumber(Number neckWidthAsNumber);
+    Funnel neckWidthAsNumber(double neckWidthAsNumber);
 
     String neckWidthAsString();
 
@@ -36,9 +36,9 @@ public interface Funnel
 
     Funnel reversed(boolean reversed);
 
-    Number widthAsNumber();
+    double widthAsNumber();
 
-    Funnel widthAsNumber(Number widthAsNumber);
+    Funnel widthAsNumber(double widthAsNumber);
 
     String widthAsString();
 

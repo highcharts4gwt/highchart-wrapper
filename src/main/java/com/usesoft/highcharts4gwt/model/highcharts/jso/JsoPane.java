@@ -27,26 +27,26 @@ public class JsoPane
     }-*/
     ;
 
-    public final native Number endAngle()
+    public final native double endAngle()
         throws RuntimeException /*-{
         return this["endAngle"] = (this["endAngle"] || null);
     }-*/
     ;
 
-    public final native JsoPane endAngle(Number endAngle)
+    public final native JsoPane endAngle(double endAngle)
         throws RuntimeException /*-{
         this["endAngle"] = endAngle;
         return this;
     }-*/
     ;
 
-    public final native Number sizeAsNumber()
+    public final native double sizeAsNumber()
         throws RuntimeException /*-{
         return this["size"] = (this["size"] || null);
     }-*/
     ;
 
-    public final native JsoPane sizeAsNumber(Number sizeAsNumber)
+    public final native JsoPane sizeAsNumber(double sizeAsNumber)
         throws RuntimeException /*-{
         this["size"] = sizeAsNumber;
         return this;
@@ -66,13 +66,13 @@ public class JsoPane
     }-*/
     ;
 
-    public final native Number startAngle()
+    public final native double startAngle()
         throws RuntimeException /*-{
         return this["startAngle"] = (this["startAngle"] || null);
     }-*/
     ;
 
-    public final native JsoPane startAngle(Number startAngle)
+    public final native JsoPane startAngle(double startAngle)
         throws RuntimeException /*-{
         this["startAngle"] = startAngle;
         return this;

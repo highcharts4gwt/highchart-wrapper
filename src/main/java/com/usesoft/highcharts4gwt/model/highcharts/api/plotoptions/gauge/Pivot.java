@@ -13,12 +13,12 @@ public interface Pivot {
 
     Pivot borderColor(String borderColor);
 
-    Number borderWidth();
+    double borderWidth();
 
-    Pivot borderWidth(Number borderWidth);
+    Pivot borderWidth(double borderWidth);
 
-    Number radius();
+    double radius();
 
-    Pivot radius(Number radius);
+    Pivot radius(double radius);
 
 }

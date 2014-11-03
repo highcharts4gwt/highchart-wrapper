@@ -53,13 +53,13 @@ public class JsoNavigation
     }-*/
     ;
 
-    public final native Number arrowSize()
+    public final native double arrowSize()
         throws RuntimeException /*-{
         return this["arrowSize"] = (this["arrowSize"] || 12.0);
     }-*/
     ;
 
-    public final native JsoNavigation arrowSize(Number arrowSize)
+    public final native JsoNavigation arrowSize(double arrowSize)
         throws RuntimeException /*-{
         this["arrowSize"] = arrowSize;
         return this;

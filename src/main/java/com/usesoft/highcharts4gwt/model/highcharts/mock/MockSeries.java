@@ -11,15 +11,15 @@ public class MockSeries
     private ArrayNumber data;
     private String dataURL;
     private String id;
-    private Number index;
-    private Number legendIndex;
+    private double index;
+    private double legendIndex;
     private String name;
     private String type;
-    private Number xAxisAsNumber;
+    private double xAxisAsNumber;
     private String xAxisAsString;
-    private Number yAxisAsNumber;
+    private double yAxisAsNumber;
     private String yAxisAsString;
-    private Number zIndex;
+    private double zIndex;
 
     public ArrayNumber data() {
         return data;
@@ -48,20 +48,20 @@ public class MockSeries
         return this;
     }
 
-    public Number index() {
+    public double index() {
         return index;
     }
 
-    public MockSeries index(Number index) {
+    public MockSeries index(double index) {
         this.index = index;
         return this;
     }
 
-    public Number legendIndex() {
+    public double legendIndex() {
         return legendIndex;
     }
 
-    public MockSeries legendIndex(Number legendIndex) {
+    public MockSeries legendIndex(double legendIndex) {
         this.legendIndex = legendIndex;
         return this;
     }
@@ -84,11 +84,11 @@ public class MockSeries
         return this;
     }
 
-    public Number xAxisAsNumber() {
+    public double xAxisAsNumber() {
         return xAxisAsNumber;
     }
 
-    public MockSeries xAxisAsNumber(Number xAxisAsNumber) {
+    public MockSeries xAxisAsNumber(double xAxisAsNumber) {
         this.xAxisAsNumber = xAxisAsNumber;
         return this;
     }
@@ -102,11 +102,11 @@ public class MockSeries
         return this;
     }
 
-    public Number yAxisAsNumber() {
+    public double yAxisAsNumber() {
         return yAxisAsNumber;
     }
 
-    public MockSeries yAxisAsNumber(Number yAxisAsNumber) {
+    public MockSeries yAxisAsNumber(double yAxisAsNumber) {
         this.yAxisAsNumber = yAxisAsNumber;
         return this;
     }
@@ -120,11 +120,11 @@ public class MockSeries
         return this;
     }
 
-    public Number zIndex() {
+    public double zIndex() {
         return zIndex;
     }
 
-    public MockSeries zIndex(Number zIndex) {
+    public MockSeries zIndex(double zIndex) {
         this.zIndex = zIndex;
         return this;
     }

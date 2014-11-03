@@ -16,19 +16,19 @@ public class MockChart
     private String animationAsJsonString;
     private String backgroundColor;
     private String borderColor;
-    private Number borderRadius;
-    private Number borderWidth;
+    private double borderRadius;
+    private double borderWidth;
     private String className;
     private String defaultSeriesType;
     private Events events;
-    private Number height;
+    private double height;
     private boolean ignoreHiddenSeries;
     private boolean inverted;
     private ArrayNumber margin;
-    private Number marginBottom;
-    private Number marginLeft;
-    private Number marginRight;
-    private Number marginTop;
+    private double marginBottom;
+    private double marginLeft;
+    private double marginRight;
+    private double marginTop;
     private Options3d options3d;
     private String panKey;
     private boolean panning;
@@ -36,7 +36,7 @@ public class MockChart
     private String plotBackgroundColor;
     private String plotBackgroundImage;
     private String plotBorderColor;
-    private Number plotBorderWidth;
+    private double plotBorderWidth;
     private boolean plotShadowAsBoolean;
     private String plotShadowAsJsonString;
     private boolean polar;
@@ -49,13 +49,13 @@ public class MockChart
     private String shadowAsJsonString;
     private boolean showAxes;
     private ArrayNumber spacing;
-    private Number spacingBottom;
-    private Number spacingLeft;
-    private Number spacingRight;
-    private Number spacingTop;
+    private double spacingBottom;
+    private double spacingLeft;
+    private double spacingRight;
+    private double spacingTop;
     private String style;
     private String type;
-    private Number width;
+    private double width;
     private String zoomType;
 
     public boolean alignTicks() {
@@ -103,20 +103,20 @@ public class MockChart
         return this;
     }
 
-    public Number borderRadius() {
+    public double borderRadius() {
         return borderRadius;
     }
 
-    public MockChart borderRadius(Number borderRadius) {
+    public MockChart borderRadius(double borderRadius) {
         this.borderRadius = borderRadius;
         return this;
     }
 
-    public Number borderWidth() {
+    public double borderWidth() {
         return borderWidth;
     }
 
-    public MockChart borderWidth(Number borderWidth) {
+    public MockChart borderWidth(double borderWidth) {
         this.borderWidth = borderWidth;
         return this;
     }
@@ -148,11 +148,11 @@ public class MockChart
         return this;
     }
 
-    public Number height() {
+    public double height() {
         return height;
     }
 
-    public MockChart height(Number height) {
+    public MockChart height(double height) {
         this.height = height;
         return this;
     }
@@ -184,38 +184,38 @@ public class MockChart
         return this;
     }
 
-    public Number marginBottom() {
+    public double marginBottom() {
         return marginBottom;
     }
 
-    public MockChart marginBottom(Number marginBottom) {
+    public MockChart marginBottom(double marginBottom) {
         this.marginBottom = marginBottom;
         return this;
     }
 
-    public Number marginLeft() {
+    public double marginLeft() {
         return marginLeft;
     }
 
-    public MockChart marginLeft(Number marginLeft) {
+    public MockChart marginLeft(double marginLeft) {
         this.marginLeft = marginLeft;
         return this;
     }
 
-    public Number marginRight() {
+    public double marginRight() {
         return marginRight;
     }
 
-    public MockChart marginRight(Number marginRight) {
+    public MockChart marginRight(double marginRight) {
         this.marginRight = marginRight;
         return this;
     }
 
-    public Number marginTop() {
+    public double marginTop() {
         return marginTop;
     }
 
-    public MockChart marginTop(Number marginTop) {
+    public MockChart marginTop(double marginTop) {
         this.marginTop = marginTop;
         return this;
     }
@@ -283,11 +283,11 @@ public class MockChart
         return this;
     }
 
-    public Number plotBorderWidth() {
+    public double plotBorderWidth() {
         return plotBorderWidth;
     }
 
-    public MockChart plotBorderWidth(Number plotBorderWidth) {
+    public MockChart plotBorderWidth(double plotBorderWidth) {
         this.plotBorderWidth = plotBorderWidth;
         return this;
     }
@@ -400,38 +400,38 @@ public class MockChart
         return this;
     }
 
-    public Number spacingBottom() {
+    public double spacingBottom() {
         return spacingBottom;
     }
 
-    public MockChart spacingBottom(Number spacingBottom) {
+    public MockChart spacingBottom(double spacingBottom) {
         this.spacingBottom = spacingBottom;
         return this;
     }
 
-    public Number spacingLeft() {
+    public double spacingLeft() {
         return spacingLeft;
     }
 
-    public MockChart spacingLeft(Number spacingLeft) {
+    public MockChart spacingLeft(double spacingLeft) {
         this.spacingLeft = spacingLeft;
         return this;
     }
 
-    public Number spacingRight() {
+    public double spacingRight() {
         return spacingRight;
     }
 
-    public MockChart spacingRight(Number spacingRight) {
+    public MockChart spacingRight(double spacingRight) {
         this.spacingRight = spacingRight;
         return this;
     }
 
-    public Number spacingTop() {
+    public double spacingTop() {
         return spacingTop;
     }
 
-    public MockChart spacingTop(Number spacingTop) {
+    public MockChart spacingTop(double spacingTop) {
         this.spacingTop = spacingTop;
         return this;
     }
@@ -454,11 +454,11 @@ public class MockChart
         return this;
     }
 
-    public Number width() {
+    public double width() {
         return width;
     }
 
-    public MockChart width(Number width) {
+    public MockChart width(double width) {
         this.width = width;
         return this;
     }

@@ -8,10 +8,10 @@ public class MockPane
 {
 
     private String background;
-    private Number endAngle;
-    private Number sizeAsNumber;
+    private double endAngle;
+    private double sizeAsNumber;
     private String sizeAsString;
-    private Number startAngle;
+    private double startAngle;
 
     public String background() {
         return background;
@@ -22,20 +22,20 @@ public class MockPane
         return this;
     }
 
-    public Number endAngle() {
+    public double endAngle() {
         return endAngle;
     }
 
-    public MockPane endAngle(Number endAngle) {
+    public MockPane endAngle(double endAngle) {
         this.endAngle = endAngle;
         return this;
     }
 
-    public Number sizeAsNumber() {
+    public double sizeAsNumber() {
         return sizeAsNumber;
     }
 
-    public MockPane sizeAsNumber(Number sizeAsNumber) {
+    public MockPane sizeAsNumber(double sizeAsNumber) {
         this.sizeAsNumber = sizeAsNumber;
         return this;
     }
@@ -49,11 +49,11 @@ public class MockPane
         return this;
     }
 
-    public Number startAngle() {
+    public double startAngle() {
         return startAngle;
     }
 
-    public MockPane startAngle(Number startAngle) {
+    public MockPane startAngle(double startAngle) {
         this.startAngle = startAngle;
         return this;
     }

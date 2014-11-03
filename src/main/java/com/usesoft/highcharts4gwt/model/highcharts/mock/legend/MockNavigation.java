@@ -10,7 +10,7 @@ public class MockNavigation
     private String activeColor;
     private boolean animationAsBoolean;
     private String animationAsJsonString;
-    private Number arrowSize;
+    private double arrowSize;
     private String inactiveColor;
     private String style;
 
@@ -41,11 +41,11 @@ public class MockNavigation
         return this;
     }
 
-    public Number arrowSize() {
+    public double arrowSize() {
         return arrowSize;
     }
 
-    public MockNavigation arrowSize(Number arrowSize) {
+    public MockNavigation arrowSize(double arrowSize) {
         this.arrowSize = arrowSize;
         return this;
     }

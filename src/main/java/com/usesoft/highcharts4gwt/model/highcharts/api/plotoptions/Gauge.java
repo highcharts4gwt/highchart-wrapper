@@ -14,9 +14,9 @@ public interface Gauge
 
     Gauge dial(Dial dial);
 
-    Number overshoot();
+    double overshoot();
 
-    Gauge overshoot(Number overshoot);
+    Gauge overshoot(double overshoot);
 
     Pivot pivot();
 

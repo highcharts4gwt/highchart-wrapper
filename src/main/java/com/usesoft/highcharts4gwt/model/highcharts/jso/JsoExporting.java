@@ -81,39 +81,39 @@ public class JsoExporting
     }-*/
     ;
 
-    public final native Number scale()
+    public final native double scale()
         throws RuntimeException /*-{
         return this["scale"] = (this["scale"] || 2.0);
     }-*/
     ;
 
-    public final native JsoExporting scale(Number scale)
+    public final native JsoExporting scale(double scale)
         throws RuntimeException /*-{
         this["scale"] = scale;
         return this;
     }-*/
     ;
 
-    public final native Number sourceHeight()
+    public final native double sourceHeight()
         throws RuntimeException /*-{
         return this["sourceHeight"] = (this["sourceHeight"] || '');
     }-*/
     ;
 
-    public final native JsoExporting sourceHeight(Number sourceHeight)
+    public final native JsoExporting sourceHeight(double sourceHeight)
         throws RuntimeException /*-{
         this["sourceHeight"] = sourceHeight;
         return this;
     }-*/
     ;
 
-    public final native Number sourceWidth()
+    public final native double sourceWidth()
         throws RuntimeException /*-{
         return this["sourceWidth"] = (this["sourceWidth"] || '');
     }-*/
     ;
 
-    public final native JsoExporting sourceWidth(Number sourceWidth)
+    public final native JsoExporting sourceWidth(double sourceWidth)
         throws RuntimeException /*-{
         this["sourceWidth"] = sourceWidth;
         return this;
@@ -146,13 +146,13 @@ public class JsoExporting
     }-*/
     ;
 
-    public final native Number width()
+    public final native double width()
         throws RuntimeException /*-{
         return this["width"] = (this["width"] || undefined);
     }-*/
     ;
 
-    public final native JsoExporting width(Number width)
+    public final native JsoExporting width(double width)
         throws RuntimeException /*-{
         this["width"] = width;
         return this;

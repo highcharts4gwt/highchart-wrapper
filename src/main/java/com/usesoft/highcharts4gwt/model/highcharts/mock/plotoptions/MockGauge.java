@@ -12,7 +12,7 @@ public class MockGauge
 {
 
     private Dial dial;
-    private Number overshoot;
+    private double overshoot;
     private Pivot pivot;
     private boolean wrap;
 
@@ -25,11 +25,11 @@ public class MockGauge
         return this;
     }
 
-    public Number overshoot() {
+    public double overshoot() {
         return overshoot;
     }
 
-    public MockGauge overshoot(Number overshoot) {
+    public MockGauge overshoot(double overshoot) {
         this.overshoot = overshoot;
         return this;
     }

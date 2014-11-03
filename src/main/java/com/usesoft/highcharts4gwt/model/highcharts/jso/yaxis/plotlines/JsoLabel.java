@@ -26,13 +26,13 @@ public class JsoLabel
     }-*/
     ;
 
-    public final native Number rotation()
+    public final native double rotation()
         throws RuntimeException /*-{
         return this["rotation"] = (this["rotation"] || null);
     }-*/
     ;
 
-    public final native JsoLabel rotation(Number rotation)
+    public final native JsoLabel rotation(double rotation)
         throws RuntimeException /*-{
         this["rotation"] = rotation;
         return this;
@@ -105,26 +105,26 @@ public class JsoLabel
     }-*/
     ;
 
-    public final native Number x()
+    public final native double x()
         throws RuntimeException /*-{
         return this["x"] = (this["x"] || null);
     }-*/
     ;
 
-    public final native JsoLabel x(Number x)
+    public final native JsoLabel x(double x)
         throws RuntimeException /*-{
         this["x"] = x;
         return this;
     }-*/
     ;
 
-    public final native Number y()
+    public final native double y()
         throws RuntimeException /*-{
         return this["y"] = (this["y"] || null);
     }-*/
     ;
 
-    public final native JsoLabel y(Number y)
+    public final native JsoLabel y(double y)
         throws RuntimeException /*-{
         this["y"] = y;
         return this;

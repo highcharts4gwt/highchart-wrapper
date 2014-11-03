@@ -8,36 +8,36 @@ public class MockOptions3d
     implements Options3d
 {
 
-    private Number alpha;
-    private Number beta;
-    private Number depth;
+    private double alpha;
+    private double beta;
+    private double depth;
     private boolean enabled;
     private Frame frame;
-    private Number viewDistance;
+    private double viewDistance;
 
-    public Number alpha() {
+    public double alpha() {
         return alpha;
     }
 
-    public MockOptions3d alpha(Number alpha) {
+    public MockOptions3d alpha(double alpha) {
         this.alpha = alpha;
         return this;
     }
 
-    public Number beta() {
+    public double beta() {
         return beta;
     }
 
-    public MockOptions3d beta(Number beta) {
+    public MockOptions3d beta(double beta) {
         this.beta = beta;
         return this;
     }
 
-    public Number depth() {
+    public double depth() {
         return depth;
     }
 
-    public MockOptions3d depth(Number depth) {
+    public MockOptions3d depth(double depth) {
         this.depth = depth;
         return this;
     }
@@ -60,11 +60,11 @@ public class MockOptions3d
         return this;
     }
 
-    public Number viewDistance() {
+    public double viewDistance() {
         return viewDistance;
     }
 
-    public MockOptions3d viewDistance(Number viewDistance) {
+    public MockOptions3d viewDistance(double viewDistance) {
         this.viewDistance = viewDistance;
         return this;
     }

@@ -26,13 +26,13 @@ public class JsoBack
     }-*/
     ;
 
-    public final native Number size()
+    public final native double size()
         throws RuntimeException /*-{
         return this["size"] = (this["size"] || 1.0);
     }-*/
     ;
 
-    public final native JsoBack size(Number size)
+    public final native JsoBack size(double size)
         throws RuntimeException /*-{
         this["size"] = size;
         return this;

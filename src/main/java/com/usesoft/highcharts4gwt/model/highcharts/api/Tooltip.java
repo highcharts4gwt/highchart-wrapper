@@ -17,13 +17,13 @@ public interface Tooltip {
 
     Tooltip borderColor(String borderColor);
 
-    Number borderRadius();
+    double borderRadius();
 
-    Tooltip borderRadius(Number borderRadius);
+    Tooltip borderRadius(double borderRadius);
 
-    Number borderWidth();
+    double borderWidth();
 
-    Tooltip borderWidth(Number borderWidth);
+    Tooltip borderWidth(double borderWidth);
 
     String dateTimeLabelFormats();
 
@@ -49,9 +49,9 @@ public interface Tooltip {
 
     Tooltip headerFormat(String headerFormat);
 
-    Number hideDelay();
+    double hideDelay();
 
-    Tooltip hideDelay(Number hideDelay);
+    Tooltip hideDelay(double hideDelay);
 
     String pointFormat();
 
@@ -69,9 +69,9 @@ public interface Tooltip {
 
     Tooltip shared(boolean shared);
 
-    Number snap();
+    double snap();
 
-    Tooltip snap(Number snap);
+    Tooltip snap(double snap);
 
     String style();
 
@@ -81,9 +81,9 @@ public interface Tooltip {
 
     Tooltip useHTML(boolean useHTML);
 
-    Number valueDecimals();
+    double valueDecimals();
 
-    Tooltip valueDecimals(Number valueDecimals);
+    Tooltip valueDecimals(double valueDecimals);
 
     String valuePrefix();
 

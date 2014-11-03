@@ -15,13 +15,13 @@ public interface Hover {
 
     Hover halo(Halo halo);
 
-    Number lineWidth();
+    double lineWidth();
 
-    Hover lineWidth(Number lineWidth);
+    Hover lineWidth(double lineWidth);
 
-    Number lineWidthPlus();
+    double lineWidthPlus();
 
-    Hover lineWidthPlus(Number lineWidthPlus);
+    Hover lineWidthPlus(double lineWidthPlus);
 
     Marker marker();
 

@@ -27,13 +27,13 @@ public class JsoPie
     }-*/
     ;
 
-    public final native Number borderWidth()
+    public final native double borderWidth()
         throws RuntimeException /*-{
         return this["borderWidth"] = (this["borderWidth"] || 1.0);
     }-*/
     ;
 
-    public final native JsoPie borderWidth(Number borderWidth)
+    public final native JsoPie borderWidth(double borderWidth)
         throws RuntimeException /*-{
         this["borderWidth"] = borderWidth;
         return this;
@@ -53,26 +53,26 @@ public class JsoPie
     }-*/
     ;
 
-    public final native Number depth()
+    public final native double depth()
         throws RuntimeException /*-{
         return this["depth"] = (this["depth"] || 0.0);
     }-*/
     ;
 
-    public final native JsoPie depth(Number depth)
+    public final native JsoPie depth(double depth)
         throws RuntimeException /*-{
         this["depth"] = depth;
         return this;
     }-*/
     ;
 
-    public final native Number endAngle()
+    public final native double endAngle()
         throws RuntimeException /*-{
         return this["endAngle"] = (this["endAngle"] || null);
     }-*/
     ;
 
-    public final native JsoPie endAngle(Number endAngle)
+    public final native JsoPie endAngle(double endAngle)
         throws RuntimeException /*-{
         this["endAngle"] = endAngle;
         return this;
@@ -105,26 +105,26 @@ public class JsoPie
     }-*/
     ;
 
-    public final native Number innerSizeAsNumber()
+    public final native double innerSizeAsNumber()
         throws RuntimeException /*-{
         return this["innerSize"] = (this["innerSize"] || 0.0);
     }-*/
     ;
 
-    public final native JsoPie innerSizeAsNumber(Number innerSizeAsNumber)
+    public final native JsoPie innerSizeAsNumber(double innerSizeAsNumber)
         throws RuntimeException /*-{
         this["innerSize"] = innerSizeAsNumber;
         return this;
     }-*/
     ;
 
-    public final native Number minSize()
+    public final native double minSize()
         throws RuntimeException /*-{
         return this["minSize"] = (this["minSize"] || 80.0);
     }-*/
     ;
 
-    public final native JsoPie minSize(Number minSize)
+    public final native JsoPie minSize(double minSize)
         throws RuntimeException /*-{
         this["minSize"] = minSize;
         return this;
@@ -144,39 +144,39 @@ public class JsoPie
     }-*/
     ;
 
-    public final native Number sizeAsNumber()
+    public final native double sizeAsNumber()
         throws RuntimeException /*-{
         return this["size"] = (this["size"] || '');
     }-*/
     ;
 
-    public final native JsoPie sizeAsNumber(Number sizeAsNumber)
+    public final native JsoPie sizeAsNumber(double sizeAsNumber)
         throws RuntimeException /*-{
         this["size"] = sizeAsNumber;
         return this;
     }-*/
     ;
 
-    public final native Number slicedOffset()
+    public final native double slicedOffset()
         throws RuntimeException /*-{
         return this["slicedOffset"] = (this["slicedOffset"] || 10.0);
     }-*/
     ;
 
-    public final native JsoPie slicedOffset(Number slicedOffset)
+    public final native JsoPie slicedOffset(double slicedOffset)
         throws RuntimeException /*-{
         this["slicedOffset"] = slicedOffset;
         return this;
     }-*/
     ;
 
-    public final native Number startAngle()
+    public final native double startAngle()
         throws RuntimeException /*-{
         return this["startAngle"] = (this["startAngle"] || 0.0);
     }-*/
     ;
 
-    public final native JsoPie startAngle(Number startAngle)
+    public final native JsoPie startAngle(double startAngle)
         throws RuntimeException /*-{
         this["startAngle"] = startAngle;
         return this;

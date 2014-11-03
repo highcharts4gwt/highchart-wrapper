@@ -7,25 +7,25 @@ public interface PlotBand
 {
 
 
-    Number innerRadiusAsNumber();
+    double innerRadiusAsNumber();
 
-    PlotBand innerRadiusAsNumber(Number innerRadiusAsNumber);
+    PlotBand innerRadiusAsNumber(double innerRadiusAsNumber);
 
     String innerRadiusAsString();
 
     PlotBand innerRadiusAsString(String innerRadiusAsString);
 
-    Number outerRadiusAsNumber();
+    double outerRadiusAsNumber();
 
-    PlotBand outerRadiusAsNumber(Number outerRadiusAsNumber);
+    PlotBand outerRadiusAsNumber(double outerRadiusAsNumber);
 
     String outerRadiusAsString();
 
     PlotBand outerRadiusAsString(String outerRadiusAsString);
 
-    Number thicknessAsNumber();
+    double thicknessAsNumber();
 
-    PlotBand thicknessAsNumber(Number thicknessAsNumber);
+    PlotBand thicknessAsNumber(double thicknessAsNumber);
 
     String thicknessAsString();
 

@@ -41,26 +41,26 @@ public class JsoHover
     }-*/
     ;
 
-    public final native Number lineWidth()
+    public final native double lineWidth()
         throws RuntimeException /*-{
         return this["lineWidth"] = (this["lineWidth"] || 2.0);
     }-*/
     ;
 
-    public final native JsoHover lineWidth(Number lineWidth)
+    public final native JsoHover lineWidth(double lineWidth)
         throws RuntimeException /*-{
         this["lineWidth"] = lineWidth;
         return this;
     }-*/
     ;
 
-    public final native Number lineWidthPlus()
+    public final native double lineWidthPlus()
         throws RuntimeException /*-{
         return this["lineWidthPlus"] = (this["lineWidthPlus"] || 1.0);
     }-*/
     ;
 
-    public final native JsoHover lineWidthPlus(Number lineWidthPlus)
+    public final native JsoHover lineWidthPlus(double lineWidthPlus)
         throws RuntimeException /*-{
         this["lineWidthPlus"] = lineWidthPlus;
         return this;

@@ -12,56 +12,56 @@ public interface Column
 
     Column borderColor(String borderColor);
 
-    Number borderRadius();
+    double borderRadius();
 
-    Column borderRadius(Number borderRadius);
+    Column borderRadius(double borderRadius);
 
-    Number borderWidth();
+    double borderWidth();
 
-    Column borderWidth(Number borderWidth);
+    Column borderWidth(double borderWidth);
 
     boolean colorByPoint();
 
     Column colorByPoint(boolean colorByPoint);
 
-    Number depth();
+    double depth();
 
-    Column depth(Number depth);
+    Column depth(double depth);
 
     String edgeColor();
 
     Column edgeColor(String edgeColor);
 
-    Number edgeWidth();
+    double edgeWidth();
 
-    Column edgeWidth(Number edgeWidth);
+    Column edgeWidth(double edgeWidth);
 
-    Number groupPadding();
+    double groupPadding();
 
-    Column groupPadding(Number groupPadding);
+    Column groupPadding(double groupPadding);
 
-    Number groupZPadding();
+    double groupZPadding();
 
-    Column groupZPadding(Number groupZPadding);
+    Column groupZPadding(double groupZPadding);
 
     boolean grouping();
 
     Column grouping(boolean grouping);
 
-    Number minPointLength();
+    double minPointLength();
 
-    Column minPointLength(Number minPointLength);
+    Column minPointLength(double minPointLength);
 
-    Number pointPadding();
+    double pointPadding();
 
-    Column pointPadding(Number pointPadding);
+    Column pointPadding(double pointPadding);
 
-    Number pointRange();
+    double pointRange();
 
-    Column pointRange(Number pointRange);
+    Column pointRange(double pointRange);
 
-    Number pointWidth();
+    double pointWidth();
 
-    Column pointWidth(Number pointWidth);
+    Column pointWidth(double pointWidth);
 
 }

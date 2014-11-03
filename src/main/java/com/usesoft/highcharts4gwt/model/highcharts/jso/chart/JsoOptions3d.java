@@ -14,39 +14,39 @@ public class JsoOptions3d
     protected JsoOptions3d() {
     }
 
-    public final native Number alpha()
+    public final native double alpha()
         throws RuntimeException /*-{
         return this["alpha"] = (this["alpha"] || 0.0);
     }-*/
     ;
 
-    public final native JsoOptions3d alpha(Number alpha)
+    public final native JsoOptions3d alpha(double alpha)
         throws RuntimeException /*-{
         this["alpha"] = alpha;
         return this;
     }-*/
     ;
 
-    public final native Number beta()
+    public final native double beta()
         throws RuntimeException /*-{
         return this["beta"] = (this["beta"] || 0.0);
     }-*/
     ;
 
-    public final native JsoOptions3d beta(Number beta)
+    public final native JsoOptions3d beta(double beta)
         throws RuntimeException /*-{
         this["beta"] = beta;
         return this;
     }-*/
     ;
 
-    public final native Number depth()
+    public final native double depth()
         throws RuntimeException /*-{
         return this["depth"] = (this["depth"] || 100.0);
     }-*/
     ;
 
-    public final native JsoOptions3d depth(Number depth)
+    public final native JsoOptions3d depth(double depth)
         throws RuntimeException /*-{
         this["depth"] = depth;
         return this;
@@ -79,13 +79,13 @@ public class JsoOptions3d
     }-*/
     ;
 
-    public final native Number viewDistance()
+    public final native double viewDistance()
         throws RuntimeException /*-{
         return this["viewDistance"] = (this["viewDistance"] || 100.0);
     }-*/
     ;
 
-    public final native JsoOptions3d viewDistance(Number viewDistance)
+    public final native JsoOptions3d viewDistance(double viewDistance)
         throws RuntimeException /*-{
         this["viewDistance"] = viewDistance;
         return this;

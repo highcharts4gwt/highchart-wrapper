@@ -40,13 +40,13 @@ public class JsoContextButton
     }-*/
     ;
 
-    public final native Number x()
+    public final native double x()
         throws RuntimeException /*-{
         return this["x"] = (this["x"] || -10.0);
     }-*/
     ;
 
-    public final native JsoContextButton x(Number x)
+    public final native JsoContextButton x(double x)
         throws RuntimeException /*-{
         this["x"] = x;
         return this;

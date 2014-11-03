@@ -13,13 +13,13 @@ public class JsoFunnel
     protected JsoFunnel() {
     }
 
-    public final native Number heightAsNumber()
+    public final native double heightAsNumber()
         throws RuntimeException /*-{
         return this["height"] = (this["height"] || null);
     }-*/
     ;
 
-    public final native JsoFunnel heightAsNumber(Number heightAsNumber)
+    public final native JsoFunnel heightAsNumber(double heightAsNumber)
         throws RuntimeException /*-{
         this["height"] = heightAsNumber;
         return this;
@@ -39,13 +39,13 @@ public class JsoFunnel
     }-*/
     ;
 
-    public final native Number neckHeightAsNumber()
+    public final native double neckHeightAsNumber()
         throws RuntimeException /*-{
         return this["neckHeight"] = (this["neckHeight"] || null);
     }-*/
     ;
 
-    public final native JsoFunnel neckHeightAsNumber(Number neckHeightAsNumber)
+    public final native JsoFunnel neckHeightAsNumber(double neckHeightAsNumber)
         throws RuntimeException /*-{
         this["neckHeight"] = neckHeightAsNumber;
         return this;
@@ -65,13 +65,13 @@ public class JsoFunnel
     }-*/
     ;
 
-    public final native Number neckWidthAsNumber()
+    public final native double neckWidthAsNumber()
         throws RuntimeException /*-{
         return this["neckWidth"] = (this["neckWidth"] || '');
     }-*/
     ;
 
-    public final native JsoFunnel neckWidthAsNumber(Number neckWidthAsNumber)
+    public final native JsoFunnel neckWidthAsNumber(double neckWidthAsNumber)
         throws RuntimeException /*-{
         this["neckWidth"] = neckWidthAsNumber;
         return this;
@@ -104,13 +104,13 @@ public class JsoFunnel
     }-*/
     ;
 
-    public final native Number widthAsNumber()
+    public final native double widthAsNumber()
         throws RuntimeException /*-{
         return this["width"] = (this["width"] || null);
     }-*/
     ;
 
-    public final native JsoFunnel widthAsNumber(Number widthAsNumber)
+    public final native JsoFunnel widthAsNumber(double widthAsNumber)
         throws RuntimeException /*-{
         this["width"] = widthAsNumber;
         return this;

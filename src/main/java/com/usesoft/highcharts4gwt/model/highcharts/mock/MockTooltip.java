@@ -10,23 +10,23 @@ public class MockTooltip
     private boolean animation;
     private String backgroundColor;
     private String borderColor;
-    private Number borderRadius;
-    private Number borderWidth;
+    private double borderRadius;
+    private double borderWidth;
     private String dateTimeLabelFormats;
     private boolean enabled;
     private boolean followPointer;
     private boolean followTouchMove;
     private String footerFormat;
     private String headerFormat;
-    private Number hideDelay;
+    private double hideDelay;
     private String pointFormat;
     private boolean shadow;
     private String shape;
     private boolean shared;
-    private Number snap;
+    private double snap;
     private String style;
     private boolean useHTML;
-    private Number valueDecimals;
+    private double valueDecimals;
     private String valuePrefix;
     private String valueSuffix;
     private String xDateFormat;
@@ -58,20 +58,20 @@ public class MockTooltip
         return this;
     }
 
-    public Number borderRadius() {
+    public double borderRadius() {
         return borderRadius;
     }
 
-    public MockTooltip borderRadius(Number borderRadius) {
+    public MockTooltip borderRadius(double borderRadius) {
         this.borderRadius = borderRadius;
         return this;
     }
 
-    public Number borderWidth() {
+    public double borderWidth() {
         return borderWidth;
     }
 
-    public MockTooltip borderWidth(Number borderWidth) {
+    public MockTooltip borderWidth(double borderWidth) {
         this.borderWidth = borderWidth;
         return this;
     }
@@ -130,11 +130,11 @@ public class MockTooltip
         return this;
     }
 
-    public Number hideDelay() {
+    public double hideDelay() {
         return hideDelay;
     }
 
-    public MockTooltip hideDelay(Number hideDelay) {
+    public MockTooltip hideDelay(double hideDelay) {
         this.hideDelay = hideDelay;
         return this;
     }
@@ -175,11 +175,11 @@ public class MockTooltip
         return this;
     }
 
-    public Number snap() {
+    public double snap() {
         return snap;
     }
 
-    public MockTooltip snap(Number snap) {
+    public MockTooltip snap(double snap) {
         this.snap = snap;
         return this;
     }
@@ -202,11 +202,11 @@ public class MockTooltip
         return this;
     }
 
-    public Number valueDecimals() {
+    public double valueDecimals() {
         return valueDecimals;
     }
 
-    public MockTooltip valueDecimals(Number valueDecimals) {
+    public MockTooltip valueDecimals(double valueDecimals) {
         this.valueDecimals = valueDecimals;
         return this;
     }

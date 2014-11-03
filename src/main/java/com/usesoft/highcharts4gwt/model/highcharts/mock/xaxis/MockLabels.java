@@ -8,19 +8,19 @@ public class MockLabels
 {
 
     private String align;
-    private Number distance;
+    private double distance;
     private boolean enabled;
     private String format;
-    private Number maxStaggerLines;
+    private double maxStaggerLines;
     private String overflow;
-    private Number rotation;
-    private Number staggerLines;
-    private Number step;
+    private double rotation;
+    private double staggerLines;
+    private double step;
     private String style;
     private boolean useHTML;
-    private Number x;
-    private Number y;
-    private Number zIndex;
+    private double x;
+    private double y;
+    private double zIndex;
 
     public String align() {
         return align;
@@ -31,11 +31,11 @@ public class MockLabels
         return this;
     }
 
-    public Number distance() {
+    public double distance() {
         return distance;
     }
 
-    public MockLabels distance(Number distance) {
+    public MockLabels distance(double distance) {
         this.distance = distance;
         return this;
     }
@@ -58,11 +58,11 @@ public class MockLabels
         return this;
     }
 
-    public Number maxStaggerLines() {
+    public double maxStaggerLines() {
         return maxStaggerLines;
     }
 
-    public MockLabels maxStaggerLines(Number maxStaggerLines) {
+    public MockLabels maxStaggerLines(double maxStaggerLines) {
         this.maxStaggerLines = maxStaggerLines;
         return this;
     }
@@ -76,29 +76,29 @@ public class MockLabels
         return this;
     }
 
-    public Number rotation() {
+    public double rotation() {
         return rotation;
     }
 
-    public MockLabels rotation(Number rotation) {
+    public MockLabels rotation(double rotation) {
         this.rotation = rotation;
         return this;
     }
 
-    public Number staggerLines() {
+    public double staggerLines() {
         return staggerLines;
     }
 
-    public MockLabels staggerLines(Number staggerLines) {
+    public MockLabels staggerLines(double staggerLines) {
         this.staggerLines = staggerLines;
         return this;
     }
 
-    public Number step() {
+    public double step() {
         return step;
     }
 
-    public MockLabels step(Number step) {
+    public MockLabels step(double step) {
         this.step = step;
         return this;
     }
@@ -121,29 +121,29 @@ public class MockLabels
         return this;
     }
 
-    public Number x() {
+    public double x() {
         return x;
     }
 
-    public MockLabels x(Number x) {
+    public MockLabels x(double x) {
         this.x = x;
         return this;
     }
 
-    public Number y() {
+    public double y() {
         return y;
     }
 
-    public MockLabels y(Number y) {
+    public MockLabels y(double y) {
         this.y = y;
         return this;
     }
 
-    public Number zIndex() {
+    public double zIndex() {
         return zIndex;
     }
 
-    public MockLabels zIndex(Number zIndex) {
+    public MockLabels zIndex(double zIndex) {
         this.zIndex = zIndex;
         return this;
     }

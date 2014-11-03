@@ -9,8 +9,8 @@ public interface Side {
 
     Side color(String color);
 
-    Number size();
+    double size();
 
-    Side size(Number size);
+    Side size(double size);
 
 }

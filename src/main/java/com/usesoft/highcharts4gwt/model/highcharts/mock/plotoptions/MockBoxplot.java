@@ -11,14 +11,14 @@ public class MockBoxplot
 
     private String fillColor;
     private String medianColor;
-    private Number medianWidth;
+    private double medianWidth;
     private String stemColor;
     private String stemDashStyle;
-    private Number stemWidth;
+    private double stemWidth;
     private String whiskerColor;
-    private Number whiskerLengthAsNumber;
+    private double whiskerLengthAsNumber;
     private String whiskerLengthAsString;
-    private Number whiskerWidth;
+    private double whiskerWidth;
 
     public String fillColor() {
         return fillColor;
@@ -38,11 +38,11 @@ public class MockBoxplot
         return this;
     }
 
-    public Number medianWidth() {
+    public double medianWidth() {
         return medianWidth;
     }
 
-    public MockBoxplot medianWidth(Number medianWidth) {
+    public MockBoxplot medianWidth(double medianWidth) {
         this.medianWidth = medianWidth;
         return this;
     }
@@ -65,11 +65,11 @@ public class MockBoxplot
         return this;
     }
 
-    public Number stemWidth() {
+    public double stemWidth() {
         return stemWidth;
     }
 
-    public MockBoxplot stemWidth(Number stemWidth) {
+    public MockBoxplot stemWidth(double stemWidth) {
         this.stemWidth = stemWidth;
         return this;
     }
@@ -83,11 +83,11 @@ public class MockBoxplot
         return this;
     }
 
-    public Number whiskerLengthAsNumber() {
+    public double whiskerLengthAsNumber() {
         return whiskerLengthAsNumber;
     }
 
-    public MockBoxplot whiskerLengthAsNumber(Number whiskerLengthAsNumber) {
+    public MockBoxplot whiskerLengthAsNumber(double whiskerLengthAsNumber) {
         this.whiskerLengthAsNumber = whiskerLengthAsNumber;
         return this;
     }
@@ -101,11 +101,11 @@ public class MockBoxplot
         return this;
     }
 
-    public Number whiskerWidth() {
+    public double whiskerWidth() {
         return whiskerWidth;
     }
 
-    public MockBoxplot whiskerWidth(Number whiskerWidth) {
+    public MockBoxplot whiskerWidth(double whiskerWidth) {
         this.whiskerWidth = whiskerWidth;
         return this;
     }

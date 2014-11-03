@@ -9,8 +9,8 @@ public interface Back {
 
     Back color(String color);
 
-    Number size();
+    double size();
 
-    Back size(Number size);
+    Back size(double size);
 
 }

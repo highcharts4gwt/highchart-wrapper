@@ -9,21 +9,21 @@ public class MockFunnel
     implements Funnel
 {
 
-    private Number heightAsNumber;
+    private double heightAsNumber;
     private String heightAsString;
-    private Number neckHeightAsNumber;
+    private double neckHeightAsNumber;
     private String neckHeightAsString;
-    private Number neckWidthAsNumber;
+    private double neckWidthAsNumber;
     private String neckWidthAsString;
     private boolean reversed;
-    private Number widthAsNumber;
+    private double widthAsNumber;
     private String widthAsString;
 
-    public Number heightAsNumber() {
+    public double heightAsNumber() {
         return heightAsNumber;
     }
 
-    public MockFunnel heightAsNumber(Number heightAsNumber) {
+    public MockFunnel heightAsNumber(double heightAsNumber) {
         this.heightAsNumber = heightAsNumber;
         return this;
     }
@@ -37,11 +37,11 @@ public class MockFunnel
         return this;
     }
 
-    public Number neckHeightAsNumber() {
+    public double neckHeightAsNumber() {
         return neckHeightAsNumber;
     }
 
-    public MockFunnel neckHeightAsNumber(Number neckHeightAsNumber) {
+    public MockFunnel neckHeightAsNumber(double neckHeightAsNumber) {
         this.neckHeightAsNumber = neckHeightAsNumber;
         return this;
     }
@@ -55,11 +55,11 @@ public class MockFunnel
         return this;
     }
 
-    public Number neckWidthAsNumber() {
+    public double neckWidthAsNumber() {
         return neckWidthAsNumber;
     }
 
-    public MockFunnel neckWidthAsNumber(Number neckWidthAsNumber) {
+    public MockFunnel neckWidthAsNumber(double neckWidthAsNumber) {
         this.neckWidthAsNumber = neckWidthAsNumber;
         return this;
     }
@@ -82,11 +82,11 @@ public class MockFunnel
         return this;
     }
 
-    public Number widthAsNumber() {
+    public double widthAsNumber() {
         return widthAsNumber;
     }
 
-    public MockFunnel widthAsNumber(Number widthAsNumber) {
+    public MockFunnel widthAsNumber(double widthAsNumber) {
         this.widthAsNumber = widthAsNumber;
         return this;
     }

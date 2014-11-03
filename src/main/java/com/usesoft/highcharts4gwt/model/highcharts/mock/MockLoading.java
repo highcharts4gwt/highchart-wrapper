@@ -7,16 +7,16 @@ public class MockLoading
     implements Loading
 {
 
-    private Number hideDuration;
+    private double hideDuration;
     private String labelStyle;
-    private Number showDuration;
+    private double showDuration;
     private String style;
 
-    public Number hideDuration() {
+    public double hideDuration() {
         return hideDuration;
     }
 
-    public MockLoading hideDuration(Number hideDuration) {
+    public MockLoading hideDuration(double hideDuration) {
         this.hideDuration = hideDuration;
         return this;
     }
@@ -30,11 +30,11 @@ public class MockLoading
         return this;
     }
 
-    public Number showDuration() {
+    public double showDuration() {
         return showDuration;
     }
 
-    public MockLoading showDuration(Number showDuration) {
+    public MockLoading showDuration(double showDuration) {
         this.showDuration = showDuration;
         return this;
     }

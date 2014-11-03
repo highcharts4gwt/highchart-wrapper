@@ -13,21 +13,21 @@ public interface Pie
 
     Pie borderColor(String borderColor);
 
-    Number borderWidth();
+    double borderWidth();
 
-    Pie borderWidth(Number borderWidth);
+    Pie borderWidth(double borderWidth);
 
     ArrayString center();
 
     Pie center(ArrayString center);
 
-    Number depth();
+    double depth();
 
-    Pie depth(Number depth);
+    Pie depth(double depth);
 
-    Number endAngle();
+    double endAngle();
 
-    Pie endAngle(Number endAngle);
+    Pie endAngle(double endAngle);
 
     boolean ignoreHiddenPoint();
 
@@ -37,28 +37,28 @@ public interface Pie
 
     Pie innerSizeAsString(String innerSizeAsString);
 
-    Number innerSizeAsNumber();
+    double innerSizeAsNumber();
 
-    Pie innerSizeAsNumber(Number innerSizeAsNumber);
+    Pie innerSizeAsNumber(double innerSizeAsNumber);
 
-    Number minSize();
+    double minSize();
 
-    Pie minSize(Number minSize);
+    Pie minSize(double minSize);
 
     String sizeAsString();
 
     Pie sizeAsString(String sizeAsString);
 
-    Number sizeAsNumber();
+    double sizeAsNumber();
 
-    Pie sizeAsNumber(Number sizeAsNumber);
+    Pie sizeAsNumber(double sizeAsNumber);
 
-    Number slicedOffset();
+    double slicedOffset();
 
-    Pie slicedOffset(Number slicedOffset);
+    Pie slicedOffset(double slicedOffset);
 
-    Number startAngle();
+    double startAngle();
 
-    Pie startAngle(Number startAngle);
+    Pie startAngle(double startAngle);
 
 }

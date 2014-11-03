@@ -18,13 +18,13 @@ public interface Series {
 
     Series id(String id);
 
-    Number index();
+    double index();
 
-    Series index(Number index);
+    Series index(double index);
 
-    Number legendIndex();
+    double legendIndex();
 
-    Series legendIndex(Number legendIndex);
+    Series legendIndex(double legendIndex);
 
     String name();
 
@@ -34,24 +34,24 @@ public interface Series {
 
     Series type(String type);
 
-    Number xAxisAsNumber();
+    double xAxisAsNumber();
 
-    Series xAxisAsNumber(Number xAxisAsNumber);
+    Series xAxisAsNumber(double xAxisAsNumber);
 
     String xAxisAsString();
 
     Series xAxisAsString(String xAxisAsString);
 
-    Number yAxisAsNumber();
+    double yAxisAsNumber();
 
-    Series yAxisAsNumber(Number yAxisAsNumber);
+    Series yAxisAsNumber(double yAxisAsNumber);
 
     String yAxisAsString();
 
     Series yAxisAsString(String yAxisAsString);
 
-    Number zIndex();
+    double zIndex();
 
-    Series zIndex(Number zIndex);
+    Series zIndex(double zIndex);
 
 }

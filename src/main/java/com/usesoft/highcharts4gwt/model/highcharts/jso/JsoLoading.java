@@ -13,13 +13,13 @@ public class JsoLoading
     protected JsoLoading() {
     }
 
-    public final native Number hideDuration()
+    public final native double hideDuration()
         throws RuntimeException /*-{
         return this["hideDuration"] = (this["hideDuration"] || 100.0);
     }-*/
     ;
 
-    public final native JsoLoading hideDuration(Number hideDuration)
+    public final native JsoLoading hideDuration(double hideDuration)
         throws RuntimeException /*-{
         this["hideDuration"] = hideDuration;
         return this;
@@ -40,13 +40,13 @@ public class JsoLoading
     }-*/
     ;
 
-    public final native Number showDuration()
+    public final native double showDuration()
         throws RuntimeException /*-{
         return this["showDuration"] = (this["showDuration"] || 100.0);
     }-*/
     ;
 
-    public final native JsoLoading showDuration(Number showDuration)
+    public final native JsoLoading showDuration(double showDuration)
         throws RuntimeException /*-{
         this["showDuration"] = showDuration;
         return this;

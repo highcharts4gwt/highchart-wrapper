@@ -17,9 +17,9 @@ public interface Navigation {
 
     Navigation animationAsJsonString(String animationAsJsonString);
 
-    Number arrowSize();
+    double arrowSize();
 
-    Navigation arrowSize(Number arrowSize);
+    Navigation arrowSize(double arrowSize);
 
     String inactiveColor();
 

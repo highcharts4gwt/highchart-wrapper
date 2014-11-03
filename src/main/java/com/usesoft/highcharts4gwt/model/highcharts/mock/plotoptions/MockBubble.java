@@ -13,9 +13,9 @@ public class MockBubble
     private String maxSize;
     private String minSize;
     private String sizeBy;
-    private Number zMax;
-    private Number zMin;
-    private Number zThreshold;
+    private double zMax;
+    private double zMin;
+    private double zThreshold;
 
     public boolean displayNegative() {
         return displayNegative;
@@ -53,29 +53,29 @@ public class MockBubble
         return this;
     }
 
-    public Number zMax() {
+    public double zMax() {
         return zMax;
     }
 
-    public MockBubble zMax(Number zMax) {
+    public MockBubble zMax(double zMax) {
         this.zMax = zMax;
         return this;
     }
 
-    public Number zMin() {
+    public double zMin() {
         return zMin;
     }
 
-    public MockBubble zMin(Number zMin) {
+    public MockBubble zMin(double zMin) {
         this.zMin = zMin;
         return this;
     }
 
-    public Number zThreshold() {
+    public double zThreshold() {
         return zThreshold;
     }
 
-    public MockBubble zThreshold(Number zThreshold) {
+    public MockBubble zThreshold(double zThreshold) {
         this.zThreshold = zThreshold;
         return this;
     }

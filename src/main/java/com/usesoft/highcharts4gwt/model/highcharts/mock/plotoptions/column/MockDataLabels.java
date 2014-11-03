@@ -11,13 +11,13 @@ public class MockDataLabels
 
     private String backgroundColor;
     private String borderColor;
-    private Number borderRadius;
-    private Number borderWidth;
+    private double borderRadius;
+    private double borderWidth;
     private String color;
     private boolean crop;
     private boolean defer;
     private boolean inside;
-    private Number padding;
+    private double padding;
     private boolean shadowAsBoolean;
     private String shadowAsJsonString;
     private String verticalAlign;
@@ -40,20 +40,20 @@ public class MockDataLabels
         return this;
     }
 
-    public Number borderRadius() {
+    public double borderRadius() {
         return borderRadius;
     }
 
-    public MockDataLabels borderRadius(Number borderRadius) {
+    public MockDataLabels borderRadius(double borderRadius) {
         this.borderRadius = borderRadius;
         return this;
     }
 
-    public Number borderWidth() {
+    public double borderWidth() {
         return borderWidth;
     }
 
-    public MockDataLabels borderWidth(Number borderWidth) {
+    public MockDataLabels borderWidth(double borderWidth) {
         this.borderWidth = borderWidth;
         return this;
     }
@@ -94,11 +94,11 @@ public class MockDataLabels
         return this;
     }
 
-    public Number padding() {
+    public double padding() {
         return padding;
     }
 
-    public MockDataLabels padding(Number padding) {
+    public MockDataLabels padding(double padding) {
         this.padding = padding;
         return this;
     }

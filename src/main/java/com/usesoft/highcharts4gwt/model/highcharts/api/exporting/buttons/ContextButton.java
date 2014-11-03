@@ -16,8 +16,8 @@ public interface ContextButton
 
     ContextButton symbol(String symbol);
 
-    Number x();
+    double x();
 
-    ContextButton x(Number x);
+    ContextButton x(double x);
 
 }

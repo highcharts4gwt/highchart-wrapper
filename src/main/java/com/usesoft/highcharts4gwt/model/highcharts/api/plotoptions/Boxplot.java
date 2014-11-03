@@ -16,9 +16,9 @@ public interface Boxplot
 
     Boxplot medianColor(String medianColor);
 
-    Number medianWidth();
+    double medianWidth();
 
-    Boxplot medianWidth(Number medianWidth);
+    Boxplot medianWidth(double medianWidth);
 
     String stemColor();
 
@@ -28,24 +28,24 @@ public interface Boxplot
 
     Boxplot stemDashStyle(String stemDashStyle);
 
-    Number stemWidth();
+    double stemWidth();
 
-    Boxplot stemWidth(Number stemWidth);
+    Boxplot stemWidth(double stemWidth);
 
     String whiskerColor();
 
     Boxplot whiskerColor(String whiskerColor);
 
-    Number whiskerLengthAsNumber();
+    double whiskerLengthAsNumber();
 
-    Boxplot whiskerLengthAsNumber(Number whiskerLengthAsNumber);
+    Boxplot whiskerLengthAsNumber(double whiskerLengthAsNumber);
 
     String whiskerLengthAsString();
 
     Boxplot whiskerLengthAsString(String whiskerLengthAsString);
 
-    Number whiskerWidth();
+    double whiskerWidth();
 
-    Boxplot whiskerWidth(Number whiskerWidth);
+    Boxplot whiskerWidth(double whiskerWidth);
 
 }

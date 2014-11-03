@@ -18,36 +18,36 @@ public class MockXAxis
     private boolean allowDecimals;
     private String alternateGridColor;
     private ArrayString categories;
-    private Number ceiling;
+    private double ceiling;
     private String dateTimeLabelFormats;
     private boolean endOnTick;
     private Events events;
-    private Number floor;
+    private double floor;
     private String gridLineColor;
     private String gridLineDashStyle;
-    private Number gridLineWidth;
-    private Number gridZIndex;
+    private double gridLineWidth;
+    private double gridZIndex;
     private String id;
     private Labels labels;
     private String lineColor;
-    private Number lineWidth;
-    private Number linkedTo;
-    private Number max;
-    private Number maxPadding;
-    private Number maxZoom;
-    private Number min;
-    private Number minPadding;
-    private Number minRange;
-    private Number minTickInterval;
+    private double lineWidth;
+    private double linkedTo;
+    private double max;
+    private double maxPadding;
+    private double maxZoom;
+    private double min;
+    private double minPadding;
+    private double minRange;
+    private double minTickInterval;
     private String minorGridLineColor;
     private String minorGridLineDashStyle;
-    private Number minorGridLineWidth;
+    private double minorGridLineWidth;
     private String minorTickColor;
-    private Number minorTickInterval;
-    private Number minorTickLength;
+    private double minorTickInterval;
+    private double minorTickLength;
     private String minorTickPosition;
-    private Number minorTickWidth;
-    private Number offset;
+    private double minorTickWidth;
+    private double offset;
     private boolean opposite;
     private Array<PlotBand> plotBands;
     private Array<PlotLine> plotLines;
@@ -55,15 +55,15 @@ public class MockXAxis
     private boolean showEmpty;
     private boolean showFirstLabel;
     private boolean showLastLabel;
-    private Number startOfWeek;
+    private double startOfWeek;
     private boolean startOnTick;
     private String tickColor;
-    private Number tickInterval;
-    private Number tickLength;
-    private Number tickPixelInterval;
+    private double tickInterval;
+    private double tickLength;
+    private double tickPixelInterval;
     private String tickPosition;
     private ArrayNumber tickPositions;
-    private Number tickWidth;
+    private double tickWidth;
     private String tickmarkPlacement;
     private Title title;
     private String type;
@@ -95,11 +95,11 @@ public class MockXAxis
         return this;
     }
 
-    public Number ceiling() {
+    public double ceiling() {
         return ceiling;
     }
 
-    public MockXAxis ceiling(Number ceiling) {
+    public MockXAxis ceiling(double ceiling) {
         this.ceiling = ceiling;
         return this;
     }
@@ -131,11 +131,11 @@ public class MockXAxis
         return this;
     }
 
-    public Number floor() {
+    public double floor() {
         return floor;
     }
 
-    public MockXAxis floor(Number floor) {
+    public MockXAxis floor(double floor) {
         this.floor = floor;
         return this;
     }
@@ -158,20 +158,20 @@ public class MockXAxis
         return this;
     }
 
-    public Number gridLineWidth() {
+    public double gridLineWidth() {
         return gridLineWidth;
     }
 
-    public MockXAxis gridLineWidth(Number gridLineWidth) {
+    public MockXAxis gridLineWidth(double gridLineWidth) {
         this.gridLineWidth = gridLineWidth;
         return this;
     }
 
-    public Number gridZIndex() {
+    public double gridZIndex() {
         return gridZIndex;
     }
 
-    public MockXAxis gridZIndex(Number gridZIndex) {
+    public MockXAxis gridZIndex(double gridZIndex) {
         this.gridZIndex = gridZIndex;
         return this;
     }
@@ -203,83 +203,83 @@ public class MockXAxis
         return this;
     }
 
-    public Number lineWidth() {
+    public double lineWidth() {
         return lineWidth;
     }
 
-    public MockXAxis lineWidth(Number lineWidth) {
+    public MockXAxis lineWidth(double lineWidth) {
         this.lineWidth = lineWidth;
         return this;
     }
 
-    public Number linkedTo() {
+    public double linkedTo() {
         return linkedTo;
     }
 
-    public MockXAxis linkedTo(Number linkedTo) {
+    public MockXAxis linkedTo(double linkedTo) {
         this.linkedTo = linkedTo;
         return this;
     }
 
-    public Number max() {
+    public double max() {
         return max;
     }
 
-    public MockXAxis max(Number max) {
+    public MockXAxis max(double max) {
         this.max = max;
         return this;
     }
 
-    public Number maxPadding() {
+    public double maxPadding() {
         return maxPadding;
     }
 
-    public MockXAxis maxPadding(Number maxPadding) {
+    public MockXAxis maxPadding(double maxPadding) {
         this.maxPadding = maxPadding;
         return this;
     }
 
-    public Number maxZoom() {
+    public double maxZoom() {
         return maxZoom;
     }
 
-    public MockXAxis maxZoom(Number maxZoom) {
+    public MockXAxis maxZoom(double maxZoom) {
         this.maxZoom = maxZoom;
         return this;
     }
 
-    public Number min() {
+    public double min() {
         return min;
     }
 
-    public MockXAxis min(Number min) {
+    public MockXAxis min(double min) {
         this.min = min;
         return this;
     }
 
-    public Number minPadding() {
+    public double minPadding() {
         return minPadding;
     }
 
-    public MockXAxis minPadding(Number minPadding) {
+    public MockXAxis minPadding(double minPadding) {
         this.minPadding = minPadding;
         return this;
     }
 
-    public Number minRange() {
+    public double minRange() {
         return minRange;
     }
 
-    public MockXAxis minRange(Number minRange) {
+    public MockXAxis minRange(double minRange) {
         this.minRange = minRange;
         return this;
     }
 
-    public Number minTickInterval() {
+    public double minTickInterval() {
         return minTickInterval;
     }
 
-    public MockXAxis minTickInterval(Number minTickInterval) {
+    public MockXAxis minTickInterval(double minTickInterval) {
         this.minTickInterval = minTickInterval;
         return this;
     }
@@ -302,11 +302,11 @@ public class MockXAxis
         return this;
     }
 
-    public Number minorGridLineWidth() {
+    public double minorGridLineWidth() {
         return minorGridLineWidth;
     }
 
-    public MockXAxis minorGridLineWidth(Number minorGridLineWidth) {
+    public MockXAxis minorGridLineWidth(double minorGridLineWidth) {
         this.minorGridLineWidth = minorGridLineWidth;
         return this;
     }
@@ -320,20 +320,20 @@ public class MockXAxis
         return this;
     }
 
-    public Number minorTickInterval() {
+    public double minorTickInterval() {
         return minorTickInterval;
     }
 
-    public MockXAxis minorTickInterval(Number minorTickInterval) {
+    public MockXAxis minorTickInterval(double minorTickInterval) {
         this.minorTickInterval = minorTickInterval;
         return this;
     }
 
-    public Number minorTickLength() {
+    public double minorTickLength() {
         return minorTickLength;
     }
 
-    public MockXAxis minorTickLength(Number minorTickLength) {
+    public MockXAxis minorTickLength(double minorTickLength) {
         this.minorTickLength = minorTickLength;
         return this;
     }
@@ -347,20 +347,20 @@ public class MockXAxis
         return this;
     }
 
-    public Number minorTickWidth() {
+    public double minorTickWidth() {
         return minorTickWidth;
     }
 
-    public MockXAxis minorTickWidth(Number minorTickWidth) {
+    public MockXAxis minorTickWidth(double minorTickWidth) {
         this.minorTickWidth = minorTickWidth;
         return this;
     }
 
-    public Number offset() {
+    public double offset() {
         return offset;
     }
 
-    public MockXAxis offset(Number offset) {
+    public MockXAxis offset(double offset) {
         this.offset = offset;
         return this;
     }
@@ -428,11 +428,11 @@ public class MockXAxis
         return this;
     }
 
-    public Number startOfWeek() {
+    public double startOfWeek() {
         return startOfWeek;
     }
 
-    public MockXAxis startOfWeek(Number startOfWeek) {
+    public MockXAxis startOfWeek(double startOfWeek) {
         this.startOfWeek = startOfWeek;
         return this;
     }
@@ -455,29 +455,29 @@ public class MockXAxis
         return this;
     }
 
-    public Number tickInterval() {
+    public double tickInterval() {
         return tickInterval;
     }
 
-    public MockXAxis tickInterval(Number tickInterval) {
+    public MockXAxis tickInterval(double tickInterval) {
         this.tickInterval = tickInterval;
         return this;
     }
 
-    public Number tickLength() {
+    public double tickLength() {
         return tickLength;
     }
 
-    public MockXAxis tickLength(Number tickLength) {
+    public MockXAxis tickLength(double tickLength) {
         this.tickLength = tickLength;
         return this;
     }
 
-    public Number tickPixelInterval() {
+    public double tickPixelInterval() {
         return tickPixelInterval;
     }
 
-    public MockXAxis tickPixelInterval(Number tickPixelInterval) {
+    public MockXAxis tickPixelInterval(double tickPixelInterval) {
         this.tickPixelInterval = tickPixelInterval;
         return this;
     }
@@ -500,11 +500,11 @@ public class MockXAxis
         return this;
     }
 
-    public Number tickWidth() {
+    public double tickWidth() {
         return tickWidth;
     }
 
-    public MockXAxis tickWidth(Number tickWidth) {
+    public MockXAxis tickWidth(double tickWidth) {
         this.tickWidth = tickWidth;
         return this;
     }

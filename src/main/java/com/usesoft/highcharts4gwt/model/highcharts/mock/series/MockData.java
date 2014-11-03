@@ -16,12 +16,12 @@ public class MockData
     private String id;
     private boolean isIntermediateSum;
     private boolean isSum;
-    private Number legendIndex;
+    private double legendIndex;
     private Marker marker;
     private String name;
     private boolean sliced;
-    private Number x;
-    private Number y;
+    private double x;
+    private double y;
 
     public String color() {
         return color;
@@ -86,11 +86,11 @@ public class MockData
         return this;
     }
 
-    public Number legendIndex() {
+    public double legendIndex() {
         return legendIndex;
     }
 
-    public MockData legendIndex(Number legendIndex) {
+    public MockData legendIndex(double legendIndex) {
         this.legendIndex = legendIndex;
         return this;
     }
@@ -122,20 +122,20 @@ public class MockData
         return this;
     }
 
-    public Number x() {
+    public double x() {
         return x;
     }
 
-    public MockData x(Number x) {
+    public MockData x(double x) {
         this.x = x;
         return this;
     }
 
-    public Number y() {
+    public double y() {
         return y;
     }
 
-    public MockData y(Number y) {
+    public MockData y(double y) {
         this.y = y;
         return this;
     }

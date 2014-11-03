@@ -26,16 +26,16 @@ public interface PlotLine {
 
     PlotLine label(Label label);
 
-    Number value();
+    double value();
 
-    PlotLine value(Number value);
+    PlotLine value(double value);
 
-    Number width();
+    double width();
 
-    PlotLine width(Number width);
+    PlotLine width(double width);
 
-    Number zIndex();
+    double zIndex();
 
-    PlotLine zIndex(Number zIndex);
+    PlotLine zIndex(double zIndex);
 
 }

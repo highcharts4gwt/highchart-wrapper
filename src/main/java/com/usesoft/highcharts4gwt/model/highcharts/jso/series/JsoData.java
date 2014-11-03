@@ -107,13 +107,13 @@ public class JsoData
     }-*/
     ;
 
-    public final native Number legendIndex()
+    public final native double legendIndex()
         throws RuntimeException /*-{
         return this["legendIndex"] = (this["legendIndex"] || null);
     }-*/
     ;
 
-    public final native JsoData legendIndex(Number legendIndex)
+    public final native JsoData legendIndex(double legendIndex)
         throws RuntimeException /*-{
         this["legendIndex"] = legendIndex;
         return this;
@@ -159,26 +159,26 @@ public class JsoData
     }-*/
     ;
 
-    public final native Number x()
+    public final native double x()
         throws RuntimeException /*-{
         return this["x"] = (this["x"] || null);
     }-*/
     ;
 
-    public final native JsoData x(Number x)
+    public final native JsoData x(double x)
         throws RuntimeException /*-{
         this["x"] = x;
         return this;
     }-*/
     ;
 
-    public final native Number y()
+    public final native double y()
         throws RuntimeException /*-{
         return this["y"] = (this["y"] || null);
     }-*/
     ;
 
-    public final native JsoData y(Number y)
+    public final native JsoData y(double y)
         throws RuntimeException /*-{
         this["y"] = y;
         return this;

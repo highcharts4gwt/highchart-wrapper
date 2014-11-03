@@ -8,14 +8,14 @@ public class MockLabel
 {
 
     private String align;
-    private Number rotation;
+    private double rotation;
     private String style;
     private String text;
     private String textAlign;
     private boolean useHTML;
     private String verticalAlign;
-    private Number x;
-    private Number y;
+    private double x;
+    private double y;
 
     public String align() {
         return align;
@@ -26,11 +26,11 @@ public class MockLabel
         return this;
     }
 
-    public Number rotation() {
+    public double rotation() {
         return rotation;
     }
 
-    public MockLabel rotation(Number rotation) {
+    public MockLabel rotation(double rotation) {
         this.rotation = rotation;
         return this;
     }
@@ -80,20 +80,20 @@ public class MockLabel
         return this;
     }
 
-    public Number x() {
+    public double x() {
         return x;
     }
 
-    public MockLabel x(Number x) {
+    public MockLabel x(double x) {
         this.x = x;
         return this;
     }
 
-    public Number y() {
+    public double y() {
         return y;
     }
 
-    public MockLabel y(Number y) {
+    public MockLabel y(double y) {
         this.y = y;
         return this;
     }

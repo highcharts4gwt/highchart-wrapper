@@ -8,8 +8,8 @@ public class MockHalo
 {
 
     private String attributes;
-    private Number opacity;
-    private Number size;
+    private double opacity;
+    private double size;
 
     public String attributes() {
         return attributes;
@@ -20,20 +20,20 @@ public class MockHalo
         return this;
     }
 
-    public Number opacity() {
+    public double opacity() {
         return opacity;
     }
 
-    public MockHalo opacity(Number opacity) {
+    public MockHalo opacity(double opacity) {
         this.opacity = opacity;
         return this;
     }
 
-    public Number size() {
+    public double size() {
         return size;
     }
 
-    public MockHalo size(Number size) {
+    public MockHalo size(double size) {
         this.size = size;
         return this;
     }

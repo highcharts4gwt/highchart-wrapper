@@ -52,13 +52,13 @@ public class JsoStackLabels
     }-*/
     ;
 
-    public final native Number rotation()
+    public final native double rotation()
         throws RuntimeException /*-{
         return this["rotation"] = (this["rotation"] || 0.0);
     }-*/
     ;
 
-    public final native JsoStackLabels rotation(Number rotation)
+    public final native JsoStackLabels rotation(double rotation)
         throws RuntimeException /*-{
         this["rotation"] = rotation;
         return this;
@@ -118,26 +118,26 @@ public class JsoStackLabels
     }-*/
     ;
 
-    public final native Number x()
+    public final native double x()
         throws RuntimeException /*-{
         return this["x"] = (this["x"] || null);
     }-*/
     ;
 
-    public final native JsoStackLabels x(Number x)
+    public final native JsoStackLabels x(double x)
         throws RuntimeException /*-{
         this["x"] = x;
         return this;
     }-*/
     ;
 
-    public final native Number y()
+    public final native double y()
         throws RuntimeException /*-{
         return this["y"] = (this["y"] || null);
     }-*/
     ;
 
-    public final native JsoStackLabels y(Number y)
+    public final native JsoStackLabels y(double y)
         throws RuntimeException /*-{
         this["y"] = y;
         return this;

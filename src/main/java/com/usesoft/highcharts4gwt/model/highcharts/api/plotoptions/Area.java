@@ -12,9 +12,9 @@ public interface Area
 
     Area fillColor(String fillColor);
 
-    Number fillOpacity();
+    double fillOpacity();
 
-    Area fillOpacity(Number fillOpacity);
+    Area fillOpacity(double fillOpacity);
 
     String lineColor();
 

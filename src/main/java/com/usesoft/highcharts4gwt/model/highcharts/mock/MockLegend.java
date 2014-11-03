@@ -12,39 +12,39 @@ public class MockLegend
     private String align;
     private String backgroundColor;
     private String borderColor;
-    private Number borderRadius;
-    private Number borderWidth;
+    private double borderRadius;
+    private double borderWidth;
     private boolean enabled;
     private boolean floating;
-    private Number itemDistance;
+    private double itemDistance;
     private String itemHiddenStyle;
     private String itemHoverStyle;
-    private Number itemMarginBottom;
-    private Number itemMarginTop;
+    private double itemMarginBottom;
+    private double itemMarginTop;
     private String itemStyle;
-    private Number itemWidth;
+    private double itemWidth;
     private String labelFormat;
     private String layout;
-    private Number lineHeight;
-    private Number margin;
-    private Number maxHeight;
+    private double lineHeight;
+    private double margin;
+    private double maxHeight;
     private Navigation navigation;
-    private Number padding;
+    private double padding;
     private boolean reversed;
     private boolean rtl;
     private boolean shadowAsBoolean;
     private String shadowAsJsonString;
     private String style;
-    private Number symbolHeight;
-    private Number symbolPadding;
-    private Number symbolRadius;
-    private Number symbolWidth;
+    private double symbolHeight;
+    private double symbolPadding;
+    private double symbolRadius;
+    private double symbolWidth;
     private Title title;
     private boolean useHTML;
     private String verticalAlign;
-    private Number width;
-    private Number x;
-    private Number y;
+    private double width;
+    private double x;
+    private double y;
 
     public String align() {
         return align;
@@ -73,20 +73,20 @@ public class MockLegend
         return this;
     }
 
-    public Number borderRadius() {
+    public double borderRadius() {
         return borderRadius;
     }
 
-    public MockLegend borderRadius(Number borderRadius) {
+    public MockLegend borderRadius(double borderRadius) {
         this.borderRadius = borderRadius;
         return this;
     }
 
-    public Number borderWidth() {
+    public double borderWidth() {
         return borderWidth;
     }
 
-    public MockLegend borderWidth(Number borderWidth) {
+    public MockLegend borderWidth(double borderWidth) {
         this.borderWidth = borderWidth;
         return this;
     }
@@ -109,11 +109,11 @@ public class MockLegend
         return this;
     }
 
-    public Number itemDistance() {
+    public double itemDistance() {
         return itemDistance;
     }
 
-    public MockLegend itemDistance(Number itemDistance) {
+    public MockLegend itemDistance(double itemDistance) {
         this.itemDistance = itemDistance;
         return this;
     }
@@ -136,20 +136,20 @@ public class MockLegend
         return this;
     }
 
-    public Number itemMarginBottom() {
+    public double itemMarginBottom() {
         return itemMarginBottom;
     }
 
-    public MockLegend itemMarginBottom(Number itemMarginBottom) {
+    public MockLegend itemMarginBottom(double itemMarginBottom) {
         this.itemMarginBottom = itemMarginBottom;
         return this;
     }
 
-    public Number itemMarginTop() {
+    public double itemMarginTop() {
         return itemMarginTop;
     }
 
-    public MockLegend itemMarginTop(Number itemMarginTop) {
+    public MockLegend itemMarginTop(double itemMarginTop) {
         this.itemMarginTop = itemMarginTop;
         return this;
     }
@@ -163,11 +163,11 @@ public class MockLegend
         return this;
     }
 
-    public Number itemWidth() {
+    public double itemWidth() {
         return itemWidth;
     }
 
-    public MockLegend itemWidth(Number itemWidth) {
+    public MockLegend itemWidth(double itemWidth) {
         this.itemWidth = itemWidth;
         return this;
     }
@@ -190,29 +190,29 @@ public class MockLegend
         return this;
     }
 
-    public Number lineHeight() {
+    public double lineHeight() {
         return lineHeight;
     }
 
-    public MockLegend lineHeight(Number lineHeight) {
+    public MockLegend lineHeight(double lineHeight) {
         this.lineHeight = lineHeight;
         return this;
     }
 
-    public Number margin() {
+    public double margin() {
         return margin;
     }
 
-    public MockLegend margin(Number margin) {
+    public MockLegend margin(double margin) {
         this.margin = margin;
         return this;
     }
 
-    public Number maxHeight() {
+    public double maxHeight() {
         return maxHeight;
     }
 
-    public MockLegend maxHeight(Number maxHeight) {
+    public MockLegend maxHeight(double maxHeight) {
         this.maxHeight = maxHeight;
         return this;
     }
@@ -226,11 +226,11 @@ public class MockLegend
         return this;
     }
 
-    public Number padding() {
+    public double padding() {
         return padding;
     }
 
-    public MockLegend padding(Number padding) {
+    public MockLegend padding(double padding) {
         this.padding = padding;
         return this;
     }
@@ -280,38 +280,38 @@ public class MockLegend
         return this;
     }
 
-    public Number symbolHeight() {
+    public double symbolHeight() {
         return symbolHeight;
     }
 
-    public MockLegend symbolHeight(Number symbolHeight) {
+    public MockLegend symbolHeight(double symbolHeight) {
         this.symbolHeight = symbolHeight;
         return this;
     }
 
-    public Number symbolPadding() {
+    public double symbolPadding() {
         return symbolPadding;
     }
 
-    public MockLegend symbolPadding(Number symbolPadding) {
+    public MockLegend symbolPadding(double symbolPadding) {
         this.symbolPadding = symbolPadding;
         return this;
     }
 
-    public Number symbolRadius() {
+    public double symbolRadius() {
         return symbolRadius;
     }
 
-    public MockLegend symbolRadius(Number symbolRadius) {
+    public MockLegend symbolRadius(double symbolRadius) {
         this.symbolRadius = symbolRadius;
         return this;
     }
 
-    public Number symbolWidth() {
+    public double symbolWidth() {
         return symbolWidth;
     }
 
-    public MockLegend symbolWidth(Number symbolWidth) {
+    public MockLegend symbolWidth(double symbolWidth) {
         this.symbolWidth = symbolWidth;
         return this;
     }
@@ -343,29 +343,29 @@ public class MockLegend
         return this;
     }
 
-    public Number width() {
+    public double width() {
         return width;
     }
 
-    public MockLegend width(Number width) {
+    public MockLegend width(double width) {
         this.width = width;
         return this;
     }
 
-    public Number x() {
+    public double x() {
         return x;
     }
 
-    public MockLegend x(Number x) {
+    public MockLegend x(double x) {
         this.x = x;
         return this;
     }
 
-    public Number y() {
+    public double y() {
         return y;
     }
 
-    public MockLegend y(Number y) {
+    public MockLegend y(double y) {
         this.y = y;
         return this;
     }

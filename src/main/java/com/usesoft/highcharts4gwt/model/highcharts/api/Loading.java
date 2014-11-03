@@ -5,17 +5,17 @@ package com.usesoft.highcharts4gwt.model.highcharts.api;
 public interface Loading {
 
 
-    Number hideDuration();
+    double hideDuration();
 
-    Loading hideDuration(Number hideDuration);
+    Loading hideDuration(double hideDuration);
 
     String labelStyle();
 
     Loading labelStyle(String labelStyleAsJsonString);
 
-    Number showDuration();
+    double showDuration();
 
-    Loading showDuration(Number showDuration);
+    Loading showDuration(double showDuration);
 
     String style();
 

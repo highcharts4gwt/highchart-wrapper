@@ -9,18 +9,18 @@ public class MockButtonOptions
 
     private String align;
     private boolean enabled;
-    private Number height;
+    private double height;
     private String symbolFill;
-    private Number symbolSize;
+    private double symbolSize;
     private String symbolStroke;
-    private Number symbolStrokeWidth;
-    private Number symbolX;
-    private Number symbolY;
+    private double symbolStrokeWidth;
+    private double symbolX;
+    private double symbolY;
     private String text;
     private String theme;
     private String verticalAlign;
-    private Number width;
-    private Number y;
+    private double width;
+    private double y;
 
     public String align() {
         return align;
@@ -40,11 +40,11 @@ public class MockButtonOptions
         return this;
     }
 
-    public Number height() {
+    public double height() {
         return height;
     }
 
-    public MockButtonOptions height(Number height) {
+    public MockButtonOptions height(double height) {
         this.height = height;
         return this;
     }
@@ -58,11 +58,11 @@ public class MockButtonOptions
         return this;
     }
 
-    public Number symbolSize() {
+    public double symbolSize() {
         return symbolSize;
     }
 
-    public MockButtonOptions symbolSize(Number symbolSize) {
+    public MockButtonOptions symbolSize(double symbolSize) {
         this.symbolSize = symbolSize;
         return this;
     }
@@ -76,29 +76,29 @@ public class MockButtonOptions
         return this;
     }
 
-    public Number symbolStrokeWidth() {
+    public double symbolStrokeWidth() {
         return symbolStrokeWidth;
     }
 
-    public MockButtonOptions symbolStrokeWidth(Number symbolStrokeWidth) {
+    public MockButtonOptions symbolStrokeWidth(double symbolStrokeWidth) {
         this.symbolStrokeWidth = symbolStrokeWidth;
         return this;
     }
 
-    public Number symbolX() {
+    public double symbolX() {
         return symbolX;
     }
 
-    public MockButtonOptions symbolX(Number symbolX) {
+    public MockButtonOptions symbolX(double symbolX) {
         this.symbolX = symbolX;
         return this;
     }
 
-    public Number symbolY() {
+    public double symbolY() {
         return symbolY;
     }
 
-    public MockButtonOptions symbolY(Number symbolY) {
+    public MockButtonOptions symbolY(double symbolY) {
         this.symbolY = symbolY;
         return this;
     }
@@ -130,20 +130,20 @@ public class MockButtonOptions
         return this;
     }
 
-    public Number width() {
+    public double width() {
         return width;
     }
 
-    public MockButtonOptions width(Number width) {
+    public MockButtonOptions width(double width) {
         this.width = width;
         return this;
     }
 
-    public Number y() {
+    public double y() {
         return y;
     }
 
-    public MockButtonOptions y(Number y) {
+    public MockButtonOptions y(double y) {
         this.y = y;
         return this;
     }

@@ -9,13 +9,13 @@ public class MockTitle
 
     private String align;
     private boolean floating;
-    private Number margin;
+    private double margin;
     private String style;
     private String text;
     private boolean useHTML;
     private String verticalAlign;
-    private Number x;
-    private Number y;
+    private double x;
+    private double y;
 
     public String align() {
         return align;
@@ -35,11 +35,11 @@ public class MockTitle
         return this;
     }
 
-    public Number margin() {
+    public double margin() {
         return margin;
     }
 
-    public MockTitle margin(Number margin) {
+    public MockTitle margin(double margin) {
         this.margin = margin;
         return this;
     }
@@ -80,20 +80,20 @@ public class MockTitle
         return this;
     }
 
-    public Number x() {
+    public double x() {
         return x;
     }
 
-    public MockTitle x(Number x) {
+    public MockTitle x(double x) {
         this.x = x;
         return this;
     }
 
-    public Number y() {
+    public double y() {
         return y;
     }
 
-    public MockTitle y(Number y) {
+    public MockTitle y(double y) {
         this.y = y;
         return this;
     }

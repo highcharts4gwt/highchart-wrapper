@@ -29,12 +29,12 @@ public interface Subtitle {
 
     Subtitle verticalAlign(String verticalAlign);
 
-    Number x();
+    double x();
 
-    Subtitle x(Number x);
+    Subtitle x(double x);
 
-    Number y();
+    double y();
 
-    Subtitle y(Number y);
+    Subtitle y(double y);
 
 }

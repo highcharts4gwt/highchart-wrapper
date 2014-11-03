@@ -10,9 +10,9 @@ public interface PlotBand {
 
     PlotBand borderColor(String borderColor);
 
-    Number borderWidth();
+    double borderWidth();
 
-    PlotBand borderWidth(Number borderWidth);
+    PlotBand borderWidth(double borderWidth);
 
     String color();
 
@@ -22,9 +22,9 @@ public interface PlotBand {
 
     PlotBand events(String eventsAsJsonString);
 
-    Number from();
+    double from();
 
-    PlotBand from(Number from);
+    PlotBand from(double from);
 
     String id();
 
@@ -34,12 +34,12 @@ public interface PlotBand {
 
     PlotBand label(Label label);
 
-    Number to();
+    double to();
 
-    PlotBand to(Number to);
+    PlotBand to(double to);
 
-    Number zIndex();
+    double zIndex();
 
-    PlotBand zIndex(Number zIndex);
+    PlotBand zIndex(double zIndex);
 
 }

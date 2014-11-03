@@ -9,9 +9,9 @@ public interface Labels {
 
     Labels align(String align);
 
-    Number distance();
+    double distance();
 
-    Labels distance(Number distance);
+    Labels distance(double distance);
 
     boolean enabled();
 
@@ -21,25 +21,25 @@ public interface Labels {
 
     Labels format(String format);
 
-    Number maxStaggerLines();
+    double maxStaggerLines();
 
-    Labels maxStaggerLines(Number maxStaggerLines);
+    Labels maxStaggerLines(double maxStaggerLines);
 
     String overflow();
 
     Labels overflow(String overflow);
 
-    Number rotation();
+    double rotation();
 
-    Labels rotation(Number rotation);
+    Labels rotation(double rotation);
 
-    Number staggerLines();
+    double staggerLines();
 
-    Labels staggerLines(Number staggerLines);
+    Labels staggerLines(double staggerLines);
 
-    Number step();
+    double step();
 
-    Labels step(Number step);
+    Labels step(double step);
 
     String style();
 
@@ -49,16 +49,16 @@ public interface Labels {
 
     Labels useHTML(boolean useHTML);
 
-    Number x();
+    double x();
 
-    Labels x(Number x);
+    Labels x(double x);
 
-    Number y();
+    double y();
 
-    Labels y(Number y);
+    Labels y(double y);
 
-    Number zIndex();
+    double zIndex();
 
-    Labels zIndex(Number zIndex);
+    Labels zIndex(double zIndex);
 
 }

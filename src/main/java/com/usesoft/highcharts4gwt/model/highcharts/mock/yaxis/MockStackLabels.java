@@ -10,13 +10,13 @@ public class MockStackLabels
     private String align;
     private boolean enabled;
     private String format;
-    private Number rotation;
+    private double rotation;
     private String style;
     private String textAlign;
     private boolean useHTML;
     private String verticalAlign;
-    private Number x;
-    private Number y;
+    private double x;
+    private double y;
 
     public String align() {
         return align;
@@ -45,11 +45,11 @@ public class MockStackLabels
         return this;
     }
 
-    public Number rotation() {
+    public double rotation() {
         return rotation;
     }
 
-    public MockStackLabels rotation(Number rotation) {
+    public MockStackLabels rotation(double rotation) {
         this.rotation = rotation;
         return this;
     }
@@ -90,20 +90,20 @@ public class MockStackLabels
         return this;
     }
 
-    public Number x() {
+    public double x() {
         return x;
     }
 
-    public MockStackLabels x(Number x) {
+    public MockStackLabels x(double x) {
         this.x = x;
         return this;
     }
 
-    public Number y() {
+    public double y() {
         return y;
     }
 
-    public MockStackLabels y(Number y) {
+    public MockStackLabels y(double y) {
         this.y = y;
         return this;
     }

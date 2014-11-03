@@ -39,13 +39,13 @@ public class JsoButtonOptions
     }-*/
     ;
 
-    public final native Number height()
+    public final native double height()
         throws RuntimeException /*-{
         return this["height"] = (this["height"] || 20.0);
     }-*/
     ;
 
-    public final native JsoButtonOptions height(Number height)
+    public final native JsoButtonOptions height(double height)
         throws RuntimeException /*-{
         this["height"] = height;
         return this;
@@ -65,13 +65,13 @@ public class JsoButtonOptions
     }-*/
     ;
 
-    public final native Number symbolSize()
+    public final native double symbolSize()
         throws RuntimeException /*-{
         return this["symbolSize"] = (this["symbolSize"] || 14.0);
     }-*/
     ;
 
-    public final native JsoButtonOptions symbolSize(Number symbolSize)
+    public final native JsoButtonOptions symbolSize(double symbolSize)
         throws RuntimeException /*-{
         this["symbolSize"] = symbolSize;
         return this;
@@ -91,39 +91,39 @@ public class JsoButtonOptions
     }-*/
     ;
 
-    public final native Number symbolStrokeWidth()
+    public final native double symbolStrokeWidth()
         throws RuntimeException /*-{
         return this["symbolStrokeWidth"] = (this["symbolStrokeWidth"] || 1.0);
     }-*/
     ;
 
-    public final native JsoButtonOptions symbolStrokeWidth(Number symbolStrokeWidth)
+    public final native JsoButtonOptions symbolStrokeWidth(double symbolStrokeWidth)
         throws RuntimeException /*-{
         this["symbolStrokeWidth"] = symbolStrokeWidth;
         return this;
     }-*/
     ;
 
-    public final native Number symbolX()
+    public final native double symbolX()
         throws RuntimeException /*-{
         return this["symbolX"] = (this["symbolX"] || 12.5);
     }-*/
     ;
 
-    public final native JsoButtonOptions symbolX(Number symbolX)
+    public final native JsoButtonOptions symbolX(double symbolX)
         throws RuntimeException /*-{
         this["symbolX"] = symbolX;
         return this;
     }-*/
     ;
 
-    public final native Number symbolY()
+    public final native double symbolY()
         throws RuntimeException /*-{
         return this["symbolY"] = (this["symbolY"] || 10.5);
     }-*/
     ;
 
-    public final native JsoButtonOptions symbolY(Number symbolY)
+    public final native JsoButtonOptions symbolY(double symbolY)
         throws RuntimeException /*-{
         this["symbolY"] = symbolY;
         return this;
@@ -170,26 +170,26 @@ public class JsoButtonOptions
     }-*/
     ;
 
-    public final native Number width()
+    public final native double width()
         throws RuntimeException /*-{
         return this["width"] = (this["width"] || 24.0);
     }-*/
     ;
 
-    public final native JsoButtonOptions width(Number width)
+    public final native JsoButtonOptions width(double width)
         throws RuntimeException /*-{
         this["width"] = width;
         return this;
     }-*/
     ;
 
-    public final native Number y()
+    public final native double y()
         throws RuntimeException /*-{
         return this["y"] = (this["y"] || 0.0);
     }-*/
     ;
 
-    public final native JsoButtonOptions y(Number y)
+    public final native JsoButtonOptions y(double y)
         throws RuntimeException /*-{
         this["y"] = y;
         return this;

@@ -39,39 +39,39 @@ public class JsoTitle
     }-*/
     ;
 
-    public final native Number margin()
+    public final native double margin()
         throws RuntimeException /*-{
         return this["margin"] = (this["margin"] || null);
     }-*/
     ;
 
-    public final native JsoTitle margin(Number margin)
+    public final native JsoTitle margin(double margin)
         throws RuntimeException /*-{
         this["margin"] = margin;
         return this;
     }-*/
     ;
 
-    public final native Number offset()
+    public final native double offset()
         throws RuntimeException /*-{
         return this["offset"] = (this["offset"] || null);
     }-*/
     ;
 
-    public final native JsoTitle offset(Number offset)
+    public final native JsoTitle offset(double offset)
         throws RuntimeException /*-{
         this["offset"] = offset;
         return this;
     }-*/
     ;
 
-    public final native Number rotation()
+    public final native double rotation()
         throws RuntimeException /*-{
         return this["rotation"] = (this["rotation"] || 0.0);
     }-*/
     ;
 
-    public final native JsoTitle rotation(Number rotation)
+    public final native JsoTitle rotation(double rotation)
         throws RuntimeException /*-{
         this["rotation"] = rotation;
         return this;

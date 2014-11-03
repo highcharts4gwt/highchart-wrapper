@@ -52,26 +52,26 @@ public class JsoTooltip
     }-*/
     ;
 
-    public final native Number borderRadius()
+    public final native double borderRadius()
         throws RuntimeException /*-{
         return this["borderRadius"] = (this["borderRadius"] || 3.0);
     }-*/
     ;
 
-    public final native JsoTooltip borderRadius(Number borderRadius)
+    public final native JsoTooltip borderRadius(double borderRadius)
         throws RuntimeException /*-{
         this["borderRadius"] = borderRadius;
         return this;
     }-*/
     ;
 
-    public final native Number borderWidth()
+    public final native double borderWidth()
         throws RuntimeException /*-{
         return this["borderWidth"] = (this["borderWidth"] || 1.0);
     }-*/
     ;
 
-    public final native JsoTooltip borderWidth(Number borderWidth)
+    public final native JsoTooltip borderWidth(double borderWidth)
         throws RuntimeException /*-{
         this["borderWidth"] = borderWidth;
         return this;
@@ -157,13 +157,13 @@ public class JsoTooltip
     }-*/
     ;
 
-    public final native Number hideDelay()
+    public final native double hideDelay()
         throws RuntimeException /*-{
         return this["hideDelay"] = (this["hideDelay"] || 500.0);
     }-*/
     ;
 
-    public final native JsoTooltip hideDelay(Number hideDelay)
+    public final native JsoTooltip hideDelay(double hideDelay)
         throws RuntimeException /*-{
         this["hideDelay"] = hideDelay;
         return this;
@@ -222,13 +222,13 @@ public class JsoTooltip
     }-*/
     ;
 
-    public final native Number snap()
+    public final native double snap()
         throws RuntimeException /*-{
         return this["snap"] = (this["snap"] || null);
     }-*/
     ;
 
-    public final native JsoTooltip snap(Number snap)
+    public final native JsoTooltip snap(double snap)
         throws RuntimeException /*-{
         this["snap"] = snap;
         return this;
@@ -262,13 +262,13 @@ public class JsoTooltip
     }-*/
     ;
 
-    public final native Number valueDecimals()
+    public final native double valueDecimals()
         throws RuntimeException /*-{
         return this["valueDecimals"] = (this["valueDecimals"] || null);
     }-*/
     ;
 
-    public final native JsoTooltip valueDecimals(Number valueDecimals)
+    public final native JsoTooltip valueDecimals(double valueDecimals)
         throws RuntimeException /*-{
         this["valueDecimals"] = valueDecimals;
         return this;

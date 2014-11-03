@@ -6,17 +6,17 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.chart.options3d.Frame;
 public interface Options3d {
 
 
-    Number alpha();
+    double alpha();
 
-    Options3d alpha(Number alpha);
+    Options3d alpha(double alpha);
 
-    Number beta();
+    double beta();
 
-    Options3d beta(Number beta);
+    Options3d beta(double beta);
 
-    Number depth();
+    double depth();
 
-    Options3d depth(Number depth);
+    Options3d depth(double depth);
 
     boolean enabled();
 
@@ -26,8 +26,8 @@ public interface Options3d {
 
     Options3d frame(Frame frame);
 
-    Number viewDistance();
+    double viewDistance();
 
-    Options3d viewDistance(Number viewDistance);
+    Options3d viewDistance(double viewDistance);
 
 }

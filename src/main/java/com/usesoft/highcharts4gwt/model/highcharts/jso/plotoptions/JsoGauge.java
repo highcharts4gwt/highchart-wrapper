@@ -28,13 +28,13 @@ public class JsoGauge
     }-*/
     ;
 
-    public final native Number overshoot()
+    public final native double overshoot()
         throws RuntimeException /*-{
         return this["overshoot"] = (this["overshoot"] || 0.0);
     }-*/
     ;
 
-    public final native JsoGauge overshoot(Number overshoot)
+    public final native JsoGauge overshoot(double overshoot)
         throws RuntimeException /*-{
         this["overshoot"] = overshoot;
         return this;

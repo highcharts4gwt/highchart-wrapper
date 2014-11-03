@@ -9,8 +9,8 @@ public interface Bottom {
 
     Bottom color(String color);
 
-    Number size();
+    double size();
 
-    Bottom size(Number size);
+    Bottom size(double size);
 
 }

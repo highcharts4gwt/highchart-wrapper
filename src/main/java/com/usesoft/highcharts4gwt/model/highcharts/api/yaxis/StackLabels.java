@@ -17,9 +17,9 @@ public interface StackLabels {
 
     StackLabels format(String format);
 
-    Number rotation();
+    double rotation();
 
-    StackLabels rotation(Number rotation);
+    StackLabels rotation(double rotation);
 
     String style();
 
@@ -37,12 +37,12 @@ public interface StackLabels {
 
     StackLabels verticalAlign(String verticalAlign);
 
-    Number x();
+    double x();
 
-    StackLabels x(Number x);
+    StackLabels x(double x);
 
-    Number y();
+    double y();
 
-    StackLabels y(Number y);
+    StackLabels y(double y);
 
 }

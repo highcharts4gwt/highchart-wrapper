@@ -10,19 +10,19 @@ public class MockColumn
 {
 
     private String borderColor;
-    private Number borderRadius;
-    private Number borderWidth;
+    private double borderRadius;
+    private double borderWidth;
     private boolean colorByPoint;
-    private Number depth;
+    private double depth;
     private String edgeColor;
-    private Number edgeWidth;
-    private Number groupPadding;
-    private Number groupZPadding;
+    private double edgeWidth;
+    private double groupPadding;
+    private double groupZPadding;
     private boolean grouping;
-    private Number minPointLength;
-    private Number pointPadding;
-    private Number pointRange;
-    private Number pointWidth;
+    private double minPointLength;
+    private double pointPadding;
+    private double pointRange;
+    private double pointWidth;
 
     public String borderColor() {
         return borderColor;
@@ -33,20 +33,20 @@ public class MockColumn
         return this;
     }
 
-    public Number borderRadius() {
+    public double borderRadius() {
         return borderRadius;
     }
 
-    public MockColumn borderRadius(Number borderRadius) {
+    public MockColumn borderRadius(double borderRadius) {
         this.borderRadius = borderRadius;
         return this;
     }
 
-    public Number borderWidth() {
+    public double borderWidth() {
         return borderWidth;
     }
 
-    public MockColumn borderWidth(Number borderWidth) {
+    public MockColumn borderWidth(double borderWidth) {
         this.borderWidth = borderWidth;
         return this;
     }
@@ -60,11 +60,11 @@ public class MockColumn
         return this;
     }
 
-    public Number depth() {
+    public double depth() {
         return depth;
     }
 
-    public MockColumn depth(Number depth) {
+    public MockColumn depth(double depth) {
         this.depth = depth;
         return this;
     }
@@ -78,29 +78,29 @@ public class MockColumn
         return this;
     }
 
-    public Number edgeWidth() {
+    public double edgeWidth() {
         return edgeWidth;
     }
 
-    public MockColumn edgeWidth(Number edgeWidth) {
+    public MockColumn edgeWidth(double edgeWidth) {
         this.edgeWidth = edgeWidth;
         return this;
     }
 
-    public Number groupPadding() {
+    public double groupPadding() {
         return groupPadding;
     }
 
-    public MockColumn groupPadding(Number groupPadding) {
+    public MockColumn groupPadding(double groupPadding) {
         this.groupPadding = groupPadding;
         return this;
     }
 
-    public Number groupZPadding() {
+    public double groupZPadding() {
         return groupZPadding;
     }
 
-    public MockColumn groupZPadding(Number groupZPadding) {
+    public MockColumn groupZPadding(double groupZPadding) {
         this.groupZPadding = groupZPadding;
         return this;
     }
@@ -114,38 +114,38 @@ public class MockColumn
         return this;
     }
 
-    public Number minPointLength() {
+    public double minPointLength() {
         return minPointLength;
     }
 
-    public MockColumn minPointLength(Number minPointLength) {
+    public MockColumn minPointLength(double minPointLength) {
         this.minPointLength = minPointLength;
         return this;
     }
 
-    public Number pointPadding() {
+    public double pointPadding() {
         return pointPadding;
     }
 
-    public MockColumn pointPadding(Number pointPadding) {
+    public MockColumn pointPadding(double pointPadding) {
         this.pointPadding = pointPadding;
         return this;
     }
 
-    public Number pointRange() {
+    public double pointRange() {
         return pointRange;
     }
 
-    public MockColumn pointRange(Number pointRange) {
+    public MockColumn pointRange(double pointRange) {
         this.pointRange = pointRange;
         return this;
     }
 
-    public Number pointWidth() {
+    public double pointWidth() {
         return pointWidth;
     }
 
-    public MockColumn pointWidth(Number pointWidth) {
+    public MockColumn pointWidth(double pointWidth) {
         this.pointWidth = pointWidth;
         return this;
     }

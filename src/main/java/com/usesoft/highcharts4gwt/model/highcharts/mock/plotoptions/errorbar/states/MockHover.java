@@ -11,8 +11,8 @@ public class MockHover
 
     private boolean enabled;
     private Halo halo;
-    private Number lineWidth;
-    private Number lineWidthPlus;
+    private double lineWidth;
+    private double lineWidthPlus;
     private Marker marker;
 
     public boolean enabled() {
@@ -33,20 +33,20 @@ public class MockHover
         return this;
     }
 
-    public Number lineWidth() {
+    public double lineWidth() {
         return lineWidth;
     }
 
-    public MockHover lineWidth(Number lineWidth) {
+    public MockHover lineWidth(double lineWidth) {
         this.lineWidth = lineWidth;
         return this;
     }
 
-    public Number lineWidthPlus() {
+    public double lineWidthPlus() {
         return lineWidthPlus;
     }
 
-    public MockHover lineWidthPlus(Number lineWidthPlus) {
+    public MockHover lineWidthPlus(double lineWidthPlus) {
         this.lineWidthPlus = lineWidthPlus;
         return this;
     }

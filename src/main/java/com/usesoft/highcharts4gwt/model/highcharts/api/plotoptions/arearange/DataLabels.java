@@ -7,20 +7,20 @@ public interface DataLabels
 {
 
 
-    Number xHigh();
+    double xHigh();
 
-    DataLabels xHigh(Number xHigh);
+    DataLabels xHigh(double xHigh);
 
-    Number xLow();
+    double xLow();
 
-    DataLabels xLow(Number xLow);
+    DataLabels xLow(double xLow);
 
-    Number yHigh();
+    double yHigh();
 
-    DataLabels yHigh(Number yHigh);
+    DataLabels yHigh(double yHigh);
 
-    Number yLow();
+    double yLow();
 
-    DataLabels yLow(Number yLow);
+    DataLabels yLow(double yLow);
 
 }
