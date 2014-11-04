@@ -5,8 +5,6 @@ Generated GWT wrapper for highcharts API
 
 Support almost everything now, especially 3D charts.
 
-Still missing : support for Function / Mixed fields + other series data input format
-
 Code Example
 ============
 
@@ -95,6 +93,6 @@ What is still missing (not exhaustive list)
 =====================================
 
 * Improve Series API (only as array of number right now).
-* Some field type (CSSObject, Colors)
-* Exclusion of certain fields for certain options
+* Support for Function / Mixed fields
+* Support for Array<array>
 * No dynamic behavior (callbacks etc.)
