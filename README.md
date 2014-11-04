@@ -3,56 +3,49 @@ highcharts
 
 Generated GWT wrapper for highcharts API
 
-First rendering of a chart achieved by using the generated API !!!
+Support almost everything now, especially 3D charts.
 
-Lot of work to do but a big first step accomplished :)
+Still missing : support for Function / Mixed fields + other series data input format
 
 Code Example
 ============
 
 	ChartOptions options = (ChartOptions) JavaScriptObject.createObject();
+     
+    options.chart().type("column");
+    options.chart().margin().push(75);
+    options.chart().options3d().enabled(true).alpha(15).beta(15).depth(50).viewDistance(25);
 
-	options.subtitle().text("Chart reflow is set to true");
-	options.title().text("Chart reflow is set to true");
+    options.subtitle().text("Subtitle 3D");
+    options.title().text("Title 3D");
 
-	Series series = (Series) JavaScriptObject.createObject();
+    options.plotOptions().column().depth(25);
 
-	ArrayNumber data = series.data();
-	data.push(29.9);
-	data.push(71.5);
-	data.push(106.4);
-	data.push(129.2);
-	data.push(144.0);
-	data.push(176.0);
-	data.push(135.6);
-	data.push(148.5);
-	data.push(216.4);
-	data.push(194.1);
-	data.push(95.6);
-	data.push(54.4);
+    Series series = (Series) JavaScriptObject.createObject();
 
-	options.series().addToEnd(series);
+    ArrayNumber data = series.data();
+    data.push(29.9);
+    data.push(71.5);
+    data.push(106.4);
+    data.push(129.2);
+    data.push(144.0);
+    data.push(176.0);
+    data.push(135.6);
+    data.push(148.5);
+    data.push(216.4);
+    data.push(194.1);
+    data.push(95.6);
+    data.push(54.4);
 
-	ArrayString categories = options.xAxis().categories();
-	categories.push("Jan");
-	categories.push("Feb");
-	categories.push("Mar");
-	categories.push("Apr");
-	categories.push("May");
-	categories.push("Jun");
-	categories.push("Jul");
-	categories.push("Aug");
-	categories.push("Sep");
-	categories.push("Oct");
-	categories.push("Nov");
-	categories.push("Dec");
+    options.series().addToEnd(series);
+
 
 	container.renderChart(options);
 
 
 Here is the result inside the [Test Project](https://github.com/highcharts4gwt/testproject) 
 
-![First Chart](./screenshot.png)
+![First Chart](./screenshot.jpg)
 
 How to use it
 =============
