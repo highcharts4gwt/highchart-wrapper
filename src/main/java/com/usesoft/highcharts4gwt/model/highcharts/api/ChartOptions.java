@@ -2,6 +2,7 @@
 package com.usesoft.highcharts4gwt.model.highcharts.api;
 
 import com.usesoft.highcharts4gwt.model.array.api.Array;
+import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Chart;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Credits;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Drilldown;
@@ -53,21 +54,21 @@ public interface ChartOptions {
 
     ChartOptions yAxis(YAxis yAxis);
 
-    Subtitle subtitle();
-
-    ChartOptions subtitle(Subtitle subtitle);
-
     Exporting exporting();
 
     ChartOptions exporting(Exporting exporting);
+
+    Navigation navigation();
+
+    ChartOptions navigation(Navigation navigation);
 
     Title title();
 
     ChartOptions title(Title title);
 
-    Navigation navigation();
+    Subtitle subtitle();
 
-    ChartOptions navigation(Navigation navigation);
+    ChartOptions subtitle(Subtitle subtitle);
 
     Tooltip tooltip();
 
@@ -84,6 +85,10 @@ public interface ChartOptions {
     Array<Series> series();
 
     ChartOptions series(Array<Series> series);
+
+    ArrayString colors();
+
+    ChartOptions colors(ArrayString colors);
 
     Lang lang();
 

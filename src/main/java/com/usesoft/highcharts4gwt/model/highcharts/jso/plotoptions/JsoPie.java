@@ -53,6 +53,19 @@ public class JsoPie
     }-*/
     ;
 
+    public final native ArrayString colors()
+        throws RuntimeException /*-{
+        return this["colors"] = (this["colors"] || []);
+    }-*/
+    ;
+
+    public final native JsoPie colors(ArrayString colors)
+        throws RuntimeException /*-{
+        this["colors"] = colors;
+        return this;
+    }-*/
+    ;
+
     public final native double depth()
         throws RuntimeException /*-{
         return this["depth"] = (this["depth"] || 0.0);

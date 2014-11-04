@@ -1,6 +1,7 @@
 
 package com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions;
 
+import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Column;
 import com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions.MockSeries;
 
@@ -13,6 +14,7 @@ public class MockColumn
     private double borderRadius;
     private double borderWidth;
     private boolean colorByPoint;
+    private ArrayString colors;
     private double depth;
     private String edgeColor;
     private double edgeWidth;
@@ -57,6 +59,15 @@ public class MockColumn
 
     public MockColumn colorByPoint(boolean colorByPoint) {
         this.colorByPoint = colorByPoint;
+        return this;
+    }
+
+    public ArrayString colors() {
+        return colors;
+    }
+
+    public MockColumn colors(ArrayString colors) {
+        this.colors = colors;
         return this;
     }
 

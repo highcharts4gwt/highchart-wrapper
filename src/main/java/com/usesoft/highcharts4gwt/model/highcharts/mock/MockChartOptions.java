@@ -2,6 +2,7 @@
 package com.usesoft.highcharts4gwt.model.highcharts.mock;
 
 import com.usesoft.highcharts4gwt.model.array.api.Array;
+import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Chart;
 import com.usesoft.highcharts4gwt.model.highcharts.api.ChartOptions;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Credits;
@@ -34,14 +35,15 @@ public class MockChartOptions
     private PlotOptions plotOptions;
     private XAxis xAxis;
     private YAxis yAxis;
-    private Subtitle subtitle;
     private Exporting exporting;
-    private Title title;
     private Navigation navigation;
+    private Title title;
+    private Subtitle subtitle;
     private Tooltip tooltip;
     private NoData noData;
     private Pane pane;
     private Array<Series> series;
+    private ArrayString colors;
     private Lang lang;
     private Credits credits;
     private Loading loading;
@@ -110,21 +112,21 @@ public class MockChartOptions
         return this;
     }
 
-    public Subtitle subtitle() {
-        return subtitle;
-    }
-
-    public MockChartOptions subtitle(Subtitle subtitle) {
-        this.subtitle = subtitle;
-        return this;
-    }
-
     public Exporting exporting() {
         return exporting;
     }
 
     public MockChartOptions exporting(Exporting exporting) {
         this.exporting = exporting;
+        return this;
+    }
+
+    public Navigation navigation() {
+        return navigation;
+    }
+
+    public MockChartOptions navigation(Navigation navigation) {
+        this.navigation = navigation;
         return this;
     }
 
@@ -137,12 +139,12 @@ public class MockChartOptions
         return this;
     }
 
-    public Navigation navigation() {
-        return navigation;
+    public Subtitle subtitle() {
+        return subtitle;
     }
 
-    public MockChartOptions navigation(Navigation navigation) {
-        this.navigation = navigation;
+    public MockChartOptions subtitle(Subtitle subtitle) {
+        this.subtitle = subtitle;
         return this;
     }
 
@@ -179,6 +181,15 @@ public class MockChartOptions
 
     public MockChartOptions series(Array<Series> series) {
         this.series = series;
+        return this;
+    }
+
+    public ArrayString colors() {
+        return colors;
+    }
+
+    public MockChartOptions colors(ArrayString colors) {
+        this.colors = colors;
         return this;
     }
 

@@ -1,6 +1,7 @@
 
 package com.usesoft.highcharts4gwt.model.highcharts.jso.plotoptions;
 
+import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Column;
 import com.usesoft.highcharts4gwt.model.highcharts.jso.plotoptions.JsoSeries;
 
@@ -61,6 +62,19 @@ public class JsoColumn
     public final native JsoColumn colorByPoint(boolean colorByPoint)
         throws RuntimeException /*-{
         this["colorByPoint"] = colorByPoint;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayString colors()
+        throws RuntimeException /*-{
+        return this["colors"] = (this["colors"] || []);
+    }-*/
+    ;
+
+    public final native JsoColumn colors(ArrayString colors)
+        throws RuntimeException /*-{
+        this["colors"] = colors;
         return this;
     }-*/
     ;

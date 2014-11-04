@@ -1,30 +1,30 @@
 package com.usesoft.highcharts4gwt.client.view.widget;
 
 import com.google.gwt.core.client.JavaScriptObject;
+import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.SimpleLayoutPanel;
 import com.usesoft.highcharts4gwt.model.highcharts.api.ChartOptions;
 
 public class HighchartsLayoutPanel extends SimpleLayoutPanel
 {
+    private final DelayRenderingTimer timer;
+    private final String id;
+    private ChartOptions chartOptions;
 
     public HighchartsLayoutPanel()
     {
         id = HTMLPanel.createUniqueId();
         this.getElement().setId(id);
+
+        timer = new DelayRenderingTimer();
     }
 
-    // -- Rendering flow --
-    // onLoad
-    // onResized
-    // on attach or detach event
-    // onAttach
-
-    private final String id;
-
-    public JavaScriptObject renderChart(ChartOptions options)
+    public void renderChart(ChartOptions options)
     {
-        return drawChart(id, options);
+        this.chartOptions = options;
+
+        timer.schedule(100); // hack to let the dom the time to render first to have the parent container size...
     }
 
     private native JavaScriptObject drawChart(String containerId, ChartOptions options)
@@ -32,4 +32,16 @@ public class HighchartsLayoutPanel extends SimpleLayoutPanel
         debugger;
         return $wnd.jQuery('#'+containerId).highcharts(options);
     }-*/;
+
+    private class DelayRenderingTimer extends Timer
+    {
+        @Override
+        public void run()
+        {
+            if (chartOptions != null)
+            {
+                drawChart(id, chartOptions);
+            }
+        }
+    }
 }

@@ -1,6 +1,7 @@
 
 package com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions;
 
+import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Series;
 
 public interface Column
@@ -23,6 +24,10 @@ public interface Column
     boolean colorByPoint();
 
     Column colorByPoint(boolean colorByPoint);
+
+    ArrayString colors();
+
+    Column colors(ArrayString colors);
 
     double depth();
 

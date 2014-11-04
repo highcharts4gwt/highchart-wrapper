@@ -21,6 +21,10 @@ public interface Pie
 
     Pie center(ArrayString center);
 
+    ArrayString colors();
+
+    Pie colors(ArrayString colors);
+
     double depth();
 
     Pie depth(double depth);

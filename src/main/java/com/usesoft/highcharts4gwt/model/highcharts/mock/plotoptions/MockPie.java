@@ -13,6 +13,7 @@ public class MockPie
     private String borderColor;
     private double borderWidth;
     private ArrayString center;
+    private ArrayString colors;
     private double depth;
     private double endAngle;
     private boolean ignoreHiddenPoint;
@@ -48,6 +49,15 @@ public class MockPie
 
     public MockPie center(ArrayString center) {
         this.center = center;
+        return this;
+    }
+
+    public ArrayString colors() {
+        return colors;
+    }
+
+    public MockPie colors(ArrayString colors) {
+        this.colors = colors;
         return this;
     }
 

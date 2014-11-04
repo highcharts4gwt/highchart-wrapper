@@ -3,6 +3,7 @@ package com.usesoft.highcharts4gwt.model.highcharts.jso;
 
 import com.google.gwt.core.client.JavaScriptObject;
 import com.usesoft.highcharts4gwt.model.array.api.Array;
+import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Chart;
 import com.usesoft.highcharts4gwt.model.highcharts.api.ChartOptions;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Credits;
@@ -124,19 +125,6 @@ public class JsoChartOptions
     }-*/
     ;
 
-    public final native Subtitle subtitle()
-        throws RuntimeException /*-{
-        return this["subtitle"] = (this["subtitle"] || {});
-    }-*/
-    ;
-
-    public final native JsoChartOptions subtitle(Subtitle subtitle)
-        throws RuntimeException /*-{
-        this["subtitle"] = subtitle;
-        return this;
-    }-*/
-    ;
-
     public final native Exporting exporting()
         throws RuntimeException /*-{
         return this["exporting"] = (this["exporting"] || {});
@@ -146,6 +134,19 @@ public class JsoChartOptions
     public final native JsoChartOptions exporting(Exporting exporting)
         throws RuntimeException /*-{
         this["exporting"] = exporting;
+        return this;
+    }-*/
+    ;
+
+    public final native Navigation navigation()
+        throws RuntimeException /*-{
+        return this["navigation"] = (this["navigation"] || {});
+    }-*/
+    ;
+
+    public final native JsoChartOptions navigation(Navigation navigation)
+        throws RuntimeException /*-{
+        this["navigation"] = navigation;
         return this;
     }-*/
     ;
@@ -163,15 +164,15 @@ public class JsoChartOptions
     }-*/
     ;
 
-    public final native Navigation navigation()
+    public final native Subtitle subtitle()
         throws RuntimeException /*-{
-        return this["navigation"] = (this["navigation"] || {});
+        return this["subtitle"] = (this["subtitle"] || {});
     }-*/
     ;
 
-    public final native JsoChartOptions navigation(Navigation navigation)
+    public final native JsoChartOptions subtitle(Subtitle subtitle)
         throws RuntimeException /*-{
-        this["navigation"] = navigation;
+        this["subtitle"] = subtitle;
         return this;
     }-*/
     ;
@@ -224,6 +225,19 @@ public class JsoChartOptions
     public final native JsoChartOptions series(Array<Series> series)
         throws RuntimeException /*-{
         this["series"] = series;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayString colors()
+        throws RuntimeException /*-{
+        return this["colors"] = (this["colors"] || [ "#7cb5ec" , "#434348" , "#90ed7d" , "#f7a35c" , "#8085e9" , "#f15c80" , "#e4d354" , "#8085e8" , "#8d4653" , "#91e8e1"]);
+    }-*/
+    ;
+
+    public final native JsoChartOptions colors(ArrayString colors)
+        throws RuntimeException /*-{
+        this["colors"] = colors;
         return this;
     }-*/
     ;
