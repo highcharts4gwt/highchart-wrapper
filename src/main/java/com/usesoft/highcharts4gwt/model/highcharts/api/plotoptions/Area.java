@@ -24,6 +24,10 @@ public interface Area
 
     Area negativeFillColor(String negativeFillColor);
 
+    String step();
+
+    Area step(String step);
+
     boolean trackByArea();
 
     Area trackByArea(boolean trackByArea);

@@ -13,6 +13,7 @@ public class MockArea
     private double fillOpacity;
     private String lineColor;
     private String negativeFillColor;
+    private String step;
     private boolean trackByArea;
 
     public String fillColor() {
@@ -48,6 +49,15 @@ public class MockArea
 
     public MockArea negativeFillColor(String negativeFillColor) {
         this.negativeFillColor = negativeFillColor;
+        return this;
+    }
+
+    public String step() {
+        return step;
+    }
+
+    public MockArea step(String step) {
+        this.step = step;
         return this;
     }
 

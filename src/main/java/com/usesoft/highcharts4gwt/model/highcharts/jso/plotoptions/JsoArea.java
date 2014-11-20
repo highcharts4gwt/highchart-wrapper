@@ -65,6 +65,19 @@ public class JsoArea
     }-*/
     ;
 
+    public final native String step()
+        throws RuntimeException /*-{
+        return this["step"] = (this["step"] || "false");
+    }-*/
+    ;
+
+    public final native JsoArea step(String step)
+        throws RuntimeException /*-{
+        this["step"] = step;
+        return this;
+    }-*/
+    ;
+
     public final native boolean trackByArea()
         throws RuntimeException /*-{
         return this["trackByArea"] = (this["trackByArea"] || false);

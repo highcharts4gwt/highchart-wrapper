@@ -11,7 +11,7 @@ public class HighchartsLayoutPanel extends SimpleLayoutPanel
     private final DelayRenderingTimer timer;
     private final String id;
     private ChartOptions chartOptions;
-
+    
     public HighchartsLayoutPanel()
     {
         id = HTMLPanel.createUniqueId();
