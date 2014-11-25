@@ -1,14 +1,17 @@
 
 package com.usesoft.highcharts4gwt.model.highcharts.mock;
 
+import com.usesoft.highcharts4gwt.model.array.api.Array;
 import com.usesoft.highcharts4gwt.model.array.api.ArrayNumber;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Series;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.Data;
 
 public class MockSeries
     implements Series
 {
 
-    private ArrayNumber data;
+    private Array<Data> dataAsArrayObject;
+    private ArrayNumber dataAsArrayNumber;
     private String dataURL;
     private String id;
     private double index;
@@ -21,12 +24,21 @@ public class MockSeries
     private String yAxisAsString;
     private double zIndex;
 
-    public ArrayNumber data() {
-        return data;
+    public Array<Data> dataAsArrayObject() {
+        return dataAsArrayObject;
     }
 
-    public MockSeries data(ArrayNumber data) {
-        this.data = data;
+    public MockSeries dataAsArrayObject(Array<Data> dataAsArrayObject) {
+        this.dataAsArrayObject = dataAsArrayObject;
+        return this;
+    }
+
+    public ArrayNumber dataAsArrayNumber() {
+        return dataAsArrayNumber;
+    }
+
+    public MockSeries dataAsArrayNumber(ArrayNumber dataAsArrayNumber) {
+        this.dataAsArrayNumber = dataAsArrayNumber;
         return this;
     }
 

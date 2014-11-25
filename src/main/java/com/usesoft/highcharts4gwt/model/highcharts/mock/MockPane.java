@@ -1,6 +1,8 @@
 
 package com.usesoft.highcharts4gwt.model.highcharts.mock;
 
+import com.usesoft.highcharts4gwt.model.array.api.ArrayNumber;
+import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Pane;
 
 public class MockPane
@@ -8,6 +10,8 @@ public class MockPane
 {
 
     private String background;
+    private ArrayString centerAsArrayString;
+    private ArrayNumber centerAsArrayNumber;
     private double endAngle;
     private double sizeAsNumber;
     private String sizeAsString;
@@ -19,6 +23,24 @@ public class MockPane
 
     public MockPane background(String backgroundAsJsonStringArray) {
         this.background = backgroundAsJsonStringArray;
+        return this;
+    }
+
+    public ArrayString centerAsArrayString() {
+        return centerAsArrayString;
+    }
+
+    public MockPane centerAsArrayString(ArrayString centerAsArrayString) {
+        this.centerAsArrayString = centerAsArrayString;
+        return this;
+    }
+
+    public ArrayNumber centerAsArrayNumber() {
+        return centerAsArrayNumber;
+    }
+
+    public MockPane centerAsArrayNumber(ArrayNumber centerAsArrayNumber) {
+        this.centerAsArrayNumber = centerAsArrayNumber;
         return this;
     }
 

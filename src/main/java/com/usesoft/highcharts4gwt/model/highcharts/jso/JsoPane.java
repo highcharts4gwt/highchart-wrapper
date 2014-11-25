@@ -2,6 +2,8 @@
 package com.usesoft.highcharts4gwt.model.highcharts.jso;
 
 import com.google.gwt.core.client.JavaScriptObject;
+import com.usesoft.highcharts4gwt.model.array.api.ArrayNumber;
+import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Pane;
 
 public class JsoPane
@@ -23,6 +25,32 @@ public class JsoPane
     public final native JsoPane background(String backgroundAsJsonStringArray)
         throws RuntimeException /*-{
         this["background"] = JSON.parse(backgroundAsJsonStringArray);
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayString centerAsArrayString()
+        throws RuntimeException /*-{
+        return this["center"] = (this["center"] || ["50%", "50%"]);
+    }-*/
+    ;
+
+    public final native JsoPane centerAsArrayString(ArrayString centerAsArrayString)
+        throws RuntimeException /*-{
+        this["center"] = centerAsArrayString;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayNumber centerAsArrayNumber()
+        throws RuntimeException /*-{
+        return this["center"] = (this["center"] || ["50%", "50%"]);
+    }-*/
+    ;
+
+    public final native JsoPane centerAsArrayNumber(ArrayNumber centerAsArrayNumber)
+        throws RuntimeException /*-{
+        this["center"] = centerAsArrayNumber;
         return this;
     }-*/
     ;

@@ -2,8 +2,10 @@
 package com.usesoft.highcharts4gwt.model.highcharts.jso;
 
 import com.google.gwt.core.client.JavaScriptObject;
+import com.usesoft.highcharts4gwt.model.array.api.Array;
 import com.usesoft.highcharts4gwt.model.array.api.ArrayNumber;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Series;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.Data;
 
 public class JsoSeries
     extends JavaScriptObject
@@ -14,15 +16,28 @@ public class JsoSeries
     protected JsoSeries() {
     }
 
-    public final native ArrayNumber data()
+    public final native Array<Data> dataAsArrayObject()
         throws RuntimeException /*-{
         return this["data"] = (this["data"] || []);
     }-*/
     ;
 
-    public final native JsoSeries data(ArrayNumber data)
+    public final native JsoSeries dataAsArrayObject(Array<Data> dataAsArrayObject)
         throws RuntimeException /*-{
-        this["data"] = data;
+        this["data"] = dataAsArrayObject;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayNumber dataAsArrayNumber()
+        throws RuntimeException /*-{
+        return this["data"] = (this["data"] || []);
+    }-*/
+    ;
+
+    public final native JsoSeries dataAsArrayNumber(ArrayNumber dataAsArrayNumber)
+        throws RuntimeException /*-{
+        this["data"] = dataAsArrayNumber;
         return this;
     }-*/
     ;
