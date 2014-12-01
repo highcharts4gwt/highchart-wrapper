@@ -48,6 +48,7 @@ public class JsoPie
 
     public final native JsoPie center(ArrayString center)
         throws RuntimeException /*-{
+        debugger;
         this["center"] = center;
         return this;
     }-*/
