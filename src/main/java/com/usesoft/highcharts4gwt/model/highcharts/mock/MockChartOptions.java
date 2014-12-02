@@ -33,8 +33,8 @@ public class MockChartOptions
     private Legend legend;
     private Chart chart;
     private PlotOptions plotOptions;
-    private XAxis xAxis;
     private YAxis yAxis;
+    private XAxis xAxis;
     private Navigation navigation;
     private Exporting exporting;
     private Title title;
@@ -94,21 +94,21 @@ public class MockChartOptions
         return this;
     }
 
-    public XAxis xAxis() {
-        return xAxis;
-    }
-
-    public MockChartOptions xAxis(XAxis xAxis) {
-        this.xAxis = xAxis;
-        return this;
-    }
-
     public YAxis yAxis() {
         return yAxis;
     }
 
     public MockChartOptions yAxis(YAxis yAxis) {
         this.yAxis = yAxis;
+        return this;
+    }
+
+    public XAxis xAxis() {
+        return xAxis;
+    }
+
+    public MockChartOptions xAxis(XAxis xAxis) {
+        this.xAxis = xAxis;
         return this;
     }
 

@@ -5,6 +5,7 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.DataLa
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Events;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Marker;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Point;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.States;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Tooltip;
 
 public interface Series {
@@ -113,6 +114,10 @@ public interface Series {
     String stacking();
 
     Series stacking(String stacking);
+
+    States states();
+
+    Series states(States states);
 
     boolean stickyTracking();
 

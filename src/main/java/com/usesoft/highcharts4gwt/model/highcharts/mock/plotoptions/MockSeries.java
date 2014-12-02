@@ -6,6 +6,7 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.DataLa
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Events;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Marker;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Point;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.States;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Tooltip;
 
 public class MockSeries
@@ -38,6 +39,7 @@ public class MockSeries
     private boolean showCheckbox;
     private boolean showInLegend;
     private String stacking;
+    private States states;
     private boolean stickyTracking;
     private double threshold;
     private Tooltip tooltip;
@@ -275,6 +277,15 @@ public class MockSeries
 
     public MockSeries stacking(String stacking) {
         this.stacking = stacking;
+        return this;
+    }
+
+    public States states() {
+        return states;
+    }
+
+    public MockSeries states(States states) {
+        this.states = states;
         return this;
     }
 

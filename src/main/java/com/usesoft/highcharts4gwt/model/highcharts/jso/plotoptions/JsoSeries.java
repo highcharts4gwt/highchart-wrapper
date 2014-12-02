@@ -7,6 +7,7 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.DataLa
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Events;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Marker;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Point;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.States;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Tooltip;
 
 public class JsoSeries
@@ -353,6 +354,19 @@ public class JsoSeries
     public final native JsoSeries stacking(String stacking)
         throws RuntimeException /*-{
         this["stacking"] = stacking;
+        return this;
+    }-*/
+    ;
+
+    public final native States states()
+        throws RuntimeException /*-{
+        return this["states"] = (this["states"] || {});
+    }-*/
+    ;
+
+    public final native JsoSeries states(States states)
+        throws RuntimeException /*-{
+        this["states"] = states;
         return this;
     }-*/
     ;

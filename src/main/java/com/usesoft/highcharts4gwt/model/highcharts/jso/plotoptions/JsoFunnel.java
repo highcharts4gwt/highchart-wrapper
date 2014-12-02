@@ -67,7 +67,7 @@ public class JsoFunnel
 
     public final native double neckWidthAsNumber()
         throws RuntimeException /*-{
-        return this["neckWidth"] = (this["neckWidth"] || '');
+        return this["neckWidth"] = (this["neckWidth"] || null);
     }-*/
     ;
 
@@ -80,7 +80,7 @@ public class JsoFunnel
 
     public final native String neckWidthAsString()
         throws RuntimeException /*-{
-        return this["neckWidth"] = (this["neckWidth"] || "");
+        return this["neckWidth"] = (this["neckWidth"] || "30%");
     }-*/
     ;
 
