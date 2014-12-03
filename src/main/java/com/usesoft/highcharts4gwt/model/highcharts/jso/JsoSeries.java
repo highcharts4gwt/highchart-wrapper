@@ -107,6 +107,32 @@ public class JsoSeries
     }-*/
     ;
 
+    public final native String stackAsString()
+        throws RuntimeException /*-{
+        return this["stack"] = (this["stack"] || "null");
+    }-*/
+    ;
+
+    public final native JsoSeries stackAsString(String stackAsString)
+        throws RuntimeException /*-{
+        this["stack"] = stackAsString;
+        return this;
+    }-*/
+    ;
+
+    public final native double stackAsNumber()
+        throws RuntimeException /*-{
+        return this["stack"] = (this["stack"] || null);
+    }-*/
+    ;
+
+    public final native JsoSeries stackAsNumber(double stackAsNumber)
+        throws RuntimeException /*-{
+        this["stack"] = stackAsNumber;
+        return this;
+    }-*/
+    ;
+
     public final native String type()
         throws RuntimeException /*-{
         return this["type"] = (this["type"] || "null");

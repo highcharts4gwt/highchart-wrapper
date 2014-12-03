@@ -36,6 +36,14 @@ public interface Series {
 
     Series name(String name);
 
+    String stackAsString();
+
+    Series stackAsString(String stackAsString);
+
+    double stackAsNumber();
+
+    Series stackAsNumber(double stackAsNumber);
+
     String type();
 
     Series type(String type);

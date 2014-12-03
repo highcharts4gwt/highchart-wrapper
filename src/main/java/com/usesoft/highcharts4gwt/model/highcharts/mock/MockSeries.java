@@ -17,6 +17,8 @@ public class MockSeries
     private double index;
     private double legendIndex;
     private String name;
+    private String stackAsString;
+    private double stackAsNumber;
     private String type;
     private double xAxisAsNumber;
     private String xAxisAsString;
@@ -84,6 +86,24 @@ public class MockSeries
 
     public MockSeries name(String name) {
         this.name = name;
+        return this;
+    }
+
+    public String stackAsString() {
+        return stackAsString;
+    }
+
+    public MockSeries stackAsString(String stackAsString) {
+        this.stackAsString = stackAsString;
+        return this;
+    }
+
+    public double stackAsNumber() {
+        return stackAsNumber;
+    }
+
+    public MockSeries stackAsNumber(double stackAsNumber) {
+        this.stackAsNumber = stackAsNumber;
         return this;
     }
 

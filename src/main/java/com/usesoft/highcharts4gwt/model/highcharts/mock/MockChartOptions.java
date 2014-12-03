@@ -33,12 +33,12 @@ public class MockChartOptions
     private Legend legend;
     private Chart chart;
     private PlotOptions plotOptions;
-    private YAxis yAxis;
     private XAxis xAxis;
-    private Navigation navigation;
-    private Exporting exporting;
+    private YAxis yAxis;
     private Title title;
+    private Exporting exporting;
     private Subtitle subtitle;
+    private Navigation navigation;
     private Tooltip tooltip;
     private NoData noData;
     private Pane pane;
@@ -94,15 +94,6 @@ public class MockChartOptions
         return this;
     }
 
-    public YAxis yAxis() {
-        return yAxis;
-    }
-
-    public MockChartOptions yAxis(YAxis yAxis) {
-        this.yAxis = yAxis;
-        return this;
-    }
-
     public XAxis xAxis() {
         return xAxis;
     }
@@ -112,21 +103,12 @@ public class MockChartOptions
         return this;
     }
 
-    public Navigation navigation() {
-        return navigation;
+    public YAxis yAxis() {
+        return yAxis;
     }
 
-    public MockChartOptions navigation(Navigation navigation) {
-        this.navigation = navigation;
-        return this;
-    }
-
-    public Exporting exporting() {
-        return exporting;
-    }
-
-    public MockChartOptions exporting(Exporting exporting) {
-        this.exporting = exporting;
+    public MockChartOptions yAxis(YAxis yAxis) {
+        this.yAxis = yAxis;
         return this;
     }
 
@@ -139,12 +121,30 @@ public class MockChartOptions
         return this;
     }
 
+    public Exporting exporting() {
+        return exporting;
+    }
+
+    public MockChartOptions exporting(Exporting exporting) {
+        this.exporting = exporting;
+        return this;
+    }
+
     public Subtitle subtitle() {
         return subtitle;
     }
 
     public MockChartOptions subtitle(Subtitle subtitle) {
         this.subtitle = subtitle;
+        return this;
+    }
+
+    public Navigation navigation() {
+        return navigation;
+    }
+
+    public MockChartOptions navigation(Navigation navigation) {
+        this.navigation = navigation;
         return this;
     }
 
