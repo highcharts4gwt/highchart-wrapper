@@ -15,7 +15,7 @@ public class JsoTitle
 
     public final native String style()
         throws RuntimeException /*-{
-        this["style"] = (this["style"] || JSON.parse(''));
+        this["style"] = (this["style"] || JSON.parse('{"fontWeight":"bold"}'));
         return JSON.stringify(this["style"]);
     }-*/
     ;

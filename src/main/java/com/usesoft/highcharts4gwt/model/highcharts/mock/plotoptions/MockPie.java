@@ -1,6 +1,7 @@
 
 package com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions;
 
+import com.usesoft.highcharts4gwt.model.array.api.ArrayNumber;
 import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Pie;
 import com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions.MockSeries;
@@ -12,7 +13,8 @@ public class MockPie
 
     private String borderColor;
     private double borderWidth;
-    private ArrayString center;
+    private ArrayString centerAsArrayString;
+    private ArrayNumber centerAsArrayNumber;
     private ArrayString colors;
     private double depth;
     private double endAngle;
@@ -43,12 +45,21 @@ public class MockPie
         return this;
     }
 
-    public ArrayString center() {
-        return center;
+    public ArrayString centerAsArrayString() {
+        return centerAsArrayString;
     }
 
-    public MockPie center(ArrayString center) {
-        this.center = center;
+    public MockPie centerAsArrayString(ArrayString centerAsArrayString) {
+        this.centerAsArrayString = centerAsArrayString;
+        return this;
+    }
+
+    public ArrayNumber centerAsArrayNumber() {
+        return centerAsArrayNumber;
+    }
+
+    public MockPie centerAsArrayNumber(ArrayNumber centerAsArrayNumber) {
+        this.centerAsArrayNumber = centerAsArrayNumber;
         return this;
     }
 

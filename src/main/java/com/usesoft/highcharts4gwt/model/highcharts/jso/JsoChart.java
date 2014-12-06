@@ -569,7 +569,7 @@ public class JsoChart
 
     public final native String style()
         throws RuntimeException /*-{
-        this["style"] = (this["style"] || {});
+        this["style"] = (this["style"] || JSON.parse('{"fontFamily":"\"Lucida Grande\", \"Lucida Sans Unicode\", Verdana, Arial, Helvetica, sans-serif","fontSize":"12px"}'));
         return JSON.stringify(this["style"]);
     }-*/
     ;

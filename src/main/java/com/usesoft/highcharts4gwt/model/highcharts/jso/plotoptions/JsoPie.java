@@ -1,6 +1,7 @@
 
 package com.usesoft.highcharts4gwt.model.highcharts.jso.plotoptions;
 
+import com.usesoft.highcharts4gwt.model.array.api.ArrayNumber;
 import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Pie;
 import com.usesoft.highcharts4gwt.model.highcharts.jso.plotoptions.JsoSeries;
@@ -40,15 +41,28 @@ public class JsoPie
     }-*/
     ;
 
-    public final native ArrayString center()
+    public final native ArrayString centerAsArrayString()
         throws RuntimeException /*-{
         return this["center"] = (this["center"] || [null, null]);
     }-*/
     ;
 
-    public final native JsoPie center(ArrayString center)
+    public final native JsoPie centerAsArrayString(ArrayString centerAsArrayString)
         throws RuntimeException /*-{
-        this["center"] = center;
+        this["center"] = centerAsArrayString;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayNumber centerAsArrayNumber()
+        throws RuntimeException /*-{
+        return this["center"] = (this["center"] || [null, null]);
+    }-*/
+    ;
+
+    public final native JsoPie centerAsArrayNumber(ArrayNumber centerAsArrayNumber)
+        throws RuntimeException /*-{
+        this["center"] = centerAsArrayNumber;
         return this;
     }-*/
     ;

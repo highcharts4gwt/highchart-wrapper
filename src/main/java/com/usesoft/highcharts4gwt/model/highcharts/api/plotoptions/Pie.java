@@ -1,6 +1,7 @@
 
 package com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions;
 
+import com.usesoft.highcharts4gwt.model.array.api.ArrayNumber;
 import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Series;
 
@@ -17,9 +18,13 @@ public interface Pie
 
     Pie borderWidth(double borderWidth);
 
-    ArrayString center();
+    ArrayString centerAsArrayString();
 
-    Pie center(ArrayString center);
+    Pie centerAsArrayString(ArrayString centerAsArrayString);
+
+    ArrayNumber centerAsArrayNumber();
+
+    Pie centerAsArrayNumber(ArrayNumber centerAsArrayNumber);
 
     ArrayString colors();
 

@@ -132,7 +132,7 @@ public class JsoLabels
 
     public final native String style()
         throws RuntimeException /*-{
-        this["style"] = (this["style"] || {});
+        this["style"] = (this["style"] || JSON.parse('{"color":"#6D869F","fontWeight":"bold"}'));
         return JSON.stringify(this["style"]);
     }-*/
     ;
