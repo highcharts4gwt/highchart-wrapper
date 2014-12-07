@@ -54,21 +54,21 @@ public interface ChartOptions {
 
     ChartOptions yAxis(YAxis yAxis);
 
-    Subtitle subtitle();
-
-    ChartOptions subtitle(Subtitle subtitle);
-
     Exporting exporting();
 
     ChartOptions exporting(Exporting exporting);
 
-    Title title();
+    Subtitle subtitle();
 
-    ChartOptions title(Title title);
+    ChartOptions subtitle(Subtitle subtitle);
 
     Navigation navigation();
 
     ChartOptions navigation(Navigation navigation);
+
+    Title title();
+
+    ChartOptions title(Title title);
 
     Tooltip tooltip();
 
