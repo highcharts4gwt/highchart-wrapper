@@ -10,10 +10,4 @@ public class JsoPointMouseOutEvent
 {
 
 
-    public final native getSeries()
-        throws RuntimeException /*-{
-        return this.source.chart.options.series[this.source.index];
-    }-*/
-    ;
-
 }
