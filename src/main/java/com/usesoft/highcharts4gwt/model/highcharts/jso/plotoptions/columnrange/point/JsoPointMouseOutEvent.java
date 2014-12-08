@@ -10,4 +10,7 @@ public class JsoPointMouseOutEvent
 {
 
 
+    protected JsoPointMouseOutEvent() {
+    }
+
 }

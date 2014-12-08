@@ -10,4 +10,7 @@ public class JsoChartSelectionEvent
 {
 
 
+    protected JsoChartSelectionEvent() {
+    }
+
 }

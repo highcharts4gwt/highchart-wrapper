@@ -10,4 +10,7 @@ public class JsoChartLoadEvent
 {
 
 
+    protected JsoChartLoadEvent() {
+    }
+
 }

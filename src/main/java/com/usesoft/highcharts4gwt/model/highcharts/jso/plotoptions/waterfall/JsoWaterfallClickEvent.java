@@ -11,6 +11,9 @@ public class JsoWaterfallClickEvent
 {
 
 
+    protected JsoWaterfallClickEvent() {
+    }
+
     public final native Series getSeries()
         throws RuntimeException /*-{
         return this.source.chart.options.series[this.source.index];

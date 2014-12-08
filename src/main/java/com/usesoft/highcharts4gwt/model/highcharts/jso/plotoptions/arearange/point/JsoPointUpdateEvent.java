@@ -10,4 +10,7 @@ public class JsoPointUpdateEvent
 {
 
 
+    protected JsoPointUpdateEvent() {
+    }
+
 }

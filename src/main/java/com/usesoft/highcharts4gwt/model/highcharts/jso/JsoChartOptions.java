@@ -125,15 +125,15 @@ public class JsoChartOptions
     }-*/
     ;
 
-    public final native Subtitle subtitle()
+    public final native Exporting exporting()
         throws RuntimeException /*-{
-        return this["subtitle"] = (this["subtitle"] || {});
+        return this["exporting"] = (this["exporting"] || {});
     }-*/
     ;
 
-    public final native JsoChartOptions subtitle(Subtitle subtitle)
+    public final native JsoChartOptions exporting(Exporting exporting)
         throws RuntimeException /*-{
-        this["subtitle"] = subtitle;
+        this["exporting"] = exporting;
         return this;
     }-*/
     ;
@@ -164,15 +164,15 @@ public class JsoChartOptions
     }-*/
     ;
 
-    public final native Exporting exporting()
+    public final native Subtitle subtitle()
         throws RuntimeException /*-{
-        return this["exporting"] = (this["exporting"] || {});
+        return this["subtitle"] = (this["subtitle"] || {});
     }-*/
     ;
 
-    public final native JsoChartOptions exporting(Exporting exporting)
+    public final native JsoChartOptions subtitle(Subtitle subtitle)
         throws RuntimeException /*-{
-        this["exporting"] = exporting;
+        this["subtitle"] = subtitle;
         return this;
     }-*/
     ;

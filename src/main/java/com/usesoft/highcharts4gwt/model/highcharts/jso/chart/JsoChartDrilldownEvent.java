@@ -10,4 +10,7 @@ public class JsoChartDrilldownEvent
 {
 
 
+    protected JsoChartDrilldownEvent() {
+    }
+
 }

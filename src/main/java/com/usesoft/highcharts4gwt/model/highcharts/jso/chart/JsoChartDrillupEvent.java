@@ -10,4 +10,7 @@ public class JsoChartDrillupEvent
 {
 
 
+    protected JsoChartDrillupEvent() {
+    }
+
 }

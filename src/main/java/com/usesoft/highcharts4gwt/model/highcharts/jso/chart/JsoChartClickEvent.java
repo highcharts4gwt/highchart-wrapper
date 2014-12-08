@@ -10,4 +10,7 @@ public class JsoChartClickEvent
 {
 
 
+    protected JsoChartClickEvent() {
+    }
+
 }

@@ -10,4 +10,7 @@ public class JsoChartRedrawEvent
 {
 
 
+    protected JsoChartRedrawEvent() {
+    }
+
 }

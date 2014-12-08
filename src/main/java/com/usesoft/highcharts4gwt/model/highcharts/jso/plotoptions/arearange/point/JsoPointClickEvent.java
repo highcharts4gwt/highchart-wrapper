@@ -10,4 +10,7 @@ public class JsoPointClickEvent
 {
 
 
+    protected JsoPointClickEvent() {
+    }
+
 }

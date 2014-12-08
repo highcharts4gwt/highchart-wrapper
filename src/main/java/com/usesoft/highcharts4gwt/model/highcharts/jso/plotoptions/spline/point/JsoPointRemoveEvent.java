@@ -10,4 +10,7 @@ public class JsoPointRemoveEvent
 {
 
 
+    protected JsoPointRemoveEvent() {
+    }
+
 }

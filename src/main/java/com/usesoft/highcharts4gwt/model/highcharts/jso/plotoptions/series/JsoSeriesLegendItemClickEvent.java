@@ -11,6 +11,9 @@ public class JsoSeriesLegendItemClickEvent
 {
 
 
+    protected JsoSeriesLegendItemClickEvent() {
+    }
+
     public final native Series getSeries()
         throws RuntimeException /*-{
         return this.source.chart.options.series[this.source.index];

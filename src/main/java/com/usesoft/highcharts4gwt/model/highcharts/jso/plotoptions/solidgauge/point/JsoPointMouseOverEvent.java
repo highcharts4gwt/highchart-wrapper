@@ -10,4 +10,7 @@ public class JsoPointMouseOverEvent
 {
 
 
+    protected JsoPointMouseOverEvent() {
+    }
+
 }

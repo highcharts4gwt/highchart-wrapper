@@ -10,4 +10,7 @@ public class JsoPointUnselectEvent
 {
 
 
+    protected JsoPointUnselectEvent() {
+    }
+
 }

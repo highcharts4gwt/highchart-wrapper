@@ -10,4 +10,7 @@ public class JsoXAxisAfterSetExtremesEvent
 {
 
 
+    protected JsoXAxisAfterSetExtremesEvent() {
+    }
+
 }

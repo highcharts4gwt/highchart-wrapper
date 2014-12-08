@@ -10,4 +10,7 @@ public class JsoChartAddSeriesEvent
 {
 
 
+    protected JsoChartAddSeriesEvent() {
+    }
+
 }
