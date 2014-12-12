@@ -2,6 +2,14 @@
 package com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Funnel;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelShowHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions.MockPie;
 
 public class MockFunnel
@@ -18,6 +26,30 @@ public class MockFunnel
     private boolean reversed;
     private double widthAsNumber;
     private String widthAsString;
+
+    public void addFunnelAfterAnimateHandler(FunnelAfterAnimateHandler handler) {
+    }
+
+    public void addFunnelCheckboxClickHandler(FunnelCheckboxClickHandler handler) {
+    }
+
+    public void addFunnelClickHandler(FunnelClickHandler handler) {
+    }
+
+    public void addFunnelHideHandler(FunnelHideHandler handler) {
+    }
+
+    public void addFunnelLegendItemClickHandler(FunnelLegendItemClickHandler handler) {
+    }
+
+    public void addFunnelMouseOutHandler(FunnelMouseOutHandler handler) {
+    }
+
+    public void addFunnelMouseOverHandler(FunnelMouseOverHandler handler) {
+    }
+
+    public void addFunnelShowHandler(FunnelShowHandler handler) {
+    }
 
     public double heightAsNumber() {
         return heightAsNumber;

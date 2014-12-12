@@ -14,10 +14,6 @@ public interface PlotLine {
 
     PlotLine dashStyle(String dashStyle);
 
-    String events();
-
-    PlotLine events(String eventsAsJsonString);
-
     String id();
 
     PlotLine id(String id);

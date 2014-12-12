@@ -2,7 +2,13 @@
 package com.usesoft.highcharts4gwt.model.highcharts.mock.series;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.series.Data;
-import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.Events;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataRemoveHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataSelectHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataUnselectHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataUpdateHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.Marker;
 
 public class MockData
@@ -12,7 +18,6 @@ public class MockData
     private String color;
     private String dataLabels;
     private String drilldown;
-    private Events events;
     private String id;
     private boolean isIntermediateSum;
     private boolean isSum;
@@ -50,13 +55,25 @@ public class MockData
         return this;
     }
 
-    public Events events() {
-        return events;
+    public void addDataClickHandler(DataClickHandler handler) {
     }
 
-    public MockData events(Events events) {
-        this.events = events;
-        return this;
+    public void addDataMouseOutHandler(DataMouseOutHandler handler) {
+    }
+
+    public void addDataMouseOverHandler(DataMouseOverHandler handler) {
+    }
+
+    public void addDataRemoveHandler(DataRemoveHandler handler) {
+    }
+
+    public void addDataSelectHandler(DataSelectHandler handler) {
+    }
+
+    public void addDataUnselectHandler(DataUnselectHandler handler) {
+    }
+
+    public void addDataUpdateHandler(DataUpdateHandler handler) {
     }
 
     public String id() {

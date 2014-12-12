@@ -2,7 +2,13 @@
 package com.usesoft.highcharts4gwt.model.highcharts.api;
 
 import com.usesoft.highcharts4gwt.model.array.api.ArrayNumber;
-import com.usesoft.highcharts4gwt.model.highcharts.api.chart.Events;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartAddSeriesHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartDrilldownHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartDrillupHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartLoadHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartRedrawHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartSelectionHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.api.chart.Options3d;
 import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ResetZoomButton;
 
@@ -45,9 +51,19 @@ public interface Chart {
 
     Chart defaultSeriesType(String defaultSeriesType);
 
-    Events events();
+    void addChartAddSeriesHandler(ChartAddSeriesHandler chartAddSeriesHandler);
 
-    Chart events(Events events);
+    void addChartClickHandler(ChartClickHandler chartClickHandler);
+
+    void addChartDrilldownHandler(ChartDrilldownHandler chartDrilldownHandler);
+
+    void addChartDrillupHandler(ChartDrillupHandler chartDrillupHandler);
+
+    void addChartLoadHandler(ChartLoadHandler chartLoadHandler);
+
+    void addChartRedrawHandler(ChartRedrawHandler chartRedrawHandler);
+
+    void addChartSelectionHandler(ChartSelectionHandler chartSelectionHandler);
 
     double height();
 

@@ -15,6 +15,7 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Columnrange;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Errorbar;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Funnel;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Gauge;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Heatmap;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Line;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Pie;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Pyramid;
@@ -189,16 +190,15 @@ public class JsoPlotOptions
     }-*/
     ;
 
-    public final native String heatmap()
+    public final native Heatmap heatmap()
         throws RuntimeException /*-{
-        this["heatmap"] = (this["heatmap"] || JSON.parse(''));
-        return JSON.stringify(this["heatmap"]);
+        return this["heatmap"] = (this["heatmap"] || {});
     }-*/
     ;
 
-    public final native JsoPlotOptions heatmap(String heatmapAsJsonString)
+    public final native JsoPlotOptions heatmap(Heatmap heatmap)
         throws RuntimeException /*-{
-        this["heatmap"] = JSON.parse(heatmapAsJsonString);
+        this["heatmap"] = heatmap;
         return this;
     }-*/
     ;

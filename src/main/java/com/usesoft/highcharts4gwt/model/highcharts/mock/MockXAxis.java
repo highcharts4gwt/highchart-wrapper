@@ -5,11 +5,12 @@ import com.usesoft.highcharts4gwt.model.array.api.Array;
 import com.usesoft.highcharts4gwt.model.array.api.ArrayNumber;
 import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.XAxis;
-import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.Events;
 import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.Labels;
 import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.PlotBand;
 import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.PlotLine;
 import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.Title;
+import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.XAxisAfterSetExtremesHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.XAxisSetExtremesHandler;
 
 public class MockXAxis
     implements XAxis
@@ -21,7 +22,6 @@ public class MockXAxis
     private double ceiling;
     private String dateTimeLabelFormats;
     private boolean endOnTick;
-    private Events events;
     private double floor;
     private String gridLineColor;
     private String gridLineDashStyle;
@@ -43,7 +43,8 @@ public class MockXAxis
     private String minorGridLineDashStyle;
     private double minorGridLineWidth;
     private String minorTickColor;
-    private double minorTickInterval;
+    private String minorTickIntervalAsString;
+    private double minorTickIntervalAsNumber;
     private double minorTickLength;
     private String minorTickPosition;
     private double minorTickWidth;
@@ -122,13 +123,10 @@ public class MockXAxis
         return this;
     }
 
-    public Events events() {
-        return events;
+    public void addXAxisAfterSetExtremesHandler(XAxisAfterSetExtremesHandler handler) {
     }
 
-    public MockXAxis events(Events events) {
-        this.events = events;
-        return this;
+    public void addXAxisSetExtremesHandler(XAxisSetExtremesHandler handler) {
     }
 
     public double floor() {
@@ -320,12 +318,21 @@ public class MockXAxis
         return this;
     }
 
-    public double minorTickInterval() {
-        return minorTickInterval;
+    public String minorTickIntervalAsString() {
+        return minorTickIntervalAsString;
     }
 
-    public MockXAxis minorTickInterval(double minorTickInterval) {
-        this.minorTickInterval = minorTickInterval;
+    public MockXAxis minorTickIntervalAsString(String minorTickIntervalAsString) {
+        this.minorTickIntervalAsString = minorTickIntervalAsString;
+        return this;
+    }
+
+    public double minorTickIntervalAsNumber() {
+        return minorTickIntervalAsNumber;
+    }
+
+    public MockXAxis minorTickIntervalAsNumber(double minorTickIntervalAsNumber) {
+        this.minorTickIntervalAsNumber = minorTickIntervalAsNumber;
         return this;
     }
 

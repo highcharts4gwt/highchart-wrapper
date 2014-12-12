@@ -2,6 +2,14 @@
 package com.usesoft.highcharts4gwt.model.highcharts.jso.plotoptions;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Boxplot;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotShowHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.jso.plotoptions.JsoColumn;
 
 public class JsoBoxplot
@@ -12,6 +20,134 @@ public class JsoBoxplot
 
     protected JsoBoxplot() {
     }
+
+    public final native void addBoxplotAfterAnimateHandler(BoxplotAfterAnimateHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    afterAnimate: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotAfterAnimateHandler::onBoxplotAfterAnimate(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/boxplot/BoxplotAfterAnimateEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addBoxplotCheckboxClickHandler(BoxplotCheckboxClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    checkboxClick: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotCheckboxClickHandler::onBoxplotCheckboxClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/boxplot/BoxplotCheckboxClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addBoxplotClickHandler(BoxplotClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    click: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotClickHandler::onBoxplotClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/boxplot/BoxplotClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addBoxplotHideHandler(BoxplotHideHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    hide: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotHideHandler::onBoxplotHide(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/boxplot/BoxplotHideEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addBoxplotLegendItemClickHandler(BoxplotLegendItemClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    legendItemClick: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotLegendItemClickHandler::onBoxplotLegendItemClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/boxplot/BoxplotLegendItemClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addBoxplotMouseOutHandler(BoxplotMouseOutHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    mouseOut: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotMouseOutHandler::onBoxplotMouseOut(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/boxplot/BoxplotMouseOutEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addBoxplotMouseOverHandler(BoxplotMouseOverHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    mouseOver: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotMouseOverHandler::onBoxplotMouseOver(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/boxplot/BoxplotMouseOverEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addBoxplotShowHandler(BoxplotShowHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    show: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotShowHandler::onBoxplotShow(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/boxplot/BoxplotShowEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
 
     public final native String fillColor()
         throws RuntimeException /*-{

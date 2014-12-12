@@ -4,6 +4,14 @@ package com.usesoft.highcharts4gwt.model.highcharts.jso.plotoptions;
 import com.usesoft.highcharts4gwt.model.array.api.ArrayNumber;
 import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Pie;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieShowHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.jso.plotoptions.JsoSeries;
 
 public class JsoPie
@@ -104,6 +112,134 @@ public class JsoPie
         this["endAngle"] = endAngle;
         return this;
     }-*/
+    ;
+
+    public final native void addPieAfterAnimateHandler(PieAfterAnimateHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    afterAnimate: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieAfterAnimateHandler::onPieAfterAnimate(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/pie/PieAfterAnimateEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addPieCheckboxClickHandler(PieCheckboxClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    checkboxClick: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieCheckboxClickHandler::onPieCheckboxClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/pie/PieCheckboxClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addPieClickHandler(PieClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    click: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieClickHandler::onPieClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/pie/PieClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addPieHideHandler(PieHideHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    hide: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieHideHandler::onPieHide(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/pie/PieHideEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addPieLegendItemClickHandler(PieLegendItemClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    legendItemClick: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieLegendItemClickHandler::onPieLegendItemClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/pie/PieLegendItemClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addPieMouseOutHandler(PieMouseOutHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    mouseOut: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieMouseOutHandler::onPieMouseOut(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/pie/PieMouseOutEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addPieMouseOverHandler(PieMouseOverHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    mouseOver: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieMouseOverHandler::onPieMouseOver(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/pie/PieMouseOverEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addPieShowHandler(PieShowHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    show: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieShowHandler::onPieShow(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/pie/PieShowEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
     ;
 
     public final native boolean ignoreHiddenPoint()

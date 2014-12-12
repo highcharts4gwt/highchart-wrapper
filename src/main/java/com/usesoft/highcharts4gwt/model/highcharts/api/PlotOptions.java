@@ -13,6 +13,7 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Columnrange;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Errorbar;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Funnel;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Gauge;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Heatmap;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Line;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Pie;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Pyramid;
@@ -73,9 +74,9 @@ public interface PlotOptions {
 
     PlotOptions gauge(Gauge gauge);
 
-    String heatmap();
+    Heatmap heatmap();
 
-    PlotOptions heatmap(String heatmapAsJsonString);
+    PlotOptions heatmap(Heatmap heatmap);
 
     Line line();
 

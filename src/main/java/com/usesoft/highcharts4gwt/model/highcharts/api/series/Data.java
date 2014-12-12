@@ -1,7 +1,13 @@
 
 package com.usesoft.highcharts4gwt.model.highcharts.api.series;
 
-import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.Events;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataRemoveHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataSelectHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataUnselectHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataUpdateHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.Marker;
 
 public interface Data {
@@ -19,9 +25,19 @@ public interface Data {
 
     Data drilldown(String drilldown);
 
-    Events events();
+    void addDataClickHandler(DataClickHandler dataClickHandler);
 
-    Data events(Events events);
+    void addDataMouseOutHandler(DataMouseOutHandler dataMouseOutHandler);
+
+    void addDataMouseOverHandler(DataMouseOverHandler dataMouseOverHandler);
+
+    void addDataRemoveHandler(DataRemoveHandler dataRemoveHandler);
+
+    void addDataSelectHandler(DataSelectHandler dataSelectHandler);
+
+    void addDataUnselectHandler(DataUnselectHandler dataUnselectHandler);
+
+    void addDataUpdateHandler(DataUpdateHandler dataUpdateHandler);
 
     String id();
 

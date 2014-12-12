@@ -3,6 +3,14 @@ package com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions;
 
 import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Column;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnShowHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions.MockSeries;
 
 public class MockColumn
@@ -96,6 +104,30 @@ public class MockColumn
     public MockColumn edgeWidth(double edgeWidth) {
         this.edgeWidth = edgeWidth;
         return this;
+    }
+
+    public void addColumnAfterAnimateHandler(ColumnAfterAnimateHandler handler) {
+    }
+
+    public void addColumnCheckboxClickHandler(ColumnCheckboxClickHandler handler) {
+    }
+
+    public void addColumnClickHandler(ColumnClickHandler handler) {
+    }
+
+    public void addColumnHideHandler(ColumnHideHandler handler) {
+    }
+
+    public void addColumnLegendItemClickHandler(ColumnLegendItemClickHandler handler) {
+    }
+
+    public void addColumnMouseOutHandler(ColumnMouseOutHandler handler) {
+    }
+
+    public void addColumnMouseOverHandler(ColumnMouseOverHandler handler) {
+    }
+
+    public void addColumnShowHandler(ColumnShowHandler handler) {
     }
 
     public double groupPadding() {

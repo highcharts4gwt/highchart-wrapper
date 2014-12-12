@@ -54,10 +54,6 @@ public interface ChartOptions {
 
     ChartOptions yAxis(YAxis yAxis);
 
-    Exporting exporting();
-
-    ChartOptions exporting(Exporting exporting);
-
     Navigation navigation();
 
     ChartOptions navigation(Navigation navigation);
@@ -65,6 +61,10 @@ public interface ChartOptions {
     Title title();
 
     ChartOptions title(Title title);
+
+    Exporting exporting();
+
+    ChartOptions exporting(Exporting exporting);
 
     Subtitle subtitle();
 

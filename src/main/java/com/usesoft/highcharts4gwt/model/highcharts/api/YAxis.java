@@ -3,11 +3,17 @@ package com.usesoft.highcharts4gwt.model.highcharts.api;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.XAxis;
 import com.usesoft.highcharts4gwt.model.highcharts.api.yaxis.StackLabels;
+import com.usesoft.highcharts4gwt.model.highcharts.api.yaxis.YAxisAfterSetExtremesHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.yaxis.YAxisSetExtremesHandler;
 
 public interface YAxis
     extends XAxis
 {
 
+
+    void addYAxisAfterSetExtremesHandler(YAxisAfterSetExtremesHandler yAxisAfterSetExtremesHandler);
+
+    void addYAxisSetExtremesHandler(YAxisSetExtremesHandler yAxisSetExtremesHandler);
 
     String gridLineInterpolation();
 

@@ -2,11 +2,35 @@
 package com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Column;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotShowHandler;
 
 public interface Boxplot
     extends Column
 {
 
+
+    void addBoxplotAfterAnimateHandler(BoxplotAfterAnimateHandler boxplotAfterAnimateHandler);
+
+    void addBoxplotCheckboxClickHandler(BoxplotCheckboxClickHandler boxplotCheckboxClickHandler);
+
+    void addBoxplotClickHandler(BoxplotClickHandler boxplotClickHandler);
+
+    void addBoxplotHideHandler(BoxplotHideHandler boxplotHideHandler);
+
+    void addBoxplotLegendItemClickHandler(BoxplotLegendItemClickHandler boxplotLegendItemClickHandler);
+
+    void addBoxplotMouseOutHandler(BoxplotMouseOutHandler boxplotMouseOutHandler);
+
+    void addBoxplotMouseOverHandler(BoxplotMouseOverHandler boxplotMouseOverHandler);
+
+    void addBoxplotShowHandler(BoxplotShowHandler boxplotShowHandler);
 
     String fillColor();
 

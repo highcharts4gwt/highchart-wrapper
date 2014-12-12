@@ -3,6 +3,8 @@ package com.usesoft.highcharts4gwt.model.highcharts.mock;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.YAxis;
 import com.usesoft.highcharts4gwt.model.highcharts.api.yaxis.StackLabels;
+import com.usesoft.highcharts4gwt.model.highcharts.api.yaxis.YAxisAfterSetExtremesHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.yaxis.YAxisSetExtremesHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.mock.MockXAxis;
 
 public class MockYAxis
@@ -15,6 +17,12 @@ public class MockYAxis
     private String minColor;
     private boolean reversedStacks;
     private StackLabels stackLabels;
+
+    public void addYAxisAfterSetExtremesHandler(YAxisAfterSetExtremesHandler handler) {
+    }
+
+    public void addYAxisSetExtremesHandler(YAxisSetExtremesHandler handler) {
+    }
 
     public String gridLineInterpolation() {
         return gridLineInterpolation;

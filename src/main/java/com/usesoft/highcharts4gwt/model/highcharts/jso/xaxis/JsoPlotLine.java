@@ -40,20 +40,6 @@ public class JsoPlotLine
     }-*/
     ;
 
-    public final native String events()
-        throws RuntimeException /*-{
-        this["events"] = (this["events"] || {});
-        return JSON.stringify(this["events"]);
-    }-*/
-    ;
-
-    public final native JsoPlotLine events(String eventsAsJsonString)
-        throws RuntimeException /*-{
-        this["events"] = JSON.parse(eventsAsJsonString);
-        return this;
-    }-*/
-    ;
-
     public final native String id()
         throws RuntimeException /*-{
         return this["id"] = (this["id"] || "null");

@@ -3,7 +3,13 @@ package com.usesoft.highcharts4gwt.model.highcharts.jso.series;
 
 import com.google.gwt.core.client.JavaScriptObject;
 import com.usesoft.highcharts4gwt.model.highcharts.api.series.Data;
-import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.Events;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataRemoveHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataSelectHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataUnselectHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataUpdateHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.api.series.data.Marker;
 
 public class JsoData
@@ -55,17 +61,116 @@ public class JsoData
     }-*/
     ;
 
-    public final native Events events()
-        throws RuntimeException /*-{
-        return this["events"] = (this["events"] || {});
-    }-*/
+    public final native void addDataClickHandler(DataClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    click: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataClickHandler::onDataClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/series/data/DataClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
     ;
 
-    public final native JsoData events(Events events)
-        throws RuntimeException /*-{
-        this["events"] = events;
-        return this;
-    }-*/
+    public final native void addDataMouseOutHandler(DataMouseOutHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    mouseOut: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataMouseOutHandler::onDataMouseOut(Lcom/usesoft/highcharts4gwt/model/highcharts/api/series/data/DataMouseOutEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addDataMouseOverHandler(DataMouseOverHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    mouseOver: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataMouseOverHandler::onDataMouseOver(Lcom/usesoft/highcharts4gwt/model/highcharts/api/series/data/DataMouseOverEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addDataRemoveHandler(DataRemoveHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    remove: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataRemoveHandler::onDataRemove(Lcom/usesoft/highcharts4gwt/model/highcharts/api/series/data/DataRemoveEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addDataSelectHandler(DataSelectHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    select: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataSelectHandler::onDataSelect(Lcom/usesoft/highcharts4gwt/model/highcharts/api/series/data/DataSelectEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addDataUnselectHandler(DataUnselectHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    unselect: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataUnselectHandler::onDataUnselect(Lcom/usesoft/highcharts4gwt/model/highcharts/api/series/data/DataUnselectEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addDataUpdateHandler(DataUpdateHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    update: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.series.data.DataUpdateHandler::onDataUpdate(Lcom/usesoft/highcharts4gwt/model/highcharts/api/series/data/DataUpdateEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
     ;
 
     public final native String id()

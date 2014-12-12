@@ -2,6 +2,14 @@
 package com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Boxplot;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.boxplot.BoxplotShowHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions.MockColumn;
 
 public class MockBoxplot
@@ -19,6 +27,30 @@ public class MockBoxplot
     private double whiskerLengthAsNumber;
     private String whiskerLengthAsString;
     private double whiskerWidth;
+
+    public void addBoxplotAfterAnimateHandler(BoxplotAfterAnimateHandler handler) {
+    }
+
+    public void addBoxplotCheckboxClickHandler(BoxplotCheckboxClickHandler handler) {
+    }
+
+    public void addBoxplotClickHandler(BoxplotClickHandler handler) {
+    }
+
+    public void addBoxplotHideHandler(BoxplotHideHandler handler) {
+    }
+
+    public void addBoxplotLegendItemClickHandler(BoxplotLegendItemClickHandler handler) {
+    }
+
+    public void addBoxplotMouseOutHandler(BoxplotMouseOutHandler handler) {
+    }
+
+    public void addBoxplotMouseOverHandler(BoxplotMouseOverHandler handler) {
+    }
+
+    public void addBoxplotShowHandler(BoxplotShowHandler handler) {
+    }
 
     public String fillColor() {
         return fillColor;

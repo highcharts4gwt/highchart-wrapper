@@ -4,6 +4,14 @@ package com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions;
 import com.usesoft.highcharts4gwt.model.array.api.ArrayNumber;
 import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Pie;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieShowHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions.MockSeries;
 
 public class MockPie
@@ -88,6 +96,30 @@ public class MockPie
     public MockPie endAngle(double endAngle) {
         this.endAngle = endAngle;
         return this;
+    }
+
+    public void addPieAfterAnimateHandler(PieAfterAnimateHandler handler) {
+    }
+
+    public void addPieCheckboxClickHandler(PieCheckboxClickHandler handler) {
+    }
+
+    public void addPieClickHandler(PieClickHandler handler) {
+    }
+
+    public void addPieHideHandler(PieHideHandler handler) {
+    }
+
+    public void addPieLegendItemClickHandler(PieLegendItemClickHandler handler) {
+    }
+
+    public void addPieMouseOutHandler(PieMouseOutHandler handler) {
+    }
+
+    public void addPieMouseOverHandler(PieMouseOverHandler handler) {
+    }
+
+    public void addPieShowHandler(PieShowHandler handler) {
     }
 
     public boolean ignoreHiddenPoint() {

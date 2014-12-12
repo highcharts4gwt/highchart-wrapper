@@ -6,11 +6,12 @@ import com.usesoft.highcharts4gwt.model.array.api.Array;
 import com.usesoft.highcharts4gwt.model.array.api.ArrayNumber;
 import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.XAxis;
-import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.Events;
 import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.Labels;
 import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.PlotBand;
 import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.PlotLine;
 import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.Title;
+import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.XAxisAfterSetExtremesHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.XAxisSetExtremesHandler;
 
 public class JsoXAxis
     extends JavaScriptObject
@@ -100,17 +101,36 @@ public class JsoXAxis
     }-*/
     ;
 
-    public final native Events events()
-        throws RuntimeException /*-{
-        return this["events"] = (this["events"] || {});
-    }-*/
+    public final native void addXAxisAfterSetExtremesHandler(XAxisAfterSetExtremesHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    axisAfterSetExtremes: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.XAxisAfterSetExtremesHandler::onXAxisAfterSetExtremes(Lcom/usesoft/highcharts4gwt/model/highcharts/api/xaxis/XAxisAfterSetExtremesEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
     ;
 
-    public final native JsoXAxis events(Events events)
-        throws RuntimeException /*-{
-        this["events"] = events;
-        return this;
-    }-*/
+    public final native void addXAxisSetExtremesHandler(XAxisSetExtremesHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    axisSetExtremes: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.XAxisSetExtremesHandler::onXAxisSetExtremes(Lcom/usesoft/highcharts4gwt/model/highcharts/api/xaxis/XAxisSetExtremesEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
     ;
 
     public final native double floor()
@@ -386,15 +406,28 @@ public class JsoXAxis
     }-*/
     ;
 
-    public final native double minorTickInterval()
+    public final native String minorTickIntervalAsString()
+        throws RuntimeException /*-{
+        return this["minorTickInterval"] = (this["minorTickInterval"] || "null");
+    }-*/
+    ;
+
+    public final native JsoXAxis minorTickIntervalAsString(String minorTickIntervalAsString)
+        throws RuntimeException /*-{
+        this["minorTickInterval"] = minorTickIntervalAsString;
+        return this;
+    }-*/
+    ;
+
+    public final native double minorTickIntervalAsNumber()
         throws RuntimeException /*-{
         return this["minorTickInterval"] = (this["minorTickInterval"] || null);
     }-*/
     ;
 
-    public final native JsoXAxis minorTickInterval(double minorTickInterval)
+    public final native JsoXAxis minorTickIntervalAsNumber(double minorTickIntervalAsNumber)
         throws RuntimeException /*-{
-        this["minorTickInterval"] = minorTickInterval;
+        this["minorTickInterval"] = minorTickIntervalAsNumber;
         return this;
     }-*/
     ;

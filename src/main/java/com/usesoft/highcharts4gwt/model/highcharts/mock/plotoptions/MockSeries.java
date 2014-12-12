@@ -3,9 +3,16 @@ package com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Series;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.DataLabels;
-import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Events;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Marker;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Point;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesShowHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.States;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Tooltip;
 
@@ -23,7 +30,6 @@ public class MockSeries
     private String dashStyle;
     private DataLabels dataLabels;
     private boolean enableMouseTracking;
-    private Events events;
     private double lineWidth;
     private String linkedTo;
     private Marker marker;
@@ -136,13 +142,28 @@ public class MockSeries
         return this;
     }
 
-    public Events events() {
-        return events;
+    public void addSeriesAfterAnimateHandler(SeriesAfterAnimateHandler handler) {
     }
 
-    public MockSeries events(Events events) {
-        this.events = events;
-        return this;
+    public void addSeriesCheckboxClickHandler(SeriesCheckboxClickHandler handler) {
+    }
+
+    public void addSeriesClickHandler(SeriesClickHandler handler) {
+    }
+
+    public void addSeriesHideHandler(SeriesHideHandler handler) {
+    }
+
+    public void addSeriesLegendItemClickHandler(SeriesLegendItemClickHandler handler) {
+    }
+
+    public void addSeriesMouseOutHandler(SeriesMouseOutHandler handler) {
+    }
+
+    public void addSeriesMouseOverHandler(SeriesMouseOverHandler handler) {
+    }
+
+    public void addSeriesShowHandler(SeriesShowHandler handler) {
     }
 
     public double lineWidth() {

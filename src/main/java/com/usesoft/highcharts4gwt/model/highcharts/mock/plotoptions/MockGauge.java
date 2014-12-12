@@ -3,6 +3,14 @@ package com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Gauge;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.gauge.Dial;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.gauge.GaugeAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.gauge.GaugeCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.gauge.GaugeClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.gauge.GaugeHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.gauge.GaugeLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.gauge.GaugeMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.gauge.GaugeMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.gauge.GaugeShowHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.gauge.Pivot;
 import com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions.MockSeries;
 
@@ -23,6 +31,30 @@ public class MockGauge
     public MockGauge dial(Dial dial) {
         this.dial = dial;
         return this;
+    }
+
+    public void addGaugeAfterAnimateHandler(GaugeAfterAnimateHandler handler) {
+    }
+
+    public void addGaugeCheckboxClickHandler(GaugeCheckboxClickHandler handler) {
+    }
+
+    public void addGaugeClickHandler(GaugeClickHandler handler) {
+    }
+
+    public void addGaugeHideHandler(GaugeHideHandler handler) {
+    }
+
+    public void addGaugeLegendItemClickHandler(GaugeLegendItemClickHandler handler) {
+    }
+
+    public void addGaugeMouseOutHandler(GaugeMouseOutHandler handler) {
+    }
+
+    public void addGaugeMouseOverHandler(GaugeMouseOverHandler handler) {
+    }
+
+    public void addGaugeShowHandler(GaugeShowHandler handler) {
     }
 
     public double overshoot() {

@@ -4,9 +4,16 @@ package com.usesoft.highcharts4gwt.model.highcharts.jso.plotoptions;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Series;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.DataLabels;
-import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Events;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Marker;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Point;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesShowHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.States;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Tooltip;
 
@@ -149,17 +156,132 @@ public class JsoSeries
     }-*/
     ;
 
-    public final native Events events()
-        throws RuntimeException /*-{
-        return this["events"] = (this["events"] || {});
-    }-*/
+    public final native void addSeriesAfterAnimateHandler(SeriesAfterAnimateHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    afterAnimate: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesAfterAnimateHandler::onSeriesAfterAnimate(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/series/SeriesAfterAnimateEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
     ;
 
-    public final native JsoSeries events(Events events)
-        throws RuntimeException /*-{
-        this["events"] = events;
-        return this;
-    }-*/
+    public final native void addSeriesCheckboxClickHandler(SeriesCheckboxClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    checkboxClick: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesCheckboxClickHandler::onSeriesCheckboxClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/series/SeriesCheckboxClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addSeriesClickHandler(SeriesClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    click: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesClickHandler::onSeriesClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/series/SeriesClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addSeriesHideHandler(SeriesHideHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    hide: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesHideHandler::onSeriesHide(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/series/SeriesHideEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addSeriesLegendItemClickHandler(SeriesLegendItemClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    legendItemClick: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesLegendItemClickHandler::onSeriesLegendItemClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/series/SeriesLegendItemClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addSeriesMouseOutHandler(SeriesMouseOutHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    mouseOut: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesMouseOutHandler::onSeriesMouseOut(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/series/SeriesMouseOutEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addSeriesMouseOverHandler(SeriesMouseOverHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    mouseOver: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesMouseOverHandler::onSeriesMouseOver(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/series/SeriesMouseOverEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addSeriesShowHandler(SeriesShowHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    show: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesShowHandler::onSeriesShow(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/series/SeriesShowEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
     ;
 
     public final native double lineWidth()

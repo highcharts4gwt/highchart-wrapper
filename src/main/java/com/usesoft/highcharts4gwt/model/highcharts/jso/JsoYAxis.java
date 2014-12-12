@@ -3,6 +3,8 @@ package com.usesoft.highcharts4gwt.model.highcharts.jso;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.YAxis;
 import com.usesoft.highcharts4gwt.model.highcharts.api.yaxis.StackLabels;
+import com.usesoft.highcharts4gwt.model.highcharts.api.yaxis.YAxisAfterSetExtremesHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.yaxis.YAxisSetExtremesHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.jso.JsoXAxis;
 
 public class JsoYAxis
@@ -13,6 +15,38 @@ public class JsoYAxis
 
     protected JsoYAxis() {
     }
+
+    public final native void addYAxisAfterSetExtremesHandler(YAxisAfterSetExtremesHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    axisAfterSetExtremes: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.yaxis.YAxisAfterSetExtremesHandler::onYAxisAfterSetExtremes(Lcom/usesoft/highcharts4gwt/model/highcharts/api/yaxis/YAxisAfterSetExtremesEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addYAxisSetExtremesHandler(YAxisSetExtremesHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    axisSetExtremes: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.yaxis.YAxisSetExtremesHandler::onYAxisSetExtremes(Lcom/usesoft/highcharts4gwt/model/highcharts/api/yaxis/YAxisSetExtremesEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
 
     public final native String gridLineInterpolation()
         throws RuntimeException /*-{

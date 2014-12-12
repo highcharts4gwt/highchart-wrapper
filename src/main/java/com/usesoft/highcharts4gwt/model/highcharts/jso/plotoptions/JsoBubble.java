@@ -2,6 +2,14 @@
 package com.usesoft.highcharts4gwt.model.highcharts.jso.plotoptions;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Bubble;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleShowHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.jso.plotoptions.JsoScatter;
 
 public class JsoBubble
@@ -24,6 +32,134 @@ public class JsoBubble
         this["displayNegative"] = displayNegative;
         return this;
     }-*/
+    ;
+
+    public final native void addBubbleAfterAnimateHandler(BubbleAfterAnimateHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    afterAnimate: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleAfterAnimateHandler::onBubbleAfterAnimate(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/bubble/BubbleAfterAnimateEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addBubbleCheckboxClickHandler(BubbleCheckboxClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    checkboxClick: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleCheckboxClickHandler::onBubbleCheckboxClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/bubble/BubbleCheckboxClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addBubbleClickHandler(BubbleClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    click: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleClickHandler::onBubbleClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/bubble/BubbleClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addBubbleHideHandler(BubbleHideHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    hide: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleHideHandler::onBubbleHide(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/bubble/BubbleHideEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addBubbleLegendItemClickHandler(BubbleLegendItemClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    legendItemClick: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleLegendItemClickHandler::onBubbleLegendItemClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/bubble/BubbleLegendItemClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addBubbleMouseOutHandler(BubbleMouseOutHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    mouseOut: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleMouseOutHandler::onBubbleMouseOut(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/bubble/BubbleMouseOutEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addBubbleMouseOverHandler(BubbleMouseOverHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    mouseOver: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleMouseOverHandler::onBubbleMouseOver(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/bubble/BubbleMouseOverEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addBubbleShowHandler(BubbleShowHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    show: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleShowHandler::onBubbleShow(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/bubble/BubbleShowEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
     ;
 
     public final native String maxSize()

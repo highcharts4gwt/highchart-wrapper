@@ -3,7 +3,13 @@ package com.usesoft.highcharts4gwt.model.highcharts.mock;
 
 import com.usesoft.highcharts4gwt.model.array.api.ArrayNumber;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Chart;
-import com.usesoft.highcharts4gwt.model.highcharts.api.chart.Events;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartAddSeriesHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartDrilldownHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartDrillupHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartLoadHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartRedrawHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartSelectionHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.api.chart.Options3d;
 import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ResetZoomButton;
 
@@ -20,7 +26,6 @@ public class MockChart
     private double borderWidth;
     private String className;
     private String defaultSeriesType;
-    private Events events;
     private double height;
     private boolean ignoreHiddenSeries;
     private boolean inverted;
@@ -139,13 +144,25 @@ public class MockChart
         return this;
     }
 
-    public Events events() {
-        return events;
+    public void addChartAddSeriesHandler(ChartAddSeriesHandler handler) {
     }
 
-    public MockChart events(Events events) {
-        this.events = events;
-        return this;
+    public void addChartClickHandler(ChartClickHandler handler) {
+    }
+
+    public void addChartDrilldownHandler(ChartDrilldownHandler handler) {
+    }
+
+    public void addChartDrillupHandler(ChartDrillupHandler handler) {
+    }
+
+    public void addChartLoadHandler(ChartLoadHandler handler) {
+    }
+
+    public void addChartRedrawHandler(ChartRedrawHandler handler) {
+    }
+
+    public void addChartSelectionHandler(ChartSelectionHandler handler) {
     }
 
     public double height() {

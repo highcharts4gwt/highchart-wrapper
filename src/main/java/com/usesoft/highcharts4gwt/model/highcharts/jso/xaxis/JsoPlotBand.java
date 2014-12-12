@@ -53,20 +53,6 @@ public class JsoPlotBand
     }-*/
     ;
 
-    public final native String events()
-        throws RuntimeException /*-{
-        this["events"] = (this["events"] || {});
-        return JSON.stringify(this["events"]);
-    }-*/
-    ;
-
-    public final native JsoPlotBand events(String eventsAsJsonString)
-        throws RuntimeException /*-{
-        this["events"] = JSON.parse(eventsAsJsonString);
-        return this;
-    }-*/
-    ;
-
     public final native double from()
         throws RuntimeException /*-{
         return this["from"] = (this["from"] || null);

@@ -2,6 +2,14 @@
 package com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Pyramid;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.PyramidAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.PyramidCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.PyramidClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.PyramidHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.PyramidLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.PyramidMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.PyramidMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.PyramidShowHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions.MockFunnel;
 
 public class MockPyramid
@@ -9,5 +17,29 @@ public class MockPyramid
     implements Pyramid
 {
 
+
+    public void addPyramidAfterAnimateHandler(PyramidAfterAnimateHandler handler) {
+    }
+
+    public void addPyramidCheckboxClickHandler(PyramidCheckboxClickHandler handler) {
+    }
+
+    public void addPyramidClickHandler(PyramidClickHandler handler) {
+    }
+
+    public void addPyramidHideHandler(PyramidHideHandler handler) {
+    }
+
+    public void addPyramidLegendItemClickHandler(PyramidLegendItemClickHandler handler) {
+    }
+
+    public void addPyramidMouseOutHandler(PyramidMouseOutHandler handler) {
+    }
+
+    public void addPyramidMouseOverHandler(PyramidMouseOverHandler handler) {
+    }
+
+    public void addPyramidShowHandler(PyramidShowHandler handler) {
+    }
 
 }

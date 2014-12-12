@@ -18,10 +18,6 @@ public interface PlotBand {
 
     PlotBand color(String color);
 
-    String events();
-
-    PlotBand events(String eventsAsJsonString);
-
     double from();
 
     PlotBand from(double from);

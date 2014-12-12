@@ -2,6 +2,14 @@
 package com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Bubble;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.bubble.BubbleShowHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions.MockScatter;
 
 public class MockBubble
@@ -24,6 +32,30 @@ public class MockBubble
     public MockBubble displayNegative(boolean displayNegative) {
         this.displayNegative = displayNegative;
         return this;
+    }
+
+    public void addBubbleAfterAnimateHandler(BubbleAfterAnimateHandler handler) {
+    }
+
+    public void addBubbleCheckboxClickHandler(BubbleCheckboxClickHandler handler) {
+    }
+
+    public void addBubbleClickHandler(BubbleClickHandler handler) {
+    }
+
+    public void addBubbleHideHandler(BubbleHideHandler handler) {
+    }
+
+    public void addBubbleLegendItemClickHandler(BubbleLegendItemClickHandler handler) {
+    }
+
+    public void addBubbleMouseOutHandler(BubbleMouseOutHandler handler) {
+    }
+
+    public void addBubbleMouseOverHandler(BubbleMouseOverHandler handler) {
+    }
+
+    public void addBubbleShowHandler(BubbleShowHandler handler) {
     }
 
     public String maxSize() {

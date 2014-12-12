@@ -14,6 +14,7 @@ import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Columnrange;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Errorbar;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Funnel;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Gauge;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Heatmap;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Line;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Pie;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Pyramid;
@@ -39,7 +40,7 @@ public class MockPlotOptions
     private Errorbar errorbar;
     private Funnel funnel;
     private Gauge gauge;
-    private String heatmap;
+    private Heatmap heatmap;
     private Line line;
     private Pie pie;
     private Pyramid pyramid;
@@ -157,12 +158,12 @@ public class MockPlotOptions
         return this;
     }
 
-    public String heatmap() {
+    public Heatmap heatmap() {
         return heatmap;
     }
 
-    public MockPlotOptions heatmap(String heatmapAsJsonString) {
-        this.heatmap = heatmapAsJsonString;
+    public MockPlotOptions heatmap(Heatmap heatmap) {
+        this.heatmap = heatmap;
         return this;
     }
 

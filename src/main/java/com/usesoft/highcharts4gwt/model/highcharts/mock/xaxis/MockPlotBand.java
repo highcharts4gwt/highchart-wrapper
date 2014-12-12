@@ -11,7 +11,6 @@ public class MockPlotBand
     private String borderColor;
     private double borderWidth;
     private String color;
-    private String events;
     private double from;
     private String id;
     private Label label;
@@ -42,15 +41,6 @@ public class MockPlotBand
 
     public MockPlotBand color(String color) {
         this.color = color;
-        return this;
-    }
-
-    public String events() {
-        return events;
-    }
-
-    public MockPlotBand events(String eventsAsJsonString) {
-        this.events = eventsAsJsonString;
         return this;
     }
 

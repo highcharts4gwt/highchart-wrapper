@@ -2,6 +2,14 @@
 package com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Area;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.area.AreaAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.area.AreaCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.area.AreaClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.area.AreaHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.area.AreaLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.area.AreaMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.area.AreaMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.area.AreaShowHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.mock.plotoptions.MockSeries;
 
 public class MockArea
@@ -15,6 +23,30 @@ public class MockArea
     private String negativeFillColor;
     private String step;
     private boolean trackByArea;
+
+    public void addAreaAfterAnimateHandler(AreaAfterAnimateHandler handler) {
+    }
+
+    public void addAreaCheckboxClickHandler(AreaCheckboxClickHandler handler) {
+    }
+
+    public void addAreaClickHandler(AreaClickHandler handler) {
+    }
+
+    public void addAreaHideHandler(AreaHideHandler handler) {
+    }
+
+    public void addAreaLegendItemClickHandler(AreaLegendItemClickHandler handler) {
+    }
+
+    public void addAreaMouseOutHandler(AreaMouseOutHandler handler) {
+    }
+
+    public void addAreaMouseOverHandler(AreaMouseOverHandler handler) {
+    }
+
+    public void addAreaShowHandler(AreaShowHandler handler) {
+    }
 
     public String fillColor() {
         return fillColor;

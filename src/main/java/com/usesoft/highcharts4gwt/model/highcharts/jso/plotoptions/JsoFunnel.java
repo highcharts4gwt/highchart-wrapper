@@ -2,6 +2,14 @@
 package com.usesoft.highcharts4gwt.model.highcharts.jso.plotoptions;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Funnel;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelShowHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.jso.plotoptions.JsoPie;
 
 public class JsoFunnel
@@ -12,6 +20,134 @@ public class JsoFunnel
 
     protected JsoFunnel() {
     }
+
+    public final native void addFunnelAfterAnimateHandler(FunnelAfterAnimateHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    afterAnimate: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelAfterAnimateHandler::onFunnelAfterAnimate(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/funnel/FunnelAfterAnimateEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addFunnelCheckboxClickHandler(FunnelCheckboxClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    checkboxClick: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelCheckboxClickHandler::onFunnelCheckboxClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/funnel/FunnelCheckboxClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addFunnelClickHandler(FunnelClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    click: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelClickHandler::onFunnelClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/funnel/FunnelClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addFunnelHideHandler(FunnelHideHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    hide: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelHideHandler::onFunnelHide(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/funnel/FunnelHideEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addFunnelLegendItemClickHandler(FunnelLegendItemClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    legendItemClick: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelLegendItemClickHandler::onFunnelLegendItemClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/funnel/FunnelLegendItemClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addFunnelMouseOutHandler(FunnelMouseOutHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    mouseOut: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelMouseOutHandler::onFunnelMouseOut(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/funnel/FunnelMouseOutEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addFunnelMouseOverHandler(FunnelMouseOverHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    mouseOver: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelMouseOverHandler::onFunnelMouseOver(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/funnel/FunnelMouseOverEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addFunnelShowHandler(FunnelShowHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    show: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.funnel.FunnelShowHandler::onFunnelShow(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/funnel/FunnelShowEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
 
     public final native double heightAsNumber()
         throws RuntimeException /*-{

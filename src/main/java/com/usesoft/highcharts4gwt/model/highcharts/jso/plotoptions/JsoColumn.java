@@ -3,6 +3,14 @@ package com.usesoft.highcharts4gwt.model.highcharts.jso.plotoptions;
 
 import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.Column;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnShowHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.jso.plotoptions.JsoSeries;
 
 public class JsoColumn
@@ -116,6 +124,134 @@ public class JsoColumn
         this["edgeWidth"] = edgeWidth;
         return this;
     }-*/
+    ;
+
+    public final native void addColumnAfterAnimateHandler(ColumnAfterAnimateHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    afterAnimate: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnAfterAnimateHandler::onColumnAfterAnimate(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/column/ColumnAfterAnimateEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addColumnCheckboxClickHandler(ColumnCheckboxClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    checkboxClick: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnCheckboxClickHandler::onColumnCheckboxClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/column/ColumnCheckboxClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addColumnClickHandler(ColumnClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    click: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnClickHandler::onColumnClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/column/ColumnClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addColumnHideHandler(ColumnHideHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    hide: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnHideHandler::onColumnHide(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/column/ColumnHideEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addColumnLegendItemClickHandler(ColumnLegendItemClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    legendItemClick: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnLegendItemClickHandler::onColumnLegendItemClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/column/ColumnLegendItemClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addColumnMouseOutHandler(ColumnMouseOutHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    mouseOut: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnMouseOutHandler::onColumnMouseOut(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/column/ColumnMouseOutEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addColumnMouseOverHandler(ColumnMouseOverHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    mouseOver: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnMouseOverHandler::onColumnMouseOver(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/column/ColumnMouseOverEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addColumnShowHandler(ColumnShowHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    show: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.column.ColumnShowHandler::onColumnShow(Lcom/usesoft/highcharts4gwt/model/highcharts/api/plotoptions/column/ColumnShowEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
     ;
 
     public final native double groupPadding()

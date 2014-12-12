@@ -4,7 +4,13 @@ package com.usesoft.highcharts4gwt.model.highcharts.jso;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.usesoft.highcharts4gwt.model.array.api.ArrayNumber;
 import com.usesoft.highcharts4gwt.model.highcharts.api.Chart;
-import com.usesoft.highcharts4gwt.model.highcharts.api.chart.Events;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartAddSeriesHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartDrilldownHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartDrillupHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartLoadHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartRedrawHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartSelectionHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.api.chart.Options3d;
 import com.usesoft.highcharts4gwt.model.highcharts.api.chart.ResetZoomButton;
 
@@ -135,17 +141,116 @@ public class JsoChart
     }-*/
     ;
 
-    public final native Events events()
-        throws RuntimeException /*-{
-        return this["events"] = (this["events"] || {});
-    }-*/
+    public final native void addChartAddSeriesHandler(ChartAddSeriesHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    addSeries: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartAddSeriesHandler::onChartAddSeries(Lcom/usesoft/highcharts4gwt/model/highcharts/api/chart/ChartAddSeriesEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
     ;
 
-    public final native JsoChart events(Events events)
-        throws RuntimeException /*-{
-        this["events"] = events;
-        return this;
-    }-*/
+    public final native void addChartClickHandler(ChartClickHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    click: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartClickHandler::onChartClick(Lcom/usesoft/highcharts4gwt/model/highcharts/api/chart/ChartClickEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addChartDrilldownHandler(ChartDrilldownHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    drilldown: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartDrilldownHandler::onChartDrilldown(Lcom/usesoft/highcharts4gwt/model/highcharts/api/chart/ChartDrilldownEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addChartDrillupHandler(ChartDrillupHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    drillup: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartDrillupHandler::onChartDrillup(Lcom/usesoft/highcharts4gwt/model/highcharts/api/chart/ChartDrillupEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addChartLoadHandler(ChartLoadHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    load: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartLoadHandler::onChartLoad(Lcom/usesoft/highcharts4gwt/model/highcharts/api/chart/ChartLoadEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addChartRedrawHandler(ChartRedrawHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    redraw: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartRedrawHandler::onChartRedraw(Lcom/usesoft/highcharts4gwt/model/highcharts/api/chart/ChartRedrawEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addChartSelectionHandler(ChartSelectionHandler handler)
+        throws RuntimeException 
+        /*-{
+            return $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    selection: function(event) {
+                        handler.@com.usesoft.highcharts4gwt.model.highcharts.api.chart.ChartSelectionHandler::onChartSelection(Lcom/usesoft/highcharts4gwt/model/highcharts/api/chart/ChartSelectionEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
     ;
 
     public final native double height()

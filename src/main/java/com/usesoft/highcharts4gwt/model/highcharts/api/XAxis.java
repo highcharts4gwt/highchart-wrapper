@@ -4,11 +4,12 @@ package com.usesoft.highcharts4gwt.model.highcharts.api;
 import com.usesoft.highcharts4gwt.model.array.api.Array;
 import com.usesoft.highcharts4gwt.model.array.api.ArrayNumber;
 import com.usesoft.highcharts4gwt.model.array.api.ArrayString;
-import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.Events;
 import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.Labels;
 import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.PlotBand;
 import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.PlotLine;
 import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.Title;
+import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.XAxisAfterSetExtremesHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.xaxis.XAxisSetExtremesHandler;
 
 public interface XAxis {
 
@@ -37,9 +38,9 @@ public interface XAxis {
 
     XAxis endOnTick(boolean endOnTick);
 
-    Events events();
+    void addXAxisAfterSetExtremesHandler(XAxisAfterSetExtremesHandler xAxisAfterSetExtremesHandler);
 
-    XAxis events(Events events);
+    void addXAxisSetExtremesHandler(XAxisSetExtremesHandler xAxisSetExtremesHandler);
 
     double floor();
 
@@ -125,9 +126,13 @@ public interface XAxis {
 
     XAxis minorTickColor(String minorTickColor);
 
-    double minorTickInterval();
+    String minorTickIntervalAsString();
 
-    XAxis minorTickInterval(double minorTickInterval);
+    XAxis minorTickIntervalAsString(String minorTickIntervalAsString);
+
+    double minorTickIntervalAsNumber();
+
+    XAxis minorTickIntervalAsNumber(double minorTickIntervalAsNumber);
 
     double minorTickLength();
 

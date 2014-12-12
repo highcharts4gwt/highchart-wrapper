@@ -2,9 +2,16 @@
 package com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions;
 
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.DataLabels;
-import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Events;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Marker;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Point;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesAfterAnimateHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesCheckboxClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesHideHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesLegendItemClickHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesMouseOutHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesMouseOverHandler;
+import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.SeriesShowHandler;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.States;
 import com.usesoft.highcharts4gwt.model.highcharts.api.plotoptions.series.Tooltip;
 
@@ -51,9 +58,21 @@ public interface Series {
 
     Series enableMouseTracking(boolean enableMouseTracking);
 
-    Events events();
+    void addSeriesAfterAnimateHandler(SeriesAfterAnimateHandler seriesAfterAnimateHandler);
 
-    Series events(Events events);
+    void addSeriesCheckboxClickHandler(SeriesCheckboxClickHandler seriesCheckboxClickHandler);
+
+    void addSeriesClickHandler(SeriesClickHandler seriesClickHandler);
+
+    void addSeriesHideHandler(SeriesHideHandler seriesHideHandler);
+
+    void addSeriesLegendItemClickHandler(SeriesLegendItemClickHandler seriesLegendItemClickHandler);
+
+    void addSeriesMouseOutHandler(SeriesMouseOutHandler seriesMouseOutHandler);
+
+    void addSeriesMouseOverHandler(SeriesMouseOverHandler seriesMouseOverHandler);
+
+    void addSeriesShowHandler(SeriesShowHandler seriesShowHandler);
 
     double lineWidth();
 
