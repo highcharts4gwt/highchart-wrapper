@@ -731,4 +731,17 @@ public class JsoXAxis
     }-*/
     ;
 
+    public final native ArrayNumber units()
+        throws RuntimeException /*-{
+        return this["units"] = (this["units"] || []);
+    }-*/
+    ;
+
+    public final native JsoXAxis units(ArrayNumber units)
+        throws RuntimeException /*-{
+        this["units"] = units;
+        return this;
+    }-*/
+    ;
+
 }

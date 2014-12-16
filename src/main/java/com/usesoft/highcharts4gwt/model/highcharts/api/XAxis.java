@@ -226,4 +226,8 @@ public interface XAxis {
 
     XAxis type(String type);
 
+    ArrayNumber units();
+
+    XAxis units(ArrayNumber units);
+
 }

@@ -68,6 +68,7 @@ public class MockXAxis
     private String tickmarkPlacement;
     private Title title;
     private String type;
+    private ArrayNumber units;
 
     public boolean allowDecimals() {
         return allowDecimals;
@@ -540,6 +541,15 @@ public class MockXAxis
 
     public MockXAxis type(String type) {
         this.type = type;
+        return this;
+    }
+
+    public ArrayNumber units() {
+        return units;
+    }
+
+    public MockXAxis units(ArrayNumber units) {
+        this.units = units;
         return this;
     }
 

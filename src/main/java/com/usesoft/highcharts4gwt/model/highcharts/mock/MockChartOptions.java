@@ -33,12 +33,12 @@ public class MockChartOptions
     private Legend legend;
     private Chart chart;
     private PlotOptions plotOptions;
-    private XAxis xAxis;
     private YAxis yAxis;
-    private Navigation navigation;
-    private Title title;
-    private Exporting exporting;
+    private XAxis xAxis;
     private Subtitle subtitle;
+    private Navigation navigation;
+    private Exporting exporting;
+    private Title title;
     private Tooltip tooltip;
     private NoData noData;
     private Pane pane;
@@ -94,6 +94,15 @@ public class MockChartOptions
         return this;
     }
 
+    public YAxis yAxis() {
+        return yAxis;
+    }
+
+    public MockChartOptions yAxis(YAxis yAxis) {
+        this.yAxis = yAxis;
+        return this;
+    }
+
     public XAxis xAxis() {
         return xAxis;
     }
@@ -103,12 +112,12 @@ public class MockChartOptions
         return this;
     }
 
-    public YAxis yAxis() {
-        return yAxis;
+    public Subtitle subtitle() {
+        return subtitle;
     }
 
-    public MockChartOptions yAxis(YAxis yAxis) {
-        this.yAxis = yAxis;
+    public MockChartOptions subtitle(Subtitle subtitle) {
+        this.subtitle = subtitle;
         return this;
     }
 
@@ -121,15 +130,6 @@ public class MockChartOptions
         return this;
     }
 
-    public Title title() {
-        return title;
-    }
-
-    public MockChartOptions title(Title title) {
-        this.title = title;
-        return this;
-    }
-
     public Exporting exporting() {
         return exporting;
     }
@@ -139,12 +139,12 @@ public class MockChartOptions
         return this;
     }
 
-    public Subtitle subtitle() {
-        return subtitle;
+    public Title title() {
+        return title;
     }
 
-    public MockChartOptions subtitle(Subtitle subtitle) {
-        this.subtitle = subtitle;
+    public MockChartOptions title(Title title) {
+        this.title = title;
         return this;
     }
 
