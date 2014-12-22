@@ -4,7 +4,7 @@
 
 	<!-- POM file generated with GWT webAppCreator -->
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.usesoft.highcharts4gwt</groupId>
+	<groupId>com.github.highcharts4gwt</groupId>
 	<artifactId>highcharts</artifactId>
 	<version>0.0.1</version>
 	<name>${project.groupId}:${project.artifactId}</name>
