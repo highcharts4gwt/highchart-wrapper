@@ -1,9 +1,11 @@
 highcharts
 ==========
 
-Generated GWT wrapper for highcharts API
+Generated GWT wrapper for highcharts API.
 
 Support almost everything now, especially 3D charts.
+
+<a href='https://pledgie.com/campaigns/27871'><img alt='Click here to lend your support to: highcharts4gwt and make a donation at pledgie.com !' src='https://pledgie.com/campaigns/27871.png?skin_name=chrome' border='0' ></a>
 
 Code Example
 ============
