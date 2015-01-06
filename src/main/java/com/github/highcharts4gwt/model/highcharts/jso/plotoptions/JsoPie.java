@@ -4,6 +4,7 @@ package com.github.highcharts4gwt.model.highcharts.jso.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.Pie;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieCheckboxClickHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieClickHandler;
@@ -12,16 +13,45 @@ import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieLegendI
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieMouseOutHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieMouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieShowHandler;
-import com.github.highcharts4gwt.model.highcharts.jso.plotoptions.JsoSeries;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.Point;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.States;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.Tooltip;
+import com.google.gwt.core.client.JavaScriptObject;
 
 public class JsoPie
-    extends JsoSeries
+    extends JavaScriptObject
     implements Pie
 {
 
 
     protected JsoPie() {
     }
+
+    public final native boolean allowPointSelect()
+        throws RuntimeException /*-{
+        return this["allowPointSelect"] = (this["allowPointSelect"] || false);
+    }-*/
+    ;
+
+    public final native JsoPie allowPointSelect(boolean allowPointSelect)
+        throws RuntimeException /*-{
+        this["allowPointSelect"] = allowPointSelect;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean animation()
+        throws RuntimeException /*-{
+        return this["animation"] = (this["animation"] || true);
+    }-*/
+    ;
+
+    public final native JsoPie animation(boolean animation)
+        throws RuntimeException /*-{
+        this["animation"] = animation;
+        return this;
+    }-*/
+    ;
 
     public final native String borderColor()
         throws RuntimeException /*-{
@@ -88,6 +118,32 @@ public class JsoPie
     }-*/
     ;
 
+    public final native String cursor()
+        throws RuntimeException /*-{
+        return this["cursor"] = (this["cursor"] || "null");
+    }-*/
+    ;
+
+    public final native JsoPie cursor(String cursor)
+        throws RuntimeException /*-{
+        this["cursor"] = cursor;
+        return this;
+    }-*/
+    ;
+
+    public final native DataLabels dataLabels()
+        throws RuntimeException /*-{
+        return this["dataLabels"] = (this["dataLabels"] || {});
+    }-*/
+    ;
+
+    public final native JsoPie dataLabels(DataLabels dataLabels)
+        throws RuntimeException /*-{
+        this["dataLabels"] = dataLabels;
+        return this;
+    }-*/
+    ;
+
     public final native double depth()
         throws RuntimeException /*-{
         return this["depth"] = (this["depth"] || 0.0);
@@ -97,6 +153,19 @@ public class JsoPie
     public final native JsoPie depth(double depth)
         throws RuntimeException /*-{
         this["depth"] = depth;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean enableMouseTracking()
+        throws RuntimeException /*-{
+        return this["enableMouseTracking"] = (this["enableMouseTracking"] || true);
+    }-*/
+    ;
+
+    public final native JsoPie enableMouseTracking(boolean enableMouseTracking)
+        throws RuntimeException /*-{
+        this["enableMouseTracking"] = enableMouseTracking;
         return this;
     }-*/
     ;
@@ -281,6 +350,19 @@ public class JsoPie
     }-*/
     ;
 
+    public final native String linkedTo()
+        throws RuntimeException /*-{
+        return this["linkedTo"] = (this["linkedTo"] || "");
+    }-*/
+    ;
+
+    public final native JsoPie linkedTo(String linkedTo)
+        throws RuntimeException /*-{
+        this["linkedTo"] = linkedTo;
+        return this;
+    }-*/
+    ;
+
     public final native double minSize()
         throws RuntimeException /*-{
         return this["minSize"] = (this["minSize"] || 80.0);
@@ -290,6 +372,72 @@ public class JsoPie
     public final native JsoPie minSize(double minSize)
         throws RuntimeException /*-{
         this["minSize"] = minSize;
+        return this;
+    }-*/
+    ;
+
+    public final native Point point()
+        throws RuntimeException /*-{
+        return this["point"] = (this["point"] || {});
+    }-*/
+    ;
+
+    public final native JsoPie point(Point point)
+        throws RuntimeException /*-{
+        this["point"] = point;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean selected()
+        throws RuntimeException /*-{
+        return this["selected"] = (this["selected"] || false);
+    }-*/
+    ;
+
+    public final native JsoPie selected(boolean selected)
+        throws RuntimeException /*-{
+        this["selected"] = selected;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean shadowAsBoolean()
+        throws RuntimeException /*-{
+        return this["shadow"] = (this["shadow"] || false);
+    }-*/
+    ;
+
+    public final native JsoPie shadowAsBoolean(boolean shadowAsBoolean)
+        throws RuntimeException /*-{
+        this["shadow"] = shadowAsBoolean;
+        return this;
+    }-*/
+    ;
+
+    public final native String shadowAsJsonString()
+        throws RuntimeException /*-{
+        this["shadow"] = (this["shadow"] || JSON.parse('false'));
+        return JSON.stringify(this["shadow"]);
+    }-*/
+    ;
+
+    public final native JsoPie shadowAsJsonString(String shadowAsJsonString)
+        throws RuntimeException /*-{
+        this["shadow"] = JSON.parse(shadowAsJsonString);
+        return this;
+    }-*/
+    ;
+
+    public final native boolean showInLegend()
+        throws RuntimeException /*-{
+        return this["showInLegend"] = (this["showInLegend"] || false);
+    }-*/
+    ;
+
+    public final native JsoPie showInLegend(boolean showInLegend)
+        throws RuntimeException /*-{
+        this["showInLegend"] = showInLegend;
         return this;
     }-*/
     ;
@@ -342,6 +490,58 @@ public class JsoPie
     public final native JsoPie startAngle(double startAngle)
         throws RuntimeException /*-{
         this["startAngle"] = startAngle;
+        return this;
+    }-*/
+    ;
+
+    public final native States states()
+        throws RuntimeException /*-{
+        return this["states"] = (this["states"] || {});
+    }-*/
+    ;
+
+    public final native JsoPie states(States states)
+        throws RuntimeException /*-{
+        this["states"] = states;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean stickyTracking()
+        throws RuntimeException /*-{
+        return this["stickyTracking"] = (this["stickyTracking"] || false);
+    }-*/
+    ;
+
+    public final native JsoPie stickyTracking(boolean stickyTracking)
+        throws RuntimeException /*-{
+        this["stickyTracking"] = stickyTracking;
+        return this;
+    }-*/
+    ;
+
+    public final native Tooltip tooltip()
+        throws RuntimeException /*-{
+        return this["tooltip"] = (this["tooltip"] || {});
+    }-*/
+    ;
+
+    public final native JsoPie tooltip(Tooltip tooltip)
+        throws RuntimeException /*-{
+        this["tooltip"] = tooltip;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean visible()
+        throws RuntimeException /*-{
+        return this["visible"] = (this["visible"] || true);
+    }-*/
+    ;
+
+    public final native JsoPie visible(boolean visible)
+        throws RuntimeException /*-{
+        this["visible"] = visible;
         return this;
     }-*/
     ;

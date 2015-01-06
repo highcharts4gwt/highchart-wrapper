@@ -4,6 +4,7 @@ package com.github.highcharts4gwt.model.highcharts.mock.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.Pie;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieCheckboxClickHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieClickHandler;
@@ -12,28 +13,62 @@ import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieLegendI
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieMouseOutHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieMouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.PieShowHandler;
-import com.github.highcharts4gwt.model.highcharts.mock.plotoptions.MockSeries;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.Point;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.States;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pie.Tooltip;
 
 public class MockPie
-    extends MockSeries
     implements Pie
 {
 
+    private boolean allowPointSelect;
+    private boolean animation;
     private String borderColor;
     private double borderWidth;
     private ArrayString centerAsArrayString;
     private ArrayNumber centerAsArrayNumber;
     private ArrayString colors;
+    private String cursor;
+    private DataLabels dataLabels;
     private double depth;
+    private boolean enableMouseTracking;
     private double endAngle;
     private boolean ignoreHiddenPoint;
     private String innerSizeAsString;
     private double innerSizeAsNumber;
+    private String linkedTo;
     private double minSize;
+    private Point point;
+    private boolean selected;
+    private boolean shadowAsBoolean;
+    private String shadowAsJsonString;
+    private boolean showInLegend;
     private String sizeAsString;
     private double sizeAsNumber;
     private double slicedOffset;
     private double startAngle;
+    private States states;
+    private boolean stickyTracking;
+    private Tooltip tooltip;
+    private boolean visible;
+
+    public boolean allowPointSelect() {
+        return allowPointSelect;
+    }
+
+    public MockPie allowPointSelect(boolean allowPointSelect) {
+        this.allowPointSelect = allowPointSelect;
+        return this;
+    }
+
+    public boolean animation() {
+        return animation;
+    }
+
+    public MockPie animation(boolean animation) {
+        this.animation = animation;
+        return this;
+    }
 
     public String borderColor() {
         return borderColor;
@@ -80,12 +115,39 @@ public class MockPie
         return this;
     }
 
+    public String cursor() {
+        return cursor;
+    }
+
+    public MockPie cursor(String cursor) {
+        this.cursor = cursor;
+        return this;
+    }
+
+    public DataLabels dataLabels() {
+        return dataLabels;
+    }
+
+    public MockPie dataLabels(DataLabels dataLabels) {
+        this.dataLabels = dataLabels;
+        return this;
+    }
+
     public double depth() {
         return depth;
     }
 
     public MockPie depth(double depth) {
         this.depth = depth;
+        return this;
+    }
+
+    public boolean enableMouseTracking() {
+        return enableMouseTracking;
+    }
+
+    public MockPie enableMouseTracking(boolean enableMouseTracking) {
+        this.enableMouseTracking = enableMouseTracking;
         return this;
     }
 
@@ -149,12 +211,66 @@ public class MockPie
         return this;
     }
 
+    public String linkedTo() {
+        return linkedTo;
+    }
+
+    public MockPie linkedTo(String linkedTo) {
+        this.linkedTo = linkedTo;
+        return this;
+    }
+
     public double minSize() {
         return minSize;
     }
 
     public MockPie minSize(double minSize) {
         this.minSize = minSize;
+        return this;
+    }
+
+    public Point point() {
+        return point;
+    }
+
+    public MockPie point(Point point) {
+        this.point = point;
+        return this;
+    }
+
+    public boolean selected() {
+        return selected;
+    }
+
+    public MockPie selected(boolean selected) {
+        this.selected = selected;
+        return this;
+    }
+
+    public boolean shadowAsBoolean() {
+        return shadowAsBoolean;
+    }
+
+    public MockPie shadowAsBoolean(boolean shadowAsBoolean) {
+        this.shadowAsBoolean = shadowAsBoolean;
+        return this;
+    }
+
+    public String shadowAsJsonString() {
+        return shadowAsJsonString;
+    }
+
+    public MockPie shadowAsJsonString(String shadowAsJsonString) {
+        this.shadowAsJsonString = shadowAsJsonString;
+        return this;
+    }
+
+    public boolean showInLegend() {
+        return showInLegend;
+    }
+
+    public MockPie showInLegend(boolean showInLegend) {
+        this.showInLegend = showInLegend;
         return this;
     }
 
@@ -191,6 +307,42 @@ public class MockPie
 
     public MockPie startAngle(double startAngle) {
         this.startAngle = startAngle;
+        return this;
+    }
+
+    public States states() {
+        return states;
+    }
+
+    public MockPie states(States states) {
+        this.states = states;
+        return this;
+    }
+
+    public boolean stickyTracking() {
+        return stickyTracking;
+    }
+
+    public MockPie stickyTracking(boolean stickyTracking) {
+        this.stickyTracking = stickyTracking;
+        return this;
+    }
+
+    public Tooltip tooltip() {
+        return tooltip;
+    }
+
+    public MockPie tooltip(Tooltip tooltip) {
+        this.tooltip = tooltip;
+        return this;
+    }
+
+    public boolean visible() {
+        return visible;
+    }
+
+    public MockPie visible(boolean visible) {
+        this.visible = visible;
         return this;
     }
 

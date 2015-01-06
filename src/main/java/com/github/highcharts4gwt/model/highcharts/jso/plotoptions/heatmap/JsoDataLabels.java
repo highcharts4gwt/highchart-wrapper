@@ -2,16 +2,29 @@
 package com.github.highcharts4gwt.model.highcharts.jso.plotoptions.heatmap;
 
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.heatmap.DataLabels;
-import com.github.highcharts4gwt.model.highcharts.jso.xaxis.JsoLabels;
+import com.google.gwt.core.client.JavaScriptObject;
 
 public class JsoDataLabels
-    extends JsoLabels
+    extends JavaScriptObject
     implements DataLabels
 {
 
 
     protected JsoDataLabels() {
     }
+
+    public final native String align()
+        throws RuntimeException /*-{
+        return this["align"] = (this["align"] || "center");
+    }-*/
+    ;
+
+    public final native JsoDataLabels align(String align)
+        throws RuntimeException /*-{
+        this["align"] = align;
+        return this;
+    }-*/
+    ;
 
     public final native String backgroundColor()
         throws RuntimeException /*-{
@@ -104,6 +117,32 @@ public class JsoDataLabels
     }-*/
     ;
 
+    public final native boolean enabled()
+        throws RuntimeException /*-{
+        return this["enabled"] = (this["enabled"] || false);
+    }-*/
+    ;
+
+    public final native JsoDataLabels enabled(boolean enabled)
+        throws RuntimeException /*-{
+        this["enabled"] = enabled;
+        return this;
+    }-*/
+    ;
+
+    public final native String format()
+        throws RuntimeException /*-{
+        return this["format"] = (this["format"] || "{y}");
+    }-*/
+    ;
+
+    public final native JsoDataLabels format(String format)
+        throws RuntimeException /*-{
+        this["format"] = format;
+        return this;
+    }-*/
+    ;
+
     public final native boolean inside()
         throws RuntimeException /*-{
         return this["inside"] = (this["inside"] || false);
@@ -117,6 +156,19 @@ public class JsoDataLabels
     }-*/
     ;
 
+    public final native String overflow()
+        throws RuntimeException /*-{
+        return this["overflow"] = (this["overflow"] || "justify");
+    }-*/
+    ;
+
+    public final native JsoDataLabels overflow(String overflow)
+        throws RuntimeException /*-{
+        this["overflow"] = overflow;
+        return this;
+    }-*/
+    ;
+
     public final native double padding()
         throws RuntimeException /*-{
         return this["padding"] = (this["padding"] || 2.0);
@@ -126,6 +178,19 @@ public class JsoDataLabels
     public final native JsoDataLabels padding(double padding)
         throws RuntimeException /*-{
         this["padding"] = padding;
+        return this;
+    }-*/
+    ;
+
+    public final native double rotation()
+        throws RuntimeException /*-{
+        return this["rotation"] = (this["rotation"] || 0.0);
+    }-*/
+    ;
+
+    public final native JsoDataLabels rotation(double rotation)
+        throws RuntimeException /*-{
+        this["rotation"] = rotation;
         return this;
     }-*/
     ;
@@ -157,6 +222,33 @@ public class JsoDataLabels
     }-*/
     ;
 
+    public final native String style()
+        throws RuntimeException /*-{
+        this["style"] = (this["style"] || JSON.parse('{"color": "#606060", "fontSize": "11px"}'));
+        return JSON.stringify(this["style"]);
+    }-*/
+    ;
+
+    public final native JsoDataLabels style(String styleAsJsonString)
+        throws RuntimeException /*-{
+        this["style"] = JSON.parse(styleAsJsonString);
+        return this;
+    }-*/
+    ;
+
+    public final native boolean useHTML()
+        throws RuntimeException /*-{
+        return this["useHTML"] = (this["useHTML"] || false);
+    }-*/
+    ;
+
+    public final native JsoDataLabels useHTML(boolean useHTML)
+        throws RuntimeException /*-{
+        this["useHTML"] = useHTML;
+        return this;
+    }-*/
+    ;
+
     public final native String verticalAlign()
         throws RuntimeException /*-{
         return this["verticalAlign"] = (this["verticalAlign"] || "null");
@@ -166,6 +258,45 @@ public class JsoDataLabels
     public final native JsoDataLabels verticalAlign(String verticalAlign)
         throws RuntimeException /*-{
         this["verticalAlign"] = verticalAlign;
+        return this;
+    }-*/
+    ;
+
+    public final native double x()
+        throws RuntimeException /*-{
+        return this["x"] = (this["x"] || 0.0);
+    }-*/
+    ;
+
+    public final native JsoDataLabels x(double x)
+        throws RuntimeException /*-{
+        this["x"] = x;
+        return this;
+    }-*/
+    ;
+
+    public final native double y()
+        throws RuntimeException /*-{
+        return this["y"] = (this["y"] || -6.0);
+    }-*/
+    ;
+
+    public final native JsoDataLabels y(double y)
+        throws RuntimeException /*-{
+        this["y"] = y;
+        return this;
+    }-*/
+    ;
+
+    public final native double zIndex()
+        throws RuntimeException /*-{
+        return this["zIndex"] = (this["zIndex"] || 6.0);
+    }-*/
+    ;
+
+    public final native JsoDataLabels zIndex(double zIndex)
+        throws RuntimeException /*-{
+        this["zIndex"] = zIndex;
         return this;
     }-*/
     ;

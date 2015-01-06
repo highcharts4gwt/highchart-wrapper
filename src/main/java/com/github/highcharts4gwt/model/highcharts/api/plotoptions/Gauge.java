@@ -1,7 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.api.plotoptions;
 
-import com.github.highcharts4gwt.model.highcharts.api.plotoptions.Series;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.gauge.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.gauge.Dial;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.gauge.GaugeAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.gauge.GaugeCheckboxClickHandler;
@@ -12,15 +12,36 @@ import com.github.highcharts4gwt.model.highcharts.api.plotoptions.gauge.GaugeMou
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.gauge.GaugeMouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.gauge.GaugeShowHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.gauge.Pivot;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.gauge.Point;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.gauge.States;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.gauge.Tooltip;
 
-public interface Gauge
-    extends Series
-{
+public interface Gauge {
 
+
+    boolean animation();
+
+    Gauge animation(boolean animation);
+
+    String color();
+
+    Gauge color(String color);
+
+    String cursor();
+
+    Gauge cursor(String cursor);
+
+    DataLabels dataLabels();
+
+    Gauge dataLabels(DataLabels dataLabels);
 
     Dial dial();
 
     Gauge dial(Dial dial);
+
+    boolean enableMouseTracking();
+
+    Gauge enableMouseTracking(boolean enableMouseTracking);
 
     void addGaugeAfterAnimateHandler(GaugeAfterAnimateHandler gaugeAfterAnimateHandler);
 
@@ -38,6 +59,14 @@ public interface Gauge
 
     void addGaugeShowHandler(GaugeShowHandler gaugeShowHandler);
 
+    String linkedTo();
+
+    Gauge linkedTo(String linkedTo);
+
+    String negativeColor();
+
+    Gauge negativeColor(String negativeColor);
+
     double overshoot();
 
     Gauge overshoot(double overshoot);
@@ -45,6 +74,42 @@ public interface Gauge
     Pivot pivot();
 
     Gauge pivot(Pivot pivot);
+
+    Point point();
+
+    Gauge point(Point point);
+
+    boolean selected();
+
+    Gauge selected(boolean selected);
+
+    boolean showCheckbox();
+
+    Gauge showCheckbox(boolean showCheckbox);
+
+    boolean showInLegend();
+
+    Gauge showInLegend(boolean showInLegend);
+
+    States states();
+
+    Gauge states(States states);
+
+    boolean stickyTracking();
+
+    Gauge stickyTracking(boolean stickyTracking);
+
+    double threshold();
+
+    Gauge threshold(double threshold);
+
+    Tooltip tooltip();
+
+    Gauge tooltip(Tooltip tooltip);
+
+    boolean visible();
+
+    Gauge visible(boolean visible);
 
     boolean wrap();
 

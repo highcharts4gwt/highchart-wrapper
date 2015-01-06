@@ -2,6 +2,9 @@
 package com.github.highcharts4gwt.model.highcharts.mock.plotoptions;
 
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.Scatter;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.Marker;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.Point;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.ScatterAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.ScatterCheckboxClickHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.ScatterClickHandler;
@@ -10,13 +13,111 @@ import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.Scatte
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.ScatterMouseOutHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.ScatterMouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.ScatterShowHandler;
-import com.github.highcharts4gwt.model.highcharts.mock.plotoptions.MockSeries;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.States;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.Tooltip;
 
 public class MockScatter
-    extends MockSeries
     implements Scatter
 {
 
+    private boolean allowPointSelect;
+    private boolean animation;
+    private String color;
+    private double cropThreshold;
+    private String cursor;
+    private String dashStyle;
+    private DataLabels dataLabels;
+    private boolean enableMouseTracking;
+    private double lineWidth;
+    private String linkedTo;
+    private Marker marker;
+    private String negativeColor;
+    private Point point;
+    private double pointInterval;
+    private double pointStart;
+    private boolean selected;
+    private boolean shadowAsBoolean;
+    private String shadowAsJsonString;
+    private boolean showCheckbox;
+    private boolean showInLegend;
+    private States states;
+    private boolean stickyTracking;
+    private double threshold;
+    private Tooltip tooltip;
+    private double turboThreshold;
+    private boolean visible;
+
+    public boolean allowPointSelect() {
+        return allowPointSelect;
+    }
+
+    public MockScatter allowPointSelect(boolean allowPointSelect) {
+        this.allowPointSelect = allowPointSelect;
+        return this;
+    }
+
+    public boolean animation() {
+        return animation;
+    }
+
+    public MockScatter animation(boolean animation) {
+        this.animation = animation;
+        return this;
+    }
+
+    public String color() {
+        return color;
+    }
+
+    public MockScatter color(String color) {
+        this.color = color;
+        return this;
+    }
+
+    public double cropThreshold() {
+        return cropThreshold;
+    }
+
+    public MockScatter cropThreshold(double cropThreshold) {
+        this.cropThreshold = cropThreshold;
+        return this;
+    }
+
+    public String cursor() {
+        return cursor;
+    }
+
+    public MockScatter cursor(String cursor) {
+        this.cursor = cursor;
+        return this;
+    }
+
+    public String dashStyle() {
+        return dashStyle;
+    }
+
+    public MockScatter dashStyle(String dashStyle) {
+        this.dashStyle = dashStyle;
+        return this;
+    }
+
+    public DataLabels dataLabels() {
+        return dataLabels;
+    }
+
+    public MockScatter dataLabels(DataLabels dataLabels) {
+        this.dataLabels = dataLabels;
+        return this;
+    }
+
+    public boolean enableMouseTracking() {
+        return enableMouseTracking;
+    }
+
+    public MockScatter enableMouseTracking(boolean enableMouseTracking) {
+        this.enableMouseTracking = enableMouseTracking;
+        return this;
+    }
 
     public void addScatterAfterAnimateHandler(ScatterAfterAnimateHandler handler) {
     }
@@ -40,6 +141,168 @@ public class MockScatter
     }
 
     public void addScatterShowHandler(ScatterShowHandler handler) {
+    }
+
+    public double lineWidth() {
+        return lineWidth;
+    }
+
+    public MockScatter lineWidth(double lineWidth) {
+        this.lineWidth = lineWidth;
+        return this;
+    }
+
+    public String linkedTo() {
+        return linkedTo;
+    }
+
+    public MockScatter linkedTo(String linkedTo) {
+        this.linkedTo = linkedTo;
+        return this;
+    }
+
+    public Marker marker() {
+        return marker;
+    }
+
+    public MockScatter marker(Marker marker) {
+        this.marker = marker;
+        return this;
+    }
+
+    public String negativeColor() {
+        return negativeColor;
+    }
+
+    public MockScatter negativeColor(String negativeColor) {
+        this.negativeColor = negativeColor;
+        return this;
+    }
+
+    public Point point() {
+        return point;
+    }
+
+    public MockScatter point(Point point) {
+        this.point = point;
+        return this;
+    }
+
+    public double pointInterval() {
+        return pointInterval;
+    }
+
+    public MockScatter pointInterval(double pointInterval) {
+        this.pointInterval = pointInterval;
+        return this;
+    }
+
+    public double pointStart() {
+        return pointStart;
+    }
+
+    public MockScatter pointStart(double pointStart) {
+        this.pointStart = pointStart;
+        return this;
+    }
+
+    public boolean selected() {
+        return selected;
+    }
+
+    public MockScatter selected(boolean selected) {
+        this.selected = selected;
+        return this;
+    }
+
+    public boolean shadowAsBoolean() {
+        return shadowAsBoolean;
+    }
+
+    public MockScatter shadowAsBoolean(boolean shadowAsBoolean) {
+        this.shadowAsBoolean = shadowAsBoolean;
+        return this;
+    }
+
+    public String shadowAsJsonString() {
+        return shadowAsJsonString;
+    }
+
+    public MockScatter shadowAsJsonString(String shadowAsJsonString) {
+        this.shadowAsJsonString = shadowAsJsonString;
+        return this;
+    }
+
+    public boolean showCheckbox() {
+        return showCheckbox;
+    }
+
+    public MockScatter showCheckbox(boolean showCheckbox) {
+        this.showCheckbox = showCheckbox;
+        return this;
+    }
+
+    public boolean showInLegend() {
+        return showInLegend;
+    }
+
+    public MockScatter showInLegend(boolean showInLegend) {
+        this.showInLegend = showInLegend;
+        return this;
+    }
+
+    public States states() {
+        return states;
+    }
+
+    public MockScatter states(States states) {
+        this.states = states;
+        return this;
+    }
+
+    public boolean stickyTracking() {
+        return stickyTracking;
+    }
+
+    public MockScatter stickyTracking(boolean stickyTracking) {
+        this.stickyTracking = stickyTracking;
+        return this;
+    }
+
+    public double threshold() {
+        return threshold;
+    }
+
+    public MockScatter threshold(double threshold) {
+        this.threshold = threshold;
+        return this;
+    }
+
+    public Tooltip tooltip() {
+        return tooltip;
+    }
+
+    public MockScatter tooltip(Tooltip tooltip) {
+        this.tooltip = tooltip;
+        return this;
+    }
+
+    public double turboThreshold() {
+        return turboThreshold;
+    }
+
+    public MockScatter turboThreshold(double turboThreshold) {
+        this.turboThreshold = turboThreshold;
+        return this;
+    }
+
+    public boolean visible() {
+        return visible;
+    }
+
+    public MockScatter visible(boolean visible) {
+        this.visible = visible;
+        return this;
     }
 
 }

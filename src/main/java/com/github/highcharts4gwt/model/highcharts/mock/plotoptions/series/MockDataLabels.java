@@ -2,13 +2,12 @@
 package com.github.highcharts4gwt.model.highcharts.mock.plotoptions.series;
 
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.series.DataLabels;
-import com.github.highcharts4gwt.model.highcharts.mock.xaxis.MockLabels;
 
 public class MockDataLabels
-    extends MockLabels
     implements DataLabels
 {
 
+    private String align;
     private String backgroundColor;
     private String borderColor;
     private double borderRadius;
@@ -16,11 +15,29 @@ public class MockDataLabels
     private String color;
     private boolean crop;
     private boolean defer;
+    private boolean enabled;
+    private String format;
     private boolean inside;
+    private String overflow;
     private double padding;
+    private double rotation;
     private boolean shadowAsBoolean;
     private String shadowAsJsonString;
+    private String style;
+    private boolean useHTML;
     private String verticalAlign;
+    private double x;
+    private double y;
+    private double zIndex;
+
+    public String align() {
+        return align;
+    }
+
+    public MockDataLabels align(String align) {
+        this.align = align;
+        return this;
+    }
 
     public String backgroundColor() {
         return backgroundColor;
@@ -85,6 +102,24 @@ public class MockDataLabels
         return this;
     }
 
+    public boolean enabled() {
+        return enabled;
+    }
+
+    public MockDataLabels enabled(boolean enabled) {
+        this.enabled = enabled;
+        return this;
+    }
+
+    public String format() {
+        return format;
+    }
+
+    public MockDataLabels format(String format) {
+        this.format = format;
+        return this;
+    }
+
     public boolean inside() {
         return inside;
     }
@@ -94,12 +129,30 @@ public class MockDataLabels
         return this;
     }
 
+    public String overflow() {
+        return overflow;
+    }
+
+    public MockDataLabels overflow(String overflow) {
+        this.overflow = overflow;
+        return this;
+    }
+
     public double padding() {
         return padding;
     }
 
     public MockDataLabels padding(double padding) {
         this.padding = padding;
+        return this;
+    }
+
+    public double rotation() {
+        return rotation;
+    }
+
+    public MockDataLabels rotation(double rotation) {
+        this.rotation = rotation;
         return this;
     }
 
@@ -121,12 +174,57 @@ public class MockDataLabels
         return this;
     }
 
+    public String style() {
+        return style;
+    }
+
+    public MockDataLabels style(String styleAsJsonString) {
+        this.style = styleAsJsonString;
+        return this;
+    }
+
+    public boolean useHTML() {
+        return useHTML;
+    }
+
+    public MockDataLabels useHTML(boolean useHTML) {
+        this.useHTML = useHTML;
+        return this;
+    }
+
     public String verticalAlign() {
         return verticalAlign;
     }
 
     public MockDataLabels verticalAlign(String verticalAlign) {
         this.verticalAlign = verticalAlign;
+        return this;
+    }
+
+    public double x() {
+        return x;
+    }
+
+    public MockDataLabels x(double x) {
+        this.x = x;
+        return this;
+    }
+
+    public double y() {
+        return y;
+    }
+
+    public MockDataLabels y(double y) {
+        this.y = y;
+        return this;
+    }
+
+    public double zIndex() {
+        return zIndex;
+    }
+
+    public MockDataLabels zIndex(double zIndex) {
+        this.zIndex = zIndex;
         return this;
     }
 

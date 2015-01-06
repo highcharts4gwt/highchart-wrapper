@@ -10,16 +10,151 @@ import com.github.highcharts4gwt.model.highcharts.api.plotoptions.area.AreaLegen
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.area.AreaMouseOutHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.area.AreaMouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.area.AreaShowHandler;
-import com.github.highcharts4gwt.model.highcharts.jso.plotoptions.JsoSeries;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.area.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.area.Marker;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.area.Point;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.area.States;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.area.Tooltip;
+import com.google.gwt.core.client.JavaScriptObject;
 
 public class JsoArea
-    extends JsoSeries
+    extends JavaScriptObject
     implements Area
 {
 
 
     protected JsoArea() {
     }
+
+    public final native boolean allowPointSelect()
+        throws RuntimeException /*-{
+        return this["allowPointSelect"] = (this["allowPointSelect"] || false);
+    }-*/
+    ;
+
+    public final native JsoArea allowPointSelect(boolean allowPointSelect)
+        throws RuntimeException /*-{
+        this["allowPointSelect"] = allowPointSelect;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean animation()
+        throws RuntimeException /*-{
+        return this["animation"] = (this["animation"] || true);
+    }-*/
+    ;
+
+    public final native JsoArea animation(boolean animation)
+        throws RuntimeException /*-{
+        this["animation"] = animation;
+        return this;
+    }-*/
+    ;
+
+    public final native String color()
+        throws RuntimeException /*-{
+        return this["color"] = (this["color"] || "null");
+    }-*/
+    ;
+
+    public final native JsoArea color(String color)
+        throws RuntimeException /*-{
+        this["color"] = color;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean connectEnds()
+        throws RuntimeException /*-{
+        return this["connectEnds"] = (this["connectEnds"] || true);
+    }-*/
+    ;
+
+    public final native JsoArea connectEnds(boolean connectEnds)
+        throws RuntimeException /*-{
+        this["connectEnds"] = connectEnds;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean connectNulls()
+        throws RuntimeException /*-{
+        return this["connectNulls"] = (this["connectNulls"] || false);
+    }-*/
+    ;
+
+    public final native JsoArea connectNulls(boolean connectNulls)
+        throws RuntimeException /*-{
+        this["connectNulls"] = connectNulls;
+        return this;
+    }-*/
+    ;
+
+    public final native double cropThreshold()
+        throws RuntimeException /*-{
+        return this["cropThreshold"] = (this["cropThreshold"] || 300.0);
+    }-*/
+    ;
+
+    public final native JsoArea cropThreshold(double cropThreshold)
+        throws RuntimeException /*-{
+        this["cropThreshold"] = cropThreshold;
+        return this;
+    }-*/
+    ;
+
+    public final native String cursor()
+        throws RuntimeException /*-{
+        return this["cursor"] = (this["cursor"] || "null");
+    }-*/
+    ;
+
+    public final native JsoArea cursor(String cursor)
+        throws RuntimeException /*-{
+        this["cursor"] = cursor;
+        return this;
+    }-*/
+    ;
+
+    public final native String dashStyle()
+        throws RuntimeException /*-{
+        return this["dashStyle"] = (this["dashStyle"] || "Solid");
+    }-*/
+    ;
+
+    public final native JsoArea dashStyle(String dashStyle)
+        throws RuntimeException /*-{
+        this["dashStyle"] = dashStyle;
+        return this;
+    }-*/
+    ;
+
+    public final native DataLabels dataLabels()
+        throws RuntimeException /*-{
+        return this["dataLabels"] = (this["dataLabels"] || {});
+    }-*/
+    ;
+
+    public final native JsoArea dataLabels(DataLabels dataLabels)
+        throws RuntimeException /*-{
+        this["dataLabels"] = dataLabels;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean enableMouseTracking()
+        throws RuntimeException /*-{
+        return this["enableMouseTracking"] = (this["enableMouseTracking"] || true);
+    }-*/
+    ;
+
+    public final native JsoArea enableMouseTracking(boolean enableMouseTracking)
+        throws RuntimeException /*-{
+        this["enableMouseTracking"] = enableMouseTracking;
+        return this;
+    }-*/
+    ;
 
     public final native void addAreaAfterAnimateHandler(AreaAfterAnimateHandler handler)
         throws RuntimeException 
@@ -188,6 +323,58 @@ public class JsoArea
     }-*/
     ;
 
+    public final native double lineWidth()
+        throws RuntimeException /*-{
+        return this["lineWidth"] = (this["lineWidth"] || 2.0);
+    }-*/
+    ;
+
+    public final native JsoArea lineWidth(double lineWidth)
+        throws RuntimeException /*-{
+        this["lineWidth"] = lineWidth;
+        return this;
+    }-*/
+    ;
+
+    public final native String linkedTo()
+        throws RuntimeException /*-{
+        return this["linkedTo"] = (this["linkedTo"] || "");
+    }-*/
+    ;
+
+    public final native JsoArea linkedTo(String linkedTo)
+        throws RuntimeException /*-{
+        this["linkedTo"] = linkedTo;
+        return this;
+    }-*/
+    ;
+
+    public final native Marker marker()
+        throws RuntimeException /*-{
+        return this["marker"] = (this["marker"] || {});
+    }-*/
+    ;
+
+    public final native JsoArea marker(Marker marker)
+        throws RuntimeException /*-{
+        this["marker"] = marker;
+        return this;
+    }-*/
+    ;
+
+    public final native String negativeColor()
+        throws RuntimeException /*-{
+        return this["negativeColor"] = (this["negativeColor"] || "null");
+    }-*/
+    ;
+
+    public final native JsoArea negativeColor(String negativeColor)
+        throws RuntimeException /*-{
+        this["negativeColor"] = negativeColor;
+        return this;
+    }-*/
+    ;
+
     public final native String negativeFillColor()
         throws RuntimeException /*-{
         return this["negativeFillColor"] = (this["negativeFillColor"] || "");
@@ -197,6 +384,163 @@ public class JsoArea
     public final native JsoArea negativeFillColor(String negativeFillColor)
         throws RuntimeException /*-{
         this["negativeFillColor"] = negativeFillColor;
+        return this;
+    }-*/
+    ;
+
+    public final native Point point()
+        throws RuntimeException /*-{
+        return this["point"] = (this["point"] || {});
+    }-*/
+    ;
+
+    public final native JsoArea point(Point point)
+        throws RuntimeException /*-{
+        this["point"] = point;
+        return this;
+    }-*/
+    ;
+
+    public final native double pointInterval()
+        throws RuntimeException /*-{
+        return this["pointInterval"] = (this["pointInterval"] || 1.0);
+    }-*/
+    ;
+
+    public final native JsoArea pointInterval(double pointInterval)
+        throws RuntimeException /*-{
+        this["pointInterval"] = pointInterval;
+        return this;
+    }-*/
+    ;
+
+    public final native String pointPlacementAsString()
+        throws RuntimeException /*-{
+        return this["pointPlacement"] = (this["pointPlacement"] || "null");
+    }-*/
+    ;
+
+    public final native JsoArea pointPlacementAsString(String pointPlacementAsString)
+        throws RuntimeException /*-{
+        this["pointPlacement"] = pointPlacementAsString;
+        return this;
+    }-*/
+    ;
+
+    public final native double pointPlacementAsNumber()
+        throws RuntimeException /*-{
+        return this["pointPlacement"] = (this["pointPlacement"] || null);
+    }-*/
+    ;
+
+    public final native JsoArea pointPlacementAsNumber(double pointPlacementAsNumber)
+        throws RuntimeException /*-{
+        this["pointPlacement"] = pointPlacementAsNumber;
+        return this;
+    }-*/
+    ;
+
+    public final native double pointStart()
+        throws RuntimeException /*-{
+        return this["pointStart"] = (this["pointStart"] || 0.0);
+    }-*/
+    ;
+
+    public final native JsoArea pointStart(double pointStart)
+        throws RuntimeException /*-{
+        this["pointStart"] = pointStart;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean selected()
+        throws RuntimeException /*-{
+        return this["selected"] = (this["selected"] || false);
+    }-*/
+    ;
+
+    public final native JsoArea selected(boolean selected)
+        throws RuntimeException /*-{
+        this["selected"] = selected;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean shadowAsBoolean()
+        throws RuntimeException /*-{
+        return this["shadow"] = (this["shadow"] || false);
+    }-*/
+    ;
+
+    public final native JsoArea shadowAsBoolean(boolean shadowAsBoolean)
+        throws RuntimeException /*-{
+        this["shadow"] = shadowAsBoolean;
+        return this;
+    }-*/
+    ;
+
+    public final native String shadowAsJsonString()
+        throws RuntimeException /*-{
+        this["shadow"] = (this["shadow"] || JSON.parse('false'));
+        return JSON.stringify(this["shadow"]);
+    }-*/
+    ;
+
+    public final native JsoArea shadowAsJsonString(String shadowAsJsonString)
+        throws RuntimeException /*-{
+        this["shadow"] = JSON.parse(shadowAsJsonString);
+        return this;
+    }-*/
+    ;
+
+    public final native boolean showCheckbox()
+        throws RuntimeException /*-{
+        return this["showCheckbox"] = (this["showCheckbox"] || false);
+    }-*/
+    ;
+
+    public final native JsoArea showCheckbox(boolean showCheckbox)
+        throws RuntimeException /*-{
+        this["showCheckbox"] = showCheckbox;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean showInLegend()
+        throws RuntimeException /*-{
+        return this["showInLegend"] = (this["showInLegend"] || true);
+    }-*/
+    ;
+
+    public final native JsoArea showInLegend(boolean showInLegend)
+        throws RuntimeException /*-{
+        this["showInLegend"] = showInLegend;
+        return this;
+    }-*/
+    ;
+
+    public final native String stacking()
+        throws RuntimeException /*-{
+        return this["stacking"] = (this["stacking"] || "null");
+    }-*/
+    ;
+
+    public final native JsoArea stacking(String stacking)
+        throws RuntimeException /*-{
+        this["stacking"] = stacking;
+        return this;
+    }-*/
+    ;
+
+    public final native States states()
+        throws RuntimeException /*-{
+        return this["states"] = (this["states"] || {});
+    }-*/
+    ;
+
+    public final native JsoArea states(States states)
+        throws RuntimeException /*-{
+        this["states"] = states;
         return this;
     }-*/
     ;
@@ -214,6 +558,45 @@ public class JsoArea
     }-*/
     ;
 
+    public final native boolean stickyTracking()
+        throws RuntimeException /*-{
+        return this["stickyTracking"] = (this["stickyTracking"] || true);
+    }-*/
+    ;
+
+    public final native JsoArea stickyTracking(boolean stickyTracking)
+        throws RuntimeException /*-{
+        this["stickyTracking"] = stickyTracking;
+        return this;
+    }-*/
+    ;
+
+    public final native double threshold()
+        throws RuntimeException /*-{
+        return this["threshold"] = (this["threshold"] || 0.0);
+    }-*/
+    ;
+
+    public final native JsoArea threshold(double threshold)
+        throws RuntimeException /*-{
+        this["threshold"] = threshold;
+        return this;
+    }-*/
+    ;
+
+    public final native Tooltip tooltip()
+        throws RuntimeException /*-{
+        return this["tooltip"] = (this["tooltip"] || {});
+    }-*/
+    ;
+
+    public final native JsoArea tooltip(Tooltip tooltip)
+        throws RuntimeException /*-{
+        this["tooltip"] = tooltip;
+        return this;
+    }-*/
+    ;
+
     public final native boolean trackByArea()
         throws RuntimeException /*-{
         return this["trackByArea"] = (this["trackByArea"] || false);
@@ -223,6 +606,32 @@ public class JsoArea
     public final native JsoArea trackByArea(boolean trackByArea)
         throws RuntimeException /*-{
         this["trackByArea"] = trackByArea;
+        return this;
+    }-*/
+    ;
+
+    public final native double turboThreshold()
+        throws RuntimeException /*-{
+        return this["turboThreshold"] = (this["turboThreshold"] || 1000.0);
+    }-*/
+    ;
+
+    public final native JsoArea turboThreshold(double turboThreshold)
+        throws RuntimeException /*-{
+        this["turboThreshold"] = turboThreshold;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean visible()
+        throws RuntimeException /*-{
+        return this["visible"] = (this["visible"] || true);
+    }-*/
+    ;
+
+    public final native JsoArea visible(boolean visible)
+        throws RuntimeException /*-{
+        this["visible"] = visible;
         return this;
     }-*/
     ;

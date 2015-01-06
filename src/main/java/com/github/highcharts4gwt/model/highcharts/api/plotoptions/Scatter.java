@@ -1,7 +1,9 @@
 
 package com.github.highcharts4gwt.model.highcharts.api.plotoptions;
 
-import com.github.highcharts4gwt.model.highcharts.api.plotoptions.Series;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.Marker;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.Point;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.ScatterAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.ScatterCheckboxClickHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.ScatterClickHandler;
@@ -10,11 +12,43 @@ import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.Scatte
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.ScatterMouseOutHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.ScatterMouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.ScatterShowHandler;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.States;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.scatter.Tooltip;
 
-public interface Scatter
-    extends Series
-{
+public interface Scatter {
 
+
+    boolean allowPointSelect();
+
+    Scatter allowPointSelect(boolean allowPointSelect);
+
+    boolean animation();
+
+    Scatter animation(boolean animation);
+
+    String color();
+
+    Scatter color(String color);
+
+    double cropThreshold();
+
+    Scatter cropThreshold(double cropThreshold);
+
+    String cursor();
+
+    Scatter cursor(String cursor);
+
+    String dashStyle();
+
+    Scatter dashStyle(String dashStyle);
+
+    DataLabels dataLabels();
+
+    Scatter dataLabels(DataLabels dataLabels);
+
+    boolean enableMouseTracking();
+
+    Scatter enableMouseTracking(boolean enableMouseTracking);
 
     void addScatterAfterAnimateHandler(ScatterAfterAnimateHandler scatterAfterAnimateHandler);
 
@@ -31,5 +65,77 @@ public interface Scatter
     void addScatterMouseOverHandler(ScatterMouseOverHandler scatterMouseOverHandler);
 
     void addScatterShowHandler(ScatterShowHandler scatterShowHandler);
+
+    double lineWidth();
+
+    Scatter lineWidth(double lineWidth);
+
+    String linkedTo();
+
+    Scatter linkedTo(String linkedTo);
+
+    Marker marker();
+
+    Scatter marker(Marker marker);
+
+    String negativeColor();
+
+    Scatter negativeColor(String negativeColor);
+
+    Point point();
+
+    Scatter point(Point point);
+
+    double pointInterval();
+
+    Scatter pointInterval(double pointInterval);
+
+    double pointStart();
+
+    Scatter pointStart(double pointStart);
+
+    boolean selected();
+
+    Scatter selected(boolean selected);
+
+    boolean shadowAsBoolean();
+
+    Scatter shadowAsBoolean(boolean shadowAsBoolean);
+
+    String shadowAsJsonString();
+
+    Scatter shadowAsJsonString(String shadowAsJsonString);
+
+    boolean showCheckbox();
+
+    Scatter showCheckbox(boolean showCheckbox);
+
+    boolean showInLegend();
+
+    Scatter showInLegend(boolean showInLegend);
+
+    States states();
+
+    Scatter states(States states);
+
+    boolean stickyTracking();
+
+    Scatter stickyTracking(boolean stickyTracking);
+
+    double threshold();
+
+    Scatter threshold(double threshold);
+
+    Tooltip tooltip();
+
+    Scatter tooltip(Tooltip tooltip);
+
+    double turboThreshold();
+
+    Scatter turboThreshold(double turboThreshold);
+
+    boolean visible();
+
+    Scatter visible(boolean visible);
 
 }

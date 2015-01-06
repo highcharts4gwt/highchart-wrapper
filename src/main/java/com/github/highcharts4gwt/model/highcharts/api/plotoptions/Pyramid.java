@@ -1,7 +1,10 @@
 
 package com.github.highcharts4gwt.model.highcharts.api.plotoptions;
 
-import com.github.highcharts4gwt.model.highcharts.api.plotoptions.Funnel;
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.Point;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.PyramidAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.PyramidCheckboxClickHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.PyramidClickHandler;
@@ -10,11 +13,51 @@ import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.Pyrami
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.PyramidMouseOutHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.PyramidMouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.PyramidShowHandler;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.States;
+import com.github.highcharts4gwt.model.highcharts.api.plotoptions.pyramid.Tooltip;
 
-public interface Pyramid
-    extends Funnel
-{
+public interface Pyramid {
 
+
+    boolean allowPointSelect();
+
+    Pyramid allowPointSelect(boolean allowPointSelect);
+
+    String borderColor();
+
+    Pyramid borderColor(String borderColor);
+
+    double borderWidth();
+
+    Pyramid borderWidth(double borderWidth);
+
+    ArrayString centerAsArrayString();
+
+    Pyramid centerAsArrayString(ArrayString centerAsArrayString);
+
+    ArrayNumber centerAsArrayNumber();
+
+    Pyramid centerAsArrayNumber(ArrayNumber centerAsArrayNumber);
+
+    ArrayString colors();
+
+    Pyramid colors(ArrayString colors);
+
+    String cursor();
+
+    Pyramid cursor(String cursor);
+
+    DataLabels dataLabels();
+
+    Pyramid dataLabels(DataLabels dataLabels);
+
+    double depth();
+
+    Pyramid depth(double depth);
+
+    boolean enableMouseTracking();
+
+    Pyramid enableMouseTracking(boolean enableMouseTracking);
 
     void addPyramidAfterAnimateHandler(PyramidAfterAnimateHandler pyramidAfterAnimateHandler);
 
@@ -31,5 +74,73 @@ public interface Pyramid
     void addPyramidMouseOverHandler(PyramidMouseOverHandler pyramidMouseOverHandler);
 
     void addPyramidShowHandler(PyramidShowHandler pyramidShowHandler);
+
+    double heightAsNumber();
+
+    Pyramid heightAsNumber(double heightAsNumber);
+
+    String heightAsString();
+
+    Pyramid heightAsString(String heightAsString);
+
+    String linkedTo();
+
+    Pyramid linkedTo(String linkedTo);
+
+    double minSize();
+
+    Pyramid minSize(double minSize);
+
+    Point point();
+
+    Pyramid point(Point point);
+
+    boolean reversed();
+
+    Pyramid reversed(boolean reversed);
+
+    boolean selected();
+
+    Pyramid selected(boolean selected);
+
+    boolean shadowAsBoolean();
+
+    Pyramid shadowAsBoolean(boolean shadowAsBoolean);
+
+    String shadowAsJsonString();
+
+    Pyramid shadowAsJsonString(String shadowAsJsonString);
+
+    boolean showInLegend();
+
+    Pyramid showInLegend(boolean showInLegend);
+
+    double slicedOffset();
+
+    Pyramid slicedOffset(double slicedOffset);
+
+    States states();
+
+    Pyramid states(States states);
+
+    boolean stickyTracking();
+
+    Pyramid stickyTracking(boolean stickyTracking);
+
+    Tooltip tooltip();
+
+    Pyramid tooltip(Tooltip tooltip);
+
+    boolean visible();
+
+    Pyramid visible(boolean visible);
+
+    double widthAsNumber();
+
+    Pyramid widthAsNumber(double widthAsNumber);
+
+    String widthAsString();
+
+    Pyramid widthAsString(String widthAsString);
 
 }

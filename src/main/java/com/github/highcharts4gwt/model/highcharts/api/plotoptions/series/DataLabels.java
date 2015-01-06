@@ -1,12 +1,13 @@
 
 package com.github.highcharts4gwt.model.highcharts.api.plotoptions.series;
 
-import com.github.highcharts4gwt.model.highcharts.api.xaxis.Labels;
 
-public interface DataLabels
-    extends Labels
-{
+public interface DataLabels {
 
+
+    String align();
+
+    DataLabels align(String align);
 
     String backgroundColor();
 
@@ -36,13 +37,29 @@ public interface DataLabels
 
     DataLabels defer(boolean defer);
 
+    boolean enabled();
+
+    DataLabels enabled(boolean enabled);
+
+    String format();
+
+    DataLabels format(String format);
+
     boolean inside();
 
     DataLabels inside(boolean inside);
 
+    String overflow();
+
+    DataLabels overflow(String overflow);
+
     double padding();
 
     DataLabels padding(double padding);
+
+    double rotation();
+
+    DataLabels rotation(double rotation);
 
     boolean shadowAsBoolean();
 
@@ -52,8 +69,28 @@ public interface DataLabels
 
     DataLabels shadowAsJsonString(String shadowAsJsonString);
 
+    String style();
+
+    DataLabels style(String styleAsJsonString);
+
+    boolean useHTML();
+
+    DataLabels useHTML(boolean useHTML);
+
     String verticalAlign();
 
     DataLabels verticalAlign(String verticalAlign);
+
+    double x();
+
+    DataLabels x(double x);
+
+    double y();
+
+    DataLabels y(double y);
+
+    double zIndex();
+
+    DataLabels zIndex(double zIndex);
 
 }
