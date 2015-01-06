@@ -14,7 +14,7 @@ import com.github.highcharts4gwt.model.highcharts.option.api.chart.ResetZoomButt
 
 public interface Chart {
 
-
+    
     boolean alignTicks();
 
     Chart alignTicks(boolean alignTicks);
