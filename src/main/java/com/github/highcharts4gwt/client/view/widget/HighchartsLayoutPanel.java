@@ -1,6 +1,6 @@
 package com.github.highcharts4gwt.client.view.widget;
 
-import com.github.highcharts4gwt.model.highcharts.api.ChartOptions;
+import com.github.highcharts4gwt.model.highcharts.option.api.ChartOptions;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.HTMLPanel;
