@@ -1,21 +1,20 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.spline;
 
-import com.github.highcharts4gwt.model.highcharts.option.api.Series;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineLegendItemClickEvent;
 
 public class MockSplineLegendItemClickEvent
     implements SplineLegendItemClickEvent
 {
 
-    private Series series;
+    private com.github.highcharts4gwt.model.highcharts.object.api.Series Series;
 
-    public Series getSeries() {
-        return series;
+    public com.github.highcharts4gwt.model.highcharts.object.api.Series getSeries() {
+        return Series;
     }
 
-    public MockSplineLegendItemClickEvent series(Series series) {
-        this.series = series;
+    public MockSplineLegendItemClickEvent Series(com.github.highcharts4gwt.model.highcharts.object.api.Series Series) {
+        this.Series = Series;
         return this;
     }
 

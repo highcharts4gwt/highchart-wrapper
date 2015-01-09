@@ -1,7 +1,6 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock;
 
-import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.XAxis;
@@ -50,8 +49,8 @@ public class MockXAxis
     private double minorTickWidth;
     private double offset;
     private boolean opposite;
-    private Array<PlotBand> plotBands;
-    private Array<PlotLine> plotLines;
+    private com.github.highcharts4gwt.model.array.api.Array<PlotBand> plotBands;
+    private com.github.highcharts4gwt.model.array.api.Array<PlotLine> plotLines;
     private boolean reversed;
     private boolean showEmpty;
     private boolean showFirstLabel;
@@ -382,20 +381,20 @@ public class MockXAxis
         return this;
     }
 
-    public Array<PlotBand> plotBands() {
+    public com.github.highcharts4gwt.model.array.api.Array<PlotBand> plotBands() {
         return plotBands;
     }
 
-    public MockXAxis plotBands(Array<PlotBand> plotBands) {
+    public MockXAxis plotBands(com.github.highcharts4gwt.model.array.api.Array<PlotBand> plotBands) {
         this.plotBands = plotBands;
         return this;
     }
 
-    public Array<PlotLine> plotLines() {
+    public com.github.highcharts4gwt.model.array.api.Array<PlotLine> plotLines() {
         return plotLines;
     }
 
-    public MockXAxis plotLines(Array<PlotLine> plotLines) {
+    public MockXAxis plotLines(com.github.highcharts4gwt.model.array.api.Array<PlotLine> plotLines) {
         this.plotLines = plotLines;
         return this;
     }

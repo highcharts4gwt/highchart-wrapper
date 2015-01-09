@@ -78,6 +78,19 @@ public class JsoData
     }-*/
     ;
 
+    public final native String googleSpreadsheetWorksheet()
+        throws RuntimeException /*-{
+        return this["googleSpreadsheetWorksheet"] = (this["googleSpreadsheetWorksheet"] || "null");
+    }-*/
+    ;
+
+    public final native JsoData googleSpreadsheetWorksheet(String googleSpreadsheetWorksheet)
+        throws RuntimeException /*-{
+        this["googleSpreadsheetWorksheet"] = googleSpreadsheetWorksheet;
+        return this;
+    }-*/
+    ;
+
     public final native String itemDelimiter()
         throws RuntimeException /*-{
         return this["itemDelimiter"] = (this["itemDelimiter"] || "");

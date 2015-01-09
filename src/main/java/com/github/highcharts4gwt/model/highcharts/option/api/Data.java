@@ -25,6 +25,10 @@ public interface Data {
 
     Data googleSpreadsheetKey(String googleSpreadsheetKey);
 
+    String googleSpreadsheetWorksheet();
+
+    Data googleSpreadsheetWorksheet(String googleSpreadsheetWorksheet);
+
     String itemDelimiter();
 
     Data itemDelimiter(String itemDelimiter);

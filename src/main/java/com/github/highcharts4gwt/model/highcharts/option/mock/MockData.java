@@ -12,6 +12,7 @@ public class MockData
     private double endColumn;
     private double endRow;
     private String googleSpreadsheetKey;
+    private String googleSpreadsheetWorksheet;
     private String itemDelimiter;
     private String lineDelimiter;
     private String seriesMapping;
@@ -62,6 +63,15 @@ public class MockData
 
     public MockData googleSpreadsheetKey(String googleSpreadsheetKey) {
         this.googleSpreadsheetKey = googleSpreadsheetKey;
+        return this;
+    }
+
+    public String googleSpreadsheetWorksheet() {
+        return googleSpreadsheetWorksheet;
+    }
+
+    public MockData googleSpreadsheetWorksheet(String googleSpreadsheetWorksheet) {
+        this.googleSpreadsheetWorksheet = googleSpreadsheetWorksheet;
         return this;
     }
 

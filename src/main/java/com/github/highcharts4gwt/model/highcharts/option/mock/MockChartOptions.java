@@ -34,8 +34,8 @@ public class MockChartOptions
     private YAxis yAxis;
     private XAxis xAxis;
     private Exporting exporting;
-    private Navigation navigation;
     private Subtitle subtitle;
+    private Navigation navigation;
     private Title title;
     private Tooltip tooltip;
     private NoData noData;
@@ -110,21 +110,21 @@ public class MockChartOptions
         return this;
     }
 
-    public Navigation navigation() {
-        return navigation;
-    }
-
-    public MockChartOptions navigation(Navigation navigation) {
-        this.navigation = navigation;
-        return this;
-    }
-
     public Subtitle subtitle() {
         return subtitle;
     }
 
     public MockChartOptions subtitle(Subtitle subtitle) {
         this.subtitle = subtitle;
+        return this;
+    }
+
+    public Navigation navigation() {
+        return navigation;
+    }
+
+    public MockChartOptions navigation(Navigation navigation) {
+        this.navigation = navigation;
         return this;
     }
 

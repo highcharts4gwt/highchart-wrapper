@@ -1,7 +1,6 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso;
 
-import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.YAxis;
@@ -537,26 +536,26 @@ public class JsoYAxis
     }-*/
     ;
 
-    public final native Array<PlotBand> plotBands()
+    public final native com.github.highcharts4gwt.model.array.api.Array<PlotBand> plotBands()
         throws RuntimeException /*-{
         return this["plotBands"] = (this["plotBands"] || []);
     }-*/
     ;
 
-    public final native JsoYAxis plotBands(Array<PlotBand> plotBands)
+    public final native JsoYAxis plotBands(com.github.highcharts4gwt.model.array.api.Array<PlotBand> plotBands)
         throws RuntimeException /*-{
         this["plotBands"] = plotBands;
         return this;
     }-*/
     ;
 
-    public final native Array<PlotLine> plotLines()
+    public final native com.github.highcharts4gwt.model.array.api.Array<PlotLine> plotLines()
         throws RuntimeException /*-{
         return this["plotLines"] = (this["plotLines"] || []);
     }-*/
     ;
 
-    public final native JsoYAxis plotLines(Array<PlotLine> plotLines)
+    public final native JsoYAxis plotLines(com.github.highcharts4gwt.model.array.api.Array<PlotLine> plotLines)
         throws RuntimeException /*-{
         this["plotLines"] = plotLines;
         return this;

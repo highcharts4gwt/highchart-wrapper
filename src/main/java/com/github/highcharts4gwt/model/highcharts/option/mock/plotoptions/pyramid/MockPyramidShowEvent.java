@@ -1,21 +1,20 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.pyramid;
 
-import com.github.highcharts4gwt.model.highcharts.option.api.Series;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidShowEvent;
 
 public class MockPyramidShowEvent
     implements PyramidShowEvent
 {
 
-    private Series series;
+    private com.github.highcharts4gwt.model.highcharts.object.api.Series Series;
 
-    public Series getSeries() {
-        return series;
+    public com.github.highcharts4gwt.model.highcharts.object.api.Series getSeries() {
+        return Series;
     }
 
-    public MockPyramidShowEvent series(Series series) {
-        this.series = series;
+    public MockPyramidShowEvent Series(com.github.highcharts4gwt.model.highcharts.object.api.Series Series) {
+        this.Series = Series;
         return this;
     }
 

@@ -1,7 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.waterfall;
 
-import com.github.highcharts4gwt.model.highcharts.option.api.Series;
+import com.github.highcharts4gwt.model.highcharts.object.api.Series;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.WaterfallHideEvent;
 import com.google.gwt.dom.client.NativeEvent;
 

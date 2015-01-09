@@ -1,21 +1,20 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.waterfall;
 
-import com.github.highcharts4gwt.model.highcharts.option.api.Series;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.WaterfallClickEvent;
 
 public class MockWaterfallClickEvent
     implements WaterfallClickEvent
 {
 
-    private Series series;
+    private com.github.highcharts4gwt.model.highcharts.object.api.Series Series;
 
-    public Series getSeries() {
-        return series;
+    public com.github.highcharts4gwt.model.highcharts.object.api.Series getSeries() {
+        return Series;
     }
 
-    public MockWaterfallClickEvent series(Series series) {
-        this.series = series;
+    public MockWaterfallClickEvent Series(com.github.highcharts4gwt.model.highcharts.object.api.Series Series) {
+        this.Series = Series;
         return this;
     }
 

@@ -1,7 +1,6 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api;
 
-import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.Labels;
@@ -167,13 +166,13 @@ public interface YAxis {
 
     YAxis opposite(boolean opposite);
 
-    Array<PlotBand> plotBands();
+    com.github.highcharts4gwt.model.array.api.Array<PlotBand> plotBands();
 
-    YAxis plotBands(Array<PlotBand> plotBands);
+    YAxis plotBands(com.github.highcharts4gwt.model.array.api.Array<PlotBand> plotBands);
 
-    Array<PlotLine> plotLines();
+    com.github.highcharts4gwt.model.array.api.Array<PlotLine> plotLines();
 
-    YAxis plotLines(Array<PlotLine> plotLines);
+    YAxis plotLines(com.github.highcharts4gwt.model.array.api.Array<PlotLine> plotLines);
 
     boolean reversed();
 

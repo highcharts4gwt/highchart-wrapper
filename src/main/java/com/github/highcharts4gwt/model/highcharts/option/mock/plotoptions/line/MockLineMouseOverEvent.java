@@ -1,21 +1,20 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.line;
 
-import com.github.highcharts4gwt.model.highcharts.option.api.Series;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineMouseOverEvent;
 
 public class MockLineMouseOverEvent
     implements LineMouseOverEvent
 {
 
-    private Series series;
+    private com.github.highcharts4gwt.model.highcharts.object.api.Series Series;
 
-    public Series getSeries() {
-        return series;
+    public com.github.highcharts4gwt.model.highcharts.object.api.Series getSeries() {
+        return Series;
     }
 
-    public MockLineMouseOverEvent series(Series series) {
-        this.series = series;
+    public MockLineMouseOverEvent Series(com.github.highcharts4gwt.model.highcharts.object.api.Series Series) {
+        this.Series = Series;
         return this;
     }
 

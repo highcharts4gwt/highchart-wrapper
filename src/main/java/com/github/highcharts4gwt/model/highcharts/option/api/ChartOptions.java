@@ -53,13 +53,13 @@ public interface ChartOptions {
 
     ChartOptions exporting(Exporting exporting);
 
-    Navigation navigation();
-
-    ChartOptions navigation(Navigation navigation);
-
     Subtitle subtitle();
 
     ChartOptions subtitle(Subtitle subtitle);
+
+    Navigation navigation();
+
+    ChartOptions navigation(Navigation navigation);
 
     Title title();
 

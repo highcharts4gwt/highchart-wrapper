@@ -124,19 +124,6 @@ public class JsoChartOptions
     }-*/
     ;
 
-    public final native Navigation navigation()
-        throws RuntimeException /*-{
-        return this["navigation"] = (this["navigation"] || {});
-    }-*/
-    ;
-
-    public final native JsoChartOptions navigation(Navigation navigation)
-        throws RuntimeException /*-{
-        this["navigation"] = navigation;
-        return this;
-    }-*/
-    ;
-
     public final native Subtitle subtitle()
         throws RuntimeException /*-{
         return this["subtitle"] = (this["subtitle"] || {});
@@ -146,6 +133,19 @@ public class JsoChartOptions
     public final native JsoChartOptions subtitle(Subtitle subtitle)
         throws RuntimeException /*-{
         this["subtitle"] = subtitle;
+        return this;
+    }-*/
+    ;
+
+    public final native Navigation navigation()
+        throws RuntimeException /*-{
+        return this["navigation"] = (this["navigation"] || {});
+    }-*/
+    ;
+
+    public final native JsoChartOptions navigation(Navigation navigation)
+        throws RuntimeException /*-{
+        this["navigation"] = navigation;
         return this;
     }-*/
     ;
