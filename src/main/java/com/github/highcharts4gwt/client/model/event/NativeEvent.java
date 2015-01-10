@@ -1,4 +1,4 @@
-package com.github.highcharts4gwt.model.event;
+package com.github.highcharts4gwt.client.model.event;
 
 public interface NativeEvent
 {

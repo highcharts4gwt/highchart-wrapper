@@ -41,21 +41,21 @@ public interface ChartOptions {
 
     ChartOptions plotOptions(PlotOptions plotOptions);
 
-    YAxis yAxis();
-
-    ChartOptions yAxis(YAxis yAxis);
-
     XAxis xAxis();
 
     ChartOptions xAxis(XAxis xAxis);
 
-    Exporting exporting();
+    YAxis yAxis();
 
-    ChartOptions exporting(Exporting exporting);
+    ChartOptions yAxis(YAxis yAxis);
 
     Subtitle subtitle();
 
     ChartOptions subtitle(Subtitle subtitle);
+
+    Exporting exporting();
+
+    ChartOptions exporting(Exporting exporting);
 
     Navigation navigation();
 

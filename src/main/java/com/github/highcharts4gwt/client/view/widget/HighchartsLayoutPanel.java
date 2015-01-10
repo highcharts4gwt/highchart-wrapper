@@ -1,16 +1,20 @@
 package com.github.highcharts4gwt.client.view.widget;
 
+import com.github.highcharts4gwt.client.model.event.ChartRenderedEvent;
+import com.github.highcharts4gwt.model.highcharts.object.api.Chart;
 import com.github.highcharts4gwt.model.highcharts.option.api.ChartOptions;
-import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.user.client.Timer;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.SimpleLayoutPanel;
+import com.google.web.bindery.event.shared.EventBus;
 
 public class HighchartsLayoutPanel extends SimpleLayoutPanel
 {
     private final DelayRenderingTimer timer;
     private final String id;
     private ChartOptions chartOptions;
+    private Chart chartObject;
+    private EventBus eventBus;
     
     public HighchartsLayoutPanel()
     {
@@ -27,10 +31,15 @@ public class HighchartsLayoutPanel extends SimpleLayoutPanel
         timer.schedule(100); // hack to let the dom the time to render first to have the parent container size...
     }
 
-    private native JavaScriptObject drawChart(String containerId, ChartOptions options)
+    private native Chart drawChart(String containerId, ChartOptions options)
     /*-{
         return $wnd.jQuery('#'+containerId).highcharts(options);
     }-*/;
+
+    public void setEventBus(EventBus eventBus)
+    {
+        this.eventBus = eventBus;
+    }
 
     private class DelayRenderingTimer extends Timer
     {
@@ -39,7 +48,9 @@ public class HighchartsLayoutPanel extends SimpleLayoutPanel
         {
             if (chartOptions != null)
             {
-                drawChart(id, chartOptions);
+                chartObject = drawChart(id, chartOptions);
+                if (eventBus != null)
+                    eventBus.fireEvent(new ChartRenderedEvent(chartObject));
             }
         }
     }
