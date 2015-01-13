@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.object.jso;
 
 import com.github.highcharts4gwt.model.highcharts.object.api.Point;
+import com.github.highcharts4gwt.model.highcharts.object.api.Series;
 import com.google.gwt.core.client.JavaScriptObject;
 
 public class JsoPoint
@@ -12,6 +13,12 @@ public class JsoPoint
 
     protected JsoPoint() {
     }
+
+    public final native Series series()
+        throws RuntimeException /*-{
+        return this["series"] = (this["series"] || {});
+    }-*/
+    ;
 
     public final native double percentage()
         throws RuntimeException /*-{

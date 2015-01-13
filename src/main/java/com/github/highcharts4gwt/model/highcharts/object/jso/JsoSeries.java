@@ -1,6 +1,8 @@
 
 package com.github.highcharts4gwt.model.highcharts.object.jso;
 
+import com.github.highcharts4gwt.model.highcharts.object.api.Axis;
+import com.github.highcharts4gwt.model.highcharts.object.api.Chart;
 import com.github.highcharts4gwt.model.highcharts.object.api.Series;
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -34,6 +36,24 @@ public class JsoSeries
     public final native boolean visible()
         throws RuntimeException /*-{
         return this["visible"] = (this["visible"] || false);
+    }-*/
+    ;
+
+    public final native Chart chart()
+        throws RuntimeException /*-{
+        return this["chart"] = (this["chart"] || {});
+    }-*/
+    ;
+
+    public final native Axis xAxis()
+        throws RuntimeException /*-{
+        return this["xAxis"] = (this["xAxis"] || {});
+    }-*/
+    ;
+
+    public final native Axis yAxis()
+        throws RuntimeException /*-{
+        return this["yAxis"] = (this["yAxis"] || {});
     }-*/
     ;
 

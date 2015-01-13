@@ -1,6 +1,8 @@
 
 package com.github.highcharts4gwt.model.highcharts.object.api;
 
+import com.github.highcharts4gwt.model.highcharts.object.api.Axis;
+import com.github.highcharts4gwt.model.highcharts.object.api.Chart;
 
 public interface Series {
 
@@ -12,5 +14,11 @@ public interface Series {
     String type();
 
     boolean visible();
+
+    Chart chart();
+
+    Axis xAxis();
+
+    Axis yAxis();
 
 }

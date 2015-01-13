@@ -1,6 +1,8 @@
 
 package com.github.highcharts4gwt.model.highcharts.object.mock;
 
+import com.github.highcharts4gwt.model.highcharts.object.api.Axis;
+import com.github.highcharts4gwt.model.highcharts.object.api.Chart;
 import com.github.highcharts4gwt.model.highcharts.object.api.Series;
 
 public class MockSeries
@@ -11,6 +13,9 @@ public class MockSeries
     private boolean selected;
     private String type;
     private boolean visible;
+    private Chart chart;
+    private Axis xAxis;
+    private Axis yAxis;
 
     public String name() {
         return name;
@@ -26,6 +31,18 @@ public class MockSeries
 
     public boolean visible() {
         return visible;
+    }
+
+    public Chart chart() {
+        return chart;
+    }
+
+    public Axis xAxis() {
+        return xAxis;
+    }
+
+    public Axis yAxis() {
+        return yAxis;
     }
 
 }
