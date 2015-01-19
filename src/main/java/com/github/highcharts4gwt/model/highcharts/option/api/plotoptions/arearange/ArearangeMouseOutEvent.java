@@ -6,6 +6,6 @@ import com.github.highcharts4gwt.model.highcharts.object.api.Series;
 public interface ArearangeMouseOutEvent {
 
 
-    Series getSeries();
+    Series series();
 
 }

@@ -6,6 +6,6 @@ import com.github.highcharts4gwt.model.highcharts.object.api.Series;
 public interface FunnelClickEvent {
 
 
-    Series getSeries();
+    Series series();
 
 }

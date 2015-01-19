@@ -1,8 +1,10 @@
 
 package com.github.highcharts4gwt.model.highcharts.object.api;
 
+import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.highcharts.object.api.Axis;
 import com.github.highcharts4gwt.model.highcharts.object.api.Chart;
+import com.github.highcharts4gwt.model.highcharts.object.api.Point;
 
 public interface Series {
 
@@ -16,6 +18,8 @@ public interface Series {
     boolean visible();
 
     Chart chart();
+
+    Array<Point> data();
 
     Axis xAxis();
 

@@ -224,7 +224,7 @@ public class JsoBar
     public final native void addBarAfterAnimateHandler(BarAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -240,7 +240,7 @@ public class JsoBar
     public final native void addBarCheckboxClickHandler(BarCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -256,7 +256,7 @@ public class JsoBar
     public final native void addBarClickHandler(BarClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -272,7 +272,7 @@ public class JsoBar
     public final native void addBarHideHandler(BarHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -288,7 +288,7 @@ public class JsoBar
     public final native void addBarLegendItemClickHandler(BarLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -304,7 +304,7 @@ public class JsoBar
     public final native void addBarMouseOutHandler(BarMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -320,7 +320,7 @@ public class JsoBar
     public final native void addBarMouseOverHandler(BarMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -336,7 +336,7 @@ public class JsoBar
     public final native void addBarShowHandler(BarShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

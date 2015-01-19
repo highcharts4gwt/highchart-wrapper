@@ -146,7 +146,7 @@ public class JsoBubble
     public final native void addBubbleAfterAnimateHandler(BubbleAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -162,7 +162,7 @@ public class JsoBubble
     public final native void addBubbleCheckboxClickHandler(BubbleCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -178,7 +178,7 @@ public class JsoBubble
     public final native void addBubbleClickHandler(BubbleClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -194,7 +194,7 @@ public class JsoBubble
     public final native void addBubbleHideHandler(BubbleHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -210,7 +210,7 @@ public class JsoBubble
     public final native void addBubbleLegendItemClickHandler(BubbleLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -226,7 +226,7 @@ public class JsoBubble
     public final native void addBubbleMouseOutHandler(BubbleMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -242,7 +242,7 @@ public class JsoBubble
     public final native void addBubbleMouseOverHandler(BubbleMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -258,7 +258,7 @@ public class JsoBubble
     public final native void addBubbleShowHandler(BubbleShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

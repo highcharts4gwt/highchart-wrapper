@@ -159,7 +159,7 @@ public class JsoLine
     public final native void addLineAfterAnimateHandler(LineAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -175,7 +175,7 @@ public class JsoLine
     public final native void addLineCheckboxClickHandler(LineCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -191,7 +191,7 @@ public class JsoLine
     public final native void addLineClickHandler(LineClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -207,7 +207,7 @@ public class JsoLine
     public final native void addLineHideHandler(LineHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -223,7 +223,7 @@ public class JsoLine
     public final native void addLineLegendItemClickHandler(LineLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -239,7 +239,7 @@ public class JsoLine
     public final native void addLineMouseOutHandler(LineMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -255,7 +255,7 @@ public class JsoLine
     public final native void addLineMouseOverHandler(LineMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -271,7 +271,7 @@ public class JsoLine
     public final native void addLineShowHandler(LineShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

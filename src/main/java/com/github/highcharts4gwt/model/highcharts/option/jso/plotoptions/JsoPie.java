@@ -186,7 +186,7 @@ public class JsoPie
     public final native void addPieAfterAnimateHandler(PieAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -202,7 +202,7 @@ public class JsoPie
     public final native void addPieCheckboxClickHandler(PieCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -218,7 +218,7 @@ public class JsoPie
     public final native void addPieClickHandler(PieClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -234,7 +234,7 @@ public class JsoPie
     public final native void addPieHideHandler(PieHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -250,7 +250,7 @@ public class JsoPie
     public final native void addPieLegendItemClickHandler(PieLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -266,7 +266,7 @@ public class JsoPie
     public final native void addPieMouseOutHandler(PieMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -282,7 +282,7 @@ public class JsoPie
     public final native void addPieMouseOverHandler(PieMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -298,7 +298,7 @@ public class JsoPie
     public final native void addPieShowHandler(PieShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

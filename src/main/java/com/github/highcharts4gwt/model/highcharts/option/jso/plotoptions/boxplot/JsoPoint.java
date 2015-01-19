@@ -23,7 +23,7 @@ public class JsoPoint
     public final native void addPointClickHandler(PointClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -39,7 +39,7 @@ public class JsoPoint
     public final native void addPointMouseOutHandler(PointMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -55,7 +55,7 @@ public class JsoPoint
     public final native void addPointMouseOverHandler(PointMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -71,7 +71,7 @@ public class JsoPoint
     public final native void addPointRemoveHandler(PointRemoveHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     remove: function(event) {
@@ -87,7 +87,7 @@ public class JsoPoint
     public final native void addPointSelectHandler(PointSelectHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     select: function(event) {
@@ -103,7 +103,7 @@ public class JsoPoint
     public final native void addPointUnselectHandler(PointUnselectHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     unselect: function(event) {
@@ -119,7 +119,7 @@ public class JsoPoint
     public final native void addPointUpdateHandler(PointUpdateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     update: function(event) {

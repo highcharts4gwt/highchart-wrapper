@@ -145,7 +145,7 @@ public class JsoAreasplinerange
     public final native void addAreasplinerangeAfterAnimateHandler(AreasplinerangeAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -161,7 +161,7 @@ public class JsoAreasplinerange
     public final native void addAreasplinerangeCheckboxClickHandler(AreasplinerangeCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -177,7 +177,7 @@ public class JsoAreasplinerange
     public final native void addAreasplinerangeClickHandler(AreasplinerangeClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -193,7 +193,7 @@ public class JsoAreasplinerange
     public final native void addAreasplinerangeHideHandler(AreasplinerangeHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -209,7 +209,7 @@ public class JsoAreasplinerange
     public final native void addAreasplinerangeLegendItemClickHandler(AreasplinerangeLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -225,7 +225,7 @@ public class JsoAreasplinerange
     public final native void addAreasplinerangeMouseOutHandler(AreasplinerangeMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -241,7 +241,7 @@ public class JsoAreasplinerange
     public final native void addAreasplinerangeMouseOverHandler(AreasplinerangeMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -257,7 +257,7 @@ public class JsoAreasplinerange
     public final native void addAreasplinerangeShowHandler(AreasplinerangeShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

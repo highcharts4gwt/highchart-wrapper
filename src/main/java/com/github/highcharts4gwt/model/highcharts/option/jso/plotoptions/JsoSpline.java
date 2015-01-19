@@ -159,7 +159,7 @@ public class JsoSpline
     public final native void addSplineAfterAnimateHandler(SplineAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -175,7 +175,7 @@ public class JsoSpline
     public final native void addSplineCheckboxClickHandler(SplineCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -191,7 +191,7 @@ public class JsoSpline
     public final native void addSplineClickHandler(SplineClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -207,7 +207,7 @@ public class JsoSpline
     public final native void addSplineHideHandler(SplineHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -223,7 +223,7 @@ public class JsoSpline
     public final native void addSplineLegendItemClickHandler(SplineLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -239,7 +239,7 @@ public class JsoSpline
     public final native void addSplineMouseOutHandler(SplineMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -255,7 +255,7 @@ public class JsoSpline
     public final native void addSplineMouseOverHandler(SplineMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -271,7 +271,7 @@ public class JsoSpline
     public final native void addSplineShowHandler(SplineShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

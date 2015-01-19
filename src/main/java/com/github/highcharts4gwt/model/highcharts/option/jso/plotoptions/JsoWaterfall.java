@@ -224,7 +224,7 @@ public class JsoWaterfall
     public final native void addWaterfallAfterAnimateHandler(WaterfallAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -240,7 +240,7 @@ public class JsoWaterfall
     public final native void addWaterfallCheckboxClickHandler(WaterfallCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -256,7 +256,7 @@ public class JsoWaterfall
     public final native void addWaterfallClickHandler(WaterfallClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -272,7 +272,7 @@ public class JsoWaterfall
     public final native void addWaterfallHideHandler(WaterfallHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -288,7 +288,7 @@ public class JsoWaterfall
     public final native void addWaterfallLegendItemClickHandler(WaterfallLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -304,7 +304,7 @@ public class JsoWaterfall
     public final native void addWaterfallMouseOutHandler(WaterfallMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -320,7 +320,7 @@ public class JsoWaterfall
     public final native void addWaterfallMouseOverHandler(WaterfallMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -336,7 +336,7 @@ public class JsoWaterfall
     public final native void addWaterfallShowHandler(WaterfallShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

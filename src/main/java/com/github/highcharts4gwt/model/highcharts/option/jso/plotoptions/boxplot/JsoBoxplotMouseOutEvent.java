@@ -14,9 +14,9 @@ public class JsoBoxplotMouseOutEvent
     protected JsoBoxplotMouseOutEvent() {
     }
 
-    public final native Series getSeries()
+    public final native Series series()
         throws RuntimeException /*-{
-        return this.source.chart.options.series[this.source.index];
+        return this.source;
     }-*/
     ;
 

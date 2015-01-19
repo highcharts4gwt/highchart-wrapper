@@ -6,6 +6,6 @@ import com.github.highcharts4gwt.model.highcharts.object.api.Series;
 public interface SplineMouseOutEvent {
 
 
-    Series getSeries();
+    Series series();
 
 }

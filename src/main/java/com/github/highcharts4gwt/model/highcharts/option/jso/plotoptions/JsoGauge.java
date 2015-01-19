@@ -108,7 +108,7 @@ public class JsoGauge
     public final native void addGaugeAfterAnimateHandler(GaugeAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -124,7 +124,7 @@ public class JsoGauge
     public final native void addGaugeCheckboxClickHandler(GaugeCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -140,7 +140,7 @@ public class JsoGauge
     public final native void addGaugeClickHandler(GaugeClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -156,7 +156,7 @@ public class JsoGauge
     public final native void addGaugeHideHandler(GaugeHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -172,7 +172,7 @@ public class JsoGauge
     public final native void addGaugeLegendItemClickHandler(GaugeLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -188,7 +188,7 @@ public class JsoGauge
     public final native void addGaugeMouseOutHandler(GaugeMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -204,7 +204,7 @@ public class JsoGauge
     public final native void addGaugeMouseOverHandler(GaugeMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -220,7 +220,7 @@ public class JsoGauge
     public final native void addGaugeShowHandler(GaugeShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

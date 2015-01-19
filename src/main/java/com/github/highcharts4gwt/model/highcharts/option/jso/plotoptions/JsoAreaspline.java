@@ -159,7 +159,7 @@ public class JsoAreaspline
     public final native void addAreasplineAfterAnimateHandler(AreasplineAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -175,7 +175,7 @@ public class JsoAreaspline
     public final native void addAreasplineCheckboxClickHandler(AreasplineCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -191,7 +191,7 @@ public class JsoAreaspline
     public final native void addAreasplineClickHandler(AreasplineClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -207,7 +207,7 @@ public class JsoAreaspline
     public final native void addAreasplineHideHandler(AreasplineHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -223,7 +223,7 @@ public class JsoAreaspline
     public final native void addAreasplineLegendItemClickHandler(AreasplineLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -239,7 +239,7 @@ public class JsoAreaspline
     public final native void addAreasplineMouseOutHandler(AreasplineMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -255,7 +255,7 @@ public class JsoAreaspline
     public final native void addAreasplineMouseOverHandler(AreasplineMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -271,7 +271,7 @@ public class JsoAreaspline
     public final native void addAreasplineShowHandler(AreasplineShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

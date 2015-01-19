@@ -6,6 +6,6 @@ import com.github.highcharts4gwt.model.highcharts.object.api.Series;
 public interface AreasplinerangeMouseOverEvent {
 
 
-    Series getSeries();
+    Series series();
 
 }

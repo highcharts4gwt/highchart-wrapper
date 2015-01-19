@@ -145,7 +145,7 @@ public class JsoErrorbar
     public final native void addErrorbarAfterAnimateHandler(ErrorbarAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -161,7 +161,7 @@ public class JsoErrorbar
     public final native void addErrorbarCheckboxClickHandler(ErrorbarCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -177,7 +177,7 @@ public class JsoErrorbar
     public final native void addErrorbarClickHandler(ErrorbarClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -193,7 +193,7 @@ public class JsoErrorbar
     public final native void addErrorbarHideHandler(ErrorbarHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -209,7 +209,7 @@ public class JsoErrorbar
     public final native void addErrorbarLegendItemClickHandler(ErrorbarLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -225,7 +225,7 @@ public class JsoErrorbar
     public final native void addErrorbarMouseOutHandler(ErrorbarMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -241,7 +241,7 @@ public class JsoErrorbar
     public final native void addErrorbarMouseOverHandler(ErrorbarMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -257,7 +257,7 @@ public class JsoErrorbar
     public final native void addErrorbarShowHandler(ErrorbarShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

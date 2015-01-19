@@ -64,7 +64,7 @@ public class JsoData
     public final native void addDataClickHandler(DataClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -80,7 +80,7 @@ public class JsoData
     public final native void addDataMouseOutHandler(DataMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -96,7 +96,7 @@ public class JsoData
     public final native void addDataMouseOverHandler(DataMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -112,7 +112,7 @@ public class JsoData
     public final native void addDataRemoveHandler(DataRemoveHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     remove: function(event) {
@@ -128,7 +128,7 @@ public class JsoData
     public final native void addDataSelectHandler(DataSelectHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     select: function(event) {
@@ -144,7 +144,7 @@ public class JsoData
     public final native void addDataUnselectHandler(DataUnselectHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     unselect: function(event) {
@@ -160,7 +160,7 @@ public class JsoData
     public final native void addDataUpdateHandler(DataUpdateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     update: function(event) {

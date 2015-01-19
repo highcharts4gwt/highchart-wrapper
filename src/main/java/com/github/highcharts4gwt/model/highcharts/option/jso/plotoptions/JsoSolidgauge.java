@@ -80,7 +80,7 @@ public class JsoSolidgauge
     public final native void addSolidgaugeAfterAnimateHandler(SolidgaugeAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -96,7 +96,7 @@ public class JsoSolidgauge
     public final native void addSolidgaugeCheckboxClickHandler(SolidgaugeCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -112,7 +112,7 @@ public class JsoSolidgauge
     public final native void addSolidgaugeClickHandler(SolidgaugeClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -128,7 +128,7 @@ public class JsoSolidgauge
     public final native void addSolidgaugeHideHandler(SolidgaugeHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -144,7 +144,7 @@ public class JsoSolidgauge
     public final native void addSolidgaugeLegendItemClickHandler(SolidgaugeLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -160,7 +160,7 @@ public class JsoSolidgauge
     public final native void addSolidgaugeMouseOutHandler(SolidgaugeMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -176,7 +176,7 @@ public class JsoSolidgauge
     public final native void addSolidgaugeMouseOverHandler(SolidgaugeMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -192,7 +192,7 @@ public class JsoSolidgauge
     public final native void addSolidgaugeShowHandler(SolidgaugeShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

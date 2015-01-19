@@ -133,7 +133,7 @@ public class JsoScatter
     public final native void addScatterAfterAnimateHandler(ScatterAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -149,7 +149,7 @@ public class JsoScatter
     public final native void addScatterCheckboxClickHandler(ScatterCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -165,7 +165,7 @@ public class JsoScatter
     public final native void addScatterClickHandler(ScatterClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -181,7 +181,7 @@ public class JsoScatter
     public final native void addScatterHideHandler(ScatterHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -197,7 +197,7 @@ public class JsoScatter
     public final native void addScatterLegendItemClickHandler(ScatterLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -213,7 +213,7 @@ public class JsoScatter
     public final native void addScatterMouseOutHandler(ScatterMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -229,7 +229,7 @@ public class JsoScatter
     public final native void addScatterMouseOverHandler(ScatterMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -245,7 +245,7 @@ public class JsoScatter
     public final native void addScatterShowHandler(ScatterShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

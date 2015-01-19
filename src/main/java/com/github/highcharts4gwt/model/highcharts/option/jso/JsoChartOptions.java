@@ -111,19 +111,6 @@ public class JsoChartOptions
     }-*/
     ;
 
-    public final native Navigation navigation()
-        throws RuntimeException /*-{
-        return this["navigation"] = (this["navigation"] || {});
-    }-*/
-    ;
-
-    public final native JsoChartOptions navigation(Navigation navigation)
-        throws RuntimeException /*-{
-        this["navigation"] = navigation;
-        return this;
-    }-*/
-    ;
-
     public final native Exporting exporting()
         throws RuntimeException /*-{
         return this["exporting"] = (this["exporting"] || {});
@@ -137,19 +124,6 @@ public class JsoChartOptions
     }-*/
     ;
 
-    public final native Subtitle subtitle()
-        throws RuntimeException /*-{
-        return this["subtitle"] = (this["subtitle"] || {});
-    }-*/
-    ;
-
-    public final native JsoChartOptions subtitle(Subtitle subtitle)
-        throws RuntimeException /*-{
-        this["subtitle"] = subtitle;
-        return this;
-    }-*/
-    ;
-
     public final native Title title()
         throws RuntimeException /*-{
         return this["title"] = (this["title"] || {});
@@ -159,6 +133,32 @@ public class JsoChartOptions
     public final native JsoChartOptions title(Title title)
         throws RuntimeException /*-{
         this["title"] = title;
+        return this;
+    }-*/
+    ;
+
+    public final native Navigation navigation()
+        throws RuntimeException /*-{
+        return this["navigation"] = (this["navigation"] || {});
+    }-*/
+    ;
+
+    public final native JsoChartOptions navigation(Navigation navigation)
+        throws RuntimeException /*-{
+        this["navigation"] = navigation;
+        return this;
+    }-*/
+    ;
+
+    public final native Subtitle subtitle()
+        throws RuntimeException /*-{
+        return this["subtitle"] = (this["subtitle"] || {});
+    }-*/
+    ;
+
+    public final native JsoChartOptions subtitle(Subtitle subtitle)
+        throws RuntimeException /*-{
+        this["subtitle"] = subtitle;
         return this;
     }-*/
     ;

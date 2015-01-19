@@ -9,13 +9,8 @@ public class MockErrorbarMouseOverEvent
 
     private com.github.highcharts4gwt.model.highcharts.object.api.Series Series;
 
-    public com.github.highcharts4gwt.model.highcharts.object.api.Series getSeries() {
+    public com.github.highcharts4gwt.model.highcharts.object.api.Series series() {
         return Series;
-    }
-
-    public MockErrorbarMouseOverEvent Series(com.github.highcharts4gwt.model.highcharts.object.api.Series Series) {
-        this.Series = Series;
-        return this;
     }
 
 }

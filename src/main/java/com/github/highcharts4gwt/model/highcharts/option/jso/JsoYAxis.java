@@ -104,7 +104,7 @@ public class JsoYAxis
     public final native void addYAxisAfterSetExtremesHandler(YAxisAfterSetExtremesHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     axisAfterSetExtremes: function(event) {
@@ -120,7 +120,7 @@ public class JsoYAxis
     public final native void addYAxisSetExtremesHandler(YAxisSetExtremesHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     axisSetExtremes: function(event) {

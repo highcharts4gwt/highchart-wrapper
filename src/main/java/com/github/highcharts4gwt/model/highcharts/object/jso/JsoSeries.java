@@ -1,8 +1,10 @@
 
 package com.github.highcharts4gwt.model.highcharts.object.jso;
 
+import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.highcharts.object.api.Axis;
 import com.github.highcharts4gwt.model.highcharts.object.api.Chart;
+import com.github.highcharts4gwt.model.highcharts.object.api.Point;
 import com.github.highcharts4gwt.model.highcharts.object.api.Series;
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -42,6 +44,12 @@ public class JsoSeries
     public final native Chart chart()
         throws RuntimeException /*-{
         return this["chart"] = (this["chart"] || {});
+    }-*/
+    ;
+
+    public final native Array<Point> data()
+        throws RuntimeException /*-{
+        return this["data"] = (this["data"] || []);
     }-*/
     ;
 

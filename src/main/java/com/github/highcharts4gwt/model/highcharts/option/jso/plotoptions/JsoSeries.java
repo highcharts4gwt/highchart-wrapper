@@ -159,7 +159,7 @@ public class JsoSeries
     public final native void addSeriesAfterAnimateHandler(SeriesAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -175,7 +175,7 @@ public class JsoSeries
     public final native void addSeriesCheckboxClickHandler(SeriesCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -191,7 +191,7 @@ public class JsoSeries
     public final native void addSeriesClickHandler(SeriesClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -207,7 +207,7 @@ public class JsoSeries
     public final native void addSeriesHideHandler(SeriesHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -223,7 +223,7 @@ public class JsoSeries
     public final native void addSeriesLegendItemClickHandler(SeriesLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -239,7 +239,7 @@ public class JsoSeries
     public final native void addSeriesMouseOutHandler(SeriesMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -255,7 +255,7 @@ public class JsoSeries
     public final native void addSeriesMouseOverHandler(SeriesMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -271,7 +271,7 @@ public class JsoSeries
     public final native void addSeriesShowHandler(SeriesShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

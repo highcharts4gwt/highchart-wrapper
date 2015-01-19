@@ -9,13 +9,8 @@ public class MockGaugeHideEvent
 
     private com.github.highcharts4gwt.model.highcharts.object.api.Series Series;
 
-    public com.github.highcharts4gwt.model.highcharts.object.api.Series getSeries() {
+    public com.github.highcharts4gwt.model.highcharts.object.api.Series series() {
         return Series;
-    }
-
-    public MockGaugeHideEvent Series(com.github.highcharts4gwt.model.highcharts.object.api.Series Series) {
-        this.Series = Series;
-        return this;
     }
 
 }

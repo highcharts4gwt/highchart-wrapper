@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.errorbar.point;
 
+import com.github.highcharts4gwt.model.highcharts.object.api.Point;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.point.PointClickEvent;
 import com.google.gwt.dom.client.NativeEvent;
 
@@ -12,5 +13,11 @@ public class JsoPointClickEvent
 
     protected JsoPointClickEvent() {
     }
+
+    public final native Point point()
+        throws RuntimeException /*-{
+        return this.source;
+    }-*/
+    ;
 
 }

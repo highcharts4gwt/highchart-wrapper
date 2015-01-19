@@ -144,7 +144,7 @@ public class JsoChart
     public final native void addChartAddSeriesHandler(ChartAddSeriesHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     addSeries: function(event) {
@@ -160,7 +160,7 @@ public class JsoChart
     public final native void addChartClickHandler(ChartClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -176,7 +176,7 @@ public class JsoChart
     public final native void addChartDrilldownHandler(ChartDrilldownHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     drilldown: function(event) {
@@ -192,7 +192,7 @@ public class JsoChart
     public final native void addChartDrillupHandler(ChartDrillupHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     drillup: function(event) {
@@ -208,7 +208,7 @@ public class JsoChart
     public final native void addChartLoadHandler(ChartLoadHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     load: function(event) {
@@ -224,7 +224,7 @@ public class JsoChart
     public final native void addChartRedrawHandler(ChartRedrawHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     redraw: function(event) {
@@ -240,7 +240,7 @@ public class JsoChart
     public final native void addChartSelectionHandler(ChartSelectionHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     selection: function(event) {

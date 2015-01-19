@@ -160,7 +160,7 @@ public class JsoFunnel
     public final native void addFunnelAfterAnimateHandler(FunnelAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -176,7 +176,7 @@ public class JsoFunnel
     public final native void addFunnelCheckboxClickHandler(FunnelCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -192,7 +192,7 @@ public class JsoFunnel
     public final native void addFunnelClickHandler(FunnelClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -208,7 +208,7 @@ public class JsoFunnel
     public final native void addFunnelHideHandler(FunnelHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -224,7 +224,7 @@ public class JsoFunnel
     public final native void addFunnelLegendItemClickHandler(FunnelLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -240,7 +240,7 @@ public class JsoFunnel
     public final native void addFunnelMouseOutHandler(FunnelMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -256,7 +256,7 @@ public class JsoFunnel
     public final native void addFunnelMouseOverHandler(FunnelMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -272,7 +272,7 @@ public class JsoFunnel
     public final native void addFunnelShowHandler(FunnelShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

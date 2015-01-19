@@ -145,7 +145,7 @@ public class JsoArearange
     public final native void addArearangeAfterAnimateHandler(ArearangeAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -161,7 +161,7 @@ public class JsoArearange
     public final native void addArearangeCheckboxClickHandler(ArearangeCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -177,7 +177,7 @@ public class JsoArearange
     public final native void addArearangeClickHandler(ArearangeClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -193,7 +193,7 @@ public class JsoArearange
     public final native void addArearangeHideHandler(ArearangeHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -209,7 +209,7 @@ public class JsoArearange
     public final native void addArearangeLegendItemClickHandler(ArearangeLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -225,7 +225,7 @@ public class JsoArearange
     public final native void addArearangeMouseOutHandler(ArearangeMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -241,7 +241,7 @@ public class JsoArearange
     public final native void addArearangeMouseOverHandler(ArearangeMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -257,7 +257,7 @@ public class JsoArearange
     public final native void addArearangeShowHandler(ArearangeShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

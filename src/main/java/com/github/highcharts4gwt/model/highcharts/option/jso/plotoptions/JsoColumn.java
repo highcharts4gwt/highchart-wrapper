@@ -224,7 +224,7 @@ public class JsoColumn
     public final native void addColumnAfterAnimateHandler(ColumnAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -240,7 +240,7 @@ public class JsoColumn
     public final native void addColumnCheckboxClickHandler(ColumnCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -256,7 +256,7 @@ public class JsoColumn
     public final native void addColumnClickHandler(ColumnClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -272,7 +272,7 @@ public class JsoColumn
     public final native void addColumnHideHandler(ColumnHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -288,7 +288,7 @@ public class JsoColumn
     public final native void addColumnLegendItemClickHandler(ColumnLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -304,7 +304,7 @@ public class JsoColumn
     public final native void addColumnMouseOutHandler(ColumnMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -320,7 +320,7 @@ public class JsoColumn
     public final native void addColumnMouseOverHandler(ColumnMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -336,7 +336,7 @@ public class JsoColumn
     public final native void addColumnShowHandler(ColumnShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

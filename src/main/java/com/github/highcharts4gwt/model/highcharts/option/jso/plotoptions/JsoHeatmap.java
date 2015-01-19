@@ -198,7 +198,7 @@ public class JsoHeatmap
     public final native void addHeatmapAfterAnimateHandler(HeatmapAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -214,7 +214,7 @@ public class JsoHeatmap
     public final native void addHeatmapCheckboxClickHandler(HeatmapCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -230,7 +230,7 @@ public class JsoHeatmap
     public final native void addHeatmapClickHandler(HeatmapClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -246,7 +246,7 @@ public class JsoHeatmap
     public final native void addHeatmapHideHandler(HeatmapHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -262,7 +262,7 @@ public class JsoHeatmap
     public final native void addHeatmapLegendItemClickHandler(HeatmapLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -278,7 +278,7 @@ public class JsoHeatmap
     public final native void addHeatmapMouseOutHandler(HeatmapMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -294,7 +294,7 @@ public class JsoHeatmap
     public final native void addHeatmapMouseOverHandler(HeatmapMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -310,7 +310,7 @@ public class JsoHeatmap
     public final native void addHeatmapShowHandler(HeatmapShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

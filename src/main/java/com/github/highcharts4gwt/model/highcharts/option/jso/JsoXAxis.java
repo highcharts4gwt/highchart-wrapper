@@ -103,7 +103,7 @@ public class JsoXAxis
     public final native void addXAxisAfterSetExtremesHandler(XAxisAfterSetExtremesHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     axisAfterSetExtremes: function(event) {
@@ -119,7 +119,7 @@ public class JsoXAxis
     public final native void addXAxisSetExtremesHandler(XAxisSetExtremesHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     axisSetExtremes: function(event) {

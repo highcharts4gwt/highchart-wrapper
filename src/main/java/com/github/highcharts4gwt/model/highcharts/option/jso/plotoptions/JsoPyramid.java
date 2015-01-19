@@ -160,7 +160,7 @@ public class JsoPyramid
     public final native void addPyramidAfterAnimateHandler(PyramidAfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
@@ -176,7 +176,7 @@ public class JsoPyramid
     public final native void addPyramidCheckboxClickHandler(PyramidCheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
@@ -192,7 +192,7 @@ public class JsoPyramid
     public final native void addPyramidClickHandler(PyramidClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
@@ -208,7 +208,7 @@ public class JsoPyramid
     public final native void addPyramidHideHandler(PyramidHideHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
@@ -224,7 +224,7 @@ public class JsoPyramid
     public final native void addPyramidLegendItemClickHandler(PyramidLegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
@@ -240,7 +240,7 @@ public class JsoPyramid
     public final native void addPyramidMouseOutHandler(PyramidMouseOutHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
@@ -256,7 +256,7 @@ public class JsoPyramid
     public final native void addPyramidMouseOverHandler(PyramidMouseOverHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
@@ -272,7 +272,7 @@ public class JsoPyramid
     public final native void addPyramidShowHandler(PyramidShowHandler handler)
         throws RuntimeException 
         /*-{
-            return $wnd.jQuery.extend(true, this, 
+            $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {

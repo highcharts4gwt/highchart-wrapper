@@ -6,6 +6,6 @@ import com.github.highcharts4gwt.model.highcharts.object.api.Series;
 public interface LineMouseOutEvent {
 
 
-    Series getSeries();
+    Series series();
 
 }
