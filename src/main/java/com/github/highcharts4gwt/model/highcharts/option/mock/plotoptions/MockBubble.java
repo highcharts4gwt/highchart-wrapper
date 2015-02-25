@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Bubble;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleCheckboxClickHandler;
@@ -37,6 +38,7 @@ public class MockBubble
     private String negativeColor;
     private Point point;
     private double pointInterval;
+    private String pointIntervalUnit;
     private double pointStart;
     private boolean selected;
     private boolean shadowAsBoolean;
@@ -52,6 +54,8 @@ public class MockBubble
     private double zMax;
     private double zMin;
     private double zThreshold;
+    private String zoneAxis;
+    private ArrayNumber zones;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -230,6 +234,15 @@ public class MockBubble
         return this;
     }
 
+    public String pointIntervalUnit() {
+        return pointIntervalUnit;
+    }
+
+    public MockBubble pointIntervalUnit(String pointIntervalUnit) {
+        this.pointIntervalUnit = pointIntervalUnit;
+        return this;
+    }
+
     public double pointStart() {
         return pointStart;
     }
@@ -362,6 +375,24 @@ public class MockBubble
 
     public MockBubble zThreshold(double zThreshold) {
         this.zThreshold = zThreshold;
+        return this;
+    }
+
+    public String zoneAxis() {
+        return zoneAxis;
+    }
+
+    public MockBubble zoneAxis(String zoneAxis) {
+        this.zoneAxis = zoneAxis;
+        return this;
+    }
+
+    public ArrayNumber zones() {
+        return zones;
+    }
+
+    public MockBubble zones(ArrayNumber zones) {
+        this.zones = zones;
         return this;
     }
 

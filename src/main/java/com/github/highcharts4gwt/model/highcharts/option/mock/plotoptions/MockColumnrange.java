@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Columnrange;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.ColumnrangeAfterAnimateHandler;
@@ -40,9 +41,9 @@ public class MockColumnrange
     private boolean grouping;
     private String linkedTo;
     private double minPointLength;
-    private String negativeColor;
     private Point point;
     private double pointInterval;
+    private String pointIntervalUnit;
     private double pointPadding;
     private String pointPlacementAsString;
     private double pointPlacementAsNumber;
@@ -54,13 +55,14 @@ public class MockColumnrange
     private String shadowAsJsonString;
     private boolean showCheckbox;
     private boolean showInLegend;
-    private String stacking;
     private States states;
     private boolean stickyTracking;
     private double threshold;
     private Tooltip tooltip;
     private double turboThreshold;
     private boolean visible;
+    private String zoneAxis;
+    private ArrayNumber zones;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -266,15 +268,6 @@ public class MockColumnrange
         return this;
     }
 
-    public String negativeColor() {
-        return negativeColor;
-    }
-
-    public MockColumnrange negativeColor(String negativeColor) {
-        this.negativeColor = negativeColor;
-        return this;
-    }
-
     public Point point() {
         return point;
     }
@@ -290,6 +283,15 @@ public class MockColumnrange
 
     public MockColumnrange pointInterval(double pointInterval) {
         this.pointInterval = pointInterval;
+        return this;
+    }
+
+    public String pointIntervalUnit() {
+        return pointIntervalUnit;
+    }
+
+    public MockColumnrange pointIntervalUnit(String pointIntervalUnit) {
+        this.pointIntervalUnit = pointIntervalUnit;
         return this;
     }
 
@@ -392,15 +394,6 @@ public class MockColumnrange
         return this;
     }
 
-    public String stacking() {
-        return stacking;
-    }
-
-    public MockColumnrange stacking(String stacking) {
-        this.stacking = stacking;
-        return this;
-    }
-
     public States states() {
         return states;
     }
@@ -452,6 +445,24 @@ public class MockColumnrange
 
     public MockColumnrange visible(boolean visible) {
         this.visible = visible;
+        return this;
+    }
+
+    public String zoneAxis() {
+        return zoneAxis;
+    }
+
+    public MockColumnrange zoneAxis(String zoneAxis) {
+        this.zoneAxis = zoneAxis;
+        return this;
+    }
+
+    public ArrayNumber zones() {
+        return zones;
+    }
+
+    public MockColumnrange zones(ArrayNumber zones) {
+        this.zones = zones;
         return this;
     }
 

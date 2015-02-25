@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 
 public interface DataLabels {
 
@@ -8,6 +9,14 @@ public interface DataLabels {
     String align();
 
     DataLabels align(String align);
+
+    boolean allowOverlap();
+
+    DataLabels allowOverlap(boolean allowOverlap);
+
+    ArrayNumber autoRotation();
+
+    DataLabels autoRotation(ArrayNumber autoRotation);
 
     String backgroundColor();
 

@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineCheckboxClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineClickHandler;
@@ -114,6 +115,10 @@ public interface Areaspline {
 
     Areaspline pointInterval(double pointInterval);
 
+    String pointIntervalUnit();
+
+    Areaspline pointIntervalUnit(String pointIntervalUnit);
+
     String pointPlacementAsString();
 
     Areaspline pointPlacementAsString(String pointPlacementAsString);
@@ -181,5 +186,13 @@ public interface Areaspline {
     boolean visible();
 
     Areaspline visible(boolean visible);
+
+    String zoneAxis();
+
+    Areaspline zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Areaspline zones(ArrayNumber zones);
 
 }

@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnCheckboxClickHandler;
@@ -126,6 +127,10 @@ public interface Column {
 
     Column pointInterval(double pointInterval);
 
+    String pointIntervalUnit();
+
+    Column pointIntervalUnit(String pointIntervalUnit);
+
     double pointPadding();
 
     Column pointPadding(double pointPadding);
@@ -197,5 +202,13 @@ public interface Column {
     boolean visible();
 
     Column visible(boolean visible);
+
+    String zoneAxis();
+
+    Column zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Column zones(ArrayNumber zones);
 
 }

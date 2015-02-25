@@ -48,6 +48,8 @@ public class MockPyramid
     private boolean visible;
     private double widthAsNumber;
     private String widthAsString;
+    private String zoneAxis;
+    private ArrayNumber zones;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -313,6 +315,24 @@ public class MockPyramid
 
     public MockPyramid widthAsString(String widthAsString) {
         this.widthAsString = widthAsString;
+        return this;
+    }
+
+    public String zoneAxis() {
+        return zoneAxis;
+    }
+
+    public MockPyramid zoneAxis(String zoneAxis) {
+        this.zoneAxis = zoneAxis;
+        return this;
+    }
+
+    public ArrayNumber zones() {
+        return zones;
+    }
+
+    public MockPyramid zones(ArrayNumber zones) {
+        this.zones = zones;
         return this;
     }
 

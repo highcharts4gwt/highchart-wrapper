@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleCheckboxClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleClickHandler;
@@ -102,6 +103,10 @@ public interface Bubble {
 
     Bubble pointInterval(double pointInterval);
 
+    String pointIntervalUnit();
+
+    Bubble pointIntervalUnit(String pointIntervalUnit);
+
     double pointStart();
 
     Bubble pointStart(double pointStart);
@@ -161,5 +166,13 @@ public interface Bubble {
     double zThreshold();
 
     Bubble zThreshold(double zThreshold);
+
+    String zoneAxis();
+
+    Bubble zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Bubble zones(ArrayNumber zones);
 
 }

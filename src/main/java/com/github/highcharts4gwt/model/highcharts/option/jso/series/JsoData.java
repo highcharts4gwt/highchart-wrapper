@@ -34,6 +34,19 @@ public class JsoData
     }-*/
     ;
 
+    public final native double colorValue()
+        throws RuntimeException /*-{
+        return this["colorValue"] = (this["colorValue"] || undefined);
+    }-*/
+    ;
+
+    public final native JsoData colorValue(double colorValue)
+        throws RuntimeException /*-{
+        this["colorValue"] = colorValue;
+        return this;
+    }-*/
+    ;
+
     public final native String dataLabels()
         throws RuntimeException /*-{
         this["dataLabels"] = (this["dataLabels"] || {});
@@ -247,6 +260,19 @@ public class JsoData
     public final native JsoData name(String name)
         throws RuntimeException /*-{
         this["name"] = name;
+        return this;
+    }-*/
+    ;
+
+    public final native String parent()
+        throws RuntimeException /*-{
+        return this["parent"] = (this["parent"] || "undefined");
+    }-*/
+    ;
+
+    public final native JsoData parent(String parent)
+        throws RuntimeException /*-{
+        this["parent"] = parent;
         return this;
     }-*/
     ;

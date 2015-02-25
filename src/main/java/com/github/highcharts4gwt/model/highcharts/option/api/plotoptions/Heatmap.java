@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapAfterAnimateHandler;
@@ -137,5 +138,13 @@ public interface Heatmap {
     boolean visible();
 
     Heatmap visible(boolean visible);
+
+    String zoneAxis();
+
+    Heatmap zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Heatmap zones(ArrayNumber zones);
 
 }

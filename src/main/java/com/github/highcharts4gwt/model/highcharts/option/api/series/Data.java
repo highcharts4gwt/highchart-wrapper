@@ -17,6 +17,10 @@ public interface Data {
 
     Data color(String color);
 
+    double colorValue();
+
+    Data colorValue(double colorValue);
+
     String dataLabels();
 
     Data dataLabels(String dataLabelsAsJsonString);
@@ -62,6 +66,10 @@ public interface Data {
     String name();
 
     Data name(String name);
+
+    String parent();
+
+    Data parent(String parent);
 
     boolean sliced();
 

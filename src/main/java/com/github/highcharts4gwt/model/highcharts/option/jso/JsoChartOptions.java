@@ -111,32 +111,6 @@ public class JsoChartOptions
     }-*/
     ;
 
-    public final native Exporting exporting()
-        throws RuntimeException /*-{
-        return this["exporting"] = (this["exporting"] || {});
-    }-*/
-    ;
-
-    public final native JsoChartOptions exporting(Exporting exporting)
-        throws RuntimeException /*-{
-        this["exporting"] = exporting;
-        return this;
-    }-*/
-    ;
-
-    public final native Title title()
-        throws RuntimeException /*-{
-        return this["title"] = (this["title"] || {});
-    }-*/
-    ;
-
-    public final native JsoChartOptions title(Title title)
-        throws RuntimeException /*-{
-        this["title"] = title;
-        return this;
-    }-*/
-    ;
-
     public final native Navigation navigation()
         throws RuntimeException /*-{
         return this["navigation"] = (this["navigation"] || {});
@@ -159,6 +133,32 @@ public class JsoChartOptions
     public final native JsoChartOptions subtitle(Subtitle subtitle)
         throws RuntimeException /*-{
         this["subtitle"] = subtitle;
+        return this;
+    }-*/
+    ;
+
+    public final native Title title()
+        throws RuntimeException /*-{
+        return this["title"] = (this["title"] || {});
+    }-*/
+    ;
+
+    public final native JsoChartOptions title(Title title)
+        throws RuntimeException /*-{
+        this["title"] = title;
+        return this;
+    }-*/
+    ;
+
+    public final native Exporting exporting()
+        throws RuntimeException /*-{
+        return this["exporting"] = (this["exporting"] || {});
+    }-*/
+    ;
+
+    public final native JsoChartOptions exporting(Exporting exporting)
+        throws RuntimeException /*-{
+        this["exporting"] = exporting;
         return this;
     }-*/
     ;
@@ -217,7 +217,7 @@ public class JsoChartOptions
 
     public final native ArrayString colors()
         throws RuntimeException /*-{
-        return this["colors"] = (this["colors"] || [ "#7cb5ec" , "#434348" , "#90ed7d" , "#f7a35c" , "#8085e9" , "#f15c80" , "#e4d354" , "#8085e8" , "#8d4653" , "#91e8e1"]);
+        return this["colors"] = (this["colors"] || [ "#7cb5ec" , "#434348" , "#90ed7d" , "#f7a35c" , "#8085e9" , "#f15c80" , "#e4d354" , "#2b908f" , "#f45b5b" , "#91e8e1"]);
     }-*/
     ;
 

@@ -13,6 +13,10 @@ public interface Data {
 
     Data dateFormat(String dateFormat);
 
+    String decimalPoint();
+
+    Data decimalPoint(String decimalPoint);
+
     double endColumn();
 
     Data endColumn(double endColumn);
@@ -20,6 +24,10 @@ public interface Data {
     double endRow();
 
     Data endRow(double endRow);
+
+    boolean firstRowAsNames();
+
+    Data firstRowAsNames(boolean firstRowAsNames);
 
     String googleSpreadsheetKey();
 

@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Heatmap;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.DataLabels;
@@ -46,6 +47,8 @@ public class MockHeatmap
     private Tooltip tooltip;
     private double turboThreshold;
     private boolean visible;
+    private String zoneAxis;
+    private ArrayNumber zones;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -302,6 +305,24 @@ public class MockHeatmap
 
     public MockHeatmap visible(boolean visible) {
         this.visible = visible;
+        return this;
+    }
+
+    public String zoneAxis() {
+        return zoneAxis;
+    }
+
+    public MockHeatmap zoneAxis(String zoneAxis) {
+        this.zoneAxis = zoneAxis;
+        return this;
+    }
+
+    public ArrayNumber zones() {
+        return zones;
+    }
+
+    public MockHeatmap zones(ArrayNumber zones) {
+        this.zones = zones;
         return this;
     }
 

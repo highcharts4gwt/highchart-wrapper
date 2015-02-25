@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Scatter;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.Marker;
@@ -34,6 +35,7 @@ public class MockScatter
     private String negativeColor;
     private Point point;
     private double pointInterval;
+    private String pointIntervalUnit;
     private double pointStart;
     private boolean selected;
     private boolean shadowAsBoolean;
@@ -46,6 +48,8 @@ public class MockScatter
     private Tooltip tooltip;
     private double turboThreshold;
     private boolean visible;
+    private String zoneAxis;
+    private ArrayNumber zones;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -197,6 +201,15 @@ public class MockScatter
         return this;
     }
 
+    public String pointIntervalUnit() {
+        return pointIntervalUnit;
+    }
+
+    public MockScatter pointIntervalUnit(String pointIntervalUnit) {
+        this.pointIntervalUnit = pointIntervalUnit;
+        return this;
+    }
+
     public double pointStart() {
         return pointStart;
     }
@@ -302,6 +315,24 @@ public class MockScatter
 
     public MockScatter visible(boolean visible) {
         this.visible = visible;
+        return this;
+    }
+
+    public String zoneAxis() {
+        return zoneAxis;
+    }
+
+    public MockScatter zoneAxis(String zoneAxis) {
+        this.zoneAxis = zoneAxis;
+        return this;
+    }
+
+    public ArrayNumber zones() {
+        return zones;
+    }
+
+    public MockScatter zones(ArrayNumber zones) {
+        this.zones = zones;
         return this;
     }
 

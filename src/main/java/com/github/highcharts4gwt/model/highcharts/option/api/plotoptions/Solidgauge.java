@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.Point;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeAfterAnimateHandler;
@@ -88,5 +89,13 @@ public interface Solidgauge {
     boolean wrap();
 
     Solidgauge wrap(boolean wrap);
+
+    String zoneAxis();
+
+    Solidgauge zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Solidgauge zones(ArrayNumber zones);
 
 }

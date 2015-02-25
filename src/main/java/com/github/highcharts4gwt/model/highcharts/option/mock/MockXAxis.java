@@ -8,7 +8,9 @@ import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Labels;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PlotBand;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PlotLine;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Title;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterBreaksHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterSetExtremesHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisPointBreakHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisSetExtremesHandler;
 
 public class MockXAxis
@@ -17,6 +19,7 @@ public class MockXAxis
 
     private boolean allowDecimals;
     private String alternateGridColor;
+    private ArrayNumber breaks;
     private ArrayString categories;
     private double ceiling;
     private String dateTimeLabelFormats;
@@ -57,6 +60,7 @@ public class MockXAxis
     private boolean showLastLabel;
     private double startOfWeek;
     private boolean startOnTick;
+    private double tickAmount;
     private String tickColor;
     private double tickInterval;
     private double tickLength;
@@ -84,6 +88,15 @@ public class MockXAxis
 
     public MockXAxis alternateGridColor(String alternateGridColor) {
         this.alternateGridColor = alternateGridColor;
+        return this;
+    }
+
+    public ArrayNumber breaks() {
+        return breaks;
+    }
+
+    public MockXAxis breaks(ArrayNumber breaks) {
+        this.breaks = breaks;
         return this;
     }
 
@@ -123,7 +136,13 @@ public class MockXAxis
         return this;
     }
 
+    public void addXAxisAfterBreaksHandler(XAxisAfterBreaksHandler handler) {
+    }
+
     public void addXAxisAfterSetExtremesHandler(XAxisAfterSetExtremesHandler handler) {
+    }
+
+    public void addXAxisPointBreakHandler(XAxisPointBreakHandler handler) {
     }
 
     public void addXAxisSetExtremesHandler(XAxisSetExtremesHandler handler) {
@@ -450,6 +469,15 @@ public class MockXAxis
 
     public MockXAxis startOnTick(boolean startOnTick) {
         this.startOnTick = startOnTick;
+        return this;
+    }
+
+    public double tickAmount() {
+        return tickAmount;
+    }
+
+    public MockXAxis tickAmount(double tickAmount) {
+        this.tickAmount = tickAmount;
         return this;
     }
 

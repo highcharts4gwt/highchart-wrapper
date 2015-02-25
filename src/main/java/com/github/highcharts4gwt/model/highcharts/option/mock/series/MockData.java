@@ -16,6 +16,7 @@ public class MockData
 {
 
     private String color;
+    private double colorValue;
     private String dataLabels;
     private String drilldown;
     private String id;
@@ -24,6 +25,7 @@ public class MockData
     private double legendIndex;
     private Marker marker;
     private String name;
+    private String parent;
     private boolean sliced;
     private double x;
     private double y;
@@ -34,6 +36,15 @@ public class MockData
 
     public MockData color(String color) {
         this.color = color;
+        return this;
+    }
+
+    public double colorValue() {
+        return colorValue;
+    }
+
+    public MockData colorValue(double colorValue) {
+        this.colorValue = colorValue;
         return this;
     }
 
@@ -127,6 +138,15 @@ public class MockData
 
     public MockData name(String name) {
         this.name = name;
+        return this;
+    }
+
+    public String parent() {
+        return parent;
+    }
+
+    public MockData parent(String parent) {
+        this.parent = parent;
         return this;
     }
 

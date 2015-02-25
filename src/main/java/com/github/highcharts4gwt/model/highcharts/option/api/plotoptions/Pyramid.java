@@ -143,4 +143,12 @@ public interface Pyramid {
 
     Pyramid widthAsString(String widthAsString);
 
+    String zoneAxis();
+
+    Pyramid zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Pyramid zones(ArrayNumber zones);
+
 }

@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.Point;
@@ -126,6 +127,10 @@ public interface Waterfall {
 
     Waterfall pointInterval(double pointInterval);
 
+    String pointIntervalUnit();
+
+    Waterfall pointIntervalUnit(String pointIntervalUnit);
+
     double pointPadding();
 
     Waterfall pointPadding(double pointPadding);
@@ -193,5 +198,13 @@ public interface Waterfall {
     boolean visible();
 
     Waterfall visible(boolean visible);
+
+    String zoneAxis();
+
+    Waterfall zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Waterfall zones(ArrayNumber zones);
 
 }

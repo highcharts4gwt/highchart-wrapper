@@ -507,4 +507,30 @@ public class JsoPyramid
     }-*/
     ;
 
+    public final native String zoneAxis()
+        throws RuntimeException /*-{
+        return this["zoneAxis"] = (this["zoneAxis"] || "y");
+    }-*/
+    ;
+
+    public final native JsoPyramid zoneAxis(String zoneAxis)
+        throws RuntimeException /*-{
+        this["zoneAxis"] = zoneAxis;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayNumber zones()
+        throws RuntimeException /*-{
+        return this["zones"] = (this["zones"] || []);
+    }-*/
+    ;
+
+    public final native JsoPyramid zones(ArrayNumber zones)
+        throws RuntimeException /*-{
+        this["zones"] = zones;
+        return this;
+    }-*/
+    ;
+
 }

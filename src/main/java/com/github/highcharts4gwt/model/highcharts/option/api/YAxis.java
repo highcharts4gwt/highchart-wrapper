@@ -8,7 +8,9 @@ import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.PlotBand;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.PlotLine;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.StackLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.Title;
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisAfterBreaksHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisAfterSetExtremesHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisPointBreakHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisSetExtremesHandler;
 
 public interface YAxis {
@@ -21,6 +23,10 @@ public interface YAxis {
     String alternateGridColor();
 
     YAxis alternateGridColor(String alternateGridColor);
+
+    ArrayNumber breaks();
+
+    YAxis breaks(ArrayNumber breaks);
 
     ArrayString categories();
 
@@ -38,7 +44,11 @@ public interface YAxis {
 
     YAxis endOnTick(boolean endOnTick);
 
+    void addYAxisAfterBreaksHandler(YAxisAfterBreaksHandler yAxisAfterBreaksHandler);
+
     void addYAxisAfterSetExtremesHandler(YAxisAfterSetExtremesHandler yAxisAfterSetExtremesHandler);
+
+    void addYAxisPointBreakHandler(YAxisPointBreakHandler yAxisPointBreakHandler);
 
     void addYAxisSetExtremesHandler(YAxisSetExtremesHandler yAxisSetExtremesHandler);
 
@@ -205,6 +215,10 @@ public interface YAxis {
     boolean startOnTick();
 
     YAxis startOnTick(boolean startOnTick);
+
+    double tickAmount();
+
+    YAxis tickAmount(double tickAmount);
 
     String tickColor();
 

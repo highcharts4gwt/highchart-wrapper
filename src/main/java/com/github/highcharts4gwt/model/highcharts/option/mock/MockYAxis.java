@@ -9,7 +9,9 @@ import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.PlotBand;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.PlotLine;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.StackLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.Title;
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisAfterBreaksHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisAfterSetExtremesHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisPointBreakHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisSetExtremesHandler;
 
 public class MockYAxis
@@ -18,6 +20,7 @@ public class MockYAxis
 
     private boolean allowDecimals;
     private String alternateGridColor;
+    private ArrayNumber breaks;
     private ArrayString categories;
     private double ceiling;
     private String dateTimeLabelFormats;
@@ -63,6 +66,7 @@ public class MockYAxis
     private StackLabels stackLabels;
     private double startOfWeek;
     private boolean startOnTick;
+    private double tickAmount;
     private String tickColor;
     private double tickInterval;
     private double tickLength;
@@ -90,6 +94,15 @@ public class MockYAxis
 
     public MockYAxis alternateGridColor(String alternateGridColor) {
         this.alternateGridColor = alternateGridColor;
+        return this;
+    }
+
+    public ArrayNumber breaks() {
+        return breaks;
+    }
+
+    public MockYAxis breaks(ArrayNumber breaks) {
+        this.breaks = breaks;
         return this;
     }
 
@@ -129,7 +142,13 @@ public class MockYAxis
         return this;
     }
 
+    public void addYAxisAfterBreaksHandler(YAxisAfterBreaksHandler handler) {
+    }
+
     public void addYAxisAfterSetExtremesHandler(YAxisAfterSetExtremesHandler handler) {
+    }
+
+    public void addYAxisPointBreakHandler(YAxisPointBreakHandler handler) {
     }
 
     public void addYAxisSetExtremesHandler(YAxisSetExtremesHandler handler) {
@@ -501,6 +520,15 @@ public class MockYAxis
 
     public MockYAxis startOnTick(boolean startOnTick) {
         this.startOnTick = startOnTick;
+        return this;
+    }
+
+    public double tickAmount() {
+        return tickAmount;
+    }
+
+    public MockYAxis tickAmount(double tickAmount) {
+        this.tickAmount = tickAmount;
         return this;
     }
 

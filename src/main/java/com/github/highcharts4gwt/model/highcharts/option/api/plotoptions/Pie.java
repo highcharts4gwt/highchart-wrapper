@@ -155,4 +155,12 @@ public interface Pie {
 
     Pie visible(boolean visible);
 
+    String zoneAxis();
+
+    Pie zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Pie zones(ArrayNumber zones);
+
 }

@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarCheckboxClickHandler;
@@ -126,6 +127,10 @@ public interface Bar {
 
     Bar pointInterval(double pointInterval);
 
+    String pointIntervalUnit();
+
+    Bar pointIntervalUnit(String pointIntervalUnit);
+
     double pointPadding();
 
     Bar pointPadding(double pointPadding);
@@ -197,5 +202,13 @@ public interface Bar {
     boolean visible();
 
     Bar visible(boolean visible);
+
+    String zoneAxis();
+
+    Bar zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Bar zones(ArrayNumber zones);
 
 }

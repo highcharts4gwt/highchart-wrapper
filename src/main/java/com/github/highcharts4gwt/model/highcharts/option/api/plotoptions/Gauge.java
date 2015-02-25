@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.Dial;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.GaugeAfterAnimateHandler;
@@ -114,5 +115,13 @@ public interface Gauge {
     boolean wrap();
 
     Gauge wrap(boolean wrap);
+
+    String zoneAxis();
+
+    Gauge zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Gauge zones(ArrayNumber zones);
 
 }

@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Gauge;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.Dial;
@@ -411,6 +412,32 @@ public class JsoGauge
     public final native JsoGauge wrap(boolean wrap)
         throws RuntimeException /*-{
         this["wrap"] = wrap;
+        return this;
+    }-*/
+    ;
+
+    public final native String zoneAxis()
+        throws RuntimeException /*-{
+        return this["zoneAxis"] = (this["zoneAxis"] || "y");
+    }-*/
+    ;
+
+    public final native JsoGauge zoneAxis(String zoneAxis)
+        throws RuntimeException /*-{
+        this["zoneAxis"] = zoneAxis;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayNumber zones()
+        throws RuntimeException /*-{
+        return this["zones"] = (this["zones"] || []);
+    }-*/
+    ;
+
+    public final native JsoGauge zones(ArrayNumber zones)
+        throws RuntimeException /*-{
+        this["zones"] = zones;
         return this;
     }-*/
     ;

@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.xaxis;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Labels;
 
 public class MockLabels
@@ -8,11 +9,13 @@ public class MockLabels
 {
 
     private String align;
+    private ArrayNumber autoRotation;
     private double distance;
     private boolean enabled;
     private String format;
     private double maxStaggerLines;
     private String overflow;
+    private double padding;
     private double rotation;
     private double staggerLines;
     private double step;
@@ -28,6 +31,15 @@ public class MockLabels
 
     public MockLabels align(String align) {
         this.align = align;
+        return this;
+    }
+
+    public ArrayNumber autoRotation() {
+        return autoRotation;
+    }
+
+    public MockLabels autoRotation(ArrayNumber autoRotation) {
+        this.autoRotation = autoRotation;
         return this;
     }
 
@@ -73,6 +85,15 @@ public class MockLabels
 
     public MockLabels overflow(String overflow) {
         this.overflow = overflow;
+        return this;
+    }
+
+    public double padding() {
+        return padding;
+    }
+
+    public MockLabels padding(double padding) {
+        this.padding = padding;
         return this;
     }
 

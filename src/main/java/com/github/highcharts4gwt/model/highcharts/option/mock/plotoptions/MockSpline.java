@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Spline;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.Marker;
@@ -36,6 +37,7 @@ public class MockSpline
     private String negativeColor;
     private Point point;
     private double pointInterval;
+    private String pointIntervalUnit;
     private String pointPlacementAsString;
     private double pointPlacementAsNumber;
     private double pointStart;
@@ -51,6 +53,8 @@ public class MockSpline
     private Tooltip tooltip;
     private double turboThreshold;
     private boolean visible;
+    private String zoneAxis;
+    private ArrayNumber zones;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -220,6 +224,15 @@ public class MockSpline
         return this;
     }
 
+    public String pointIntervalUnit() {
+        return pointIntervalUnit;
+    }
+
+    public MockSpline pointIntervalUnit(String pointIntervalUnit) {
+        this.pointIntervalUnit = pointIntervalUnit;
+        return this;
+    }
+
     public String pointPlacementAsString() {
         return pointPlacementAsString;
     }
@@ -352,6 +365,24 @@ public class MockSpline
 
     public MockSpline visible(boolean visible) {
         this.visible = visible;
+        return this;
+    }
+
+    public String zoneAxis() {
+        return zoneAxis;
+    }
+
+    public MockSpline zoneAxis(String zoneAxis) {
+        this.zoneAxis = zoneAxis;
+        return this;
+    }
+
+    public ArrayNumber zones() {
+        return zones;
+    }
+
+    public MockSpline zones(ArrayNumber zones) {
+        this.zones = zones;
         return this;
     }
 

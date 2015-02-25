@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.Marker;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.Point;
@@ -98,6 +99,10 @@ public interface Series {
 
     Series pointInterval(double pointInterval);
 
+    String pointIntervalUnit();
+
+    Series pointIntervalUnit(String pointIntervalUnit);
+
     String pointPlacementAsString();
 
     Series pointPlacementAsString(String pointPlacementAsString);
@@ -157,5 +162,13 @@ public interface Series {
     boolean visible();
 
     Series visible(boolean visible);
+
+    String zoneAxis();
+
+    Series zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Series zones(ArrayNumber zones);
 
 }

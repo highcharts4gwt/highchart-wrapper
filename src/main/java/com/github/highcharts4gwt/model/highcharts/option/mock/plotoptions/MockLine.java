@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Line;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineAfterAnimateHandler;
@@ -36,6 +37,7 @@ public class MockLine
     private String negativeColor;
     private Point point;
     private double pointInterval;
+    private String pointIntervalUnit;
     private String pointPlacementAsString;
     private double pointPlacementAsNumber;
     private double pointStart;
@@ -52,6 +54,8 @@ public class MockLine
     private Tooltip tooltip;
     private double turboThreshold;
     private boolean visible;
+    private String zoneAxis;
+    private ArrayNumber zones;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -221,6 +225,15 @@ public class MockLine
         return this;
     }
 
+    public String pointIntervalUnit() {
+        return pointIntervalUnit;
+    }
+
+    public MockLine pointIntervalUnit(String pointIntervalUnit) {
+        this.pointIntervalUnit = pointIntervalUnit;
+        return this;
+    }
+
     public String pointPlacementAsString() {
         return pointPlacementAsString;
     }
@@ -362,6 +375,24 @@ public class MockLine
 
     public MockLine visible(boolean visible) {
         this.visible = visible;
+        return this;
+    }
+
+    public String zoneAxis() {
+        return zoneAxis;
+    }
+
+    public MockLine zoneAxis(String zoneAxis) {
+        this.zoneAxis = zoneAxis;
+        return this;
+    }
+
+    public ArrayNumber zones() {
+        return zones;
+    }
+
+    public MockLine zones(ArrayNumber zones) {
+        this.zones = zones;
         return this;
     }
 

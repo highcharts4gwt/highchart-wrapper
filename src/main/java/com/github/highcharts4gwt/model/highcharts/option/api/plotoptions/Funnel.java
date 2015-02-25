@@ -159,4 +159,12 @@ public interface Funnel {
 
     Funnel widthAsString(String widthAsString);
 
+    String zoneAxis();
+
+    Funnel zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Funnel zones(ArrayNumber zones);
+
 }

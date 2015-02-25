@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Gauge;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.Dial;
@@ -41,6 +42,8 @@ public class MockGauge
     private Tooltip tooltip;
     private boolean visible;
     private boolean wrap;
+    private String zoneAxis;
+    private ArrayNumber zones;
 
     public boolean animation() {
         return animation;
@@ -243,6 +246,24 @@ public class MockGauge
 
     public MockGauge wrap(boolean wrap) {
         this.wrap = wrap;
+        return this;
+    }
+
+    public String zoneAxis() {
+        return zoneAxis;
+    }
+
+    public MockGauge zoneAxis(String zoneAxis) {
+        this.zoneAxis = zoneAxis;
+        return this;
+    }
+
+    public ArrayNumber zones() {
+        return zones;
+    }
+
+    public MockGauge zones(ArrayNumber zones) {
+        this.zones = zones;
         return this;
     }
 

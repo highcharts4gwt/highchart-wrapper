@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.solidgauge;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.DataLabels;
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -22,6 +23,32 @@ public class JsoDataLabels
     public final native JsoDataLabels align(String align)
         throws RuntimeException /*-{
         this["align"] = align;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean allowOverlap()
+        throws RuntimeException /*-{
+        return this["allowOverlap"] = (this["allowOverlap"] || false);
+    }-*/
+    ;
+
+    public final native JsoDataLabels allowOverlap(boolean allowOverlap)
+        throws RuntimeException /*-{
+        this["allowOverlap"] = allowOverlap;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayNumber autoRotation()
+        throws RuntimeException /*-{
+        return this["autoRotation"] = (this["autoRotation"] || [-45]);
+    }-*/
+    ;
+
+    public final native JsoDataLabels autoRotation(ArrayNumber autoRotation)
+        throws RuntimeException /*-{
+        this["autoRotation"] = autoRotation;
         return this;
     }-*/
     ;
@@ -171,7 +198,7 @@ public class JsoDataLabels
 
     public final native double padding()
         throws RuntimeException /*-{
-        return this["padding"] = (this["padding"] || 2.0);
+        return this["padding"] = (this["padding"] || 5.0);
     }-*/
     ;
 
@@ -224,7 +251,7 @@ public class JsoDataLabels
 
     public final native String style()
         throws RuntimeException /*-{
-        this["style"] = (this["style"] || JSON.parse('{"color": "#606060", "fontSize": "11px"}'));
+        this["style"] = (this["style"] || JSON.parse('{"color": "contrast", "fontSize": "11px", "fontWeight": "bold", "textShadow": "0 0 6px contrast, 0 0 3px contrast" }'));
         return JSON.stringify(this["style"]);
     }-*/
     ;

@@ -3,6 +3,8 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartAddSeriesHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartAfterPrintHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartBeforePrintHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartDrilldownHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartDrillupHandler;
@@ -52,6 +54,10 @@ public interface Chart {
     Chart defaultSeriesType(String defaultSeriesType);
 
     void addChartAddSeriesHandler(ChartAddSeriesHandler chartAddSeriesHandler);
+
+    void addChartAfterPrintHandler(ChartAfterPrintHandler chartAfterPrintHandler);
+
+    void addChartBeforePrintHandler(ChartBeforePrintHandler chartBeforePrintHandler);
 
     void addChartClickHandler(ChartClickHandler chartClickHandler);
 

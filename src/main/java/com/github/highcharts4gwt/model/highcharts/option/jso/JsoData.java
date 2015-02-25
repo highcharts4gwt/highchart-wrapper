@@ -39,6 +39,19 @@ public class JsoData
     }-*/
     ;
 
+    public final native String decimalPoint()
+        throws RuntimeException /*-{
+        return this["decimalPoint"] = (this["decimalPoint"] || ".");
+    }-*/
+    ;
+
+    public final native JsoData decimalPoint(String decimalPoint)
+        throws RuntimeException /*-{
+        this["decimalPoint"] = decimalPoint;
+        return this;
+    }-*/
+    ;
+
     public final native double endColumn()
         throws RuntimeException /*-{
         return this["endColumn"] = (this["endColumn"] || '');
@@ -61,6 +74,19 @@ public class JsoData
     public final native JsoData endRow(double endRow)
         throws RuntimeException /*-{
         this["endRow"] = endRow;
+        return this;
+    }-*/
+    ;
+
+    public final native boolean firstRowAsNames()
+        throws RuntimeException /*-{
+        return this["firstRowAsNames"] = (this["firstRowAsNames"] || true);
+    }-*/
+    ;
+
+    public final native JsoData firstRowAsNames(boolean firstRowAsNames)
+        throws RuntimeException /*-{
+        this["firstRowAsNames"] = firstRowAsNames;
         return this;
     }-*/
     ;

@@ -9,8 +9,10 @@ public class MockData
 
     private String csv;
     private String dateFormat;
+    private String decimalPoint;
     private double endColumn;
     private double endRow;
+    private boolean firstRowAsNames;
     private String googleSpreadsheetKey;
     private String googleSpreadsheetWorksheet;
     private String itemDelimiter;
@@ -39,6 +41,15 @@ public class MockData
         return this;
     }
 
+    public String decimalPoint() {
+        return decimalPoint;
+    }
+
+    public MockData decimalPoint(String decimalPoint) {
+        this.decimalPoint = decimalPoint;
+        return this;
+    }
+
     public double endColumn() {
         return endColumn;
     }
@@ -54,6 +65,15 @@ public class MockData
 
     public MockData endRow(double endRow) {
         this.endRow = endRow;
+        return this;
+    }
+
+    public boolean firstRowAsNames() {
+        return firstRowAsNames;
+    }
+
+    public MockData firstRowAsNames(boolean firstRowAsNames) {
+        this.firstRowAsNames = firstRowAsNames;
         return this;
     }
 

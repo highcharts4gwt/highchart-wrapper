@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Waterfall;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.DataLabels;
@@ -453,6 +454,19 @@ public class JsoWaterfall
     }-*/
     ;
 
+    public final native String pointIntervalUnit()
+        throws RuntimeException /*-{
+        return this["pointIntervalUnit"] = (this["pointIntervalUnit"] || "null");
+    }-*/
+    ;
+
+    public final native JsoWaterfall pointIntervalUnit(String pointIntervalUnit)
+        throws RuntimeException /*-{
+        this["pointIntervalUnit"] = pointIntervalUnit;
+        return this;
+    }-*/
+    ;
+
     public final native double pointPadding()
         throws RuntimeException /*-{
         return this["pointPadding"] = (this["pointPadding"] || 0.1);
@@ -671,6 +685,32 @@ public class JsoWaterfall
     public final native JsoWaterfall visible(boolean visible)
         throws RuntimeException /*-{
         this["visible"] = visible;
+        return this;
+    }-*/
+    ;
+
+    public final native String zoneAxis()
+        throws RuntimeException /*-{
+        return this["zoneAxis"] = (this["zoneAxis"] || "y");
+    }-*/
+    ;
+
+    public final native JsoWaterfall zoneAxis(String zoneAxis)
+        throws RuntimeException /*-{
+        this["zoneAxis"] = zoneAxis;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayNumber zones()
+        throws RuntimeException /*-{
+        return this["zones"] = (this["zones"] || []);
+    }-*/
+    ;
+
+    public final native JsoWaterfall zones(ArrayNumber zones)
+        throws RuntimeException /*-{
+        this["zones"] = zones;
         return this;
     }-*/
     ;

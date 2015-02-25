@@ -7,7 +7,9 @@ import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Labels;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PlotBand;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PlotLine;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Title;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterBreaksHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterSetExtremesHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisPointBreakHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisSetExtremesHandler;
 
 public interface XAxis {
@@ -20,6 +22,10 @@ public interface XAxis {
     String alternateGridColor();
 
     XAxis alternateGridColor(String alternateGridColor);
+
+    ArrayNumber breaks();
+
+    XAxis breaks(ArrayNumber breaks);
 
     ArrayString categories();
 
@@ -37,7 +43,11 @@ public interface XAxis {
 
     XAxis endOnTick(boolean endOnTick);
 
+    void addXAxisAfterBreaksHandler(XAxisAfterBreaksHandler xAxisAfterBreaksHandler);
+
     void addXAxisAfterSetExtremesHandler(XAxisAfterSetExtremesHandler xAxisAfterSetExtremesHandler);
+
+    void addXAxisPointBreakHandler(XAxisPointBreakHandler xAxisPointBreakHandler);
 
     void addXAxisSetExtremesHandler(XAxisSetExtremesHandler xAxisSetExtremesHandler);
 
@@ -184,6 +194,10 @@ public interface XAxis {
     boolean startOnTick();
 
     XAxis startOnTick(boolean startOnTick);
+
+    double tickAmount();
+
+    XAxis tickAmount(double tickAmount);
 
     String tickColor();
 

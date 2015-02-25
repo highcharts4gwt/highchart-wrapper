@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Errorbar;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarAfterAnimateHandler;
@@ -34,6 +35,7 @@ public class MockErrorbar
     private String negativeColor;
     private Point point;
     private double pointInterval;
+    private String pointIntervalUnit;
     private double pointPadding;
     private String pointPlacementAsString;
     private double pointPlacementAsNumber;
@@ -53,6 +55,8 @@ public class MockErrorbar
     private double whiskerLengthAsNumber;
     private String whiskerLengthAsString;
     private double whiskerWidth;
+    private String zoneAxis;
+    private ArrayNumber zones;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -210,6 +214,15 @@ public class MockErrorbar
 
     public MockErrorbar pointInterval(double pointInterval) {
         this.pointInterval = pointInterval;
+        return this;
+    }
+
+    public String pointIntervalUnit() {
+        return pointIntervalUnit;
+    }
+
+    public MockErrorbar pointIntervalUnit(String pointIntervalUnit) {
+        this.pointIntervalUnit = pointIntervalUnit;
         return this;
     }
 
@@ -381,6 +394,24 @@ public class MockErrorbar
 
     public MockErrorbar whiskerWidth(double whiskerWidth) {
         this.whiskerWidth = whiskerWidth;
+        return this;
+    }
+
+    public String zoneAxis() {
+        return zoneAxis;
+    }
+
+    public MockErrorbar zoneAxis(String zoneAxis) {
+        this.zoneAxis = zoneAxis;
+        return this;
+    }
+
+    public ArrayNumber zones() {
+        return zones;
+    }
+
+    public MockErrorbar zones(ArrayNumber zones) {
+        this.zones = zones;
         return this;
     }
 

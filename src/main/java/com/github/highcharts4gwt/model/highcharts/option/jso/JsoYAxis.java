@@ -9,7 +9,9 @@ import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.PlotBand;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.PlotLine;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.StackLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.Title;
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisAfterBreaksHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisAfterSetExtremesHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisPointBreakHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisSetExtremesHandler;
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -44,6 +46,19 @@ public class JsoYAxis
     public final native JsoYAxis alternateGridColor(String alternateGridColor)
         throws RuntimeException /*-{
         this["alternateGridColor"] = alternateGridColor;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayNumber breaks()
+        throws RuntimeException /*-{
+        return this["breaks"] = (this["breaks"] || []);
+    }-*/
+    ;
+
+    public final native JsoYAxis breaks(ArrayNumber breaks)
+        throws RuntimeException /*-{
+        this["breaks"] = breaks;
         return this;
     }-*/
     ;
@@ -101,6 +116,22 @@ public class JsoYAxis
     }-*/
     ;
 
+    public final native void addYAxisAfterBreaksHandler(YAxisAfterBreaksHandler handler)
+        throws RuntimeException 
+        /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    axisAfterBreaks: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisAfterBreaksHandler::onYAxisAfterBreaks(Lcom/github/highcharts4gwt/model/highcharts/option/api/yaxis/YAxisAfterBreaksEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
     public final native void addYAxisAfterSetExtremesHandler(YAxisAfterSetExtremesHandler handler)
         throws RuntimeException 
         /*-{
@@ -109,6 +140,22 @@ public class JsoYAxis
                 events: {
                     axisAfterSetExtremes: function(event) {
                         handler.@com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisAfterSetExtremesHandler::onYAxisAfterSetExtremes(Lcom/github/highcharts4gwt/model/highcharts/option/api/yaxis/YAxisAfterSetExtremesEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addYAxisPointBreakHandler(YAxisPointBreakHandler handler)
+        throws RuntimeException 
+        /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    axisPointBreak: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisPointBreakHandler::onYAxisPointBreak(Lcom/github/highcharts4gwt/model/highcharts/option/api/yaxis/YAxisPointBreakEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -148,7 +195,7 @@ public class JsoYAxis
 
     public final native String gridLineColor()
         throws RuntimeException /*-{
-        return this["gridLineColor"] = (this["gridLineColor"] || "#C0C0C0");
+        return this["gridLineColor"] = (this["gridLineColor"] || "#D8D8D8");
     }-*/
     ;
 
@@ -662,6 +709,19 @@ public class JsoYAxis
     public final native JsoYAxis startOnTick(boolean startOnTick)
         throws RuntimeException /*-{
         this["startOnTick"] = startOnTick;
+        return this;
+    }-*/
+    ;
+
+    public final native double tickAmount()
+        throws RuntimeException /*-{
+        return this["tickAmount"] = (this["tickAmount"] || '');
+    }-*/
+    ;
+
+    public final native JsoYAxis tickAmount(double tickAmount)
+        throws RuntimeException /*-{
+        this["tickAmount"] = tickAmount;
         return this;
     }-*/
     ;

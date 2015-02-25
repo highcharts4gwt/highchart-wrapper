@@ -4,6 +4,8 @@ package com.github.highcharts4gwt.model.highcharts.option.mock;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.Chart;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartAddSeriesHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartAfterPrintHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartBeforePrintHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartDrilldownHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartDrillupHandler;
@@ -145,6 +147,12 @@ public class MockChart
     }
 
     public void addChartAddSeriesHandler(ChartAddSeriesHandler handler) {
+    }
+
+    public void addChartAfterPrintHandler(ChartAfterPrintHandler handler) {
+    }
+
+    public void addChartBeforePrintHandler(ChartBeforePrintHandler handler) {
     }
 
     public void addChartClickHandler(ChartClickHandler handler) {

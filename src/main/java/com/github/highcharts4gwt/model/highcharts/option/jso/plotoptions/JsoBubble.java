@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Bubble;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleCheckboxClickHandler;
@@ -375,6 +376,19 @@ public class JsoBubble
     }-*/
     ;
 
+    public final native String pointIntervalUnit()
+        throws RuntimeException /*-{
+        return this["pointIntervalUnit"] = (this["pointIntervalUnit"] || "null");
+    }-*/
+    ;
+
+    public final native JsoBubble pointIntervalUnit(String pointIntervalUnit)
+        throws RuntimeException /*-{
+        this["pointIntervalUnit"] = pointIntervalUnit;
+        return this;
+    }-*/
+    ;
+
     public final native double pointStart()
         throws RuntimeException /*-{
         return this["pointStart"] = (this["pointStart"] || 0.0);
@@ -567,6 +581,32 @@ public class JsoBubble
     public final native JsoBubble zThreshold(double zThreshold)
         throws RuntimeException /*-{
         this["zThreshold"] = zThreshold;
+        return this;
+    }-*/
+    ;
+
+    public final native String zoneAxis()
+        throws RuntimeException /*-{
+        return this["zoneAxis"] = (this["zoneAxis"] || "y");
+    }-*/
+    ;
+
+    public final native JsoBubble zoneAxis(String zoneAxis)
+        throws RuntimeException /*-{
+        this["zoneAxis"] = zoneAxis;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayNumber zones()
+        throws RuntimeException /*-{
+        return this["zones"] = (this["zones"] || []);
+    }-*/
+    ;
+
+    public final native JsoBubble zones(ArrayNumber zones)
+        throws RuntimeException /*-{
+        this["zones"] = zones;
         return this;
     }-*/
     ;

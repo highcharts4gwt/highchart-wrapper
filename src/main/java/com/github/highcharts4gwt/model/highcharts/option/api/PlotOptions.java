@@ -16,11 +16,13 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Gauge;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Heatmap;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Line;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Pie;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Polygon;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Pyramid;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Scatter;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Series;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Solidgauge;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Spline;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Treemap;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Waterfall;
 
 public interface PlotOptions {
@@ -86,6 +88,10 @@ public interface PlotOptions {
 
     PlotOptions pie(Pie pie);
 
+    Polygon polygon();
+
+    PlotOptions polygon(Polygon polygon);
+
     Pyramid pyramid();
 
     PlotOptions pyramid(Pyramid pyramid);
@@ -105,6 +111,10 @@ public interface PlotOptions {
     Spline spline();
 
     PlotOptions spline(Spline spline);
+
+    Treemap treemap();
+
+    PlotOptions treemap(Treemap treemap);
 
     Waterfall waterfall();
 

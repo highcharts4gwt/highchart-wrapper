@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Boxplot;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.BoxplotAfterAnimateHandler;
@@ -39,6 +40,7 @@ public class MockBoxplot
     private String negativeColor;
     private Point point;
     private double pointInterval;
+    private String pointIntervalUnit;
     private double pointPadding;
     private String pointPlacementAsString;
     private double pointPlacementAsNumber;
@@ -60,6 +62,8 @@ public class MockBoxplot
     private double whiskerLengthAsNumber;
     private String whiskerLengthAsString;
     private double whiskerWidth;
+    private String zoneAxis;
+    private ArrayNumber zones;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -265,6 +269,15 @@ public class MockBoxplot
         return this;
     }
 
+    public String pointIntervalUnit() {
+        return pointIntervalUnit;
+    }
+
+    public MockBoxplot pointIntervalUnit(String pointIntervalUnit) {
+        this.pointIntervalUnit = pointIntervalUnit;
+        return this;
+    }
+
     public double pointPadding() {
         return pointPadding;
     }
@@ -451,6 +464,24 @@ public class MockBoxplot
 
     public MockBoxplot whiskerWidth(double whiskerWidth) {
         this.whiskerWidth = whiskerWidth;
+        return this;
+    }
+
+    public String zoneAxis() {
+        return zoneAxis;
+    }
+
+    public MockBoxplot zoneAxis(String zoneAxis) {
+        this.zoneAxis = zoneAxis;
+        return this;
+    }
+
+    public ArrayNumber zones() {
+        return zones;
+    }
+
+    public MockBoxplot zones(ArrayNumber zones) {
+        this.zones = zones;
         return this;
     }
 

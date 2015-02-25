@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.ArearangeAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.ArearangeCheckboxClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.ArearangeClickHandler;
@@ -105,6 +106,10 @@ public interface Arearange {
 
     Arearange pointInterval(double pointInterval);
 
+    String pointIntervalUnit();
+
+    Arearange pointIntervalUnit(String pointIntervalUnit);
+
     String pointPlacementAsString();
 
     Arearange pointPlacementAsString(String pointPlacementAsString);
@@ -137,10 +142,6 @@ public interface Arearange {
 
     Arearange showInLegend(boolean showInLegend);
 
-    String stacking();
-
-    Arearange stacking(String stacking);
-
     States states();
 
     Arearange states(States states);
@@ -168,5 +169,13 @@ public interface Arearange {
     boolean visible();
 
     Arearange visible(boolean visible);
+
+    String zoneAxis();
+
+    Arearange zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Arearange zones(ArrayNumber zones);
 
 }

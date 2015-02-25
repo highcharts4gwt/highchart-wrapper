@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Areasplinerange;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeCheckboxClickHandler;
@@ -37,6 +38,7 @@ public class MockAreasplinerange
     private String negativeFillColor;
     private Point point;
     private double pointInterval;
+    private String pointIntervalUnit;
     private String pointPlacementAsString;
     private double pointPlacementAsNumber;
     private double pointStart;
@@ -45,7 +47,6 @@ public class MockAreasplinerange
     private String shadowAsJsonString;
     private boolean showCheckbox;
     private boolean showInLegend;
-    private String stacking;
     private States states;
     private String step;
     private boolean stickyTracking;
@@ -53,6 +54,8 @@ public class MockAreasplinerange
     private boolean trackByArea;
     private double turboThreshold;
     private boolean visible;
+    private String zoneAxis;
+    private ArrayNumber zones;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -240,6 +243,15 @@ public class MockAreasplinerange
         return this;
     }
 
+    public String pointIntervalUnit() {
+        return pointIntervalUnit;
+    }
+
+    public MockAreasplinerange pointIntervalUnit(String pointIntervalUnit) {
+        this.pointIntervalUnit = pointIntervalUnit;
+        return this;
+    }
+
     public String pointPlacementAsString() {
         return pointPlacementAsString;
     }
@@ -312,15 +324,6 @@ public class MockAreasplinerange
         return this;
     }
 
-    public String stacking() {
-        return stacking;
-    }
-
-    public MockAreasplinerange stacking(String stacking) {
-        this.stacking = stacking;
-        return this;
-    }
-
     public States states() {
         return states;
     }
@@ -381,6 +384,24 @@ public class MockAreasplinerange
 
     public MockAreasplinerange visible(boolean visible) {
         this.visible = visible;
+        return this;
+    }
+
+    public String zoneAxis() {
+        return zoneAxis;
+    }
+
+    public MockAreasplinerange zoneAxis(String zoneAxis) {
+        this.zoneAxis = zoneAxis;
+        return this;
+    }
+
+    public ArrayNumber zones() {
+        return zones;
+    }
+
+    public MockAreasplinerange zones(ArrayNumber zones) {
+        this.zones = zones;
         return this;
     }
 

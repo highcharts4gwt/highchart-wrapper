@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Heatmap;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.DataLabels;
@@ -489,6 +490,32 @@ public class JsoHeatmap
     public final native JsoHeatmap visible(boolean visible)
         throws RuntimeException /*-{
         this["visible"] = visible;
+        return this;
+    }-*/
+    ;
+
+    public final native String zoneAxis()
+        throws RuntimeException /*-{
+        return this["zoneAxis"] = (this["zoneAxis"] || "y");
+    }-*/
+    ;
+
+    public final native JsoHeatmap zoneAxis(String zoneAxis)
+        throws RuntimeException /*-{
+        this["zoneAxis"] = zoneAxis;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayNumber zones()
+        throws RuntimeException /*-{
+        return this["zones"] = (this["zones"] || []);
+    }-*/
+    ;
+
+    public final native JsoHeatmap zones(ArrayNumber zones)
+        throws RuntimeException /*-{
+        this["zones"] = zones;
         return this;
     }-*/
     ;

@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Waterfall;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.DataLabels;
@@ -43,6 +44,7 @@ public class MockWaterfall
     private double minPointLength;
     private Point point;
     private double pointInterval;
+    private String pointIntervalUnit;
     private double pointPadding;
     private String pointPlacementAsString;
     private double pointPlacementAsNumber;
@@ -60,6 +62,8 @@ public class MockWaterfall
     private Tooltip tooltip;
     private String upColor;
     private boolean visible;
+    private String zoneAxis;
+    private ArrayNumber zones;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -292,6 +296,15 @@ public class MockWaterfall
         return this;
     }
 
+    public String pointIntervalUnit() {
+        return pointIntervalUnit;
+    }
+
+    public MockWaterfall pointIntervalUnit(String pointIntervalUnit) {
+        this.pointIntervalUnit = pointIntervalUnit;
+        return this;
+    }
+
     public double pointPadding() {
         return pointPadding;
     }
@@ -442,6 +455,24 @@ public class MockWaterfall
 
     public MockWaterfall visible(boolean visible) {
         this.visible = visible;
+        return this;
+    }
+
+    public String zoneAxis() {
+        return zoneAxis;
+    }
+
+    public MockWaterfall zoneAxis(String zoneAxis) {
+        this.zoneAxis = zoneAxis;
+        return this;
+    }
+
+    public ArrayNumber zones() {
+        return zones;
+    }
+
+    public MockWaterfall zones(ArrayNumber zones) {
+        this.zones = zones;
         return this;
     }
 

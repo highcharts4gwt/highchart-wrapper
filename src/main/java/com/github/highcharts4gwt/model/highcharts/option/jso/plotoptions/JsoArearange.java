@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Arearange;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.ArearangeAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.ArearangeCheckboxClickHandler;
@@ -387,6 +388,19 @@ public class JsoArearange
     }-*/
     ;
 
+    public final native String pointIntervalUnit()
+        throws RuntimeException /*-{
+        return this["pointIntervalUnit"] = (this["pointIntervalUnit"] || "null");
+    }-*/
+    ;
+
+    public final native JsoArearange pointIntervalUnit(String pointIntervalUnit)
+        throws RuntimeException /*-{
+        this["pointIntervalUnit"] = pointIntervalUnit;
+        return this;
+    }-*/
+    ;
+
     public final native String pointPlacementAsString()
         throws RuntimeException /*-{
         return this["pointPlacement"] = (this["pointPlacement"] || "null");
@@ -492,19 +506,6 @@ public class JsoArearange
     }-*/
     ;
 
-    public final native String stacking()
-        throws RuntimeException /*-{
-        return this["stacking"] = (this["stacking"] || "null");
-    }-*/
-    ;
-
-    public final native JsoArearange stacking(String stacking)
-        throws RuntimeException /*-{
-        this["stacking"] = stacking;
-        return this;
-    }-*/
-    ;
-
     public final native States states()
         throws RuntimeException /*-{
         return this["states"] = (this["states"] || {});
@@ -592,6 +593,32 @@ public class JsoArearange
     public final native JsoArearange visible(boolean visible)
         throws RuntimeException /*-{
         this["visible"] = visible;
+        return this;
+    }-*/
+    ;
+
+    public final native String zoneAxis()
+        throws RuntimeException /*-{
+        return this["zoneAxis"] = (this["zoneAxis"] || "y");
+    }-*/
+    ;
+
+    public final native JsoArearange zoneAxis(String zoneAxis)
+        throws RuntimeException /*-{
+        this["zoneAxis"] = zoneAxis;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayNumber zones()
+        throws RuntimeException /*-{
+        return this["zones"] = (this["zones"] || []);
+    }-*/
+    ;
+
+    public final native JsoArearange zones(ArrayNumber zones)
+        throws RuntimeException /*-{
+        this["zones"] = zones;
         return this;
     }-*/
     ;

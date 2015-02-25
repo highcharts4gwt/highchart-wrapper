@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.xaxis;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 
 public interface Labels {
 
@@ -8,6 +9,10 @@ public interface Labels {
     String align();
 
     Labels align(String align);
+
+    ArrayNumber autoRotation();
+
+    Labels autoRotation(ArrayNumber autoRotation);
 
     double distance();
 
@@ -28,6 +33,10 @@ public interface Labels {
     String overflow();
 
     Labels overflow(String overflow);
+
+    double padding();
+
+    Labels padding(double padding);
 
     double rotation();
 

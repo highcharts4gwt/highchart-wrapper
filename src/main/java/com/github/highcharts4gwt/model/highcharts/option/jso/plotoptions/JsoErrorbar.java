@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Errorbar;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarAfterAnimateHandler;
@@ -348,6 +349,19 @@ public class JsoErrorbar
     }-*/
     ;
 
+    public final native String pointIntervalUnit()
+        throws RuntimeException /*-{
+        return this["pointIntervalUnit"] = (this["pointIntervalUnit"] || "null");
+    }-*/
+    ;
+
+    public final native JsoErrorbar pointIntervalUnit(String pointIntervalUnit)
+        throws RuntimeException /*-{
+        this["pointIntervalUnit"] = pointIntervalUnit;
+        return this;
+    }-*/
+    ;
+
     public final native double pointPadding()
         throws RuntimeException /*-{
         return this["pointPadding"] = (this["pointPadding"] || 0.1);
@@ -591,6 +605,32 @@ public class JsoErrorbar
     public final native JsoErrorbar whiskerWidth(double whiskerWidth)
         throws RuntimeException /*-{
         this["whiskerWidth"] = whiskerWidth;
+        return this;
+    }-*/
+    ;
+
+    public final native String zoneAxis()
+        throws RuntimeException /*-{
+        return this["zoneAxis"] = (this["zoneAxis"] || "y");
+    }-*/
+    ;
+
+    public final native JsoErrorbar zoneAxis(String zoneAxis)
+        throws RuntimeException /*-{
+        this["zoneAxis"] = zoneAxis;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayNumber zones()
+        throws RuntimeException /*-{
+        return this["zones"] = (this["zones"] || []);
+    }-*/
+    ;
+
+    public final native JsoErrorbar zones(ArrayNumber zones)
+        throws RuntimeException /*-{
+        this["zones"] = zones;
         return this;
     }-*/
     ;

@@ -17,11 +17,13 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Gauge;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Heatmap;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Line;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Pie;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Polygon;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Pyramid;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Scatter;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Series;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Solidgauge;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Spline;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Treemap;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Waterfall;
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -229,6 +231,19 @@ public class JsoPlotOptions
     }-*/
     ;
 
+    public final native Polygon polygon()
+        throws RuntimeException /*-{
+        return this["polygon"] = (this["polygon"] || {});
+    }-*/
+    ;
+
+    public final native JsoPlotOptions polygon(Polygon polygon)
+        throws RuntimeException /*-{
+        this["polygon"] = polygon;
+        return this;
+    }-*/
+    ;
+
     public final native Pyramid pyramid()
         throws RuntimeException /*-{
         return this["pyramid"] = (this["pyramid"] || {});
@@ -290,6 +305,19 @@ public class JsoPlotOptions
     public final native JsoPlotOptions spline(Spline spline)
         throws RuntimeException /*-{
         this["spline"] = spline;
+        return this;
+    }-*/
+    ;
+
+    public final native Treemap treemap()
+        throws RuntimeException /*-{
+        return this["treemap"] = (this["treemap"] || {});
+    }-*/
+    ;
+
+    public final native JsoPlotOptions treemap(Treemap treemap)
+        throws RuntimeException /*-{
+        this["treemap"] = treemap;
         return this;
     }-*/
     ;

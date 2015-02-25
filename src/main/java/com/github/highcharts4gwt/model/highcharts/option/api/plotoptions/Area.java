@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaCheckboxClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaClickHandler;
@@ -114,6 +115,10 @@ public interface Area {
 
     Area pointInterval(double pointInterval);
 
+    String pointIntervalUnit();
+
+    Area pointIntervalUnit(String pointIntervalUnit);
+
     String pointPlacementAsString();
 
     Area pointPlacementAsString(String pointPlacementAsString);
@@ -181,5 +186,13 @@ public interface Area {
     boolean visible();
 
     Area visible(boolean visible);
+
+    String zoneAxis();
+
+    Area zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Area zones(ArrayNumber zones);
 
 }

@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.heatmap;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.DataLabels;
 
 public class MockDataLabels
@@ -8,6 +9,8 @@ public class MockDataLabels
 {
 
     private String align;
+    private boolean allowOverlap;
+    private ArrayNumber autoRotation;
     private String backgroundColor;
     private String borderColor;
     private double borderRadius;
@@ -36,6 +39,24 @@ public class MockDataLabels
 
     public MockDataLabels align(String align) {
         this.align = align;
+        return this;
+    }
+
+    public boolean allowOverlap() {
+        return allowOverlap;
+    }
+
+    public MockDataLabels allowOverlap(boolean allowOverlap) {
+        this.allowOverlap = allowOverlap;
+        return this;
+    }
+
+    public ArrayNumber autoRotation() {
+        return autoRotation;
+    }
+
+    public MockDataLabels autoRotation(ArrayNumber autoRotation) {
+        this.autoRotation = autoRotation;
         return this;
     }
 

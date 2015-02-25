@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.Marker;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.Point;
@@ -90,6 +91,10 @@ public interface Scatter {
 
     Scatter pointInterval(double pointInterval);
 
+    String pointIntervalUnit();
+
+    Scatter pointIntervalUnit(String pointIntervalUnit);
+
     double pointStart();
 
     Scatter pointStart(double pointStart);
@@ -137,5 +142,13 @@ public interface Scatter {
     boolean visible();
 
     Scatter visible(boolean visible);
+
+    String zoneAxis();
+
+    Scatter zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Scatter zones(ArrayNumber zones);
 
 }

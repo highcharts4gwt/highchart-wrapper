@@ -52,6 +52,8 @@ public class MockFunnel
     private boolean visible;
     private double widthAsNumber;
     private String widthAsString;
+    private String zoneAxis;
+    private ArrayNumber zones;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -353,6 +355,24 @@ public class MockFunnel
 
     public MockFunnel widthAsString(String widthAsString) {
         this.widthAsString = widthAsString;
+        return this;
+    }
+
+    public String zoneAxis() {
+        return zoneAxis;
+    }
+
+    public MockFunnel zoneAxis(String zoneAxis) {
+        this.zoneAxis = zoneAxis;
+        return this;
+    }
+
+    public ArrayNumber zones() {
+        return zones;
+    }
+
+    public MockFunnel zones(ArrayNumber zones) {
+        this.zones = zones;
         return this;
     }
 

@@ -241,7 +241,7 @@ public class JsoLegend
 
     public final native double margin()
         throws RuntimeException /*-{
-        return this["margin"] = (this["margin"] || 15.0);
+        return this["margin"] = (this["margin"] || 12.0);
     }-*/
     ;
 

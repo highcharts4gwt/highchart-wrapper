@@ -211,7 +211,7 @@ public class JsoLang
 
     public final native String thousandsSep()
         throws RuntimeException /*-{
-        return this["thousandsSep"] = (this["thousandsSep"] || ",");
+        return this["thousandsSep"] = (this["thousandsSep"] || "");
     }-*/
     ;
 

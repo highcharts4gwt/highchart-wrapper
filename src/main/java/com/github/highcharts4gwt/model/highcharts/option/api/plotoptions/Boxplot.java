@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.BoxplotAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.BoxplotCheckboxClickHandler;
@@ -113,6 +114,10 @@ public interface Boxplot {
 
     Boxplot pointInterval(double pointInterval);
 
+    String pointIntervalUnit();
+
+    Boxplot pointIntervalUnit(String pointIntervalUnit);
+
     double pointPadding();
 
     Boxplot pointPadding(double pointPadding);
@@ -196,5 +201,13 @@ public interface Boxplot {
     double whiskerWidth();
 
     Boxplot whiskerWidth(double whiskerWidth);
+
+    String zoneAxis();
+
+    Boxplot zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Boxplot zones(ArrayNumber zones);
 
 }

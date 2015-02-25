@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.Marker;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.Point;
@@ -98,6 +99,10 @@ public interface Spline {
 
     Spline pointInterval(double pointInterval);
 
+    String pointIntervalUnit();
+
+    Spline pointIntervalUnit(String pointIntervalUnit);
+
     String pointPlacementAsString();
 
     Spline pointPlacementAsString(String pointPlacementAsString);
@@ -157,5 +162,13 @@ public interface Spline {
     boolean visible();
 
     Spline visible(boolean visible);
+
+    String zoneAxis();
+
+    Spline zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Spline zones(ArrayNumber zones);
 
 }

@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarCheckboxClickHandler;
@@ -93,6 +94,10 @@ public interface Errorbar {
 
     Errorbar pointInterval(double pointInterval);
 
+    String pointIntervalUnit();
+
+    Errorbar pointIntervalUnit(String pointIntervalUnit);
+
     double pointPadding();
 
     Errorbar pointPadding(double pointPadding);
@@ -168,5 +173,13 @@ public interface Errorbar {
     double whiskerWidth();
 
     Errorbar whiskerWidth(double whiskerWidth);
+
+    String zoneAxis();
+
+    Errorbar zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Errorbar zones(ArrayNumber zones);
 
 }

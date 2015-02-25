@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineCheckboxClickHandler;
@@ -98,6 +99,10 @@ public interface Line {
 
     Line pointInterval(double pointInterval);
 
+    String pointIntervalUnit();
+
+    Line pointIntervalUnit(String pointIntervalUnit);
+
     String pointPlacementAsString();
 
     Line pointPlacementAsString(String pointPlacementAsString);
@@ -161,5 +166,13 @@ public interface Line {
     boolean visible();
 
     Line visible(boolean visible);
+
+    String zoneAxis();
+
+    Line zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Line zones(ArrayNumber zones);
 
 }

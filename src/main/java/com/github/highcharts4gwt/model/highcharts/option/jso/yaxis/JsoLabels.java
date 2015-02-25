@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso.yaxis;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.Labels;
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -22,6 +23,19 @@ public class JsoLabels
     public final native JsoLabels align(String align)
         throws RuntimeException /*-{
         this["align"] = align;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayNumber autoRotation()
+        throws RuntimeException /*-{
+        return this["autoRotation"] = (this["autoRotation"] || [-45]);
+    }-*/
+    ;
+
+    public final native JsoLabels autoRotation(ArrayNumber autoRotation)
+        throws RuntimeException /*-{
+        this["autoRotation"] = autoRotation;
         return this;
     }-*/
     ;
@@ -87,6 +101,19 @@ public class JsoLabels
     public final native JsoLabels overflow(String overflow)
         throws RuntimeException /*-{
         this["overflow"] = overflow;
+        return this;
+    }-*/
+    ;
+
+    public final native double padding()
+        throws RuntimeException /*-{
+        return this["padding"] = (this["padding"] || 5.0);
+    }-*/
+    ;
+
+    public final native JsoLabels padding(double padding)
+        throws RuntimeException /*-{
+        this["padding"] = padding;
         return this;
     }-*/
     ;

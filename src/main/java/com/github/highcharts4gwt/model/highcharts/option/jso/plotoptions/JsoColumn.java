@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Column;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnAfterAnimateHandler;
@@ -453,6 +454,19 @@ public class JsoColumn
     }-*/
     ;
 
+    public final native String pointIntervalUnit()
+        throws RuntimeException /*-{
+        return this["pointIntervalUnit"] = (this["pointIntervalUnit"] || "null");
+    }-*/
+    ;
+
+    public final native JsoColumn pointIntervalUnit(String pointIntervalUnit)
+        throws RuntimeException /*-{
+        this["pointIntervalUnit"] = pointIntervalUnit;
+        return this;
+    }-*/
+    ;
+
     public final native double pointPadding()
         throws RuntimeException /*-{
         return this["pointPadding"] = (this["pointPadding"] || 0.1);
@@ -684,6 +698,32 @@ public class JsoColumn
     public final native JsoColumn visible(boolean visible)
         throws RuntimeException /*-{
         this["visible"] = visible;
+        return this;
+    }-*/
+    ;
+
+    public final native String zoneAxis()
+        throws RuntimeException /*-{
+        return this["zoneAxis"] = (this["zoneAxis"] || "y");
+    }-*/
+    ;
+
+    public final native JsoColumn zoneAxis(String zoneAxis)
+        throws RuntimeException /*-{
+        this["zoneAxis"] = zoneAxis;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayNumber zones()
+        throws RuntimeException /*-{
+        return this["zones"] = (this["zones"] || []);
+    }-*/
+    ;
+
+    public final native JsoColumn zones(ArrayNumber zones)
+        throws RuntimeException /*-{
+        this["zones"] = zones;
         return this;
     }-*/
     ;

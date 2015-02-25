@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
+import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.ColumnrangeAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.ColumnrangeCheckboxClickHandler;
@@ -114,10 +115,6 @@ public interface Columnrange {
 
     Columnrange minPointLength(double minPointLength);
 
-    String negativeColor();
-
-    Columnrange negativeColor(String negativeColor);
-
     Point point();
 
     Columnrange point(Point point);
@@ -125,6 +122,10 @@ public interface Columnrange {
     double pointInterval();
 
     Columnrange pointInterval(double pointInterval);
+
+    String pointIntervalUnit();
+
+    Columnrange pointIntervalUnit(String pointIntervalUnit);
 
     double pointPadding();
 
@@ -170,10 +171,6 @@ public interface Columnrange {
 
     Columnrange showInLegend(boolean showInLegend);
 
-    String stacking();
-
-    Columnrange stacking(String stacking);
-
     States states();
 
     Columnrange states(States states);
@@ -197,5 +194,13 @@ public interface Columnrange {
     boolean visible();
 
     Columnrange visible(boolean visible);
+
+    String zoneAxis();
+
+    Columnrange zoneAxis(String zoneAxis);
+
+    ArrayNumber zones();
+
+    Columnrange zones(ArrayNumber zones);
 
 }

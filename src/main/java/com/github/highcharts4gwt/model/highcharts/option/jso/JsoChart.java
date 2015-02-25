@@ -4,6 +4,8 @@ package com.github.highcharts4gwt.model.highcharts.option.jso;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.Chart;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartAddSeriesHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartAfterPrintHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartBeforePrintHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartDrilldownHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartDrillupHandler;
@@ -149,6 +151,38 @@ public class JsoChart
                 events: {
                     addSeries: function(event) {
                         handler.@com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartAddSeriesHandler::onChartAddSeries(Lcom/github/highcharts4gwt/model/highcharts/option/api/chart/ChartAddSeriesEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addChartAfterPrintHandler(ChartAfterPrintHandler handler)
+        throws RuntimeException 
+        /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    afterPrint: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartAfterPrintHandler::onChartAfterPrint(Lcom/github/highcharts4gwt/model/highcharts/option/api/chart/ChartAfterPrintEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addChartBeforePrintHandler(ChartBeforePrintHandler handler)
+        throws RuntimeException 
+        /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    beforePrint: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartBeforePrintHandler::onChartBeforePrint(Lcom/github/highcharts4gwt/model/highcharts/option/api/chart/ChartBeforePrintEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

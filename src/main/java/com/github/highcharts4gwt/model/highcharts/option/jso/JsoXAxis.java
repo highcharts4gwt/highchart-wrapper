@@ -8,7 +8,9 @@ import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Labels;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PlotBand;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PlotLine;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Title;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterBreaksHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterSetExtremesHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisPointBreakHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisSetExtremesHandler;
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -43,6 +45,19 @@ public class JsoXAxis
     public final native JsoXAxis alternateGridColor(String alternateGridColor)
         throws RuntimeException /*-{
         this["alternateGridColor"] = alternateGridColor;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayNumber breaks()
+        throws RuntimeException /*-{
+        return this["breaks"] = (this["breaks"] || []);
+    }-*/
+    ;
+
+    public final native JsoXAxis breaks(ArrayNumber breaks)
+        throws RuntimeException /*-{
+        this["breaks"] = breaks;
         return this;
     }-*/
     ;
@@ -100,6 +115,22 @@ public class JsoXAxis
     }-*/
     ;
 
+    public final native void addXAxisAfterBreaksHandler(XAxisAfterBreaksHandler handler)
+        throws RuntimeException 
+        /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    axisAfterBreaks: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterBreaksHandler::onXAxisAfterBreaks(Lcom/github/highcharts4gwt/model/highcharts/option/api/xaxis/XAxisAfterBreaksEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
     public final native void addXAxisAfterSetExtremesHandler(XAxisAfterSetExtremesHandler handler)
         throws RuntimeException 
         /*-{
@@ -108,6 +139,22 @@ public class JsoXAxis
                 events: {
                     axisAfterSetExtremes: function(event) {
                         handler.@com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterSetExtremesHandler::onXAxisAfterSetExtremes(Lcom/github/highcharts4gwt/model/highcharts/option/api/xaxis/XAxisAfterSetExtremesEvent;)(
+                            $wnd.jQuery.extend(true, event, {source:this})
+                         );
+                     }
+                 }
+             });
+        }-*/;
+    ;
+
+    public final native void addXAxisPointBreakHandler(XAxisPointBreakHandler handler)
+        throws RuntimeException 
+        /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                events: {
+                    axisPointBreak: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisPointBreakHandler::onXAxisPointBreak(Lcom/github/highcharts4gwt/model/highcharts/option/api/xaxis/XAxisPointBreakEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -147,7 +194,7 @@ public class JsoXAxis
 
     public final native String gridLineColor()
         throws RuntimeException /*-{
-        return this["gridLineColor"] = (this["gridLineColor"] || "#C0C0C0");
+        return this["gridLineColor"] = (this["gridLineColor"] || "#D8D8D8");
     }-*/
     ;
 
@@ -596,6 +643,19 @@ public class JsoXAxis
     public final native JsoXAxis startOnTick(boolean startOnTick)
         throws RuntimeException /*-{
         this["startOnTick"] = startOnTick;
+        return this;
+    }-*/
+    ;
+
+    public final native double tickAmount()
+        throws RuntimeException /*-{
+        return this["tickAmount"] = (this["tickAmount"] || '');
+    }-*/
+    ;
+
+    public final native JsoXAxis tickAmount(double tickAmount)
+        throws RuntimeException /*-{
+        this["tickAmount"] = tickAmount;
         return this;
     }-*/
     ;

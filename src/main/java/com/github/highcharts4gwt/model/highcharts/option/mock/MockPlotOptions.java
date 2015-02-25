@@ -17,11 +17,13 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Gauge;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Heatmap;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Line;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Pie;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Polygon;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Pyramid;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Scatter;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Series;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Solidgauge;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Spline;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Treemap;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Waterfall;
 
 public class MockPlotOptions
@@ -43,11 +45,13 @@ public class MockPlotOptions
     private Heatmap heatmap;
     private Line line;
     private Pie pie;
+    private Polygon polygon;
     private Pyramid pyramid;
     private Scatter scatter;
     private Series series;
     private Solidgauge solidgauge;
     private Spline spline;
+    private Treemap treemap;
     private Waterfall waterfall;
 
     public Area area() {
@@ -185,6 +189,15 @@ public class MockPlotOptions
         return this;
     }
 
+    public Polygon polygon() {
+        return polygon;
+    }
+
+    public MockPlotOptions polygon(Polygon polygon) {
+        this.polygon = polygon;
+        return this;
+    }
+
     public Pyramid pyramid() {
         return pyramid;
     }
@@ -227,6 +240,15 @@ public class MockPlotOptions
 
     public MockPlotOptions spline(Spline spline) {
         this.spline = spline;
+        return this;
+    }
+
+    public Treemap treemap() {
+        return treemap;
+    }
+
+    public MockPlotOptions treemap(Treemap treemap) {
+        this.treemap = treemap;
         return this;
     }
 

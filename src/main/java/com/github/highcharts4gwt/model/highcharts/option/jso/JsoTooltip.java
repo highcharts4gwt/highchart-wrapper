@@ -120,7 +120,7 @@ public class JsoTooltip
 
     public final native boolean followTouchMove()
         throws RuntimeException /*-{
-        return this["followTouchMove"] = (this["followTouchMove"] || false);
+        return this["followTouchMove"] = (this["followTouchMove"] || true);
     }-*/
     ;
 
@@ -172,7 +172,7 @@ public class JsoTooltip
 
     public final native String pointFormat()
         throws RuntimeException /*-{
-        return this["pointFormat"] = (this["pointFormat"] || "&lt;span style=\"color:{series.color}\"&gt;\u25CF&lt;/span&gt; {series.name}: &lt;b&gt;{point.y}&lt;/b&gt;&lt;br/&gt;");
+        return this["pointFormat"] = (this["pointFormat"] || "&lt;span style=\"color:{point.color}\"&gt;\u25CF&lt;/span&gt; {series.name}: &lt;b&gt;{point.y}&lt;/b&gt;&lt;br/&gt;");
     }-*/
     ;
 

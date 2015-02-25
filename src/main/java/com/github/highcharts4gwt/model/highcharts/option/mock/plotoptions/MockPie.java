@@ -51,6 +51,8 @@ public class MockPie
     private boolean stickyTracking;
     private Tooltip tooltip;
     private boolean visible;
+    private String zoneAxis;
+    private ArrayNumber zones;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -343,6 +345,24 @@ public class MockPie
 
     public MockPie visible(boolean visible) {
         this.visible = visible;
+        return this;
+    }
+
+    public String zoneAxis() {
+        return zoneAxis;
+    }
+
+    public MockPie zoneAxis(String zoneAxis) {
+        this.zoneAxis = zoneAxis;
+        return this;
+    }
+
+    public ArrayNumber zones() {
+        return zones;
+    }
+
+    public MockPie zones(ArrayNumber zones) {
+        this.zones = zones;
         return this;
     }
 
