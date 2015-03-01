@@ -26,6 +26,7 @@ public class MockDataLabels
     private double rotation;
     private boolean shadowAsBoolean;
     private String shadowAsJsonString;
+    private String shape;
     private String style;
     private boolean useHTML;
     private String verticalAlign;
@@ -192,6 +193,15 @@ public class MockDataLabels
 
     public MockDataLabels shadowAsJsonString(String shadowAsJsonString) {
         this.shadowAsJsonString = shadowAsJsonString;
+        return this;
+    }
+
+    public String shape() {
+        return shape;
+    }
+
+    public MockDataLabels shape(String shape) {
+        this.shape = shape;
         return this;
     }
 

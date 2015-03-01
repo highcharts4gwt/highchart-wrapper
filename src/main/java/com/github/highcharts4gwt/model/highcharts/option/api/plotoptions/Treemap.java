@@ -89,6 +89,10 @@ public interface Treemap {
 
     void addTreemapShowHandler(TreemapShowHandler treemapShowHandler);
 
+    boolean interactByLeaf();
+
+    Treemap interactByLeaf(boolean interactByLeaf);
+
     String layoutStartingDirection();
 
     Treemap layoutStartingDirection(String layoutStartingDirection);

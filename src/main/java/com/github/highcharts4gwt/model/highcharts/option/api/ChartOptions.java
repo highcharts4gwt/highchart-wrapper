@@ -53,10 +53,6 @@ public interface ChartOptions {
 
     ChartOptions navigation(Navigation navigation);
 
-    Subtitle subtitle();
-
-    ChartOptions subtitle(Subtitle subtitle);
-
     Title title();
 
     ChartOptions title(Title title);
@@ -64,6 +60,10 @@ public interface ChartOptions {
     Exporting exporting();
 
     ChartOptions exporting(Exporting exporting);
+
+    Subtitle subtitle();
+
+    ChartOptions subtitle(Subtitle subtitle);
 
     Tooltip tooltip();
 

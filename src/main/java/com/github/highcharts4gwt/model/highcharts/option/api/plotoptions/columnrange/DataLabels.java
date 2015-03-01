@@ -78,6 +78,10 @@ public interface DataLabels {
 
     DataLabels shadowAsJsonString(String shadowAsJsonString);
 
+    String shape();
+
+    DataLabels shape(String shape);
+
     String style();
 
     DataLabels style(String styleAsJsonString);

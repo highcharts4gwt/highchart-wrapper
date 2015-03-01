@@ -90,6 +90,10 @@ public interface DataLabels {
 
     DataLabels shadowAsJsonString(String shadowAsJsonString);
 
+    String shape();
+
+    DataLabels shape(String shape);
+
     boolean softConnector();
 
     DataLabels softConnector(boolean softConnector);

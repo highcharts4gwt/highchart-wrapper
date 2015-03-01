@@ -124,19 +124,6 @@ public class JsoChartOptions
     }-*/
     ;
 
-    public final native Subtitle subtitle()
-        throws RuntimeException /*-{
-        return this["subtitle"] = (this["subtitle"] || {});
-    }-*/
-    ;
-
-    public final native JsoChartOptions subtitle(Subtitle subtitle)
-        throws RuntimeException /*-{
-        this["subtitle"] = subtitle;
-        return this;
-    }-*/
-    ;
-
     public final native Title title()
         throws RuntimeException /*-{
         return this["title"] = (this["title"] || {});
@@ -159,6 +146,19 @@ public class JsoChartOptions
     public final native JsoChartOptions exporting(Exporting exporting)
         throws RuntimeException /*-{
         this["exporting"] = exporting;
+        return this;
+    }-*/
+    ;
+
+    public final native Subtitle subtitle()
+        throws RuntimeException /*-{
+        return this["subtitle"] = (this["subtitle"] || {});
+    }-*/
+    ;
+
+    public final native JsoChartOptions subtitle(Subtitle subtitle)
+        throws RuntimeException /*-{
+        this["subtitle"] = subtitle;
         return this;
     }-*/
     ;

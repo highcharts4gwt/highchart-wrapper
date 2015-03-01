@@ -249,6 +249,19 @@ public class JsoDataLabels
     }-*/
     ;
 
+    public final native String shape()
+        throws RuntimeException /*-{
+        return this["shape"] = (this["shape"] || "square");
+    }-*/
+    ;
+
+    public final native JsoDataLabels shape(String shape)
+        throws RuntimeException /*-{
+        this["shape"] = shape;
+        return this;
+    }-*/
+    ;
+
     public final native String style()
         throws RuntimeException /*-{
         this["style"] = (this["style"] || JSON.parse('{"color": "contrast", "fontSize": "11px", "fontWeight": "bold", "textShadow": "0 0 6px contrast, 0 0 3px contrast" }'));

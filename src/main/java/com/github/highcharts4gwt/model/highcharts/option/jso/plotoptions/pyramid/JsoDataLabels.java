@@ -288,6 +288,19 @@ public class JsoDataLabels
     }-*/
     ;
 
+    public final native String shape()
+        throws RuntimeException /*-{
+        return this["shape"] = (this["shape"] || "square");
+    }-*/
+    ;
+
+    public final native JsoDataLabels shape(String shape)
+        throws RuntimeException /*-{
+        this["shape"] = shape;
+        return this;
+    }-*/
+    ;
+
     public final native boolean softConnector()
         throws RuntimeException /*-{
         return this["softConnector"] = (this["softConnector"] || true);

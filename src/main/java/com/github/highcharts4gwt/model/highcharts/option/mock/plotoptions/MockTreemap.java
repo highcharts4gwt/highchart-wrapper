@@ -36,6 +36,7 @@ public class MockTreemap
     private String cursor;
     private DataLabels dataLabels;
     private boolean enableMouseTracking;
+    private boolean interactByLeaf;
     private String layoutStartingDirection;
     private boolean levelIsConstant;
     private Array<Level> levels;
@@ -193,6 +194,15 @@ public class MockTreemap
     }
 
     public void addTreemapShowHandler(TreemapShowHandler handler) {
+    }
+
+    public boolean interactByLeaf() {
+        return interactByLeaf;
+    }
+
+    public MockTreemap interactByLeaf(boolean interactByLeaf) {
+        this.interactByLeaf = interactByLeaf;
+        return this;
     }
 
     public String layoutStartingDirection() {

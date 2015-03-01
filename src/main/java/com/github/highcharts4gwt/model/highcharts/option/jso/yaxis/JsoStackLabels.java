@@ -67,7 +67,7 @@ public class JsoStackLabels
 
     public final native String style()
         throws RuntimeException /*-{
-        this["style"] = (this["style"] || {});
+        this["style"] = (this["style"] || JSON.parse('{ "color": "#000000", "fontSize": "11px", "fontWeight": "bold", "textShadow": "0 0 6px contrast, 00 3px contrast" }'));
         return JSON.stringify(this["style"]);
     }-*/
     ;

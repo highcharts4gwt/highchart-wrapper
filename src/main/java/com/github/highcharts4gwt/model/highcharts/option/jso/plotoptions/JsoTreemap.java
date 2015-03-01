@@ -326,6 +326,19 @@ public class JsoTreemap
         }-*/;
     ;
 
+    public final native boolean interactByLeaf()
+        throws RuntimeException /*-{
+        return this["interactByLeaf"] = (this["interactByLeaf"] || false);
+    }-*/
+    ;
+
+    public final native JsoTreemap interactByLeaf(boolean interactByLeaf)
+        throws RuntimeException /*-{
+        this["interactByLeaf"] = interactByLeaf;
+        return this;
+    }-*/
+    ;
+
     public final native String layoutStartingDirection()
         throws RuntimeException /*-{
         return this["layoutStartingDirection"] = (this["layoutStartingDirection"] || "vertical");
