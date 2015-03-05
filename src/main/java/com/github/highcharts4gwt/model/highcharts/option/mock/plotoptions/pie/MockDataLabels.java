@@ -8,7 +8,6 @@ public class MockDataLabels
     implements DataLabels
 {
 
-    private boolean allowOverlap;
     private ArrayNumber autoRotation;
     private String backgroundColor;
     private String borderColor;
@@ -37,15 +36,6 @@ public class MockDataLabels
     private double x;
     private double y;
     private double zIndex;
-
-    public boolean allowOverlap() {
-        return allowOverlap;
-    }
-
-    public MockDataLabels allowOverlap(boolean allowOverlap) {
-        this.allowOverlap = allowOverlap;
-        return this;
-    }
 
     public ArrayNumber autoRotation() {
         return autoRotation;

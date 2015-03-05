@@ -85,19 +85,6 @@ public class JsoChartOptions
     }-*/
     ;
 
-    public final native XAxis xAxis()
-        throws RuntimeException /*-{
-        return this["xAxis"] = (this["xAxis"] || {});
-    }-*/
-    ;
-
-    public final native JsoChartOptions xAxis(XAxis xAxis)
-        throws RuntimeException /*-{
-        this["xAxis"] = xAxis;
-        return this;
-    }-*/
-    ;
-
     public final native YAxis yAxis()
         throws RuntimeException /*-{
         return this["yAxis"] = (this["yAxis"] || {});
@@ -111,6 +98,19 @@ public class JsoChartOptions
     }-*/
     ;
 
+    public final native XAxis xAxis()
+        throws RuntimeException /*-{
+        return this["xAxis"] = (this["xAxis"] || {});
+    }-*/
+    ;
+
+    public final native JsoChartOptions xAxis(XAxis xAxis)
+        throws RuntimeException /*-{
+        this["xAxis"] = xAxis;
+        return this;
+    }-*/
+    ;
+
     public final native Navigation navigation()
         throws RuntimeException /*-{
         return this["navigation"] = (this["navigation"] || {});
@@ -120,6 +120,19 @@ public class JsoChartOptions
     public final native JsoChartOptions navigation(Navigation navigation)
         throws RuntimeException /*-{
         this["navigation"] = navigation;
+        return this;
+    }-*/
+    ;
+
+    public final native Subtitle subtitle()
+        throws RuntimeException /*-{
+        return this["subtitle"] = (this["subtitle"] || {});
+    }-*/
+    ;
+
+    public final native JsoChartOptions subtitle(Subtitle subtitle)
+        throws RuntimeException /*-{
+        this["subtitle"] = subtitle;
         return this;
     }-*/
     ;
@@ -146,19 +159,6 @@ public class JsoChartOptions
     public final native JsoChartOptions exporting(Exporting exporting)
         throws RuntimeException /*-{
         this["exporting"] = exporting;
-        return this;
-    }-*/
-    ;
-
-    public final native Subtitle subtitle()
-        throws RuntimeException /*-{
-        return this["subtitle"] = (this["subtitle"] || {});
-    }-*/
-    ;
-
-    public final native JsoChartOptions subtitle(Subtitle subtitle)
-        throws RuntimeException /*-{
-        this["subtitle"] = subtitle;
         return this;
     }-*/
     ;

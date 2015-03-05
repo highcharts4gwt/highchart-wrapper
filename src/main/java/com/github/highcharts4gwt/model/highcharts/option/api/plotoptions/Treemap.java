@@ -93,6 +93,10 @@ public interface Treemap {
 
     Treemap interactByLeaf(boolean interactByLeaf);
 
+    String layoutAlgorithm();
+
+    Treemap layoutAlgorithm(String layoutAlgorithm);
+
     String layoutStartingDirection();
 
     Treemap layoutStartingDirection(String layoutStartingDirection);

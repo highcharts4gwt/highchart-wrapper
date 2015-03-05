@@ -41,17 +41,21 @@ public interface ChartOptions {
 
     ChartOptions plotOptions(PlotOptions plotOptions);
 
-    XAxis xAxis();
-
-    ChartOptions xAxis(XAxis xAxis);
-
     YAxis yAxis();
 
     ChartOptions yAxis(YAxis yAxis);
 
+    XAxis xAxis();
+
+    ChartOptions xAxis(XAxis xAxis);
+
     Navigation navigation();
 
     ChartOptions navigation(Navigation navigation);
+
+    Subtitle subtitle();
+
+    ChartOptions subtitle(Subtitle subtitle);
 
     Title title();
 
@@ -60,10 +64,6 @@ public interface ChartOptions {
     Exporting exporting();
 
     ChartOptions exporting(Exporting exporting);
-
-    Subtitle subtitle();
-
-    ChartOptions subtitle(Subtitle subtitle);
 
     Tooltip tooltip();
 

@@ -14,19 +14,6 @@ public class JsoDataLabels
     protected JsoDataLabels() {
     }
 
-    public final native boolean allowOverlap()
-        throws RuntimeException /*-{
-        return this["allowOverlap"] = (this["allowOverlap"] || false);
-    }-*/
-    ;
-
-    public final native JsoDataLabels allowOverlap(boolean allowOverlap)
-        throws RuntimeException /*-{
-        this["allowOverlap"] = allowOverlap;
-        return this;
-    }-*/
-    ;
-
     public final native ArrayNumber autoRotation()
         throws RuntimeException /*-{
         return this["autoRotation"] = (this["autoRotation"] || [-45]);

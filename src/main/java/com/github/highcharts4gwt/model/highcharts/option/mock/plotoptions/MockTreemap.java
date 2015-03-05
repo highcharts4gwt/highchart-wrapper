@@ -37,6 +37,7 @@ public class MockTreemap
     private DataLabels dataLabels;
     private boolean enableMouseTracking;
     private boolean interactByLeaf;
+    private String layoutAlgorithm;
     private String layoutStartingDirection;
     private boolean levelIsConstant;
     private Array<Level> levels;
@@ -202,6 +203,15 @@ public class MockTreemap
 
     public MockTreemap interactByLeaf(boolean interactByLeaf) {
         this.interactByLeaf = interactByLeaf;
+        return this;
+    }
+
+    public String layoutAlgorithm() {
+        return layoutAlgorithm;
+    }
+
+    public MockTreemap layoutAlgorithm(String layoutAlgorithm) {
+        this.layoutAlgorithm = layoutAlgorithm;
         return this;
     }
 

@@ -649,7 +649,7 @@ public class JsoXAxis
 
     public final native double tickAmount()
         throws RuntimeException /*-{
-        return this["tickAmount"] = (this["tickAmount"] || '');
+        return this["tickAmount"] = (this["tickAmount"] || null);
     }-*/
     ;
 

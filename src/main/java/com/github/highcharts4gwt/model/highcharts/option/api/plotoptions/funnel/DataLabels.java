@@ -6,10 +6,6 @@ import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 public interface DataLabels {
 
 
-    boolean allowOverlap();
-
-    DataLabels allowOverlap(boolean allowOverlap);
-
     ArrayNumber autoRotation();
 
     DataLabels autoRotation(ArrayNumber autoRotation);

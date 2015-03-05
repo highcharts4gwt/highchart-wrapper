@@ -7,5 +7,10 @@ public class MockSeriesCheckboxClickEvent
     implements SeriesCheckboxClickEvent
 {
 
+    private com.github.highcharts4gwt.model.highcharts.object.api.Series Series;
+
+    public com.github.highcharts4gwt.model.highcharts.object.api.Series series() {
+        return Series;
+    }
 
 }

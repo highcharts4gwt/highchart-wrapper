@@ -339,6 +339,19 @@ public class JsoTreemap
     }-*/
     ;
 
+    public final native String layoutAlgorithm()
+        throws RuntimeException /*-{
+        return this["layoutAlgorithm"] = (this["layoutAlgorithm"] || "sliceAndDice");
+    }-*/
+    ;
+
+    public final native JsoTreemap layoutAlgorithm(String layoutAlgorithm)
+        throws RuntimeException /*-{
+        this["layoutAlgorithm"] = layoutAlgorithm;
+        return this;
+    }-*/
+    ;
+
     public final native String layoutStartingDirection()
         throws RuntimeException /*-{
         return this["layoutStartingDirection"] = (this["layoutStartingDirection"] || "vertical");
