@@ -45,4 +45,8 @@ public interface StackLabels {
 
     StackLabels y(double y);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    StackLabels setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

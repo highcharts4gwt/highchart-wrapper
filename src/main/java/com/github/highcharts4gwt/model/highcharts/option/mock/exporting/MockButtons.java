@@ -9,6 +9,7 @@ public class MockButtons
 {
 
     private ContextButton contextButton;
+    private String genericField;
 
     public ContextButton contextButton() {
         return contextButton;
@@ -16,6 +17,15 @@ public class MockButtons
 
     public MockButtons contextButton(ContextButton contextButton) {
         this.contextButton = contextButton;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockButtons setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

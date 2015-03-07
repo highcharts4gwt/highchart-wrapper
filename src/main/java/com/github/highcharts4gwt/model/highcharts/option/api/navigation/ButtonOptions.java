@@ -61,4 +61,8 @@ public interface ButtonOptions {
 
     ButtonOptions y(double y);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    ButtonOptions setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

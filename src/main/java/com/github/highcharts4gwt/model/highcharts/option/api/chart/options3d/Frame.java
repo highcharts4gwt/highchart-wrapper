@@ -20,4 +20,8 @@ public interface Frame {
 
     Frame side(Side side);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Frame setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

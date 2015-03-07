@@ -65,4 +65,8 @@ public interface Data {
 
     Data table(String table);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Data setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

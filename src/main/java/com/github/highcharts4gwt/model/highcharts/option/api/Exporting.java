@@ -50,4 +50,8 @@ public interface Exporting {
 
     Exporting width(double width);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Exporting setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

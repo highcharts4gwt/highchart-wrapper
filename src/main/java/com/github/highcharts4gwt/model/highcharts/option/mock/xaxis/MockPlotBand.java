@@ -16,6 +16,7 @@ public class MockPlotBand
     private Label label;
     private double to;
     private double zIndex;
+    private String genericField;
 
     public String borderColor() {
         return borderColor;
@@ -86,6 +87,15 @@ public class MockPlotBand
 
     public MockPlotBand zIndex(double zIndex) {
         this.zIndex = zIndex;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockPlotBand setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

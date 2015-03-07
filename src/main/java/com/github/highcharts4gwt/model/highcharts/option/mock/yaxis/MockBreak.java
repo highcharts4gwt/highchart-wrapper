@@ -11,6 +11,7 @@ public class MockBreak
     private double from;
     private double repeat;
     private double to;
+    private String genericField;
 
     public double breakSize() {
         return breakSize;
@@ -45,6 +46,15 @@ public class MockBreak
 
     public MockBreak to(double to) {
         this.to = to;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockBreak setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

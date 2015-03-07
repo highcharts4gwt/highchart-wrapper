@@ -14,6 +14,7 @@ public class MockPoint
     implements Point
 {
 
+    private String genericField;
 
     public void addPointClickHandler(PointClickHandler handler) {
     }
@@ -34,6 +35,15 @@ public class MockPoint
     }
 
     public void addPointUpdateHandler(PointUpdateHandler handler) {
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockPoint setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
+        return this;
     }
 
 }

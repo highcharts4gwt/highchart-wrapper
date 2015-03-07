@@ -17,4 +17,8 @@ public interface DrillUpButton {
 
     DrillUpButton theme(String themeAsJsonString);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    DrillUpButton setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

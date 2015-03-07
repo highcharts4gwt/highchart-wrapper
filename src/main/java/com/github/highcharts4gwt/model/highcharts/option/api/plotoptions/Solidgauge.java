@@ -98,4 +98,8 @@ public interface Solidgauge {
 
     Solidgauge zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Solidgauge setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

@@ -15,6 +15,7 @@ public class MockSubtitle
     private String verticalAlign;
     private double x;
     private double y;
+    private String genericField;
 
     public String align() {
         return align;
@@ -85,6 +86,15 @@ public class MockSubtitle
 
     public MockSubtitle y(double y) {
         this.y = y;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockSubtitle setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

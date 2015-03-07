@@ -151,4 +151,8 @@ public interface Legend {
 
     Legend y(double y);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Legend setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

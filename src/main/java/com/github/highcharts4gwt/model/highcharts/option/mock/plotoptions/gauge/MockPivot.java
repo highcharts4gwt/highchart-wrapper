@@ -11,6 +11,7 @@ public class MockPivot
     private String borderColor;
     private double borderWidth;
     private double radius;
+    private String genericField;
 
     public String backgroundColor() {
         return backgroundColor;
@@ -45,6 +46,15 @@ public class MockPivot
 
     public MockPivot radius(double radius) {
         this.radius = radius;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockPivot setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

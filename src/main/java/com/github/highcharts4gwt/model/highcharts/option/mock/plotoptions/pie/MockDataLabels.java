@@ -36,6 +36,7 @@ public class MockDataLabels
     private double x;
     private double y;
     private double zIndex;
+    private String genericField;
 
     public ArrayNumber autoRotation() {
         return autoRotation;
@@ -286,6 +287,15 @@ public class MockDataLabels
 
     public MockDataLabels zIndex(double zIndex) {
         this.zIndex = zIndex;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockDataLabels setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

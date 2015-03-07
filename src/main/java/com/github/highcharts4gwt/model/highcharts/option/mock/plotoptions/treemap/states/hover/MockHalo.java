@@ -10,6 +10,7 @@ public class MockHalo
     private String attributes;
     private double opacity;
     private double size;
+    private String genericField;
 
     public String attributes() {
         return attributes;
@@ -35,6 +36,15 @@ public class MockHalo
 
     public MockHalo size(double size) {
         this.size = size;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockHalo setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

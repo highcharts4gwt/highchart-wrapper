@@ -151,4 +151,8 @@ public interface Pyramid {
 
     Pyramid zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Pyramid setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

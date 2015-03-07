@@ -21,4 +21,8 @@ public interface Zone {
 
     Zone value(double value);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Zone setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

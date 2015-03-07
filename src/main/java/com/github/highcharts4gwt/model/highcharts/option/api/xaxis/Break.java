@@ -21,4 +21,8 @@ public interface Break {
 
     Break to(double to);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Break setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

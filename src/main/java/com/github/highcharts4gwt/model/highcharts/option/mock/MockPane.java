@@ -16,6 +16,7 @@ public class MockPane
     private double sizeAsNumber;
     private String sizeAsString;
     private double startAngle;
+    private String genericField;
 
     public String background() {
         return background;
@@ -77,6 +78,15 @@ public class MockPane
 
     public MockPane startAngle(double startAngle) {
         this.startAngle = startAngle;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockPane setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

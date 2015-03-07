@@ -12,6 +12,7 @@ public class MockCredits
     private String position;
     private String style;
     private String text;
+    private String genericField;
 
     public boolean enabled() {
         return enabled;
@@ -55,6 +56,15 @@ public class MockCredits
 
     public MockCredits text(String text) {
         this.text = text;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockCredits setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

@@ -25,4 +25,8 @@ public interface Select {
 
     Select radius(double radius);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Select setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

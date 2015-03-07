@@ -11,6 +11,7 @@ public class MockLabels
 
     private Array<Item> items;
     private String style;
+    private String genericField;
 
     public Array<Item> items() {
         return items;
@@ -27,6 +28,15 @@ public class MockLabels
 
     public MockLabels style(String styleAsJsonString) {
         this.style = styleAsJsonString;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockLabels setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

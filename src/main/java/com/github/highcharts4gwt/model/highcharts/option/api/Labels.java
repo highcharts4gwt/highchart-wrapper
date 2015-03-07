@@ -15,4 +15,8 @@ public interface Labels {
 
     Labels style(String styleAsJsonString);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Labels setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

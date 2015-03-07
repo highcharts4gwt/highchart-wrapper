@@ -26,4 +26,8 @@ public interface Drilldown {
 
     Drilldown drillUpButton(DrillUpButton drillUpButton);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Drilldown setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

@@ -73,4 +73,8 @@ public interface ContextButton {
 
     ContextButton y(double y);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    ContextButton setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

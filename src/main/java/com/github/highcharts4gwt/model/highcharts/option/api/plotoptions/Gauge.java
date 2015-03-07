@@ -124,4 +124,8 @@ public interface Gauge {
 
     Gauge zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Gauge setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

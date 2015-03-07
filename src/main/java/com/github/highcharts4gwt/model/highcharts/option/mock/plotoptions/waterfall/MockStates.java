@@ -9,6 +9,7 @@ public class MockStates
 {
 
     private Hover hover;
+    private String genericField;
 
     public Hover hover() {
         return hover;
@@ -16,6 +17,15 @@ public class MockStates
 
     public MockStates hover(Hover hover) {
         this.hover = hover;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockStates setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

@@ -243,4 +243,8 @@ public interface XAxis {
 
     XAxis units(ArrayNumber units);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    XAxis setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

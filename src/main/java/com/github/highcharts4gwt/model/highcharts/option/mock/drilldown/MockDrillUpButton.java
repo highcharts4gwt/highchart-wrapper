@@ -10,6 +10,7 @@ public class MockDrillUpButton
     private String position;
     private String relativeTo;
     private String theme;
+    private String genericField;
 
     public String position() {
         return position;
@@ -35,6 +36,15 @@ public class MockDrillUpButton
 
     public MockDrillUpButton theme(String themeAsJsonString) {
         this.theme = themeAsJsonString;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockDrillUpButton setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

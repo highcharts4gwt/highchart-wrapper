@@ -38,4 +38,8 @@ public interface PlotBand {
 
     PlotBand zIndex(double zIndex);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    PlotBand setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

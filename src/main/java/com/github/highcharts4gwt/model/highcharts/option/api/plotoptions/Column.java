@@ -211,4 +211,8 @@ public interface Column {
 
     Column zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Column setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

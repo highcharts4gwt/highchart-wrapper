@@ -21,4 +21,8 @@ public interface Loading {
 
     Loading style(String styleAsJsonString);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Loading setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

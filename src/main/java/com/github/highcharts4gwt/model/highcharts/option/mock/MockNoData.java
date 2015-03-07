@@ -10,6 +10,7 @@ public class MockNoData
     private String attr;
     private String position;
     private String style;
+    private String genericField;
 
     public String attr() {
         return attr;
@@ -35,6 +36,15 @@ public class MockNoData
 
     public MockNoData style(String styleAsJsonString) {
         this.style = styleAsJsonString;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockNoData setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

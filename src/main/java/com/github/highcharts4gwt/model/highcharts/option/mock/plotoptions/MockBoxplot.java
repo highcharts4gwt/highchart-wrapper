@@ -64,6 +64,7 @@ public class MockBoxplot
     private double whiskerWidth;
     private String zoneAxis;
     private ArrayNumber zones;
+    private String genericField;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -482,6 +483,15 @@ public class MockBoxplot
 
     public MockBoxplot zones(ArrayNumber zones) {
         this.zones = zones;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockBoxplot setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

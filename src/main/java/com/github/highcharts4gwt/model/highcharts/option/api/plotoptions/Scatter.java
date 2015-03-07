@@ -151,4 +151,8 @@ public interface Scatter {
 
     Scatter zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Scatter setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

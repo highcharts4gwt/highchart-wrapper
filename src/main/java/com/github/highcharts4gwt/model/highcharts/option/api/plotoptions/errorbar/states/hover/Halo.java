@@ -17,4 +17,8 @@ public interface Halo {
 
     Halo size(double size);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Halo setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

@@ -74,4 +74,8 @@ public interface Lang {
 
     Lang weekdays(ArrayString weekdays);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Lang setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

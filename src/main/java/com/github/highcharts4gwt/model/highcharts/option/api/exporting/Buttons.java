@@ -10,4 +10,8 @@ public interface Buttons {
 
     Buttons contextButton(ContextButton contextButton);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Buttons setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

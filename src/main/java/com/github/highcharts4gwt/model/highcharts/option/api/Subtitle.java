@@ -37,4 +37,8 @@ public interface Subtitle {
 
     Subtitle y(double y);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Subtitle setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

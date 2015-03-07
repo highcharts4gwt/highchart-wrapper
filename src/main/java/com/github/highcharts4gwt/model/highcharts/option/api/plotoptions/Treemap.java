@@ -165,4 +165,8 @@ public interface Treemap {
 
     Treemap zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Treemap setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

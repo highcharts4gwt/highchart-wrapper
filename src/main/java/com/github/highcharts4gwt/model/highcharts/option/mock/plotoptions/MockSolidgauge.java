@@ -36,6 +36,7 @@ public class MockSolidgauge
     private boolean wrap;
     private String zoneAxis;
     private ArrayNumber zones;
+    private String genericField;
 
     public boolean animation() {
         return animation;
@@ -202,6 +203,15 @@ public class MockSolidgauge
 
     public MockSolidgauge zones(ArrayNumber zones) {
         this.zones = zones;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockSolidgauge setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

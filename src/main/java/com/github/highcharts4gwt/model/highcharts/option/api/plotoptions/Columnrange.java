@@ -203,4 +203,8 @@ public interface Columnrange {
 
     Columnrange zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Columnrange setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

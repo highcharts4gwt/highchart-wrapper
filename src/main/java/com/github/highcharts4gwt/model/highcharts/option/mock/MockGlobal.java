@@ -12,6 +12,7 @@ public class MockGlobal
     private String canvasToolsURL;
     private double timezoneOffset;
     private boolean useUTC;
+    private String genericField;
 
     public String Date() {
         return Date;
@@ -55,6 +56,15 @@ public class MockGlobal
 
     public MockGlobal useUTC(boolean useUTC) {
         this.useUTC = useUTC;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockGlobal setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

@@ -29,6 +29,7 @@ public class MockData
     private boolean sliced;
     private double x;
     private double y;
+    private String genericField;
 
     public String color() {
         return color;
@@ -174,6 +175,15 @@ public class MockData
 
     public MockData y(double y) {
         this.y = y;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockData setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

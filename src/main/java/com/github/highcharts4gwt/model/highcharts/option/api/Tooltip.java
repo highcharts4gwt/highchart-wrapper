@@ -97,4 +97,8 @@ public interface Tooltip {
 
     Tooltip xDateFormat(String xDateFormat);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Tooltip setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

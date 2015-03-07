@@ -24,6 +24,7 @@ public class MockLabels
     private double x;
     private double y;
     private double zIndex;
+    private String genericField;
 
     public String align() {
         return align;
@@ -166,6 +167,15 @@ public class MockLabels
 
     public MockLabels zIndex(double zIndex) {
         this.zIndex = zIndex;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockLabels setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

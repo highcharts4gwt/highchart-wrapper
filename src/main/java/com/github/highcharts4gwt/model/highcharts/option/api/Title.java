@@ -41,4 +41,8 @@ public interface Title {
 
     Title y(double y);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Title setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

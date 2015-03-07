@@ -70,4 +70,8 @@ public interface Labels {
 
     Labels zIndex(double zIndex);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Labels setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

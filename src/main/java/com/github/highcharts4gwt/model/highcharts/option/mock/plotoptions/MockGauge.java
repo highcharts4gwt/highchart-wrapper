@@ -44,6 +44,7 @@ public class MockGauge
     private boolean wrap;
     private String zoneAxis;
     private ArrayNumber zones;
+    private String genericField;
 
     public boolean animation() {
         return animation;
@@ -264,6 +265,15 @@ public class MockGauge
 
     public MockGauge zones(ArrayNumber zones) {
         this.zones = zones;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockGauge setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

@@ -106,4 +106,8 @@ public interface DataLabels {
 
     DataLabels zIndex(double zIndex);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    DataLabels setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

@@ -215,4 +215,8 @@ public interface Chart {
 
     Chart zoomType(String zoomType);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Chart setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

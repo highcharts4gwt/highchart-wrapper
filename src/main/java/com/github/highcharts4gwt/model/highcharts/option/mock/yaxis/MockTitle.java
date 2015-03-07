@@ -14,6 +14,7 @@ public class MockTitle
     private double rotation;
     private String style;
     private String text;
+    private String genericField;
 
     public String align() {
         return align;
@@ -75,6 +76,15 @@ public class MockTitle
 
     public MockTitle text(String text) {
         this.text = text;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockTitle setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

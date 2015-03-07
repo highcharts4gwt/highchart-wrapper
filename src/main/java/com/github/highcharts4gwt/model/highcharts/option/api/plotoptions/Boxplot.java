@@ -210,4 +210,8 @@ public interface Boxplot {
 
     Boxplot zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Boxplot setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

@@ -12,6 +12,7 @@ public class MockSelect
     private String lineColor;
     private double lineWidth;
     private double radius;
+    private String genericField;
 
     public boolean enabled() {
         return enabled;
@@ -55,6 +56,15 @@ public class MockSelect
 
     public MockSelect radius(double radius) {
         this.radius = radius;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockSelect setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

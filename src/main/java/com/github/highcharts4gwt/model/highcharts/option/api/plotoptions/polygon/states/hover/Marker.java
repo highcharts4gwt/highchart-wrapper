@@ -37,4 +37,8 @@ public interface Marker {
 
     Marker width(double width);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Marker setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

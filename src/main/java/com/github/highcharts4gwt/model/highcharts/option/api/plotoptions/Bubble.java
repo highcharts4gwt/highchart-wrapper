@@ -175,4 +175,8 @@ public interface Bubble {
 
     Bubble zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Bubble setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

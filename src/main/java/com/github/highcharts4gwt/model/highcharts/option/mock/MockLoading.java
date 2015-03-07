@@ -11,6 +11,7 @@ public class MockLoading
     private String labelStyle;
     private double showDuration;
     private String style;
+    private String genericField;
 
     public double hideDuration() {
         return hideDuration;
@@ -45,6 +46,15 @@ public class MockLoading
 
     public MockLoading style(String styleAsJsonString) {
         this.style = styleAsJsonString;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockLoading setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

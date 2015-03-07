@@ -207,4 +207,8 @@ public interface Waterfall {
 
     Waterfall zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Waterfall setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

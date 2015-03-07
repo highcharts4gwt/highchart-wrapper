@@ -25,6 +25,7 @@ public class MockLang
     private ArrayString shortMonths;
     private String thousandsSep;
     private ArrayString weekdays;
+    private String genericField;
 
     public String contextButtonTitle() {
         return contextButtonTitle;
@@ -176,6 +177,15 @@ public class MockLang
 
     public MockLang weekdays(ArrayString weekdays) {
         this.weekdays = weekdays;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockLang setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

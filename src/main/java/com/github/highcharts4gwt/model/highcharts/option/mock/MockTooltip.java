@@ -30,6 +30,7 @@ public class MockTooltip
     private String valuePrefix;
     private String valueSuffix;
     private String xDateFormat;
+    private String genericField;
 
     public boolean animation() {
         return animation;
@@ -235,6 +236,15 @@ public class MockTooltip
 
     public MockTooltip xDateFormat(String xDateFormat) {
         this.xDateFormat = xDateFormat;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockTooltip setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

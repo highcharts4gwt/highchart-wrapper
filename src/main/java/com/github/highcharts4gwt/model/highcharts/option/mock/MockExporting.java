@@ -19,6 +19,7 @@ public class MockExporting
     private String type;
     private String url;
     private double width;
+    private String genericField;
 
     public Buttons buttons() {
         return buttons;
@@ -116,6 +117,15 @@ public class MockExporting
 
     public MockExporting width(double width) {
         this.width = width;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockExporting setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

@@ -33,4 +33,8 @@ public interface Hover {
 
     Hover radiusPlus(double radiusPlus);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Hover setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

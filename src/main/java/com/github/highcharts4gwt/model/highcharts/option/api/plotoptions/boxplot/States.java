@@ -10,4 +10,8 @@ public interface States {
 
     States hover(Hover hover);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    States setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

@@ -22,4 +22,8 @@ public interface Navigation {
 
     Navigation menuStyle(String menuStyleAsJsonString);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Navigation setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

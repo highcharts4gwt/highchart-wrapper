@@ -21,4 +21,8 @@ public interface Pivot {
 
     Pivot radius(double radius);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Pivot setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

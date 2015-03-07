@@ -178,4 +178,8 @@ public interface Areasplinerange {
 
     Areasplinerange zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Areasplinerange setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

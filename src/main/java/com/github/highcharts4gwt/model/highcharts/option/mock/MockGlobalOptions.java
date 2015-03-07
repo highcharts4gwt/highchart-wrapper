@@ -11,6 +11,7 @@ public class MockGlobalOptions
 
     private Global global;
     private Lang lang;
+    private String genericField;
 
     public Global global() {
         return global;
@@ -27,6 +28,15 @@ public class MockGlobalOptions
 
     public MockGlobalOptions lang(Lang lang) {
         this.lang = lang;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockGlobalOptions setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

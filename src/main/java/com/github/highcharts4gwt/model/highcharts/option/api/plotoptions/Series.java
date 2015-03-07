@@ -171,4 +171,8 @@ public interface Series {
 
     Series zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Series setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

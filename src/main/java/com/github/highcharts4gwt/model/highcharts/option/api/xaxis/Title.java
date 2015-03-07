@@ -33,4 +33,8 @@ public interface Title {
 
     Title text(String text);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Title setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

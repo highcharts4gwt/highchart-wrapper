@@ -175,4 +175,8 @@ public interface Line {
 
     Line zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Line setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

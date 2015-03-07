@@ -15,6 +15,7 @@ public class MockLevel
     private String layoutAlgorithm;
     private String layoutStartingDirection;
     private double level;
+    private String genericField;
 
     public String borderColor() {
         return borderColor;
@@ -85,6 +86,15 @@ public class MockLevel
 
     public MockLevel level(double level) {
         this.level = level;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockLevel setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

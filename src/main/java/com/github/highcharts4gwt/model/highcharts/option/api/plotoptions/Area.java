@@ -195,4 +195,8 @@ public interface Area {
 
     Area zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Area setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

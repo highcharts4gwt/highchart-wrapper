@@ -34,4 +34,8 @@ public interface PlotLine {
 
     PlotLine zIndex(double zIndex);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    PlotLine setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

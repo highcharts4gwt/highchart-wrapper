@@ -12,6 +12,7 @@ public class MockNavigation
     private String menuItemHoverStyle;
     private String menuItemStyle;
     private String menuStyle;
+    private String genericField;
 
     public ButtonOptions buttonOptions() {
         return buttonOptions;
@@ -46,6 +47,15 @@ public class MockNavigation
 
     public MockNavigation menuStyle(String menuStyleAsJsonString) {
         this.menuStyle = menuStyleAsJsonString;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockNavigation setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

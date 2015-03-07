@@ -182,4 +182,8 @@ public interface Errorbar {
 
     Errorbar zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Errorbar setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

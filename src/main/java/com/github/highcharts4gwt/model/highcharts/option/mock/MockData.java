@@ -22,6 +22,7 @@ public class MockData
     private double startRow;
     private boolean switchRowsAndColumns;
     private String table;
+    private String genericField;
 
     public String csv() {
         return csv;
@@ -155,6 +156,15 @@ public class MockData
 
     public MockData table(String table) {
         this.table = table;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockData setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

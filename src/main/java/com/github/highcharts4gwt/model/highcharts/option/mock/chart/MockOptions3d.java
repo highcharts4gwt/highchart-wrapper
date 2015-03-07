@@ -14,6 +14,7 @@ public class MockOptions3d
     private boolean enabled;
     private Frame frame;
     private double viewDistance;
+    private String genericField;
 
     public double alpha() {
         return alpha;
@@ -66,6 +67,15 @@ public class MockOptions3d
 
     public MockOptions3d viewDistance(double viewDistance) {
         this.viewDistance = viewDistance;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockOptions3d setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

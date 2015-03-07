@@ -26,4 +26,8 @@ public interface Point {
 
     void addPointUpdateHandler(PointUpdateHandler pointUpdateHandler);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Point setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

@@ -163,4 +163,8 @@ public interface Pie {
 
     Pie zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Pie setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

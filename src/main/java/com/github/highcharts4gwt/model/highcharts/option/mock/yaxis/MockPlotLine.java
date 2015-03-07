@@ -15,6 +15,7 @@ public class MockPlotLine
     private double value;
     private double width;
     private double zIndex;
+    private String genericField;
 
     public String color() {
         return color;
@@ -76,6 +77,15 @@ public class MockPlotLine
 
     public MockPlotLine zIndex(double zIndex) {
         this.zIndex = zIndex;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockPlotLine setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

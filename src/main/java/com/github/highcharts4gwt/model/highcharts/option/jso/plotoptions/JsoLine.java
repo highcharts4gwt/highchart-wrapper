@@ -611,4 +611,18 @@ public class JsoLine
     }-*/
     ;
 
+    public final native String getFieldAsJsonObject(String fieldName)
+        throws RuntimeException /*-{
+        this[fieldName] = (this[fieldName] || {});
+        return JSON.stringify(this[fieldName]);
+    }-*/
+    ;
+
+    public final native JsoLine setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject)
+        throws RuntimeException /*-{
+        this[fieldName] = JSON.parse(fieldValueAsJsonObject);
+        return this;
+    }-*/
+    ;
+
 }

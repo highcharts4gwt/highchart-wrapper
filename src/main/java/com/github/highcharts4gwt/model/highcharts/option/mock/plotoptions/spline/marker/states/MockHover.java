@@ -14,6 +14,7 @@ public class MockHover
     private double lineWidthPlus;
     private double radius;
     private double radiusPlus;
+    private String genericField;
 
     public boolean enabled() {
         return enabled;
@@ -75,6 +76,15 @@ public class MockHover
 
     public MockHover radiusPlus(double radiusPlus) {
         this.radiusPlus = radiusPlus;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockHover setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

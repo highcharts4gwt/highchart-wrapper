@@ -72,6 +72,7 @@ public class MockXAxis
     private Title title;
     private String type;
     private ArrayNumber units;
+    private String genericField;
 
     public boolean allowDecimals() {
         return allowDecimals;
@@ -577,6 +578,15 @@ public class MockXAxis
 
     public MockXAxis units(ArrayNumber units) {
         this.units = units;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockXAxis setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

@@ -37,4 +37,8 @@ public interface Dial {
 
     Dial topWidth(double topWidth);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Dial setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

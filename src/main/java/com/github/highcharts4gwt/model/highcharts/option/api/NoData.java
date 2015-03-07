@@ -17,4 +17,8 @@ public interface NoData {
 
     NoData style(String styleAsJsonString);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    NoData setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

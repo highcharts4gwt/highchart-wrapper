@@ -35,4 +35,8 @@ public interface Pane {
 
     Pane startAngle(double startAngle);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Pane setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

@@ -30,4 +30,8 @@ public interface Options3d {
 
     Options3d viewDistance(double viewDistance);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Options3d setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

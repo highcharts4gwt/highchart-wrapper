@@ -68,4 +68,8 @@ public interface Series {
 
     Series zIndex(double zIndex);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Series setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

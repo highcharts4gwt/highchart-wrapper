@@ -5,4 +5,8 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplo
 public interface Events {
 
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Events setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

@@ -171,4 +171,8 @@ public interface Spline {
 
     Spline zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Spline setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

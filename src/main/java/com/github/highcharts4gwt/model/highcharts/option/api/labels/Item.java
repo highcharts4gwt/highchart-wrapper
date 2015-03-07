@@ -13,4 +13,8 @@ public interface Item {
 
     Item style(String styleAsJsonString);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Item setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

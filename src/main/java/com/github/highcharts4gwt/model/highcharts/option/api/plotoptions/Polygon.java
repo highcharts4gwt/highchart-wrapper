@@ -151,4 +151,8 @@ public interface Polygon {
 
     Polygon zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Polygon setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

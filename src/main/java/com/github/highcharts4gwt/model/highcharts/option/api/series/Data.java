@@ -83,4 +83,8 @@ public interface Data {
 
     Data y(double y);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Data setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

@@ -41,4 +41,8 @@ public interface Label {
 
     Label y(double y);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Label setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

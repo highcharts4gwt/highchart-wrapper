@@ -16,6 +16,7 @@ public class MockTitle
     private String verticalAlign;
     private double x;
     private double y;
+    private String genericField;
 
     public String align() {
         return align;
@@ -95,6 +96,15 @@ public class MockTitle
 
     public MockTitle y(double y) {
         this.y = y;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockTitle setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

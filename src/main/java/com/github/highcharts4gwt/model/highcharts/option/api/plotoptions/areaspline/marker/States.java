@@ -15,4 +15,8 @@ public interface States {
 
     States select(Select select);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    States setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

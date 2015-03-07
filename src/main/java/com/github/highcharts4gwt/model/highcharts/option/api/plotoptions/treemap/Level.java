@@ -37,4 +37,8 @@ public interface Level {
 
     Level level(double level);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Level setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

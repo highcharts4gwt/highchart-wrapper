@@ -13,4 +13,8 @@ public interface Back {
 
     Back size(double size);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Back setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

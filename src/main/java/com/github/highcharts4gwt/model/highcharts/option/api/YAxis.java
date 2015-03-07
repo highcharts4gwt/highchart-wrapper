@@ -264,4 +264,8 @@ public interface YAxis {
 
     YAxis units(ArrayNumber units);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    YAxis setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

@@ -25,4 +25,8 @@ public interface Credits {
 
     Credits text(String text);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Credits setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

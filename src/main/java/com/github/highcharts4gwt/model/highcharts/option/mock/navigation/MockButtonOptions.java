@@ -21,6 +21,7 @@ public class MockButtonOptions
     private String verticalAlign;
     private double width;
     private double y;
+    private String genericField;
 
     public String align() {
         return align;
@@ -145,6 +146,15 @@ public class MockButtonOptions
 
     public MockButtonOptions y(double y) {
         this.y = y;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockButtonOptions setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

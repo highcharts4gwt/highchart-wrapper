@@ -178,4 +178,8 @@ public interface Arearange {
 
     Arearange zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Arearange setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

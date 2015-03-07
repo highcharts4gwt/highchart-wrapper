@@ -13,6 +13,7 @@ public class MockFrame
     private Back back;
     private Bottom bottom;
     private Side side;
+    private String genericField;
 
     public Back back() {
         return back;
@@ -38,6 +39,15 @@ public class MockFrame
 
     public MockFrame side(Side side) {
         this.side = side;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockFrame setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

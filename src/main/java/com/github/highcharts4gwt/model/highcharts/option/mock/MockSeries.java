@@ -25,6 +25,7 @@ public class MockSeries
     private double yAxisAsNumber;
     private String yAxisAsString;
     private double zIndex;
+    private String genericField;
 
     public Array<Data> dataAsArrayObject() {
         return dataAsArrayObject;
@@ -158,6 +159,15 @@ public class MockSeries
 
     public MockSeries zIndex(double zIndex) {
         this.zIndex = zIndex;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockSeries setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

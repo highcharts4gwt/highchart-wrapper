@@ -15,4 +15,8 @@ public interface GlobalOptions {
 
     GlobalOptions lang(Lang lang);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    GlobalOptions setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

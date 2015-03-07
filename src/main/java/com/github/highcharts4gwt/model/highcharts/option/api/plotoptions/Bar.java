@@ -211,4 +211,8 @@ public interface Bar {
 
     Bar zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Bar setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

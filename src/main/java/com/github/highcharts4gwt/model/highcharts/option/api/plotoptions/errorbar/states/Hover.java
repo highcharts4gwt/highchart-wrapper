@@ -27,4 +27,8 @@ public interface Hover {
 
     Hover marker(Marker marker);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Hover setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

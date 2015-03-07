@@ -11,6 +11,7 @@ public class MockZone
     private String dashStyle;
     private String fillColor;
     private double value;
+    private String genericField;
 
     public String color() {
         return color;
@@ -45,6 +46,15 @@ public class MockZone
 
     public MockZone value(double value) {
         this.value = value;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockZone setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

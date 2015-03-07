@@ -53,6 +53,7 @@ public class MockPlotOptions
     private Spline spline;
     private Treemap treemap;
     private Waterfall waterfall;
+    private String genericField;
 
     public Area area() {
         return area;
@@ -258,6 +259,15 @@ public class MockPlotOptions
 
     public MockPlotOptions waterfall(Waterfall waterfall) {
         this.waterfall = waterfall;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockPlotOptions setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

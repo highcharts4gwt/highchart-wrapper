@@ -9,6 +9,7 @@ public class MockSide
 
     private String color;
     private double size;
+    private String genericField;
 
     public String color() {
         return color;
@@ -25,6 +26,15 @@ public class MockSide
 
     public MockSide size(double size) {
         this.size = size;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockSide setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

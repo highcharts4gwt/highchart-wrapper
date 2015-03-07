@@ -15,6 +15,7 @@ public class MockMarker
     private double radius;
     private String symbol;
     private double width;
+    private String genericField;
 
     public boolean enabled() {
         return enabled;
@@ -85,6 +86,15 @@ public class MockMarker
 
     public MockMarker width(double width) {
         this.width = width;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockMarker setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

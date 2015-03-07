@@ -13,4 +13,8 @@ public interface Side {
 
     Side size(double size);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Side setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

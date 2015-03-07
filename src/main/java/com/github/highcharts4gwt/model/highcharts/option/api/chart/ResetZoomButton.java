@@ -17,4 +17,8 @@ public interface ResetZoomButton {
 
     ResetZoomButton theme(String themeAsJsonString);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    ResetZoomButton setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

@@ -17,6 +17,7 @@ public class MockStackLabels
     private String verticalAlign;
     private double x;
     private double y;
+    private String genericField;
 
     public String align() {
         return align;
@@ -105,6 +106,15 @@ public class MockStackLabels
 
     public MockStackLabels y(double y) {
         this.y = y;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockStackLabels setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

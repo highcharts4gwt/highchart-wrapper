@@ -14,6 +14,7 @@ public class MockHover
     private double lineWidth;
     private double lineWidthPlus;
     private Marker marker;
+    private String genericField;
 
     public boolean enabled() {
         return enabled;
@@ -57,6 +58,15 @@ public class MockHover
 
     public MockHover marker(Marker marker) {
         this.marker = marker;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockHover setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

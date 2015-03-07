@@ -13,4 +13,8 @@ public interface Bottom {
 
     Bottom size(double size);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Bottom setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

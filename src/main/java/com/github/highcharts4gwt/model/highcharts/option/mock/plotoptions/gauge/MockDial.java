@@ -15,6 +15,7 @@ public class MockDial
     private String radius;
     private String rearLength;
     private double topWidth;
+    private String genericField;
 
     public String backgroundColor() {
         return backgroundColor;
@@ -85,6 +86,15 @@ public class MockDial
 
     public MockDial topWidth(double topWidth) {
         this.topWidth = topWidth;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockDial setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

@@ -13,6 +13,7 @@ public class MockNavigation
     private double arrowSize;
     private String inactiveColor;
     private String style;
+    private String genericField;
 
     public String activeColor() {
         return activeColor;
@@ -65,6 +66,15 @@ public class MockNavigation
 
     public MockNavigation style(String styleAsJsonString) {
         this.style = styleAsJsonString;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockNavigation setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

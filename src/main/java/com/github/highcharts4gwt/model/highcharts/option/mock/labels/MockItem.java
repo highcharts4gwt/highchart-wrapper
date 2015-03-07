@@ -9,6 +9,7 @@ public class MockItem
 
     private String html;
     private String style;
+    private String genericField;
 
     public String html() {
         return html;
@@ -25,6 +26,15 @@ public class MockItem
 
     public MockItem style(String styleAsJsonString) {
         this.style = styleAsJsonString;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockItem setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

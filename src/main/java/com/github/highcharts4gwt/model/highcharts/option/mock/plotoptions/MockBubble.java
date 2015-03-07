@@ -56,6 +56,7 @@ public class MockBubble
     private double zThreshold;
     private String zoneAxis;
     private ArrayNumber zones;
+    private String genericField;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -393,6 +394,15 @@ public class MockBubble
 
     public MockBubble zones(ArrayNumber zones) {
         this.zones = zones;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockBubble setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

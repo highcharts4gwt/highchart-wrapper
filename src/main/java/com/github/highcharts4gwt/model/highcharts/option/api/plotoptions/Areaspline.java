@@ -195,4 +195,8 @@ public interface Areaspline {
 
     Areaspline zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Areaspline setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

@@ -10,6 +10,7 @@ public class MockResetZoomButton
     private String position;
     private String relativeTo;
     private String theme;
+    private String genericField;
 
     public String position() {
         return position;
@@ -35,6 +36,15 @@ public class MockResetZoomButton
 
     public MockResetZoomButton theme(String themeAsJsonString) {
         this.theme = themeAsJsonString;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockResetZoomButton setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

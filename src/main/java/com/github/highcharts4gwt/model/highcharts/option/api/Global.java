@@ -25,4 +25,8 @@ public interface Global {
 
     Global useUTC(boolean useUTC);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Global setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

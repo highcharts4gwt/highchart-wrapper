@@ -41,21 +41,17 @@ public interface ChartOptions {
 
     ChartOptions plotOptions(PlotOptions plotOptions);
 
-    YAxis yAxis();
-
-    ChartOptions yAxis(YAxis yAxis);
-
     XAxis xAxis();
 
     ChartOptions xAxis(XAxis xAxis);
 
+    YAxis yAxis();
+
+    ChartOptions yAxis(YAxis yAxis);
+
     Navigation navigation();
 
     ChartOptions navigation(Navigation navigation);
-
-    Subtitle subtitle();
-
-    ChartOptions subtitle(Subtitle subtitle);
 
     Title title();
 
@@ -64,6 +60,10 @@ public interface ChartOptions {
     Exporting exporting();
 
     ChartOptions exporting(Exporting exporting);
+
+    Subtitle subtitle();
+
+    ChartOptions subtitle(Subtitle subtitle);
 
     Tooltip tooltip();
 
@@ -100,5 +100,9 @@ public interface ChartOptions {
     Labels labels();
 
     ChartOptions labels(Labels labels);
+
+    String getFieldAsJsonObject(String fieldName);
+
+    ChartOptions setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
 }

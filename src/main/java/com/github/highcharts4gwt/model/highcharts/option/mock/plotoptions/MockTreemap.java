@@ -55,6 +55,7 @@ public class MockTreemap
     private boolean visible;
     private String zoneAxis;
     private ArrayNumber zones;
+    private String genericField;
 
     public boolean allowDrillToNode() {
         return allowDrillToNode;
@@ -365,6 +366,15 @@ public class MockTreemap
 
     public MockTreemap zones(ArrayNumber zones) {
         this.zones = zones;
+        return this;
+    }
+
+    public String getFieldAsJsonObject(String fieldName) {
+        return genericField;
+    }
+
+    public MockTreemap setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
+        this.genericField = fieldValueAsJsonObject;
         return this;
     }
 

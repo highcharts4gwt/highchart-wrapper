@@ -167,4 +167,8 @@ public interface Funnel {
 
     Funnel zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Funnel setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

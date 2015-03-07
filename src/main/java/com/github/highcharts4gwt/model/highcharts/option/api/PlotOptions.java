@@ -120,4 +120,8 @@ public interface PlotOptions {
 
     PlotOptions waterfall(Waterfall waterfall);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    PlotOptions setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }

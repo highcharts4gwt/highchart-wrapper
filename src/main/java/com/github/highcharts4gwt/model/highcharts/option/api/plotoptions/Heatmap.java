@@ -147,4 +147,8 @@ public interface Heatmap {
 
     Heatmap zones(ArrayNumber zones);
 
+    String getFieldAsJsonObject(String fieldName);
+
+    Heatmap setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
 }
