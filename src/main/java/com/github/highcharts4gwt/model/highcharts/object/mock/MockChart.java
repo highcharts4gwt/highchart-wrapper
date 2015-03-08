@@ -5,6 +5,11 @@ import com.github.highcharts4gwt.model.highcharts.object.api.Axis;
 import com.github.highcharts4gwt.model.highcharts.object.api.Chart;
 import com.github.highcharts4gwt.model.highcharts.object.api.Series;
 
+
+/**
+ * <p>The chart object is the JavaScript object representing a single chart in the web page.The pointer to your chart object is returned when a chart is created using the <code>Highcharts.Chart()</code> constructor:</p><pre>var chart1 = new Highcharts.Chart(options);</pre>
+ * 
+ */
 public class MockChart
     implements Chart
 {

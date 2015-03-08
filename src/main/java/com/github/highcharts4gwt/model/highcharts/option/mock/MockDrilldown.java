@@ -4,6 +4,13 @@ package com.github.highcharts4gwt.model.highcharts.option.mock;
 import com.github.highcharts4gwt.model.highcharts.option.api.Drilldown;
 import com.github.highcharts4gwt.model.highcharts.option.api.drilldown.DrillUpButton;
 
+
+/**
+ * <p>Options for drill down, the concept of inspecting increasingly high resolution data through clicking on chart items like columns or pie slices.</p>
+ * 
+ * <p>The drilldown feature requires the <code>drilldown.js</code> file to be loaded, found in the <code>modules</code> directory of the download package, or online at <a href="http://code.highcharts.com/modules/drilldown.js">code.highcharts.com/modules/drilldown.js</a>.</p>
+ * 
+ */
 public class MockDrilldown
     implements Drilldown
 {

@@ -4,6 +4,13 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.xaxis;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PlotBand;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.plotbands.Label;
 
+
+/**
+ * <p>An array of colored bands stretching across the plot area marking an interval on the axis.</p>
+ * 
+ * <p>In a gauge, a plot band on the Y axis (value axis) will stretch along the perimeter of the gauge.</p>
+ * 
+ */
 public class MockPlotBand
     implements PlotBand
 {

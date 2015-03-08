@@ -18,6 +18,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfa
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.WaterfallShowHandler;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Options for the waterfall series type.
+ * 
+ */
 public class JsoWaterfall
     extends JavaScriptObject
     implements Waterfall

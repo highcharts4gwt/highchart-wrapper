@@ -4,6 +4,10 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.yaxis;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.Title;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * 
+ */
 public class JsoTitle
     extends JavaScriptObject
     implements Title

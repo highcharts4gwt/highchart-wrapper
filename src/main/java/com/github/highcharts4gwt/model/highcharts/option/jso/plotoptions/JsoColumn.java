@@ -18,6 +18,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * 
+ * 
+ */
 public class JsoColumn
     extends JavaScriptObject
     implements Column

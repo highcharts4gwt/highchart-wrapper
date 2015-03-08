@@ -5,6 +5,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidga
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.states.hover.Halo;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.states.hover.Marker;
 
+
+/**
+ * Options for the hovered series
+ * 
+ */
 public class MockHover
     implements Hover
 {

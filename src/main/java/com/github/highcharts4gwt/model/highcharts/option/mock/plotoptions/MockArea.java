@@ -17,6 +17,10 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.Po
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.Tooltip;
 
+
+/**
+ * 
+ */
 public class MockArea
     implements Area
 {

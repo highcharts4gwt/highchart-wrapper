@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.chart.options3d.fr
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.options3d.frame.Back;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Defines the back panel of the frame around 3D charts.
+ * 
+ */
 public class JsoBack
     extends JavaScriptObject
     implements Back

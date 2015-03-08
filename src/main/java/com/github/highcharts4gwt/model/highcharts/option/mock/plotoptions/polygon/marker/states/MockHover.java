@@ -3,6 +3,10 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.polyg
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.marker.states.Hover;
 
+
+/**
+ * 
+ */
 public class MockHover
     implements Hover
 {

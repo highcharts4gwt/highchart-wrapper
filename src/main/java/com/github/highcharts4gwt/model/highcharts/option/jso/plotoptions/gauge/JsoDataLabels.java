@@ -5,6 +5,11 @@ import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.DataLabels;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Data labels for the gauge. For gauges, the data labels are enabled by default and shown in a bordered box below the point.
+ * 
+ */
 public class JsoDataLabels
     extends JavaScriptObject
     implements DataLabels

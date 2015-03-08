@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.Subtitle;
 
+
+/**
+ * The chart's subtitle
+ * 
+ */
 public class MockSubtitle
     implements Subtitle
 {

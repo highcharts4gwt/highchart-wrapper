@@ -11,6 +11,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.poi
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.point.PointUpdateHandler;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Properties for each single point
+ * 
+ */
 public class JsoPoint
     extends JavaScriptObject
     implements Point

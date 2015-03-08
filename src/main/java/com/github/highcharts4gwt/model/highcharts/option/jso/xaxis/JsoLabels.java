@@ -5,6 +5,11 @@ import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Labels;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * The axis labels show the number or category for each tick.
+ * 
+ */
 public class JsoLabels
     extends JavaScriptObject
     implements Labels

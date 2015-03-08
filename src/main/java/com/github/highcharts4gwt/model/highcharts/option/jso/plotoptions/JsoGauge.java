@@ -19,6 +19,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.S
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * General plotting options for the gauge series type. Requires <code>highcharts-more.js</code>
+ * 
+ */
 public class JsoGauge
     extends JavaScriptObject
     implements Gauge

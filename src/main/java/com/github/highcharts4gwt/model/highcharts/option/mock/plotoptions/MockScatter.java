@@ -17,6 +17,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.Tooltip;
 
+
+/**
+ * 
+ * 
+ */
 public class MockScatter
     implements Scatter
 {

@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.splin
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.Zone;
 
+
+/**
+ * An array defining zones within a series.
+ * 
+ */
 public class MockZone
     implements Zone
 {

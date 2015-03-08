@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.treema
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * 
+ * 
+ */
 public class JsoTooltip
     extends JavaScriptObject
     implements Tooltip

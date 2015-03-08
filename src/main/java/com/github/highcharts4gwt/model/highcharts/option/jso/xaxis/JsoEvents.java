@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.xaxis;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Events;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Event handlers for the axis.
+ * 
+ */
 public class JsoEvents
     extends JavaScriptObject
     implements Events

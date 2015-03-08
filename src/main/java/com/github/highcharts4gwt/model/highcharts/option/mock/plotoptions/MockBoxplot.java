@@ -16,6 +16,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.Tooltip;
 
+
+/**
+ * A box plot is a convenient way of depicting groups of data through their five-number summaries: the smallest observation (sample minimum), lower quartile (Q1), median (Q2), upper quartile (Q3), and largest observation (sample maximum).
+ * 
+ */
 public class MockBoxplot
     implements Boxplot
 {

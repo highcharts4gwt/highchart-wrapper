@@ -6,7 +6,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.highcharts4gwt</groupId>
 	<artifactId>highcharts</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<description>GWT wrapper for highcharts library.</description>
 	<url>https://github.com/highcharts4gwt/highcharts</url>

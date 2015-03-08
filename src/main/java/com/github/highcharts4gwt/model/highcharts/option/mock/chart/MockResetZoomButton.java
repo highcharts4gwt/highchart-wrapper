@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.chart;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ResetZoomButton;
 
+
+/**
+ * The button that appears after a selection zoom, allowing the user to reset zoom.
+ * 
+ */
 public class MockResetZoomButton
     implements ResetZoomButton
 {

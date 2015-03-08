@@ -4,6 +4,10 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.treema
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.states.hover.Marker;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * 
+ */
 public class JsoMarker
     extends JavaScriptObject
     implements Marker

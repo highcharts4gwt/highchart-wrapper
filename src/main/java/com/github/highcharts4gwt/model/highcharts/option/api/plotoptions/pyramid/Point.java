@@ -9,6 +9,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.point.PointUnselectHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.point.PointUpdateHandler;
 
+
+/**
+ * Properties for each single point
+ * 
+ */
 public interface Point {
 
 

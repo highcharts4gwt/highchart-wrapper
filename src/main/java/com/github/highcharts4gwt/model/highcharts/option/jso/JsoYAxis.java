@@ -15,6 +15,15 @@ import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisPointBre
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisSetExtremesHandler;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * <p>The Y axis or value axis. Normally this is the vertical axis, though if the 
+ * 	chart is inverted this is the horizontal axis. In case of multiple axes, the yAxis
+ * 	node is an array of configuration objects.</p>
+ * 	<p>See <a class="internal" href="#axis.object">the Axis object</a> for programmatic
+ * 	access to the axis.</p>
+ * 
+ */
 public class JsoYAxis
     extends JavaScriptObject
     implements YAxis

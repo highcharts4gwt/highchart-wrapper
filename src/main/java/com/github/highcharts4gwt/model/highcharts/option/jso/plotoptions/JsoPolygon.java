@@ -18,6 +18,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * A polygon series can be used to draw any freeform shape in the cartesian coordinate system. A fill is applied with the <code>color</code> option, and stroke is applied through <code>lineWidth</code> and <code>lineColor</code> options. Requires the <code>highcharts-more.js</code> file.
+ * 
+ */
 public class JsoPolygon
     extends JavaScriptObject
     implements Polygon

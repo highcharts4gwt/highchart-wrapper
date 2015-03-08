@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.chart;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.Options3d;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.options3d.Frame;
 
+
+/**
+ * Options to render charts in 3 dimensions. This feature requires <code>highcharts-3d.js</code>, found in the download package or online at <a href="http://code.highcharts.com/highcharts-3d.js">code.highcharts.com/highcharts-3d.js</a>.
+ * 
+ */
 public class MockOptions3d
     implements Options3d
 {

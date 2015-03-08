@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.areas
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.states.Hover;
 
+
+/**
+ * A wrapper object for all the series options in specific states.
+ * 
+ */
 public class MockStates
     implements States
 {

@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.chart.options3d.f
 
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.options3d.frame.Side;
 
+
+/**
+ * The side for the frame around a 3D chart.
+ * 
+ */
 public class MockSide
     implements Side
 {

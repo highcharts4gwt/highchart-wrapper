@@ -3,6 +3,10 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.error
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.states.hover.Marker;
 
+
+/**
+ * 
+ */
 public class MockMarker
     implements Marker
 {

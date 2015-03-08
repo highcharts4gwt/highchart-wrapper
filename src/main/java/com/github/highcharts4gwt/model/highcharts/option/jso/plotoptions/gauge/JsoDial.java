@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.gauge;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.Dial;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Options for the dial or arrow pointer of the gauge.
+ * 
+ */
 public class JsoDial
     extends JavaScriptObject
     implements Dial

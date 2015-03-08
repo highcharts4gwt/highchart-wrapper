@@ -18,6 +18,10 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.Sta
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * 
+ */
 public class JsoBar
     extends JavaScriptObject
     implements Bar

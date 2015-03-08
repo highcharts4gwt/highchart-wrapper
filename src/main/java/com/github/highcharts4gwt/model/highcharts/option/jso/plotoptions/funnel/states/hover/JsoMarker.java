@@ -4,6 +4,10 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.funnel
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.states.hover.Marker;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * 
+ */
 public class JsoMarker
     extends JavaScriptObject
     implements Marker

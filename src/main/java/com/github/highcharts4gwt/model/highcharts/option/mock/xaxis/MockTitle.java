@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.xaxis;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Title;
 
+
+/**
+ * The axis title, showing next to the axis line.
+ * 
+ */
 public class MockTitle
     implements Title
 {

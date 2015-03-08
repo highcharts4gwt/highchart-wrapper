@@ -16,6 +16,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidga
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.Tooltip;
 
+
+/**
+ * A gauge showing values using a filled arc with colors indicating the value. The solid gauge plots values against the <code>yAxis</code>, which is extended with some color options, <a href="#yAxis.minColor">minColor</a>, <a href="#yAxis.maxColor">maxColor</a> and <a href="#yAxis.stops">stops</a>, to control the color of the gauge itself.
+ * 
+ */
 public class MockSolidgauge
     implements Solidgauge
 {

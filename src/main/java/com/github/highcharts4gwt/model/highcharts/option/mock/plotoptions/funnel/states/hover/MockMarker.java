@@ -3,6 +3,10 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.funne
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.states.hover.Marker;
 
+
+/**
+ * 
+ */
 public class MockMarker
     implements Marker
 {

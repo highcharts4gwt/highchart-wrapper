@@ -4,6 +4,10 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.scatt
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.Marker;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.marker.States;
 
+
+/**
+ * 
+ */
 public class MockMarker
     implements Marker
 {

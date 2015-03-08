@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.chart.options3d.fr
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.options3d.frame.Side;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * The side for the frame around a 3D chart.
+ * 
+ */
 public class JsoSide
     extends JavaScriptObject
     implements Side

@@ -18,6 +18,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.P
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.Tooltip;
 
+
+/**
+ * General plotting options for the gauge series type. Requires <code>highcharts-more.js</code>
+ * 
+ */
 public class MockGauge
     implements Gauge
 {

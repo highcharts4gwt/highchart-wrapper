@@ -4,6 +4,10 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.yaxis;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.Labels;
 
+
+/**
+ * 
+ */
 public class MockLabels
     implements Labels
 {

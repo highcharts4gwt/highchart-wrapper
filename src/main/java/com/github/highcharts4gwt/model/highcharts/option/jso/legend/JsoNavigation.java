@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.legend;
 import com.github.highcharts4gwt.model.highcharts.option.api.legend.Navigation;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Options for the paging or navigation appearing when the legend is overflown. When <a href="#legend.useHTML">legend.useHTML</a> is enabled, navigation is disabled.
+ * 
+ */
 public class JsoNavigation
     extends JavaScriptObject
     implements Navigation

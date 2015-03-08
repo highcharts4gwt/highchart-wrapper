@@ -10,6 +10,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.po
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.point.PointUnselectHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.point.PointUpdateHandler;
 
+
+/**
+ * Properties for each single point
+ * 
+ */
 public class MockPoint
     implements Point
 {

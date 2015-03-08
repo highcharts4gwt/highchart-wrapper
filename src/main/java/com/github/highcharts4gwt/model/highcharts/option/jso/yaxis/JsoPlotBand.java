@@ -5,6 +5,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.PlotBand;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.plotbands.Label;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * An array of objects defining plot bands on the Y axis.
+ * 
+ */
 public class JsoPlotBand
     extends JavaScriptObject
     implements PlotBand

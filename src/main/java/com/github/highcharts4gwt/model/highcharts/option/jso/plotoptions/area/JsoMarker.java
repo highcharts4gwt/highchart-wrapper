@@ -5,6 +5,10 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.Ma
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.marker.States;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * 
+ */
 public class JsoMarker
     extends JavaScriptObject
     implements Marker

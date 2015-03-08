@@ -4,6 +4,12 @@ package com.github.highcharts4gwt.model.highcharts.option.jso;
 import com.github.highcharts4gwt.model.highcharts.option.api.Credits;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Highchart by default puts a credits label in the lower right corner of the chart.
+ * 		This can be changed using these options.
+ * 
+ */
 public class JsoCredits
     extends JavaScriptObject
     implements Credits

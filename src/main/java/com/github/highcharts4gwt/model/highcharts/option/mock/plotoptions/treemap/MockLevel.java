@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.treem
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.Level;
 
+
+/**
+ * Set options on specific levels. Takes precedence over series options, but not point options.
+ * 
+ */
 public class MockLevel
     implements Level
 {

@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.xaxis;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Title;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * The axis title, showing next to the axis line.
+ * 
+ */
 public class JsoTitle
     extends JavaScriptObject
     implements Title

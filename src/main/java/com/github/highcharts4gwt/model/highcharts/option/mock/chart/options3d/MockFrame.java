@@ -6,6 +6,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.chart.options3d.fra
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.options3d.frame.Bottom;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.options3d.frame.Side;
 
+
+/**
+ * Provides the option to draw a frame around the charts by defining a bottom, front and back panel.
+ * 
+ */
 public class MockFrame
     implements Frame
 {

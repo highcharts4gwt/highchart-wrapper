@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.navigation;
 import com.github.highcharts4gwt.model.highcharts.option.api.navigation.ButtonOptions;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * A collection of options for buttons appearing in the exporting module.
+ * 
+ */
 public class JsoButtonOptions
     extends JavaScriptObject
     implements ButtonOptions

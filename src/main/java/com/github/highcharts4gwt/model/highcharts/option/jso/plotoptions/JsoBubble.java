@@ -18,6 +18,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * A bubble series is a three dimensional series type where each point renders an X, Y and Z value. Each points is drawn as a bubble where the position along the X and Y axes mark the X and Y values, and the size of the bubble relates to the Z value.
+ * 
+ */
 public class JsoBubble
     extends JavaScriptObject
     implements Bubble

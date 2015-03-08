@@ -5,6 +5,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PlotLine;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.plotlines.Label;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * An array of lines stretching across the plot area, marking a specific value on one of the axes.
+ * 
+ */
 public class JsoPlotLine
     extends JavaScriptObject
     implements PlotLine

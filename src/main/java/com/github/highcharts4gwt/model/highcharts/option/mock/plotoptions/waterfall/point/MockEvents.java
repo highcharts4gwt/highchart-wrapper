@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.water
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.point.Events;
 
+
+/**
+ * Events for each single point
+ * 
+ */
 public class MockEvents
     implements Events
 {

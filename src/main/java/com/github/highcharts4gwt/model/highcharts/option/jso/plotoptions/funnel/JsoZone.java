@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.funnel
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.Zone;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * An array defining zones within a series.
+ * 
+ */
 public class JsoZone
     extends JavaScriptObject
     implements Zone

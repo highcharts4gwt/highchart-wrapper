@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.gauge
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.Dial;
 
+
+/**
+ * Options for the dial or arrow pointer of the gauge.
+ * 
+ */
 public class MockDial
     implements Dial
 {

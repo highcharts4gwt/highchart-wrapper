@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.legend;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.legend.Title;
 
+
+/**
+ * A title to be added on top of the legend.
+ * 
+ */
 public class MockTitle
     implements Title
 {

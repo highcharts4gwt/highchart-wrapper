@@ -17,6 +17,13 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.Tooltip;
 
+
+/**
+ * <p>The heatmap series type. This series type is available both in Highcharts and Highmaps.</p>
+ * 
+ * <p>The colors of each heat map point is usually determined by its value and controlled by settings on the <a href="#colorAxis">colorAxis</a>.</p>
+ * 
+ */
 public class MockHeatmap
     implements Heatmap
 {

@@ -6,6 +6,10 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.ma
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.marker.states.Select;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * 
+ */
 public class JsoStates
     extends JavaScriptObject
     implements States

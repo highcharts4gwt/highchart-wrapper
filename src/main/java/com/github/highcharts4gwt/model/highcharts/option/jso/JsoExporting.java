@@ -5,6 +5,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.Exporting;
 import com.github.highcharts4gwt.model.highcharts.option.api.exporting.Buttons;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
+ * 
+ */
 public class JsoExporting
     extends JavaScriptObject
     implements Exporting

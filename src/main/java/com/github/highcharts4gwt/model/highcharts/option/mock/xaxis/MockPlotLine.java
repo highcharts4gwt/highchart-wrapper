@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.xaxis;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PlotLine;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.plotlines.Label;
 
+
+/**
+ * An array of lines stretching across the plot area, marking a specific value on one of the axes.
+ * 
+ */
 public class MockPlotLine
     implements PlotLine
 {

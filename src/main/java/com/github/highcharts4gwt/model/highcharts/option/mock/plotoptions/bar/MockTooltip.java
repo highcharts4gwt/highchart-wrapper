@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.bar;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.Tooltip;
 
+
+/**
+ * A configuration object for the tooltip rendering of each single series. Properties are inherited from <a href="#tooltip">tooltip</a>, but only the following properties can be defined on a series level.
+ * 
+ */
 public class MockTooltip
     implements Tooltip
 {

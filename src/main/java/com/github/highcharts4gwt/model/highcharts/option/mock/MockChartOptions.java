@@ -23,6 +23,10 @@ import com.github.highcharts4gwt.model.highcharts.option.api.Tooltip;
 import com.github.highcharts4gwt.model.highcharts.option.api.XAxis;
 import com.github.highcharts4gwt.model.highcharts.option.api.YAxis;
 
+
+/**
+ * 
+ */
 public class MockChartOptions
     implements ChartOptions
 {
@@ -33,10 +37,10 @@ public class MockChartOptions
     private PlotOptions plotOptions;
     private XAxis xAxis;
     private YAxis yAxis;
-    private Navigation navigation;
-    private Title title;
     private Exporting exporting;
+    private Title title;
     private Subtitle subtitle;
+    private Navigation navigation;
     private Tooltip tooltip;
     private NoData noData;
     private Pane pane;
@@ -102,12 +106,12 @@ public class MockChartOptions
         return this;
     }
 
-    public Navigation navigation() {
-        return navigation;
+    public Exporting exporting() {
+        return exporting;
     }
 
-    public MockChartOptions navigation(Navigation navigation) {
-        this.navigation = navigation;
+    public MockChartOptions exporting(Exporting exporting) {
+        this.exporting = exporting;
         return this;
     }
 
@@ -120,21 +124,21 @@ public class MockChartOptions
         return this;
     }
 
-    public Exporting exporting() {
-        return exporting;
-    }
-
-    public MockChartOptions exporting(Exporting exporting) {
-        this.exporting = exporting;
-        return this;
-    }
-
     public Subtitle subtitle() {
         return subtitle;
     }
 
     public MockChartOptions subtitle(Subtitle subtitle) {
         this.subtitle = subtitle;
+        return this;
+    }
+
+    public Navigation navigation() {
+        return navigation;
+    }
+
+    public MockChartOptions navigation(Navigation navigation) {
+        this.navigation = navigation;
         return this;
     }
 

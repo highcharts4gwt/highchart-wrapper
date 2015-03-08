@@ -18,6 +18,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * <p>General options for all series types.</p>
+ * 
+ */
 public class JsoSeries
     extends JavaScriptObject
     implements Series

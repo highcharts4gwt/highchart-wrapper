@@ -6,6 +6,12 @@ import com.github.highcharts4gwt.model.highcharts.option.api.legend.Navigation;
 import com.github.highcharts4gwt.model.highcharts.option.api.legend.Title;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * The legend is a box containing a symbol and name for each series item
+ * 	or point item in the chart.
+ * 
+ */
 public class JsoLegend
     extends JavaScriptObject
     implements Legend

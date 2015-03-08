@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.xaxis;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Labels;
 
+
+/**
+ * The axis labels show the number or category for each tick.
+ * 
+ */
 public class MockLabels
     implements Labels
 {

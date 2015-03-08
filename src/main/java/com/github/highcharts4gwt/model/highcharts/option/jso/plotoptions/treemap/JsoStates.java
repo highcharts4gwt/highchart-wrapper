@@ -5,6 +5,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.states.Hover;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * A wrapper object for all the series options in specific states.
+ * 
+ */
 public class JsoStates
     extends JavaScriptObject
     implements States

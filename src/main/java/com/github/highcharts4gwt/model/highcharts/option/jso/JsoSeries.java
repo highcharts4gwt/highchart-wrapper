@@ -7,6 +7,15 @@ import com.github.highcharts4gwt.model.highcharts.option.api.Series;
 import com.github.highcharts4gwt.model.highcharts.option.api.series.Data;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * The actual series to append to the chart. In addition to 
+ * 	the members listed below, any member of the <code>plotOptions</code> for that specific
+ * 	type of plot can be added to a series individually. For example, even though a general
+ * 	<code>lineWidth</code> is specified in <code>plotOptions.series</code>, an individual
+ * 	<code>lineWidth</code> can be specified for each series.
+ * 
+ */
 public class JsoSeries
     extends JavaScriptObject
     implements Series

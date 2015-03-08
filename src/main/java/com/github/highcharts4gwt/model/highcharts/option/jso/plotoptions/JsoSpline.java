@@ -18,6 +18,10 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * 
+ */
 public class JsoSpline
     extends JavaScriptObject
     implements Spline

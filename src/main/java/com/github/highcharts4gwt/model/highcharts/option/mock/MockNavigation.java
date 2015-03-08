@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock;
 import com.github.highcharts4gwt.model.highcharts.option.api.Navigation;
 import com.github.highcharts4gwt.model.highcharts.option.api.navigation.ButtonOptions;
 
+
+/**
+ * A collection of options for buttons and menus appearing in the exporting module.
+ * 
+ */
 public class MockNavigation
     implements Navigation
 {

@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.Title;
 
+
+/**
+ * The chart's main title.
+ * 
+ */
 public class MockTitle
     implements Title
 {

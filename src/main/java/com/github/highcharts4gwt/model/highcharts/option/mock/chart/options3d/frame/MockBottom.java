@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.chart.options3d.f
 
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.options3d.frame.Bottom;
 
+
+/**
+ * The bottom of the frame around a 3D chart.
+ * 
+ */
 public class MockBottom
     implements Bottom
 {

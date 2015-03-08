@@ -5,6 +5,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.PlotLine;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.plotlines.Label;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * An array of objects representing plot lines on the X axis
+ * 
+ */
 public class JsoPlotLine
     extends JavaScriptObject
     implements PlotLine

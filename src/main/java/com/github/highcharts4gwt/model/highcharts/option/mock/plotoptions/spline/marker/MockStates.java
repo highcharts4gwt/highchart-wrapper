@@ -5,6 +5,10 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.marker.states.Hover;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.marker.states.Select;
 
+
+/**
+ * 
+ */
 public class MockStates
     implements States
 {

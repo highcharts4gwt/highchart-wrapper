@@ -17,6 +17,10 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspl
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.Tooltip;
 
+
+/**
+ * 
+ */
 public class MockAreaspline
     implements Areaspline
 {

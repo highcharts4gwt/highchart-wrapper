@@ -16,6 +16,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspl
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.Tooltip;
 
+
+/**
+ * The area spline range is a cartesian series type with higher and lower Y values along an X axis. Requires <code>highcharts-more.js</code>.
+ * 
+ */
 public class MockAreasplinerange
     implements Areasplinerange
 {

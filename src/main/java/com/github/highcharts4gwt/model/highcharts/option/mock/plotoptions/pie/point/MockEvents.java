@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.pie.p
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.point.Events;
 
+
+/**
+ * Events for each single point
+ * 
+ */
 public class MockEvents
     implements Events
 {

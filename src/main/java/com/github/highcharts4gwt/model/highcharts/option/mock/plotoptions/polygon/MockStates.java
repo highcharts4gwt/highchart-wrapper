@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.polyg
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.states.Hover;
 
+
+/**
+ * A wrapper object for all the series options in specific states.
+ * 
+ */
 public class MockStates
     implements States
 {

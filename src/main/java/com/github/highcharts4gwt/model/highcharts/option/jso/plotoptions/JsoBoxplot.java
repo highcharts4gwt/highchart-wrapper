@@ -17,6 +17,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * A box plot is a convenient way of depicting groups of data through their five-number summaries: the smallest observation (sample minimum), lower quartile (Q1), median (Q2), upper quartile (Q3), and largest observation (sample maximum).
+ * 
+ */
 public class JsoBoxplot
     extends JavaScriptObject
     implements Boxplot

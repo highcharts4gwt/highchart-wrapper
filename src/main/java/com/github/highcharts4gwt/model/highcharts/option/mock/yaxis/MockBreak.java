@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.yaxis;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.Break;
 
+
+/**
+ * An array defining breaks in the axis, the sections defined will be left out and all the points shifted closer to each other. Requires that the broken-axis.js module is loaded.
+ * 
+ */
 public class MockBreak
     implements Break
 {

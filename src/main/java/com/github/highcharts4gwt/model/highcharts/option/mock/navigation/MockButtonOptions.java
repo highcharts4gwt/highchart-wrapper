@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.navigation;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.navigation.ButtonOptions;
 
+
+/**
+ * A collection of options for buttons appearing in the exporting module.
+ * 
+ */
 public class MockButtonOptions
     implements ButtonOptions
 {

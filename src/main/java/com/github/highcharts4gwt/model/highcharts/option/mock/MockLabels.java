@@ -5,6 +5,11 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.highcharts.option.api.Labels;
 import com.github.highcharts4gwt.model.highcharts.option.api.labels.Item;
 
+
+/**
+ * HTML labels that can be positioned anywhere in the chart area.
+ * 
+ */
 public class MockLabels
     implements Labels
 {

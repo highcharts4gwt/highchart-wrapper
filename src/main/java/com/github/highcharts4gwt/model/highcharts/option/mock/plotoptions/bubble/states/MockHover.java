@@ -5,6 +5,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.states.hover.Halo;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.states.hover.Marker;
 
+
+/**
+ * Options for the hovered series
+ * 
+ */
 public class MockHover
     implements Hover
 {

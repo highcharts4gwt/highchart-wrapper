@@ -7,6 +7,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.chart.options3d.fra
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.options3d.frame.Side;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Provides the option to draw a frame around the charts by defining a bottom, front and back panel.
+ * 
+ */
 public class JsoFrame
     extends JavaScriptObject
     implements Frame

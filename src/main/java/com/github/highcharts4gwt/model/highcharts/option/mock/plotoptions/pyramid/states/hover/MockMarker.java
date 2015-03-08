@@ -3,6 +3,10 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.pyram
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.states.hover.Marker;
 
+
+/**
+ * 
+ */
 public class MockMarker
     implements Marker
 {

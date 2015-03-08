@@ -9,6 +9,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.poi
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.point.PointUnselectHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.point.PointUpdateHandler;
 
+
+/**
+ * Properties for each single point
+ * 
+ */
 public interface Point {
 
 

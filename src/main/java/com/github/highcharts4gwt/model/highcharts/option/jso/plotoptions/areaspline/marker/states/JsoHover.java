@@ -4,6 +4,10 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.areasp
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.marker.states.Hover;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * 
+ */
 public class JsoHover
     extends JavaScriptObject
     implements Hover

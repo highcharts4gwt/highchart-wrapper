@@ -9,6 +9,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorba
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.point.PointUnselectHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.point.PointUpdateHandler;
 
+
+/**
+ * Properties for each single point
+ * 
+ */
 public interface Point {
 
 

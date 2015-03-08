@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.yaxis;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.PlotLine;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.plotlines.Label;
 
+
+/**
+ * An array of objects representing plot lines on the X axis
+ * 
+ */
 public class MockPlotLine
     implements PlotLine
 {

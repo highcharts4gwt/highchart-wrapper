@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.Tooltip;
 
+
+/**
+ * Options for the tooltip that appears when the user hovers over a series or point.
+ * 
+ */
 public class MockTooltip
     implements Tooltip
 {

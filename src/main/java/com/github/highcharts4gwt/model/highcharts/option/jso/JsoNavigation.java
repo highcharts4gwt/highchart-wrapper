@@ -5,6 +5,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.Navigation;
 import com.github.highcharts4gwt.model.highcharts.option.api.navigation.ButtonOptions;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * A collection of options for buttons and menus appearing in the exporting module.
+ * 
+ */
 public class JsoNavigation
     extends JavaScriptObject
     implements Navigation

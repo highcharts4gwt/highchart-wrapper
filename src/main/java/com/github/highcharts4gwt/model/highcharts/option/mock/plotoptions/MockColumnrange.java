@@ -17,6 +17,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnr
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.Tooltip;
 
+
+/**
+ * The column range is a cartesian series type with higher and lower Y values along an X axis. Requires <code>highcharts-more.js</code>. To display horizontal bars, set <a href="#chart.inverted">chart.inverted</a> to <code>true</code>.
+ * 
+ */
 public class MockColumnrange
     implements Columnrange
 {

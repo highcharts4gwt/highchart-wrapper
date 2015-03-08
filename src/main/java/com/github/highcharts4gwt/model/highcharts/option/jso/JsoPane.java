@@ -6,6 +6,11 @@ import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.Pane;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Applies only to polar charts and angular gauges. This configuration object holds general options for the combined X and Y axes set. Each xAxis or yAxis can reference the pane by index.
+ * 
+ */
 public class JsoPane
     extends JavaScriptObject
     implements Pane

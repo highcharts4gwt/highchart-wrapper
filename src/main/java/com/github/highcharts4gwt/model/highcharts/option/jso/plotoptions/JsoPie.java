@@ -18,6 +18,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.Sta
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * A pie chart is a circular chart divided into sectors, illustrating numerical proportion.
+ * 
+ */
 public class JsoPie
     extends JavaScriptObject
     implements Pie

@@ -18,6 +18,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Funnel charts are a type of chart often used to visualize stages in a sales project, where the top are the initial stages with the most clients. It requires that the <code>modules/funnel.js</code> file is loaded.
+ * 
+ */
 public class JsoFunnel
     extends JavaScriptObject
     implements Funnel

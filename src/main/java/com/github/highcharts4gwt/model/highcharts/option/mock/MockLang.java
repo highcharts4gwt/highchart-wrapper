@@ -4,6 +4,19 @@ package com.github.highcharts4gwt.model.highcharts.option.mock;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.Lang;
 
+
+/**
+ * Language object. The language object is global and it can't
+ * 		be set on each chart initiation. Instead, use <code>Highcharts.setOptions</code> to
+ * 		set it before any chart is initiated. 
+ * <pre>Highcharts.setOptions({
+ * 	lang: {
+ * 		months: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin',  'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+ * 		weekdays: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi']
+ * 	}
+ * });</pre>
+ * 
+ */
 public class MockLang
     implements Lang
 {

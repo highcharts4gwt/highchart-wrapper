@@ -5,6 +5,10 @@ import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.Labels;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * 
+ */
 public class JsoLabels
     extends JavaScriptObject
     implements Labels

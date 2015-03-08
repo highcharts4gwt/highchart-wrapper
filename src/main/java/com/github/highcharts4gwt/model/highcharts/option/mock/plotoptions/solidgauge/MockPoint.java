@@ -10,6 +10,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidga
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.point.PointUnselectHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.point.PointUpdateHandler;
 
+
+/**
+ * Properties for each single point
+ * 
+ */
 public class MockPoint
     implements Point
 {

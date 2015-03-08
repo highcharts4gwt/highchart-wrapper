@@ -6,6 +6,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.Labels;
 import com.github.highcharts4gwt.model.highcharts.option.api.labels.Item;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * HTML labels that can be positioned anywhere in the chart area.
+ * 
+ */
 public class JsoLabels
     extends JavaScriptObject
     implements Labels

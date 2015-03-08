@@ -3,6 +3,15 @@ package com.github.highcharts4gwt.model.highcharts.option.mock;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.Data;
 
+
+/**
+ * <p>The Data module provides a simplified interface for adding data to a chart from sources like CVS, HTML tables or grid views. See also the <a href="http://www.highcharts.com/docs/working-with-data/data-module">tutorial article on the Data module</a>.</p>
+ * 
+ * <p>It requires the <code>modules/data.js</code> file to be loaded.</p>
+ * 
+ * <p>Please note that the default way of adding data in Highcharts, without the need of a module, is through the <a href="#series.data">series.data</a> option.</p>
+ * 
+ */
 public class MockData
     implements Data
 {

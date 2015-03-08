@@ -15,6 +15,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartSelectio
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.Options3d;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ResetZoomButton;
 
+
+/**
+ * Options regarding the chart area and plot area as well as general chart options.
+ * 
+ */
 public class MockChart
     implements Chart
 {

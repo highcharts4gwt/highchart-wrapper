@@ -4,6 +4,10 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.splin
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.Marker;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.marker.States;
 
+
+/**
+ * 
+ */
 public class MockMarker
     implements Marker
 {

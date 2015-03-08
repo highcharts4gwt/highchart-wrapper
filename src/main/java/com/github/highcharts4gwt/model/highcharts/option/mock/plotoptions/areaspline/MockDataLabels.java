@@ -4,6 +4,10 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.areas
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.DataLabels;
 
+
+/**
+ * 
+ */
 public class MockDataLabels
     implements DataLabels
 {

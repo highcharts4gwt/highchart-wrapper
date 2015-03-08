@@ -18,6 +18,10 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.St
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * 
+ */
 public class JsoLine
     extends JavaScriptObject
     implements Line

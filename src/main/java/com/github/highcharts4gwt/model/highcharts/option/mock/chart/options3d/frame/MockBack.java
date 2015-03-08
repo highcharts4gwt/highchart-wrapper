@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.chart.options3d.f
 
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.options3d.frame.Back;
 
+
+/**
+ * Defines the back panel of the frame around 3D charts.
+ * 
+ */
 public class MockBack
     implements Back
 {

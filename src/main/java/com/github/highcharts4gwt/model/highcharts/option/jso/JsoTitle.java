@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso;
 import com.github.highcharts4gwt.model.highcharts.option.api.Title;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * The chart's main title.
+ * 
+ */
 public class JsoTitle
     extends JavaScriptObject
     implements Title

@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.arear
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.DataLabels;
 
+
+/**
+ * Extended data labels for range series types. Range series  data labels have no <code>x</code> and <code>y</code> options. Instead, they have <code>xLow</code>, <code>xHigh</code>, <code>yLow</code> and <code>yHigh</code> options to allow the higher and lower data label sets individually.
+ * 
+ */
 public class MockDataLabels
     implements DataLabels
 {

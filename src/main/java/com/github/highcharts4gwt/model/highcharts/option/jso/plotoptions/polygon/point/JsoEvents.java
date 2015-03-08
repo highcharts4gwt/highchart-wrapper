@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.polygo
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.point.Events;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Events for each single point
+ * 
+ */
 public class JsoEvents
     extends JavaScriptObject
     implements Events

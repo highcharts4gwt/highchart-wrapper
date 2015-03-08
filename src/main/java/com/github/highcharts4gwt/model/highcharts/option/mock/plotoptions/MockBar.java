@@ -17,6 +17,10 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.Poi
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.Tooltip;
 
+
+/**
+ * 
+ */
 public class MockBar
     implements Bar
 {

@@ -20,6 +20,12 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapShowHandler;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * The size of the point shape is determined by its value relative to its siblings values.
+ * Requires the module <code>heatmap.js</code> as well, if functionality such as the <a href="http://api.highcharts.com/highmaps#colorAxis">colorAxis</a> is to be used.
+ * 
+ */
 public class JsoTreemap
     extends JavaScriptObject
     implements Treemap

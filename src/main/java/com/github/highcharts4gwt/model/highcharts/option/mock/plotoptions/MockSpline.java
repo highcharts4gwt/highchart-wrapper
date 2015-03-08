@@ -17,6 +17,10 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.Tooltip;
 
+
+/**
+ * 
+ */
 public class MockSpline
     implements Spline
 {

@@ -17,6 +17,10 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.Po
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.Tooltip;
 
+
+/**
+ * 
+ */
 public class MockLine
     implements Line
 {

@@ -16,6 +16,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorba
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.Tooltip;
 
+
+/**
+ * Error bars are a graphical representation of the variability of data and are used on graphs to indicate the error, or uncertainty in a reported measurement.
+ * 
+ */
 public class MockErrorbar
     implements Errorbar
 {

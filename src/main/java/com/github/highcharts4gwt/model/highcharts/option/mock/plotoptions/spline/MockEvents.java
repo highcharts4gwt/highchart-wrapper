@@ -3,6 +3,10 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.splin
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.Events;
 
+
+/**
+ * 
+ */
 public class MockEvents
     implements Events
 {

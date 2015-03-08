@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.legend;
 import com.github.highcharts4gwt.model.highcharts.option.api.legend.Title;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * A title to be added on top of the legend.
+ * 
+ */
 public class JsoTitle
     extends JavaScriptObject
     implements Title

@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.xaxis;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Break;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * An array defining breaks in the axis, the sections defined will be left out and all the points shifted closer to each other. Requires that the broken-axis.js module is loaded.
+ * 
+ */
 public class JsoBreak
     extends JavaScriptObject
     implements Break

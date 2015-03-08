@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.line;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * A configuration object for the tooltip rendering of each single series. Properties are inherited from <a href="#tooltip">tooltip</a>, but only the following properties can be defined on a series level.
+ * 
+ */
 public class JsoTooltip
     extends JavaScriptObject
     implements Tooltip

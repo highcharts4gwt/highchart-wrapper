@@ -5,6 +5,10 @@ import com.github.highcharts4gwt.model.highcharts.option.api.Global;
 import com.github.highcharts4gwt.model.highcharts.option.api.GlobalOptions;
 import com.github.highcharts4gwt.model.highcharts.option.api.Lang;
 
+
+/**
+ * 
+ */
 public class MockGlobalOptions
     implements GlobalOptions
 {

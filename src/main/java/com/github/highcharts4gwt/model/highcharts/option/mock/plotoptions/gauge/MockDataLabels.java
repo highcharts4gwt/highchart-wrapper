@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.gauge
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.DataLabels;
 
+
+/**
+ * Data labels for the gauge. For gauges, the data labels are enabled by default and shown in a bordered box below the point.
+ * 
+ */
 public class MockDataLabels
     implements DataLabels
 {

@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso;
 import com.github.highcharts4gwt.model.highcharts.option.api.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Options for the tooltip that appears when the user hovers over a series or point.
+ * 
+ */
 public class JsoTooltip
     extends JavaScriptObject
     implements Tooltip

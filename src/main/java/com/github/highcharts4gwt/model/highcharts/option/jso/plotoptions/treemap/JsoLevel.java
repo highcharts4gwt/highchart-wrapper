@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.treema
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.Level;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Set options on specific levels. Takes precedence over series options, but not point options.
+ * 
+ */
 public class JsoLevel
     extends JavaScriptObject
     implements Level

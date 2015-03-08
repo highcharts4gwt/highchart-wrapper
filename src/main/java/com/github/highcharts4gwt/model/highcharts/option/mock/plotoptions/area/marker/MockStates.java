@@ -5,6 +5,10 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.ma
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.marker.states.Hover;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.marker.states.Select;
 
+
+/**
+ * 
+ */
 public class MockStates
     implements States
 {

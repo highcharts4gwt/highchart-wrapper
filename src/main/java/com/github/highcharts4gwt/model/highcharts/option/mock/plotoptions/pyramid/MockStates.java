@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.pyram
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.states.Hover;
 
+
+/**
+ * A wrapper object for all the series options in specific states.
+ * 
+ */
 public class MockStates
     implements States
 {

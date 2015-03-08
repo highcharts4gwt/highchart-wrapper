@@ -4,6 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.jso;
 import com.github.highcharts4gwt.model.highcharts.option.api.Global;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Global options that don't apply to each chart. These options, like the <code>lang</code>
+ * 		options, must be set using the <code>Highcharts.setOptions</code> method.
+ * <pre>Highcharts.setOptions({
+ * 	global: {
+ * 		useUTC: false
+ * 	}
+ * });</pre>
+ * 
+ */
 public class JsoGlobal
     extends JavaScriptObject
     implements Global

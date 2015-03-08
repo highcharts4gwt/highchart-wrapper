@@ -16,6 +16,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.chart.Options3d;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ResetZoomButton;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Options regarding the chart area and plot area as well as general chart options.
+ * 
+ */
 public class JsoChart
     extends JavaScriptObject
     implements Chart

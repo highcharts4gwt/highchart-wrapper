@@ -5,6 +5,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnr
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.states.Hover;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * A wrapper object for all the series options in specific states.
+ * 
+ */
 public class JsoStates
     extends JavaScriptObject
     implements States

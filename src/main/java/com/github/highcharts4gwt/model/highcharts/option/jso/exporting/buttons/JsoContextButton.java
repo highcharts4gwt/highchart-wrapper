@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.exporting.buttons;
 import com.github.highcharts4gwt.model.highcharts.option.api.exporting.buttons.ContextButton;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Options for the export button.
+ * 
+ */
 public class JsoContextButton
     extends JavaScriptObject
     implements ContextButton

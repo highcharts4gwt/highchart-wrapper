@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.gauge;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.Pivot;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Options for the pivot or the center point of the gauge.
+ * 
+ */
 public class JsoPivot
     extends JavaScriptObject
     implements Pivot

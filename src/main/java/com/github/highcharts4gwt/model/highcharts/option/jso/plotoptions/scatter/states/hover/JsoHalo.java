@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.scatte
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.states.hover.Halo;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Options for the halo appearing around the hovered point in line-type series as well as outside the hovered slice in pie charts. By default the halo is filled by the current point or series color with an opacity of 0.25. The halo can be disabled by setting the <code>halo</code> option to <code>false</code>.
+ * 
+ */
 public class JsoHalo
     extends JavaScriptObject
     implements Halo

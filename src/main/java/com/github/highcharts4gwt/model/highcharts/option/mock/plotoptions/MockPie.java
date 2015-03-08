@@ -17,6 +17,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.Poi
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.Tooltip;
 
+
+/**
+ * A pie chart is a circular chart divided into sectors, illustrating numerical proportion.
+ * 
+ */
 public class MockPie
     implements Pie
 {

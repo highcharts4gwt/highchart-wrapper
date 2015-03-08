@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.yaxis.plotlines;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.plotlines.Label;
 
+
+/**
+ * Text labels for the plot bands
+ * 
+ */
 public class MockLabel
     implements Label
 {

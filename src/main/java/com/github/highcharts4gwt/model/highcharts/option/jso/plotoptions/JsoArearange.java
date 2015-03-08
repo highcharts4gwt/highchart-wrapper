@@ -17,6 +17,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearan
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * The area range is a cartesian series type with higher and lower Y values along an X axis. Requires <code>highcharts-more.js</code>.
+ * 
+ */
 public class JsoArearange
     extends JavaScriptObject
     implements Arearange

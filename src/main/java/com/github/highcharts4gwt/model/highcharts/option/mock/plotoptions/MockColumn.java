@@ -17,6 +17,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.Tooltip;
 
+
+/**
+ * 
+ * 
+ */
 public class MockColumn
     implements Column
 {

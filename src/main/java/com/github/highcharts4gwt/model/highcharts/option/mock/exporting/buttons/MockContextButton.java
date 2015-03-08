@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.exporting.buttons
 
 import com.github.highcharts4gwt.model.highcharts.option.api.exporting.buttons.ContextButton;
 
+
+/**
+ * Options for the export button.
+ * 
+ */
 public class MockContextButton
     implements ContextButton
 {

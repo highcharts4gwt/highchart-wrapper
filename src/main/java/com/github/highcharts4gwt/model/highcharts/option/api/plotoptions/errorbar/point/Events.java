@@ -2,6 +2,11 @@
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.point;
 
 
+
+/**
+ * Events for each single point
+ * 
+ */
 public interface Events {
 
 

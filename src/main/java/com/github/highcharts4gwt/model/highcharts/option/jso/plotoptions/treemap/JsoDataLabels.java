@@ -5,6 +5,11 @@ import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.DataLabels;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * 
+ * 
+ */
 public class JsoDataLabels
     extends JavaScriptObject
     implements DataLabels

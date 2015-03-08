@@ -3,6 +3,12 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.line.
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.marker.states.Select;
 
+
+/**
+ * The appearance of the point marker when selected. In order to allow a point to be 
+ * 		selected, set the <code>series.allowPointSelect</code> option to true.
+ * 
+ */
 public class MockSelect
     implements Select
 {

@@ -13,6 +13,15 @@ import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterSet
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisPointBreakHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisSetExtremesHandler;
 
+
+/**
+ * <p>The X axis or category axis. Normally this is the horizontal axis, though if the 
+ * 	chart is inverted this is the vertical axis. In case of multiple axes, the xAxis
+ * 	node is an array of configuration objects.</p>
+ * 	<p>See <a class="internal" href="#axis.object">the Axis object</a> for programmatic
+ * 	access to the axis.</p>
+ * 
+ */
 public class MockXAxis
     implements XAxis
 {

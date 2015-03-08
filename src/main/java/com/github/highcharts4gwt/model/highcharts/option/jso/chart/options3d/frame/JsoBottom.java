@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.chart.options3d.fr
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.options3d.frame.Bottom;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * The bottom of the frame around a 3D chart.
+ * 
+ */
 public class JsoBottom
     extends JavaScriptObject
     implements Bottom

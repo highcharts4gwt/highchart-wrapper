@@ -18,6 +18,10 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.St
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * 
+ */
 public class JsoArea
     extends JavaScriptObject
     implements Area

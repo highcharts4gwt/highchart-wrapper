@@ -4,6 +4,10 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.polyg
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.Marker;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.marker.States;
 
+
+/**
+ * 
+ */
 public class MockMarker
     implements Marker
 {

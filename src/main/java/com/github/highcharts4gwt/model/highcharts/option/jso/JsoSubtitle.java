@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso;
 import com.github.highcharts4gwt.model.highcharts.option.api.Subtitle;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * The chart's subtitle
+ * 
+ */
 public class JsoSubtitle
     extends JavaScriptObject
     implements Subtitle

@@ -17,6 +17,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfa
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.WaterfallMouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.WaterfallShowHandler;
 
+
+/**
+ * Options for the waterfall series type.
+ * 
+ */
 public class MockWaterfall
     implements Waterfall
 {

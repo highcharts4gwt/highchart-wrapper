@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.gauge
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.Pivot;
 
+
+/**
+ * Options for the pivot or the center point of the gauge.
+ * 
+ */
 public class MockPivot
     implements Pivot
 {

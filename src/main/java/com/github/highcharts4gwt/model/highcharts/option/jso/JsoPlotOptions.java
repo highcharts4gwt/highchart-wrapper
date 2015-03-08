@@ -27,6 +27,18 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Treemap
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Waterfall;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * <p>The plotOptions is a wrapper object for config objects for each series type.
+ * 		The config objects for each series can also be overridden for each series 
+ * 		item as given in the series array.</p>
+ * 		<p>Configuration options for the series are given in three levels. Options
+ * 		for all series in a chart are given in the <a class="internal" href="#plotOptions.series">plotOptions.series</a> object. Then options for all series
+ * 		of a specific type are given in the plotOptions of that type, for example plotOptions.line.
+ * 		Next, options for one single series are given in <a class="internal" href="#series">the 
+ * 		series array</a>.</p>
+ * 
+ */
 public class JsoPlotOptions
     extends JavaScriptObject
     implements PlotOptions

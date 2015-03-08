@@ -2,6 +2,11 @@
 package com.github.highcharts4gwt.model.highcharts.option.api.xaxis;
 
 
+
+/**
+ * Event handlers for the axis.
+ * 
+ */
 public interface Events {
 
 

@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.yaxis;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.PlotBand;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.plotbands.Label;
 
+
+/**
+ * An array of objects defining plot bands on the Y axis.
+ * 
+ */
 public class MockPlotBand
     implements PlotBand
 {

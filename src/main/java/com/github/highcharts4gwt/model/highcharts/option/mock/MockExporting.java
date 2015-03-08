@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock;
 import com.github.highcharts4gwt.model.highcharts.option.api.Exporting;
 import com.github.highcharts4gwt.model.highcharts.option.api.exporting.Buttons;
 
+
+/**
+ * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
+ * 
+ */
 public class MockExporting
     implements Exporting
 {

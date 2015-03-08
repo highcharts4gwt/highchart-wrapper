@@ -3,6 +3,11 @@ package com.github.highcharts4gwt.model.highcharts.option.mock;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.NoData;
 
+
+/**
+ * Options for displaying a message like "No data to display". This feature requires the file <code>no-data-to-display.js</code> to be loaded in the page. The actual text to display is set in the <a href="#lang.noData">lang.noData</a> option.
+ * 
+ */
 public class MockNoData
     implements NoData
 {

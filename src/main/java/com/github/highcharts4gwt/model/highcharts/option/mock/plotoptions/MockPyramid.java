@@ -17,6 +17,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.Tooltip;
 
+
+/**
+ * A pyramid chart consists of a single pyramid with item heights corresponding to each point value. Technically it is the same as a reversed funnel chart without a neck.
+ * 
+ */
 public class MockPyramid
     implements Pyramid
 {

@@ -3,6 +3,16 @@ package com.github.highcharts4gwt.model.highcharts.option.mock;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.Loading;
 
+
+/**
+ * The loading options control the appearance of the loading screen that covers the 
+ * 	plot area on chart operations. This screen only appears after an explicit call
+ * 	to <code>chart.showLoading()</code>. It is a utility for developers to communicate
+ * 	to the end user that something is going on, for example while retrieving new data
+ * 	via an XHR connection. The "Loading..." text itself is not part of this configuration
+ * 	object, but part of the <code>lang</code> object.
+ * 
+ */
 public class MockLoading
     implements Loading
 {

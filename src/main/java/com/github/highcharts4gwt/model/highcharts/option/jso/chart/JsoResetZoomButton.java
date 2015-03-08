@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.chart;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ResetZoomButton;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * The button that appears after a selection zoom, allowing the user to reset zoom.
+ * 
+ */
 public class JsoResetZoomButton
     extends JavaScriptObject
     implements ResetZoomButton

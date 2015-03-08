@@ -17,6 +17,11 @@ import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.Tooltip;
 
+
+/**
+ * <p>General options for all series types.</p>
+ * 
+ */
 public class MockSeries
     implements Series
 {

@@ -4,6 +4,11 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.yaxis.plotlines;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.plotlines.Label;
 import com.google.gwt.core.client.JavaScriptObject;
 
+
+/**
+ * Text labels for the plot bands
+ * 
+ */
 public class JsoLabel
     extends JavaScriptObject
     implements Label
