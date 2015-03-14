@@ -50,4 +50,8 @@ public interface ResetZoomButton {
 
     ResetZoomButton setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    ResetZoomButton setFunctionAsString(String fieldName, String functionAsString);
+
 }

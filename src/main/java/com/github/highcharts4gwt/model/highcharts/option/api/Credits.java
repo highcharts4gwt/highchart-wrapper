@@ -99,4 +99,8 @@ public interface Credits {
 
     Credits setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Credits setFunctionAsString(String fieldName, String functionAsString);
+
 }

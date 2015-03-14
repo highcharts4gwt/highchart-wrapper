@@ -589,4 +589,8 @@ public interface Boxplot {
 
     Boxplot setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Boxplot setFunctionAsString(String fieldName, String functionAsString);
+
 }

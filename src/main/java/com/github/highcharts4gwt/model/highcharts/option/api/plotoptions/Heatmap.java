@@ -396,4 +396,8 @@ public interface Heatmap {
 
     Heatmap setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Heatmap setFunctionAsString(String fieldName, String functionAsString);
+
 }

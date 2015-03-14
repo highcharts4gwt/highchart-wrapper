@@ -899,4 +899,8 @@ public interface YAxis {
 
     YAxis setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    YAxis setFunctionAsString(String fieldName, String functionAsString);
+
 }

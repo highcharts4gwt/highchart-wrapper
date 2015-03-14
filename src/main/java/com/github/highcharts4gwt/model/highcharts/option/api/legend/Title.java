@@ -44,4 +44,8 @@ public interface Title {
 
     Title setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Title setFunctionAsString(String fieldName, String functionAsString);
+
 }

@@ -12,6 +12,7 @@ public class MockEvents
 {
 
     private String genericField;
+    private String functionAsString;
 
     public String getFieldAsJsonObject(String fieldName) {
         return genericField;
@@ -19,6 +20,15 @@ public class MockEvents
 
     public MockEvents setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockEvents setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

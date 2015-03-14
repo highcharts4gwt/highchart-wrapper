@@ -50,4 +50,8 @@ public interface Halo {
 
     Halo setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Halo setFunctionAsString(String fieldName, String functionAsString);
+
 }

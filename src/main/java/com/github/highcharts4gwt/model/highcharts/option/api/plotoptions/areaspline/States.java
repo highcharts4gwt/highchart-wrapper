@@ -27,4 +27,8 @@ public interface States {
 
     States setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    States setFunctionAsString(String fieldName, String functionAsString);
+
 }

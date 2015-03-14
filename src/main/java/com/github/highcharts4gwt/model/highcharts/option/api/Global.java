@@ -86,4 +86,8 @@ public interface Global {
 
     Global setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Global setFunctionAsString(String fieldName, String functionAsString);
+
 }

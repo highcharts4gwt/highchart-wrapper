@@ -89,4 +89,8 @@ public interface Navigation {
 
     Navigation setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Navigation setFunctionAsString(String fieldName, String functionAsString);
+
 }

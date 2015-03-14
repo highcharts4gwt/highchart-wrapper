@@ -38,4 +38,8 @@ public interface Side {
 
     Side setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Side setFunctionAsString(String fieldName, String functionAsString);
+
 }

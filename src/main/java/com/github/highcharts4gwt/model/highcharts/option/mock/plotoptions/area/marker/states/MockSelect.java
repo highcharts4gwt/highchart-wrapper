@@ -19,6 +19,7 @@ public class MockSelect
     private double lineWidth;
     private double radius;
     private String genericField;
+    private String functionAsString;
 
     public boolean enabled() {
         return enabled;
@@ -71,6 +72,15 @@ public class MockSelect
 
     public MockSelect setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockSelect setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

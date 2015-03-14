@@ -136,4 +136,8 @@ public interface StackLabels {
 
     StackLabels setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    StackLabels setFunctionAsString(String fieldName, String functionAsString);
+
 }

@@ -67,4 +67,8 @@ public interface GlobalOptions {
 
     GlobalOptions setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    GlobalOptions setFunctionAsString(String fieldName, String functionAsString);
+
 }

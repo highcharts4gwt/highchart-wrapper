@@ -552,4 +552,18 @@ public class JsoScatter
     }-*/
     ;
 
+    public final native String getFunctionAsString(String fieldName)
+        throws RuntimeException /*-{
+        this[fieldName] = (this[fieldName] || {});
+        return JSON.stringify(this[fieldName]);
+    }-*/
+    ;
+
+    public final native JsoScatter setFunctionAsString(String fieldName, String functionAsString)
+        throws RuntimeException /*-{
+        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        return this;
+    }-*/
+    ;
+
 }

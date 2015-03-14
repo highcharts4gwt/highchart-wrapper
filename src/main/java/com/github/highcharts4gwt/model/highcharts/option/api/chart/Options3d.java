@@ -89,4 +89,8 @@ public interface Options3d {
 
     Options3d setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Options3d setFunctionAsString(String fieldName, String functionAsString);
+
 }

@@ -15,6 +15,7 @@ public class MockButtons
 
     private ContextButton contextButton;
     private String genericField;
+    private String functionAsString;
 
     public ContextButton contextButton() {
         return contextButton;
@@ -31,6 +32,15 @@ public class MockButtons
 
     public MockButtons setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockButtons setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

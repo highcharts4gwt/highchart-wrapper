@@ -110,4 +110,8 @@ public interface Dial {
 
     Dial setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Dial setFunctionAsString(String fieldName, String functionAsString);
+
 }

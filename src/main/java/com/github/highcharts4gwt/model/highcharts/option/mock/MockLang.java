@@ -39,6 +39,7 @@ public class MockLang
     private String thousandsSep;
     private ArrayString weekdays;
     private String genericField;
+    private String functionAsString;
 
     public String contextButtonTitle() {
         return contextButtonTitle;
@@ -199,6 +200,15 @@ public class MockLang
 
     public MockLang setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockLang setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

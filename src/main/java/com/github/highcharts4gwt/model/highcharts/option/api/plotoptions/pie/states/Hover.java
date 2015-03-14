@@ -74,4 +74,8 @@ public interface Hover {
 
     Hover setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Hover setFunctionAsString(String fieldName, String functionAsString);
+
 }

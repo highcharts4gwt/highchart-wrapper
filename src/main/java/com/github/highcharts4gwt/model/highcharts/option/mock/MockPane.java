@@ -22,6 +22,7 @@ public class MockPane
     private String sizeAsString;
     private double startAngle;
     private String genericField;
+    private String functionAsString;
 
     public String background() {
         return background;
@@ -92,6 +93,15 @@ public class MockPane
 
     public MockPane setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockPane setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

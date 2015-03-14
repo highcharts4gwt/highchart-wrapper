@@ -53,4 +53,8 @@ public interface Frame {
 
     Frame setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Frame setFunctionAsString(String fieldName, String functionAsString);
+
 }

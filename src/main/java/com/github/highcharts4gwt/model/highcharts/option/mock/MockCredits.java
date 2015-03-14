@@ -19,6 +19,7 @@ public class MockCredits
     private String style;
     private String text;
     private String genericField;
+    private String functionAsString;
 
     public boolean enabled() {
         return enabled;
@@ -71,6 +72,15 @@ public class MockCredits
 
     public MockCredits setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockCredits setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

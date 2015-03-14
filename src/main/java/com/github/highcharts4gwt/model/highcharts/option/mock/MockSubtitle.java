@@ -21,6 +21,7 @@ public class MockSubtitle
     private double x;
     private double y;
     private String genericField;
+    private String functionAsString;
 
     public String align() {
         return align;
@@ -100,6 +101,15 @@ public class MockSubtitle
 
     public MockSubtitle setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockSubtitle setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

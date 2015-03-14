@@ -46,4 +46,8 @@ public interface Item {
 
     Item setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Item setFunctionAsString(String fieldName, String functionAsString);
+
 }

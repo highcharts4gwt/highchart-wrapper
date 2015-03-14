@@ -147,4 +147,8 @@ public interface Exporting {
 
     Exporting setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Exporting setFunctionAsString(String fieldName, String functionAsString);
+
 }

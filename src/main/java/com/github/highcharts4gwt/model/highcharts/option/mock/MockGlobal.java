@@ -24,6 +24,7 @@ public class MockGlobal
     private double timezoneOffset;
     private boolean useUTC;
     private String genericField;
+    private String functionAsString;
 
     public String Date() {
         return Date;
@@ -76,6 +77,15 @@ public class MockGlobal
 
     public MockGlobal setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockGlobal setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

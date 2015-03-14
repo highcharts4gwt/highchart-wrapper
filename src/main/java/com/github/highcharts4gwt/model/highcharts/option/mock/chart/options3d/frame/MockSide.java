@@ -15,6 +15,7 @@ public class MockSide
     private String color;
     private double size;
     private String genericField;
+    private String functionAsString;
 
     public String color() {
         return color;
@@ -40,6 +41,15 @@ public class MockSide
 
     public MockSide setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockSide setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

@@ -99,7 +99,7 @@ public class JsoTooltip
 
     public final native String pointFormat()
         throws RuntimeException /*-{
-        return this["pointFormat"] = (this["pointFormat"] || "&lt;span style=\"color:{point.color}\"&gt;\u25CF&lt;/span&gt; {series.name}: &lt;b&gt;{point.y}&lt;/b&gt;&lt;br/&gt;");
+        return this["pointFormat"] = (this["pointFormat"] || "<span style=\"color:{point.color}\">●</span> {series.name}: <b>{point.y}</b><br/>");
     }-*/
     ;
 
@@ -185,6 +185,20 @@ public class JsoTooltip
     public final native JsoTooltip setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject)
         throws RuntimeException /*-{
         this[fieldName] = JSON.parse(fieldValueAsJsonObject);
+        return this;
+    }-*/
+    ;
+
+    public final native String getFunctionAsString(String fieldName)
+        throws RuntimeException /*-{
+        this[fieldName] = (this[fieldName] || {});
+        return JSON.stringify(this[fieldName]);
+    }-*/
+    ;
+
+    public final native JsoTooltip setFunctionAsString(String fieldName, String functionAsString)
+        throws RuntimeException /*-{
+        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
         return this;
     }-*/
     ;

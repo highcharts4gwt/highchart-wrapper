@@ -52,6 +52,7 @@ public class MockLegend
     private double x;
     private double y;
     private String genericField;
+    private String functionAsString;
 
     public String align() {
         return align;
@@ -383,6 +384,15 @@ public class MockLegend
 
     public MockLegend setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockLegend setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

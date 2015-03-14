@@ -508,4 +508,8 @@ public interface Bubble {
 
     Bubble setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Bubble setFunctionAsString(String fieldName, String functionAsString);
+
 }

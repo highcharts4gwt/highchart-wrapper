@@ -20,6 +20,7 @@ public class MockPoint
 {
 
     private String genericField;
+    private String functionAsString;
 
     public void addPointClickHandler(PointClickHandler handler) {
     }
@@ -48,6 +49,15 @@ public class MockPoint
 
     public MockPoint setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockPoint setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

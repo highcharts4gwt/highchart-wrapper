@@ -508,4 +508,8 @@ public interface Series {
 
     Series setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Series setFunctionAsString(String fieldName, String functionAsString);
+
 }

@@ -642,4 +642,18 @@ public class JsoAreasplinerange
     }-*/
     ;
 
+    public final native String getFunctionAsString(String fieldName)
+        throws RuntimeException /*-{
+        this[fieldName] = (this[fieldName] || {});
+        return JSON.stringify(this[fieldName]);
+    }-*/
+    ;
+
+    public final native JsoAreasplinerange setFunctionAsString(String fieldName, String functionAsString)
+        throws RuntimeException /*-{
+        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        return this;
+    }-*/
+    ;
+
 }

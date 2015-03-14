@@ -62,4 +62,8 @@ public interface Zone {
 
     Zone setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Zone setFunctionAsString(String fieldName, String functionAsString);
+
 }

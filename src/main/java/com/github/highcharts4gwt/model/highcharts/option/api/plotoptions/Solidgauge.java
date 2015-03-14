@@ -251,4 +251,8 @@ public interface Solidgauge {
 
     Solidgauge setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Solidgauge setFunctionAsString(String fieldName, String functionAsString);
+
 }

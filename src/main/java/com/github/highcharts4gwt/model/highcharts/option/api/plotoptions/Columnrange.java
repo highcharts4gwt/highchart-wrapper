@@ -582,4 +582,8 @@ public interface Columnrange {
 
     Columnrange setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Columnrange setFunctionAsString(String fieldName, String functionAsString);
+
 }

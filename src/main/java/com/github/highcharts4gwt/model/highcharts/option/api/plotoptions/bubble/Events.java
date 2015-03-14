@@ -13,4 +13,8 @@ public interface Events {
 
     Events setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Events setFunctionAsString(String fieldName, String functionAsString);
+
 }

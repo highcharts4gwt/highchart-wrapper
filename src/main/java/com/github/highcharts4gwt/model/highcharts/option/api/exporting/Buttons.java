@@ -27,4 +27,8 @@ public interface Buttons {
 
     Buttons setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Buttons setFunctionAsString(String fieldName, String functionAsString);
+
 }

@@ -28,6 +28,7 @@ public class MockPlotBand
     private double to;
     private double zIndex;
     private String genericField;
+    private String functionAsString;
 
     public String borderColor() {
         return borderColor;
@@ -161,6 +162,15 @@ public class MockPlotBand
 
     public MockPlotBand setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockPlotBand setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

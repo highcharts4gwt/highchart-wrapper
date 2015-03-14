@@ -21,6 +21,7 @@ public class MockDrilldown
     private String animationAsJsonString;
     private DrillUpButton drillUpButton;
     private String genericField;
+    private String functionAsString;
 
     public String activeAxisLabelStyle() {
         return activeAxisLabelStyle;
@@ -73,6 +74,15 @@ public class MockDrilldown
 
     public MockDrilldown setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockDrilldown setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

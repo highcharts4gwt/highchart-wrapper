@@ -30,6 +30,7 @@ public class MockContextButton
     private double x;
     private double y;
     private String genericField;
+    private String functionAsString;
 
     public String align() {
         return align;
@@ -190,6 +191,15 @@ public class MockContextButton
 
     public MockContextButton setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockContextButton setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

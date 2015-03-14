@@ -66,6 +66,7 @@ public class MockPlotOptions
     private Treemap treemap;
     private Waterfall waterfall;
     private String genericField;
+    private String functionAsString;
 
     public Area area() {
         return area;
@@ -280,6 +281,15 @@ public class MockPlotOptions
 
     public MockPlotOptions setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockPlotOptions setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

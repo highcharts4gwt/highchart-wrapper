@@ -38,4 +38,8 @@ public interface Back {
 
     Back setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Back setFunctionAsString(String fieldName, String functionAsString);
+
 }

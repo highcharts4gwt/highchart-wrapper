@@ -77,4 +77,8 @@ public interface Select {
 
     Select setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Select setFunctionAsString(String fieldName, String functionAsString);
+
 }

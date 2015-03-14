@@ -56,6 +56,7 @@ public class MockScatter
     private String zoneAxis;
     private ArrayNumber zones;
     private String genericField;
+    private String functionAsString;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -348,6 +349,15 @@ public class MockScatter
 
     public MockScatter setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockScatter setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

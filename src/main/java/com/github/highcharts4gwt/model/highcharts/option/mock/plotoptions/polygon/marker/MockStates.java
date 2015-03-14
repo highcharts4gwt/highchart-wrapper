@@ -16,6 +16,7 @@ public class MockStates
     private Hover hover;
     private Select select;
     private String genericField;
+    private String functionAsString;
 
     public Hover hover() {
         return hover;
@@ -41,6 +42,15 @@ public class MockStates
 
     public MockStates setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockStates setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

@@ -505,4 +505,8 @@ public interface Errorbar {
 
     Errorbar setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Errorbar setFunctionAsString(String fieldName, String functionAsString);
+
 }

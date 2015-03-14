@@ -61,6 +61,7 @@ public class MockLine
     private String zoneAxis;
     private ArrayNumber zones;
     private String genericField;
+    private String functionAsString;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -407,6 +408,15 @@ public class MockLine
 
     public MockLine setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockLine setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

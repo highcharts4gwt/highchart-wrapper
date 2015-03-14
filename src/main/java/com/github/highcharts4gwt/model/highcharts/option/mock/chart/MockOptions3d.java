@@ -20,6 +20,7 @@ public class MockOptions3d
     private Frame frame;
     private double viewDistance;
     private String genericField;
+    private String functionAsString;
 
     public double alpha() {
         return alpha;
@@ -81,6 +82,15 @@ public class MockOptions3d
 
     public MockOptions3d setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockOptions3d setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

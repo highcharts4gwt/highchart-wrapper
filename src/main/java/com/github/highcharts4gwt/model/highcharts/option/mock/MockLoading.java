@@ -22,6 +22,7 @@ public class MockLoading
     private double showDuration;
     private String style;
     private String genericField;
+    private String functionAsString;
 
     public double hideDuration() {
         return hideDuration;
@@ -65,6 +66,15 @@ public class MockLoading
 
     public MockLoading setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockLoading setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

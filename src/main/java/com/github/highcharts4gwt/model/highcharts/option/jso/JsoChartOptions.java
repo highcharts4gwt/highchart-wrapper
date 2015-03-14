@@ -115,19 +115,6 @@ public class JsoChartOptions
     }-*/
     ;
 
-    public final native Exporting exporting()
-        throws RuntimeException /*-{
-        return this["exporting"] = (this["exporting"] || {});
-    }-*/
-    ;
-
-    public final native JsoChartOptions exporting(Exporting exporting)
-        throws RuntimeException /*-{
-        this["exporting"] = exporting;
-        return this;
-    }-*/
-    ;
-
     public final native Title title()
         throws RuntimeException /*-{
         return this["title"] = (this["title"] || {});
@@ -137,6 +124,19 @@ public class JsoChartOptions
     public final native JsoChartOptions title(Title title)
         throws RuntimeException /*-{
         this["title"] = title;
+        return this;
+    }-*/
+    ;
+
+    public final native Navigation navigation()
+        throws RuntimeException /*-{
+        return this["navigation"] = (this["navigation"] || {});
+    }-*/
+    ;
+
+    public final native JsoChartOptions navigation(Navigation navigation)
+        throws RuntimeException /*-{
+        this["navigation"] = navigation;
         return this;
     }-*/
     ;
@@ -154,15 +154,15 @@ public class JsoChartOptions
     }-*/
     ;
 
-    public final native Navigation navigation()
+    public final native Exporting exporting()
         throws RuntimeException /*-{
-        return this["navigation"] = (this["navigation"] || {});
+        return this["exporting"] = (this["exporting"] || {});
     }-*/
     ;
 
-    public final native JsoChartOptions navigation(Navigation navigation)
+    public final native JsoChartOptions exporting(Exporting exporting)
         throws RuntimeException /*-{
-        this["navigation"] = navigation;
+        this["exporting"] = exporting;
         return this;
     }-*/
     ;
@@ -294,6 +294,20 @@ public class JsoChartOptions
     public final native JsoChartOptions setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject)
         throws RuntimeException /*-{
         this[fieldName] = JSON.parse(fieldValueAsJsonObject);
+        return this;
+    }-*/
+    ;
+
+    public final native String getFunctionAsString(String fieldName)
+        throws RuntimeException /*-{
+        this[fieldName] = (this[fieldName] || {});
+        return JSON.stringify(this[fieldName]);
+    }-*/
+    ;
+
+    public final native JsoChartOptions setFunctionAsString(String fieldName, String functionAsString)
+        throws RuntimeException /*-{
+        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
         return this;
     }-*/
     ;

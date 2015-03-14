@@ -519,4 +519,8 @@ public interface Line {
 
     Line setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Line setFunctionAsString(String fieldName, String functionAsString);
+
 }

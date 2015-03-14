@@ -35,4 +35,8 @@ public interface Point {
 
     Point setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Point setFunctionAsString(String fieldName, String functionAsString);
+
 }

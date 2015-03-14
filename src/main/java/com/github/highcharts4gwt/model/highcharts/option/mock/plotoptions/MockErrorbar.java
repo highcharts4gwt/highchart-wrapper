@@ -63,6 +63,7 @@ public class MockErrorbar
     private String zoneAxis;
     private ArrayNumber zones;
     private String genericField;
+    private String functionAsString;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -427,6 +428,15 @@ public class MockErrorbar
 
     public MockErrorbar setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockErrorbar setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

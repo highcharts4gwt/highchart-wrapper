@@ -50,4 +50,8 @@ public interface DrillUpButton {
 
     DrillUpButton setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    DrillUpButton setFunctionAsString(String fieldName, String functionAsString);
+
 }

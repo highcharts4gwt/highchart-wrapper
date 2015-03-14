@@ -603,4 +603,8 @@ public interface Bar {
 
     Bar setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Bar setFunctionAsString(String fieldName, String functionAsString);
+
 }

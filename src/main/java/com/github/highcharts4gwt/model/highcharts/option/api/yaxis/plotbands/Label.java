@@ -122,4 +122,8 @@ public interface Label {
 
     Label setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Label setFunctionAsString(String fieldName, String functionAsString);
+
 }

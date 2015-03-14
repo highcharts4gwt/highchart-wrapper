@@ -99,4 +99,8 @@ public interface PlotLine {
 
     PlotLine setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    PlotLine setFunctionAsString(String fieldName, String functionAsString);
+
 }

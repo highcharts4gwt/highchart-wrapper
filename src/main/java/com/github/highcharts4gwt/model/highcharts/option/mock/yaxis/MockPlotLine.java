@@ -21,6 +21,7 @@ public class MockPlotLine
     private double width;
     private double zIndex;
     private String genericField;
+    private String functionAsString;
 
     public String color() {
         return color;
@@ -91,6 +92,15 @@ public class MockPlotLine
 
     public MockPlotLine setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockPlotLine setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

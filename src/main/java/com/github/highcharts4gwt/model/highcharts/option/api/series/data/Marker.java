@@ -128,4 +128,8 @@ public interface Marker {
 
     Marker setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Marker setFunctionAsString(String fieldName, String functionAsString);
+
 }

@@ -461,4 +461,8 @@ public interface Legend {
 
     Legend setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Legend setFunctionAsString(String fieldName, String functionAsString);
+
 }

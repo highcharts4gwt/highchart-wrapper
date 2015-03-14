@@ -27,6 +27,7 @@ public class MockButtonOptions
     private double width;
     private double y;
     private String genericField;
+    private String functionAsString;
 
     public String align() {
         return align;
@@ -160,6 +161,15 @@ public class MockButtonOptions
 
     public MockButtonOptions setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockButtonOptions setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

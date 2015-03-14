@@ -314,4 +314,8 @@ public interface DataLabels {
 
     DataLabels setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    DataLabels setFunctionAsString(String fieldName, String functionAsString);
+
 }

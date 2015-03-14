@@ -17,6 +17,7 @@ public class MockLabels
     private Array<Item> items;
     private String style;
     private String genericField;
+    private String functionAsString;
 
     public Array<Item> items() {
         return items;
@@ -42,6 +43,15 @@ public class MockLabels
 
     public MockLabels setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockLabels setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

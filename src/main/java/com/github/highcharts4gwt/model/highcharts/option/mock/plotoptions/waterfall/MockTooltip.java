@@ -25,6 +25,7 @@ public class MockTooltip
     private String valueSuffix;
     private String xDateFormat;
     private String genericField;
+    private String functionAsString;
 
     public String dateTimeLabelFormats() {
         return dateTimeLabelFormats;
@@ -140,6 +141,15 @@ public class MockTooltip
 
     public MockTooltip setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockTooltip setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

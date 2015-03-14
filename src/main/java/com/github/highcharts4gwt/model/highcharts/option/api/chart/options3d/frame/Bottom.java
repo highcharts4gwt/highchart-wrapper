@@ -38,4 +38,8 @@ public interface Bottom {
 
     Bottom setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Bottom setFunctionAsString(String fieldName, String functionAsString);
+
 }

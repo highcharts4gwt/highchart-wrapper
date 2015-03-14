@@ -25,6 +25,7 @@ public class MockExporting
     private String url;
     private double width;
     private String genericField;
+    private String functionAsString;
 
     public Buttons buttons() {
         return buttons;
@@ -131,6 +132,15 @@ public class MockExporting
 
     public MockExporting setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockExporting setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

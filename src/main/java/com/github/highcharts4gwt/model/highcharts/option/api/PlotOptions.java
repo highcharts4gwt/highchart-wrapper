@@ -316,4 +316,8 @@ public interface PlotOptions {
 
     PlotOptions setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    PlotOptions setFunctionAsString(String fieldName, String functionAsString);
+
 }

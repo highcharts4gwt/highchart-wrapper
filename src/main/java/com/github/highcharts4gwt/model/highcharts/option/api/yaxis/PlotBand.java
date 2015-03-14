@@ -183,4 +183,8 @@ public interface PlotBand {
 
     PlotBand setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    PlotBand setFunctionAsString(String fieldName, String functionAsString);
+
 }

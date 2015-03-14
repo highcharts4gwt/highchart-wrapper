@@ -71,6 +71,7 @@ public class MockData
     private double x;
     private double y;
     private String genericField;
+    private String functionAsString;
 
     public String color() {
         return color;
@@ -225,6 +226,15 @@ public class MockData
 
     public MockData setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockData setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

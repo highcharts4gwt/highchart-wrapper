@@ -37,10 +37,10 @@ public class MockChartOptions
     private PlotOptions plotOptions;
     private XAxis xAxis;
     private YAxis yAxis;
-    private Exporting exporting;
     private Title title;
-    private Subtitle subtitle;
     private Navigation navigation;
+    private Subtitle subtitle;
+    private Exporting exporting;
     private Tooltip tooltip;
     private NoData noData;
     private Pane pane;
@@ -51,6 +51,7 @@ public class MockChartOptions
     private Loading loading;
     private Labels labels;
     private String genericField;
+    private String functionAsString;
 
     public Drilldown drilldown() {
         return drilldown;
@@ -106,21 +107,21 @@ public class MockChartOptions
         return this;
     }
 
-    public Exporting exporting() {
-        return exporting;
-    }
-
-    public MockChartOptions exporting(Exporting exporting) {
-        this.exporting = exporting;
-        return this;
-    }
-
     public Title title() {
         return title;
     }
 
     public MockChartOptions title(Title title) {
         this.title = title;
+        return this;
+    }
+
+    public Navigation navigation() {
+        return navigation;
+    }
+
+    public MockChartOptions navigation(Navigation navigation) {
+        this.navigation = navigation;
         return this;
     }
 
@@ -133,12 +134,12 @@ public class MockChartOptions
         return this;
     }
 
-    public Navigation navigation() {
-        return navigation;
+    public Exporting exporting() {
+        return exporting;
     }
 
-    public MockChartOptions navigation(Navigation navigation) {
-        this.navigation = navigation;
+    public MockChartOptions exporting(Exporting exporting) {
+        this.exporting = exporting;
         return this;
     }
 
@@ -229,6 +230,15 @@ public class MockChartOptions
 
     public MockChartOptions setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockChartOptions setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

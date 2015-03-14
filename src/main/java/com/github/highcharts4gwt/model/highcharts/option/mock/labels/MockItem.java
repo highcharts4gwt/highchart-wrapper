@@ -15,6 +15,7 @@ public class MockItem
     private String html;
     private String style;
     private String genericField;
+    private String functionAsString;
 
     public String html() {
         return html;
@@ -40,6 +41,15 @@ public class MockItem
 
     public MockItem setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockItem setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

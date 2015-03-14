@@ -62,4 +62,8 @@ public interface Break {
 
     Break setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Break setFunctionAsString(String fieldName, String functionAsString);
+
 }

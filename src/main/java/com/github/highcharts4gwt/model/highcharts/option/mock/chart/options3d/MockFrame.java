@@ -19,6 +19,7 @@ public class MockFrame
     private Bottom bottom;
     private Side side;
     private String genericField;
+    private String functionAsString;
 
     public Back back() {
         return back;
@@ -53,6 +54,15 @@ public class MockFrame
 
     public MockFrame setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockFrame setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

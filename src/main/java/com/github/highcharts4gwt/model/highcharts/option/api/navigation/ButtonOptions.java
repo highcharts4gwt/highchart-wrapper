@@ -182,4 +182,8 @@ public interface ButtonOptions {
 
     ButtonOptions setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    ButtonOptions setFunctionAsString(String fieldName, String functionAsString);
+
 }

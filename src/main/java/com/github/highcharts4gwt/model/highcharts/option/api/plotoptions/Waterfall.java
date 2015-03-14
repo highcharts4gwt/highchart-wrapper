@@ -618,4 +618,8 @@ public interface Waterfall {
 
     Waterfall setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Waterfall setFunctionAsString(String fieldName, String functionAsString);
+
 }

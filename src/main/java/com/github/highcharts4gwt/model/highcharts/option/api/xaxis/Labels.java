@@ -211,4 +211,8 @@ public interface Labels {
 
     Labels setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Labels setFunctionAsString(String fieldName, String functionAsString);
+
 }

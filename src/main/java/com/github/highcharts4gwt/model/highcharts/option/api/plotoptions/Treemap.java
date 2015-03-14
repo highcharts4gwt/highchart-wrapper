@@ -449,4 +449,8 @@ public interface Treemap {
 
     Treemap setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Treemap setFunctionAsString(String fieldName, String functionAsString);
+
 }

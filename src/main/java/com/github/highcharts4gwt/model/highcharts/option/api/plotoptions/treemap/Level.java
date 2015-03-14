@@ -114,4 +114,8 @@ public interface Level {
 
     Level setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Level setFunctionAsString(String fieldName, String functionAsString);
+
 }

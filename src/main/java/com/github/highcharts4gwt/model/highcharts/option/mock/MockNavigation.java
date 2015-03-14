@@ -18,6 +18,7 @@ public class MockNavigation
     private String menuItemStyle;
     private String menuStyle;
     private String genericField;
+    private String functionAsString;
 
     public ButtonOptions buttonOptions() {
         return buttonOptions;
@@ -61,6 +62,15 @@ public class MockNavigation
 
     public MockNavigation setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockNavigation setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

@@ -202,13 +202,13 @@ public interface Areasplinerange {
     Areasplinerange fillColor(String fillColor);
 
     /**
-     * Fill opacity for the area.
+     * Fill opacity for the area. Note that when you set an explicit <code>fillColor</code>, the <code>fillOpacity</code> is not applied. Instead, you should define the opacity in the <code>fillColor</code> with an rgba color definition.
      * 
      */
     double fillOpacity();
 
     /**
-     * Fill opacity for the area.
+     * Fill opacity for the area. Note that when you set an explicit <code>fillColor</code>, the <code>fillOpacity</code> is not applied. Instead, you should define the opacity in the <code>fillColor</code> with an rgba color definition.
      * 
      */
     Areasplinerange fillOpacity(double fillOpacity);
@@ -534,5 +534,9 @@ public interface Areasplinerange {
     String getFieldAsJsonObject(String fieldName);
 
     Areasplinerange setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
+    String getFunctionAsString(String fieldName);
+
+    Areasplinerange setFunctionAsString(String fieldName, String functionAsString);
 
 }

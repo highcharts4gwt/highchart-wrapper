@@ -218,4 +218,8 @@ public interface Data {
 
     Data setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Data setFunctionAsString(String fieldName, String functionAsString);
+
 }

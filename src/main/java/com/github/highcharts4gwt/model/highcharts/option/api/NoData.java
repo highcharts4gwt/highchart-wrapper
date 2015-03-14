@@ -50,4 +50,8 @@ public interface NoData {
 
     NoData setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    NoData setFunctionAsString(String fieldName, String functionAsString);
+
 }

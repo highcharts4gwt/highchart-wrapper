@@ -22,6 +22,7 @@ public class MockMarker
     private String symbol;
     private double width;
     private String genericField;
+    private String functionAsString;
 
     public boolean enabled() {
         return enabled;
@@ -110,6 +111,15 @@ public class MockMarker
 
     public MockMarker setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockMarker setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

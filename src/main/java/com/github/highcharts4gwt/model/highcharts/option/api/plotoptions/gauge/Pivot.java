@@ -62,4 +62,8 @@ public interface Pivot {
 
     Pivot setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Pivot setFunctionAsString(String fieldName, String functionAsString);
+
 }

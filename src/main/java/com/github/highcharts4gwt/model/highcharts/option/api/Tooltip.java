@@ -330,4 +330,8 @@ public interface Tooltip {
 
     Tooltip setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Tooltip setFunctionAsString(String fieldName, String functionAsString);
+
 }

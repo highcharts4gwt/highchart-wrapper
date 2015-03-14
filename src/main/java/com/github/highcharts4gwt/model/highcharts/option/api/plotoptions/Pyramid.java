@@ -390,4 +390,8 @@ public interface Pyramid {
 
     Pyramid setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Pyramid setFunctionAsString(String fieldName, String functionAsString);
+
 }

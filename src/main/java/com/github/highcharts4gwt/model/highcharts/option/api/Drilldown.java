@@ -161,4 +161,8 @@ public interface Drilldown {
 
     Drilldown setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Drilldown setFunctionAsString(String fieldName, String functionAsString);
+
 }

@@ -596,4 +596,8 @@ public interface Chart {
 
     Chart setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Chart setFunctionAsString(String fieldName, String functionAsString);
+
 }

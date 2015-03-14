@@ -325,4 +325,8 @@ public interface Gauge {
 
     Gauge setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Gauge setFunctionAsString(String fieldName, String functionAsString);
+
 }

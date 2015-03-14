@@ -21,6 +21,7 @@ public class MockLevel
     private String layoutStartingDirection;
     private double level;
     private String genericField;
+    private String functionAsString;
 
     public String borderColor() {
         return borderColor;
@@ -100,6 +101,15 @@ public class MockLevel
 
     public MockLevel setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockLevel setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

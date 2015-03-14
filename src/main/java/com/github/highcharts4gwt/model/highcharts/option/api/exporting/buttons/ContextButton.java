@@ -220,4 +220,8 @@ public interface ContextButton {
 
     ContextButton setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    ContextButton setFunctionAsString(String fieldName, String functionAsString);
+
 }

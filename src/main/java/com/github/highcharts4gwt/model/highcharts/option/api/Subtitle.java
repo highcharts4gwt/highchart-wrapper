@@ -110,4 +110,8 @@ public interface Subtitle {
 
     Subtitle setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Subtitle setFunctionAsString(String fieldName, String functionAsString);
+
 }

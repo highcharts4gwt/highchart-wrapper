@@ -60,6 +60,7 @@ public class MockFunnel
     private String zoneAxis;
     private ArrayNumber zones;
     private String genericField;
+    private String functionAsString;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -388,6 +389,15 @@ public class MockFunnel
 
     public MockFunnel setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockFunnel setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

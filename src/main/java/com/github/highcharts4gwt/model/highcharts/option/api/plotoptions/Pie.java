@@ -452,4 +452,8 @@ public interface Pie {
 
     Pie setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Pie setFunctionAsString(String fieldName, String functionAsString);
+
 }

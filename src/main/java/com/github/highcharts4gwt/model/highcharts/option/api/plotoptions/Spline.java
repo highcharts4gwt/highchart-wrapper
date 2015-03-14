@@ -507,4 +507,8 @@ public interface Spline {
 
     Spline setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Spline setFunctionAsString(String fieldName, String functionAsString);
+
 }

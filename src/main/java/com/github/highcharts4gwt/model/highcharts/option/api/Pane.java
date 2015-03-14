@@ -100,4 +100,8 @@ public interface Pane {
 
     Pane setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Pane setFunctionAsString(String fieldName, String functionAsString);
+
 }

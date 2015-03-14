@@ -70,6 +70,7 @@ public class MockChart
     private double width;
     private String zoomType;
     private String genericField;
+    private String functionAsString;
 
     public boolean alignTicks() {
         return alignTicks;
@@ -509,6 +510,15 @@ public class MockChart
 
     public MockChart setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockChart setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

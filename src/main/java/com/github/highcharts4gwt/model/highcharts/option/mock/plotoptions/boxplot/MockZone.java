@@ -17,6 +17,7 @@ public class MockZone
     private String fillColor;
     private double value;
     private String genericField;
+    private String functionAsString;
 
     public String color() {
         return color;
@@ -60,6 +61,15 @@ public class MockZone
 
     public MockZone setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockZone setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

@@ -16,6 +16,7 @@ public class MockNoData
     private String position;
     private String style;
     private String genericField;
+    private String functionAsString;
 
     public String attr() {
         return attr;
@@ -50,6 +51,15 @@ public class MockNoData
 
     public MockNoData setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockNoData setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

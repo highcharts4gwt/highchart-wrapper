@@ -69,6 +69,7 @@ public class MockColumnrange
     private String zoneAxis;
     private ArrayNumber zones;
     private String genericField;
+    private String functionAsString;
 
     public boolean allowPointSelect() {
         return allowPointSelect;
@@ -478,6 +479,15 @@ public class MockColumnrange
 
     public MockColumnrange setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockColumnrange setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

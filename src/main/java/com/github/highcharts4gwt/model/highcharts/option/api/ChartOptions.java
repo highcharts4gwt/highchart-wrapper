@@ -138,18 +138,6 @@ public interface ChartOptions {
     ChartOptions yAxis(YAxis yAxis);
 
     /**
-     * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
-     * 
-     */
-    Exporting exporting();
-
-    /**
-     * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
-     * 
-     */
-    ChartOptions exporting(Exporting exporting);
-
-    /**
      * The chart's main title.
      * 
      */
@@ -160,6 +148,18 @@ public interface ChartOptions {
      * 
      */
     ChartOptions title(Title title);
+
+    /**
+     * A collection of options for buttons and menus appearing in the exporting module.
+     * 
+     */
+    Navigation navigation();
+
+    /**
+     * A collection of options for buttons and menus appearing in the exporting module.
+     * 
+     */
+    ChartOptions navigation(Navigation navigation);
 
     /**
      * The chart's subtitle
@@ -174,16 +174,16 @@ public interface ChartOptions {
     ChartOptions subtitle(Subtitle subtitle);
 
     /**
-     * A collection of options for buttons and menus appearing in the exporting module.
+     * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
      * 
      */
-    Navigation navigation();
+    Exporting exporting();
 
     /**
-     * A collection of options for buttons and menus appearing in the exporting module.
+     * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
      * 
      */
-    ChartOptions navigation(Navigation navigation);
+    ChartOptions exporting(Exporting exporting);
 
     /**
      * Options for the tooltip that appears when the user hovers over a series or point.
@@ -354,5 +354,9 @@ public interface ChartOptions {
     String getFieldAsJsonObject(String fieldName);
 
     ChartOptions setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
+
+    String getFunctionAsString(String fieldName);
+
+    ChartOptions setFunctionAsString(String fieldName, String functionAsString);
 
 }

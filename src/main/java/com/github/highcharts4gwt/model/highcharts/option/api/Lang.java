@@ -227,4 +227,8 @@ public interface Lang {
 
     Lang setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Lang setFunctionAsString(String fieldName, String functionAsString);
+
 }

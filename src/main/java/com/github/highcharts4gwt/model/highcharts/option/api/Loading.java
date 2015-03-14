@@ -79,4 +79,8 @@ public interface Loading {
 
     Loading setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Loading setFunctionAsString(String fieldName, String functionAsString);
+
 }

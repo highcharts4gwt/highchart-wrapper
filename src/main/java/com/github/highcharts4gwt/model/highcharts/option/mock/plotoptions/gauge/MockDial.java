@@ -21,6 +21,7 @@ public class MockDial
     private String rearLength;
     private double topWidth;
     private String genericField;
+    private String functionAsString;
 
     public String backgroundColor() {
         return backgroundColor;
@@ -100,6 +101,15 @@ public class MockDial
 
     public MockDial setFieldAsJsonObject(String fieldName, String fieldValueAsJsonObject) {
         this.genericField = fieldValueAsJsonObject;
+        return this;
+    }
+
+    public String getFunctionAsString(String fieldName) {
+        return functionAsString;
+    }
+
+    public MockDial setFunctionAsString(String fieldName, String functionAsString) {
+        this.functionAsString = functionAsString;
         return this;
     }
 

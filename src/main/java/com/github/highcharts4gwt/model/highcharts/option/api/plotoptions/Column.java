@@ -604,4 +604,8 @@ public interface Column {
 
     Column setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    Column setFunctionAsString(String fieldName, String functionAsString);
+
 }

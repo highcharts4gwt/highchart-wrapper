@@ -842,4 +842,8 @@ public interface XAxis {
 
     XAxis setFieldAsJsonObject(String fieldName, String fieldValueAsJonObject);
 
+    String getFunctionAsString(String fieldName);
+
+    XAxis setFunctionAsString(String fieldName, String functionAsString);
+
 }
