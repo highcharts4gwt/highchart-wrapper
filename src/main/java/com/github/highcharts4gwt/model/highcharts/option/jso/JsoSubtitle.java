@@ -146,7 +146,7 @@ public class JsoSubtitle
 
     public final native JsoSubtitle setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

@@ -1,7 +1,6 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.polygon;
 
-import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.DataLabels;
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -40,19 +39,6 @@ public class JsoDataLabels
     public final native JsoDataLabels allowOverlap(boolean allowOverlap)
         throws RuntimeException /*-{
         this["allowOverlap"] = allowOverlap;
-        return this;
-    }-*/
-    ;
-
-    public final native ArrayNumber autoRotation()
-        throws RuntimeException /*-{
-        return this["autoRotation"] = (this["autoRotation"] || [-45]);
-    }-*/
-    ;
-
-    public final native JsoDataLabels autoRotation(ArrayNumber autoRotation)
-        throws RuntimeException /*-{
-        this["autoRotation"] = autoRotation;
         return this;
     }-*/
     ;
@@ -368,7 +354,7 @@ public class JsoDataLabels
 
     public final native JsoDataLabels setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

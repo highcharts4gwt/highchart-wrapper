@@ -1,7 +1,6 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area;
 
-import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 
 
 /**
@@ -33,18 +32,6 @@ public interface DataLabels {
      * 
      */
     DataLabels allowOverlap(boolean allowOverlap);
-
-    /**
-     * For horizontal axes, the allowed degrees of label rotation to prevent overlapping labels. If there is enough space, labels are not rotated. As the chart gets narrower, it will start rotating the labels -45 degrees, then remove every second label and try again with rotations 0 and -45 etc.
-     * 
-     */
-    ArrayNumber autoRotation();
-
-    /**
-     * For horizontal axes, the allowed degrees of label rotation to prevent overlapping labels. If there is enough space, labels are not rotated. As the chart gets narrower, it will start rotating the labels -45 degrees, then remove every second label and try again with rotations 0 and -45 etc.
-     * 
-     */
-    DataLabels autoRotation(ArrayNumber autoRotation);
 
     /**
      * The background color or gradient for the data label. Defaults to <code>undefined</code>.

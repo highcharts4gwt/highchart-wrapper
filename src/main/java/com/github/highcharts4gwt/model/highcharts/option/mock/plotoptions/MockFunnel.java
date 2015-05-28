@@ -38,6 +38,7 @@ public class MockFunnel
     private boolean enableMouseTracking;
     private double heightAsNumber;
     private String heightAsString;
+    private ArrayString keys;
     private String linkedTo;
     private double minSize;
     private double neckHeightAsNumber;
@@ -191,6 +192,15 @@ public class MockFunnel
 
     public MockFunnel heightAsString(String heightAsString) {
         this.heightAsString = heightAsString;
+        return this;
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockFunnel keys(ArrayString keys) {
+        this.keys = keys;
         return this;
     }
 

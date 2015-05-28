@@ -38,6 +38,7 @@ public class MockPyramid
     private boolean enableMouseTracking;
     private double heightAsNumber;
     private String heightAsString;
+    private ArrayString keys;
     private String linkedTo;
     private double minSize;
     private Point point;
@@ -187,6 +188,15 @@ public class MockPyramid
 
     public MockPyramid heightAsString(String heightAsString) {
         this.heightAsString = heightAsString;
+        return this;
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockPyramid keys(ArrayString keys) {
+        this.keys = keys;
         return this;
     }
 

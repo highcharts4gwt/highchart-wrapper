@@ -297,6 +297,18 @@ public interface Waterfall {
     Waterfall grouping(boolean grouping);
 
     /**
+     * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.
+     * 
+     */
+    ArrayString keys();
+
+    /**
+     * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.
+     * 
+     */
+    Waterfall keys(ArrayString keys);
+
+    /**
      * The color of the line that connects columns in a waterfall series.
      * 
      */
@@ -387,36 +399,40 @@ public interface Waterfall {
     Waterfall pointPadding(double pointPadding);
 
     /**
-     * <p>Possible values: null, "on", "between".</p>
-     * <p>In a column chart, when pointPlacement is "on", the point will not create any padding of the X axis. In a polar column chart this means that the first column points directly north. If the pointPlacement is "between", the columns will be laid out between ticks. This is useful for example for visualising an amount between two points in time or in a certain sector of a polar chart.</p>
+     * <p>Possible values: <code>null</code>, <code>"on"</code>, <code>"between"</code>.</p>
+     * <p>In a column chart, when pointPlacement is <code>"on"</code>, the point will not create any padding of the X axis. In a polar column chart this means that the first column points directly north. If the pointPlacement is <code>"between"</code>, the columns will be laid out between ticks. This is useful for example for visualising an amount between two points in time or in a certain sector of a polar chart.</p>
      * <p>Since Highcharts 3.0.2, the point placement can also be numeric, where 0 is on the axis value, -0.5 is between this value and the previous, and 0.5 is between this value and the next. Unlike the textual options, numeric point placement options won't affect axis padding.</p>
+     * <p>Note that pointPlacement needs a <a href="#plotOptions.series.pointRange">pointRange</a> to work. For column series this is computed, but for line-type series it needs to be set.</p>
      * <p>Defaults to <code>null</code> in cartesian charts, <code>"between"</code> in polar charts.
      * 
      */
     String pointPlacementAsString();
 
     /**
-     * <p>Possible values: null, "on", "between".</p>
-     * <p>In a column chart, when pointPlacement is "on", the point will not create any padding of the X axis. In a polar column chart this means that the first column points directly north. If the pointPlacement is "between", the columns will be laid out between ticks. This is useful for example for visualising an amount between two points in time or in a certain sector of a polar chart.</p>
+     * <p>Possible values: <code>null</code>, <code>"on"</code>, <code>"between"</code>.</p>
+     * <p>In a column chart, when pointPlacement is <code>"on"</code>, the point will not create any padding of the X axis. In a polar column chart this means that the first column points directly north. If the pointPlacement is <code>"between"</code>, the columns will be laid out between ticks. This is useful for example for visualising an amount between two points in time or in a certain sector of a polar chart.</p>
      * <p>Since Highcharts 3.0.2, the point placement can also be numeric, where 0 is on the axis value, -0.5 is between this value and the previous, and 0.5 is between this value and the next. Unlike the textual options, numeric point placement options won't affect axis padding.</p>
+     * <p>Note that pointPlacement needs a <a href="#plotOptions.series.pointRange">pointRange</a> to work. For column series this is computed, but for line-type series it needs to be set.</p>
      * <p>Defaults to <code>null</code> in cartesian charts, <code>"between"</code> in polar charts.
      * 
      */
     Waterfall pointPlacementAsString(String pointPlacementAsString);
 
     /**
-     * <p>Possible values: null, "on", "between".</p>
-     * <p>In a column chart, when pointPlacement is "on", the point will not create any padding of the X axis. In a polar column chart this means that the first column points directly north. If the pointPlacement is "between", the columns will be laid out between ticks. This is useful for example for visualising an amount between two points in time or in a certain sector of a polar chart.</p>
+     * <p>Possible values: <code>null</code>, <code>"on"</code>, <code>"between"</code>.</p>
+     * <p>In a column chart, when pointPlacement is <code>"on"</code>, the point will not create any padding of the X axis. In a polar column chart this means that the first column points directly north. If the pointPlacement is <code>"between"</code>, the columns will be laid out between ticks. This is useful for example for visualising an amount between two points in time or in a certain sector of a polar chart.</p>
      * <p>Since Highcharts 3.0.2, the point placement can also be numeric, where 0 is on the axis value, -0.5 is between this value and the previous, and 0.5 is between this value and the next. Unlike the textual options, numeric point placement options won't affect axis padding.</p>
+     * <p>Note that pointPlacement needs a <a href="#plotOptions.series.pointRange">pointRange</a> to work. For column series this is computed, but for line-type series it needs to be set.</p>
      * <p>Defaults to <code>null</code> in cartesian charts, <code>"between"</code> in polar charts.
      * 
      */
     double pointPlacementAsNumber();
 
     /**
-     * <p>Possible values: null, "on", "between".</p>
-     * <p>In a column chart, when pointPlacement is "on", the point will not create any padding of the X axis. In a polar column chart this means that the first column points directly north. If the pointPlacement is "between", the columns will be laid out between ticks. This is useful for example for visualising an amount between two points in time or in a certain sector of a polar chart.</p>
+     * <p>Possible values: <code>null</code>, <code>"on"</code>, <code>"between"</code>.</p>
+     * <p>In a column chart, when pointPlacement is <code>"on"</code>, the point will not create any padding of the X axis. In a polar column chart this means that the first column points directly north. If the pointPlacement is <code>"between"</code>, the columns will be laid out between ticks. This is useful for example for visualising an amount between two points in time or in a certain sector of a polar chart.</p>
      * <p>Since Highcharts 3.0.2, the point placement can also be numeric, where 0 is on the axis value, -0.5 is between this value and the previous, and 0.5 is between this value and the next. Unlike the textual options, numeric point placement options won't affect axis padding.</p>
+     * <p>Note that pointPlacement needs a <a href="#plotOptions.series.pointRange">pointRange</a> to work. For column series this is computed, but for line-type series it needs to be set.</p>
      * <p>Defaults to <code>null</code> in cartesian charts, <code>"between"</code> in polar charts.
      * 
      */

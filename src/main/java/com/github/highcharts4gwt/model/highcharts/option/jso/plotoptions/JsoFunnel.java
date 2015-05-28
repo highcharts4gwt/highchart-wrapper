@@ -316,6 +316,19 @@ public class JsoFunnel
     }-*/
     ;
 
+    public final native ArrayString keys()
+        throws RuntimeException /*-{
+        return this["keys"] = (this["keys"] || []);
+    }-*/
+    ;
+
+    public final native JsoFunnel keys(ArrayString keys)
+        throws RuntimeException /*-{
+        this["keys"] = keys;
+        return this;
+    }-*/
+    ;
+
     public final native String linkedTo()
         throws RuntimeException /*-{
         return this["linkedTo"] = (this["linkedTo"] || "");
@@ -613,7 +626,7 @@ public class JsoFunnel
 
     public final native JsoFunnel setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

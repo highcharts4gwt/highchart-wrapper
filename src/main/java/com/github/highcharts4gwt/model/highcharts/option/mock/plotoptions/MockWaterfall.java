@@ -44,6 +44,7 @@ public class MockWaterfall
     private double groupPadding;
     private double groupZPadding;
     private boolean grouping;
+    private ArrayString keys;
     private String lineColor;
     private String linkedTo;
     private double minPointLength;
@@ -255,6 +256,15 @@ public class MockWaterfall
 
     public MockWaterfall grouping(boolean grouping) {
         this.grouping = grouping;
+        return this;
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockWaterfall keys(ArrayString keys) {
+        this.keys = keys;
         return this;
     }
 

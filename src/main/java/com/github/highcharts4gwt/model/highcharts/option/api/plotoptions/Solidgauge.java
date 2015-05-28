@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.Point;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeAfterAnimateHandler;
@@ -102,6 +103,18 @@ public interface Solidgauge {
     void addSolidgaugeMouseOverHandler(SolidgaugeMouseOverHandler solidgaugeMouseOverHandler);
 
     void addSolidgaugeShowHandler(SolidgaugeShowHandler solidgaugeShowHandler);
+
+    /**
+     * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.
+     * 
+     */
+    ArrayString keys();
+
+    /**
+     * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.
+     * 
+     */
+    Solidgauge keys(ArrayString keys);
 
     /**
      * Allow the dial to overshoot the end of the perimeter axis by this many degrees. Say if the gauge axis goes from 0 to 60, a value of 100, or 1000, will show 5 degrees beyond the end of the axis.

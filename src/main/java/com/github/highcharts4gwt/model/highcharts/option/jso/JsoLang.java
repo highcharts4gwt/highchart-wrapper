@@ -271,7 +271,7 @@ public class JsoLang
 
     public final native JsoLang setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

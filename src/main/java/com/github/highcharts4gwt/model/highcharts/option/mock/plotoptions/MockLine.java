@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Line;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineAfterAnimateHandler;
@@ -35,6 +36,7 @@ public class MockLine
     private String dashStyle;
     private DataLabels dataLabels;
     private boolean enableMouseTracking;
+    private ArrayString keys;
     private double lineWidth;
     private String linkedTo;
     private Marker marker;
@@ -175,6 +177,15 @@ public class MockLine
     }
 
     public void addLineShowHandler(LineShowHandler handler) {
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockLine keys(ArrayString keys) {
+        this.keys = keys;
+        return this;
     }
 
     public double lineWidth() {

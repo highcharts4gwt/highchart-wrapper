@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Bubble;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleCheckboxClickHandler;
@@ -35,6 +36,7 @@ public class MockBubble
     private DataLabels dataLabels;
     private boolean displayNegative;
     private boolean enableMouseTracking;
+    private ArrayString keys;
     private double lineWidth;
     private String linkedTo;
     private Marker marker;
@@ -167,6 +169,15 @@ public class MockBubble
     }
 
     public void addBubbleShowHandler(BubbleShowHandler handler) {
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockBubble keys(ArrayString keys) {
+        this.keys = keys;
+        return this;
     }
 
     public double lineWidth() {

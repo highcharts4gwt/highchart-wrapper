@@ -213,6 +213,18 @@ public interface Heatmap {
     void addHeatmapShowHandler(HeatmapShowHandler heatmapShowHandler);
 
     /**
+     * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.
+     * 
+     */
+    ArrayString keys();
+
+    /**
+     * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.
+     * 
+     */
+    Heatmap keys(ArrayString keys);
+
+    /**
      * The <a href="#series.id">id</a> of another series to link to. Additionally, the value can be ":previous" to link to the previous series. When two series are linked, only the first one appears in the legend. Toggling the visibility of this also toggles the linked series.
      * 
      */

@@ -67,7 +67,7 @@ public class JsoSide
 
     public final native JsoSide setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

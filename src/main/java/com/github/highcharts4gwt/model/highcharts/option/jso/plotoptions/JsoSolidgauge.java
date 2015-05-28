@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Solidgauge;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.Point;
@@ -211,6 +212,19 @@ public class JsoSolidgauge
         }-*/;
     ;
 
+    public final native ArrayString keys()
+        throws RuntimeException /*-{
+        return this["keys"] = (this["keys"] || []);
+    }-*/
+    ;
+
+    public final native JsoSolidgauge keys(ArrayString keys)
+        throws RuntimeException /*-{
+        this["keys"] = keys;
+        return this;
+    }-*/
+    ;
+
     public final native double overshoot()
         throws RuntimeException /*-{
         return this["overshoot"] = (this["overshoot"] || 0.0);
@@ -390,7 +404,7 @@ public class JsoSolidgauge
 
     public final native JsoSolidgauge setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

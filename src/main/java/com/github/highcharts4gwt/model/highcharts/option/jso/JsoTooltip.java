@@ -177,7 +177,7 @@ public class JsoTooltip
 
     public final native String pointFormat()
         throws RuntimeException /*-{
-        return this["pointFormat"] = (this["pointFormat"] || "<span style=\"color:{point.color}\">●</span> {series.name}: <b>{point.y}</b><br/>");
+        return this["pointFormat"] = (this["pointFormat"] || "<span style=\"color:{point.color}\">\u25CF</span> {series.name}: <b>{point.y}</b><br/>");
     }-*/
     ;
 
@@ -342,7 +342,7 @@ public class JsoTooltip
 
     public final native JsoTooltip setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

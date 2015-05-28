@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleCheckboxClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleClickHandler;
@@ -187,6 +188,18 @@ public interface Bubble {
     void addBubbleMouseOverHandler(BubbleMouseOverHandler bubbleMouseOverHandler);
 
     void addBubbleShowHandler(BubbleShowHandler bubbleShowHandler);
+
+    /**
+     * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.
+     * 
+     */
+    ArrayString keys();
+
+    /**
+     * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.
+     * 
+     */
+    Bubble keys(ArrayString keys);
 
     /**
      * The width of the line connecting the data points.

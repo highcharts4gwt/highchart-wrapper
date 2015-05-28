@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Solidgauge;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.Point;
@@ -29,6 +30,7 @@ public class MockSolidgauge
     private String cursor;
     private DataLabels dataLabels;
     private boolean enableMouseTracking;
+    private ArrayString keys;
     private double overshoot;
     private Point point;
     private boolean selected;
@@ -102,6 +104,15 @@ public class MockSolidgauge
     }
 
     public void addSolidgaugeShowHandler(SolidgaugeShowHandler handler) {
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockSolidgauge keys(ArrayString keys) {
+        this.keys = keys;
+        return this;
     }
 
     public double overshoot() {

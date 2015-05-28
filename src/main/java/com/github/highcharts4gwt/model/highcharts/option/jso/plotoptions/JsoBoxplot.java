@@ -328,6 +328,19 @@ public class JsoBoxplot
     }-*/
     ;
 
+    public final native ArrayString keys()
+        throws RuntimeException /*-{
+        return this["keys"] = (this["keys"] || []);
+    }-*/
+    ;
+
+    public final native JsoBoxplot keys(ArrayString keys)
+        throws RuntimeException /*-{
+        this["keys"] = keys;
+        return this;
+    }-*/
+    ;
+
     public final native double lineWidth()
         throws RuntimeException /*-{
         return this["lineWidth"] = (this["lineWidth"] || 1.0);
@@ -754,7 +767,7 @@ public class JsoBoxplot
 
     public final native JsoBoxplot setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

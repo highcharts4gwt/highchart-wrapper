@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Spline;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.Marker;
@@ -35,6 +36,7 @@ public class MockSpline
     private String dashStyle;
     private DataLabels dataLabels;
     private boolean enableMouseTracking;
+    private ArrayString keys;
     private double lineWidth;
     private String linkedTo;
     private Marker marker;
@@ -174,6 +176,15 @@ public class MockSpline
     }
 
     public void addSplineShowHandler(SplineShowHandler handler) {
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockSpline keys(ArrayString keys) {
+        this.keys = keys;
+        return this;
     }
 
     public double lineWidth() {

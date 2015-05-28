@@ -35,6 +35,7 @@ public class MockErrorbar
     private double edgeWidth;
     private boolean enableMouseTracking;
     private double groupZPadding;
+    private ArrayString keys;
     private double lineWidth;
     private String linkedTo;
     private String negativeColor;
@@ -176,6 +177,15 @@ public class MockErrorbar
 
     public MockErrorbar groupZPadding(double groupZPadding) {
         this.groupZPadding = groupZPadding;
+        return this;
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockErrorbar keys(ArrayString keys) {
+        this.keys = keys;
         return this;
     }
 

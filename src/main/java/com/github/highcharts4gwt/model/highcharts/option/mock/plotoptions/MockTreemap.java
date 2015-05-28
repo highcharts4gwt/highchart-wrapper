@@ -33,7 +33,7 @@ public class MockTreemap
     private boolean allowPointSelect;
     private boolean alternateStartingDirection;
     private boolean animation;
-    private double borderColor;
+    private String borderColor;
     private double borderWidth;
     private String color;
     private boolean colorByPoint;
@@ -43,6 +43,7 @@ public class MockTreemap
     private DataLabels dataLabels;
     private boolean enableMouseTracking;
     private boolean interactByLeaf;
+    private ArrayString keys;
     private String layoutAlgorithm;
     private String layoutStartingDirection;
     private boolean levelIsConstant;
@@ -100,11 +101,11 @@ public class MockTreemap
         return this;
     }
 
-    public double borderColor() {
+    public String borderColor() {
         return borderColor;
     }
 
-    public MockTreemap borderColor(double borderColor) {
+    public MockTreemap borderColor(String borderColor) {
         this.borderColor = borderColor;
         return this;
     }
@@ -211,6 +212,15 @@ public class MockTreemap
 
     public MockTreemap interactByLeaf(boolean interactByLeaf) {
         this.interactByLeaf = interactByLeaf;
+        return this;
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockTreemap keys(ArrayString keys) {
+        this.keys = keys;
         return this;
     }
 

@@ -394,6 +394,19 @@ public class JsoWaterfall
     }-*/
     ;
 
+    public final native ArrayString keys()
+        throws RuntimeException /*-{
+        return this["keys"] = (this["keys"] || []);
+    }-*/
+    ;
+
+    public final native JsoWaterfall keys(ArrayString keys)
+        throws RuntimeException /*-{
+        this["keys"] = keys;
+        return this;
+    }-*/
+    ;
+
     public final native String lineColor()
         throws RuntimeException /*-{
         return this["lineColor"] = (this["lineColor"] || "#333333");
@@ -743,7 +756,7 @@ public class JsoWaterfall
 
     public final native JsoWaterfall setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

@@ -338,13 +338,13 @@ public interface Legend {
     Legend style(String styleAsJsonString);
 
     /**
-     * The pixel height of the symbol for series types that use a rectangle in the legend.
+     * The pixel height of the symbol for series types that use a rectangle in the legend. Defaults to the font size of legend items.
      * 
      */
     double symbolHeight();
 
     /**
-     * The pixel height of the symbol for series types that use a rectangle in the legend.
+     * The pixel height of the symbol for series types that use a rectangle in the legend. Defaults to the font size of legend items.
      * 
      */
     Legend symbolHeight(double symbolHeight);

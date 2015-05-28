@@ -168,13 +168,13 @@ public interface PlotBand {
     PlotBand to(double to);
 
     /**
-     * The z index of the plot band within the chart.
+     * The z index of the plot band within the chart, relative to other elements. Using the same z index as another element may give unpredictable results, as the last rendered element will be on top. Values from 0 to 20 make sense.
      * 
      */
     double zIndex();
 
     /**
-     * The z index of the plot band within the chart.
+     * The z index of the plot band within the chart, relative to other elements. Using the same z index as another element may give unpredictable results, as the last rendered element will be on top. Values from 0 to 20 make sense.
      * 
      */
     PlotBand zIndex(double zIndex);

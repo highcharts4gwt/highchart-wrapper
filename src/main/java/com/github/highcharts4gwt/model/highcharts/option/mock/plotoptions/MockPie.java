@@ -41,6 +41,7 @@ public class MockPie
     private boolean ignoreHiddenPoint;
     private String innerSizeAsString;
     private double innerSizeAsNumber;
+    private ArrayString keys;
     private String linkedTo;
     private double minSize;
     private Point point;
@@ -217,6 +218,15 @@ public class MockPie
 
     public MockPie innerSizeAsNumber(double innerSizeAsNumber) {
         this.innerSizeAsNumber = innerSizeAsNumber;
+        return this;
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockPie keys(ArrayString keys) {
+        this.keys = keys;
         return this;
     }
 

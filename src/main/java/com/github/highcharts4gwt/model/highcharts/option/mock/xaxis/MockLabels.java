@@ -15,6 +15,7 @@ public class MockLabels
 
     private String align;
     private ArrayNumber autoRotation;
+    private double autoRotationLimit;
     private double distance;
     private boolean enabled;
     private String format;
@@ -47,6 +48,15 @@ public class MockLabels
 
     public MockLabels autoRotation(ArrayNumber autoRotation) {
         this.autoRotation = autoRotation;
+        return this;
+    }
+
+    public double autoRotationLimit() {
+        return autoRotationLimit;
+    }
+
+    public MockLabels autoRotationLimit(double autoRotationLimit) {
+        this.autoRotationLimit = autoRotationLimit;
         return this;
     }
 

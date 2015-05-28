@@ -44,6 +44,7 @@ public class MockColumnrange
     private double groupPadding;
     private double groupZPadding;
     private boolean grouping;
+    private ArrayString keys;
     private String linkedTo;
     private double minPointLength;
     private Point point;
@@ -254,6 +255,15 @@ public class MockColumnrange
 
     public MockColumnrange grouping(boolean grouping) {
         this.grouping = grouping;
+        return this;
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockColumnrange keys(ArrayString keys) {
+        this.keys = keys;
         return this;
     }
 

@@ -25,7 +25,7 @@ public class JsoArray<T> extends JsArray<JavaScriptObject> implements Array<T>
     }
 
     @Override
-    final public void addToEnd(T value)
+    final public <T2 extends T> void addToEnd(T2 value)
     {
         push((JavaScriptObject) value);
     }

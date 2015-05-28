@@ -43,6 +43,7 @@ public class MockBar
     private double groupPadding;
     private double groupZPadding;
     private boolean grouping;
+    private ArrayString keys;
     private String linkedTo;
     private double minPointLength;
     private String negativeColor;
@@ -255,6 +256,15 @@ public class MockBar
 
     public MockBar grouping(boolean grouping) {
         this.grouping = grouping;
+        return this;
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockBar keys(ArrayString keys) {
+        this.keys = keys;
         return this;
     }
 

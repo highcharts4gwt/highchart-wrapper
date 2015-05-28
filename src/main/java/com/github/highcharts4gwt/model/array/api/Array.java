@@ -6,7 +6,7 @@ public interface Array<T>
 
     int length();
 
-    void addToEnd(T value); // Cannot use JsArray method name otherwise error
+    <T2 extends T> void addToEnd(T2 value); // Cannot use JsArray method name otherwise error
                             // overload using erasure
     
     /**

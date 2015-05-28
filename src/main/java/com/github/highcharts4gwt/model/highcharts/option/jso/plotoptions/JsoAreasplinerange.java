@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Areasplinerange;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeCheckboxClickHandler;
@@ -298,6 +299,19 @@ public class JsoAreasplinerange
     public final native JsoAreasplinerange fillOpacity(double fillOpacity)
         throws RuntimeException /*-{
         this["fillOpacity"] = fillOpacity;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayString keys()
+        throws RuntimeException /*-{
+        return this["keys"] = (this["keys"] || []);
+    }-*/
+    ;
+
+    public final native JsoAreasplinerange keys(ArrayString keys)
+        throws RuntimeException /*-{
+        this["keys"] = keys;
         return this;
     }-*/
     ;
@@ -651,7 +665,7 @@ public class JsoAreasplinerange
 
     public final native JsoAreasplinerange setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

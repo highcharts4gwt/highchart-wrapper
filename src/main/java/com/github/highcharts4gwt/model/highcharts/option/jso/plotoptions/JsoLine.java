@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Line;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineAfterAnimateHandler;
@@ -287,6 +288,19 @@ public class JsoLine
                  }
              });
         }-*/;
+    ;
+
+    public final native ArrayString keys()
+        throws RuntimeException /*-{
+        return this["keys"] = (this["keys"] || []);
+    }-*/
+    ;
+
+    public final native JsoLine keys(ArrayString keys)
+        throws RuntimeException /*-{
+        this["keys"] = keys;
+        return this;
+    }-*/
     ;
 
     public final native double lineWidth()
@@ -638,7 +652,7 @@ public class JsoLine
 
     public final native JsoLine setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

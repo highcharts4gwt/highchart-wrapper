@@ -1,7 +1,6 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.pyramid;
 
-import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.DataLabels;
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -17,19 +16,6 @@ public class JsoDataLabels
 
     protected JsoDataLabels() {
     }
-
-    public final native ArrayNumber autoRotation()
-        throws RuntimeException /*-{
-        return this["autoRotation"] = (this["autoRotation"] || [-45]);
-    }-*/
-    ;
-
-    public final native JsoDataLabels autoRotation(ArrayNumber autoRotation)
-        throws RuntimeException /*-{
-        this["autoRotation"] = autoRotation;
-        return this;
-    }-*/
-    ;
 
     public final native String backgroundColor()
         throws RuntimeException /*-{
@@ -407,7 +393,7 @@ public class JsoDataLabels
 
     public final native JsoDataLabels setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

@@ -45,6 +45,19 @@ public class JsoLabels
     }-*/
     ;
 
+    public final native double autoRotationLimit()
+        throws RuntimeException /*-{
+        return this["autoRotationLimit"] = (this["autoRotationLimit"] || 80.0);
+    }-*/
+    ;
+
+    public final native JsoLabels autoRotationLimit(double autoRotationLimit)
+        throws RuntimeException /*-{
+        this["autoRotationLimit"] = autoRotationLimit;
+        return this;
+    }-*/
+    ;
+
     public final native double distance()
         throws RuntimeException /*-{
         return this["distance"] = (this["distance"] || 15.0);
@@ -251,7 +264,7 @@ public class JsoLabels
 
     public final native JsoLabels setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

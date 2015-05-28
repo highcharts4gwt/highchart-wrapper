@@ -1,7 +1,6 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.pyramid;
 
-import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.DataLabels;
 
 
@@ -12,7 +11,6 @@ public class MockDataLabels
     implements DataLabels
 {
 
-    private ArrayNumber autoRotation;
     private String backgroundColor;
     private String borderColor;
     private double borderRadius;
@@ -42,15 +40,6 @@ public class MockDataLabels
     private double zIndex;
     private String genericField;
     private String functionAsString;
-
-    public ArrayNumber autoRotation() {
-        return autoRotation;
-    }
-
-    public MockDataLabels autoRotation(ArrayNumber autoRotation) {
-        this.autoRotation = autoRotation;
-        return this;
-    }
 
     public String backgroundColor() {
         return backgroundColor;

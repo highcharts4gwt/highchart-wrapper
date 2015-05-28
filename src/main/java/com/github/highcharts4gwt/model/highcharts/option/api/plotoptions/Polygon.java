@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.Marker;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.Point;
@@ -175,6 +176,18 @@ public interface Polygon {
     void addPolygonMouseOverHandler(PolygonMouseOverHandler polygonMouseOverHandler);
 
     void addPolygonShowHandler(PolygonShowHandler polygonShowHandler);
+
+    /**
+     * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.
+     * 
+     */
+    ArrayString keys();
+
+    /**
+     * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.
+     * 
+     */
+    Polygon keys(ArrayString keys);
 
     /**
      * The width of the line connecting the data points.

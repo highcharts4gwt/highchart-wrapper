@@ -16,7 +16,6 @@ import com.github.highcharts4gwt.model.highcharts.option.api.Navigation;
 import com.github.highcharts4gwt.model.highcharts.option.api.NoData;
 import com.github.highcharts4gwt.model.highcharts.option.api.Pane;
 import com.github.highcharts4gwt.model.highcharts.option.api.PlotOptions;
-import com.github.highcharts4gwt.model.highcharts.option.api.Series;
 import com.github.highcharts4gwt.model.highcharts.option.api.Subtitle;
 import com.github.highcharts4gwt.model.highcharts.option.api.Title;
 import com.github.highcharts4gwt.model.highcharts.option.api.Tooltip;
@@ -37,19 +36,19 @@ public class MockChartOptions
     private PlotOptions plotOptions;
     private XAxis xAxis;
     private YAxis yAxis;
-    private Title title;
+    private Exporting exporting;
     private Navigation navigation;
     private Subtitle subtitle;
-    private Exporting exporting;
+    private Title title;
     private Tooltip tooltip;
     private NoData noData;
     private Pane pane;
-    private Array<Series> series;
     private ArrayString colors;
     private Data data;
     private Credits credits;
     private Loading loading;
     private Labels labels;
+    private Array<Object> series;
     private String genericField;
     private String functionAsString;
 
@@ -107,12 +106,12 @@ public class MockChartOptions
         return this;
     }
 
-    public Title title() {
-        return title;
+    public Exporting exporting() {
+        return exporting;
     }
 
-    public MockChartOptions title(Title title) {
-        this.title = title;
+    public MockChartOptions exporting(Exporting exporting) {
+        this.exporting = exporting;
         return this;
     }
 
@@ -134,12 +133,12 @@ public class MockChartOptions
         return this;
     }
 
-    public Exporting exporting() {
-        return exporting;
+    public Title title() {
+        return title;
     }
 
-    public MockChartOptions exporting(Exporting exporting) {
-        this.exporting = exporting;
+    public MockChartOptions title(Title title) {
+        this.title = title;
         return this;
     }
 
@@ -167,15 +166,6 @@ public class MockChartOptions
 
     public MockChartOptions pane(Pane pane) {
         this.pane = pane;
-        return this;
-    }
-
-    public Array<Series> series() {
-        return series;
-    }
-
-    public MockChartOptions series(Array<Series> series) {
-        this.series = series;
         return this;
     }
 
@@ -221,6 +211,15 @@ public class MockChartOptions
 
     public MockChartOptions labels(Labels labels) {
         this.labels = labels;
+        return this;
+    }
+
+    public Array<Object> series() {
+        return series;
+    }
+
+    public MockChartOptions series(Array<Object> series) {
+        this.series = series;
         return this;
     }
 

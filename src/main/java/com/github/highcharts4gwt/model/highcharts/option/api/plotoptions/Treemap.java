@@ -97,13 +97,13 @@ public interface Treemap {
      * The color of the border surrounding each tree map item.
      * 
      */
-    double borderColor();
+    String borderColor();
 
     /**
      * The color of the border surrounding each tree map item.
      * 
      */
-    Treemap borderColor(double borderColor);
+    Treemap borderColor(String borderColor);
 
     /**
      * The width of the border surrounding each column or bar.
@@ -228,6 +228,18 @@ public interface Treemap {
      * 
      */
     Treemap interactByLeaf(boolean interactByLeaf);
+
+    /**
+     * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.
+     * 
+     */
+    ArrayString keys();
+
+    /**
+     * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.
+     * 
+     */
+    Treemap keys(ArrayString keys);
 
     /**
      * This option decides which algorithm is used for setting position and dimensions of the points. Can be one of <code>sliceAndDice</code>, <code>stripes</code>, <code>squarified</code> or <code>strip</code>.

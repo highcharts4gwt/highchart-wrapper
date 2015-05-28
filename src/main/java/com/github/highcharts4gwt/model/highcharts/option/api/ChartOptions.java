@@ -15,7 +15,6 @@ import com.github.highcharts4gwt.model.highcharts.option.api.Navigation;
 import com.github.highcharts4gwt.model.highcharts.option.api.NoData;
 import com.github.highcharts4gwt.model.highcharts.option.api.Pane;
 import com.github.highcharts4gwt.model.highcharts.option.api.PlotOptions;
-import com.github.highcharts4gwt.model.highcharts.option.api.Series;
 import com.github.highcharts4gwt.model.highcharts.option.api.Subtitle;
 import com.github.highcharts4gwt.model.highcharts.option.api.Title;
 import com.github.highcharts4gwt.model.highcharts.option.api.Tooltip;
@@ -138,16 +137,16 @@ public interface ChartOptions {
     ChartOptions yAxis(YAxis yAxis);
 
     /**
-     * The chart's main title.
+     * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
      * 
      */
-    Title title();
+    Exporting exporting();
 
     /**
-     * The chart's main title.
+     * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
      * 
      */
-    ChartOptions title(Title title);
+    ChartOptions exporting(Exporting exporting);
 
     /**
      * A collection of options for buttons and menus appearing in the exporting module.
@@ -174,16 +173,16 @@ public interface ChartOptions {
     ChartOptions subtitle(Subtitle subtitle);
 
     /**
-     * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
+     * The chart's main title.
      * 
      */
-    Exporting exporting();
+    Title title();
 
     /**
-     * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
+     * The chart's main title.
      * 
      */
-    ChartOptions exporting(Exporting exporting);
+    ChartOptions title(Title title);
 
     /**
      * Options for the tooltip that appears when the user hovers over a series or point.
@@ -220,26 +219,6 @@ public interface ChartOptions {
      * 
      */
     ChartOptions pane(Pane pane);
-
-    /**
-     * The actual series to append to the chart. In addition to 
-     * 	the members listed below, any member of the <code>plotOptions</code> for that specific
-     * 	type of plot can be added to a series individually. For example, even though a general
-     * 	<code>lineWidth</code> is specified in <code>plotOptions.series</code>, an individual
-     * 	<code>lineWidth</code> can be specified for each series.
-     * 
-     */
-    Array<Series> series();
-
-    /**
-     * The actual series to append to the chart. In addition to 
-     * 	the members listed below, any member of the <code>plotOptions</code> for that specific
-     * 	type of plot can be added to a series individually. For example, even though a general
-     * 	<code>lineWidth</code> is specified in <code>plotOptions.series</code>, an individual
-     * 	<code>lineWidth</code> can be specified for each series.
-     * 
-     */
-    ChartOptions series(Array<Series> series);
 
     /**
      * <p>An array containing the default colors for the chart's series. When all colors are used, new colors are pulled from the start again. Defaults to:
@@ -350,6 +329,26 @@ public interface ChartOptions {
      * 
      */
     ChartOptions labels(Labels labels);
+
+    /**
+     * The actual series to append to the chart. In addition to 
+     * 	the members listed below, any member of the <code>plotOptions</code> for that specific
+     * 	type of plot can be added to a series individually. For example, even though a general
+     * 	<code>lineWidth</code> is specified in <code>plotOptions.series</code>, an individual
+     * 	<code>lineWidth</code> can be specified for each series.
+     * 
+     */
+    Array<Object> series();
+
+    /**
+     * The actual series to append to the chart. In addition to 
+     * 	the members listed below, any member of the <code>plotOptions</code> for that specific
+     * 	type of plot can be added to a series individually. For example, even though a general
+     * 	<code>lineWidth</code> is specified in <code>plotOptions.series</code>, an individual
+     * 	<code>lineWidth</code> can be specified for each series.
+     * 
+     */
+    ChartOptions series(Array<Object> series);
 
     String getFieldAsJsonObject(String fieldName);
 

@@ -16,7 +16,6 @@ import com.github.highcharts4gwt.model.highcharts.option.api.Navigation;
 import com.github.highcharts4gwt.model.highcharts.option.api.NoData;
 import com.github.highcharts4gwt.model.highcharts.option.api.Pane;
 import com.github.highcharts4gwt.model.highcharts.option.api.PlotOptions;
-import com.github.highcharts4gwt.model.highcharts.option.api.Series;
 import com.github.highcharts4gwt.model.highcharts.option.api.Subtitle;
 import com.github.highcharts4gwt.model.highcharts.option.api.Title;
 import com.github.highcharts4gwt.model.highcharts.option.api.Tooltip;
@@ -115,15 +114,15 @@ public class JsoChartOptions
     }-*/
     ;
 
-    public final native Title title()
+    public final native Exporting exporting()
         throws RuntimeException /*-{
-        return this["title"] = (this["title"] || {});
+        return this["exporting"] = (this["exporting"] || {});
     }-*/
     ;
 
-    public final native JsoChartOptions title(Title title)
+    public final native JsoChartOptions exporting(Exporting exporting)
         throws RuntimeException /*-{
-        this["title"] = title;
+        this["exporting"] = exporting;
         return this;
     }-*/
     ;
@@ -154,15 +153,15 @@ public class JsoChartOptions
     }-*/
     ;
 
-    public final native Exporting exporting()
+    public final native Title title()
         throws RuntimeException /*-{
-        return this["exporting"] = (this["exporting"] || {});
+        return this["title"] = (this["title"] || {});
     }-*/
     ;
 
-    public final native JsoChartOptions exporting(Exporting exporting)
+    public final native JsoChartOptions title(Title title)
         throws RuntimeException /*-{
-        this["exporting"] = exporting;
+        this["title"] = title;
         return this;
     }-*/
     ;
@@ -202,19 +201,6 @@ public class JsoChartOptions
     public final native JsoChartOptions pane(Pane pane)
         throws RuntimeException /*-{
         this["pane"] = pane;
-        return this;
-    }-*/
-    ;
-
-    public final native Array<Series> series()
-        throws RuntimeException /*-{
-        return this["series"] = (this["series"] || []);
-    }-*/
-    ;
-
-    public final native JsoChartOptions series(Array<Series> series)
-        throws RuntimeException /*-{
-        this["series"] = series;
         return this;
     }-*/
     ;
@@ -284,6 +270,19 @@ public class JsoChartOptions
     }-*/
     ;
 
+    public final native Array<Object> series()
+        throws RuntimeException /*-{
+        return this["series"] = (this["series"] || []);
+    }-*/
+    ;
+
+    public final native JsoChartOptions series(Array<Object> series)
+        throws RuntimeException /*-{
+        this["series"] = series;
+        return this;
+    }-*/
+    ;
+
     public final native String getFieldAsJsonObject(String fieldName)
         throws RuntimeException /*-{
         this[fieldName] = (this[fieldName] || {});
@@ -307,7 +306,7 @@ public class JsoChartOptions
 
     public final native JsoChartOptions setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

@@ -44,6 +44,7 @@ public class MockColumn
     private double groupPadding;
     private double groupZPadding;
     private boolean grouping;
+    private ArrayString keys;
     private String linkedTo;
     private double minPointLength;
     private String negativeColor;
@@ -256,6 +257,15 @@ public class MockColumn
 
     public MockColumn grouping(boolean grouping) {
         this.grouping = grouping;
+        return this;
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockColumn keys(ArrayString keys) {
+        this.keys = keys;
         return this;
     }
 

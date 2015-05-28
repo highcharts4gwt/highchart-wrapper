@@ -366,7 +366,7 @@ public class JsoLegend
 
     public final native double symbolHeight()
         throws RuntimeException /*-{
-        return this["symbolHeight"] = (this["symbolHeight"] || 12.0);
+        return this["symbolHeight"] = (this["symbolHeight"] || null);
     }-*/
     ;
 
@@ -517,7 +517,7 @@ public class JsoLegend
 
     public final native JsoLegend setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

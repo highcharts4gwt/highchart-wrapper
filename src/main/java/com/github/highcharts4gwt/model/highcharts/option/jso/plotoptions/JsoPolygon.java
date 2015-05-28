@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Polygon;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.Marker;
@@ -262,6 +263,19 @@ public class JsoPolygon
                  }
              });
         }-*/;
+    ;
+
+    public final native ArrayString keys()
+        throws RuntimeException /*-{
+        return this["keys"] = (this["keys"] || []);
+    }-*/
+    ;
+
+    public final native JsoPolygon keys(ArrayString keys)
+        throws RuntimeException /*-{
+        this["keys"] = keys;
+        return this;
+    }-*/
     ;
 
     public final native double lineWidth()
@@ -561,7 +575,7 @@ public class JsoPolygon
 
     public final native JsoPolygon setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

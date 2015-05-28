@@ -11,13 +11,13 @@ public interface Break {
 
 
     /**
-     * A number indicating how much space should be left between the start and the end of the break.
+     * A number indicating how much space should be left between the start and the end of the break. The break size is given in axis units, so for instance on a <code>datetime</code> axis, a break size of 3600000 would indicate the equivalent of an hour.
      * 
      */
     double breakSize();
 
     /**
-     * A number indicating how much space should be left between the start and the end of the break.
+     * A number indicating how much space should be left between the start and the end of the break. The break size is given in axis units, so for instance on a <code>datetime</code> axis, a break size of 3600000 would indicate the equivalent of an hour.
      * 
      */
     Break breakSize(double breakSize);

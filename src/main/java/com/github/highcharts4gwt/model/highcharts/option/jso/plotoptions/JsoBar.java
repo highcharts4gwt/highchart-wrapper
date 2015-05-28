@@ -393,6 +393,19 @@ public class JsoBar
     }-*/
     ;
 
+    public final native ArrayString keys()
+        throws RuntimeException /*-{
+        return this["keys"] = (this["keys"] || []);
+    }-*/
+    ;
+
+    public final native JsoBar keys(ArrayString keys)
+        throws RuntimeException /*-{
+        this["keys"] = keys;
+        return this;
+    }-*/
+    ;
+
     public final native String linkedTo()
         throws RuntimeException /*-{
         return this["linkedTo"] = (this["linkedTo"] || "");
@@ -755,7 +768,7 @@ public class JsoBar
 
     public final native JsoBar setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

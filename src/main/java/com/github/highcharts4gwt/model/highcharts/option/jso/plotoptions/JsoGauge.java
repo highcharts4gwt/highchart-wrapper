@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Gauge;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.Dial;
@@ -239,6 +240,19 @@ public class JsoGauge
         }-*/;
     ;
 
+    public final native ArrayString keys()
+        throws RuntimeException /*-{
+        return this["keys"] = (this["keys"] || []);
+    }-*/
+    ;
+
+    public final native JsoGauge keys(ArrayString keys)
+        throws RuntimeException /*-{
+        this["keys"] = keys;
+        return this;
+    }-*/
+    ;
+
     public final native String linkedTo()
         throws RuntimeException /*-{
         return this["linkedTo"] = (this["linkedTo"] || "");
@@ -470,7 +484,7 @@ public class JsoGauge
 
     public final native JsoGauge setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

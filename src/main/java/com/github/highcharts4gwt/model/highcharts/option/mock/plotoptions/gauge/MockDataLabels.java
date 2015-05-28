@@ -1,7 +1,6 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.gauge;
 
-import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.DataLabels;
 
 
@@ -15,7 +14,6 @@ public class MockDataLabels
 
     private String align;
     private boolean allowOverlap;
-    private ArrayNumber autoRotation;
     private String backgroundColor;
     private String borderColor;
     private double borderRadius;
@@ -56,15 +54,6 @@ public class MockDataLabels
 
     public MockDataLabels allowOverlap(boolean allowOverlap) {
         this.allowOverlap = allowOverlap;
-        return this;
-    }
-
-    public ArrayNumber autoRotation() {
-        return autoRotation;
-    }
-
-    public MockDataLabels autoRotation(ArrayNumber autoRotation) {
-        this.autoRotation = autoRotation;
         return this;
     }
 

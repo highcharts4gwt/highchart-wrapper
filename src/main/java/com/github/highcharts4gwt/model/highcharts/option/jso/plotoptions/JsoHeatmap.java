@@ -331,6 +331,19 @@ public class JsoHeatmap
         }-*/;
     ;
 
+    public final native ArrayString keys()
+        throws RuntimeException /*-{
+        return this["keys"] = (this["keys"] || []);
+    }-*/
+    ;
+
+    public final native JsoHeatmap keys(ArrayString keys)
+        throws RuntimeException /*-{
+        this["keys"] = keys;
+        return this;
+    }-*/
+    ;
+
     public final native String linkedTo()
         throws RuntimeException /*-{
         return this["linkedTo"] = (this["linkedTo"] || "");
@@ -550,7 +563,7 @@ public class JsoHeatmap
 
     public final native JsoHeatmap setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

@@ -41,6 +41,7 @@ public class MockHeatmap
     private String cursor;
     private DataLabels dataLabels;
     private boolean enableMouseTracking;
+    private ArrayString keys;
     private String linkedTo;
     private Point point;
     private double rowsize;
@@ -198,6 +199,15 @@ public class MockHeatmap
     }
 
     public void addHeatmapShowHandler(HeatmapShowHandler handler) {
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockHeatmap keys(ArrayString keys) {
+        this.keys = keys;
+        return this;
     }
 
     public String linkedTo() {

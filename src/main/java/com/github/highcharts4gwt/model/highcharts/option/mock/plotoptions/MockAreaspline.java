@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Areaspline;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineCheckboxClickHandler;
@@ -37,6 +38,7 @@ public class MockAreaspline
     private boolean enableMouseTracking;
     private String fillColor;
     private double fillOpacity;
+    private ArrayString keys;
     private String lineColor;
     private double lineWidth;
     private String linkedTo;
@@ -197,6 +199,15 @@ public class MockAreaspline
 
     public MockAreaspline fillOpacity(double fillOpacity) {
         this.fillOpacity = fillOpacity;
+        return this;
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockAreaspline keys(ArrayString keys) {
+        this.keys = keys;
         return this;
     }
 

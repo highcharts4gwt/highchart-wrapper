@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Gauge;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.Dial;
@@ -33,6 +34,7 @@ public class MockGauge
     private DataLabels dataLabels;
     private Dial dial;
     private boolean enableMouseTracking;
+    private ArrayString keys;
     private String linkedTo;
     private String negativeColor;
     private double overshoot;
@@ -128,6 +130,15 @@ public class MockGauge
     }
 
     public void addGaugeShowHandler(GaugeShowHandler handler) {
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockGauge keys(ArrayString keys) {
+        this.keys = keys;
+        return this;
     }
 
     public String linkedTo() {

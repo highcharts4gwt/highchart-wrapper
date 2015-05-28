@@ -38,6 +38,7 @@ public class MockBoxplot
     private double groupPadding;
     private double groupZPadding;
     private boolean grouping;
+    private ArrayString keys;
     private double lineWidth;
     private String linkedTo;
     private String medianColor;
@@ -210,6 +211,15 @@ public class MockBoxplot
 
     public MockBoxplot grouping(boolean grouping) {
         this.grouping = grouping;
+        return this;
+    }
+
+    public ArrayString keys() {
+        return keys;
+    }
+
+    public MockBoxplot keys(ArrayString keys) {
+        this.keys = keys;
         return this;
     }
 

@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Area;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaAfterAnimateHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaCheckboxClickHandler;
@@ -311,6 +312,19 @@ public class JsoArea
     public final native JsoArea fillOpacity(double fillOpacity)
         throws RuntimeException /*-{
         this["fillOpacity"] = fillOpacity;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayString keys()
+        throws RuntimeException /*-{
+        return this["keys"] = (this["keys"] || []);
+    }-*/
+    ;
+
+    public final native JsoArea keys(ArrayString keys)
+        throws RuntimeException /*-{
+        this["keys"] = keys;
         return this;
     }-*/
     ;
@@ -703,7 +717,7 @@ public class JsoArea
 
     public final native JsoArea setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;

@@ -87,13 +87,13 @@ public class JsoTreemap
     }-*/
     ;
 
-    public final native double borderColor()
+    public final native String borderColor()
         throws RuntimeException /*-{
-        return this["borderColor"] = (this["borderColor"] || null);
+        return this["borderColor"] = (this["borderColor"] || "#E0E0E0");
     }-*/
     ;
 
-    public final native JsoTreemap borderColor(double borderColor)
+    public final native JsoTreemap borderColor(String borderColor)
         throws RuntimeException /*-{
         this["borderColor"] = borderColor;
         return this;
@@ -341,6 +341,19 @@ public class JsoTreemap
     public final native JsoTreemap interactByLeaf(boolean interactByLeaf)
         throws RuntimeException /*-{
         this["interactByLeaf"] = interactByLeaf;
+        return this;
+    }-*/
+    ;
+
+    public final native ArrayString keys()
+        throws RuntimeException /*-{
+        return this["keys"] = (this["keys"] || []);
+    }-*/
+    ;
+
+    public final native JsoTreemap keys(ArrayString keys)
+        throws RuntimeException /*-{
+        this["keys"] = keys;
         return this;
     }-*/
     ;
@@ -603,7 +616,7 @@ public class JsoTreemap
 
     public final native JsoTreemap setFunctionAsString(String fieldName, String functionAsString)
         throws RuntimeException /*-{
-        this[fieldName] = eval('(' + valueToBeEvaluated + ')');
+        this[fieldName] = eval('(' + functionAsString + ')');
         return this;
     }-*/
     ;
