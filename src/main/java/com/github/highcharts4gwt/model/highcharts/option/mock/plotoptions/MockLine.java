@@ -4,17 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Line;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.DataLabels;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.Tooltip;
 
@@ -155,28 +155,28 @@ public class MockLine
         return this;
     }
 
-    public void addLineAfterAnimateHandler(LineAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addLineCheckboxClickHandler(LineCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addLineClickHandler(LineClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addLineHideHandler(LineHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addLineLegendItemClickHandler(LineLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addLineMouseOutHandler(LineMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addLineMouseOverHandler(LineMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addLineShowHandler(LineShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public ArrayString keys() {

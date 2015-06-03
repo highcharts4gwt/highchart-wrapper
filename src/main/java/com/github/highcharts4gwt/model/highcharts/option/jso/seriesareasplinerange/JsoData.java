@@ -2,13 +2,13 @@
 package com.github.highcharts4gwt.model.highcharts.option.jso.seriesareasplinerange;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.Data;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataRemoveHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataSelectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataUnselectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataUpdateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.ClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.MouseOverHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.RemoveHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.SelectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.UnselectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.UpdateHandler;
 import com.google.gwt.core.client.JavaScriptObject;
 
 
@@ -93,14 +93,14 @@ public class JsoData
     }-*/
     ;
 
-    public final native void addDataClickHandler(DataClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataClickHandler::onDataClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesareasplinerange/data/DataClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesareasplinerange/data/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -109,14 +109,14 @@ public class JsoData
         }-*/;
     ;
 
-    public final native void addDataMouseOutHandler(DataMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataMouseOutHandler::onDataMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesareasplinerange/data/DataMouseOutEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesareasplinerange/data/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -125,14 +125,14 @@ public class JsoData
         }-*/;
     ;
 
-    public final native void addDataMouseOverHandler(DataMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataMouseOverHandler::onDataMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesareasplinerange/data/DataMouseOverEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesareasplinerange/data/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -141,14 +141,14 @@ public class JsoData
         }-*/;
     ;
 
-    public final native void addDataRemoveHandler(DataRemoveHandler handler)
+    public final native void addRemoveHandler(RemoveHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     remove: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataRemoveHandler::onDataRemove(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesareasplinerange/data/DataRemoveEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.RemoveHandler::onRemove(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesareasplinerange/data/RemoveEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -157,14 +157,14 @@ public class JsoData
         }-*/;
     ;
 
-    public final native void addDataSelectHandler(DataSelectHandler handler)
+    public final native void addSelectHandler(SelectHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     select: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataSelectHandler::onDataSelect(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesareasplinerange/data/DataSelectEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.SelectHandler::onSelect(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesareasplinerange/data/SelectEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -173,14 +173,14 @@ public class JsoData
         }-*/;
     ;
 
-    public final native void addDataUnselectHandler(DataUnselectHandler handler)
+    public final native void addUnselectHandler(UnselectHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     unselect: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataUnselectHandler::onDataUnselect(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesareasplinerange/data/DataUnselectEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.UnselectHandler::onUnselect(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesareasplinerange/data/UnselectEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -189,14 +189,14 @@ public class JsoData
         }-*/;
     ;
 
-    public final native void addDataUpdateHandler(DataUpdateHandler handler)
+    public final native void addUpdateHandler(UpdateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     update: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataUpdateHandler::onDataUpdate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesareasplinerange/data/DataUpdateEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.UpdateHandler::onUpdate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesareasplinerange/data/UpdateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

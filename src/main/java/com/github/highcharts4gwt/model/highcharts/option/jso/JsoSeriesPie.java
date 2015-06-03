@@ -5,17 +5,17 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesPie;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -218,14 +218,14 @@ public class JsoSeriesPie
     }-*/
     ;
 
-    public final native void addSeriesPieAfterAnimateHandler(SeriesPieAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    pieAfterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieAfterAnimateHandler::onSeriesPieAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespie/SeriesPieAfterAnimateEvent;)(
+                    afterAnimate: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespie.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespie/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -234,14 +234,14 @@ public class JsoSeriesPie
         }-*/;
     ;
 
-    public final native void addSeriesPieCheckboxClickHandler(SeriesPieCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    pieCheckboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieCheckboxClickHandler::onSeriesPieCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespie/SeriesPieCheckboxClickEvent;)(
+                    checkboxClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespie.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespie/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -250,14 +250,14 @@ public class JsoSeriesPie
         }-*/;
     ;
 
-    public final native void addSeriesPieClickHandler(SeriesPieClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    pieClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieClickHandler::onSeriesPieClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespie/SeriesPieClickEvent;)(
+                    click: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespie.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespie/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -266,14 +266,14 @@ public class JsoSeriesPie
         }-*/;
     ;
 
-    public final native void addSeriesPieHideHandler(SeriesPieHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    pieHide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieHideHandler::onSeriesPieHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespie/SeriesPieHideEvent;)(
+                    hide: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespie.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespie/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -282,14 +282,14 @@ public class JsoSeriesPie
         }-*/;
     ;
 
-    public final native void addSeriesPieLegendItemClickHandler(SeriesPieLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    pieLegendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieLegendItemClickHandler::onSeriesPieLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespie/SeriesPieLegendItemClickEvent;)(
+                    legendItemClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespie.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespie/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -298,14 +298,14 @@ public class JsoSeriesPie
         }-*/;
     ;
 
-    public final native void addSeriesPieMouseOutHandler(SeriesPieMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    pieMouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieMouseOutHandler::onSeriesPieMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespie/SeriesPieMouseOutEvent;)(
+                    mouseOut: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespie.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespie/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -314,14 +314,14 @@ public class JsoSeriesPie
         }-*/;
     ;
 
-    public final native void addSeriesPieMouseOverHandler(SeriesPieMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    pieMouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieMouseOverHandler::onSeriesPieMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespie/SeriesPieMouseOverEvent;)(
+                    mouseOver: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespie.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespie/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -330,14 +330,14 @@ public class JsoSeriesPie
         }-*/;
     ;
 
-    public final native void addSeriesPieShowHandler(SeriesPieShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    pieShow: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieShowHandler::onSeriesPieShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespie/SeriesPieShowEvent;)(
+                    show: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespie.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespie/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

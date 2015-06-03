@@ -4,16 +4,16 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Pyramid;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -162,14 +162,14 @@ public class JsoPyramid
     }-*/
     ;
 
-    public final native void addPyramidAfterAnimateHandler(PyramidAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidAfterAnimateHandler::onPyramidAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pyramid/PyramidAfterAnimateEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pyramid/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -178,14 +178,14 @@ public class JsoPyramid
         }-*/;
     ;
 
-    public final native void addPyramidCheckboxClickHandler(PyramidCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidCheckboxClickHandler::onPyramidCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pyramid/PyramidCheckboxClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pyramid/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -194,14 +194,14 @@ public class JsoPyramid
         }-*/;
     ;
 
-    public final native void addPyramidClickHandler(PyramidClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidClickHandler::onPyramidClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pyramid/PyramidClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pyramid/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -210,14 +210,14 @@ public class JsoPyramid
         }-*/;
     ;
 
-    public final native void addPyramidHideHandler(PyramidHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidHideHandler::onPyramidHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pyramid/PyramidHideEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pyramid/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -226,14 +226,14 @@ public class JsoPyramid
         }-*/;
     ;
 
-    public final native void addPyramidLegendItemClickHandler(PyramidLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidLegendItemClickHandler::onPyramidLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pyramid/PyramidLegendItemClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pyramid/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -242,14 +242,14 @@ public class JsoPyramid
         }-*/;
     ;
 
-    public final native void addPyramidMouseOutHandler(PyramidMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidMouseOutHandler::onPyramidMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pyramid/PyramidMouseOutEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pyramid/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -258,14 +258,14 @@ public class JsoPyramid
         }-*/;
     ;
 
-    public final native void addPyramidMouseOverHandler(PyramidMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidMouseOverHandler::onPyramidMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pyramid/PyramidMouseOverEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pyramid/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -274,14 +274,14 @@ public class JsoPyramid
         }-*/;
     ;
 
-    public final native void addPyramidShowHandler(PyramidShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidShowHandler::onPyramidShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pyramid/PyramidShowEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pyramid/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

@@ -2,13 +2,13 @@
 package com.github.highcharts4gwt.model.highcharts.option.jso.seriesline;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesline.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.PointClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.PointMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.PointMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.PointRemoveHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.PointSelectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.PointUnselectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.PointUpdateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.ClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.MouseOverHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.RemoveHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.SelectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.UnselectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.UpdateHandler;
 import com.google.gwt.core.client.JavaScriptObject;
 
 
@@ -25,14 +25,14 @@ public class JsoPoint
     protected JsoPoint() {
     }
 
-    public final native void addPointClickHandler(PointClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.PointClickHandler::onPointClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesline/point/PointClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesline/point/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -41,14 +41,14 @@ public class JsoPoint
         }-*/;
     ;
 
-    public final native void addPointMouseOutHandler(PointMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.PointMouseOutHandler::onPointMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesline/point/PointMouseOutEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesline/point/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -57,14 +57,14 @@ public class JsoPoint
         }-*/;
     ;
 
-    public final native void addPointMouseOverHandler(PointMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.PointMouseOverHandler::onPointMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesline/point/PointMouseOverEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesline/point/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -73,14 +73,14 @@ public class JsoPoint
         }-*/;
     ;
 
-    public final native void addPointRemoveHandler(PointRemoveHandler handler)
+    public final native void addRemoveHandler(RemoveHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     remove: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.PointRemoveHandler::onPointRemove(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesline/point/PointRemoveEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.RemoveHandler::onRemove(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesline/point/RemoveEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -89,14 +89,14 @@ public class JsoPoint
         }-*/;
     ;
 
-    public final native void addPointSelectHandler(PointSelectHandler handler)
+    public final native void addSelectHandler(SelectHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     select: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.PointSelectHandler::onPointSelect(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesline/point/PointSelectEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.SelectHandler::onSelect(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesline/point/SelectEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -105,14 +105,14 @@ public class JsoPoint
         }-*/;
     ;
 
-    public final native void addPointUnselectHandler(PointUnselectHandler handler)
+    public final native void addUnselectHandler(UnselectHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     unselect: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.PointUnselectHandler::onPointUnselect(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesline/point/PointUnselectEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.UnselectHandler::onUnselect(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesline/point/UnselectEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -121,14 +121,14 @@ public class JsoPoint
         }-*/;
     ;
 
-    public final native void addPointUpdateHandler(PointUpdateHandler handler)
+    public final native void addUpdateHandler(UpdateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     update: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.PointUpdateHandler::onPointUpdate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesline/point/PointUpdateEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesline.point.UpdateHandler::onUpdate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesline/point/UpdateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

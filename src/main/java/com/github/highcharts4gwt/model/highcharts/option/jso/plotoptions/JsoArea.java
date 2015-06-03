@@ -4,17 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Area;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -162,14 +162,14 @@ public class JsoArea
     }-*/
     ;
 
-    public final native void addAreaAfterAnimateHandler(AreaAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaAfterAnimateHandler::onAreaAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/area/AreaAfterAnimateEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/area/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -178,14 +178,14 @@ public class JsoArea
         }-*/;
     ;
 
-    public final native void addAreaCheckboxClickHandler(AreaCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaCheckboxClickHandler::onAreaCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/area/AreaCheckboxClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/area/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -194,14 +194,14 @@ public class JsoArea
         }-*/;
     ;
 
-    public final native void addAreaClickHandler(AreaClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaClickHandler::onAreaClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/area/AreaClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/area/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -210,14 +210,14 @@ public class JsoArea
         }-*/;
     ;
 
-    public final native void addAreaHideHandler(AreaHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaHideHandler::onAreaHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/area/AreaHideEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/area/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -226,14 +226,14 @@ public class JsoArea
         }-*/;
     ;
 
-    public final native void addAreaLegendItemClickHandler(AreaLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaLegendItemClickHandler::onAreaLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/area/AreaLegendItemClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/area/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -242,14 +242,14 @@ public class JsoArea
         }-*/;
     ;
 
-    public final native void addAreaMouseOutHandler(AreaMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaMouseOutHandler::onAreaMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/area/AreaMouseOutEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/area/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -258,14 +258,14 @@ public class JsoArea
         }-*/;
     ;
 
-    public final native void addAreaMouseOverHandler(AreaMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaMouseOverHandler::onAreaMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/area/AreaMouseOverEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/area/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -274,14 +274,14 @@ public class JsoArea
         }-*/;
     ;
 
-    public final native void addAreaShowHandler(AreaShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.AreaShowHandler::onAreaShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/area/AreaShowEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.area.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/area/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

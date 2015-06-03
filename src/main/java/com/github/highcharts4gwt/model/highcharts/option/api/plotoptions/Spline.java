@@ -3,17 +3,17 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.Tooltip;
 
@@ -184,21 +184,21 @@ public interface Spline {
      */
     Spline enableMouseTracking(boolean enableMouseTracking);
 
-    void addSplineAfterAnimateHandler(SplineAfterAnimateHandler splineAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addSplineCheckboxClickHandler(SplineCheckboxClickHandler splineCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addSplineClickHandler(SplineClickHandler splineClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addSplineHideHandler(SplineHideHandler splineHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addSplineLegendItemClickHandler(SplineLegendItemClickHandler splineLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addSplineMouseOutHandler(SplineMouseOutHandler splineMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addSplineMouseOverHandler(SplineMouseOverHandler splineMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addSplineShowHandler(SplineShowHandler splineShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.

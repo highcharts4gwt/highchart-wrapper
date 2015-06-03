@@ -5,17 +5,17 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesPyramid;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -192,14 +192,14 @@ public class JsoSeriesPyramid
     }-*/
     ;
 
-    public final native void addSeriesPyramidAfterAnimateHandler(SeriesPyramidAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    pyramidAfterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidAfterAnimateHandler::onSeriesPyramidAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespyramid/SeriesPyramidAfterAnimateEvent;)(
+                    afterAnimate: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespyramid/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -208,14 +208,14 @@ public class JsoSeriesPyramid
         }-*/;
     ;
 
-    public final native void addSeriesPyramidCheckboxClickHandler(SeriesPyramidCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    pyramidCheckboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidCheckboxClickHandler::onSeriesPyramidCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespyramid/SeriesPyramidCheckboxClickEvent;)(
+                    checkboxClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespyramid/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -224,14 +224,14 @@ public class JsoSeriesPyramid
         }-*/;
     ;
 
-    public final native void addSeriesPyramidClickHandler(SeriesPyramidClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    pyramidClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidClickHandler::onSeriesPyramidClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespyramid/SeriesPyramidClickEvent;)(
+                    click: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespyramid/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -240,14 +240,14 @@ public class JsoSeriesPyramid
         }-*/;
     ;
 
-    public final native void addSeriesPyramidHideHandler(SeriesPyramidHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    pyramidHide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidHideHandler::onSeriesPyramidHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespyramid/SeriesPyramidHideEvent;)(
+                    hide: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespyramid/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -256,14 +256,14 @@ public class JsoSeriesPyramid
         }-*/;
     ;
 
-    public final native void addSeriesPyramidLegendItemClickHandler(SeriesPyramidLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    pyramidLegendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidLegendItemClickHandler::onSeriesPyramidLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespyramid/SeriesPyramidLegendItemClickEvent;)(
+                    legendItemClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespyramid/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -272,14 +272,14 @@ public class JsoSeriesPyramid
         }-*/;
     ;
 
-    public final native void addSeriesPyramidMouseOutHandler(SeriesPyramidMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    pyramidMouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidMouseOutHandler::onSeriesPyramidMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespyramid/SeriesPyramidMouseOutEvent;)(
+                    mouseOut: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespyramid/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -288,14 +288,14 @@ public class JsoSeriesPyramid
         }-*/;
     ;
 
-    public final native void addSeriesPyramidMouseOverHandler(SeriesPyramidMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    pyramidMouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidMouseOverHandler::onSeriesPyramidMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespyramid/SeriesPyramidMouseOverEvent;)(
+                    mouseOver: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespyramid/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -304,14 +304,14 @@ public class JsoSeriesPyramid
         }-*/;
     ;
 
-    public final native void addSeriesPyramidShowHandler(SeriesPyramidShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    pyramidShow: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidShowHandler::onSeriesPyramidShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespyramid/SeriesPyramidShowEvent;)(
+                    show: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespyramid/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

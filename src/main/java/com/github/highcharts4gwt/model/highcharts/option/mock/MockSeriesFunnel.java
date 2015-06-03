@@ -5,17 +5,17 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesFunnel;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.SeriesFunnelAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.SeriesFunnelCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.SeriesFunnelClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.SeriesFunnelHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.SeriesFunnelLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.SeriesFunnelMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.SeriesFunnelMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.SeriesFunnelShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.Tooltip;
 
@@ -183,28 +183,28 @@ public class MockSeriesFunnel
         return this;
     }
 
-    public void addSeriesFunnelAfterAnimateHandler(SeriesFunnelAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addSeriesFunnelCheckboxClickHandler(SeriesFunnelCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addSeriesFunnelClickHandler(SeriesFunnelClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addSeriesFunnelHideHandler(SeriesFunnelHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addSeriesFunnelLegendItemClickHandler(SeriesFunnelLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addSeriesFunnelMouseOutHandler(SeriesFunnelMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addSeriesFunnelMouseOverHandler(SeriesFunnelMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addSeriesFunnelShowHandler(SeriesFunnelShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public double heightAsNumber() {

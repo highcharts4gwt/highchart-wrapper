@@ -2,13 +2,13 @@
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.bubble;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.PointClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.PointMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.PointMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.PointRemoveHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.PointSelectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.PointUnselectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.PointUpdateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.ClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.MouseOverHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.RemoveHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.SelectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.UnselectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.UpdateHandler;
 import com.google.gwt.core.client.JavaScriptObject;
 
 
@@ -25,14 +25,14 @@ public class JsoPoint
     protected JsoPoint() {
     }
 
-    public final native void addPointClickHandler(PointClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.PointClickHandler::onPointClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/point/PointClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/point/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -41,14 +41,14 @@ public class JsoPoint
         }-*/;
     ;
 
-    public final native void addPointMouseOutHandler(PointMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.PointMouseOutHandler::onPointMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/point/PointMouseOutEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/point/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -57,14 +57,14 @@ public class JsoPoint
         }-*/;
     ;
 
-    public final native void addPointMouseOverHandler(PointMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.PointMouseOverHandler::onPointMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/point/PointMouseOverEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/point/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -73,14 +73,14 @@ public class JsoPoint
         }-*/;
     ;
 
-    public final native void addPointRemoveHandler(PointRemoveHandler handler)
+    public final native void addRemoveHandler(RemoveHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     remove: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.PointRemoveHandler::onPointRemove(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/point/PointRemoveEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.RemoveHandler::onRemove(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/point/RemoveEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -89,14 +89,14 @@ public class JsoPoint
         }-*/;
     ;
 
-    public final native void addPointSelectHandler(PointSelectHandler handler)
+    public final native void addSelectHandler(SelectHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     select: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.PointSelectHandler::onPointSelect(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/point/PointSelectEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.SelectHandler::onSelect(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/point/SelectEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -105,14 +105,14 @@ public class JsoPoint
         }-*/;
     ;
 
-    public final native void addPointUnselectHandler(PointUnselectHandler handler)
+    public final native void addUnselectHandler(UnselectHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     unselect: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.PointUnselectHandler::onPointUnselect(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/point/PointUnselectEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.UnselectHandler::onUnselect(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/point/UnselectEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -121,14 +121,14 @@ public class JsoPoint
         }-*/;
     ;
 
-    public final native void addPointUpdateHandler(PointUpdateHandler handler)
+    public final native void addUpdateHandler(UpdateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     update: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.PointUpdateHandler::onPointUpdate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/point/PointUpdateEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.point.UpdateHandler::onUpdate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/point/UpdateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

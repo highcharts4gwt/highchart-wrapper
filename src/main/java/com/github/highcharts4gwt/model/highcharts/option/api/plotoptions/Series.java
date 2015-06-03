@@ -3,17 +3,17 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.SeriesAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.SeriesCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.SeriesClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.SeriesHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.SeriesLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.SeriesMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.SeriesMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.SeriesShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.series.Tooltip;
 
@@ -185,21 +185,21 @@ public interface Series {
      */
     Series enableMouseTracking(boolean enableMouseTracking);
 
-    void addSeriesAfterAnimateHandler(SeriesAfterAnimateHandler seriesAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addSeriesCheckboxClickHandler(SeriesCheckboxClickHandler seriesCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addSeriesClickHandler(SeriesClickHandler seriesClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addSeriesHideHandler(SeriesHideHandler seriesHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addSeriesLegendItemClickHandler(SeriesLegendItemClickHandler seriesLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addSeriesMouseOutHandler(SeriesMouseOutHandler seriesMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addSeriesMouseOverHandler(SeriesMouseOverHandler seriesMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addSeriesShowHandler(SeriesShowHandler seriesShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.

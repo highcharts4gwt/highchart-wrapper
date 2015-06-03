@@ -4,17 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.Tooltip;
 
@@ -370,21 +370,21 @@ public interface SeriesBar {
      */
     SeriesBar enableMouseTracking(boolean enableMouseTracking);
 
-    void addSeriesBarAfterAnimateHandler(SeriesBarAfterAnimateHandler seriesBarAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addSeriesBarCheckboxClickHandler(SeriesBarCheckboxClickHandler seriesBarCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addSeriesBarClickHandler(SeriesBarClickHandler seriesBarClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addSeriesBarHideHandler(SeriesBarHideHandler seriesBarHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addSeriesBarLegendItemClickHandler(SeriesBarLegendItemClickHandler seriesBarLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addSeriesBarMouseOutHandler(SeriesBarMouseOutHandler seriesBarMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addSeriesBarMouseOverHandler(SeriesBarMouseOverHandler seriesBarMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addSeriesBarShowHandler(SeriesBarShowHandler seriesBarShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * Padding between each value groups, in x axis units.

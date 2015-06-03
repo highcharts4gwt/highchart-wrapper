@@ -5,17 +5,17 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesColumn;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.SeriesColumnAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.SeriesColumnCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.SeriesColumnClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.SeriesColumnHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.SeriesColumnLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.SeriesColumnMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.SeriesColumnMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.SeriesColumnShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumn.Tooltip;
 
@@ -244,28 +244,28 @@ public class MockSeriesColumn
         return this;
     }
 
-    public void addSeriesColumnAfterAnimateHandler(SeriesColumnAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addSeriesColumnCheckboxClickHandler(SeriesColumnCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addSeriesColumnClickHandler(SeriesColumnClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addSeriesColumnHideHandler(SeriesColumnHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addSeriesColumnLegendItemClickHandler(SeriesColumnLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addSeriesColumnMouseOutHandler(SeriesColumnMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addSeriesColumnMouseOverHandler(SeriesColumnMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addSeriesColumnShowHandler(SeriesColumnShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public double groupPadding() {

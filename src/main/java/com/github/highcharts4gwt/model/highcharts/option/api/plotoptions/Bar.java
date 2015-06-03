@@ -3,16 +3,16 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.Tooltip;
 
@@ -217,21 +217,21 @@ public interface Bar {
      */
     Bar enableMouseTracking(boolean enableMouseTracking);
 
-    void addBarAfterAnimateHandler(BarAfterAnimateHandler barAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addBarCheckboxClickHandler(BarCheckboxClickHandler barCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addBarClickHandler(BarClickHandler barClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addBarHideHandler(BarHideHandler barHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addBarLegendItemClickHandler(BarLegendItemClickHandler barLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addBarMouseOutHandler(BarMouseOutHandler barMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addBarMouseOverHandler(BarMouseOverHandler barMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addBarShowHandler(BarShowHandler barShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * Padding between each value groups, in x axis units.

@@ -3,15 +3,15 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.Tooltip;
 
@@ -131,21 +131,21 @@ public interface Errorbar {
      */
     Errorbar enableMouseTracking(boolean enableMouseTracking);
 
-    void addErrorbarAfterAnimateHandler(ErrorbarAfterAnimateHandler errorbarAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addErrorbarCheckboxClickHandler(ErrorbarCheckboxClickHandler errorbarCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addErrorbarClickHandler(ErrorbarClickHandler errorbarClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addErrorbarHideHandler(ErrorbarHideHandler errorbarHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addErrorbarLegendItemClickHandler(ErrorbarLegendItemClickHandler errorbarLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addErrorbarMouseOutHandler(ErrorbarMouseOutHandler errorbarMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addErrorbarMouseOverHandler(ErrorbarMouseOverHandler errorbarMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addErrorbarShowHandler(ErrorbarShowHandler errorbarShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * The spacing between columns on the Z Axis in a 3D chart. Requires <code>highcharts-3d.js</code>.

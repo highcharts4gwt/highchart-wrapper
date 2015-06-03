@@ -4,14 +4,14 @@ package com.github.highcharts4gwt.model.highcharts.option.jso;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.XAxis;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.AfterBreaksHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.AfterSetExtremesHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Labels;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PlotBand;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PlotLine;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PointBreakHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.SetExtremesHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Title;
-import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterBreaksHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterSetExtremesHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisPointBreakHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisSetExtremesHandler;
 import com.google.gwt.core.client.JavaScriptObject;
 
 
@@ -124,14 +124,14 @@ public class JsoXAxis
     }-*/
     ;
 
-    public final native void addXAxisAfterBreaksHandler(XAxisAfterBreaksHandler handler)
+    public final native void addAfterBreaksHandler(AfterBreaksHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    axisAfterBreaks: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterBreaksHandler::onXAxisAfterBreaks(Lcom/github/highcharts4gwt/model/highcharts/option/api/xaxis/XAxisAfterBreaksEvent;)(
+                    afterBreaks: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.xaxis.AfterBreaksHandler::onAfterBreaks(Lcom/github/highcharts4gwt/model/highcharts/option/api/xaxis/AfterBreaksEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -140,14 +140,14 @@ public class JsoXAxis
         }-*/;
     ;
 
-    public final native void addXAxisAfterSetExtremesHandler(XAxisAfterSetExtremesHandler handler)
+    public final native void addAfterSetExtremesHandler(AfterSetExtremesHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    axisAfterSetExtremes: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterSetExtremesHandler::onXAxisAfterSetExtremes(Lcom/github/highcharts4gwt/model/highcharts/option/api/xaxis/XAxisAfterSetExtremesEvent;)(
+                    afterSetExtremes: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.xaxis.AfterSetExtremesHandler::onAfterSetExtremes(Lcom/github/highcharts4gwt/model/highcharts/option/api/xaxis/AfterSetExtremesEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -156,14 +156,14 @@ public class JsoXAxis
         }-*/;
     ;
 
-    public final native void addXAxisPointBreakHandler(XAxisPointBreakHandler handler)
+    public final native void addPointBreakHandler(PointBreakHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    axisPointBreak: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisPointBreakHandler::onXAxisPointBreak(Lcom/github/highcharts4gwt/model/highcharts/option/api/xaxis/XAxisPointBreakEvent;)(
+                    pointBreak: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PointBreakHandler::onPointBreak(Lcom/github/highcharts4gwt/model/highcharts/option/api/xaxis/PointBreakEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -172,14 +172,14 @@ public class JsoXAxis
         }-*/;
     ;
 
-    public final native void addXAxisSetExtremesHandler(XAxisSetExtremesHandler handler)
+    public final native void addSetExtremesHandler(SetExtremesHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    axisSetExtremes: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisSetExtremesHandler::onXAxisSetExtremes(Lcom/github/highcharts4gwt/model/highcharts/option/api/xaxis/XAxisSetExtremesEvent;)(
+                    setExtremes: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.xaxis.SetExtremesHandler::onSetExtremes(Lcom/github/highcharts4gwt/model/highcharts/option/api/xaxis/SetExtremesEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

@@ -4,17 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Polygon;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -137,14 +137,14 @@ public class JsoPolygon
     }-*/
     ;
 
-    public final native void addPolygonAfterAnimateHandler(PolygonAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonAfterAnimateHandler::onPolygonAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/polygon/PolygonAfterAnimateEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/polygon/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -153,14 +153,14 @@ public class JsoPolygon
         }-*/;
     ;
 
-    public final native void addPolygonCheckboxClickHandler(PolygonCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonCheckboxClickHandler::onPolygonCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/polygon/PolygonCheckboxClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/polygon/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -169,14 +169,14 @@ public class JsoPolygon
         }-*/;
     ;
 
-    public final native void addPolygonClickHandler(PolygonClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonClickHandler::onPolygonClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/polygon/PolygonClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/polygon/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -185,14 +185,14 @@ public class JsoPolygon
         }-*/;
     ;
 
-    public final native void addPolygonHideHandler(PolygonHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonHideHandler::onPolygonHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/polygon/PolygonHideEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/polygon/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -201,14 +201,14 @@ public class JsoPolygon
         }-*/;
     ;
 
-    public final native void addPolygonLegendItemClickHandler(PolygonLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonLegendItemClickHandler::onPolygonLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/polygon/PolygonLegendItemClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/polygon/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -217,14 +217,14 @@ public class JsoPolygon
         }-*/;
     ;
 
-    public final native void addPolygonMouseOutHandler(PolygonMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonMouseOutHandler::onPolygonMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/polygon/PolygonMouseOutEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/polygon/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -233,14 +233,14 @@ public class JsoPolygon
         }-*/;
     ;
 
-    public final native void addPolygonMouseOverHandler(PolygonMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonMouseOverHandler::onPolygonMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/polygon/PolygonMouseOverEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/polygon/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -249,14 +249,14 @@ public class JsoPolygon
         }-*/;
     ;
 
-    public final native void addPolygonShowHandler(PolygonShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonShowHandler::onPolygonShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/polygon/PolygonShowEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/polygon/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

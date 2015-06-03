@@ -5,16 +5,16 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesBoxplot;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.Data;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -165,14 +165,14 @@ public class JsoSeriesBoxplot
     }-*/
     ;
 
-    public final native void addSeriesBoxplotAfterAnimateHandler(SeriesBoxplotAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    boxplotAfterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotAfterAnimateHandler::onSeriesBoxplotAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesboxplot/SeriesBoxplotAfterAnimateEvent;)(
+                    afterAnimate: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesboxplot/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -181,14 +181,14 @@ public class JsoSeriesBoxplot
         }-*/;
     ;
 
-    public final native void addSeriesBoxplotCheckboxClickHandler(SeriesBoxplotCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    boxplotCheckboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotCheckboxClickHandler::onSeriesBoxplotCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesboxplot/SeriesBoxplotCheckboxClickEvent;)(
+                    checkboxClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesboxplot/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -197,14 +197,14 @@ public class JsoSeriesBoxplot
         }-*/;
     ;
 
-    public final native void addSeriesBoxplotClickHandler(SeriesBoxplotClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    boxplotClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotClickHandler::onSeriesBoxplotClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesboxplot/SeriesBoxplotClickEvent;)(
+                    click: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesboxplot/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -213,14 +213,14 @@ public class JsoSeriesBoxplot
         }-*/;
     ;
 
-    public final native void addSeriesBoxplotHideHandler(SeriesBoxplotHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    boxplotHide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotHideHandler::onSeriesBoxplotHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesboxplot/SeriesBoxplotHideEvent;)(
+                    hide: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesboxplot/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -229,14 +229,14 @@ public class JsoSeriesBoxplot
         }-*/;
     ;
 
-    public final native void addSeriesBoxplotLegendItemClickHandler(SeriesBoxplotLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    boxplotLegendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotLegendItemClickHandler::onSeriesBoxplotLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesboxplot/SeriesBoxplotLegendItemClickEvent;)(
+                    legendItemClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesboxplot/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -245,14 +245,14 @@ public class JsoSeriesBoxplot
         }-*/;
     ;
 
-    public final native void addSeriesBoxplotMouseOutHandler(SeriesBoxplotMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    boxplotMouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotMouseOutHandler::onSeriesBoxplotMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesboxplot/SeriesBoxplotMouseOutEvent;)(
+                    mouseOut: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesboxplot/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -261,14 +261,14 @@ public class JsoSeriesBoxplot
         }-*/;
     ;
 
-    public final native void addSeriesBoxplotMouseOverHandler(SeriesBoxplotMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    boxplotMouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotMouseOverHandler::onSeriesBoxplotMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesboxplot/SeriesBoxplotMouseOverEvent;)(
+                    mouseOver: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesboxplot/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -277,14 +277,14 @@ public class JsoSeriesBoxplot
         }-*/;
     ;
 
-    public final native void addSeriesBoxplotShowHandler(SeriesBoxplotShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    boxplotShow: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotShowHandler::onSeriesBoxplotShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesboxplot/SeriesBoxplotShowEvent;)(
+                    show: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesboxplot/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

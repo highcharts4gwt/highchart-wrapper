@@ -4,16 +4,16 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Column;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.Tooltip;
 
@@ -209,28 +209,28 @@ public class MockColumn
         return this;
     }
 
-    public void addColumnAfterAnimateHandler(ColumnAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addColumnCheckboxClickHandler(ColumnCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addColumnClickHandler(ColumnClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addColumnHideHandler(ColumnHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addColumnLegendItemClickHandler(ColumnLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addColumnMouseOutHandler(ColumnMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addColumnMouseOverHandler(ColumnMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addColumnShowHandler(ColumnShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public double groupPadding() {

@@ -4,17 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.SeriesAreasplinerangeAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.SeriesAreasplinerangeCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.SeriesAreasplinerangeClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.SeriesAreasplinerangeHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.SeriesAreasplinerangeLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.SeriesAreasplinerangeMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.SeriesAreasplinerangeMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.SeriesAreasplinerangeShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.Tooltip;
 
@@ -246,21 +246,21 @@ public interface SeriesAreasplinerange {
      */
     SeriesAreasplinerange enableMouseTracking(boolean enableMouseTracking);
 
-    void addSeriesAreasplinerangeAfterAnimateHandler(SeriesAreasplinerangeAfterAnimateHandler seriesAreasplinerangeAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addSeriesAreasplinerangeCheckboxClickHandler(SeriesAreasplinerangeCheckboxClickHandler seriesAreasplinerangeCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addSeriesAreasplinerangeClickHandler(SeriesAreasplinerangeClickHandler seriesAreasplinerangeClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addSeriesAreasplinerangeHideHandler(SeriesAreasplinerangeHideHandler seriesAreasplinerangeHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addSeriesAreasplinerangeLegendItemClickHandler(SeriesAreasplinerangeLegendItemClickHandler seriesAreasplinerangeLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addSeriesAreasplinerangeMouseOutHandler(SeriesAreasplinerangeMouseOutHandler seriesAreasplinerangeMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addSeriesAreasplinerangeMouseOverHandler(SeriesAreasplinerangeMouseOverHandler seriesAreasplinerangeMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addSeriesAreasplinerangeShowHandler(SeriesAreasplinerangeShowHandler seriesAreasplinerangeShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * Fill color or gradient for the area. When <code>null</code>, the series' <code>color</code>  is  used with the series' <code>fillOpacity</code>.

@@ -3,17 +3,17 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.DataLabels;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LineShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.line.Tooltip;
 
@@ -184,21 +184,21 @@ public interface Line {
      */
     Line enableMouseTracking(boolean enableMouseTracking);
 
-    void addLineAfterAnimateHandler(LineAfterAnimateHandler lineAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addLineCheckboxClickHandler(LineCheckboxClickHandler lineCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addLineClickHandler(LineClickHandler lineClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addLineHideHandler(LineHideHandler lineHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addLineLegendItemClickHandler(LineLegendItemClickHandler lineLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addLineMouseOutHandler(LineMouseOutHandler lineMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addLineMouseOverHandler(LineMouseOverHandler lineMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addLineShowHandler(LineShowHandler lineShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.

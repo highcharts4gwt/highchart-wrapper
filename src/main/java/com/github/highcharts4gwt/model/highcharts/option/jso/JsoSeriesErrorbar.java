@@ -5,16 +5,16 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesErrorbar;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.Data;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -165,14 +165,14 @@ public class JsoSeriesErrorbar
     }-*/
     ;
 
-    public final native void addSeriesErrorbarAfterAnimateHandler(SeriesErrorbarAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    errorbarAfterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarAfterAnimateHandler::onSeriesErrorbarAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieserrorbar/SeriesErrorbarAfterAnimateEvent;)(
+                    afterAnimate: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieserrorbar/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -181,14 +181,14 @@ public class JsoSeriesErrorbar
         }-*/;
     ;
 
-    public final native void addSeriesErrorbarCheckboxClickHandler(SeriesErrorbarCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    errorbarCheckboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarCheckboxClickHandler::onSeriesErrorbarCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieserrorbar/SeriesErrorbarCheckboxClickEvent;)(
+                    checkboxClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieserrorbar/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -197,14 +197,14 @@ public class JsoSeriesErrorbar
         }-*/;
     ;
 
-    public final native void addSeriesErrorbarClickHandler(SeriesErrorbarClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    errorbarClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarClickHandler::onSeriesErrorbarClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieserrorbar/SeriesErrorbarClickEvent;)(
+                    click: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieserrorbar/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -213,14 +213,14 @@ public class JsoSeriesErrorbar
         }-*/;
     ;
 
-    public final native void addSeriesErrorbarHideHandler(SeriesErrorbarHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    errorbarHide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarHideHandler::onSeriesErrorbarHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieserrorbar/SeriesErrorbarHideEvent;)(
+                    hide: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieserrorbar/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -229,14 +229,14 @@ public class JsoSeriesErrorbar
         }-*/;
     ;
 
-    public final native void addSeriesErrorbarLegendItemClickHandler(SeriesErrorbarLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    errorbarLegendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarLegendItemClickHandler::onSeriesErrorbarLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieserrorbar/SeriesErrorbarLegendItemClickEvent;)(
+                    legendItemClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieserrorbar/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -245,14 +245,14 @@ public class JsoSeriesErrorbar
         }-*/;
     ;
 
-    public final native void addSeriesErrorbarMouseOutHandler(SeriesErrorbarMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    errorbarMouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarMouseOutHandler::onSeriesErrorbarMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieserrorbar/SeriesErrorbarMouseOutEvent;)(
+                    mouseOut: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieserrorbar/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -261,14 +261,14 @@ public class JsoSeriesErrorbar
         }-*/;
     ;
 
-    public final native void addSeriesErrorbarMouseOverHandler(SeriesErrorbarMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    errorbarMouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarMouseOverHandler::onSeriesErrorbarMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieserrorbar/SeriesErrorbarMouseOverEvent;)(
+                    mouseOver: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieserrorbar/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -277,14 +277,14 @@ public class JsoSeriesErrorbar
         }-*/;
     ;
 
-    public final native void addSeriesErrorbarShowHandler(SeriesErrorbarShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    errorbarShow: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarShowHandler::onSeriesErrorbarShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieserrorbar/SeriesErrorbarShowEvent;)(
+                    show: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieserrorbar/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

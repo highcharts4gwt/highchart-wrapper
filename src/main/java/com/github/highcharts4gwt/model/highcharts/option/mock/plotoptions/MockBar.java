@@ -4,16 +4,16 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Bar;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.BarShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bar.Tooltip;
 
@@ -208,28 +208,28 @@ public class MockBar
         return this;
     }
 
-    public void addBarAfterAnimateHandler(BarAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addBarCheckboxClickHandler(BarCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addBarClickHandler(BarClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addBarHideHandler(BarHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addBarLegendItemClickHandler(BarLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addBarMouseOutHandler(BarMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addBarMouseOverHandler(BarMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addBarShowHandler(BarShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public double groupPadding() {

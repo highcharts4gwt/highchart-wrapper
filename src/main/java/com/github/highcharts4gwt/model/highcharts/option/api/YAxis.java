@@ -3,15 +3,15 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.AfterBreaksHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.AfterSetExtremesHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.Labels;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.PlotBand;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.PlotLine;
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.PointBreakHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.SetExtremesHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.StackLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.Title;
-import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisAfterBreaksHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisAfterSetExtremesHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisPointBreakHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisSetExtremesHandler;
 
 
 /**
@@ -139,13 +139,13 @@ public interface YAxis {
      */
     YAxis endOnTick(boolean endOnTick);
 
-    void addYAxisAfterBreaksHandler(YAxisAfterBreaksHandler yAxisAfterBreaksHandler);
+    void addAfterBreaksHandler(AfterBreaksHandler afterBreaksHandler);
 
-    void addYAxisAfterSetExtremesHandler(YAxisAfterSetExtremesHandler yAxisAfterSetExtremesHandler);
+    void addAfterSetExtremesHandler(AfterSetExtremesHandler afterSetExtremesHandler);
 
-    void addYAxisPointBreakHandler(YAxisPointBreakHandler yAxisPointBreakHandler);
+    void addPointBreakHandler(PointBreakHandler pointBreakHandler);
 
-    void addYAxisSetExtremesHandler(YAxisSetExtremesHandler yAxisSetExtremesHandler);
+    void addSetExtremesHandler(SetExtremesHandler setExtremesHandler);
 
     /**
      * The lowest allowed value for automatically computed axis extremes.

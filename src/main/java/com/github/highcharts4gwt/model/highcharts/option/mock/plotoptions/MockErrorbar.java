@@ -4,15 +4,15 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Errorbar;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ErrorbarShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.errorbar.Tooltip;
 
@@ -147,28 +147,28 @@ public class MockErrorbar
         return this;
     }
 
-    public void addErrorbarAfterAnimateHandler(ErrorbarAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addErrorbarCheckboxClickHandler(ErrorbarCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addErrorbarClickHandler(ErrorbarClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addErrorbarHideHandler(ErrorbarHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addErrorbarLegendItemClickHandler(ErrorbarLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addErrorbarMouseOutHandler(ErrorbarMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addErrorbarMouseOverHandler(ErrorbarMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addErrorbarShowHandler(ErrorbarShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public double groupZPadding() {

@@ -4,17 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.SeriesColumnrangeAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.SeriesColumnrangeCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.SeriesColumnrangeClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.SeriesColumnrangeHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.SeriesColumnrangeLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.SeriesColumnrangeMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.SeriesColumnrangeMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.SeriesColumnrangeShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriescolumnrange.Tooltip;
 
@@ -292,21 +292,21 @@ public interface SeriesColumnrange {
      */
     SeriesColumnrange enableMouseTracking(boolean enableMouseTracking);
 
-    void addSeriesColumnrangeAfterAnimateHandler(SeriesColumnrangeAfterAnimateHandler seriesColumnrangeAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addSeriesColumnrangeCheckboxClickHandler(SeriesColumnrangeCheckboxClickHandler seriesColumnrangeCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addSeriesColumnrangeClickHandler(SeriesColumnrangeClickHandler seriesColumnrangeClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addSeriesColumnrangeHideHandler(SeriesColumnrangeHideHandler seriesColumnrangeHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addSeriesColumnrangeLegendItemClickHandler(SeriesColumnrangeLegendItemClickHandler seriesColumnrangeLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addSeriesColumnrangeMouseOutHandler(SeriesColumnrangeMouseOutHandler seriesColumnrangeMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addSeriesColumnrangeMouseOverHandler(SeriesColumnrangeMouseOverHandler seriesColumnrangeMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addSeriesColumnrangeShowHandler(SeriesColumnrangeShowHandler seriesColumnrangeShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * Padding between each value groups, in x axis units.

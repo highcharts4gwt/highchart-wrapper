@@ -4,17 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Spline;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.SplineShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.spline.Tooltip;
 
@@ -154,28 +154,28 @@ public class MockSpline
         return this;
     }
 
-    public void addSplineAfterAnimateHandler(SplineAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addSplineCheckboxClickHandler(SplineCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addSplineClickHandler(SplineClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addSplineHideHandler(SplineHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addSplineLegendItemClickHandler(SplineLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addSplineMouseOutHandler(SplineMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addSplineMouseOverHandler(SplineMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addSplineShowHandler(SplineShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public ArrayString keys() {

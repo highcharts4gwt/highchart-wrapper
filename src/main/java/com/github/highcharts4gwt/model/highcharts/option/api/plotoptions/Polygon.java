@@ -3,17 +3,17 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.PolygonShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.polygon.Tooltip;
 
@@ -161,21 +161,21 @@ public interface Polygon {
      */
     Polygon enableMouseTracking(boolean enableMouseTracking);
 
-    void addPolygonAfterAnimateHandler(PolygonAfterAnimateHandler polygonAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addPolygonCheckboxClickHandler(PolygonCheckboxClickHandler polygonCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addPolygonClickHandler(PolygonClickHandler polygonClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addPolygonHideHandler(PolygonHideHandler polygonHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addPolygonLegendItemClickHandler(PolygonLegendItemClickHandler polygonLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addPolygonMouseOutHandler(PolygonMouseOutHandler polygonMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addPolygonMouseOverHandler(PolygonMouseOverHandler polygonMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addPolygonShowHandler(PolygonShowHandler polygonShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.

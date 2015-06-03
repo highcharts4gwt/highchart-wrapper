@@ -5,17 +5,17 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesPyramid;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.SeriesPyramidShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.Tooltip;
 
@@ -179,28 +179,28 @@ public class MockSeriesPyramid
         return this;
     }
 
-    public void addSeriesPyramidAfterAnimateHandler(SeriesPyramidAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addSeriesPyramidCheckboxClickHandler(SeriesPyramidCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addSeriesPyramidClickHandler(SeriesPyramidClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addSeriesPyramidHideHandler(SeriesPyramidHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addSeriesPyramidLegendItemClickHandler(SeriesPyramidLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addSeriesPyramidMouseOutHandler(SeriesPyramidMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addSeriesPyramidMouseOverHandler(SeriesPyramidMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addSeriesPyramidShowHandler(SeriesPyramidShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public double heightAsNumber() {

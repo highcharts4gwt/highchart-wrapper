@@ -3,17 +3,17 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.Tooltip;
 
@@ -184,21 +184,21 @@ public interface Areaspline {
      */
     Areaspline enableMouseTracking(boolean enableMouseTracking);
 
-    void addAreasplineAfterAnimateHandler(AreasplineAfterAnimateHandler areasplineAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addAreasplineCheckboxClickHandler(AreasplineCheckboxClickHandler areasplineCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addAreasplineClickHandler(AreasplineClickHandler areasplineClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addAreasplineHideHandler(AreasplineHideHandler areasplineHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addAreasplineLegendItemClickHandler(AreasplineLegendItemClickHandler areasplineLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addAreasplineMouseOutHandler(AreasplineMouseOutHandler areasplineMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addAreasplineMouseOverHandler(AreasplineMouseOverHandler areasplineMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addAreasplineShowHandler(AreasplineShowHandler areasplineShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * Fill color or gradient for the area. When <code>null</code>, the series' <code>color</code>  is  used with the series' <code>fillOpacity</code>.

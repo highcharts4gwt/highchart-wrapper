@@ -4,18 +4,18 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.SeriesAreaAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.SeriesAreaCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.SeriesAreaClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.SeriesAreaHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.SeriesAreaLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.SeriesAreaMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.SeriesAreaMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.SeriesAreaShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.Tooltip;
 
@@ -337,21 +337,21 @@ public interface SeriesArea {
      */
     SeriesArea enableMouseTracking(boolean enableMouseTracking);
 
-    void addSeriesAreaAfterAnimateHandler(SeriesAreaAfterAnimateHandler seriesAreaAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addSeriesAreaCheckboxClickHandler(SeriesAreaCheckboxClickHandler seriesAreaCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addSeriesAreaClickHandler(SeriesAreaClickHandler seriesAreaClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addSeriesAreaHideHandler(SeriesAreaHideHandler seriesAreaHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addSeriesAreaLegendItemClickHandler(SeriesAreaLegendItemClickHandler seriesAreaLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addSeriesAreaMouseOutHandler(SeriesAreaMouseOutHandler seriesAreaMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addSeriesAreaMouseOverHandler(SeriesAreaMouseOverHandler seriesAreaMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addSeriesAreaShowHandler(SeriesAreaShowHandler seriesAreaShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * Fill color or gradient for the area. When <code>null</code>, the series' <code>color</code>  is  used with the series' <code>fillOpacity</code>.

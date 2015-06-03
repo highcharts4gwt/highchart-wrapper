@@ -4,16 +4,16 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Pyramid;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.Tooltip;
 
@@ -149,28 +149,28 @@ public class MockPyramid
         return this;
     }
 
-    public void addPyramidAfterAnimateHandler(PyramidAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addPyramidCheckboxClickHandler(PyramidCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addPyramidClickHandler(PyramidClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addPyramidHideHandler(PyramidHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addPyramidLegendItemClickHandler(PyramidLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addPyramidMouseOutHandler(PyramidMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addPyramidMouseOverHandler(PyramidMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addPyramidShowHandler(PyramidShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public double heightAsNumber() {

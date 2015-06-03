@@ -3,18 +3,18 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.Dial;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.GaugeAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.GaugeCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.GaugeClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.GaugeHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.GaugeLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.GaugeMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.GaugeMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.GaugeShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.Pivot;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.gauge.Tooltip;
 
@@ -114,21 +114,21 @@ public interface Gauge {
      */
     Gauge enableMouseTracking(boolean enableMouseTracking);
 
-    void addGaugeAfterAnimateHandler(GaugeAfterAnimateHandler gaugeAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addGaugeCheckboxClickHandler(GaugeCheckboxClickHandler gaugeCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addGaugeClickHandler(GaugeClickHandler gaugeClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addGaugeHideHandler(GaugeHideHandler gaugeHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addGaugeLegendItemClickHandler(GaugeLegendItemClickHandler gaugeLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addGaugeMouseOutHandler(GaugeMouseOutHandler gaugeMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addGaugeMouseOverHandler(GaugeMouseOverHandler gaugeMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addGaugeShowHandler(GaugeShowHandler gaugeShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.

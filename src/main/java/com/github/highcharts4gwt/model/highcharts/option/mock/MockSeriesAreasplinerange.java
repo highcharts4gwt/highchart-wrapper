@@ -5,17 +5,17 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesAreasplinerange;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.SeriesAreasplinerangeAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.SeriesAreasplinerangeCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.SeriesAreasplinerangeClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.SeriesAreasplinerangeHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.SeriesAreasplinerangeLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.SeriesAreasplinerangeMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.SeriesAreasplinerangeMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.SeriesAreasplinerangeShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.Tooltip;
 
@@ -171,28 +171,28 @@ public class MockSeriesAreasplinerange
         return this;
     }
 
-    public void addSeriesAreasplinerangeAfterAnimateHandler(SeriesAreasplinerangeAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addSeriesAreasplinerangeCheckboxClickHandler(SeriesAreasplinerangeCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addSeriesAreasplinerangeClickHandler(SeriesAreasplinerangeClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addSeriesAreasplinerangeHideHandler(SeriesAreasplinerangeHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addSeriesAreasplinerangeLegendItemClickHandler(SeriesAreasplinerangeLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addSeriesAreasplinerangeMouseOutHandler(SeriesAreasplinerangeMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addSeriesAreasplinerangeMouseOverHandler(SeriesAreasplinerangeMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addSeriesAreasplinerangeShowHandler(SeriesAreasplinerangeShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public String fillColor() {

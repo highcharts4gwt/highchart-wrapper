@@ -2,13 +2,13 @@
 package com.github.highcharts4gwt.model.highcharts.option.mock.serieserrorbar;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.Data;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.DataClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.DataMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.DataMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.DataRemoveHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.DataSelectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.DataUnselectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.DataUpdateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.ClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.MouseOverHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.RemoveHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.SelectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.UnselectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.UpdateHandler;
 
 
 /**
@@ -66,25 +66,25 @@ public class MockData
         return this;
     }
 
-    public void addDataClickHandler(DataClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addDataMouseOutHandler(DataMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addDataMouseOverHandler(DataMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addDataRemoveHandler(DataRemoveHandler handler) {
+    public void addRemoveHandler(RemoveHandler handler) {
     }
 
-    public void addDataSelectHandler(DataSelectHandler handler) {
+    public void addSelectHandler(SelectHandler handler) {
     }
 
-    public void addDataUnselectHandler(DataUnselectHandler handler) {
+    public void addUnselectHandler(UnselectHandler handler) {
     }
 
-    public void addDataUpdateHandler(DataUpdateHandler handler) {
+    public void addUpdateHandler(UpdateHandler handler) {
     }
 
     public double high() {

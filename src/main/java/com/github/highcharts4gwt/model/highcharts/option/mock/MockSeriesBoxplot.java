@@ -5,16 +5,16 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesBoxplot;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.Data;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.SeriesBoxplotShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.Tooltip;
 
@@ -178,28 +178,28 @@ public class MockSeriesBoxplot
         return this;
     }
 
-    public void addSeriesBoxplotAfterAnimateHandler(SeriesBoxplotAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addSeriesBoxplotCheckboxClickHandler(SeriesBoxplotCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addSeriesBoxplotClickHandler(SeriesBoxplotClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addSeriesBoxplotHideHandler(SeriesBoxplotHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addSeriesBoxplotLegendItemClickHandler(SeriesBoxplotLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addSeriesBoxplotMouseOutHandler(SeriesBoxplotMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addSeriesBoxplotMouseOverHandler(SeriesBoxplotMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addSeriesBoxplotShowHandler(SeriesBoxplotShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public String fillColor() {

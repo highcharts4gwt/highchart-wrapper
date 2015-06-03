@@ -3,17 +3,17 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.Tooltip;
 
@@ -173,21 +173,21 @@ public interface Bubble {
      */
     Bubble enableMouseTracking(boolean enableMouseTracking);
 
-    void addBubbleAfterAnimateHandler(BubbleAfterAnimateHandler bubbleAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addBubbleCheckboxClickHandler(BubbleCheckboxClickHandler bubbleCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addBubbleClickHandler(BubbleClickHandler bubbleClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addBubbleHideHandler(BubbleHideHandler bubbleHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addBubbleLegendItemClickHandler(BubbleLegendItemClickHandler bubbleLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addBubbleMouseOutHandler(BubbleMouseOutHandler bubbleMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addBubbleMouseOverHandler(BubbleMouseOverHandler bubbleMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addBubbleShowHandler(BubbleShowHandler bubbleShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.

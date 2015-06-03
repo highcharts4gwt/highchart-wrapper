@@ -3,16 +3,16 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.Tooltip;
 
@@ -174,21 +174,21 @@ public interface Areasplinerange {
      */
     Areasplinerange enableMouseTracking(boolean enableMouseTracking);
 
-    void addAreasplinerangeAfterAnimateHandler(AreasplinerangeAfterAnimateHandler areasplinerangeAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addAreasplinerangeCheckboxClickHandler(AreasplinerangeCheckboxClickHandler areasplinerangeCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addAreasplinerangeClickHandler(AreasplinerangeClickHandler areasplinerangeClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addAreasplinerangeHideHandler(AreasplinerangeHideHandler areasplinerangeHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addAreasplinerangeLegendItemClickHandler(AreasplinerangeLegendItemClickHandler areasplinerangeLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addAreasplinerangeMouseOutHandler(AreasplinerangeMouseOutHandler areasplinerangeMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addAreasplinerangeMouseOverHandler(AreasplinerangeMouseOverHandler areasplinerangeMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addAreasplinerangeShowHandler(AreasplinerangeShowHandler areasplinerangeShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * Fill color or gradient for the area. When <code>null</code>, the series' <code>color</code>  is  used with the series' <code>fillOpacity</code>.

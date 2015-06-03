@@ -1,13 +1,13 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar;
 
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.DataClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.DataMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.DataMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.DataRemoveHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.DataSelectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.DataUnselectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.DataUpdateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.ClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.MouseOverHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.RemoveHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.SelectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.UnselectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.data.UpdateHandler;
 
 
 /**
@@ -57,19 +57,19 @@ public interface Data {
      */
     Data color(String color);
 
-    void addDataClickHandler(DataClickHandler dataClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addDataMouseOutHandler(DataMouseOutHandler dataMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addDataMouseOverHandler(DataMouseOverHandler dataMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addDataRemoveHandler(DataRemoveHandler dataRemoveHandler);
+    void addRemoveHandler(RemoveHandler removeHandler);
 
-    void addDataSelectHandler(DataSelectHandler dataSelectHandler);
+    void addSelectHandler(SelectHandler selectHandler);
 
-    void addDataUnselectHandler(DataUnselectHandler dataUnselectHandler);
+    void addUnselectHandler(UnselectHandler unselectHandler);
 
-    void addDataUpdateHandler(DataUpdateHandler dataUpdateHandler);
+    void addUpdateHandler(UpdateHandler updateHandler);
 
     /**
      * The high or maximum value for each data point.

@@ -4,17 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Bubble;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.Tooltip;
 
@@ -147,28 +147,28 @@ public class MockBubble
         return this;
     }
 
-    public void addBubbleAfterAnimateHandler(BubbleAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addBubbleCheckboxClickHandler(BubbleCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addBubbleClickHandler(BubbleClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addBubbleHideHandler(BubbleHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addBubbleLegendItemClickHandler(BubbleLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addBubbleMouseOutHandler(BubbleMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addBubbleMouseOverHandler(BubbleMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addBubbleShowHandler(BubbleShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public ArrayString keys() {

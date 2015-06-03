@@ -4,18 +4,18 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Waterfall;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.Tooltip;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.WaterfallAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.WaterfallCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.WaterfallClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.WaterfallHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.WaterfallLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.WaterfallMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.WaterfallMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.waterfall.WaterfallShowHandler;
 
 
 /**
@@ -208,28 +208,28 @@ public class MockWaterfall
         return this;
     }
 
-    public void addWaterfallAfterAnimateHandler(WaterfallAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addWaterfallCheckboxClickHandler(WaterfallCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addWaterfallClickHandler(WaterfallClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addWaterfallHideHandler(WaterfallHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addWaterfallLegendItemClickHandler(WaterfallLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addWaterfallMouseOutHandler(WaterfallMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addWaterfallMouseOverHandler(WaterfallMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addWaterfallShowHandler(WaterfallShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public double groupPadding() {

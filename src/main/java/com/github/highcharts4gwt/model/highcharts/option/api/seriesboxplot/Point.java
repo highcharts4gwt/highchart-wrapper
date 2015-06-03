@@ -1,13 +1,13 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot;
 
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.point.PointClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.point.PointMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.point.PointMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.point.PointRemoveHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.point.PointSelectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.point.PointUnselectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.point.PointUpdateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.point.ClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.point.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.point.MouseOverHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.point.RemoveHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.point.SelectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.point.UnselectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.point.UpdateHandler;
 
 
 /**
@@ -17,19 +17,19 @@ import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.point
 public interface Point {
 
 
-    void addPointClickHandler(PointClickHandler pointClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addPointMouseOutHandler(PointMouseOutHandler pointMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addPointMouseOverHandler(PointMouseOverHandler pointMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addPointRemoveHandler(PointRemoveHandler pointRemoveHandler);
+    void addRemoveHandler(RemoveHandler removeHandler);
 
-    void addPointSelectHandler(PointSelectHandler pointSelectHandler);
+    void addSelectHandler(SelectHandler selectHandler);
 
-    void addPointUnselectHandler(PointUnselectHandler pointUnselectHandler);
+    void addUnselectHandler(UnselectHandler unselectHandler);
 
-    void addPointUpdateHandler(PointUpdateHandler pointUpdateHandler);
+    void addUpdateHandler(UpdateHandler updateHandler);
 
     String getFieldAsJsonObject(String fieldName);
 

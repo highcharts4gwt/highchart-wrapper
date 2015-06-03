@@ -4,16 +4,16 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Areasplinerange;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -149,14 +149,14 @@ public class JsoAreasplinerange
     }-*/
     ;
 
-    public final native void addAreasplinerangeAfterAnimateHandler(AreasplinerangeAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeAfterAnimateHandler::onAreasplinerangeAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/areasplinerange/AreasplinerangeAfterAnimateEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/areasplinerange/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -165,14 +165,14 @@ public class JsoAreasplinerange
         }-*/;
     ;
 
-    public final native void addAreasplinerangeCheckboxClickHandler(AreasplinerangeCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeCheckboxClickHandler::onAreasplinerangeCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/areasplinerange/AreasplinerangeCheckboxClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/areasplinerange/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -181,14 +181,14 @@ public class JsoAreasplinerange
         }-*/;
     ;
 
-    public final native void addAreasplinerangeClickHandler(AreasplinerangeClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeClickHandler::onAreasplinerangeClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/areasplinerange/AreasplinerangeClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/areasplinerange/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -197,14 +197,14 @@ public class JsoAreasplinerange
         }-*/;
     ;
 
-    public final native void addAreasplinerangeHideHandler(AreasplinerangeHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeHideHandler::onAreasplinerangeHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/areasplinerange/AreasplinerangeHideEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/areasplinerange/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -213,14 +213,14 @@ public class JsoAreasplinerange
         }-*/;
     ;
 
-    public final native void addAreasplinerangeLegendItemClickHandler(AreasplinerangeLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeLegendItemClickHandler::onAreasplinerangeLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/areasplinerange/AreasplinerangeLegendItemClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/areasplinerange/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -229,14 +229,14 @@ public class JsoAreasplinerange
         }-*/;
     ;
 
-    public final native void addAreasplinerangeMouseOutHandler(AreasplinerangeMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeMouseOutHandler::onAreasplinerangeMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/areasplinerange/AreasplinerangeMouseOutEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/areasplinerange/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -245,14 +245,14 @@ public class JsoAreasplinerange
         }-*/;
     ;
 
-    public final native void addAreasplinerangeMouseOverHandler(AreasplinerangeMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeMouseOverHandler::onAreasplinerangeMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/areasplinerange/AreasplinerangeMouseOverEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/areasplinerange/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -261,14 +261,14 @@ public class JsoAreasplinerange
         }-*/;
     ;
 
-    public final native void addAreasplinerangeShowHandler(AreasplinerangeShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeShowHandler::onAreasplinerangeShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/areasplinerange/AreasplinerangeShowEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/areasplinerange/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

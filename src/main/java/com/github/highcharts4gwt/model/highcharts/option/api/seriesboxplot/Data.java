@@ -1,13 +1,13 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot;
 
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.data.DataClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.data.DataMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.data.DataMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.data.DataRemoveHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.data.DataSelectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.data.DataUnselectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.data.DataUpdateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.data.ClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.data.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.data.MouseOverHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.data.RemoveHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.data.SelectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.data.UnselectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesboxplot.data.UpdateHandler;
 
 
 /**
@@ -87,19 +87,19 @@ public interface Data {
      */
     Data drilldown(String drilldown);
 
-    void addDataClickHandler(DataClickHandler dataClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addDataMouseOutHandler(DataMouseOutHandler dataMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addDataMouseOverHandler(DataMouseOverHandler dataMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addDataRemoveHandler(DataRemoveHandler dataRemoveHandler);
+    void addRemoveHandler(RemoveHandler removeHandler);
 
-    void addDataSelectHandler(DataSelectHandler dataSelectHandler);
+    void addSelectHandler(SelectHandler selectHandler);
 
-    void addDataUnselectHandler(DataUnselectHandler dataUnselectHandler);
+    void addUnselectHandler(UnselectHandler unselectHandler);
 
-    void addDataUpdateHandler(DataUpdateHandler dataUpdateHandler);
+    void addUpdateHandler(UpdateHandler updateHandler);
 
     /**
      * The <code>high</code> value for each data point, signifying the highest value in the sample set. The top whisker is drawn here.

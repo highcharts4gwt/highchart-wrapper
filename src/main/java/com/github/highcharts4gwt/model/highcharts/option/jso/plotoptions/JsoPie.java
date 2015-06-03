@@ -4,16 +4,16 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Pie;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.DataLabels;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -188,14 +188,14 @@ public class JsoPie
     }-*/
     ;
 
-    public final native void addPieAfterAnimateHandler(PieAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieAfterAnimateHandler::onPieAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pie/PieAfterAnimateEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pie/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -204,14 +204,14 @@ public class JsoPie
         }-*/;
     ;
 
-    public final native void addPieCheckboxClickHandler(PieCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieCheckboxClickHandler::onPieCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pie/PieCheckboxClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pie/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -220,14 +220,14 @@ public class JsoPie
         }-*/;
     ;
 
-    public final native void addPieClickHandler(PieClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieClickHandler::onPieClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pie/PieClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pie/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -236,14 +236,14 @@ public class JsoPie
         }-*/;
     ;
 
-    public final native void addPieHideHandler(PieHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieHideHandler::onPieHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pie/PieHideEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pie/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -252,14 +252,14 @@ public class JsoPie
         }-*/;
     ;
 
-    public final native void addPieLegendItemClickHandler(PieLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieLegendItemClickHandler::onPieLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pie/PieLegendItemClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pie/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -268,14 +268,14 @@ public class JsoPie
         }-*/;
     ;
 
-    public final native void addPieMouseOutHandler(PieMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieMouseOutHandler::onPieMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pie/PieMouseOutEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pie/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -284,14 +284,14 @@ public class JsoPie
         }-*/;
     ;
 
-    public final native void addPieMouseOverHandler(PieMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieMouseOverHandler::onPieMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pie/PieMouseOverEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pie/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -300,14 +300,14 @@ public class JsoPie
         }-*/;
     ;
 
-    public final native void addPieShowHandler(PieShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieShowHandler::onPieShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pie/PieShowEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/pie/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

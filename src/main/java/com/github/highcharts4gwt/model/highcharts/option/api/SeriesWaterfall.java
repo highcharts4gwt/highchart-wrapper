@@ -4,17 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.Tooltip;
 
@@ -396,21 +396,21 @@ public interface SeriesWaterfall {
      */
     SeriesWaterfall enableMouseTracking(boolean enableMouseTracking);
 
-    void addSeriesWaterfallAfterAnimateHandler(SeriesWaterfallAfterAnimateHandler seriesWaterfallAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addSeriesWaterfallCheckboxClickHandler(SeriesWaterfallCheckboxClickHandler seriesWaterfallCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addSeriesWaterfallClickHandler(SeriesWaterfallClickHandler seriesWaterfallClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addSeriesWaterfallHideHandler(SeriesWaterfallHideHandler seriesWaterfallHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addSeriesWaterfallLegendItemClickHandler(SeriesWaterfallLegendItemClickHandler seriesWaterfallLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addSeriesWaterfallMouseOutHandler(SeriesWaterfallMouseOutHandler seriesWaterfallMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addSeriesWaterfallMouseOverHandler(SeriesWaterfallMouseOverHandler seriesWaterfallMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addSeriesWaterfallShowHandler(SeriesWaterfallShowHandler seriesWaterfallShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * Padding between each value groups, in x axis units.

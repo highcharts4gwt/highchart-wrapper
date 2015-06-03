@@ -4,16 +4,16 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.Data;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.Tooltip;
 
@@ -203,21 +203,21 @@ public interface SeriesErrorbar {
      */
     SeriesErrorbar enableMouseTracking(boolean enableMouseTracking);
 
-    void addSeriesErrorbarAfterAnimateHandler(SeriesErrorbarAfterAnimateHandler seriesErrorbarAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addSeriesErrorbarCheckboxClickHandler(SeriesErrorbarCheckboxClickHandler seriesErrorbarCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addSeriesErrorbarClickHandler(SeriesErrorbarClickHandler seriesErrorbarClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addSeriesErrorbarHideHandler(SeriesErrorbarHideHandler seriesErrorbarHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addSeriesErrorbarLegendItemClickHandler(SeriesErrorbarLegendItemClickHandler seriesErrorbarLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addSeriesErrorbarMouseOutHandler(SeriesErrorbarMouseOutHandler seriesErrorbarMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addSeriesErrorbarMouseOverHandler(SeriesErrorbarMouseOverHandler seriesErrorbarMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addSeriesErrorbarShowHandler(SeriesErrorbarShowHandler seriesErrorbarShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * The spacing between columns on the Z Axis in a 3D chart. Requires <code>highcharts-3d.js</code>.

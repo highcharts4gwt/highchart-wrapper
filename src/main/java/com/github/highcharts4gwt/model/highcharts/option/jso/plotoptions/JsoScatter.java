@@ -4,17 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Scatter;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -137,14 +137,14 @@ public class JsoScatter
     }-*/
     ;
 
-    public final native void addScatterAfterAnimateHandler(ScatterAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterAfterAnimateHandler::onScatterAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/scatter/ScatterAfterAnimateEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/scatter/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -153,14 +153,14 @@ public class JsoScatter
         }-*/;
     ;
 
-    public final native void addScatterCheckboxClickHandler(ScatterCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterCheckboxClickHandler::onScatterCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/scatter/ScatterCheckboxClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/scatter/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -169,14 +169,14 @@ public class JsoScatter
         }-*/;
     ;
 
-    public final native void addScatterClickHandler(ScatterClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterClickHandler::onScatterClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/scatter/ScatterClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/scatter/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -185,14 +185,14 @@ public class JsoScatter
         }-*/;
     ;
 
-    public final native void addScatterHideHandler(ScatterHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterHideHandler::onScatterHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/scatter/ScatterHideEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/scatter/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -201,14 +201,14 @@ public class JsoScatter
         }-*/;
     ;
 
-    public final native void addScatterLegendItemClickHandler(ScatterLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterLegendItemClickHandler::onScatterLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/scatter/ScatterLegendItemClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/scatter/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -217,14 +217,14 @@ public class JsoScatter
         }-*/;
     ;
 
-    public final native void addScatterMouseOutHandler(ScatterMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterMouseOutHandler::onScatterMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/scatter/ScatterMouseOutEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/scatter/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -233,14 +233,14 @@ public class JsoScatter
         }-*/;
     ;
 
-    public final native void addScatterMouseOverHandler(ScatterMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterMouseOverHandler::onScatterMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/scatter/ScatterMouseOverEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/scatter/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -249,14 +249,14 @@ public class JsoScatter
         }-*/;
     ;
 
-    public final native void addScatterShowHandler(ScatterShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterShowHandler::onScatterShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/scatter/ScatterShowEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/scatter/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

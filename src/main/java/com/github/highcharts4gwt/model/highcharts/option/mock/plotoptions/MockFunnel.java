@@ -4,16 +4,16 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Funnel;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.DataLabels;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.Tooltip;
 
@@ -153,28 +153,28 @@ public class MockFunnel
         return this;
     }
 
-    public void addFunnelAfterAnimateHandler(FunnelAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addFunnelCheckboxClickHandler(FunnelCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addFunnelClickHandler(FunnelClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addFunnelHideHandler(FunnelHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addFunnelLegendItemClickHandler(FunnelLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addFunnelMouseOutHandler(FunnelMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addFunnelMouseOverHandler(FunnelMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addFunnelShowHandler(FunnelShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public double heightAsNumber() {

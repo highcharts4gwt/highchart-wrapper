@@ -5,16 +5,16 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesErrorbar;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.Data;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.SeriesErrorbarShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieserrorbar.Tooltip;
 
@@ -171,28 +171,28 @@ public class MockSeriesErrorbar
         return this;
     }
 
-    public void addSeriesErrorbarAfterAnimateHandler(SeriesErrorbarAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addSeriesErrorbarCheckboxClickHandler(SeriesErrorbarCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addSeriesErrorbarClickHandler(SeriesErrorbarClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addSeriesErrorbarHideHandler(SeriesErrorbarHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addSeriesErrorbarLegendItemClickHandler(SeriesErrorbarLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addSeriesErrorbarMouseOutHandler(SeriesErrorbarMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addSeriesErrorbarMouseOverHandler(SeriesErrorbarMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addSeriesErrorbarShowHandler(SeriesErrorbarShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public double groupZPadding() {

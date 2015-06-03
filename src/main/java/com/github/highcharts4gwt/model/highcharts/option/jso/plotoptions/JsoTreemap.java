@@ -5,19 +5,19 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Treemap;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.Level;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.Tooltip;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapShowHandler;
 import com.google.gwt.core.client.JavaScriptObject;
 
 
@@ -204,14 +204,14 @@ public class JsoTreemap
     }-*/
     ;
 
-    public final native void addTreemapAfterAnimateHandler(TreemapAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapAfterAnimateHandler::onTreemapAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/treemap/TreemapAfterAnimateEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/treemap/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -220,14 +220,14 @@ public class JsoTreemap
         }-*/;
     ;
 
-    public final native void addTreemapCheckboxClickHandler(TreemapCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapCheckboxClickHandler::onTreemapCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/treemap/TreemapCheckboxClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/treemap/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -236,14 +236,14 @@ public class JsoTreemap
         }-*/;
     ;
 
-    public final native void addTreemapClickHandler(TreemapClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapClickHandler::onTreemapClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/treemap/TreemapClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/treemap/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -252,14 +252,14 @@ public class JsoTreemap
         }-*/;
     ;
 
-    public final native void addTreemapHideHandler(TreemapHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapHideHandler::onTreemapHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/treemap/TreemapHideEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/treemap/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -268,14 +268,14 @@ public class JsoTreemap
         }-*/;
     ;
 
-    public final native void addTreemapLegendItemClickHandler(TreemapLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapLegendItemClickHandler::onTreemapLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/treemap/TreemapLegendItemClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/treemap/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -284,14 +284,14 @@ public class JsoTreemap
         }-*/;
     ;
 
-    public final native void addTreemapMouseOutHandler(TreemapMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapMouseOutHandler::onTreemapMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/treemap/TreemapMouseOutEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/treemap/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -300,14 +300,14 @@ public class JsoTreemap
         }-*/;
     ;
 
-    public final native void addTreemapMouseOverHandler(TreemapMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapMouseOverHandler::onTreemapMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/treemap/TreemapMouseOverEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/treemap/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -316,14 +316,14 @@ public class JsoTreemap
         }-*/;
     ;
 
-    public final native void addTreemapShowHandler(TreemapShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapShowHandler::onTreemapShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/treemap/TreemapShowEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/treemap/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

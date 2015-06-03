@@ -5,18 +5,18 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesSpline;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -193,14 +193,14 @@ public class JsoSeriesSpline
     }-*/
     ;
 
-    public final native void addSeriesSplineAfterAnimateHandler(SeriesSplineAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    splineAfterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineAfterAnimateHandler::onSeriesSplineAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesspline/SeriesSplineAfterAnimateEvent;)(
+                    afterAnimate: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesspline/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -209,14 +209,14 @@ public class JsoSeriesSpline
         }-*/;
     ;
 
-    public final native void addSeriesSplineCheckboxClickHandler(SeriesSplineCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    splineCheckboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineCheckboxClickHandler::onSeriesSplineCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesspline/SeriesSplineCheckboxClickEvent;)(
+                    checkboxClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesspline/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -225,14 +225,14 @@ public class JsoSeriesSpline
         }-*/;
     ;
 
-    public final native void addSeriesSplineClickHandler(SeriesSplineClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    splineClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineClickHandler::onSeriesSplineClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesspline/SeriesSplineClickEvent;)(
+                    click: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesspline/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -241,14 +241,14 @@ public class JsoSeriesSpline
         }-*/;
     ;
 
-    public final native void addSeriesSplineHideHandler(SeriesSplineHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    splineHide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineHideHandler::onSeriesSplineHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesspline/SeriesSplineHideEvent;)(
+                    hide: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesspline/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -257,14 +257,14 @@ public class JsoSeriesSpline
         }-*/;
     ;
 
-    public final native void addSeriesSplineLegendItemClickHandler(SeriesSplineLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    splineLegendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineLegendItemClickHandler::onSeriesSplineLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesspline/SeriesSplineLegendItemClickEvent;)(
+                    legendItemClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesspline/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -273,14 +273,14 @@ public class JsoSeriesSpline
         }-*/;
     ;
 
-    public final native void addSeriesSplineMouseOutHandler(SeriesSplineMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    splineMouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineMouseOutHandler::onSeriesSplineMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesspline/SeriesSplineMouseOutEvent;)(
+                    mouseOut: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesspline/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -289,14 +289,14 @@ public class JsoSeriesSpline
         }-*/;
     ;
 
-    public final native void addSeriesSplineMouseOverHandler(SeriesSplineMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    splineMouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineMouseOverHandler::onSeriesSplineMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesspline/SeriesSplineMouseOverEvent;)(
+                    mouseOver: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesspline/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -305,14 +305,14 @@ public class JsoSeriesSpline
         }-*/;
     ;
 
-    public final native void addSeriesSplineShowHandler(SeriesSplineShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    splineShow: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineShowHandler::onSeriesSplineShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesspline/SeriesSplineShowEvent;)(
+                    show: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesspline/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

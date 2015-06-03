@@ -4,17 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.SeriesHeatmapAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.SeriesHeatmapCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.SeriesHeatmapClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.SeriesHeatmapHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.SeriesHeatmapLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.SeriesHeatmapMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.SeriesHeatmapMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.SeriesHeatmapShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.Tooltip;
 
@@ -266,21 +266,21 @@ public interface SeriesHeatmap {
      */
     SeriesHeatmap enableMouseTracking(boolean enableMouseTracking);
 
-    void addSeriesHeatmapAfterAnimateHandler(SeriesHeatmapAfterAnimateHandler seriesHeatmapAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addSeriesHeatmapCheckboxClickHandler(SeriesHeatmapCheckboxClickHandler seriesHeatmapCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addSeriesHeatmapClickHandler(SeriesHeatmapClickHandler seriesHeatmapClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addSeriesHeatmapHideHandler(SeriesHeatmapHideHandler seriesHeatmapHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addSeriesHeatmapLegendItemClickHandler(SeriesHeatmapLegendItemClickHandler seriesHeatmapLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addSeriesHeatmapMouseOutHandler(SeriesHeatmapMouseOutHandler seriesHeatmapMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addSeriesHeatmapMouseOverHandler(SeriesHeatmapMouseOverHandler seriesHeatmapMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addSeriesHeatmapShowHandler(SeriesHeatmapShowHandler seriesHeatmapShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * An id for the series. This can be used after render time to get a pointer to the series object through <code>chart.get()</code>.

@@ -3,14 +3,14 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.AfterBreaksHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.AfterSetExtremesHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Labels;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PlotBand;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PlotLine;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PointBreakHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.SetExtremesHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Title;
-import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterBreaksHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterSetExtremesHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisPointBreakHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisSetExtremesHandler;
 
 
 /**
@@ -138,13 +138,13 @@ public interface XAxis {
      */
     XAxis endOnTick(boolean endOnTick);
 
-    void addXAxisAfterBreaksHandler(XAxisAfterBreaksHandler xAxisAfterBreaksHandler);
+    void addAfterBreaksHandler(AfterBreaksHandler afterBreaksHandler);
 
-    void addXAxisAfterSetExtremesHandler(XAxisAfterSetExtremesHandler xAxisAfterSetExtremesHandler);
+    void addAfterSetExtremesHandler(AfterSetExtremesHandler afterSetExtremesHandler);
 
-    void addXAxisPointBreakHandler(XAxisPointBreakHandler xAxisPointBreakHandler);
+    void addPointBreakHandler(PointBreakHandler pointBreakHandler);
 
-    void addXAxisSetExtremesHandler(XAxisSetExtremesHandler xAxisSetExtremesHandler);
+    void addSetExtremesHandler(SetExtremesHandler setExtremesHandler);
 
     /**
      * The lowest allowed value for automatically computed axis extremes.

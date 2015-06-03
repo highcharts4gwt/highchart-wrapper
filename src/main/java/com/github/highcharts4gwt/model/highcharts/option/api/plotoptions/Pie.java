@@ -3,16 +3,16 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.DataLabels;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PieShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.Tooltip;
 
@@ -182,21 +182,21 @@ public interface Pie {
      */
     Pie endAngle(double endAngle);
 
-    void addPieAfterAnimateHandler(PieAfterAnimateHandler pieAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addPieCheckboxClickHandler(PieCheckboxClickHandler pieCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addPieClickHandler(PieClickHandler pieClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addPieHideHandler(PieHideHandler pieHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addPieLegendItemClickHandler(PieLegendItemClickHandler pieLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addPieMouseOutHandler(PieMouseOutHandler pieMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addPieMouseOverHandler(PieMouseOverHandler pieMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addPieShowHandler(PieShowHandler pieShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * <p>Equivalent to <a href="#chart.ignoreHiddenSeries">chart.ignoreHiddenSeries</a>, this option tells whether the series shall be redrawn as if the hidden point were <code>null</code>.</p>

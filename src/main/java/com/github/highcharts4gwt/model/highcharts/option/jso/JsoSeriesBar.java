@@ -5,17 +5,17 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesBar;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -257,14 +257,14 @@ public class JsoSeriesBar
     }-*/
     ;
 
-    public final native void addSeriesBarAfterAnimateHandler(SeriesBarAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    barAfterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarAfterAnimateHandler::onSeriesBarAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesbar/SeriesBarAfterAnimateEvent;)(
+                    afterAnimate: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesbar/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -273,14 +273,14 @@ public class JsoSeriesBar
         }-*/;
     ;
 
-    public final native void addSeriesBarCheckboxClickHandler(SeriesBarCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    barCheckboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarCheckboxClickHandler::onSeriesBarCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesbar/SeriesBarCheckboxClickEvent;)(
+                    checkboxClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesbar/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -289,14 +289,14 @@ public class JsoSeriesBar
         }-*/;
     ;
 
-    public final native void addSeriesBarClickHandler(SeriesBarClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    barClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarClickHandler::onSeriesBarClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesbar/SeriesBarClickEvent;)(
+                    click: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesbar/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -305,14 +305,14 @@ public class JsoSeriesBar
         }-*/;
     ;
 
-    public final native void addSeriesBarHideHandler(SeriesBarHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    barHide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarHideHandler::onSeriesBarHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesbar/SeriesBarHideEvent;)(
+                    hide: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesbar/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -321,14 +321,14 @@ public class JsoSeriesBar
         }-*/;
     ;
 
-    public final native void addSeriesBarLegendItemClickHandler(SeriesBarLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    barLegendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarLegendItemClickHandler::onSeriesBarLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesbar/SeriesBarLegendItemClickEvent;)(
+                    legendItemClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesbar/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -337,14 +337,14 @@ public class JsoSeriesBar
         }-*/;
     ;
 
-    public final native void addSeriesBarMouseOutHandler(SeriesBarMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    barMouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarMouseOutHandler::onSeriesBarMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesbar/SeriesBarMouseOutEvent;)(
+                    mouseOut: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesbar/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -353,14 +353,14 @@ public class JsoSeriesBar
         }-*/;
     ;
 
-    public final native void addSeriesBarMouseOverHandler(SeriesBarMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    barMouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarMouseOverHandler::onSeriesBarMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesbar/SeriesBarMouseOverEvent;)(
+                    mouseOver: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesbar/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -369,14 +369,14 @@ public class JsoSeriesBar
         }-*/;
     ;
 
-    public final native void addSeriesBarShowHandler(SeriesBarShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    barShow: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.SeriesBarShowHandler::onSeriesBarShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesbar/SeriesBarShowEvent;)(
+                    show: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriesbar/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

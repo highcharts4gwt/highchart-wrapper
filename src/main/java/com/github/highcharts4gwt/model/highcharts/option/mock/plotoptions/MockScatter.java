@@ -4,17 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Scatter;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ScatterShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.scatter.Tooltip;
 
@@ -132,28 +132,28 @@ public class MockScatter
         return this;
     }
 
-    public void addScatterAfterAnimateHandler(ScatterAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addScatterCheckboxClickHandler(ScatterCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addScatterClickHandler(ScatterClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addScatterHideHandler(ScatterHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addScatterLegendItemClickHandler(ScatterLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addScatterMouseOutHandler(ScatterMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addScatterMouseOverHandler(ScatterMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addScatterShowHandler(ScatterShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public ArrayString keys() {

@@ -3,16 +3,16 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.Tooltip;
 
@@ -88,21 +88,21 @@ public interface Solidgauge {
      */
     Solidgauge enableMouseTracking(boolean enableMouseTracking);
 
-    void addSolidgaugeAfterAnimateHandler(SolidgaugeAfterAnimateHandler solidgaugeAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addSolidgaugeCheckboxClickHandler(SolidgaugeCheckboxClickHandler solidgaugeCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addSolidgaugeClickHandler(SolidgaugeClickHandler solidgaugeClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addSolidgaugeHideHandler(SolidgaugeHideHandler solidgaugeHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addSolidgaugeLegendItemClickHandler(SolidgaugeLegendItemClickHandler solidgaugeLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addSolidgaugeMouseOutHandler(SolidgaugeMouseOutHandler solidgaugeMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addSolidgaugeMouseOverHandler(SolidgaugeMouseOverHandler solidgaugeMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addSolidgaugeShowHandler(SolidgaugeShowHandler solidgaugeShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.

@@ -4,16 +4,16 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Funnel;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.DataLabels;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -162,14 +162,14 @@ public class JsoFunnel
     }-*/
     ;
 
-    public final native void addFunnelAfterAnimateHandler(FunnelAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelAfterAnimateHandler::onFunnelAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/funnel/FunnelAfterAnimateEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/funnel/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -178,14 +178,14 @@ public class JsoFunnel
         }-*/;
     ;
 
-    public final native void addFunnelCheckboxClickHandler(FunnelCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelCheckboxClickHandler::onFunnelCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/funnel/FunnelCheckboxClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/funnel/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -194,14 +194,14 @@ public class JsoFunnel
         }-*/;
     ;
 
-    public final native void addFunnelClickHandler(FunnelClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelClickHandler::onFunnelClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/funnel/FunnelClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/funnel/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -210,14 +210,14 @@ public class JsoFunnel
         }-*/;
     ;
 
-    public final native void addFunnelHideHandler(FunnelHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelHideHandler::onFunnelHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/funnel/FunnelHideEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/funnel/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -226,14 +226,14 @@ public class JsoFunnel
         }-*/;
     ;
 
-    public final native void addFunnelLegendItemClickHandler(FunnelLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelLegendItemClickHandler::onFunnelLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/funnel/FunnelLegendItemClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/funnel/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -242,14 +242,14 @@ public class JsoFunnel
         }-*/;
     ;
 
-    public final native void addFunnelMouseOutHandler(FunnelMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelMouseOutHandler::onFunnelMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/funnel/FunnelMouseOutEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/funnel/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -258,14 +258,14 @@ public class JsoFunnel
         }-*/;
     ;
 
-    public final native void addFunnelMouseOverHandler(FunnelMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelMouseOverHandler::onFunnelMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/funnel/FunnelMouseOverEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/funnel/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -274,14 +274,14 @@ public class JsoFunnel
         }-*/;
     ;
 
-    public final native void addFunnelShowHandler(FunnelShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelShowHandler::onFunnelShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/funnel/FunnelShowEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/funnel/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

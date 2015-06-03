@@ -4,16 +4,16 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Columnrange;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.ColumnrangeAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.ColumnrangeCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.ColumnrangeClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.ColumnrangeHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.ColumnrangeLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.ColumnrangeMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.ColumnrangeMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.ColumnrangeShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.columnrange.Tooltip;
 
@@ -207,28 +207,28 @@ public class MockColumnrange
         return this;
     }
 
-    public void addColumnrangeAfterAnimateHandler(ColumnrangeAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addColumnrangeCheckboxClickHandler(ColumnrangeCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addColumnrangeClickHandler(ColumnrangeClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addColumnrangeHideHandler(ColumnrangeHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addColumnrangeLegendItemClickHandler(ColumnrangeLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addColumnrangeMouseOutHandler(ColumnrangeMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addColumnrangeMouseOverHandler(ColumnrangeMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addColumnrangeShowHandler(ColumnrangeShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public double groupPadding() {

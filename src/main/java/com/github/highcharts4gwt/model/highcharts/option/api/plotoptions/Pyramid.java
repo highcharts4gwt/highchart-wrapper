@@ -3,16 +3,16 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.PyramidShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pyramid.Tooltip;
 
@@ -142,21 +142,21 @@ public interface Pyramid {
      */
     Pyramid enableMouseTracking(boolean enableMouseTracking);
 
-    void addPyramidAfterAnimateHandler(PyramidAfterAnimateHandler pyramidAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addPyramidCheckboxClickHandler(PyramidCheckboxClickHandler pyramidCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addPyramidClickHandler(PyramidClickHandler pyramidClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addPyramidHideHandler(PyramidHideHandler pyramidHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addPyramidLegendItemClickHandler(PyramidLegendItemClickHandler pyramidLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addPyramidMouseOutHandler(PyramidMouseOutHandler pyramidMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addPyramidMouseOverHandler(PyramidMouseOverHandler pyramidMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addPyramidShowHandler(PyramidShowHandler pyramidShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * The height of the funnel or pyramid. If it is a number it defines the pixel height, if it is a percentage string it is the percentage of the plot area height.

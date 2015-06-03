@@ -4,18 +4,18 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.SeriesSplineShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.Tooltip;
 
@@ -337,21 +337,21 @@ public interface SeriesSpline {
      */
     SeriesSpline enableMouseTracking(boolean enableMouseTracking);
 
-    void addSeriesSplineAfterAnimateHandler(SeriesSplineAfterAnimateHandler seriesSplineAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addSeriesSplineCheckboxClickHandler(SeriesSplineCheckboxClickHandler seriesSplineCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addSeriesSplineClickHandler(SeriesSplineClickHandler seriesSplineClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addSeriesSplineHideHandler(SeriesSplineHideHandler seriesSplineHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addSeriesSplineLegendItemClickHandler(SeriesSplineLegendItemClickHandler seriesSplineLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addSeriesSplineMouseOutHandler(SeriesSplineMouseOutHandler seriesSplineMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addSeriesSplineMouseOverHandler(SeriesSplineMouseOverHandler seriesSplineMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addSeriesSplineShowHandler(SeriesSplineShowHandler seriesSplineShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * An id for the series. This can be used after render time to get a pointer to the series object through <code>chart.get()</code>.

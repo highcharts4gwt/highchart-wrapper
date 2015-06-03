@@ -3,17 +3,17 @@ package com.github.highcharts4gwt.model.highcharts.option.mock;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.highcharts.option.api.Chart;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartAddSeriesHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartAfterPrintHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartBeforePrintHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartDrilldownHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartDrillupHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartLoadHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartRedrawHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartSelectionHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.AddSeriesHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.AfterPrintHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.BeforePrintHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.ClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.DrilldownHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.DrillupHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.LoadHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.Options3d;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.RedrawHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ResetZoomButton;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.SelectionHandler;
 
 
 /**
@@ -153,31 +153,31 @@ public class MockChart
         return this;
     }
 
-    public void addChartAddSeriesHandler(ChartAddSeriesHandler handler) {
+    public void addAddSeriesHandler(AddSeriesHandler handler) {
     }
 
-    public void addChartAfterPrintHandler(ChartAfterPrintHandler handler) {
+    public void addAfterPrintHandler(AfterPrintHandler handler) {
     }
 
-    public void addChartBeforePrintHandler(ChartBeforePrintHandler handler) {
+    public void addBeforePrintHandler(BeforePrintHandler handler) {
     }
 
-    public void addChartClickHandler(ChartClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addChartDrilldownHandler(ChartDrilldownHandler handler) {
+    public void addDrilldownHandler(DrilldownHandler handler) {
     }
 
-    public void addChartDrillupHandler(ChartDrillupHandler handler) {
+    public void addDrillupHandler(DrillupHandler handler) {
     }
 
-    public void addChartLoadHandler(ChartLoadHandler handler) {
+    public void addLoadHandler(LoadHandler handler) {
     }
 
-    public void addChartRedrawHandler(ChartRedrawHandler handler) {
+    public void addRedrawHandler(RedrawHandler handler) {
     }
 
-    public void addChartSelectionHandler(ChartSelectionHandler handler) {
+    public void addSelectionHandler(SelectionHandler handler) {
     }
 
     public double height() {

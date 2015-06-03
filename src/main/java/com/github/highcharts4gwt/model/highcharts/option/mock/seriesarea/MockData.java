@@ -2,14 +2,14 @@
 package com.github.highcharts4gwt.model.highcharts.option.mock.seriesarea;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.Data;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.data.DataClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.data.DataMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.data.DataMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.data.DataRemoveHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.data.DataSelectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.data.DataUnselectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.data.DataUpdateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.data.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.data.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.data.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.data.MouseOverHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.data.RemoveHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.data.SelectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.data.UnselectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.data.UpdateHandler;
 
 
 /**
@@ -90,25 +90,25 @@ public class MockData
         return this;
     }
 
-    public void addDataClickHandler(DataClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addDataMouseOutHandler(DataMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addDataMouseOverHandler(DataMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addDataRemoveHandler(DataRemoveHandler handler) {
+    public void addRemoveHandler(RemoveHandler handler) {
     }
 
-    public void addDataSelectHandler(DataSelectHandler handler) {
+    public void addSelectHandler(SelectHandler handler) {
     }
 
-    public void addDataUnselectHandler(DataUnselectHandler handler) {
+    public void addUnselectHandler(UnselectHandler handler) {
     }
 
-    public void addDataUpdateHandler(DataUpdateHandler handler) {
+    public void addUpdateHandler(UpdateHandler handler) {
     }
 
     public String id() {

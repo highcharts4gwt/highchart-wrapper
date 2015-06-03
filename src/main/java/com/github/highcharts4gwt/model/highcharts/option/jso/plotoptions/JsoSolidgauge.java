@@ -4,16 +4,16 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Solidgauge;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -84,14 +84,14 @@ public class JsoSolidgauge
     }-*/
     ;
 
-    public final native void addSolidgaugeAfterAnimateHandler(SolidgaugeAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeAfterAnimateHandler::onSolidgaugeAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/solidgauge/SolidgaugeAfterAnimateEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/solidgauge/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -100,14 +100,14 @@ public class JsoSolidgauge
         }-*/;
     ;
 
-    public final native void addSolidgaugeCheckboxClickHandler(SolidgaugeCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeCheckboxClickHandler::onSolidgaugeCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/solidgauge/SolidgaugeCheckboxClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/solidgauge/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -116,14 +116,14 @@ public class JsoSolidgauge
         }-*/;
     ;
 
-    public final native void addSolidgaugeClickHandler(SolidgaugeClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeClickHandler::onSolidgaugeClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/solidgauge/SolidgaugeClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/solidgauge/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -132,14 +132,14 @@ public class JsoSolidgauge
         }-*/;
     ;
 
-    public final native void addSolidgaugeHideHandler(SolidgaugeHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeHideHandler::onSolidgaugeHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/solidgauge/SolidgaugeHideEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/solidgauge/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -148,14 +148,14 @@ public class JsoSolidgauge
         }-*/;
     ;
 
-    public final native void addSolidgaugeLegendItemClickHandler(SolidgaugeLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeLegendItemClickHandler::onSolidgaugeLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/solidgauge/SolidgaugeLegendItemClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/solidgauge/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -164,14 +164,14 @@ public class JsoSolidgauge
         }-*/;
     ;
 
-    public final native void addSolidgaugeMouseOutHandler(SolidgaugeMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeMouseOutHandler::onSolidgaugeMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/solidgauge/SolidgaugeMouseOutEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/solidgauge/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -180,14 +180,14 @@ public class JsoSolidgauge
         }-*/;
     ;
 
-    public final native void addSolidgaugeMouseOverHandler(SolidgaugeMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeMouseOverHandler::onSolidgaugeMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/solidgauge/SolidgaugeMouseOverEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/solidgauge/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -196,14 +196,14 @@ public class JsoSolidgauge
         }-*/;
     ;
 
-    public final native void addSolidgaugeShowHandler(SolidgaugeShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.SolidgaugeShowHandler::onSolidgaugeShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/solidgauge/SolidgaugeShowEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.solidgauge.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/solidgauge/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

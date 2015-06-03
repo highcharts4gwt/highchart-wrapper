@@ -1,13 +1,13 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange;
 
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataRemoveHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataSelectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataUnselectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.DataUpdateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.ClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.MouseOverHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.RemoveHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.SelectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.UnselectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.data.UpdateHandler;
 
 
 /**
@@ -81,19 +81,19 @@ public interface Data {
      */
     Data drilldown(String drilldown);
 
-    void addDataClickHandler(DataClickHandler dataClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addDataMouseOutHandler(DataMouseOutHandler dataMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addDataMouseOverHandler(DataMouseOverHandler dataMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addDataRemoveHandler(DataRemoveHandler dataRemoveHandler);
+    void addRemoveHandler(RemoveHandler removeHandler);
 
-    void addDataSelectHandler(DataSelectHandler dataSelectHandler);
+    void addSelectHandler(SelectHandler selectHandler);
 
-    void addDataUnselectHandler(DataUnselectHandler dataUnselectHandler);
+    void addUnselectHandler(UnselectHandler unselectHandler);
 
-    void addDataUpdateHandler(DataUpdateHandler dataUpdateHandler);
+    void addUpdateHandler(UpdateHandler updateHandler);
 
     /**
      * The high or maximum value for each data point.

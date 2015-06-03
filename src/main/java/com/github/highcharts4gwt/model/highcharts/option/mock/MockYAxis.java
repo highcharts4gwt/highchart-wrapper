@@ -4,15 +4,15 @@ package com.github.highcharts4gwt.model.highcharts.option.mock;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.YAxis;
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.AfterBreaksHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.AfterSetExtremesHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.Labels;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.PlotBand;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.PlotLine;
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.PointBreakHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.SetExtremesHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.StackLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.Title;
-import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisAfterBreaksHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisAfterSetExtremesHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisPointBreakHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.YAxisSetExtremesHandler;
 
 
 /**
@@ -153,16 +153,16 @@ public class MockYAxis
         return this;
     }
 
-    public void addYAxisAfterBreaksHandler(YAxisAfterBreaksHandler handler) {
+    public void addAfterBreaksHandler(AfterBreaksHandler handler) {
     }
 
-    public void addYAxisAfterSetExtremesHandler(YAxisAfterSetExtremesHandler handler) {
+    public void addAfterSetExtremesHandler(AfterSetExtremesHandler handler) {
     }
 
-    public void addYAxisPointBreakHandler(YAxisPointBreakHandler handler) {
+    public void addPointBreakHandler(PointBreakHandler handler) {
     }
 
-    public void addYAxisSetExtremesHandler(YAxisSetExtremesHandler handler) {
+    public void addSetExtremesHandler(SetExtremesHandler handler) {
     }
 
     public double floor() {

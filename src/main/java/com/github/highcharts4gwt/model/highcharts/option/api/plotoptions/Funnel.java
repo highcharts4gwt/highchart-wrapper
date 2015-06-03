@@ -3,16 +3,16 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.DataLabels;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FunnelShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.Tooltip;
 
@@ -142,21 +142,21 @@ public interface Funnel {
      */
     Funnel enableMouseTracking(boolean enableMouseTracking);
 
-    void addFunnelAfterAnimateHandler(FunnelAfterAnimateHandler funnelAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addFunnelCheckboxClickHandler(FunnelCheckboxClickHandler funnelCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addFunnelClickHandler(FunnelClickHandler funnelClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addFunnelHideHandler(FunnelHideHandler funnelHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addFunnelLegendItemClickHandler(FunnelLegendItemClickHandler funnelLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addFunnelMouseOutHandler(FunnelMouseOutHandler funnelMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addFunnelMouseOverHandler(FunnelMouseOverHandler funnelMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addFunnelShowHandler(FunnelShowHandler funnelShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * The height of the funnel or pyramid. If it is a number it defines the pixel height, if it is a percentage string it is the percentage of the plot area height.

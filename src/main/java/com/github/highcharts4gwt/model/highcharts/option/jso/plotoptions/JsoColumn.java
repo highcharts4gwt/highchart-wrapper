@@ -4,16 +4,16 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Column;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -227,14 +227,14 @@ public class JsoColumn
     }-*/
     ;
 
-    public final native void addColumnAfterAnimateHandler(ColumnAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnAfterAnimateHandler::onColumnAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/column/ColumnAfterAnimateEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/column/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -243,14 +243,14 @@ public class JsoColumn
         }-*/;
     ;
 
-    public final native void addColumnCheckboxClickHandler(ColumnCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnCheckboxClickHandler::onColumnCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/column/ColumnCheckboxClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/column/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -259,14 +259,14 @@ public class JsoColumn
         }-*/;
     ;
 
-    public final native void addColumnClickHandler(ColumnClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnClickHandler::onColumnClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/column/ColumnClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/column/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -275,14 +275,14 @@ public class JsoColumn
         }-*/;
     ;
 
-    public final native void addColumnHideHandler(ColumnHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnHideHandler::onColumnHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/column/ColumnHideEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/column/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -291,14 +291,14 @@ public class JsoColumn
         }-*/;
     ;
 
-    public final native void addColumnLegendItemClickHandler(ColumnLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnLegendItemClickHandler::onColumnLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/column/ColumnLegendItemClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/column/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -307,14 +307,14 @@ public class JsoColumn
         }-*/;
     ;
 
-    public final native void addColumnMouseOutHandler(ColumnMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnMouseOutHandler::onColumnMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/column/ColumnMouseOutEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/column/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -323,14 +323,14 @@ public class JsoColumn
         }-*/;
     ;
 
-    public final native void addColumnMouseOverHandler(ColumnMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnMouseOverHandler::onColumnMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/column/ColumnMouseOverEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/column/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -339,14 +339,14 @@ public class JsoColumn
         }-*/;
     ;
 
-    public final native void addColumnShowHandler(ColumnShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ColumnShowHandler::onColumnShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/column/ColumnShowEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.column.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/column/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

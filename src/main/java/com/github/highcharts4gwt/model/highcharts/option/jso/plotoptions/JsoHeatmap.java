@@ -4,16 +4,16 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Heatmap;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.DataLabels;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -203,14 +203,14 @@ public class JsoHeatmap
     }-*/
     ;
 
-    public final native void addHeatmapAfterAnimateHandler(HeatmapAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapAfterAnimateHandler::onHeatmapAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/heatmap/HeatmapAfterAnimateEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/heatmap/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -219,14 +219,14 @@ public class JsoHeatmap
         }-*/;
     ;
 
-    public final native void addHeatmapCheckboxClickHandler(HeatmapCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapCheckboxClickHandler::onHeatmapCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/heatmap/HeatmapCheckboxClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/heatmap/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -235,14 +235,14 @@ public class JsoHeatmap
         }-*/;
     ;
 
-    public final native void addHeatmapClickHandler(HeatmapClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapClickHandler::onHeatmapClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/heatmap/HeatmapClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/heatmap/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -251,14 +251,14 @@ public class JsoHeatmap
         }-*/;
     ;
 
-    public final native void addHeatmapHideHandler(HeatmapHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapHideHandler::onHeatmapHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/heatmap/HeatmapHideEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/heatmap/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -267,14 +267,14 @@ public class JsoHeatmap
         }-*/;
     ;
 
-    public final native void addHeatmapLegendItemClickHandler(HeatmapLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapLegendItemClickHandler::onHeatmapLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/heatmap/HeatmapLegendItemClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/heatmap/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -283,14 +283,14 @@ public class JsoHeatmap
         }-*/;
     ;
 
-    public final native void addHeatmapMouseOutHandler(HeatmapMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapMouseOutHandler::onHeatmapMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/heatmap/HeatmapMouseOutEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/heatmap/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -299,14 +299,14 @@ public class JsoHeatmap
         }-*/;
     ;
 
-    public final native void addHeatmapMouseOverHandler(HeatmapMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapMouseOverHandler::onHeatmapMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/heatmap/HeatmapMouseOverEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/heatmap/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -315,14 +315,14 @@ public class JsoHeatmap
         }-*/;
     ;
 
-    public final native void addHeatmapShowHandler(HeatmapShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapShowHandler::onHeatmapShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/heatmap/HeatmapShowEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/heatmap/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

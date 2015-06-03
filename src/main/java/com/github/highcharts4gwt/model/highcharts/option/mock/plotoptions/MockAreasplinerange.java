@@ -4,16 +4,16 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Areasplinerange;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AreasplinerangeShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areasplinerange.Tooltip;
 
@@ -147,28 +147,28 @@ public class MockAreasplinerange
         return this;
     }
 
-    public void addAreasplinerangeAfterAnimateHandler(AreasplinerangeAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addAreasplinerangeCheckboxClickHandler(AreasplinerangeCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addAreasplinerangeClickHandler(AreasplinerangeClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addAreasplinerangeHideHandler(AreasplinerangeHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addAreasplinerangeLegendItemClickHandler(AreasplinerangeLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addAreasplinerangeMouseOutHandler(AreasplinerangeMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addAreasplinerangeMouseOverHandler(AreasplinerangeMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addAreasplinerangeShowHandler(AreasplinerangeShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public String fillColor() {

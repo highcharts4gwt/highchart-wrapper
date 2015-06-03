@@ -5,18 +5,18 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesPolygon;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -154,14 +154,14 @@ public class JsoSeriesPolygon
     }-*/
     ;
 
-    public final native void addSeriesPolygonAfterAnimateHandler(SeriesPolygonAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    polygonAfterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonAfterAnimateHandler::onSeriesPolygonAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespolygon/SeriesPolygonAfterAnimateEvent;)(
+                    afterAnimate: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespolygon/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -170,14 +170,14 @@ public class JsoSeriesPolygon
         }-*/;
     ;
 
-    public final native void addSeriesPolygonCheckboxClickHandler(SeriesPolygonCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    polygonCheckboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonCheckboxClickHandler::onSeriesPolygonCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespolygon/SeriesPolygonCheckboxClickEvent;)(
+                    checkboxClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespolygon/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -186,14 +186,14 @@ public class JsoSeriesPolygon
         }-*/;
     ;
 
-    public final native void addSeriesPolygonClickHandler(SeriesPolygonClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    polygonClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonClickHandler::onSeriesPolygonClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespolygon/SeriesPolygonClickEvent;)(
+                    click: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespolygon/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -202,14 +202,14 @@ public class JsoSeriesPolygon
         }-*/;
     ;
 
-    public final native void addSeriesPolygonHideHandler(SeriesPolygonHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    polygonHide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonHideHandler::onSeriesPolygonHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespolygon/SeriesPolygonHideEvent;)(
+                    hide: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespolygon/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -218,14 +218,14 @@ public class JsoSeriesPolygon
         }-*/;
     ;
 
-    public final native void addSeriesPolygonLegendItemClickHandler(SeriesPolygonLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    polygonLegendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonLegendItemClickHandler::onSeriesPolygonLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespolygon/SeriesPolygonLegendItemClickEvent;)(
+                    legendItemClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespolygon/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -234,14 +234,14 @@ public class JsoSeriesPolygon
         }-*/;
     ;
 
-    public final native void addSeriesPolygonMouseOutHandler(SeriesPolygonMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    polygonMouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonMouseOutHandler::onSeriesPolygonMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespolygon/SeriesPolygonMouseOutEvent;)(
+                    mouseOut: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespolygon/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -250,14 +250,14 @@ public class JsoSeriesPolygon
         }-*/;
     ;
 
-    public final native void addSeriesPolygonMouseOverHandler(SeriesPolygonMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    polygonMouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonMouseOverHandler::onSeriesPolygonMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespolygon/SeriesPolygonMouseOverEvent;)(
+                    mouseOver: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespolygon/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -266,14 +266,14 @@ public class JsoSeriesPolygon
         }-*/;
     ;
 
-    public final native void addSeriesPolygonShowHandler(SeriesPolygonShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    polygonShow: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonShowHandler::onSeriesPolygonShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespolygon/SeriesPolygonShowEvent;)(
+                    show: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriespolygon/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

@@ -5,19 +5,19 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesGauge;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.DataLabels;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.Dial;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.Pivot;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.SeriesGaugeAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.SeriesGaugeCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.SeriesGaugeClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.SeriesGaugeHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.SeriesGaugeLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.SeriesGaugeMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.SeriesGaugeMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.SeriesGaugeShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.Tooltip;
 
@@ -142,28 +142,28 @@ public class MockSeriesGauge
         return this;
     }
 
-    public void addSeriesGaugeAfterAnimateHandler(SeriesGaugeAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addSeriesGaugeCheckboxClickHandler(SeriesGaugeCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addSeriesGaugeClickHandler(SeriesGaugeClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addSeriesGaugeHideHandler(SeriesGaugeHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addSeriesGaugeLegendItemClickHandler(SeriesGaugeLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addSeriesGaugeMouseOutHandler(SeriesGaugeMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addSeriesGaugeMouseOverHandler(SeriesGaugeMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addSeriesGaugeShowHandler(SeriesGaugeShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public String id() {

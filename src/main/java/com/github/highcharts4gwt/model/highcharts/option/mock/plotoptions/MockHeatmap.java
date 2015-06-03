@@ -4,16 +4,16 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Heatmap;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.DataLabels;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.Tooltip;
 
@@ -177,28 +177,28 @@ public class MockHeatmap
         return this;
     }
 
-    public void addHeatmapAfterAnimateHandler(HeatmapAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addHeatmapCheckboxClickHandler(HeatmapCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addHeatmapClickHandler(HeatmapClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addHeatmapHideHandler(HeatmapHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addHeatmapLegendItemClickHandler(HeatmapLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addHeatmapMouseOutHandler(HeatmapMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addHeatmapMouseOverHandler(HeatmapMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addHeatmapShowHandler(HeatmapShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public ArrayString keys() {

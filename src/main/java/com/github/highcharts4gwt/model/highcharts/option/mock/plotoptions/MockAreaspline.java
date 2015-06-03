@@ -4,17 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Areaspline;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AreasplineShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.areaspline.Tooltip;
 
@@ -160,28 +160,28 @@ public class MockAreaspline
         return this;
     }
 
-    public void addAreasplineAfterAnimateHandler(AreasplineAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addAreasplineCheckboxClickHandler(AreasplineCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addAreasplineClickHandler(AreasplineClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addAreasplineHideHandler(AreasplineHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addAreasplineLegendItemClickHandler(AreasplineLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addAreasplineMouseOutHandler(AreasplineMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addAreasplineMouseOverHandler(AreasplineMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addAreasplineShowHandler(AreasplineShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public String fillColor() {

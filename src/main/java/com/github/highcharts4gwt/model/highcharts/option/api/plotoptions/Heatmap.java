@@ -3,16 +3,16 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.DataLabels;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HeatmapShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.Tooltip;
 
@@ -196,21 +196,21 @@ public interface Heatmap {
      */
     Heatmap enableMouseTracking(boolean enableMouseTracking);
 
-    void addHeatmapAfterAnimateHandler(HeatmapAfterAnimateHandler heatmapAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addHeatmapCheckboxClickHandler(HeatmapCheckboxClickHandler heatmapCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addHeatmapClickHandler(HeatmapClickHandler heatmapClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addHeatmapHideHandler(HeatmapHideHandler heatmapHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addHeatmapLegendItemClickHandler(HeatmapLegendItemClickHandler heatmapLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addHeatmapMouseOutHandler(HeatmapMouseOutHandler heatmapMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addHeatmapMouseOverHandler(HeatmapMouseOverHandler heatmapMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addHeatmapShowHandler(HeatmapShowHandler heatmapShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * A custom mapping of data point array positions to respective object properties. For example, is the first key is <code>name</code>, the first item in a series.data array is interpreted as point.name.

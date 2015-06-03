@@ -4,19 +4,19 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.Level;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.Tooltip;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.TreemapShowHandler;
 
 
 /**
@@ -201,21 +201,21 @@ public interface Treemap {
      */
     Treemap enableMouseTracking(boolean enableMouseTracking);
 
-    void addTreemapAfterAnimateHandler(TreemapAfterAnimateHandler treemapAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addTreemapCheckboxClickHandler(TreemapCheckboxClickHandler treemapCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addTreemapClickHandler(TreemapClickHandler treemapClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addTreemapHideHandler(TreemapHideHandler treemapHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addTreemapLegendItemClickHandler(TreemapLegendItemClickHandler treemapLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addTreemapMouseOutHandler(TreemapMouseOutHandler treemapMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addTreemapMouseOverHandler(TreemapMouseOverHandler treemapMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addTreemapShowHandler(TreemapShowHandler treemapShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * This option decides if the user can interact with the parent nodes or just the leaf nodes. When this option is undefined, it will be true by default. However when allowDrillToNode is true, then it will be false by default.

@@ -3,16 +3,16 @@ package com.github.highcharts4gwt.model.highcharts.option.api.plotoptions;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.ArearangeAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.ArearangeCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.ArearangeClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.ArearangeHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.ArearangeLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.ArearangeMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.ArearangeMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.ArearangeShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.arearange.Tooltip;
 
@@ -174,21 +174,21 @@ public interface Arearange {
      */
     Arearange enableMouseTracking(boolean enableMouseTracking);
 
-    void addArearangeAfterAnimateHandler(ArearangeAfterAnimateHandler arearangeAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addArearangeCheckboxClickHandler(ArearangeCheckboxClickHandler arearangeCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addArearangeClickHandler(ArearangeClickHandler arearangeClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addArearangeHideHandler(ArearangeHideHandler arearangeHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addArearangeLegendItemClickHandler(ArearangeLegendItemClickHandler arearangeLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addArearangeMouseOutHandler(ArearangeMouseOutHandler arearangeMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addArearangeMouseOverHandler(ArearangeMouseOverHandler arearangeMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addArearangeShowHandler(ArearangeShowHandler arearangeShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * Fill color or gradient for the area. When <code>null</code>, the series' <code>color</code>  is  used with the series' <code>fillOpacity</code>.

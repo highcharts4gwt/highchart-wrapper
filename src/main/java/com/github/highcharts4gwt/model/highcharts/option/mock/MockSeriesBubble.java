@@ -5,18 +5,18 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesBubble;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.SeriesBubbleAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.SeriesBubbleCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.SeriesBubbleClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.SeriesBubbleHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.SeriesBubbleLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.SeriesBubbleMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.SeriesBubbleMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.SeriesBubbleShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbubble.Tooltip;
 
@@ -171,28 +171,28 @@ public class MockSeriesBubble
         return this;
     }
 
-    public void addSeriesBubbleAfterAnimateHandler(SeriesBubbleAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addSeriesBubbleCheckboxClickHandler(SeriesBubbleCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addSeriesBubbleClickHandler(SeriesBubbleClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addSeriesBubbleHideHandler(SeriesBubbleHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addSeriesBubbleLegendItemClickHandler(SeriesBubbleLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addSeriesBubbleMouseOutHandler(SeriesBubbleMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addSeriesBubbleMouseOverHandler(SeriesBubbleMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addSeriesBubbleShowHandler(SeriesBubbleShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public String id() {

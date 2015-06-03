@@ -1,13 +1,13 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge;
 
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.data.DataClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.data.DataMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.data.DataMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.data.DataRemoveHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.data.DataSelectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.data.DataUnselectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.data.DataUpdateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.data.ClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.data.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.data.MouseOverHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.data.RemoveHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.data.SelectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.data.UnselectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesgauge.data.UpdateHandler;
 
 
 /**
@@ -59,19 +59,19 @@ public interface Data {
      */
     Data dataLabels(String dataLabelsAsJsonString);
 
-    void addDataClickHandler(DataClickHandler dataClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addDataMouseOutHandler(DataMouseOutHandler dataMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addDataMouseOverHandler(DataMouseOverHandler dataMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addDataRemoveHandler(DataRemoveHandler dataRemoveHandler);
+    void addRemoveHandler(RemoveHandler removeHandler);
 
-    void addDataSelectHandler(DataSelectHandler dataSelectHandler);
+    void addSelectHandler(SelectHandler selectHandler);
 
-    void addDataUnselectHandler(DataUnselectHandler dataUnselectHandler);
+    void addUnselectHandler(UnselectHandler unselectHandler);
 
-    void addDataUpdateHandler(DataUpdateHandler dataUpdateHandler);
+    void addUpdateHandler(UpdateHandler updateHandler);
 
     /**
      * An id for the point. This can be used after render time to get a pointer to the point object through <code>chart.get()</code>.

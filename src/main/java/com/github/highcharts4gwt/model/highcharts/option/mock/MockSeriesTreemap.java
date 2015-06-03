@@ -4,18 +4,18 @@ package com.github.highcharts4gwt.model.highcharts.option.mock;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesTreemap;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.Level;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.Tooltip;
 
@@ -213,28 +213,28 @@ public class MockSeriesTreemap
         return this;
     }
 
-    public void addSeriesTreemapAfterAnimateHandler(SeriesTreemapAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addSeriesTreemapCheckboxClickHandler(SeriesTreemapCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addSeriesTreemapClickHandler(SeriesTreemapClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addSeriesTreemapHideHandler(SeriesTreemapHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addSeriesTreemapLegendItemClickHandler(SeriesTreemapLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addSeriesTreemapMouseOutHandler(SeriesTreemapMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addSeriesTreemapMouseOverHandler(SeriesTreemapMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addSeriesTreemapShowHandler(SeriesTreemapShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public String id() {

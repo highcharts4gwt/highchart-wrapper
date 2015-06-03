@@ -137,30 +137,6 @@ public interface ChartOptions {
     ChartOptions yAxis(YAxis yAxis);
 
     /**
-     * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
-     * 
-     */
-    Exporting exporting();
-
-    /**
-     * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
-     * 
-     */
-    ChartOptions exporting(Exporting exporting);
-
-    /**
-     * A collection of options for buttons and menus appearing in the exporting module.
-     * 
-     */
-    Navigation navigation();
-
-    /**
-     * A collection of options for buttons and menus appearing in the exporting module.
-     * 
-     */
-    ChartOptions navigation(Navigation navigation);
-
-    /**
      * The chart's subtitle
      * 
      */
@@ -183,6 +159,30 @@ public interface ChartOptions {
      * 
      */
     ChartOptions title(Title title);
+
+    /**
+     * A collection of options for buttons and menus appearing in the exporting module.
+     * 
+     */
+    Navigation navigation();
+
+    /**
+     * A collection of options for buttons and menus appearing in the exporting module.
+     * 
+     */
+    ChartOptions navigation(Navigation navigation);
+
+    /**
+     * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
+     * 
+     */
+    Exporting exporting();
+
+    /**
+     * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
+     * 
+     */
+    ChartOptions exporting(Exporting exporting);
 
     /**
      * Options for the tooltip that appears when the user hovers over a series or point.

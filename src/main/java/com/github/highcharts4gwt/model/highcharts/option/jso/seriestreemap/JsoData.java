@@ -2,13 +2,13 @@
 package com.github.highcharts4gwt.model.highcharts.option.jso.seriestreemap;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.Data;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.DataClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.DataMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.DataMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.DataRemoveHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.DataSelectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.DataUnselectHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.DataUpdateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.ClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.MouseOverHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.RemoveHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.SelectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.UnselectHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.UpdateHandler;
 import com.google.gwt.core.client.JavaScriptObject;
 
 
@@ -96,14 +96,14 @@ public class JsoData
     }-*/
     ;
 
-    public final native void addDataClickHandler(DataClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.DataClickHandler::onDataClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/data/DataClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/data/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -112,14 +112,14 @@ public class JsoData
         }-*/;
     ;
 
-    public final native void addDataMouseOutHandler(DataMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.DataMouseOutHandler::onDataMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/data/DataMouseOutEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/data/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -128,14 +128,14 @@ public class JsoData
         }-*/;
     ;
 
-    public final native void addDataMouseOverHandler(DataMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.DataMouseOverHandler::onDataMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/data/DataMouseOverEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/data/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -144,14 +144,14 @@ public class JsoData
         }-*/;
     ;
 
-    public final native void addDataRemoveHandler(DataRemoveHandler handler)
+    public final native void addRemoveHandler(RemoveHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     remove: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.DataRemoveHandler::onDataRemove(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/data/DataRemoveEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.RemoveHandler::onRemove(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/data/RemoveEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -160,14 +160,14 @@ public class JsoData
         }-*/;
     ;
 
-    public final native void addDataSelectHandler(DataSelectHandler handler)
+    public final native void addSelectHandler(SelectHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     select: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.DataSelectHandler::onDataSelect(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/data/DataSelectEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.SelectHandler::onSelect(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/data/SelectEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -176,14 +176,14 @@ public class JsoData
         }-*/;
     ;
 
-    public final native void addDataUnselectHandler(DataUnselectHandler handler)
+    public final native void addUnselectHandler(UnselectHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     unselect: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.DataUnselectHandler::onDataUnselect(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/data/DataUnselectEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.UnselectHandler::onUnselect(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/data/UnselectEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -192,14 +192,14 @@ public class JsoData
         }-*/;
     ;
 
-    public final native void addDataUpdateHandler(DataUpdateHandler handler)
+    public final native void addUpdateHandler(UpdateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     update: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.DataUpdateHandler::onDataUpdate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/data/DataUpdateEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.data.UpdateHandler::onUpdate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/data/UpdateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

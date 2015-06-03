@@ -5,17 +5,17 @@ import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesWaterfall;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -257,14 +257,14 @@ public class JsoSeriesWaterfall
     }-*/
     ;
 
-    public final native void addSeriesWaterfallAfterAnimateHandler(SeriesWaterfallAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    waterfallAfterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallAfterAnimateHandler::onSeriesWaterfallAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieswaterfall/SeriesWaterfallAfterAnimateEvent;)(
+                    afterAnimate: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieswaterfall/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -273,14 +273,14 @@ public class JsoSeriesWaterfall
         }-*/;
     ;
 
-    public final native void addSeriesWaterfallCheckboxClickHandler(SeriesWaterfallCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    waterfallCheckboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallCheckboxClickHandler::onSeriesWaterfallCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieswaterfall/SeriesWaterfallCheckboxClickEvent;)(
+                    checkboxClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieswaterfall/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -289,14 +289,14 @@ public class JsoSeriesWaterfall
         }-*/;
     ;
 
-    public final native void addSeriesWaterfallClickHandler(SeriesWaterfallClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    waterfallClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallClickHandler::onSeriesWaterfallClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieswaterfall/SeriesWaterfallClickEvent;)(
+                    click: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieswaterfall/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -305,14 +305,14 @@ public class JsoSeriesWaterfall
         }-*/;
     ;
 
-    public final native void addSeriesWaterfallHideHandler(SeriesWaterfallHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    waterfallHide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallHideHandler::onSeriesWaterfallHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieswaterfall/SeriesWaterfallHideEvent;)(
+                    hide: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieswaterfall/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -321,14 +321,14 @@ public class JsoSeriesWaterfall
         }-*/;
     ;
 
-    public final native void addSeriesWaterfallLegendItemClickHandler(SeriesWaterfallLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    waterfallLegendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallLegendItemClickHandler::onSeriesWaterfallLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieswaterfall/SeriesWaterfallLegendItemClickEvent;)(
+                    legendItemClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieswaterfall/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -337,14 +337,14 @@ public class JsoSeriesWaterfall
         }-*/;
     ;
 
-    public final native void addSeriesWaterfallMouseOutHandler(SeriesWaterfallMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    waterfallMouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallMouseOutHandler::onSeriesWaterfallMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieswaterfall/SeriesWaterfallMouseOutEvent;)(
+                    mouseOut: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieswaterfall/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -353,14 +353,14 @@ public class JsoSeriesWaterfall
         }-*/;
     ;
 
-    public final native void addSeriesWaterfallMouseOverHandler(SeriesWaterfallMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    waterfallMouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallMouseOverHandler::onSeriesWaterfallMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieswaterfall/SeriesWaterfallMouseOverEvent;)(
+                    mouseOver: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieswaterfall/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -369,14 +369,14 @@ public class JsoSeriesWaterfall
         }-*/;
     ;
 
-    public final native void addSeriesWaterfallShowHandler(SeriesWaterfallShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    waterfallShow: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.SeriesWaterfallShowHandler::onSeriesWaterfallShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieswaterfall/SeriesWaterfallShowEvent;)(
+                    show: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.serieswaterfall.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/serieswaterfall/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

@@ -4,17 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.SeriesPieShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespie.Tooltip;
 
@@ -282,21 +282,21 @@ public interface SeriesPie {
      */
     SeriesPie endAngle(double endAngle);
 
-    void addSeriesPieAfterAnimateHandler(SeriesPieAfterAnimateHandler seriesPieAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addSeriesPieCheckboxClickHandler(SeriesPieCheckboxClickHandler seriesPieCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addSeriesPieClickHandler(SeriesPieClickHandler seriesPieClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addSeriesPieHideHandler(SeriesPieHideHandler seriesPieHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addSeriesPieLegendItemClickHandler(SeriesPieLegendItemClickHandler seriesPieLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addSeriesPieMouseOutHandler(SeriesPieMouseOutHandler seriesPieMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addSeriesPieMouseOverHandler(SeriesPieMouseOverHandler seriesPieMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addSeriesPieShowHandler(SeriesPieShowHandler seriesPieShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * An id for the series. This can be used after render time to get a pointer to the series object through <code>chart.get()</code>.

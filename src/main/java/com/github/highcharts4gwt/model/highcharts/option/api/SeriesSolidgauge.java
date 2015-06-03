@@ -4,17 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.SeriesSolidgaugeAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.SeriesSolidgaugeCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.SeriesSolidgaugeClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.SeriesSolidgaugeHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.SeriesSolidgaugeLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.SeriesSolidgaugeMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.SeriesSolidgaugeMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.SeriesSolidgaugeShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriessolidgauge.Tooltip;
 
@@ -188,21 +188,21 @@ public interface SeriesSolidgauge {
      */
     SeriesSolidgauge enableMouseTracking(boolean enableMouseTracking);
 
-    void addSeriesSolidgaugeAfterAnimateHandler(SeriesSolidgaugeAfterAnimateHandler seriesSolidgaugeAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addSeriesSolidgaugeCheckboxClickHandler(SeriesSolidgaugeCheckboxClickHandler seriesSolidgaugeCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addSeriesSolidgaugeClickHandler(SeriesSolidgaugeClickHandler seriesSolidgaugeClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addSeriesSolidgaugeHideHandler(SeriesSolidgaugeHideHandler seriesSolidgaugeHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addSeriesSolidgaugeLegendItemClickHandler(SeriesSolidgaugeLegendItemClickHandler seriesSolidgaugeLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addSeriesSolidgaugeMouseOutHandler(SeriesSolidgaugeMouseOutHandler seriesSolidgaugeMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addSeriesSolidgaugeMouseOverHandler(SeriesSolidgaugeMouseOverHandler seriesSolidgaugeMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addSeriesSolidgaugeShowHandler(SeriesSolidgaugeShowHandler seriesSolidgaugeShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * An id for the series. This can be used after render time to get a pointer to the series object through <code>chart.get()</code>.

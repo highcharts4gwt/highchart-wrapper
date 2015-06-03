@@ -4,18 +4,18 @@ package com.github.highcharts4gwt.model.highcharts.option.jso;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.SeriesTreemap;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.Level;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -231,14 +231,14 @@ public class JsoSeriesTreemap
     }-*/
     ;
 
-    public final native void addSeriesTreemapAfterAnimateHandler(SeriesTreemapAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    treemapAfterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapAfterAnimateHandler::onSeriesTreemapAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/SeriesTreemapAfterAnimateEvent;)(
+                    afterAnimate: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -247,14 +247,14 @@ public class JsoSeriesTreemap
         }-*/;
     ;
 
-    public final native void addSeriesTreemapCheckboxClickHandler(SeriesTreemapCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    treemapCheckboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapCheckboxClickHandler::onSeriesTreemapCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/SeriesTreemapCheckboxClickEvent;)(
+                    checkboxClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -263,14 +263,14 @@ public class JsoSeriesTreemap
         }-*/;
     ;
 
-    public final native void addSeriesTreemapClickHandler(SeriesTreemapClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    treemapClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapClickHandler::onSeriesTreemapClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/SeriesTreemapClickEvent;)(
+                    click: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -279,14 +279,14 @@ public class JsoSeriesTreemap
         }-*/;
     ;
 
-    public final native void addSeriesTreemapHideHandler(SeriesTreemapHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    treemapHide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapHideHandler::onSeriesTreemapHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/SeriesTreemapHideEvent;)(
+                    hide: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -295,14 +295,14 @@ public class JsoSeriesTreemap
         }-*/;
     ;
 
-    public final native void addSeriesTreemapLegendItemClickHandler(SeriesTreemapLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    treemapLegendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapLegendItemClickHandler::onSeriesTreemapLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/SeriesTreemapLegendItemClickEvent;)(
+                    legendItemClick: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -311,14 +311,14 @@ public class JsoSeriesTreemap
         }-*/;
     ;
 
-    public final native void addSeriesTreemapMouseOutHandler(SeriesTreemapMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    treemapMouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapMouseOutHandler::onSeriesTreemapMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/SeriesTreemapMouseOutEvent;)(
+                    mouseOut: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -327,14 +327,14 @@ public class JsoSeriesTreemap
         }-*/;
     ;
 
-    public final native void addSeriesTreemapMouseOverHandler(SeriesTreemapMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    treemapMouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapMouseOverHandler::onSeriesTreemapMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/SeriesTreemapMouseOverEvent;)(
+                    mouseOver: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -343,14 +343,14 @@ public class JsoSeriesTreemap
         }-*/;
     ;
 
-    public final native void addSeriesTreemapShowHandler(SeriesTreemapShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
-                    treemapShow: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapShowHandler::onSeriesTreemapShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/SeriesTreemapShowEvent;)(
+                    show: function(event) {
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/seriestreemap/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }

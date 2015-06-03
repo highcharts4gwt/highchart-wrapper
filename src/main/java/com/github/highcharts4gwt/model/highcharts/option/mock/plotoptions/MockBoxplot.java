@@ -4,15 +4,15 @@ package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Boxplot;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.BoxplotAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.BoxplotCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.BoxplotClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.BoxplotHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.BoxplotLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.BoxplotMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.BoxplotMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.BoxplotShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.ClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.LegendItemClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.boxplot.Tooltip;
 
@@ -154,28 +154,28 @@ public class MockBoxplot
         return this;
     }
 
-    public void addBoxplotAfterAnimateHandler(BoxplotAfterAnimateHandler handler) {
+    public void addAfterAnimateHandler(AfterAnimateHandler handler) {
     }
 
-    public void addBoxplotCheckboxClickHandler(BoxplotCheckboxClickHandler handler) {
+    public void addCheckboxClickHandler(CheckboxClickHandler handler) {
     }
 
-    public void addBoxplotClickHandler(BoxplotClickHandler handler) {
+    public void addClickHandler(ClickHandler handler) {
     }
 
-    public void addBoxplotHideHandler(BoxplotHideHandler handler) {
+    public void addHideHandler(HideHandler handler) {
     }
 
-    public void addBoxplotLegendItemClickHandler(BoxplotLegendItemClickHandler handler) {
+    public void addLegendItemClickHandler(LegendItemClickHandler handler) {
     }
 
-    public void addBoxplotMouseOutHandler(BoxplotMouseOutHandler handler) {
+    public void addMouseOutHandler(MouseOutHandler handler) {
     }
 
-    public void addBoxplotMouseOverHandler(BoxplotMouseOverHandler handler) {
+    public void addMouseOverHandler(MouseOverHandler handler) {
     }
 
-    public void addBoxplotShowHandler(BoxplotShowHandler handler) {
+    public void addShowHandler(ShowHandler handler) {
     }
 
     public String fillColor() {

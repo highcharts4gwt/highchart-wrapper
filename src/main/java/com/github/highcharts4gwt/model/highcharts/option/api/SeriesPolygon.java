@@ -4,18 +4,18 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.SeriesPolygonShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.Tooltip;
 
@@ -239,21 +239,21 @@ public interface SeriesPolygon {
      */
     SeriesPolygon enableMouseTracking(boolean enableMouseTracking);
 
-    void addSeriesPolygonAfterAnimateHandler(SeriesPolygonAfterAnimateHandler seriesPolygonAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addSeriesPolygonCheckboxClickHandler(SeriesPolygonCheckboxClickHandler seriesPolygonCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addSeriesPolygonClickHandler(SeriesPolygonClickHandler seriesPolygonClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addSeriesPolygonHideHandler(SeriesPolygonHideHandler seriesPolygonHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addSeriesPolygonLegendItemClickHandler(SeriesPolygonLegendItemClickHandler seriesPolygonLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addSeriesPolygonMouseOutHandler(SeriesPolygonMouseOutHandler seriesPolygonMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addSeriesPolygonMouseOverHandler(SeriesPolygonMouseOverHandler seriesPolygonMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addSeriesPolygonShowHandler(SeriesPolygonShowHandler seriesPolygonShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * An id for the series. This can be used after render time to get a pointer to the series object through <code>chart.get()</code>.

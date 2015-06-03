@@ -2,17 +2,17 @@
 package com.github.highcharts4gwt.model.highcharts.option.api;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartAddSeriesHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartAfterPrintHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartBeforePrintHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartDrilldownHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartDrillupHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartLoadHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartRedrawHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.chart.ChartSelectionHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.AddSeriesHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.AfterPrintHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.BeforePrintHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.ClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.DrilldownHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.DrillupHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.LoadHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.Options3d;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.RedrawHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.chart.ResetZoomButton;
+import com.github.highcharts4gwt.model.highcharts.option.api.chart.SelectionHandler;
 
 
 /**
@@ -130,23 +130,23 @@ public interface Chart {
      */
     Chart defaultSeriesType(String defaultSeriesType);
 
-    void addChartAddSeriesHandler(ChartAddSeriesHandler chartAddSeriesHandler);
+    void addAddSeriesHandler(AddSeriesHandler addSeriesHandler);
 
-    void addChartAfterPrintHandler(ChartAfterPrintHandler chartAfterPrintHandler);
+    void addAfterPrintHandler(AfterPrintHandler afterPrintHandler);
 
-    void addChartBeforePrintHandler(ChartBeforePrintHandler chartBeforePrintHandler);
+    void addBeforePrintHandler(BeforePrintHandler beforePrintHandler);
 
-    void addChartClickHandler(ChartClickHandler chartClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addChartDrilldownHandler(ChartDrilldownHandler chartDrilldownHandler);
+    void addDrilldownHandler(DrilldownHandler drilldownHandler);
 
-    void addChartDrillupHandler(ChartDrillupHandler chartDrillupHandler);
+    void addDrillupHandler(DrillupHandler drillupHandler);
 
-    void addChartLoadHandler(ChartLoadHandler chartLoadHandler);
+    void addLoadHandler(LoadHandler loadHandler);
 
-    void addChartRedrawHandler(ChartRedrawHandler chartRedrawHandler);
+    void addRedrawHandler(RedrawHandler redrawHandler);
 
-    void addChartSelectionHandler(ChartSelectionHandler chartSelectionHandler);
+    void addSelectionHandler(SelectionHandler selectionHandler);
 
     /**
      * An explicit height for the chart. By default the height is calculated from the offset height of the containing element, or 400 pixels if the containing element's height is 0.

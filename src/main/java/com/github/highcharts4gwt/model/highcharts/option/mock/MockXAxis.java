@@ -4,14 +4,14 @@ package com.github.highcharts4gwt.model.highcharts.option.mock;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.XAxis;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.AfterBreaksHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.AfterSetExtremesHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Labels;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PlotBand;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PlotLine;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.PointBreakHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.SetExtremesHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.Title;
-import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterBreaksHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisAfterSetExtremesHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisPointBreakHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.XAxisSetExtremesHandler;
 
 
 /**
@@ -147,16 +147,16 @@ public class MockXAxis
         return this;
     }
 
-    public void addXAxisAfterBreaksHandler(XAxisAfterBreaksHandler handler) {
+    public void addAfterBreaksHandler(AfterBreaksHandler handler) {
     }
 
-    public void addXAxisAfterSetExtremesHandler(XAxisAfterSetExtremesHandler handler) {
+    public void addAfterSetExtremesHandler(AfterSetExtremesHandler handler) {
     }
 
-    public void addXAxisPointBreakHandler(XAxisPointBreakHandler handler) {
+    public void addPointBreakHandler(PointBreakHandler handler) {
     }
 
-    public void addXAxisSetExtremesHandler(XAxisSetExtremesHandler handler) {
+    public void addSetExtremesHandler(SetExtremesHandler handler) {
     }
 
     public double floor() {

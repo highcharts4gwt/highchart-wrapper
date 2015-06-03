@@ -4,18 +4,18 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 import com.github.highcharts4gwt.model.array.api.Array;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.SeriesAreasplineAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.SeriesAreasplineCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.SeriesAreasplineClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.SeriesAreasplineHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.SeriesAreasplineLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.SeriesAreasplineMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.SeriesAreasplineMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.SeriesAreasplineShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesareaspline.Tooltip;
 
@@ -337,21 +337,21 @@ public interface SeriesAreaspline {
      */
     SeriesAreaspline enableMouseTracking(boolean enableMouseTracking);
 
-    void addSeriesAreasplineAfterAnimateHandler(SeriesAreasplineAfterAnimateHandler seriesAreasplineAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addSeriesAreasplineCheckboxClickHandler(SeriesAreasplineCheckboxClickHandler seriesAreasplineCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addSeriesAreasplineClickHandler(SeriesAreasplineClickHandler seriesAreasplineClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addSeriesAreasplineHideHandler(SeriesAreasplineHideHandler seriesAreasplineHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addSeriesAreasplineLegendItemClickHandler(SeriesAreasplineLegendItemClickHandler seriesAreasplineLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addSeriesAreasplineMouseOutHandler(SeriesAreasplineMouseOutHandler seriesAreasplineMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addSeriesAreasplineMouseOverHandler(SeriesAreasplineMouseOverHandler seriesAreasplineMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addSeriesAreasplineShowHandler(SeriesAreasplineShowHandler seriesAreasplineShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * Fill color or gradient for the area. When <code>null</code>, the series' <code>color</code>  is  used with the series' <code>fillOpacity</code>.

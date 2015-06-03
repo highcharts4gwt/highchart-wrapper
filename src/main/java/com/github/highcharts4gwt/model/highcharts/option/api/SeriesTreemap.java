@@ -3,18 +3,18 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.Data;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.Level;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.Point;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.SeriesTreemapShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.Tooltip;
 
@@ -298,21 +298,21 @@ public interface SeriesTreemap {
      */
     SeriesTreemap enableMouseTracking(boolean enableMouseTracking);
 
-    void addSeriesTreemapAfterAnimateHandler(SeriesTreemapAfterAnimateHandler seriesTreemapAfterAnimateHandler);
+    void addAfterAnimateHandler(AfterAnimateHandler afterAnimateHandler);
 
-    void addSeriesTreemapCheckboxClickHandler(SeriesTreemapCheckboxClickHandler seriesTreemapCheckboxClickHandler);
+    void addCheckboxClickHandler(CheckboxClickHandler checkboxClickHandler);
 
-    void addSeriesTreemapClickHandler(SeriesTreemapClickHandler seriesTreemapClickHandler);
+    void addClickHandler(ClickHandler clickHandler);
 
-    void addSeriesTreemapHideHandler(SeriesTreemapHideHandler seriesTreemapHideHandler);
+    void addHideHandler(HideHandler hideHandler);
 
-    void addSeriesTreemapLegendItemClickHandler(SeriesTreemapLegendItemClickHandler seriesTreemapLegendItemClickHandler);
+    void addLegendItemClickHandler(LegendItemClickHandler legendItemClickHandler);
 
-    void addSeriesTreemapMouseOutHandler(SeriesTreemapMouseOutHandler seriesTreemapMouseOutHandler);
+    void addMouseOutHandler(MouseOutHandler mouseOutHandler);
 
-    void addSeriesTreemapMouseOverHandler(SeriesTreemapMouseOverHandler seriesTreemapMouseOverHandler);
+    void addMouseOverHandler(MouseOverHandler mouseOverHandler);
 
-    void addSeriesTreemapShowHandler(SeriesTreemapShowHandler seriesTreemapShowHandler);
+    void addShowHandler(ShowHandler showHandler);
 
     /**
      * An id for the series. This can be used after render time to get a pointer to the series object through <code>chart.get()</code>.

@@ -4,17 +4,17 @@ package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions;
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.Bubble;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleAfterAnimateHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleCheckboxClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleHideHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleLegendItemClickHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleMouseOutHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleMouseOverHandler;
-import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleShowHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.AfterAnimateHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.CheckboxClickHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.ClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.HideHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.LegendItemClickHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.Marker;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.MouseOutHandler;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.MouseOverHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.Point;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.ShowHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.States;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
@@ -150,14 +150,14 @@ public class JsoBubble
     }-*/
     ;
 
-    public final native void addBubbleAfterAnimateHandler(BubbleAfterAnimateHandler handler)
+    public final native void addAfterAnimateHandler(AfterAnimateHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     afterAnimate: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleAfterAnimateHandler::onBubbleAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/BubbleAfterAnimateEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.AfterAnimateHandler::onAfterAnimate(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/AfterAnimateEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -166,14 +166,14 @@ public class JsoBubble
         }-*/;
     ;
 
-    public final native void addBubbleCheckboxClickHandler(BubbleCheckboxClickHandler handler)
+    public final native void addCheckboxClickHandler(CheckboxClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     checkboxClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleCheckboxClickHandler::onBubbleCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/BubbleCheckboxClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.CheckboxClickHandler::onCheckboxClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/CheckboxClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -182,14 +182,14 @@ public class JsoBubble
         }-*/;
     ;
 
-    public final native void addBubbleClickHandler(BubbleClickHandler handler)
+    public final native void addClickHandler(ClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     click: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleClickHandler::onBubbleClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/BubbleClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.ClickHandler::onClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/ClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -198,14 +198,14 @@ public class JsoBubble
         }-*/;
     ;
 
-    public final native void addBubbleHideHandler(BubbleHideHandler handler)
+    public final native void addHideHandler(HideHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     hide: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleHideHandler::onBubbleHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/BubbleHideEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.HideHandler::onHide(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/HideEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -214,14 +214,14 @@ public class JsoBubble
         }-*/;
     ;
 
-    public final native void addBubbleLegendItemClickHandler(BubbleLegendItemClickHandler handler)
+    public final native void addLegendItemClickHandler(LegendItemClickHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     legendItemClick: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleLegendItemClickHandler::onBubbleLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/BubbleLegendItemClickEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.LegendItemClickHandler::onLegendItemClick(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/LegendItemClickEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -230,14 +230,14 @@ public class JsoBubble
         }-*/;
     ;
 
-    public final native void addBubbleMouseOutHandler(BubbleMouseOutHandler handler)
+    public final native void addMouseOutHandler(MouseOutHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOut: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleMouseOutHandler::onBubbleMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/BubbleMouseOutEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.MouseOutHandler::onMouseOut(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/MouseOutEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -246,14 +246,14 @@ public class JsoBubble
         }-*/;
     ;
 
-    public final native void addBubbleMouseOverHandler(BubbleMouseOverHandler handler)
+    public final native void addMouseOverHandler(MouseOverHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     mouseOver: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleMouseOverHandler::onBubbleMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/BubbleMouseOverEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.MouseOverHandler::onMouseOver(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/MouseOverEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
@@ -262,14 +262,14 @@ public class JsoBubble
         }-*/;
     ;
 
-    public final native void addBubbleShowHandler(BubbleShowHandler handler)
+    public final native void addShowHandler(ShowHandler handler)
         throws RuntimeException 
         /*-{
             $wnd.jQuery.extend(true, this, 
             {
                 events: {
                     show: function(event) {
-                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.BubbleShowHandler::onBubbleShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/BubbleShowEvent;)(
+                        handler.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.bubble.ShowHandler::onShow(Lcom/github/highcharts4gwt/model/highcharts/option/api/plotoptions/bubble/ShowEvent;)(
                             $wnd.jQuery.extend(true, event, {source:this})
                          );
                      }
