@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.GetTimezoneOffsetCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.Global;
 
 
@@ -50,6 +51,10 @@ public class MockGlobal
 
     public MockGlobal canvasToolsURL(String canvasToolsURL) {
         this.canvasToolsURL = canvasToolsURL;
+        return this;
+    }
+
+    public MockGlobal getTimezoneOffset(GetTimezoneOffsetCallback getTimezoneOffset) {
         return this;
     }
 

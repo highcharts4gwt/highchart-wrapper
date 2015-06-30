@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.mock.seriesfunnel;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesfunnel.FormatterCallback;
 
 
 /**
@@ -155,6 +156,10 @@ public class MockDataLabels
 
     public MockDataLabels format(String format) {
         this.format = format;
+        return this;
+    }
+
+    public MockDataLabels formatter(FormatterCallback formatter) {
         return this;
     }
 

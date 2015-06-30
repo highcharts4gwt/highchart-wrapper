@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesareasplinerange.PointFormatterCallback;
 
 
 /**
@@ -123,6 +124,12 @@ public interface Tooltip {
      * 
      */
     Tooltip pointFormat(String pointFormat);
+
+    /**
+     * A callback function for formatting the HTML output for a single point in the tooltip. Like the <code>pointFormat</code> string, but with more flexibility.
+     * 
+     */
+    Tooltip pointFormatter(PointFormatterCallback pointFormatter);
 
     /**
      * The name of a symbol to use for the border around the tooltip. In Highcharts 3.x and less, the shape was <code>square</code>.

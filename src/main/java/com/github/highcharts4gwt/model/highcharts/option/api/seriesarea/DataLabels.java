@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.seriesarea;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarea.FormatterCallback;
 
 
 /**
@@ -140,6 +141,40 @@ public interface DataLabels {
      * 
      */
     DataLabels format(String format);
+
+    /**
+     * Callback JavaScript function to format the data label. Note that if a <code>format</code> is defined, the format takes precedence and the formatter is ignored. Available data are:
+     * <table>
+     * <tbody><tr>
+     *   <td><code>this.percentage</code></td>
+     *   <td>Stacked series and pies only. The point's percentage of the total.</td>
+     * </tr>
+     * <tr>
+     *   <td><code>this.point</code></td>
+     *   <td>The point object. The point name, if defined, is available 
+     * through <code>this.point.name</code>.</td>
+     * </tr>
+     * <tr>
+     *   <td><code>this.series</code>:</td>
+     *   <td>The series object. The series name is available 
+     * through <code>this.series.name</code>.</td>
+     * </tr>
+     * <tr>
+     *   <td><code>this.total</code></td>
+     *   <td>Stacked series only. The total value at this point's x value.</td>
+     * </tr>				
+     * <tr>
+     *   <td><code>this.x</code>:</td>
+     *   <td>The x value.</td>
+     * </tr>
+     * <tr>
+     *   <td><code>this.y</code>:</td>
+     *   <td>The y value.</td>
+     * </tr>
+     * </tbody></table>
+     * 
+     */
+    DataLabels formatter(FormatterCallback formatter);
 
     /**
      * For points with an extent, like columns, whether to align the data label inside the box or to the actual value point. Defaults to <code>false</code> in most cases, <code>true</code> in stacked columns.

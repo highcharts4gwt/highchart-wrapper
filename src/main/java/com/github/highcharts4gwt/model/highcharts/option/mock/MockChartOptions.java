@@ -36,10 +36,10 @@ public class MockChartOptions
     private PlotOptions plotOptions;
     private XAxis xAxis;
     private YAxis yAxis;
-    private Subtitle subtitle;
+    private Exporting exporting;
     private Title title;
     private Navigation navigation;
-    private Exporting exporting;
+    private Subtitle subtitle;
     private Tooltip tooltip;
     private NoData noData;
     private Pane pane;
@@ -106,12 +106,12 @@ public class MockChartOptions
         return this;
     }
 
-    public Subtitle subtitle() {
-        return subtitle;
+    public Exporting exporting() {
+        return exporting;
     }
 
-    public MockChartOptions subtitle(Subtitle subtitle) {
-        this.subtitle = subtitle;
+    public MockChartOptions exporting(Exporting exporting) {
+        this.exporting = exporting;
         return this;
     }
 
@@ -133,12 +133,12 @@ public class MockChartOptions
         return this;
     }
 
-    public Exporting exporting() {
-        return exporting;
+    public Subtitle subtitle() {
+        return subtitle;
     }
 
-    public MockChartOptions exporting(Exporting exporting) {
-        this.exporting = exporting;
+    public MockChartOptions subtitle(Subtitle subtitle) {
+        this.subtitle = subtitle;
         return this;
     }
 

@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.mock.seriespyramid;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespyramid.FormatterCallback;
 
 
 /**
@@ -155,6 +156,10 @@ public class MockDataLabels
 
     public MockDataLabels format(String format) {
         this.format = format;
+        return this;
+    }
+
+    public MockDataLabels formatter(FormatterCallback formatter) {
         return this;
     }
 

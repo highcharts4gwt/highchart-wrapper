@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.seriesheatmap;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.PointFormatterCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesheatmap.Tooltip;
 
 
@@ -87,6 +88,10 @@ public class MockTooltip
 
     public MockTooltip pointFormat(String pointFormat) {
         this.pointFormat = pointFormat;
+        return this;
+    }
+
+    public MockTooltip pointFormatter(PointFormatterCallback pointFormatter) {
         return this;
     }
 

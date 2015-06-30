@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.jso.exporting.buttons;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.exporting.buttons.ContextButton;
+import com.github.highcharts4gwt.model.highcharts.option.api.exporting.buttons.OnclickCallback;
 import com.google.gwt.core.client.JavaScriptObject;
 
 
@@ -69,6 +70,20 @@ public class JsoContextButton
         this["menuItems"] = JSON.parse(menuItemsAsJsonStringArray);
         return this;
     }-*/
+    ;
+
+    public final native JsoContextButton onclick(OnclickCallback onclick)
+        throws RuntimeException 
+            /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                onclick: function() {
+                    return onclick.@com.github.highcharts4gwt.model.highcharts.option.api.exporting.buttons.OnclickCallback::onCallback()(
+                        
+                     );
+                 }
+             });
+    }-*/;
     ;
 
     public final native String symbol()

@@ -1,6 +1,9 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.CompleteCallback;
+import com.github.highcharts4gwt.model.highcharts.option.api.ParseDateCallback;
+import com.github.highcharts4gwt.model.highcharts.option.api.ParsedCallback;
 
 
 /**
@@ -13,6 +16,12 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
  */
 public interface Data {
 
+
+    /**
+     * The callback that is evaluated when the data is finished loading, optionally from an external source, and parsed. The first argument passed is a finished chart options object, containing the series. These options can be extended with additional options and passed directly to the chart constructor.
+     * 
+     */
+    Data complete(CompleteCallback complete);
 
     /**
      * A comma delimited string to be parsed. Related options are <a href="#data.startRow">startRow</a>, <a href="#data.endRow">endRow</a>, <a href="#data.startColumn">startColumn</a> and <a href="#data.endColumn">endColumn</a> to delimit what part of the table is used. The <a href="#data.lineDelimiter">lineDelimiter</a> and <a href="#data.itemDelimiter">itemDelimiter</a> options define the CSV delimiter formats.
@@ -153,6 +162,18 @@ public interface Data {
      * 
      */
     Data lineDelimiter(String lineDelimiter);
+
+    /**
+     * A callback function to parse string representations of dates into JavaScript timestamps. Should return an integer timestamp on success.
+     * 
+     */
+    Data parseDate(ParseDateCallback parseDate);
+
+    /**
+     * A callback function to access the parsed columns, the two-dimentional input data array directly, before they are interpreted into series data and categories. Return <code>false</code> to stop completion, or call <code>this.complete()</code> to continue async.
+     * 
+     */
+    Data parsed(ParsedCallback parsed);
 
     /**
      * An array containing object with Point property names along with what column id the property should be taken from.

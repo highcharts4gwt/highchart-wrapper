@@ -3,6 +3,7 @@ package com.github.highcharts4gwt.model.highcharts.option.jso;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.TickPositionerCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.YAxis;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.AfterBreaksHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.AfterSetExtremesHandler;
@@ -798,6 +799,20 @@ public class JsoYAxis
         this["tickPosition"] = tickPosition;
         return this;
     }-*/
+    ;
+
+    public final native JsoYAxis tickPositioner(TickPositionerCallback tickPositioner)
+        throws RuntimeException 
+            /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                tickPositioner: function() {
+                    return tickPositioner.@com.github.highcharts4gwt.model.highcharts.option.api.TickPositionerCallback::onCallback()(
+                        
+                     );
+                 }
+             });
+    }-*/;
     ;
 
     public final native ArrayNumber tickPositions()

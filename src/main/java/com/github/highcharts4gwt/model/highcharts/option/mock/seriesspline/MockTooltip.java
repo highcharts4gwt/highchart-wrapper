@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.seriesspline;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.PointFormatterCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesspline.Tooltip;
 
 
@@ -87,6 +88,10 @@ public class MockTooltip
 
     public MockTooltip pointFormat(String pointFormat) {
         this.pointFormat = pointFormat;
+        return this;
+    }
+
+    public MockTooltip pointFormatter(PointFormatterCallback pointFormatter) {
         return this;
     }
 

@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.LabelFormatterCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.Legend;
 import com.github.highcharts4gwt.model.highcharts.option.api.legend.Navigation;
 import com.github.highcharts4gwt.model.highcharts.option.api.legend.Title;
@@ -186,6 +187,10 @@ public class MockLegend
 
     public MockLegend labelFormat(String labelFormat) {
         this.labelFormat = labelFormat;
+        return this;
+    }
+
+    public MockLegend labelFormatter(LabelFormatterCallback labelFormatter) {
         return this;
     }
 

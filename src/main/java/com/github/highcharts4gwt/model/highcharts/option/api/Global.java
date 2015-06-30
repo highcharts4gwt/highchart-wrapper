@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.GetTimezoneOffsetCallback;
 
 
 /**
@@ -57,6 +58,12 @@ public interface Global {
      * 
      */
     Global canvasToolsURL(String canvasToolsURL);
+
+    /**
+     * A callback to return the time zone offset for a given datetime. It takes the timestamp in terms of milliseconds since January 1 1970, and returns the timezone offset in minutes. This provides a hook for drawing time based charts in specific time zones using their local DST crossover dates, with the help of external libraries.
+     * 
+     */
+    Global getTimezoneOffset(GetTimezoneOffsetCallback getTimezoneOffset);
 
     /**
      * The timezone offset in minutes. Positive values are west, negative values are east of UTC, as in the ECMAScript <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTimezoneOffset">getTimezoneOffset</a> method. Use this to display UTC based data in a predefined time zone.

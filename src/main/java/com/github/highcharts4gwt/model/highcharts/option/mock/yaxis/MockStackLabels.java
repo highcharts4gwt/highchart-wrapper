@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.yaxis;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.FormatterCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.StackLabels;
 
 
@@ -51,6 +52,10 @@ public class MockStackLabels
 
     public MockStackLabels format(String format) {
         this.format = format;
+        return this;
+    }
+
+    public MockStackLabels formatter(FormatterCallback formatter) {
         return this;
     }
 

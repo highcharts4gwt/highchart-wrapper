@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.pie;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.PointFormatterCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.pie.Tooltip;
 
 
@@ -87,6 +88,10 @@ public class MockTooltip
 
     public MockTooltip pointFormat(String pointFormat) {
         this.pointFormat = pointFormat;
+        return this;
+    }
+
+    public MockTooltip pointFormatter(PointFormatterCallback pointFormatter) {
         return this;
     }
 

@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.mock.seriesarearange;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesarearange.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesarearange.FormatterCallback;
 
 
 /**
@@ -137,6 +138,10 @@ public class MockDataLabels
 
     public MockDataLabels format(String format) {
         this.format = format;
+        return this;
+    }
+
+    public MockDataLabels formatter(FormatterCallback formatter) {
         return this;
     }
 

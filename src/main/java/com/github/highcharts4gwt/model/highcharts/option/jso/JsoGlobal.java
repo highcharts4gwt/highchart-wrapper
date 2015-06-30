@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.GetTimezoneOffsetCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.Global;
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -62,6 +63,20 @@ public class JsoGlobal
         this["canvasToolsURL"] = canvasToolsURL;
         return this;
     }-*/
+    ;
+
+    public final native JsoGlobal getTimezoneOffset(GetTimezoneOffsetCallback getTimezoneOffset)
+        throws RuntimeException 
+            /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                getTimezoneOffset: function() {
+                    return getTimezoneOffset.@com.github.highcharts4gwt.model.highcharts.option.api.GetTimezoneOffsetCallback::onCallback()(
+                        
+                     );
+                 }
+             });
+    }-*/;
     ;
 
     public final native double timezoneOffset()

@@ -1,6 +1,9 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.FormatterCallback;
+import com.github.highcharts4gwt.model.highcharts.option.api.PointFormatterCallback;
+import com.github.highcharts4gwt.model.highcharts.option.api.PositionerCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.Tooltip;
 
 
@@ -128,6 +131,10 @@ public class MockTooltip
         return this;
     }
 
+    public MockTooltip formatter(FormatterCallback formatter) {
+        return this;
+    }
+
     public String headerFormat() {
         return headerFormat;
     }
@@ -152,6 +159,14 @@ public class MockTooltip
 
     public MockTooltip pointFormat(String pointFormat) {
         this.pointFormat = pointFormat;
+        return this;
+    }
+
+    public MockTooltip pointFormatter(PointFormatterCallback pointFormatter) {
+        return this;
+    }
+
+    public MockTooltip positioner(PositionerCallback positioner) {
         return this;
     }
 

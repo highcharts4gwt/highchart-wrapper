@@ -137,16 +137,16 @@ public interface ChartOptions {
     ChartOptions yAxis(YAxis yAxis);
 
     /**
-     * The chart's subtitle
+     * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
      * 
      */
-    Subtitle subtitle();
+    Exporting exporting();
 
     /**
-     * The chart's subtitle
+     * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
      * 
      */
-    ChartOptions subtitle(Subtitle subtitle);
+    ChartOptions exporting(Exporting exporting);
 
     /**
      * The chart's main title.
@@ -173,16 +173,16 @@ public interface ChartOptions {
     ChartOptions navigation(Navigation navigation);
 
     /**
-     * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
+     * The chart's subtitle
      * 
      */
-    Exporting exporting();
+    Subtitle subtitle();
 
     /**
-     * Options for the exporting module. For an overview on the matter, see <a href="http://www.highcharts.com/docs/export-module/export-module-overview">the docs</a>.
+     * The chart's subtitle
      * 
      */
-    ChartOptions exporting(Exporting exporting);
+    ChartOptions subtitle(Subtitle subtitle);
 
     /**
      * Options for the tooltip that appears when the user hovers over a series or point.

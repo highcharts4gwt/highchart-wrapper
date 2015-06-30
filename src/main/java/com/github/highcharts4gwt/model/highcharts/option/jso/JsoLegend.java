@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.LabelFormatterCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.Legend;
 import com.github.highcharts4gwt.model.highcharts.option.api.legend.Navigation;
 import com.github.highcharts4gwt.model.highcharts.option.api.legend.Title;
@@ -217,6 +218,20 @@ public class JsoLegend
         this["labelFormat"] = labelFormat;
         return this;
     }-*/
+    ;
+
+    public final native JsoLegend labelFormatter(LabelFormatterCallback labelFormatter)
+        throws RuntimeException 
+            /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                labelFormatter: function() {
+                    return labelFormatter.@com.github.highcharts4gwt.model.highcharts.option.api.LabelFormatterCallback::onCallback()(
+                        
+                     );
+                 }
+             });
+    }-*/;
     ;
 
     public final native String layout()

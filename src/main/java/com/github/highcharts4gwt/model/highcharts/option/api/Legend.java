@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.LabelFormatterCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.legend.Navigation;
 import com.github.highcharts4gwt.model.highcharts.option.api.legend.Title;
 
@@ -204,6 +205,12 @@ public interface Legend {
      * 
      */
     Legend labelFormat(String labelFormat);
+
+    /**
+     * Callback function to format each of the series' labels. The <em>this</em> keyword refers to the series object, or the point object in case of pie charts. By default the series or point name is printed.
+     * 
+     */
+    Legend labelFormatter(LabelFormatterCallback labelFormatter);
 
     /**
      * The layout of the legend items. Can be one of "horizontal" or "vertical".

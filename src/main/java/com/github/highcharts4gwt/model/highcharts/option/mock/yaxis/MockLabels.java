@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.mock.yaxis;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.FormatterCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.Labels;
 
 
@@ -83,6 +84,10 @@ public class MockLabels
 
     public MockLabels format(String format) {
         this.format = format;
+        return this;
+    }
+
+    public MockLabels formatter(FormatterCallback formatter) {
         return this;
     }
 

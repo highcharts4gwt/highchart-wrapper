@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso.yaxis;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.FormatterCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.StackLabels;
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -57,6 +58,20 @@ public class JsoStackLabels
         this["format"] = format;
         return this;
     }-*/
+    ;
+
+    public final native JsoStackLabels formatter(FormatterCallback formatter)
+        throws RuntimeException 
+            /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                formatter: function() {
+                    return formatter.@com.github.highcharts4gwt.model.highcharts.option.api.yaxis.FormatterCallback::onCallback()(
+                        
+                     );
+                 }
+             });
+    }-*/;
     ;
 
     public final native double rotation()

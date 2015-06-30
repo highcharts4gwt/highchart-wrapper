@@ -3,6 +3,7 @@ package com.github.highcharts4gwt.model.highcharts.option.mock;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.TickPositionerCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.YAxis;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.AfterBreaksHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.AfterSetExtremesHandler;
@@ -585,6 +586,10 @@ public class MockYAxis
 
     public MockYAxis tickPosition(String tickPosition) {
         this.tickPosition = tickPosition;
+        return this;
+    }
+
+    public MockYAxis tickPositioner(TickPositionerCallback tickPositioner) {
         return this;
     }
 

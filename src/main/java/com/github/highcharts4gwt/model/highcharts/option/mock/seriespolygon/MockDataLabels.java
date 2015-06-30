@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.mock.seriespolygon;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriespolygon.FormatterCallback;
 
 
 /**
@@ -134,6 +135,10 @@ public class MockDataLabels
 
     public MockDataLabels format(String format) {
         this.format = format;
+        return this;
+    }
+
+    public MockDataLabels formatter(FormatterCallback formatter) {
         return this;
     }
 

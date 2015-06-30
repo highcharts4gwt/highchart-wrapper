@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso.seriestreemap;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.PointFormatterCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -108,6 +109,20 @@ public class JsoTooltip
         this["pointFormat"] = pointFormat;
         return this;
     }-*/
+    ;
+
+    public final native JsoTooltip pointFormatter(PointFormatterCallback pointFormatter)
+        throws RuntimeException 
+            /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                pointFormatter: function() {
+                    return pointFormatter.@com.github.highcharts4gwt.model.highcharts.option.api.seriestreemap.PointFormatterCallback::onCallback(Lcom/github/highcharts4gwt/model/highcharts/object/api/Point;)(
+                        this
+                     );
+                 }
+             });
+    }-*/;
     ;
 
     public final native String shape()

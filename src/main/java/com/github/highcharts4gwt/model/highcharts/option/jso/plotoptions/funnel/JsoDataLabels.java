@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.funnel;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FormatterCallback;
 import com.google.gwt.core.client.JavaScriptObject;
 
 
@@ -184,6 +185,20 @@ public class JsoDataLabels
         this["format"] = format;
         return this;
     }-*/
+    ;
+
+    public final native JsoDataLabels formatter(FormatterCallback formatter)
+        throws RuntimeException 
+            /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                formatter: function() {
+                    return formatter.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.funnel.FormatterCallback::onCallback()(
+                        
+                     );
+                 }
+             });
+    }-*/;
     ;
 
     public final native boolean inside()

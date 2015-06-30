@@ -1,7 +1,10 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.mock;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.CompleteCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.Data;
+import com.github.highcharts4gwt.model.highcharts.option.api.ParseDateCallback;
+import com.github.highcharts4gwt.model.highcharts.option.api.ParsedCallback;
 
 
 /**
@@ -33,6 +36,10 @@ public class MockData
     private String table;
     private String genericField;
     private String functionAsString;
+
+    public MockData complete(CompleteCallback complete) {
+        return this;
+    }
 
     public String csv() {
         return csv;
@@ -121,6 +128,14 @@ public class MockData
 
     public MockData lineDelimiter(String lineDelimiter) {
         this.lineDelimiter = lineDelimiter;
+        return this;
+    }
+
+    public MockData parseDate(ParseDateCallback parseDate) {
+        return this;
+    }
+
+    public MockData parsed(ParsedCallback parsed) {
         return this;
     }
 

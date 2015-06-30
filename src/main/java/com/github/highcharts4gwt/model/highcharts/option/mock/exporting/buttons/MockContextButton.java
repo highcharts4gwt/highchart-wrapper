@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.mock.exporting.buttons;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.exporting.buttons.ContextButton;
+import com.github.highcharts4gwt.model.highcharts.option.api.exporting.buttons.OnclickCallback;
 
 
 /**
@@ -65,6 +66,10 @@ public class MockContextButton
 
     public MockContextButton menuItems(String menuItemsAsJsonStringArray) {
         this.menuItems = menuItemsAsJsonStringArray;
+        return this;
+    }
+
+    public MockContextButton onclick(OnclickCallback onclick) {
         return this;
     }
 

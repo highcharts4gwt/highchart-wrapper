@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.api.xaxis;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
+import com.github.highcharts4gwt.model.highcharts.option.api.xaxis.FormatterCallback;
 
 
 /**
@@ -82,6 +83,15 @@ public interface Labels {
      * 
      */
     Labels format(String format);
+
+    /**
+     * Callback JavaScript function to format the label. The value is  given by <code>this.value</code>. Additional properties for <code>this</code> are <code>axis</code>, <code>chart</code>, <code>isFirst</code> and <code>isLast</code>. Defaults to: 
+     * <pre>function() {
+     * 	return this.value;
+     * }</pre>
+     * 
+     */
+    Labels formatter(FormatterCallback formatter);
 
     /**
      * Horizontal axis only. When <code>staggerLines</code> is not set, <code>maxStaggerLines</code> defines how many lines the axis is allowed to add to automatically avoid overlapping X labels. Set to <code>1</code> to disable overlap detection.

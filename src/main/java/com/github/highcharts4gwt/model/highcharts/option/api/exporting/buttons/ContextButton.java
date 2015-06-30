@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.exporting.buttons;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.exporting.buttons.OnclickCallback;
 
 
 /**
@@ -57,6 +58,12 @@ public interface ContextButton {
      * 
      */
     ContextButton menuItems(String menuItemsAsJsonStringArray);
+
+    /**
+     * A click handler callback to use on the button directly instead of the popup menu.
+     * 
+     */
+    ContextButton onclick(OnclickCallback onclick);
 
     /**
      * The symbol for the button. Points to a definition function in the  <code>Highcharts.Renderer.symbols</code> collection. The default <code>exportIcon</code> function is part of the exporting module.

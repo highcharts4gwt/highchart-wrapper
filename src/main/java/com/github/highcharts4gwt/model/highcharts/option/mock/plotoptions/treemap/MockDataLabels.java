@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.mock.plotoptions.treemap;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.treemap.FormatterCallback;
 
 
 /**
@@ -135,6 +136,10 @@ public class MockDataLabels
 
     public MockDataLabels format(String format) {
         this.format = format;
+        return this;
+    }
+
+    public MockDataLabels formatter(FormatterCallback formatter) {
         return this;
     }
 

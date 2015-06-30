@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.jso.plotoptions.heatmap;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.FormatterCallback;
 import com.google.gwt.core.client.JavaScriptObject;
 
 
@@ -158,6 +159,20 @@ public class JsoDataLabels
         this["format"] = format;
         return this;
     }-*/
+    ;
+
+    public final native JsoDataLabels formatter(FormatterCallback formatter)
+        throws RuntimeException 
+            /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                formatter: function() {
+                    return formatter.@com.github.highcharts4gwt.model.highcharts.option.api.plotoptions.heatmap.FormatterCallback::onCallback()(
+                        
+                     );
+                 }
+             });
+    }-*/;
     ;
 
     public final native boolean inside()

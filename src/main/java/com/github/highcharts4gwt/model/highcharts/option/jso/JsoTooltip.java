@@ -1,6 +1,9 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.FormatterCallback;
+import com.github.highcharts4gwt.model.highcharts.option.api.PointFormatterCallback;
+import com.github.highcharts4gwt.model.highcharts.option.api.PositionerCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.Tooltip;
 import com.google.gwt.core.client.JavaScriptObject;
 
@@ -149,6 +152,20 @@ public class JsoTooltip
     }-*/
     ;
 
+    public final native JsoTooltip formatter(FormatterCallback formatter)
+        throws RuntimeException 
+            /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                formatter: function() {
+                    return formatter.@com.github.highcharts4gwt.model.highcharts.option.api.FormatterCallback::onCallback()(
+                        
+                     );
+                 }
+             });
+    }-*/;
+    ;
+
     public final native String headerFormat()
         throws RuntimeException /*-{
         return this["headerFormat"] = (this["headerFormat"] || "");
@@ -186,6 +203,34 @@ public class JsoTooltip
         this["pointFormat"] = pointFormat;
         return this;
     }-*/
+    ;
+
+    public final native JsoTooltip pointFormatter(PointFormatterCallback pointFormatter)
+        throws RuntimeException 
+            /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                pointFormatter: function() {
+                    return pointFormatter.@com.github.highcharts4gwt.model.highcharts.option.api.PointFormatterCallback::onCallback(Lcom/github/highcharts4gwt/model/highcharts/object/api/Point;)(
+                        this
+                     );
+                 }
+             });
+    }-*/;
+    ;
+
+    public final native JsoTooltip positioner(PositionerCallback positioner)
+        throws RuntimeException 
+            /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                positioner: function() {
+                    return positioner.@com.github.highcharts4gwt.model.highcharts.option.api.PositionerCallback::onCallback()(
+                        
+                     );
+                 }
+             });
+    }-*/;
     ;
 
     public final native boolean shadow()

@@ -2,6 +2,7 @@
 package com.github.highcharts4gwt.model.highcharts.option.mock.seriesbar;
 
 import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.DataLabels;
+import com.github.highcharts4gwt.model.highcharts.option.api.seriesbar.FormatterCallback;
 
 
 /**
@@ -134,6 +135,10 @@ public class MockDataLabels
 
     public MockDataLabels format(String format) {
         this.format = format;
+        return this;
+    }
+
+    public MockDataLabels formatter(FormatterCallback formatter) {
         return this;
     }
 

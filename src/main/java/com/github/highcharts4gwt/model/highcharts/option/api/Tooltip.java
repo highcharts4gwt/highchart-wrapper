@@ -1,6 +1,9 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.FormatterCallback;
+import com.github.highcharts4gwt.model.highcharts.option.api.PointFormatterCallback;
+import com.github.highcharts4gwt.model.highcharts.option.api.PositionerCallback;
 
 
 /**
@@ -159,6 +162,12 @@ public interface Tooltip {
     Tooltip footerFormat(String footerFormat);
 
     /**
+     * <p>Callback function to format the text of the tooltip. Return false to disable tooltip for a specific point on series.</p> <p>A subset of HTML is supported. The HTML of the tooltip is parsed and converted to SVG,  therefore this isn't a complete HTML renderer. The following tabs are supported:  <code>&lt;b&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;br/&gt;</code>, <code>&lt;span&gt;</code>. Spans can be styled with a <code>style</code> attribute, but only text-related CSS that is  shared with SVG is handled. </p> <p>Since version 2.1 the tooltip can be shared between multiple series through  the <code>shared</code> option. The available data in the formatter differ a bit depending on whether the tooltip is shared or not. In a shared tooltip, all  properties except <code>x</code>, which is common for all points, are kept in  an array, <code>this.points</code>.</p>  <p>Available data are:</p> <dl> 	<dt>this.percentage (not shared) / this.points[i].percentage (shared)</dt> 	<dd>Stacked series and pies only. The point's percentage of the total.</dd> 	 	<dt>this.point (not shared) / this.points[i].point (shared)</dt> 	<dd>The point object. The point name, if defined, is available  through <code>this.point.name</code>.</dd> 	 	<dt>this.points</dt> 	<dd>In a shared tooltip, this is an array containing all other properties for each point.</dd> 	 	<dt>this.series (not shared) / this.points[i].series (shared)</dt> 	<dd>The series object. The series name is available  through <code>this.series.name</code>.</dd>  	<dt>this.total (not shared) / this.points[i].total (shared)</dt> 	<dd>Stacked series only. The total value at this point's x value.</dd> 	 	<dt>this.x</dt> 	<dd>The x value. This property is the same regardless of the tooltip being shared or not.</dd> 	 	<dt>this.y (not shared) / this.points[i].y (shared)</dt> 	<dd>The y value.</dd>  </dl>
+     * 
+     */
+    Tooltip formatter(FormatterCallback formatter);
+
+    /**
      * <p>The HTML of the tooltip header line. Variables are enclosed by curly brackets. Available variables			are <code>point.key</code>, <code>series.name</code>, <code>series.color</code> and other members from the <code>point</code> and <code>series</code> objects. The <code>point.key</code> variable contains the category name, x value or datetime string depending on the type of axis. For datetime axes, the <code>point.key</code> date format can be set using tooltip.xDateFormat.</p> 
      * <p>Defaults to <code>&lt;span style="font-size: 10px"&gt;{point.key}&lt;/span&gt;&lt;br/&gt;</code></p>
      * 
@@ -195,6 +204,20 @@ public interface Tooltip {
      * 
      */
     Tooltip pointFormat(String pointFormat);
+
+    /**
+     * A callback function for formatting the HTML output for a single point in the tooltip. Like the <code>pointFormat</code> string, but with more flexibility.
+     * 
+     */
+    Tooltip pointFormatter(PointFormatterCallback pointFormatter);
+
+    /**
+     * <p>A callback function to place the tooltip in a default position. The callback receives three parameters: <code>labelWidth</code>, <code>labelHeight</code> and <code>point</code>, where point contains values for <code>plotX</code> and <code>plotY</code> telling where the reference point is in the plot area. Add <code>chart.plotLeft</code> and <code>chart.plotTop</code> to get the full coordinates.</p>
+     * 
+     * <p>The return should be an object containing x and y values, for example <code>{ x: 100, y: 100 }</code>.</p>
+     * 
+     */
+    Tooltip positioner(PositionerCallback positioner);
 
     /**
      * Whether to apply a drop shadow to the tooltip.

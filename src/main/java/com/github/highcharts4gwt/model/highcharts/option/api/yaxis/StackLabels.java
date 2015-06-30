@@ -1,6 +1,7 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.api.yaxis;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.FormatterCallback;
 
 
 /**
@@ -47,6 +48,15 @@ public interface StackLabels {
      * 
      */
     StackLabels format(String format);
+
+    /**
+     * Callback JavaScript function to format the label. The value is  given by <code>this.total</code>. Defaults to: 
+     * <pre>function() {
+     * 	return this.total;
+     * }</pre>
+     * 
+     */
+    StackLabels formatter(FormatterCallback formatter);
 
     /**
      * Rotation of the labels in degrees.

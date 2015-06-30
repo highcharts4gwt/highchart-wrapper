@@ -1,7 +1,10 @@
 
 package com.github.highcharts4gwt.model.highcharts.option.jso;
 
+import com.github.highcharts4gwt.model.highcharts.option.api.CompleteCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.Data;
+import com.github.highcharts4gwt.model.highcharts.option.api.ParseDateCallback;
+import com.github.highcharts4gwt.model.highcharts.option.api.ParsedCallback;
 import com.google.gwt.core.client.JavaScriptObject;
 
 
@@ -21,6 +24,20 @@ public class JsoData
 
     protected JsoData() {
     }
+
+    public final native JsoData complete(CompleteCallback complete)
+        throws RuntimeException 
+            /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                complete: function() {
+                    return complete.@com.github.highcharts4gwt.model.highcharts.option.api.CompleteCallback::onCallback()(
+                        
+                     );
+                 }
+             });
+    }-*/;
+    ;
 
     public final native String csv()
         throws RuntimeException /*-{
@@ -150,6 +167,34 @@ public class JsoData
         this["lineDelimiter"] = lineDelimiter;
         return this;
     }-*/
+    ;
+
+    public final native JsoData parseDate(ParseDateCallback parseDate)
+        throws RuntimeException 
+            /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                parseDate: function() {
+                    return parseDate.@com.github.highcharts4gwt.model.highcharts.option.api.ParseDateCallback::onCallback()(
+                        
+                     );
+                 }
+             });
+    }-*/;
+    ;
+
+    public final native JsoData parsed(ParsedCallback parsed)
+        throws RuntimeException 
+            /*-{
+            $wnd.jQuery.extend(true, this, 
+            {
+                parsed: function() {
+                    return parsed.@com.github.highcharts4gwt.model.highcharts.option.api.ParsedCallback::onCallback()(
+                        
+                     );
+                 }
+             });
+    }-*/;
     ;
 
     public final native String seriesMapping()

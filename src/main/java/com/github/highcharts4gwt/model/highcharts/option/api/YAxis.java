@@ -3,6 +3,7 @@ package com.github.highcharts4gwt.model.highcharts.option.api;
 
 import com.github.highcharts4gwt.model.array.api.ArrayNumber;
 import com.github.highcharts4gwt.model.array.api.ArrayString;
+import com.github.highcharts4gwt.model.highcharts.option.api.TickPositionerCallback;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.AfterBreaksHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.AfterSetExtremesHandler;
 import com.github.highcharts4gwt.model.highcharts.option.api.yaxis.Labels;
@@ -774,6 +775,12 @@ public interface YAxis {
      * 
      */
     YAxis tickPosition(String tickPosition);
+
+    /**
+     * A callback function returning array defining where the ticks are laid out on the axis. This overrides the default behaviour of <a href="#xAxis.tickPixelInterval">tickPixelInterval</a> and <a href="#xAxis.tickInterval">tickInterval</a>. The automatic tick positions are accessible through <code>this.tickPositions</code> and can be modified by the callback.
+     * 
+     */
+    YAxis tickPositioner(TickPositionerCallback tickPositioner);
 
     /**
      * An array defining where the ticks are laid out on the axis. This overrides the default behaviour of <a href="#xAxis.tickPixelInterval">tickPixelInterval</a> and <a href="#xAxis.tickInterval">tickInterval</a>.
